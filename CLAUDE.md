@@ -41,6 +41,10 @@ python3 scripts/publish.py --confirm  # upload (needs AWS creds)
 
 ## Tests (dependency-free; run with python3)
 `tests/test_links.py`, `tests/test_git_ext.py`, `tests/test_publish.py`, `tests/test_scaffolds.py`.
+`tests/test_stac_valid.py` runs `portolan check --metadata` on `catalog/` when the Portolan
+CLI is on PATH and SKIPs otherwise — so local runs stay zero-setup. CI
+(`.github/workflows/ci.yml`) installs the CLI and runs all five, so bad STAC metadata fails
+the build on push/PR.
 
 ## Git extension (portolan-cli#485)
 `catalog/catalog.json` hand-carries `git:repository`, `git:ref`, `git:provider` plus `vcs`/`issues`
