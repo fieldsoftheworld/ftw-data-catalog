@@ -42,25 +42,18 @@ def _content_type(p: Path) -> str:
 
 def collect_uploads(manifest: dict, root: Path) -> list[Upload]:
     write_prefix = manifest["write_prefix"].rstrip("/")
-    selected: dict[Path, None] = {}  # ordered dedupe
-
-    for rel in manifest.get("root_files", []):
-        p = root / rel
-        if p.is_file():
-            selected[p] = None
-
-    for coll in manifest.get("collections", []):
-        cdir = root / coll
-        if not cdir.is_dir():
-            continue
-        for pattern in manifest.get("publish_globs", []):
-            for p in cdir.glob(pattern):
-                if p.is_file():
-                    selected[p] = None
+    pub_dir = root / manifest.get("publish_dir", "catalog")
+    skip = {".portolan/config.yaml", ".portolan/state.json"}
 
     uploads = []
-    for p in selected:
-        rel = p.relative_to(root).as_posix()
+    if not pub_dir.is_dir():
+        return uploads
+    for p in sorted(pub_dir.rglob("*")):
+        if not p.is_file():
+            continue
+        rel = p.relative_to(pub_dir).as_posix()
+        if rel in skip:
+            continue
         uploads.append(Upload(local=p, s3_uri=f"{write_prefix}/{rel}",
                               content_type=_content_type(p)))
     return uploads

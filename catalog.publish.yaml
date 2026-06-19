@@ -1,23 +1,8 @@
-# What publishes, and where. Data files are NEVER listed here.
+# What publishes, and where. Everything under publish_dir is uploaded 1:1.
+# Data files are NEVER placed in publish_dir, so they cannot be published.
 write_prefix: s3://us-west-2.opendata.source.coop/tge-labs/ftw-global-data
 public_base: https://data.source.coop/ftw/global-data
 region: us-west-2
 
-# Files published from the repo root (if present).
-root_files:
-  - catalog.json
-  - llms.txt
-  - README.md
-  - .portolan/metadata.yaml
-
-# Within each enabled collection dir, these glob patterns are published.
-publish_globs:
-  - "**/*.json"
-  - "**/README.md"
-  - "**/llms.txt"
-  - "**/thumbnail.png"
-  - "**/.portolan/metadata.yaml"
-
-# Only collections listed here are published. Scaffolds stay local until added.
-collections:
-  - predictions/confidence
+# The catalog directory, synced 1:1 to write_prefix.
+publish_dir: catalog
