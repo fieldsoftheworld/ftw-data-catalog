@@ -18,11 +18,12 @@ what is live. Everything outside `catalog/` is never published.
 
 ```
 catalog/        the published STAC/Portolan catalog (1:1 with Source Cooperative)
+  README.md       the README rendered on Source Cooperative
+  README_next.md  published preview of the proposed next catalog README
 staging/        collections being prepared, not yet published
 scripts/        publishing + build tooling
 tests/          dependency-free catalog validation
 docs/           design specs and plans
-README_next.md  draft of the next published catalog README
 CLAUDE.md       developer / agent guide
 ```
 

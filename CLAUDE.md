@@ -16,13 +16,13 @@ or uploaded by this repo.
 ## Layout
 - `catalog/` — the published catalog (STAC JSON, README.md, llms.txt, thumbnails, `.portolan/metadata.yaml`). Synced 1:1 to S3.
 - `staging/` — collections being prepared; git-tracked but NOT published.
-- `scripts/`, `tests/`, `docs/`, `CLAUDE.md`, root `README.md`, `README_next.md`, `catalog.publish.yaml` — tooling/docs, never published.
+- `scripts/`, `tests/`, `docs/`, `CLAUDE.md`, root `README.md`, `catalog.publish.yaml` — tooling/docs, never published.
 - Gitignored (never in repo): data files (`*.tif`, `*.parquet`, `*.zarr`), `.env`, caches.
 
 ## READMEs
 - Root `README.md` — GitHub front door (not published).
 - `catalog/README.md` — the README rendered on Source Cooperative (published).
-- `README_next.md` — draft of the next `catalog/README.md`; promote by copying it over `catalog/README.md`.
+- `catalog/README_next.md` — published preview of the proposed next catalog README (for sharing/feedback); promote by copying it over `catalog/README.md`.
 
 ## Publish workflow
 Edit metadata under `catalog/` -> commit -> publish:
