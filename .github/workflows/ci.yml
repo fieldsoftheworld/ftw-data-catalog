@@ -15,9 +15,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Portolan CLI
-        # --pre because portolan-cli is currently pre-release (1.0.0aN).
-        run: python -m pip install --pre portolan-cli
+      - name: Install stac-check (STAC validation)
+        run: python -m pip install stac-check
 
       - name: Run catalog tests (incl. STAC validation)
         run: |
