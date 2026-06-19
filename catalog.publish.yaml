@@ -1,0 +1,23 @@
+# What publishes, and where. Data files are NEVER listed here.
+write_prefix: s3://us-west-2.opendata.source.coop/tge-labs/ftw-global-data
+public_base: https://data.source.coop/ftw/global-data
+region: us-west-2
+
+# Files published from the repo root (if present).
+root_files:
+  - catalog.json
+  - llms.txt
+  - README.md
+  - .portolan/metadata.yaml
+
+# Within each enabled collection dir, these glob patterns are published.
+publish_globs:
+  - "**/*.json"
+  - "**/README.md"
+  - "**/llms.txt"
+  - "**/thumbnail.png"
+  - "**/.portolan/metadata.yaml"
+
+# Only collections listed here are published. Scaffolds stay local until added.
+collections:
+  - predictions/confidence
