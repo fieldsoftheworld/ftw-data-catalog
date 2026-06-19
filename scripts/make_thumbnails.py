@@ -20,7 +20,7 @@ from PIL import Image
 os.environ.setdefault("AWS_NO_SIGN_REQUEST", "YES")
 os.environ.setdefault("GDAL_DISABLE_READDIR_ON_OPEN", "EMPTY_DIR")
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]  # repo root (scripts/ -> ..)
 COLL = ROOT / "predictions" / "confidence"
 # COGs are still at the flat (pre-restructure) location; read from there.
 CUR_BASE = "https://data.source.coop/ftw/global-data/predictions/confidence"

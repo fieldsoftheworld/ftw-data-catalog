@@ -19,7 +19,7 @@ import rasterio
 os.environ.setdefault("AWS_NO_SIGN_REQUEST", "YES")
 os.environ.setdefault("GDAL_DISABLE_READDIR_ON_OPEN", "EMPTY_DIR")
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]  # repo root (scripts/ -> ..)
 COLL_REL = "predictions/confidence"
 COLL_DIR = ROOT / COLL_REL
 PUBLIC_BASE = "https://data.source.coop/ftw/global-data/predictions/confidence"

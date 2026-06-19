@@ -10,7 +10,7 @@ import json
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]  # repo root (scripts/ -> ..)
 COLL = ROOT / "predictions" / "confidence"
 PUB = "https://data.source.coop/ftw/global-data/predictions/confidence"
 PAPER = "https://arxiv.org/abs/2605.11055"
