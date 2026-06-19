@@ -2,14 +2,17 @@
   "type": "Catalog",
   "id": "ftw-global-data",
   "stac_version": "1.1.0",
-  "title": "Fields of the World — Global",
+  "title": "Fields of the World \u2014 Global",
   "description": "Global agricultural field boundaries and prediction-quality layers at 10 m resolution, produced by applying the PRUE field-boundary segmentation model to global Sentinel-2 mosaics (Robinson et al. 2026, arXiv:2605.11055). Published openly under CC-BY-4.0 by Taylor Geospatial and collaborators. This STAC catalog currently describes the prediction confidence & quality layers; additional products (vector field boundaries, mosaics, Zarr) will be added.",
+  "git:repository": "https://github.com/fieldsoftheworld/ftw-portolan",
+  "git:ref": "main",
+  "git:provider": "github",
   "links": [
     {
       "rel": "root",
       "href": "./catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "self",
@@ -20,7 +23,7 @@
       "rel": "child",
       "href": "./predictions/confidence/collection.json",
       "type": "application/json",
-      "title": "FTW Global — Prediction Confidence & Quality Layers (500 m)"
+      "title": "FTW Global \u2014 Prediction Confidence & Quality Layers (500 m)"
     },
     {
       "rel": "about",
@@ -32,6 +35,16 @@
       "rel": "cite-as",
       "href": "https://arxiv.org/abs/2605.11055",
       "title": "The first global agricultural field boundary map at 10 m resolution (arXiv:2605.11055)"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/fieldsoftheworld/ftw-portolan",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
+      "href": "https://github.com/fieldsoftheworld/ftw-portolan/issues",
+      "title": "Issue tracker"
     }
   ]
 }
