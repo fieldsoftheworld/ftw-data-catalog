@@ -31,7 +31,7 @@ python3 scripts/publish.py            # dry run (lists the catalog/ tree -> S3)
 python3 scripts/publish.py --confirm  # upload (needs AWS creds)
 ```
 `publish.py` uploads every file in `catalog/` 1:1, skipping only Portolan-internal
-`.portolan/config.yaml` and `.portolan/state.json`. Config lives in `catalog.publish.yaml`.
+`.portolan/config.yaml` and `.portolan/state.json`. Config (write_prefix, public_base, region, publish_dir) lives in `catalog.publish.yaml`.
 
 ## Add / promote a collection
 1. Build it under `staging/<group>/<name>/` (collection.json + `.portolan/metadata.yaml`); hrefs use the public base.

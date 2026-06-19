@@ -64,6 +64,8 @@ def main():
     assert by_rel["predictions/confidence/confidence/confidence.json"].content_type == "application/geo+json"
     assert by_rel["predictions/confidence/thumbnail.png"].content_type == "image/png"
     assert by_rel["predictions/confidence/README.md"].content_type.startswith("text/markdown")
+    assert by_rel["versions.json"].content_type == "application/json"
+    assert by_rel[".portolan/metadata.yaml"].content_type.startswith("text/yaml")
     print("OK: publisher walks catalog/ 1:1, excludes root/staging/scripts and .portolan internals")
 
 

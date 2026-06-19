@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Metadata-only publisher for the FTW Portolan catalog.
 
-Reads catalog.publish.yaml and uploads ONLY catalog metadata (STAC JSON, README,
-llms.txt, thumbnails, .portolan/metadata.yaml) for enabled collections to S3.
-Never uploads data (*.tif/*.parquet/*.zarr), scripts/, or config.
+Reads catalog.publish.yaml and uploads everything under the configured publish_dir
+(the catalog/ tree) 1:1 to S3, skipping only .portolan/config.yaml and
+.portolan/state.json. Never uploads data (*.tif/*.parquet/*.zarr), scripts/, or config.
 
 Usage:
   python3 scripts/publish.py            # dry run (prints planned uploads)
@@ -16,7 +16,8 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-_CT_BY_NAME = {"catalog.json": "application/json", "collection.json": "application/json"}
+_CT_BY_NAME = {"catalog.json": "application/json", "collection.json": "application/json",
+               "versions.json": "application/json"}
 _CT_BY_SUFFIX = {
     ".json": "application/geo+json",  # items; catalog/collection overridden by name
     ".md": "text/markdown; charset=utf-8",
@@ -97,7 +98,7 @@ def main(argv=None) -> int:
     uploads = collect_uploads(manifest, root)
 
     if not uploads:
-        print("No files to publish (check enabled collections in catalog.publish.yaml).")
+        print("No files to publish (check publish_dir in catalog.publish.yaml).")
         return 0
 
     for u in uploads:
