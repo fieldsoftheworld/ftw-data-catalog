@@ -2,6 +2,8 @@ import json, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+STAGING = ROOT / "staging"
+CATALOG = ROOT / "catalog"
 EXPECTED = {
     "predictions/vectors": "vectors",
     "predictions/zarr": "predictions-zarr",
@@ -10,7 +12,7 @@ EXPECTED = {
 }
 errs = []
 for path, cid in EXPECTED.items():
-    cj = ROOT / path / "collection.json"
+    cj = STAGING / path / "collection.json"
     if not cj.exists():
         errs.append(f"missing {cj}"); continue
     doc = json.loads(cj.read_text())
@@ -23,12 +25,12 @@ for path, cid in EXPECTED.items():
     if "extent" not in doc:
         errs.append(f"{cj}: no extent")
 
-cat = json.loads((ROOT / "catalog.json").read_text())
+cat = json.loads((CATALOG / "catalog.json").read_text())
 children = {l["href"] for l in cat.get("links", []) if l.get("rel") == "child"}
 for path in EXPECTED:
     href = f"./{path}/collection.json"
-    if href not in children:
-        errs.append(f"catalog.json missing child link {href}")
+    if href in children:
+        errs.append(f"catalog.json still links staged collection {href}")
 if errs:
     print("\n".join(errs)); sys.exit(1)
-print("OK: 4 scaffold collections present and linked")
+print("OK: 4 scaffold collections staged and unlinked from published catalog")

@@ -1,7 +1,7 @@
 import json, sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1] / "catalog"
 doc = json.loads((ROOT / "catalog.json").read_text())
 
 errs = []

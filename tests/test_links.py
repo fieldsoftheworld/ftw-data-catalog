@@ -2,7 +2,7 @@
 import json, sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1] / "catalog"
 
 def stac_json_files():
     for name in ("catalog.json",):

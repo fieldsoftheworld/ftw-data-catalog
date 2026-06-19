@@ -45,30 +45,6 @@
       "rel": "issues",
       "href": "https://github.com/fieldsoftheworld/ftw-portolan/issues",
       "title": "Issue tracker"
-    },
-    {
-      "rel": "child",
-      "href": "./predictions/vectors/collection.json",
-      "type": "application/json",
-      "title": "FTW Global — Field Boundary Predictions (vector)"
-    },
-    {
-      "rel": "child",
-      "href": "./predictions/zarr/collection.json",
-      "type": "application/json",
-      "title": "FTW Global — Predictions (Zarr)"
-    },
-    {
-      "rel": "child",
-      "href": "./features/cogs/collection.json",
-      "type": "application/json",
-      "title": "FTW Global — Sentinel-2 Feature Composites (COG)"
-    },
-    {
-      "rel": "child",
-      "href": "./features/zarr/collection.json",
-      "type": "application/json",
-      "title": "FTW Global — Sentinel-2 Feature Mosaic (Zarr)"
     }
   ]
 }
