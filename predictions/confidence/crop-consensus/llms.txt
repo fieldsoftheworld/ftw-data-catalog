@@ -1,0 +1,48 @@
+# Cropland consensus count (500 m) — Fields of the World / PRUE
+
+Mean per-cell agreement of eight independent global cropland datasets (ASAP Crop Mask, GlobCover 2009, ESA CCI Land Cover 2020, Copernicus Global Land Cover 100 m, GLAD Cropland 2019, Esri 10 m LULC 2021, Digital Earth Africa 2019, ESA WorldCereal 2021), each binarised to cropland/non-cropland, reprojected to the ESA WorldCover 10 m grid and aggregated to 500 m. Range 0-8 (practical max 7 outside Africa, where Digital Earth Africa is unavailable). An external reference layer, year-independent; used to construct confidence-model negatives and the precision/recall layers. See [Robinson et al. 2026](https://arxiv.org/abs/2605.11055).
+
+**Part of:** [FTW Global — Prediction Confidence & Quality Layers](../collection.json) · [Fields of the World](https://fieldsofthe.world)  
+**Paper:** [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)  
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
+**Temporal:** 2024-01-01 – 2025-12-31 (inferred 2025 from paper; pending author confirmation)
+
+## How to access
+
+Base URL: `https://data.source.coop/ftw/global-data/predictions/confidence/crop-consensus/`  
+Common grid: EPSG:4326, 86400×34560 px, bbox [-180, -60, 180, 84], ~0.004167°/px (~500 m). All files are Cloud-Optimized GeoTIFFs (range-request friendly).
+
+| Asset | File | CRS | Bands | Size |
+|---|---|---|---|---|
+| `data` | `prue_v1_crop_count_mean_500m.tif` | EPSG:4326 | 1 | 992.7 MB |
+
+```python
+import rasterio
+url = "https://data.source.coop/ftw/global-data/predictions/confidence/crop-consensus/prue_v1_crop_count_mean_500m.tif"
+with rasterio.open(url) as ds:   # COG: only the bytes you read are fetched
+    arr = ds.read(1, masked=True)   # add window=... to subset by bbox
+```
+
+Browser preview (titiler): `https://titiler.xyz/cog/preview.png?url=https://data.source.coop/ftw/global-data/predictions/confidence/crop-consensus/prue_v1_crop_count_mean_500m.tif&rescale=0,8&colormap_name=ylgn&nodata=0`
+
+## Bands
+
+| Asset | Band | dtype | nodata | range (min–max) | Meaning |
+|---|---|---|---|---|---|
+| `data` | `crop_count_mean` | float32 | 0.0 | 0.0004 – 8 | Mean number of agreeing cropland datasets (0-8) |
+
+## Notes
+
+- Year-independent external reference (not a PRUE output). Range 0–8; practical max 7 outside Africa, where Digital Earth Africa is unavailable.
+
+## Related layers
+
+- [Modeled confidence layer (500 m)](../confidence/confidence.json)
+- [Field & boundary prediction density (500 m)](../field-density/field-density.json)
+- [Model entropy (500 m)](../entropy/entropy.json)
+- [Precision & recall vs cropland agreement (500 m)](../precision-recall/precision-recall.json)
+- Collection: [collection.json](../collection.json) · [README](../README.md)
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.

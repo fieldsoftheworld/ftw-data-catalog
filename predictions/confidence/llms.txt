@@ -1,0 +1,23 @@
+# FTW Global — Prediction Confidence & Quality Layers (500 m)
+
+Global 500 m raster layers that quantify where the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) global agricultural field-boundary predictions can be trusted, part of [Fields of the World](https://fieldsofthe.world) ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)). Derived from the full-resolution (10 m) model outputs on a common global grid (EPSG:4326, ~0.004167°/px, −180..180 lon, −60..84 lat; each 500 m cell ≈ 50×50 of the 10 m pixels). Temporal coverage inferred as the 2025 prediction year (the cropland-consensus layer is year-independent); pending author confirmation.
+
+**Catalog:** [collection.json](https://data.source.coop/ftw/global-data/predictions/confidence/collection.json) · [README](https://data.source.coop/ftw/global-data/predictions/confidence/README.md)  
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
+**Base URL:** `https://data.source.coop/ftw/global-data/predictions/confidence/`
+
+## Layers (one STAC item each, with its own llms.txt)
+
+- **[Modeled confidence layer (500 m)](confidence/confidence.json)** — Modeled confidence score (RF on model-internal indicators). Default filter conf ≥ 0.4. ([llms.txt](confidence/llms.txt))
+- **[Field & boundary prediction density (500 m)](field-density/field-density.json)** — Field & boundary pixel counts per cell — unfiltered, conf-filtered, fields-only, web-display. ([llms.txt](field-density/llms.txt))
+- **[Model entropy (500 m)](entropy/entropy.json)** — Mean model entropy for the field and boundary classes (uncertainty). ([llms.txt](entropy/llms.txt))
+- **[Cropland consensus count (500 m)](crop-consensus/crop-consensus.json)** — Mean agreement of 8 external global cropland datasets (0–8). ([llms.txt](crop-consensus/llms.txt))
+- **[Precision & recall vs cropland agreement (500 m)](precision-recall/precision-recall.json)** — Per-cell precision/recall of fields vs cropland agreement (≥2 and ≥3 datasets). ([llms.txt](precision-recall/llms.txt))
+
+## Visualization
+
+Each item carries one or more named styles via the STAC [render extension](https://github.com/stac-extensions/render) (`properties.renders`): a colormap + rescale + nodata applied directly to a COG band (no tile server). Confidence uses an RdYlGn ramp rescaled 0–0.578 and field density a magenta→green ramp, matching the FTW inference app. Viewers such as the Portolan browser render these client-side; other tools (e.g. titiler) accept the same parameters.
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.

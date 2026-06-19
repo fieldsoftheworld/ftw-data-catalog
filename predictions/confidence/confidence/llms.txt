@@ -1,0 +1,51 @@
+# Modeled confidence layer (500 m) — Fields of the World / PRUE
+
+Per-500 m-cell modeled confidence that the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) field predictions are reliable, from a Random Forest trained on model-internal quality indicators (entropy and prediction density) over the 24 [Fields of The World](https://fieldsofthe.world)-labelled countries, using only model-derived features and a cropland-consensus filter for negatives (leave-one-country-out mean AUC 0.842). Higher values indicate predictions whose statistical signature matches areas with ground-truth fields. Recommended default filter conf >= 0.4; conservative conf >= 0.5. Cell-level reliability, not a measure of individual-polygon geometric accuracy. Temporal basis inferred as 2025 from the [paper](https://arxiv.org/abs/2605.11055); pending author confirmation.
+
+**Part of:** [FTW Global — Prediction Confidence & Quality Layers](../collection.json) · [Fields of the World](https://fieldsofthe.world)  
+**Paper:** [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)  
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
+**Temporal:** 2024-01-01 – 2025-12-31 (inferred 2025 from paper; pending author confirmation)
+
+## How to access
+
+Base URL: `https://data.source.coop/ftw/global-data/predictions/confidence/confidence/`  
+Common grid: EPSG:4326, 86400×34560 px, bbox [-180, -60, 180, 84], ~0.004167°/px (~500 m). All files are Cloud-Optimized GeoTIFFs (range-request friendly).
+
+| Asset | File | CRS | Bands | Size |
+|---|---|---|---|---|
+| `data` | `prue_v1_confidence_global.tif` | EPSG:4326 | 1 | 1.0 GB |
+| `visual` | `prue_v1_confidence_global_uint8_3857.tif` | EPSG:3857 | 1 | 319.0 MB |
+
+```python
+import rasterio
+url = "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global.tif"
+with rasterio.open(url) as ds:   # COG: only the bytes you read are fetched
+    arr = ds.read(1, masked=True)   # add window=... to subset by bbox
+```
+
+Browser preview (titiler): `https://titiler.xyz/cog/preview.png?url=https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global.tif&rescale=0,0.578178&colormap_name=rdylgn&nodata=-1`
+
+## Bands
+
+| Asset | Band | dtype | nodata | range (min–max) | Meaning |
+|---|---|---|---|---|---|
+| `data` | `confidence` | float32 | -1.0 | 0.0239 – 0.633 | Modeled confidence score (0 to ~0.578) |
+| `visual` | `confidence_uint8` | uint8 | 255.0 | 6 – 114 | Confidence rescaled to 8-bit for web display |
+
+## Notes
+
+- Conservative outside the FTW training distribution (e.g. smallholder systems): real fields there may receive low confidence. In such regions prefer the unfiltered density and the continuous confidence over the default 0.4 threshold.
+- Cell-level reliability — do not infer individual-polygon geometric accuracy from it.
+
+## Related layers
+
+- [Field & boundary prediction density (500 m)](../field-density/field-density.json)
+- [Model entropy (500 m)](../entropy/entropy.json)
+- [Cropland consensus count (500 m)](../crop-consensus/crop-consensus.json)
+- [Precision & recall vs cropland agreement (500 m)](../precision-recall/precision-recall.json)
+- Collection: [collection.json](../collection.json) · [README](../README.md)
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.

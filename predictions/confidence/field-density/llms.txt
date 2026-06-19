@@ -1,0 +1,63 @@
+# Field & boundary prediction density (500 m) — Fields of the World / PRUE
+
+Count of 10 m model pixels classified as field interior and field boundary within each 500 m cell (theoretical max 2500 = 50x50 pixels). Provided unfiltered, confidence-filtered at the default (conf >= 0.4) and conservative (conf >= 0.5) thresholds, a default 'filtered' product, and a single-band fields-only variant; a web-mercator 8-bit rendering is included for display. Use as a per-cell field-area weight or filterable density surface. See [Robinson et al. 2026](https://arxiv.org/abs/2605.11055). Temporal basis inferred as 2025; pending author confirmation.
+
+**Part of:** [FTW Global — Prediction Confidence & Quality Layers](../collection.json) · [Fields of the World](https://fieldsofthe.world)  
+**Paper:** [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)  
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
+**Temporal:** 2024-01-01 – 2025-12-31 (inferred 2025 from paper; pending author confirmation)
+
+## How to access
+
+Base URL: `https://data.source.coop/ftw/global-data/predictions/confidence/field-density/`  
+Common grid: EPSG:4326, 86400×34560 px, bbox [-180, -60, 180, 84], ~0.004167°/px (~500 m). All files are Cloud-Optimized GeoTIFFs (range-request friendly).
+
+| Asset | File | CRS | Bands | Size |
+|---|---|---|---|---|
+| `field_boundary` | `prue_v1_field_area_500m.tif` | EPSG:4326 | 2 | 1008.3 MB |
+| `field_boundary_conf0.4` | `prue_v1_field_area_500m_conf0.4.tif` | EPSG:4326 | 2 | 418.7 MB |
+| `field_boundary_conf0.5` | `prue_v1_field_area_500m_conf0.5.tif` | EPSG:4326 | 2 | 311.5 MB |
+| `field_boundary_filtered` | `prue_v1_field_area_500m_filtered.tif` | EPSG:4326 | 2 | 472.2 MB |
+| `fields_only` | `prue_v1_field_area_500m_fieldsonly.tif` | EPSG:4326 | 1 | 492.4 MB |
+| `visual` | `prue_v1_field_area_500m_fieldsonly_uint8_3857.tif` | EPSG:3857 | 1 | 331.5 MB |
+
+```python
+import rasterio
+url = "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m.tif"
+with rasterio.open(url) as ds:   # COG: only the bytes you read are fetched
+    arr = ds.read(1, masked=True)   # add window=... to subset by bbox
+```
+
+Browser preview (titiler): `https://titiler.xyz/cog/preview.png?url=https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_fieldsonly.tif&rescale=0,255&colormap_name=viridis&nodata=0`
+
+## Bands
+
+| Asset | Band | dtype | nodata | range (min–max) | Meaning |
+|---|---|---|---|---|---|
+| `field_boundary` | `field_pixel_count` | uint16 | — | 0 – 2.5e+03 | Count of field-interior 10 m pixels per 500 m cell |
+| `field_boundary` | `boundary_pixel_count` | uint16 | — | 0 – 2.5e+03 | Count of field-boundary 10 m pixels per 500 m cell |
+| `field_boundary_conf0.4` | `field_pixel_count_conf0.4` | uint16 | — | 0 – 2.5e+03 | Field-interior pixel count, cells with confidence >= 0.4 |
+| `field_boundary_conf0.4` | `boundary_pixel_count_conf0.4` | uint16 | — | 0 – 2.5e+03 | Field-boundary pixel count, cells with confidence >= 0.4 |
+| `field_boundary_conf0.5` | `field_pixel_count_conf0.5` | uint16 | — | 0 – 2.5e+03 | Field-interior pixel count, cells with confidence >= 0.5 |
+| `field_boundary_conf0.5` | `boundary_pixel_count_conf0.5` | uint16 | — | 0 – 2.5e+03 | Field-boundary pixel count, cells with confidence >= 0.5 |
+| `field_boundary_filtered` | `field_pixel_count_filtered` | uint16 | — | 0 – 2.5e+03 | Field-interior pixel count, default confidence-filtered (exact threshold pending author confirmation) |
+| `field_boundary_filtered` | `boundary_pixel_count_filtered` | uint16 | — | 0 – 2.5e+03 | Field-boundary pixel count, default confidence-filtered (exact threshold pending author confirmation) |
+| `fields_only` | `field_pixel_count` | uint16 | — | 0 – 2.5e+03 | Count of field-interior 10 m pixels per 500 m cell |
+| `visual` | `field_density_uint8` | uint8 | 255.0 | 0 – 200 | Field pixel count rescaled to 8-bit for web display |
+
+## Notes
+
+- The `_filtered` variant is a distinct default-filtered product; its exact threshold/method is pending author confirmation (its values differ from the explicit conf0.4/conf0.5 ones).
+- Counts are per 500 m cell out of a maximum of 2500 (= 50×50 of the 10 m model pixels).
+
+## Related layers
+
+- [Modeled confidence layer (500 m)](../confidence/confidence.json)
+- [Model entropy (500 m)](../entropy/entropy.json)
+- [Cropland consensus count (500 m)](../crop-consensus/crop-consensus.json)
+- [Precision & recall vs cropland agreement (500 m)](../precision-recall/precision-recall.json)
+- Collection: [collection.json](../collection.json) · [README](../README.md)
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.

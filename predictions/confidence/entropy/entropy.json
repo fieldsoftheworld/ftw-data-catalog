@@ -1,0 +1,181 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+  ],
+  "id": "entropy",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    84.0
+  ],
+  "properties": {
+    "title": "Model entropy (500 m)",
+    "description": "Mean Shannon entropy of the PRUE softmax outputs across the 10 m pixels in each 500 m cell, computed separately for the field and field-boundary classes. A model-internal uncertainty indicator (higher = less certain) used as a feature of the confidence model. See the Methods (Quality indicator computation) of [Robinson et al. 2026](https://arxiv.org/abs/2605.11055). Temporal basis inferred as 2025; pending author confirmation.",
+    "datetime": null,
+    "start_datetime": "2024-01-01T00:00:00Z",
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "gsd": 500,
+    "ftw:temporal_basis": "inferred 2025 from paper; pending author confirmation"
+  },
+  "collection": "confidence",
+  "renders": {
+    "entropy_field": {
+      "title": "Field entropy",
+      "assets": [
+        "data"
+      ],
+      "bidx": [
+        1
+      ],
+      "rescale": [
+        [
+          0,
+          20
+        ]
+      ],
+      "colormap_name": "magma"
+    },
+    "entropy_boundary": {
+      "title": "Boundary entropy",
+      "assets": [
+        "data"
+      ],
+      "bidx": [
+        2
+      ],
+      "rescale": [
+        [
+          0,
+          20
+        ]
+      ],
+      "colormap_name": "magma"
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/entropy/entropy.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./prue_v1_entropy_500m.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Model entropy (field & boundary)",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "mean_entropy_field",
+          "description": "Mean per-pixel Shannon entropy of the field class within the cell",
+          "data_type": "float32",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 251.0,
+            "mean": 1.8617266592203,
+            "stddev": 11.632174287543,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "mean_entropy_boundary",
+          "description": "Mean per-pixel Shannon entropy of the field-boundary class within the cell",
+          "data_type": "float32",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 250.0,
+            "mean": 2.8655109810274,
+            "stddev": 13.547494310341,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "documentation": {
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide",
+      "roles": [
+        "documentation"
+      ]
+    }
+  }
+}

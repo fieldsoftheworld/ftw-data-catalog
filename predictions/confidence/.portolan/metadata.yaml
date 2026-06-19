@@ -1,0 +1,78 @@
+# .portolan/metadata.yaml — FTW Global prediction confidence & quality layers
+
+title: "FTW Global — Prediction Confidence & Quality Layers (500 m)"
+
+contact:
+  name: "Fields of the World — Taylor Geospatial"
+  email: "isaac.corley@taylorgeospatial.org"
+
+license: "CC-BY-4.0"
+license_url: "https://creativecommons.org/licenses/by/4.0/"
+
+citation: >-
+  Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M.,
+  Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M.
+  (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.
+
+keywords:
+  - agriculture
+  - field boundaries
+  - agricultural fields
+  - cropland
+  - confidence
+  - uncertainty
+  - quality
+  - Sentinel-2
+  - PRUE
+  - Fields of the World
+  - FTW
+  - remote sensing
+  - machine learning
+  - global
+  - 500m
+
+attribution: "Fields of the World / PRUE (Robinson et al. 2026), CC-BY-4.0"
+source_url: "https://source.coop/ftw/global-data"
+
+processing_notes: >-
+  500 m quality-indicator and confidence rasters computed from the full-resolution (10 m) PRUE
+  model outputs on a common global grid (EPSG:4326, ~0.004167°/px, −180..180 lon, −60..84 lat;
+  each 500 m cell ≈ 50×50 of the 10 m pixels). The modeled confidence layer is a Random Forest
+  trained on model-internal indicators (entropy, prediction density) over the 24 FTW-labelled
+  countries (leave-one-country-out mean AUC 0.842). Organised here as a STAC collection of five
+  items, one per measurement; the two EPSG:3857 8-bit GeoTIFFs are web-display ("visual") assets.
+
+known_issues: >-
+  Temporal coverage is inferred as the 2025 prediction year from the paper (figures and the
+  confidence-retention curve are 2025) and is pending confirmation from the data authors; the
+  crop_count_mean (cropland-consensus) layer is year-independent external data. The exact
+  threshold/method of the field-density "_filtered" variant is pending author confirmation
+  (its values differ from the explicit conf0.4/conf0.5 products). The confidence layer is
+  conservative in regions whose visual signature differs from FTW training data (e.g. smallholder
+  systems outside the training distribution), where real fields may receive low confidence — use
+  the unfiltered density and continuous confidence rather than the default 0.4 threshold there.
+
+examples:
+  - engine: python
+    description: "Read the modeled confidence COG (windowed, no full download) with rasterio"
+    code: |
+      import rasterio
+      from rasterio.windows import from_bounds
+      url = ("https://data.source.coop/ftw/global-data/predictions/confidence/"
+             "confidence/prue_v1_confidence_global.tif")
+      with rasterio.open(url) as ds:           # COG: only the needed bytes are fetched
+          win = from_bounds(2.0, 47.5, 3.0, 48.5, ds.transform)  # Beauce, France
+          conf = ds.read(1, window=win, masked=True)
+          print(conf.shape, float(conf.mean()))
+  - engine: python
+    description: "Open the whole collection lazily as an xarray stack via odc-stac / pystac"
+    code: |
+      import pystac, odc.stac
+      col = pystac.Collection.from_file(
+          "https://data.source.coop/ftw/global-data/predictions/confidence/collection.json")
+      items = list(col.get_items())
+      ds = odc.stac.load(items, bands=["data"], chunks={})   # field/boundary, confidence, etc.
+  - engine: other
+    description: "Preview any layer in a browser via titiler (RdYlGn confidence)"
+    code: |
+      https://titiler.xyz/cog/preview.png?url=https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global.tif&rescale=0,0.578178&colormap_name=rdylgn&nodata=-1

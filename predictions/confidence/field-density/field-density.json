@@ -1,0 +1,445 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+  ],
+  "id": "field-density",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    84.0
+  ],
+  "properties": {
+    "title": "Field & boundary prediction density (500 m)",
+    "description": "Count of 10 m model pixels classified as field interior and field boundary within each 500 m cell (theoretical max 2500 = 50x50 pixels). Provided unfiltered, confidence-filtered at the default (conf >= 0.4) and conservative (conf >= 0.5) thresholds, a default 'filtered' product, and a single-band fields-only variant; a web-mercator 8-bit rendering is included for display. Use as a per-cell field-area weight or filterable density surface. See [Robinson et al. 2026](https://arxiv.org/abs/2605.11055). Temporal basis inferred as 2025; pending author confirmation.",
+    "datetime": null,
+    "start_datetime": "2024-01-01T00:00:00Z",
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "gsd": 500,
+    "ftw:temporal_basis": "inferred 2025 from paper; pending author confirmation"
+  },
+  "collection": "confidence",
+  "renders": {
+    "field_density": {
+      "title": "Field density (magenta \u2192 green)",
+      "assets": [
+        "fields_only"
+      ],
+      "bidx": [
+        1
+      ],
+      "rescale": [
+        [
+          0,
+          1500
+        ]
+      ],
+      "colormap_name": "ftw_density",
+      "nodata": 0
+    },
+    "boundary_density": {
+      "title": "Boundary density",
+      "assets": [
+        "field_boundary"
+      ],
+      "bidx": [
+        2
+      ],
+      "rescale": [
+        [
+          0,
+          800
+        ]
+      ],
+      "colormap_name": "magma",
+      "nodata": 0
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/field-density.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    }
+  ],
+  "assets": {
+    "field_boundary": {
+      "href": "./prue_v1_field_area_500m.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Field & boundary pixel count, unfiltered",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "field_pixel_count",
+          "description": "Count of field-interior 10 m pixels per 500 m cell",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 84.56096791376,
+            "stddev": 387.93864276868,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "boundary_pixel_count",
+          "description": "Count of field-boundary 10 m pixels per 500 m cell",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 21.894239087015,
+            "stddev": 134.66484549517,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "field_boundary_conf0.4": {
+      "href": "./prue_v1_field_area_500m_conf0.4.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Field & boundary pixel count, confidence >= 0.4 (default filter)",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "field_pixel_count_conf0.4",
+          "description": "Field-interior pixel count, cells with confidence >= 0.4",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 46.743914756074,
+            "stddev": 289.61083414742,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "boundary_pixel_count_conf0.4",
+          "description": "Field-boundary pixel count, cells with confidence >= 0.4",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2499.0,
+            "mean": 8.173604444632,
+            "stddev": 77.323621886308,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "field_boundary_conf0.5": {
+      "href": "./prue_v1_field_area_500m_conf0.5.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Field & boundary pixel count, confidence >= 0.5 (conservative)",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "field_pixel_count_conf0.5",
+          "description": "Field-interior pixel count, cells with confidence >= 0.5",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 38.893234112105,
+            "stddev": 272.60625712119,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "boundary_pixel_count_conf0.5",
+          "description": "Field-boundary pixel count, cells with confidence >= 0.5",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2499.0,
+            "mean": 6.4960202198002,
+            "stddev": 68.598410138578,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "field_boundary_filtered": {
+      "href": "./prue_v1_field_area_500m_filtered.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Field & boundary pixel count, default filtered",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "field_pixel_count_filtered",
+          "description": "Field-interior pixel count, default confidence-filtered (exact threshold pending author confirmation)",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 50.141616887097,
+            "stddev": 297.95149843814,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "boundary_pixel_count_filtered",
+          "description": "Field-boundary pixel count, default confidence-filtered (exact threshold pending author confirmation)",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 9.2349192493999,
+            "stddev": 82.781935542254,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "fields_only": {
+      "href": "./prue_v1_field_area_500m_fieldsonly.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Field pixel count only (single band)",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "field_pixel_count",
+          "description": "Count of field-interior 10 m pixels per 500 m cell",
+          "data_type": "uint16",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 2500.0,
+            "mean": 84.56096791376,
+            "stddev": 387.93864276868,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "visual": {
+      "href": "./prue_v1_field_area_500m_fieldsonly_uint8_3857.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Field density, 8-bit web-mercator (display)",
+      "roles": [
+        "visual",
+        "overview",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:3857",
+      "proj:shape": [
+        52268,
+        76990
+      ],
+      "proj:transform": [
+        520.5188593059848,
+        0.0,
+        -20037508.342789244,
+        0.0,
+        -520.5256202570208,
+        18807214.096747704,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -20037508.342789244,
+        -8399619.02284626,
+        20037238.635178532,
+        18807214.096747704
+      ],
+      "bands": [
+        {
+          "name": "field_density_uint8",
+          "description": "Field pixel count rescaled to 8-bit for web display",
+          "data_type": "uint8",
+          "nodata": 255.0,
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 200.0,
+            "mean": 5.165145509118789,
+            "stddev": 20.578715163965313
+          }
+        }
+      ]
+    },
+    "documentation": {
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide",
+      "roles": [
+        "documentation"
+      ]
+    }
+  }
+}

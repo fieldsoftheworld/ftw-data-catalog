@@ -1,0 +1,208 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+  ],
+  "id": "confidence",
+  "title": "FTW Global — Prediction Confidence & Quality Layers (500 m)",
+  "description": "Global 500 m raster layers that quantify the reliability of the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) global agricultural field-boundary predictions ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)), part of [Fields of the World](https://fieldsofthe.world). Derived from the full-resolution (10 m) model outputs on a common global grid (EPSG:4326, ~0.004167 deg/px, -180..180 lon, -60..84 lat; each 500 m cell ~ 50x50 of the 10 m pixels). Five products: a modeled confidence score; field & boundary prediction density (unfiltered and confidence-filtered); model entropy; an external cropland-consensus count; and precision/recall against that cropland consensus. These layers let users assess where the field predictions can be trusted and filter the vector dataset accordingly. Temporal coverage inferred as the 2025 prediction year from the [paper](https://arxiv.org/abs/2605.11055) (the cropland-consensus layer is year-independent); pending confirmation from the data authors.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agriculture",
+    "field boundaries",
+    "agricultural fields",
+    "cropland",
+    "confidence",
+    "uncertainty",
+    "quality",
+    "Sentinel-2",
+    "PRUE",
+    "Fields of the World",
+    "FTW",
+    "remote sensing",
+    "machine learning",
+    "global",
+    "500m"
+  ],
+  "providers": [
+    {
+      "name": "Microsoft AI for Good Research Lab",
+      "roles": ["producer", "processor"],
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    {
+      "name": "Taylor Geospatial Institute",
+      "roles": ["producer", "licensor"],
+      "url": "https://taylorgeospatial.org/"
+    },
+    {
+      "name": "Arizona State University",
+      "roles": ["producer"],
+      "url": "https://www.asu.edu/"
+    },
+    {
+      "name": "Washington University in St. Louis",
+      "roles": ["producer"],
+      "url": "https://wustl.edu/"
+    },
+    {
+      "name": "Oregon State University",
+      "roles": ["producer"],
+      "url": "https://oregonstate.edu/"
+    },
+    {
+      "name": "Clark University",
+      "roles": ["producer"],
+      "url": "https://www.clarku.edu/"
+    },
+    {
+      "name": "Source Cooperative",
+      "roles": ["host"],
+      "url": "https://source.coop/ftw/global-data"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [[-180.0, -60.0, 180.0, 84.0]]
+    },
+    "temporal": {
+      "interval": [["2024-01-01T00:00:00Z", "2025-12-31T23:59:59Z"]]
+    }
+  },
+  "summaries": {
+    "gsd": [500],
+    "proj:code": ["EPSG:4326", "EPSG:3857"]
+  },
+  "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tarano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
+  "sci:publications": [
+    {
+      "citation": "Robinson et al. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055."
+    },
+    {
+      "citation": "Muhawenayo, G., Robinson, C., Khanal, S., et al. (2026). PRUE: A Practical Recipe for Field Boundary Segmentation at Scale. arXiv:2603.27101."
+    }
+  ],
+  "renders": {
+    "confidence": {
+      "title": "Modeled confidence (red low to green high)",
+      "assets": ["data"],
+      "rescale": [[0, 0.578178]],
+      "colormap_name": "rdylgn",
+      "resampling": "bilinear",
+      "nodata": -1
+    },
+    "field_density": {
+      "title": "Field prediction density (magenta low to green high)",
+      "assets": ["fields_only"],
+      "rescale": [[0, 1500]],
+      "colormap_name": "ftw_density",
+      "resampling": "bilinear",
+      "nodata": 0
+    }
+  },
+  "item_assets": {
+    "data": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": ["data", "cloud-optimized"]
+    },
+    "visual": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": ["visual", "overview", "cloud-optimized"]
+    }
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "./thumbnail.png",
+      "type": "image/png",
+      "title": "Collection thumbnail",
+      "roles": ["thumbnail"]
+    },
+    "documentation": {
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide",
+      "roles": ["documentation"]
+    },
+    "README": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable README",
+      "roles": ["metadata"]
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World — Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World — Global"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://arxiv.org/abs/2605.11055",
+      "title": "The first global agricultural field boundary map at 10 m resolution (arXiv:2605.11055)"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "via",
+      "href": "https://data.source.coop/ftw/global-data/",
+      "type": "text/html",
+      "title": "Fields of the World — Global data product"
+    },
+    {
+      "rel": "item",
+      "href": "./confidence/confidence.json",
+      "type": "application/geo+json",
+      "title": "Modeled confidence layer (500 m)"
+    },
+    {
+      "rel": "item",
+      "href": "./field-density/field-density.json",
+      "type": "application/geo+json",
+      "title": "Field & boundary prediction density (500 m)"
+    },
+    {
+      "rel": "item",
+      "href": "./entropy/entropy.json",
+      "type": "application/geo+json",
+      "title": "Model entropy (500 m)"
+    },
+    {
+      "rel": "item",
+      "href": "./crop-consensus/crop-consensus.json",
+      "type": "application/geo+json",
+      "title": "Cropland consensus count (500 m)"
+    },
+    {
+      "rel": "item",
+      "href": "./precision-recall/precision-recall.json",
+      "type": "application/geo+json",
+      "title": "Precision & recall vs cropland agreement (500 m)"
+    }
+  ]
+}

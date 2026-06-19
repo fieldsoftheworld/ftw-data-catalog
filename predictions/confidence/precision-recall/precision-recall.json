@@ -1,0 +1,205 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+  ],
+  "id": "precision-recall",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    84.0
+  ],
+  "properties": {
+    "title": "Precision & recall vs cropland agreement (500 m)",
+    "description": "Per-cell precision and recall of the field predictions against the cropland-consensus agreement layer at two agreement thresholds. precision = |field & cropland| / |field|; recall = |field & cropland| / |cropland|, restricted to pixels within the cell. The 'gt1' bands use cropland agreement of >= 2 datasets and 'gt2' use >= 3 datasets (the k in {2,3} of [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)). Temporal basis inferred as 2025; pending author confirmation.",
+    "datetime": null,
+    "start_datetime": "2024-01-01T00:00:00Z",
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "gsd": 500,
+    "ftw:temporal_basis": "inferred 2025 from paper; pending author confirmation"
+  },
+  "collection": "confidence",
+  "renders": {
+    "precision_ge2": {
+      "title": "Precision (\u2265 2 datasets)",
+      "assets": [
+        "data"
+      ],
+      "bidx": [
+        1
+      ],
+      "rescale": [
+        [
+          0,
+          1
+        ]
+      ],
+      "colormap_name": "viridis"
+    },
+    "recall_ge2": {
+      "title": "Recall (\u2265 2 datasets)",
+      "assets": [
+        "data"
+      ],
+      "bidx": [
+        2
+      ],
+      "rescale": [
+        [
+          0,
+          1
+        ]
+      ],
+      "colormap_name": "viridis"
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/precision-recall/precision-recall.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./prue_v1_precision_recall_500m.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Precision & recall vs cropland agreement",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "precision_gt1",
+          "description": "Precision vs cropland agreement >= 2 datasets",
+          "data_type": "float32",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "mean": 0.040635573707956,
+            "stddev": 0.19393593507935,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "recall_gt1",
+          "description": "Recall vs cropland agreement >= 2 datasets",
+          "data_type": "float32",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "mean": 0.023868943392837,
+            "stddev": 0.12953297258795,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "precision_gt2",
+          "description": "Precision vs cropland agreement >= 3 datasets",
+          "data_type": "float32",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "mean": 0.035022059929268,
+            "stddev": 0.17939197950404,
+            "valid_percent": 100.0
+          }
+        },
+        {
+          "name": "recall_gt2",
+          "description": "Recall vs cropland agreement >= 3 datasets",
+          "data_type": "float32",
+          "statistics": {
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "mean": 0.022866959440877,
+            "stddev": 0.12774676287325,
+            "valid_percent": 100.0
+          }
+        }
+      ]
+    },
+    "documentation": {
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide",
+      "roles": [
+        "documentation"
+      ]
+    }
+  }
+}

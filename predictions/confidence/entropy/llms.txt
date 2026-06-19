@@ -1,0 +1,49 @@
+# Model entropy (500 m) — Fields of the World / PRUE
+
+Mean Shannon entropy of the PRUE softmax outputs across the 10 m pixels in each 500 m cell, computed separately for the field and field-boundary classes. A model-internal uncertainty indicator (higher = less certain) used as a feature of the confidence model. See the Methods (Quality indicator computation) of [Robinson et al. 2026](https://arxiv.org/abs/2605.11055). Temporal basis inferred as 2025; pending author confirmation.
+
+**Part of:** [FTW Global — Prediction Confidence & Quality Layers](../collection.json) · [Fields of the World](https://fieldsofthe.world)  
+**Paper:** [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)  
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
+**Temporal:** 2024-01-01 – 2025-12-31 (inferred 2025 from paper; pending author confirmation)
+
+## How to access
+
+Base URL: `https://data.source.coop/ftw/global-data/predictions/confidence/entropy/`  
+Common grid: EPSG:4326, 86400×34560 px, bbox [-180, -60, 180, 84], ~0.004167°/px (~500 m). All files are Cloud-Optimized GeoTIFFs (range-request friendly).
+
+| Asset | File | CRS | Bands | Size |
+|---|---|---|---|---|
+| `data` | `prue_v1_entropy_500m.tif` | EPSG:4326 | 2 | 2.2 GB |
+
+```python
+import rasterio
+url = "https://data.source.coop/ftw/global-data/predictions/confidence/entropy/prue_v1_entropy_500m.tif"
+with rasterio.open(url) as ds:   # COG: only the bytes you read are fetched
+    arr = ds.read(1, masked=True)   # add window=... to subset by bbox
+```
+
+Browser preview (titiler): `https://titiler.xyz/cog/preview.png?url=https://data.source.coop/ftw/global-data/predictions/confidence/entropy/prue_v1_entropy_500m.tif&rescale=0,20&colormap_name=magma&bidx=1`
+
+## Bands
+
+| Asset | Band | dtype | nodata | range (min–max) | Meaning |
+|---|---|---|---|---|---|
+| `data` | `mean_entropy_field` | float32 | — | 0 – 251 | Mean per-pixel Shannon entropy of the field class within the cell |
+| `data` | `mean_entropy_boundary` | float32 | — | 0 – 250 | Mean per-pixel Shannon entropy of the field-boundary class within the cell |
+
+## Notes
+
+- Stored values exceed the raw 3-class Shannon-entropy range (≈0–1.1), so treat the layer as a relative uncertainty indicator rather than entropy in nats; see the paper Methods.
+
+## Related layers
+
+- [Modeled confidence layer (500 m)](../confidence/confidence.json)
+- [Field & boundary prediction density (500 m)](../field-density/field-density.json)
+- [Cropland consensus count (500 m)](../crop-consensus/crop-consensus.json)
+- [Precision & recall vs cropland agreement (500 m)](../precision-recall/precision-recall.json)
+- Collection: [collection.json](../collection.json) · [README](../README.md)
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.

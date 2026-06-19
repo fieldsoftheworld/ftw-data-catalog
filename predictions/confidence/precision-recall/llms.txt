@@ -1,0 +1,52 @@
+# Precision & recall vs cropland agreement (500 m) — Fields of the World / PRUE
+
+Per-cell precision and recall of the field predictions against the cropland-consensus agreement layer at two agreement thresholds. precision = |field & cropland| / |field|; recall = |field & cropland| / |cropland|, restricted to pixels within the cell. The 'gt1' bands use cropland agreement of >= 2 datasets and 'gt2' use >= 3 datasets (the k in {2,3} of [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)). Temporal basis inferred as 2025; pending author confirmation.
+
+**Part of:** [FTW Global — Prediction Confidence & Quality Layers](../collection.json) · [Fields of the World](https://fieldsofthe.world)  
+**Paper:** [Robinson et al. 2026](https://arxiv.org/abs/2605.11055)  
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)  
+**Temporal:** 2024-01-01 – 2025-12-31 (inferred 2025 from paper; pending author confirmation)
+
+## How to access
+
+Base URL: `https://data.source.coop/ftw/global-data/predictions/confidence/precision-recall/`  
+Common grid: EPSG:4326, 86400×34560 px, bbox [-180, -60, 180, 84], ~0.004167°/px (~500 m). All files are Cloud-Optimized GeoTIFFs (range-request friendly).
+
+| Asset | File | CRS | Bands | Size |
+|---|---|---|---|---|
+| `data` | `prue_v1_precision_recall_500m.tif` | EPSG:4326 | 4 | 1.4 GB |
+
+```python
+import rasterio
+url = "https://data.source.coop/ftw/global-data/predictions/confidence/precision-recall/prue_v1_precision_recall_500m.tif"
+with rasterio.open(url) as ds:   # COG: only the bytes you read are fetched
+    arr = ds.read(1, masked=True)   # add window=... to subset by bbox
+```
+
+Browser preview (titiler): `https://titiler.xyz/cog/preview.png?url=https://data.source.coop/ftw/global-data/predictions/confidence/precision-recall/prue_v1_precision_recall_500m.tif&rescale=0,1&colormap_name=viridis&bidx=1`
+
+## Bands
+
+| Asset | Band | dtype | nodata | range (min–max) | Meaning |
+|---|---|---|---|---|---|
+| `data` | `precision_gt1` | float32 | — | 0 – 1 | Precision vs cropland agreement >= 2 datasets |
+| `data` | `recall_gt1` | float32 | — | 0 – 1 | Recall vs cropland agreement >= 2 datasets |
+| `data` | `precision_gt2` | float32 | — | 0 – 1 | Precision vs cropland agreement >= 3 datasets |
+| `data` | `recall_gt2` | float32 | — | 0 – 1 | Recall vs cropland agreement >= 3 datasets |
+
+## Notes
+
+- `*_gt1` bands use cropland agreement of ≥ 2 datasets; `*_gt2` use ≥ 3 (the paper's k∈{2,3}).
+- Measured against the cropland-consensus layer, not ground truth.
+
+## Related layers
+
+- [Modeled confidence layer (500 m)](../confidence/confidence.json)
+- [Field & boundary prediction density (500 m)](../field-density/field-density.json)
+- [Model entropy (500 m)](../entropy/entropy.json)
+- [Cropland consensus count (500 m)](../crop-consensus/crop-consensus.json)
+- Collection: [collection.json](../collection.json) · [README](../README.md)
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.

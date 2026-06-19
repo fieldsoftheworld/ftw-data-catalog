@@ -1,0 +1,201 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+  ],
+  "id": "confidence",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          -60.0
+        ],
+        [
+          180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          84.0
+        ],
+        [
+          -180.0,
+          -60.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    84.0
+  ],
+  "properties": {
+    "title": "Modeled confidence layer (500 m)",
+    "description": "Per-500 m-cell modeled confidence that the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) field predictions are reliable, from a Random Forest trained on model-internal quality indicators (entropy and prediction density) over the 24 [Fields of The World](https://fieldsofthe.world)-labelled countries, using only model-derived features and a cropland-consensus filter for negatives (leave-one-country-out mean AUC 0.842). Higher values indicate predictions whose statistical signature matches areas with ground-truth fields. Recommended default filter conf >= 0.4; conservative conf >= 0.5. Cell-level reliability, not a measure of individual-polygon geometric accuracy. Temporal basis inferred as 2025 from the [paper](https://arxiv.org/abs/2605.11055); pending author confirmation.",
+    "datetime": null,
+    "start_datetime": "2024-01-01T00:00:00Z",
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "gsd": 500,
+    "ftw:temporal_basis": "inferred 2025 from paper; pending author confirmation"
+  },
+  "collection": "confidence",
+  "renders": {
+    "confidence": {
+      "title": "Confidence (red \u2192 green)",
+      "assets": [
+        "data"
+      ],
+      "bidx": [
+        1
+      ],
+      "rescale": [
+        [
+          0,
+          0.578178
+        ]
+      ],
+      "colormap_name": "rdylgn",
+      "nodata": -1
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/confidence.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "./prue_v1_confidence_global.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Confidence score (EPSG:4326, float32)",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:4326",
+      "proj:shape": [
+        34560,
+        86400
+      ],
+      "proj:transform": [
+        0.004166666666666667,
+        0.0,
+        -180.0,
+        0.0,
+        -0.004166666666666667,
+        84.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        84.0
+      ],
+      "bands": [
+        {
+          "name": "confidence",
+          "description": "Modeled confidence score (0 to ~0.578)",
+          "data_type": "float32",
+          "nodata": -1.0,
+          "statistics": {
+            "minimum": 0.023898314684629,
+            "maximum": 0.63323718309402,
+            "mean": 0.3426969724832,
+            "stddev": 0.17432957987363,
+            "valid_percent": 7.192
+          }
+        }
+      ]
+    },
+    "visual": {
+      "href": "./prue_v1_confidence_global_uint8_3857.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Confidence score, 8-bit web-mercator (display)",
+      "roles": [
+        "visual",
+        "overview",
+        "cloud-optimized"
+      ],
+      "proj:code": "EPSG:3857",
+      "proj:shape": [
+        52268,
+        76990
+      ],
+      "proj:transform": [
+        520.5188593059848,
+        0.0,
+        -20037508.342789244,
+        0.0,
+        -520.5256202570208,
+        18807214.096747704,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "proj:bbox": [
+        -20037508.342789244,
+        -8399619.02284626,
+        20037238.635178532,
+        18807214.096747704
+      ],
+      "bands": [
+        {
+          "name": "confidence_uint8",
+          "description": "Confidence rescaled to 8-bit for web display",
+          "data_type": "uint8",
+          "nodata": 255.0,
+          "statistics": {
+            "minimum": 6.0,
+            "maximum": 114.0,
+            "mean": 39.11214814764915,
+            "stddev": 23.582517091367556
+          }
+        }
+      ]
+    },
+    "documentation": {
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide",
+      "roles": [
+        "documentation"
+      ]
+    }
+  }
+}
