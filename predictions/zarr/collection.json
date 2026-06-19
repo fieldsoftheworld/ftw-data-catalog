@@ -1,0 +1,81 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "id": "predictions-zarr",
+  "title": "FTW Global — Predictions (Zarr)",
+  "description": "PRUE model output probabilities (non_field_background, field, field_boundaries) on the global grid as a Zarr store. SCAFFOLD: metadata pending.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agriculture",
+    "field boundaries",
+    "Fields of the World",
+    "FTW",
+    "global"
+  ],
+  "providers": [
+    {
+      "name": "Taylor Geospatial Institute",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://taylorgeospatial.org/"
+    },
+    {
+      "name": "Microsoft AI for Good Research Lab",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          84.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "assets": {
+    "data": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr",
+      "type": "application/vnd+zarr",
+      "title": "Prediction probabilities (Zarr)",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World — Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
+      "type": "application/json"
+    }
+  ]
+}
