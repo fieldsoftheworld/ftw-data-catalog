@@ -14,6 +14,11 @@ Nothing here is a package — each script is run directly (`python3 scripts/x.py
 `bash scripts/x.sh`) and is `argparse`/env-parameterized. Most are resumable
 (skip-existing). Source-bucket reads are anonymous; writes use default AWS creds.
 
+These are currently a bit more of a record of the various learnings to process the data, 
+and in that process we improved geoparquet-io a lot.  When we get a 1.1 release of 
+predictions with smoother boundaries and other improvements we should consolidate these
+into a much cleaner / smaller set of scripts.
+
 ## End-to-end pipeline
 
 ```
@@ -50,8 +55,6 @@ predictions zarr ──(Wherobots, not yet scripted here)──▶ results/  (sn
 | `ftw_fiboa_improve.py` | `gpio fiboa improve` on stage-1 output: adds fiboa schemas, geometry metrics (`metrics:area`/`perimeter`), and `determination:*` columns. Deletes each input after success. | `python3 scripts/ftw_fiboa_improve.py [--parallel P] [--keep-input]` |
 | `ftw_upload_and_clean.sh` | `aws s3 cp` the improved files to `…/results-fiboa/`, `rm` on success. | `bash scripts/ftw_upload_and_clean.sh` |
 
-(An older all-in-one DuckDB variant, `convert_ftw_global.py`, lives in
-`~/repos/ftw-scripts`; it also does the Overture admin join in one pass.)
 
 ### A2 — fiboa → admin-partitioned  (the one-time run that built `results-by-admin/`)
 | Script | Does |
