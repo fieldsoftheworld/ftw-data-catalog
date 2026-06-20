@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Saint_Martin_French_part.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Saint_Martin_French_part field boundaries (PMTiles)",
+      "title": "Saint_Martin_French_part field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Saint_Martin_French_part.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

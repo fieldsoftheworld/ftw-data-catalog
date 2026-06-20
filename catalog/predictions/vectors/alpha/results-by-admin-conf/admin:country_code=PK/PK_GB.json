@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./PK_GB.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Pakistan \u2014 Gilgit-Baltistan field boundaries (PMTiles)",
+      "title": "Pakistan \u2014 Gilgit-Baltistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./PK_GB.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

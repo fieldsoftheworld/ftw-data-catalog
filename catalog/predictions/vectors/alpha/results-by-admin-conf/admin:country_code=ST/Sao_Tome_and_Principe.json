@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Sao_Tome_and_Principe.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Sao_Tome_and_Principe field boundaries (PMTiles)",
+      "title": "Sao_Tome_and_Principe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Sao_Tome_and_Principe.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

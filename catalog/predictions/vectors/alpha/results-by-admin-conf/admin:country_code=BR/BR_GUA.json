@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./BR_GUA.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "BR_GUA field boundaries (PMTiles)",
+      "title": "BR_GUA field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./BR_GUA.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

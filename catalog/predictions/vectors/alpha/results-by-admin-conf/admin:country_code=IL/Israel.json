@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Israel.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Israel field boundaries (PMTiles)",
+      "title": "Israel field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Israel.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Mauritania.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Mauritania field boundaries (PMTiles)",
+      "title": "Mauritania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Mauritania.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

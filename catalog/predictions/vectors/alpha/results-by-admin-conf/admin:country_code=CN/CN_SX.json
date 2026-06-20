@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./CN_SX.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "China \u2014 Shanxi Sheng field boundaries (PMTiles)",
+      "title": "China \u2014 Shanxi Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./CN_SX.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./South_Africa.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "South_Africa field boundaries (PMTiles)",
+      "title": "South_Africa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./South_Africa.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

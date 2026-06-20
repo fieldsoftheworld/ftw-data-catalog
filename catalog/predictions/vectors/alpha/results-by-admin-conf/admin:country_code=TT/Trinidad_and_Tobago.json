@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Trinidad_and_Tobago.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Trinidad_and_Tobago field boundaries (PMTiles)",
+      "title": "Trinidad_and_Tobago field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Trinidad_and_Tobago.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

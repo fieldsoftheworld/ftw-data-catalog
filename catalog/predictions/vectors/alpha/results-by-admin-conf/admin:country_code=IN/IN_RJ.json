@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./IN_RJ.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "India \u2014 R\u0101jasth\u0101n field boundaries (PMTiles)",
+      "title": "India \u2014 R\u0101jasth\u0101n field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./IN_RJ.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

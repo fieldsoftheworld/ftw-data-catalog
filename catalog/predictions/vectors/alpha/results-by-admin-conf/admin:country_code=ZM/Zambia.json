@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Zambia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Zambia field boundaries (PMTiles)",
+      "title": "Zambia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Zambia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

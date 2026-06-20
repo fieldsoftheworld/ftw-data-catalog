@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Sri_Lanka.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Sri_Lanka field boundaries (PMTiles)",
+      "title": "Sri_Lanka field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Sri_Lanka.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

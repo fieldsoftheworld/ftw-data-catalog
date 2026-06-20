@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Costa_Rica.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Costa_Rica field boundaries (PMTiles)",
+      "title": "Costa_Rica field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Costa_Rica.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

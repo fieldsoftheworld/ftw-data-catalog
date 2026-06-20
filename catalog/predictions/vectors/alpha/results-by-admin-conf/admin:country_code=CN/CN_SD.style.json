@@ -1,0 +1,234 @@
+{
+  "version": 8,
+  "name": "CN_SD field boundaries by confidence (year layers)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Confidence (0\u2013100)",
+      "unit": "%",
+      "type": "ramp"
+    },
+    "description": "Per-year field boundaries for CN_SD; one year layer visible at a time (default 2025). Colored by confidence (0\u2013100, red\u2192green), filtered to confidence >= 69."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://./CN_SD.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "confidence-legend",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2025",
+      "paint": {
+        "fill-color": [
+          "step",
+          [
+            "get",
+            "confidence"
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "fill-opacity": 0
+      }
+    },
+    {
+      "id": "fields-2024-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2024",
+      "layout": {
+        "visibility": "none"
+      },
+      "filter": [
+        "all",
+        [
+          "has",
+          "confidence"
+        ],
+        [
+          ">=",
+          [
+            "get",
+            "confidence"
+          ],
+          69
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "confidence"
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "fields-2024-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "2024",
+      "layout": {
+        "visibility": "none"
+      },
+      "filter": [
+        "all",
+        [
+          "has",
+          "confidence"
+        ],
+        [
+          ">=",
+          [
+            "get",
+            "confidence"
+          ],
+          69
+        ]
+      ],
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "confidence"
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "fields-2025-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2025",
+      "layout": {
+        "visibility": "visible"
+      },
+      "filter": [
+        "all",
+        [
+          "has",
+          "confidence"
+        ],
+        [
+          ">=",
+          [
+            "get",
+            "confidence"
+          ],
+          69
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "confidence"
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "fields-2025-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "2025",
+      "layout": {
+        "visibility": "visible"
+      },
+      "filter": [
+        "all",
+        [
+          "has",
+          "confidence"
+        ],
+        [
+          ">=",
+          [
+            "get",
+            "confidence"
+          ],
+          69
+        ]
+      ],
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "confidence"
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

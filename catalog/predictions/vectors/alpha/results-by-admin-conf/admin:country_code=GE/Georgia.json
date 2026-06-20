@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Georgia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Georgia field boundaries (PMTiles)",
+      "title": "Georgia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Georgia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

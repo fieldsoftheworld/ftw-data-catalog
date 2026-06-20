@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Malta.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Malta field boundaries (PMTiles)",
+      "title": "Malta field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Malta.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

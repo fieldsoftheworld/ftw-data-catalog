@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./IN_GA.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "India \u2014 Goa field boundaries (PMTiles)",
+      "title": "India \u2014 Goa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./IN_GA.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./IN_E.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "IN_E field boundaries (PMTiles)",
+      "title": "IN_E field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./IN_E.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

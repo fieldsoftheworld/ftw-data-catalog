@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Armenia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Armenia field boundaries (PMTiles)",
+      "title": "Armenia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Armenia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

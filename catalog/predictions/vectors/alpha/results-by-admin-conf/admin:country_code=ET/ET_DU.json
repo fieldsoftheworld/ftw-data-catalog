@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./ET_DU.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "ET_DU field boundaries (PMTiles)",
+      "title": "ET_DU field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./ET_DU.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

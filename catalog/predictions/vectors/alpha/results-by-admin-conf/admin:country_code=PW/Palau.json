@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Palau.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Palau field boundaries (PMTiles)",
+      "title": "Palau field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Palau.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Burundi.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Burundi field boundaries (PMTiles)",
+      "title": "Burundi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Burundi.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

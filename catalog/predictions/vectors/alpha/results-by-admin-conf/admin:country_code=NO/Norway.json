@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Norway.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Norway field boundaries (PMTiles)",
+      "title": "Norway field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Norway.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

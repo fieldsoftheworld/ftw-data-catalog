@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Guinea-Bissau.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Guinea-Bissau field boundaries (PMTiles)",
+      "title": "Guinea-Bissau field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Guinea-Bissau.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

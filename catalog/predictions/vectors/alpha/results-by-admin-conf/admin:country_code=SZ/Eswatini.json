@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Eswatini.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Eswatini field boundaries (PMTiles)",
+      "title": "Eswatini field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Eswatini.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

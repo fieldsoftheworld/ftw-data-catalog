@@ -26,8 +26,8 @@ def stac_files():
     candidates = [CATALOG / "catalog.json", *CATALOG.glob("**/collection.json"),
                   *CATALOG.glob("**/*/*.json")]
     for p in candidates:
-        if ".portolan" in p.parts or "styles" in p.parts:
-            continue  # styles/*.json are MapLibre styles, not STAC objects
+        if ".portolan" in p.parts or "styles" in p.parts or p.name.endswith(".style.json"):
+            continue  # MapLibre styles (styles/*.json and *.style.json) are not STAC
         if p.is_file() and p not in seen:
             seen.add(p)
             out.append(p)

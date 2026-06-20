@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./US_ME.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "United States \u2014 Maine field boundaries (PMTiles)",
+      "title": "United States \u2014 Maine field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./US_ME.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

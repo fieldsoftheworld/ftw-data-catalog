@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Slovakia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Slovakia field boundaries (PMTiles)",
+      "title": "Slovakia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Slovakia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

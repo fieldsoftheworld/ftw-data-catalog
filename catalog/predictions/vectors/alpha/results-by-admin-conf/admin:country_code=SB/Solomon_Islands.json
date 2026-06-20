@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Solomon_Islands.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Solomon_Islands field boundaries (PMTiles)",
+      "title": "Solomon_Islands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Solomon_Islands.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

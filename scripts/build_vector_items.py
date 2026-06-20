@@ -118,6 +118,46 @@ def title_for(stem, country_code):
     return _country_name(country_code)
 
 
+# Confidence ramp (0-100 scale, as stored in the per-country PMTiles `confidence`).
+_RAMP = [0, "#d7191c", 70, "#fec379", 80, "#f3fabb", 90, "#cfecb0", 100, "#33a02c"]
+_FILTER = ["all", ["has", "confidence"], [">=", ["get", "confidence"], 69]]
+
+
+def item_style(stem, years=("2024", "2025"), default_year="2025"):
+    """A MapLibre style for one item's PMTiles: a layer per year, with only the
+    default year visible (toggle the other on in the viewer). Colored by the
+    0-100 confidence (red->green), filtered to the recommended >= 69, with a
+    legend layer."""
+    src = {"data": {"type": "vector", "url": f"pmtiles://./{stem}.pmtiles"}}
+    color = ["interpolate", ["linear"], ["get", "confidence"], *_RAMP]
+    layers = [{
+        "id": "confidence-legend", "type": "fill", "source": "data",
+        "source-layer": default_year,
+        "paint": {"fill-color": ["step", ["get", "confidence"], *_RAMP], "fill-opacity": 0},
+    }]
+    for y in years:
+        vis = "visible" if y == default_year else "none"
+        layers.append({
+            "id": f"fields-{y}-fill", "type": "fill", "source": "data",
+            "source-layer": y, "layout": {"visibility": vis}, "filter": _FILTER,
+            "paint": {"fill-color": color, "fill-opacity": 0.5}})
+        layers.append({
+            "id": f"fields-{y}-outline", "type": "line", "source": "data",
+            "source-layer": y, "layout": {"visibility": vis}, "filter": _FILTER,
+            "paint": {"line-color": color, "line-width": 1}})
+    return {
+        "version": 8,
+        "name": f"{stem} field boundaries by confidence (year layers)",
+        "metadata": {
+            "portolan:legend": {"title": "Confidence (0–100)", "unit": "%", "type": "ramp"},
+            "description": (f"Per-year field boundaries for {stem}; one year layer "
+                            f"visible at a time (default {default_year}). Colored by "
+                            "confidence (0–100, red→green), filtered to confidence >= 69.")},
+        "sources": src,
+        "layers": layers,
+    }
+
+
 def build_item(stem, country_code, bbox, feature_count, is_split=False):
     coll_up = "../../../"          # item dir -> collection dir
     root_up = "../../../../../"    # item dir -> catalog root
@@ -155,8 +195,14 @@ def build_item(stem, country_code, bbox, feature_count, is_split=False):
             "pmtiles": {
                 "href": f"./{stem}.pmtiles",
                 "type": "application/vnd.pmtiles",
-                "title": f"{title_for(stem, country_code)} field boundaries (PMTiles)",
+                "title": f"{title_for(stem, country_code)} field boundaries (PMTiles, 2024/2025 layers)",
                 "roles": ["visual"],
+            },
+            "style": {
+                "href": f"./{stem}.style.json",
+                "type": "application/json",
+                "title": "MapLibre style — confidence, one year layer at a time",
+                "roles": ["style"],
             },
         },
         "links": [
@@ -355,6 +401,7 @@ def main(argv=None) -> int:
             bbox, count = _parquet_meta(cc, fname)
             item = build_item(stem, cc, bbox, count, is_split=is_split)
             (cdir / f"{stem}.json").write_text(json.dumps(item, indent=2))
+            (cdir / f"{stem}.style.json").write_text(json.dumps(item_style(stem), indent=2))
             n_items += 1
             if not is_split:
                 item_links.append((stem, cc))

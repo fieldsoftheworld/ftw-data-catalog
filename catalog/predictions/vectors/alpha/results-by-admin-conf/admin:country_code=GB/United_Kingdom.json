@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./United_Kingdom.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "United_Kingdom field boundaries (PMTiles)",
+      "title": "United_Kingdom field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./United_Kingdom.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

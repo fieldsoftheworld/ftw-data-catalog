@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Sint_Maarten_Dutch_part.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Sint_Maarten_Dutch_part field boundaries (PMTiles)",
+      "title": "Sint_Maarten_Dutch_part field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Sint_Maarten_Dutch_part.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

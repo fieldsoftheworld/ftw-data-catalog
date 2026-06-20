@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./US_NB.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "US_NB field boundaries (PMTiles)",
+      "title": "US_NB field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./US_NB.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

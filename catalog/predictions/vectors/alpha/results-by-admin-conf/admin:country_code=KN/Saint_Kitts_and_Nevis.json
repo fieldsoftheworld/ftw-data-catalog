@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Saint_Kitts_and_Nevis.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Saint_Kitts_and_Nevis field boundaries (PMTiles)",
+      "title": "Saint_Kitts_and_Nevis field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Saint_Kitts_and_Nevis.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Kuwait.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Kuwait field boundaries (PMTiles)",
+      "title": "Kuwait field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Kuwait.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

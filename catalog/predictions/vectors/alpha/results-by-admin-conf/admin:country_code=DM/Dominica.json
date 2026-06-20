@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Dominica.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Dominica field boundaries (PMTiles)",
+      "title": "Dominica field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Dominica.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

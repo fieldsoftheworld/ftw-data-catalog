@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Singapore.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Singapore field boundaries (PMTiles)",
+      "title": "Singapore field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Singapore.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

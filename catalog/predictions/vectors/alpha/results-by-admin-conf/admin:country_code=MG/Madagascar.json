@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Madagascar.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Madagascar field boundaries (PMTiles)",
+      "title": "Madagascar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Madagascar.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

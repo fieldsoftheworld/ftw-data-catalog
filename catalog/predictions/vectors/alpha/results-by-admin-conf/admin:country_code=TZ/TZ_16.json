@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./TZ_16.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Tanzania, United Republic of \u2014 Morogoro field boundaries (PMTiles)",
+      "title": "Tanzania, United Republic of \u2014 Morogoro field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./TZ_16.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./BR_PA.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Brazil \u2014 Par\u00e1 field boundaries (PMTiles)",
+      "title": "Brazil \u2014 Par\u00e1 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./BR_PA.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

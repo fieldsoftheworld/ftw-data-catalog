@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./NG_EK.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Nigeria \u2014 Ekiti field boundaries (PMTiles)",
+      "title": "Nigeria \u2014 Ekiti field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./NG_EK.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

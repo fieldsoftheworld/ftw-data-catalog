@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Indonesia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Indonesia field boundaries (PMTiles)",
+      "title": "Indonesia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Indonesia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

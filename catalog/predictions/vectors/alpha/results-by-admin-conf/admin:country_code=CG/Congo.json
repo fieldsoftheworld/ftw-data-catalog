@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Congo.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Congo field boundaries (PMTiles)",
+      "title": "Congo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Congo.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Central_African_Republic.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Central_African_Republic field boundaries (PMTiles)",
+      "title": "Central_African_Republic field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Central_African_Republic.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./United_Arab_Emirates.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "United_Arab_Emirates field boundaries (PMTiles)",
+      "title": "United_Arab_Emirates field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./United_Arab_Emirates.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

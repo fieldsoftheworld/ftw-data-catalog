@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Saint_Vincent_and_the_Grenadines.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Saint_Vincent_and_the_Grenadines field boundaries (PMTiles)",
+      "title": "Saint_Vincent_and_the_Grenadines field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Saint_Vincent_and_the_Grenadines.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

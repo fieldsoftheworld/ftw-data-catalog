@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Peru.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Peru field boundaries (PMTiles)",
+      "title": "Peru field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Peru.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

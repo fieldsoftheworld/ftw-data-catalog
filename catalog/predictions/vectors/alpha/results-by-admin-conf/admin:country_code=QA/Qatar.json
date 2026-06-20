@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Qatar.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Qatar field boundaries (PMTiles)",
+      "title": "Qatar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Qatar.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

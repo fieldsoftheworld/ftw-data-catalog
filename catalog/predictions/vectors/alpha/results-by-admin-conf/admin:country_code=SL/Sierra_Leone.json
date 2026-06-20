@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Sierra_Leone.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Sierra_Leone field boundaries (PMTiles)",
+      "title": "Sierra_Leone field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Sierra_Leone.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

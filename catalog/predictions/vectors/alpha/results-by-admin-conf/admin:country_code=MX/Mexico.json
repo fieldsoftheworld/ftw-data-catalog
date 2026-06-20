@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Mexico.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Mexico field boundaries (PMTiles)",
+      "title": "Mexico field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Mexico.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

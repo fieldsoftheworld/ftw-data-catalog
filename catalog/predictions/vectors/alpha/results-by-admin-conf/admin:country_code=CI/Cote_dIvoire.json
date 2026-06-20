@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Cote_dIvoire.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Cote_dIvoire field boundaries (PMTiles)",
+      "title": "Cote_dIvoire field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Cote_dIvoire.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

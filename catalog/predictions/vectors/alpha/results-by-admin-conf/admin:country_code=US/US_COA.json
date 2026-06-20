@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./US_COA.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "US_COA field boundaries (PMTiles)",
+      "title": "US_COA field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./US_COA.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

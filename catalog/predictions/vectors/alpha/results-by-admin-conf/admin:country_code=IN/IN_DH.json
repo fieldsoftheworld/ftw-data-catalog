@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./IN_DH.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu field boundaries (PMTiles)",
+      "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./IN_DH.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

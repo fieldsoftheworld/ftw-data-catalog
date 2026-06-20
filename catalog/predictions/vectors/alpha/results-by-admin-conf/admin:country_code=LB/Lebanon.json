@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Lebanon.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Lebanon field boundaries (PMTiles)",
+      "title": "Lebanon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Lebanon.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

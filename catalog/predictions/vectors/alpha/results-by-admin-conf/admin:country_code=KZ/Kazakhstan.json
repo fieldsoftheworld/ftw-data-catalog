@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Kazakhstan.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Kazakhstan field boundaries (PMTiles)",
+      "title": "Kazakhstan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Kazakhstan.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

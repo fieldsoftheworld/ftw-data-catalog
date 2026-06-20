@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Mali.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Mali field boundaries (PMTiles)",
+      "title": "Mali field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Mali.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

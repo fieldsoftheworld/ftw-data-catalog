@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./TZ_C.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "TZ_C field boundaries (PMTiles)",
+      "title": "TZ_C field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./TZ_C.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

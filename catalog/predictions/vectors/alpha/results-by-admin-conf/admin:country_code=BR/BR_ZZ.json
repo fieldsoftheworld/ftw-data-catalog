@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./BR_ZZ.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "BR_ZZ field boundaries (PMTiles)",
+      "title": "BR_ZZ field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./BR_ZZ.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

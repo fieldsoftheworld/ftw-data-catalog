@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./IN_JK.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "India \u2014 Jammu and Kashm\u012br field boundaries (PMTiles)",
+      "title": "India \u2014 Jammu and Kashm\u012br field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./IN_JK.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

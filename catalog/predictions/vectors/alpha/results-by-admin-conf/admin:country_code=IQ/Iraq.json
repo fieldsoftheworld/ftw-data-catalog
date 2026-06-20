@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Iraq.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Iraq field boundaries (PMTiles)",
+      "title": "Iraq field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Iraq.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

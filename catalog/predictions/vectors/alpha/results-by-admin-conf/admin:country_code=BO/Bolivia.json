@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Bolivia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Bolivia, Plurinational State of field boundaries (PMTiles)",
+      "title": "Bolivia, Plurinational State of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Bolivia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

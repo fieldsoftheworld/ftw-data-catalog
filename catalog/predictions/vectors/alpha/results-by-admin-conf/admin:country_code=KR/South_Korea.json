@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./South_Korea.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "South_Korea field boundaries (PMTiles)",
+      "title": "South_Korea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./South_Korea.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

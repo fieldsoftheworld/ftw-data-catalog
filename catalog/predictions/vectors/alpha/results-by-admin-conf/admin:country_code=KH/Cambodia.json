@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Cambodia.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Cambodia field boundaries (PMTiles)",
+      "title": "Cambodia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Cambodia.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

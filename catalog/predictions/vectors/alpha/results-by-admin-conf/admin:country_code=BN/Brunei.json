@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Brunei.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Brunei Darussalam field boundaries (PMTiles)",
+      "title": "Brunei Darussalam field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Brunei.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

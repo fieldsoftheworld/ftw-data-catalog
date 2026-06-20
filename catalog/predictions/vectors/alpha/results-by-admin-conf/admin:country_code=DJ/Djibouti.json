@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Djibouti.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Djibouti field boundaries (PMTiles)",
+      "title": "Djibouti field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Djibouti.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

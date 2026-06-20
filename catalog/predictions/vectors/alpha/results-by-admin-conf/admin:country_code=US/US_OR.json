@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./US_OR.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "United States \u2014 Oregon field boundaries (PMTiles)",
+      "title": "United States \u2014 Oregon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./US_OR.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

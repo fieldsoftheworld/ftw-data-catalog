@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./Libya.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "Libya field boundaries (PMTiles)",
+      "title": "Libya field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./Libya.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },

@@ -63,9 +63,17 @@
     "pmtiles": {
       "href": "./PK_RJ.pmtiles",
       "type": "application/vnd.pmtiles",
-      "title": "PK_RJ field boundaries (PMTiles)",
+      "title": "PK_RJ field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
+      ]
+    },
+    "style": {
+      "href": "./PK_RJ.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "roles": [
+        "style"
       ]
     }
   },
