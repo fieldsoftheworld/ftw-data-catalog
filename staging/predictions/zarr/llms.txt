@@ -1,0 +1,38 @@
+# FTW Global — Field Prediction Probabilities (Zarr)
+
+PRUE model (https://huggingface.co/wherobots/prue-pt2) per-pixel class probabilities
+over the FTW global Sentinel-2 feature mosaics, as one cloud-native Zarr V3 datacube.
+Part of Fields of the World; paper: https://aka.ms/ftw-global-paper.
+
+## Store
+- Location: https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr
+- Format: Zarr V3, CF-1.8, EPSG:4326 (WGS84), GeoZarr-style (`proj:`/`spatial:` conventions).
+- Dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, variable `variables`
+  is float32 softmax probability, chunks `(1, 3, 8192, 8192)`, NaN fill.
+
+## Dimensions
+- `time` (2): 2024, 2025 — CF "days since 2024-01-01".
+- `band` (3): `non_field_background`, `field`, `field_boundaries`.
+- `y` (1,566,049): latitude, ~10 m (8.983119e-5°), 83.748345 → −56.9317.
+- `x` (4,007,517): longitude, ~10 m, −180 → 180.
+
+## Relationships
+- Same grid as `features/zarr` (stackable: open both with xarray/rasterix).
+- The `vectors` (polygons) and `confidence` (raster) collections are derived from these
+  probabilities.
+
+## Status
+GeoZarr-style but multiscales/overviews are NOT yet implemented, so it is not yet
+web-viewable (tiles). Work in progress. Consume analytically for now.
+
+## Access (xarray)
+    import xarray as xr, rasterix
+    ds = xr.open_zarr(
+        "https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr"
+    ).pipe(rasterix.assign_index)
+    field_2024 = ds["variables"].sel(time="2024-01-01", band="field")
+
+## Caveats
+- ~10 m global float32 cube (≈37 trillion values) — always subset by time/band/bbox;
+  never load whole. Probabilities are softmax (sum≈1 across the 3 bands per pixel).
+- License: CC-BY-4.0 (Taylor Geospatial Institute; Microsoft AI for Good Research Lab).

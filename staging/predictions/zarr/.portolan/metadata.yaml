@@ -1,5 +1,58 @@
+# .portolan/metadata.yaml — FTW Global field prediction probabilities (Zarr)
+
+title: "FTW Global — Field Prediction Probabilities (Zarr)"
+
 contact:
-  name: ""
-  email: ""
+  name: "Fields of the World — Taylor Geospatial"
+  email: "isaac.corley@taylorgeospatial.org"
+
 license: "CC-BY-4.0"
 license_url: "https://creativecommons.org/licenses/by/4.0/"
+
+citation: >-
+  Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M.,
+  Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M.
+  (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.
+
+keywords:
+  - agriculture
+  - field boundaries
+  - PRUE
+  - predictions
+  - probabilities
+  - Zarr
+  - GeoZarr
+  - datacube
+  - Sentinel-2
+  - 10m
+  - global
+
+attribution: "Fields of the World / PRUE (Robinson et al. 2026), CC-BY-4.0"
+source_url: "https://source.coop/ftw/global-data"
+
+processing_notes: >-
+  PRUE model (https://huggingface.co/wherobots/prue-pt2) run over the FTW global
+  Sentinel-2 feature mosaics (features/zarr), producing per-pixel softmax probabilities for
+  three classes (non_field_background, field, field_boundaries) at ~10 m (8.983119e-5°) on a
+  global EPSG:4326 grid for 2024 and 2025. Stored as a Zarr V3 datacube with dimensions
+  (time, band, y, x) = (2, 3, 1566049, 4007517), float32, chunks (1, 3, 8192, 8192), CF-1.8,
+  using the emerging Zarr proj:/spatial: geo-conventions. Shares the features/zarr grid (stackable).
+  The vectors and confidence collections are derived from these probabilities.
+
+known_issues: >-
+  GeoZarr-style but multiscales/overviews are NOT yet implemented, so the store is not yet
+  web-viewable as map tiles (work in progress); consume analytically with xarray/Zarr. Probabilities
+  are softmax (sum ~1 across the three bands per pixel). The full ~10 m global float32 cube is very
+  large — always subset by time/band/bbox; never load the whole array.
+
+examples:
+  - engine: python
+    description: "Open lazily with xarray and read a small window of 2024 field probability"
+    code: |
+      import xarray as xr, rasterix
+      ds = xr.open_zarr(
+          "https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr"
+      ).pipe(rasterix.assign_index)
+      field_2024 = ds["variables"].sel(time="2024-01-01", band="field")
+      aoi = field_2024.sel(x=slice(2.0, 3.0), y=slice(48.5, 47.5))  # Beauce, France
+      print(aoi.shape)

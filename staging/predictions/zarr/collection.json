@@ -1,63 +1,122 @@
 {
   "type": "Collection",
   "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "id": "predictions-zarr",
-  "title": "FTW Global — Predictions (Zarr)",
-  "description": "PRUE model output probabilities (non_field_background, field, field_boundaries) on the global grid as a Zarr store. SCAFFOLD: metadata pending.",
+  "title": "FTW Global — Field Prediction Probabilities (Zarr)",
+  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands — `non_field_background`, `field`, `field_boundaries` — at ~10 m (`8.983119e-5°`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) but **does not yet implement multiscales/overviews, so it is not yet web-viewable** — that work is in progress. For now it is best consumed analytically (xarray/Zarr), not as map tiles.",
   "license": "CC-BY-4.0",
   "keywords": [
     "agriculture",
     "field boundaries",
+    "cropland",
     "Fields of the World",
     "FTW",
+    "PRUE",
+    "predictions",
+    "probabilities",
+    "Zarr",
+    "GeoZarr",
+    "datacube",
+    "Sentinel-2",
+    "deep learning",
+    "10m",
     "global"
   ],
   "providers": [
     {
       "name": "Taylor Geospatial Institute",
-      "roles": [
-        "producer",
-        "licensor"
-      ],
+      "roles": ["producer", "licensor"],
       "url": "https://taylorgeospatial.org/"
     },
     {
       "name": "Microsoft AI for Good Research Lab",
-      "roles": [
-        "producer",
-        "processor"
-      ],
+      "roles": ["producer", "processor"],
       "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
     }
   ],
   "extent": {
     "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -60.0,
-          180.0,
-          84.0
-        ]
-      ]
+      "bbox": [[-180.0, -56.93171310991181, 180.00005391686943, 83.748345]]
     },
     "temporal": {
-      "interval": [
-        [
-          "2024-01-01T00:00:00Z",
-          "2025-12-31T23:59:59Z"
-        ]
-      ]
+      "interval": [["2024-01-01T00:00:00Z", "2025-12-31T23:59:59Z"]]
     }
   },
+  "summaries": {
+    "proj:code": ["EPSG:4326"],
+    "gsd": [10]
+  },
+  "cube:dimensions": {
+    "time": {
+      "type": "temporal",
+      "description": "Prediction year (CF time: days since 2024-01-01).",
+      "extent": ["2024-01-01T00:00:00Z", "2025-01-01T00:00:00Z"],
+      "values": ["2024-01-01T00:00:00Z", "2025-01-01T00:00:00Z"]
+    },
+    "band": {
+      "type": "bands",
+      "description": "PRUE softmax output classes.",
+      "values": ["non_field_background", "field", "field_boundaries"]
+    },
+    "x": {
+      "type": "spatial",
+      "axis": "x",
+      "description": "Longitude (degrees east).",
+      "extent": [-180.0, 180.00005391686943],
+      "step": 8.98311982e-05,
+      "reference_system": 4326
+    },
+    "y": {
+      "type": "spatial",
+      "axis": "y",
+      "description": "Latitude (degrees north).",
+      "extent": [-56.93171310991181, 83.748345],
+      "step": -8.98311982e-05,
+      "reference_system": 4326
+    }
+  },
+  "cube:variables": {
+    "variables": {
+      "type": "data",
+      "description": "Per-pixel class probability (softmax) from the PRUE model.",
+      "dimensions": ["time", "band", "y", "x"],
+      "data_type": "float32",
+      "unit": "1"
+    }
+  },
+  "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
+  "sci:publications": [
+    {"citation": "FTW Global accompanying paper: https://aka.ms/ftw-global-paper"}
+  ],
   "assets": {
     "data": {
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr",
       "type": "application/vnd+zarr",
-      "title": "Prediction probabilities (Zarr)",
-      "roles": [
-        "data"
-      ]
+      "title": "PRUE prediction probabilities (Zarr V3 datacube)",
+      "description": "Open with xarray: xr.open_zarr(href).pipe(rasterix.assign_index).",
+      "roles": ["data", "cloud-optimized"]
+    },
+    "thumbnail": {
+      "href": "https://data.source.coop/ftw/global-data/docs/prediction_mosaic.png",
+      "type": "image/png",
+      "title": "Global prediction mosaic preview",
+      "roles": ["thumbnail", "overview"]
+    },
+    "documentation": {
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide",
+      "roles": ["documentation"]
+    },
+    "README": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable README",
+      "roles": ["metadata"]
     }
   },
   "links": [
@@ -76,6 +135,41 @@
       "rel": "self",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://aka.ms/ftw-global-paper",
+      "title": "FTW Global accompanying paper"
+    },
+    {
+      "rel": "via",
+      "href": "https://huggingface.co/wherobots/prue-pt2",
+      "type": "text/html",
+      "title": "PRUE model"
+    },
+    {
+      "rel": "related",
+      "href": "../vectors/collection.json",
+      "type": "application/json",
+      "title": "Field-boundary vectors derived from these probabilities"
+    },
+    {
+      "rel": "related",
+      "href": "../confidence/collection.json",
+      "type": "application/json",
+      "title": "Confidence raster derived from these probabilities"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
     }
   ]
 }
