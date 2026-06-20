@@ -18,6 +18,29 @@ bootstrap.
 | `rails_verify_final.py` | Verify the final layout (file/country counts, flat vs nested). |
 | `rails_install.sh` | **Env bootstrap** on rails: `module load python/3.11`, venv, install the needed `geoparquet-io` branch + `awscli` + `vecorel-cli`. (Shared with `fiboa/`.) |
 
+## Where these ran — TGI rails
+
+The `rails_*` scripts were written to run on **[TGI rails](https://www.ncsa.illinois.edu/research/project-highlights/tgi-rails/)**,
+the Taylor Geospatial Institute's research computing environment operated by NCSA
+(the National Center for Supercomputing Applications at the University of Illinois).
+rails gives TGI researchers a large shared Linux box with a very fast network path to
+cloud object storage — ideal for streaming hundreds of GB to/from Source Cooperative
+without paying egress through a laptop.
+
+The scripts therefore encode a few rails-specific facts: SSH needs Kerberos + Duo MFA
+(driven via an SSH ControlMaster), there's a **64 GB per-user cgroup cap** (with NFS
+page cache counting against it, so memory must be kept bounded), `/u` is NFS while
+`/tmp` is RAM-backed tmpfs, and the toolchain is bootstrapped per-user
+(`rails_install.sh`).
+
+None of that is essential — these are ordinary `gpio` + `aws` + Python steps and
+**adapt easily to any cloud computing environment** (an EC2/GCE VM, a batch job, etc.).
+To run elsewhere, adjust the hardcoded paths/working dirs at the top of each script,
+relax the memory bounds to match your machine, and install the toolchain however you
+like (the `vectors` confidence/PMTiles step, for example, used a `micromamba` env
+instead of rails' modules). A box with a fat pipe to the data store is the only real
+requirement.
+
 These are a record of the one-time admin run — see the repo root `scripts/README.md`
 for the gotchas (gpio branches, 64 GB cgroup OOM, NFS). Next stage:
 [`../confidence/`](../confidence/).

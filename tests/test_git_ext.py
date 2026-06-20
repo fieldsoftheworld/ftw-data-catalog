@@ -5,16 +5,16 @@ ROOT = Path(__file__).resolve().parents[1] / "catalog"
 doc = json.loads((ROOT / "catalog.json").read_text())
 
 errs = []
-if doc.get("git:repository") != "https://github.com/fieldsoftheworld/ftw-portolan":
+if doc.get("git:repository") != "https://github.com/fieldsoftheworld/ftw-data-catalog":
     errs.append("git:repository missing/wrong")
 if doc.get("git:ref") != "main":
     errs.append("git:ref missing/wrong")
 if doc.get("git:provider") != "github":
     errs.append("git:provider missing/wrong")
 rels = {l.get("rel"): l.get("href") for l in doc.get("links", [])}
-if rels.get("vcs") != "https://github.com/fieldsoftheworld/ftw-portolan":
+if rels.get("vcs") != "https://github.com/fieldsoftheworld/ftw-data-catalog":
     errs.append("vcs link missing/wrong")
-if rels.get("issues") != "https://github.com/fieldsoftheworld/ftw-portolan/issues":
+if rels.get("issues") != "https://github.com/fieldsoftheworld/ftw-data-catalog/issues":
     errs.append("issues link missing/wrong")
 if errs:
     print("\n".join(errs)); sys.exit(1)

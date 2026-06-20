@@ -24,7 +24,7 @@ Paper: Robinson et al. 2026, *The first global agricultural field boundary map a
   description of the whole dataset. Point [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
   or [Gemini CLI](https://github.com/google-gemini/gemini-cli) at it and ask it to query the data,
   build interactive maps, or generate charts. Each collection also has its own `llms.txt`.
-- **Source repository:** <https://github.com/fieldsoftheworld/ftw-portolan>
+- **Source repository:** <https://github.com/fieldsoftheworld/ftw-data-catalog>
 
 Storage: the public URL base `https://data.source.coop/ftw/global-data/` is physically backed by
 `s3://us-west-2.opendata.source.coop/tge-labs/ftw-global-data/` (anonymous read).

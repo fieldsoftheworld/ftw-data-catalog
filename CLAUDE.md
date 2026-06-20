@@ -1,4 +1,4 @@
-# ftw-portolan — developer guide
+# ftw-data-catalog — developer guide
 
 Git-backed Portolan/STAC catalog for the **Fields of the World (FTW) Global** datasets.
 This repo is the **source of truth for catalog metadata only**. The data (billions of

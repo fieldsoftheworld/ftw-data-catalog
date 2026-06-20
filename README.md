@@ -1,4 +1,4 @@
-# ftw-portolan
+# ftw-data-catalog
 
 Git-backed [Portolan](https://portolan-sdi.org)/STAC catalog for the **Fields of the World (FTW) Global** datasets — global agricultural field boundaries and prediction-quality layers at 10 m resolution.
 

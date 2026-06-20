@@ -3,14 +3,16 @@
 
 One item per parquet partition (id = parquet filename stem), colocated with its
 data on S3 via relative hrefs; countries split into multiple parquets get a
-country sub-catalog. Collection carries a Portolan glob `data` asset over
-results-by-admin-conf, two collection PMTiles (2025 default + 2024 confidence),
-and the two MapLibre styles. The per-polygon `confidence` derivation is
-documented on the collection (with links to the generating scripts on GitHub).
+country sub-catalog. Each item carries an overview description, `table:columns`
+(field definitions with spec links; the full `confidence` derivation lives there),
+a per-year MapLibre style, a README, and a `derived_from` link to the prediction
+Zarr. The collection adds a Portolan glob `data` asset, two collection PMTiles, and
+the MapLibre styles.
 
 Pure builders (bbox_to_polygon / title_for / build_item / build_collection) are
-unit-tested. The CLI reads each parquet's bbox + row count and writes the tree
-under staging/predictions/vectors/.
+unit-tested. The CLI reads each parquet's bbox + row count (+ confidence stats from
+the confidence-enriched parquet when present) and writes the tree under
+staging/predictions/vectors/.
 
 Usage:
     python3 build_vector_items.py --keys /tmp/keys.txt        # offline-ish
@@ -29,67 +31,83 @@ COLLECTION_HREF = f"{PUBLIC_BASE}/predictions/vectors"
 DATA_REL = "alpha/results-by-admin-conf"          # relative to the collection dir
 SRC_S3 = ("s3://us-west-2.opendata.source.coop/tge-labs/ftw-global-data/"
           "predictions/vectors/alpha/results-by-admin")
-GITHUB = "https://github.com/fieldsoftheworld/ftw-portolan"
-PMTILES_2025 = f"{PUBLIC_BASE}/../global-field-boundaries/pmtiles/ftw-global-fields-2025.pmtiles"
+GITHUB = "https://github.com/fieldsoftheworld/ftw-data-catalog"
 PMTILES_2025 = "https://data.source.coop/ftw/global-field-boundaries/pmtiles/ftw-global-fields-2025.pmtiles"
 PMTILES_2024 = f"{PUBLIC_BASE}/predictions/vectors/alpha/2024_with_confidence.pmtiles"
 
-TABLE_EXT = "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-PARTITION_EXT = "https://portolan-sdi.github.io/stac-partition-extension/v1.0.0/schema.json"
-
-# Field definitions — wording taken verbatim from the fiboa core spec and the
-# vecorel extensions, linked via `describedby` collection links below.
-FIBOA_CORE = "https://github.com/fiboa/specification/blob/main/core/README.md"
-VECOREL_METRICS = "https://github.com/vecorel/geometry-metrics-extension"
-VECOREL_ADMIN = "https://github.com/vecorel/administrative-division-extension"
-TABLE_COLUMNS = [
-    {"name": "id", "type": "string",
-     "description": "An identifier for the field. Must be unique per collection."},
-    {"name": "geometry", "type": "binary",
-     "description": "A geometry that reflects the footprint of the field, usually a "
-                    "Polygon. Default CRS is WGS84."},
-    {"name": "bbox", "type": "struct",
-     "description": "The bounding box of the field."},
-    {"name": "metrics:area", "type": "float",
-     "description": "Area of the field, in square meters (m²). Must be > 0."},
-    {"name": "metrics:perimeter", "type": "float",
-     "description": "Perimeter of the field, in meters (m). Must be > 0."},
-    {"name": "determination:datetime", "type": "timestamp",
-     "description": "The last timestamp at which the field did exist and was observed, "
-                    "in the UTC timezone."},
-    {"name": "determination:method", "type": "string",
-     "description": "The boundary creation method (one of: manual, surveyed, driven, "
-                    "auto-operation, auto-imagery, unknown)."},
-    {"name": "admin:country_code", "type": "string",
-     "description": "ISO 3166-1 alpha-2 country code (aka admin0). Two-letter country "
-                    "code for the country that contains the field."},
-    {"name": "admin:subdivision_code", "type": "string",
-     "description": "ISO 3166-2 code for identifying the principal subdivision (e.g. "
-                    "province or state, aka admin1) of a country that contains the "
-                    "field. Only the subdivision part of the code is stored."},
-    {"name": "confidence", "type": "float",
-     "description": "Derived (not part of the upstream model output). Modeled PRUE "
-                    "confidence on a 0–100 scale: sampled at the field's point-on-"
-                    "surface from the 500 m confidence COG (predictions/confidence) and "
-                    "rescaled raw/0.578178×100, clamped to 100; null where the COG has "
-                    "no data. Recommended reliability filter: confidence >= 69 (raw 0.4)."},
-]
 PROJ_EXT = "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
 VECTOR_EXT = "https://stac-extensions.github.io/vector/v0.1.0/schema.json"
 WEBMAP_EXT = "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+TABLE_EXT = "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+PARTITION_EXT = "https://portolan-sdi.github.io/stac-partition-extension/v1.0.0/schema.json"
 
-CONFIDENCE_DOC = (
-    "Each polygon carries a `confidence` value (0–100): the modeled PRUE "
-    "confidence sampled at the field's point-on-surface from the 500 m confidence "
-    "COG (the `predictions/confidence` collection), rescaled `raw / 0.578178 * "
-    "100` and clamped to 100 (cells with no data become null). 0.578178 is treated "
-    "as 100%, matching the FTW inference app; this centroid sample is the closest "
-    "single value to the app's `confidence_mean`. Recommended default reliability "
-    "filter: confidence >= 69 (raw 0.4). Confidence reflects cell-level model "
-    "reliability, not individual-polygon geometric accuracy. Generated by "
-    f"`add_confidence.py` (+ `process_partition.sh`, `run_rails.sh`, "
-    f"`make_pmtiles.py`): {GITHUB}/blob/main/scripts/confidence/add_confidence.py"
+# Field-definition specs (linked in each column description + via `describedby`).
+FIBOA_CORE = "https://github.com/fiboa/specification/blob/main/core/README.md"
+VECOREL_METRICS = "https://github.com/vecorel/geometry-metrics-extension"
+VECOREL_ADMIN = "https://github.com/vecorel/administrative-division-extension"
+FTW_URL = "https://fieldsofthe.world"
+ZARR_URL = f"{PUBLIC_BASE}/predictions/zarr/collection.json"
+CONF_COLLECTION_URL = f"{PUBLIC_BASE}/predictions/confidence/collection.json"
+ADDCONF_URL = f"{GITHUB}/blob/main/scripts/confidence/add_confidence.py"
+
+# Full `confidence` derivation detail lives in table:columns (not in the prose).
+_CONF_COL_DESC = (
+    "Derived; not part of the upstream model output. Modeled PRUE confidence on a "
+    "0–100 scale, sampled at the field's point-on-surface from the 500 m confidence "
+    f"COG ([predictions/confidence]({CONF_COLLECTION_URL})) and rescaled "
+    "`raw / 0.578178 * 100`, clamped to 100 (0.578178 is treated as 100%, matching the "
+    "FTW inference app; this centroid sample is the closest single value to the app's "
+    "`confidence_mean`); **null where the field falls outside the modeled-confidence "
+    "layer's coverage — i.e. no value there, not a low score** (the layer is sparse and "
+    "conservative, fully covering mainly the 24 FTW-labelled training countries). "
+    "Recommended reliability filter: "
+    "`confidence >= 69` (raw 0.4). Reflects 500 m cell-level model reliability, not "
+    f"individual-polygon geometric accuracy. Generated by [add_confidence.py]({ADDCONF_URL}) "
+    "(+ process_partition.sh, run_rails.sh, make_pmtiles.py)."
 )
+
+TABLE_COLUMNS = [
+    {"name": "id", "type": "string",
+     "description": f"An identifier for the field. Must be unique per collection. ([fiboa core]({FIBOA_CORE}))"},
+    {"name": "geometry", "type": "binary",
+     "description": f"A geometry that reflects the footprint of the field, usually a Polygon. Default CRS is WGS84. ([fiboa core]({FIBOA_CORE}))"},
+    {"name": "bbox", "type": "struct",
+     "description": f"The bounding box of the field. ([fiboa core]({FIBOA_CORE}))"},
+    {"name": "metrics:area", "type": "float",
+     "description": f"Area of the field, in square meters (m²). Must be > 0. ([vecorel geometry-metrics]({VECOREL_METRICS}))"},
+    {"name": "metrics:perimeter", "type": "float",
+     "description": f"Perimeter of the field, in meters (m). Must be > 0. ([vecorel geometry-metrics]({VECOREL_METRICS}))"},
+    {"name": "determination:datetime", "type": "timestamp",
+     "description": f"The last timestamp at which the field did exist and was observed, in the UTC timezone. ([fiboa core]({FIBOA_CORE}))"},
+    {"name": "determination:method", "type": "string",
+     "description": f"The boundary creation method (one of: manual, surveyed, driven, auto-operation, auto-imagery, unknown). ([fiboa core]({FIBOA_CORE}))"},
+    {"name": "admin:country_code", "type": "string",
+     "description": f"ISO 3166-1 alpha-2 country code (aka admin0). Two-letter country code for the country that contains the field. ([vecorel administrative-division]({VECOREL_ADMIN}))"},
+    {"name": "admin:subdivision_code", "type": "string",
+     "description": f"ISO 3166-2 code for the principal subdivision (e.g. province or state, aka admin1) of a country that contains the field. Only the subdivision part of the code is stored. ([vecorel administrative-division]({VECOREL_ADMIN}))"},
+    {"name": "confidence", "type": "float", "description": _CONF_COL_DESC},
+]
+
+# Shared prose pieces (confidence detail is in table:columns above).
+_COLS_SHORT = ("id, geometry, bbox, metrics:area, metrics:perimeter, "
+               "determination:datetime, determination:method, admin:country_code, "
+               "admin:subdivision_code, confidence")
+_DERIVATION = (
+    f"A GeoParquet vector dataset is derived from the [prediction Zarr]({ZARR_URL}) by "
+    "thresholding the softmax outputs for [non_field_background, field, field_boundaries] "
+    "at 0.5 and polygonizing.")
+_PROJECT = (f"Part of [Fields of the World]({FTW_URL}) — agricultural field boundaries "
+            "delineated by the PRUE model from Sentinel-2 imagery.")
+
+
+def _fields_phrase(count, conf):
+    s = f"{count:,} field polygons" if count is not None else "field polygons"
+    if conf:
+        pct, mn, mx = conf
+        s += (f"; {pct:.0f}% fall within the modeled-confidence layer's coverage "
+              f"(confidence 0–100, here {mn:.0f}–{mx:.0f}; null elsewhere means outside "
+              "the layer's coverage, not low confidence)")
+    return s
 
 
 # ── pure builders ────────────────────────────────────────────────────────────
@@ -158,24 +176,32 @@ def item_style(stem, years=("2024", "2025"), default_year="2025"):
     }
 
 
-def build_item(stem, country_code, bbox, feature_count, is_split=False):
+def item_description(stem, country_code, feature_count=None, conf=None):
+    title = title_for(stem, country_code)
+    return (
+        f"Agricultural field boundaries for {title}. {_PROJECT} "
+        f"This partition contains {_fields_phrase(feature_count, conf)}. "
+        f"{_DERIVATION} Columns: {_COLS_SHORT} — see `table:columns` for definitions "
+        "(including how `confidence` is derived).")
+
+
+def build_item(stem, country_code, bbox, feature_count, is_split=False, conf=None):
     coll_up = "../../../"          # item dir -> collection dir
     root_up = "../../../../../"    # item dir -> catalog root
     parent = "./catalog.json" if is_split else f"{coll_up}collection.json"
+    title = title_for(stem, country_code)
     self_href = (f"{COLLECTION_HREF}/{DATA_REL}/admin:country_code={country_code}/"
                  f"{stem}.json")
     return {
         "type": "Feature",
         "stac_version": "1.1.0",
-        "stac_extensions": [PROJ_EXT, VECTOR_EXT],
+        "stac_extensions": [PROJ_EXT, VECTOR_EXT, TABLE_EXT],
         "id": stem,
         "geometry": bbox_to_polygon(bbox),
         "bbox": bbox,
         "properties": {
-            "title": title_for(stem, country_code),
-            "description": (
-                f"FTW PRUE field-boundary predictions for "
-                f"{title_for(stem, country_code)}. {CONFIDENCE_DOC}"),
+            "title": title,
+            "description": item_description(stem, country_code, feature_count, conf),
             "datetime": None,
             "start_datetime": "2024-01-01T00:00:00Z",
             "end_datetime": "2025-12-31T23:59:59Z",
@@ -183,19 +209,20 @@ def build_item(stem, country_code, bbox, feature_count, is_split=False):
             "proj:code": "EPSG:4326",
             "geoparquet:geometry_type": "Polygon",
             "geoparquet:feature_count": feature_count,
+            "table:columns": TABLE_COLUMNS,
         },
         "collection": "vectors",
         "assets": {
             "data": {
                 "href": f"./{stem}.parquet",
                 "type": "application/vnd.apache.parquet",
-                "title": f"{title_for(stem, country_code)} field boundaries (GeoParquet)",
+                "title": f"{title} field boundaries (GeoParquet)",
                 "roles": ["data"],
             },
             "pmtiles": {
                 "href": f"./{stem}.pmtiles",
                 "type": "application/vnd.pmtiles",
-                "title": f"{title_for(stem, country_code)} field boundaries (PMTiles, 2024/2025 layers)",
+                "title": f"{title} field boundaries (PMTiles, 2024/2025 layers)",
                 "roles": ["visual"],
             },
             "style": {
@@ -204,16 +231,56 @@ def build_item(stem, country_code, bbox, feature_count, is_split=False):
                 "title": "MapLibre style — confidence, one year layer at a time",
                 "roles": ["style"],
             },
+            "README": {
+                "href": f"./{stem}.README.md",
+                "type": "text/markdown",
+                "title": f"{title} — README",
+                "roles": ["metadata"],
+            },
         },
         "links": [
             {"rel": "root", "href": f"{root_up}catalog.json", "type": "application/json"},
             {"rel": "collection", "href": f"{coll_up}collection.json", "type": "application/json"},
             {"rel": "parent", "href": parent, "type": "application/json"},
             {"rel": "self", "href": self_href, "type": "application/geo+json"},
+            {"rel": "derived_from", "href": ZARR_URL, "type": "application/json",
+             "title": "FTW prediction probabilities (Zarr)"},
             {"rel": "llms", "href": "./llms.txt", "type": "text/markdown",
              "title": "Agent/LLM usage guide"},
         ],
     }
+
+
+def item_readme(stem, country_code, feature_count=None, conf=None):
+    title = title_for(stem, country_code)
+    lines = [
+        f"# Field boundaries — {title}", "",
+        _PROJECT, "",
+        f"Partition `{stem}` (country `{country_code}`) contains "
+        f"**{_fields_phrase(feature_count, conf)}**.", "",
+        "## How it was made", "",
+        f"{_DERIVATION} Each field also carries a derived `confidence` (0–100); see the "
+        "`confidence` row in the table below for exactly how it is computed.", "",
+        "## Columns", "",
+        "Definitions use the [fiboa core](" + FIBOA_CORE + ") spec and the vecorel "
+        "[geometry-metrics](" + VECOREL_METRICS + ") / "
+        "[administrative-division](" + VECOREL_ADMIN + ") extensions "
+        "(also machine-readable in the item's `table:columns`):", "",
+        "| Field | Description |", "|---|---|",
+        *[f"| `{c['name']}` | {c['description']} |" for c in TABLE_COLUMNS], "",
+        "## Access", "",
+        "```python",
+        "import duckdb",
+        'con = duckdb.connect(); con.execute("INSTALL spatial; LOAD spatial;")',
+        f'u = "{COLLECTION_HREF}/{DATA_REL}/admin:country_code={country_code}/{stem}.parquet"',
+        "con.sql(f\"SELECT count(*), avg(confidence) FROM read_parquet('{u}')\").show()",
+        "```", "",
+        "## Links", "",
+        f"- Collection: {COLLECTION_HREF}/collection.json",
+        f"- Derived from: [prediction Zarr]({ZARR_URL})",
+        f"- [Fields of the World]({FTW_URL})", "",
+    ]
+    return "\n".join(lines) + "\n"
 
 
 def build_collection(item_links, child_links):
@@ -226,9 +293,11 @@ def build_collection(item_links, child_links):
         {"rel": "self", "href": f"{COLLECTION_HREF}/collection.json", "type": "application/json"},
         {"rel": "license", "href": "https://creativecommons.org/licenses/by/4.0/",
          "type": "text/html"},
+        {"rel": "derived_from", "href": ZARR_URL, "type": "application/json",
+         "title": "FTW prediction probabilities (Zarr)"},
         {"rel": "llms", "href": "./llms.txt", "type": "text/markdown",
          "title": "Agent/LLM usage guide"},
-        # field definitions follow these specs (verbatim in table:columns)
+        # field definitions follow these specs (also in table:columns)
         {"rel": "describedby", "href": FIBOA_CORE, "type": "text/html",
          "title": "fiboa core specification (id, geometry, bbox, determination:*)"},
         {"rel": "describedby", "href": VECOREL_METRICS, "type": "text/html",
@@ -257,12 +326,15 @@ def build_collection(item_links, child_links):
         "id": "vectors",
         "title": "FTW Global — Field Boundary Predictions (alpha)",
         "description": (
-            "Global agricultural field-boundary polygons predicted by the PRUE "
-            "model, as cloud-native GeoParquet partitioned by country (admin), with "
-            "per-country PMTiles for web visualization. " + CONFIDENCE_DOC),
+            f"Global agricultural field-boundary polygons. {_PROJECT} ~3.2 billion field "
+            "polygons across 195 countries, as cloud-native GeoParquet partitioned by "
+            "country (admin, Hive layout), with per-country PMTiles for web visualization. "
+            f"{_DERIVATION} Each field also carries a derived `confidence` (0–100). "
+            f"Columns: {_COLS_SHORT} — see `table:columns` for definitions (including how "
+            "`confidence` is derived)."),
         "license": "CC-BY-4.0",
         "keywords": ["agriculture", "field boundaries", "Fields of the World",
-                     "FTW", "global", "PRUE", "confidence"],
+                     "FTW", "global", "PRUE", "Sentinel-2", "confidence"],
         "providers": [
             {"name": "Taylor Geospatial Institute", "roles": ["producer", "licensor"],
              "url": "https://taylorgeospatial.org/"},
@@ -320,15 +392,17 @@ def build_country_catalog(country_code, child_stems):
         "stac_version": "1.1.0",
         "id": f"vectors-{country_code}",
         "title": f"{_country_name(country_code)} — field boundary predictions",
-        "description": (f"Field-boundary predictions for {_country_name(country_code)}, "
-                        f"split into {len(child_stems)} admin-subdivision partitions. "
-                        + CONFIDENCE_DOC),
+        "description": (
+            f"Field-boundary predictions for {_country_name(country_code)}, split into "
+            f"{len(child_stems)} admin-subdivision partitions. {_PROJECT} {_DERIVATION}"),
         "links": [
             {"rel": "root", "href": "../../../../../catalog.json", "type": "application/json"},
             {"rel": "parent", "href": "../../../collection.json", "type": "application/json"},
             {"rel": "self",
              "href": f"{COLLECTION_HREF}/{DATA_REL}/admin:country_code={country_code}/catalog.json",
              "type": "application/json"},
+            {"rel": "derived_from", "href": ZARR_URL, "type": "application/json",
+             "title": "FTW prediction probabilities (Zarr)"},
             {"rel": "llms", "href": "./llms.txt", "type": "text/markdown"},
             *[{"rel": "item", "href": f"./{stem}.json", "type": "application/geo+json"}
               for stem in child_stems],
@@ -353,33 +427,72 @@ def _read_keys(keys_path):
 
 
 _S3FS = None
+_S3BASE = "us-west-2.opendata.source.coop/tge-labs/ftw-global-data/predictions/vectors/alpha"
 
 
-def _parquet_meta(cc, fname):
-    """(bbox, feature_count) from the original parquet footer (anonymous S3)."""
+def _fs():
     global _S3FS
-    import pyarrow.parquet as pq
-    import pyarrow.fs as pafs
     if _S3FS is None:
+        import pyarrow.fs as pafs
         _S3FS = pafs.S3FileSystem(anonymous=True, region="us-west-2")
-    path = ("us-west-2.opendata.source.coop/tge-labs/ftw-global-data/predictions/"
-            f"vectors/alpha/results-by-admin/admin:country_code={cc}/{fname}")
-    with _S3FS.open_input_file(path) as f:
-        pf = pq.ParquetFile(f)
-        geo = json.loads(pf.metadata.metadata[b"geo"])
-        gcol = geo["columns"][geo["primary_column"]]
-        return gcol["bbox"], pf.metadata.num_rows
+    return _S3FS
+
+
+def _bbox_count(pf):
+    geo = json.loads(pf.metadata.metadata[b"geo"])
+    return geo["columns"][geo["primary_column"]]["bbox"], pf.metadata.num_rows
+
+
+def _confidence_stats(pf, count):
+    """(pct_non_null, min, max) for the `confidence` column from footer stats, or None."""
+    md = pf.metadata
+    names = [md.schema.column(i).path for i in range(md.num_columns)]
+    if "confidence" not in names or not count:
+        return None
+    ci = names.index("confidence")
+    nulls, mn, mx, seen = 0, None, None, False
+    for rg in range(md.num_row_groups):
+        st = md.row_group(rg).column(ci).statistics
+        if st is None:
+            continue
+        seen = True
+        if st.has_null_count:
+            nulls += st.null_count
+        if st.has_min_max:
+            mn = st.min if mn is None else min(mn, st.min)
+            mx = st.max if mx is None else max(mx, st.max)
+    if not seen or mn is None:
+        return None
+    return (100.0 * (count - nulls) / count, mn, mx)
+
+
+def _item_stats(cc, fname):
+    """(bbox, count, conf) — read the confidence-enriched parquet when it exists
+    (also yields confidence stats); else fall back to the original (conf=None)."""
+    import pyarrow.parquet as pq
+    fs = _fs()
+    conf_path = f"{_S3BASE}/results-by-admin-conf/admin:country_code={cc}/{fname}"
+    try:
+        with fs.open_input_file(conf_path) as f:
+            pf = pq.ParquetFile(f)
+            bbox, count = _bbox_count(pf)
+            return bbox, count, _confidence_stats(pf, count)
+    except (FileNotFoundError, OSError):
+        orig = f"{_S3BASE}/results-by-admin/admin:country_code={cc}/{fname}"
+        with fs.open_input_file(orig) as f:
+            pf = pq.ParquetFile(f)
+            bbox, count = _bbox_count(pf)
+            return bbox, count, None
 
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--keys", help="file with parquet keys (else list S3)")
-    ap.add_argument("--out", default=str(Path(__file__).resolve().parents[1]
+    ap.add_argument("--out", default=str(Path(__file__).resolve().parents[2]
                                          / "staging/predictions/vectors"))
     args = ap.parse_args(argv)
 
     keys = _read_keys(args.keys)
-    # group by country code
     from collections import defaultdict
     by_cc = defaultdict(list)
     for k in keys:
@@ -398,14 +511,14 @@ def main(argv=None) -> int:
         for fname in sorted(fnames):
             stem = fname[:-len(".parquet")]
             stems.append(stem)
-            bbox, count = _parquet_meta(cc, fname)
-            item = build_item(stem, cc, bbox, count, is_split=is_split)
+            bbox, count, conf = _item_stats(cc, fname)
+            item = build_item(stem, cc, bbox, count, is_split=is_split, conf=conf)
             (cdir / f"{stem}.json").write_text(json.dumps(item, indent=2))
             (cdir / f"{stem}.style.json").write_text(json.dumps(item_style(stem), indent=2))
+            (cdir / f"{stem}.README.md").write_text(item_readme(stem, cc, count, conf))
             n_items += 1
             if not is_split:
                 item_links.append((stem, cc))
-        # one llms.txt per country dir
         (cdir / "llms.txt").write_text(_country_llms(cc, stems))
         if is_split:
             cat = build_country_catalog(cc, stems)
@@ -422,32 +535,44 @@ def main(argv=None) -> int:
     return 0
 
 
+def _columns_md():
+    return [f"- `{c['name']}` ({c['type']}): {c['description']}" for c in TABLE_COLUMNS]
+
+
 def _country_llms(cc, stems):
     name = _country_name(cc)
-    lines = [f"# FTW field-boundary predictions — {name}", "",
-             f"Country code: {cc}. Partitions: {len(stems)}.", "",
-             CONFIDENCE_DOC, "",
-             "## Files", *[f"- `{s}.parquet` (GeoParquet) + `{s}.pmtiles` (vector tiles)"
-                          for s in stems]]
-    return "\n".join(lines) + "\n"
+    return "\n".join([
+        f"# FTW field-boundary predictions — {name}", "",
+        _PROJECT, "",
+        f"Country code: {cc}. Partitions: {len(stems)}.", "",
+        _DERIVATION, "",
+        "## Columns",
+        "Definitions use the fiboa core spec and vecorel extensions "
+        f"([fiboa core]({FIBOA_CORE}), [geometry-metrics]({VECOREL_METRICS}), "
+        f"[administrative-division]({VECOREL_ADMIN})):",
+        *_columns_md(), "",
+        "## Files", *[f"- `{s}.parquet` (GeoParquet) + `{s}.pmtiles` (vector tiles, "
+                      "2024/2025 layers) + `{s}.style.json`".replace("{s}", s) for s in stems],
+    ]) + "\n"
 
 
 def _collection_llms(n_countries, n_items):
     return "\n".join([
         "# FTW Global — Field Boundary Predictions (alpha)", "",
-        f"{n_items} country/subdivision partitions across {n_countries} countries.",
-        "GeoParquet partitioned by country; query the whole set with the glob "
-        f"`{DATA_REL}/admin:country_code=*/*.parquet`.", "",
-        "## Fields",
-        "Field definitions use the wording of the fiboa core spec and vecorel "
-        f"extensions ([fiboa core]({FIBOA_CORE}), [geometry-metrics]({VECOREL_METRICS}), "
+        _PROJECT, "",
+        f"~3.2 billion field polygons across {n_countries} countries in {n_items} "
+        "country/subdivision partitions. GeoParquet partitioned by country; query the "
+        f"whole set with the glob `{DATA_REL}/admin:country_code=*/*.parquet`.", "",
+        "## How the vectors are made", _DERIVATION, "",
+        "## Columns",
+        "Definitions use the fiboa core spec and vecorel extensions "
+        f"([fiboa core]({FIBOA_CORE}), [geometry-metrics]({VECOREL_METRICS}), "
         f"[administrative-division]({VECOREL_ADMIN})):",
-        *[f"- `{c['name']}` ({c['type']}): {c['description']}" for c in TABLE_COLUMNS], "",
-        "## Confidence", CONFIDENCE_DOC, "",
+        *_columns_md(), "",
         "## Visualization",
         "Two collection PMTiles: 2025 (default) and 2024-with-confidence; per-country "
-        "PMTiles per partition. Styles in `styles/` color by confidence (red→green, "
-        "0–100) with the recommended >=69 filter.", "",
+        "PMTiles per partition (2024/2025 year layers). Styles in `styles/` color by "
+        "confidence (red→green, 0–100) with the recommended >=69 filter.", "",
     ]) + "\n"
 
 
