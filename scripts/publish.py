@@ -38,6 +38,8 @@ class Upload:
 def _content_type(p: Path) -> str:
     if p.name in _CT_BY_NAME:
         return _CT_BY_NAME[p.name]
+    if p.suffix == ".json" and "styles" in p.parts:
+        return "application/json"  # MapLibre styles, not STAC/GeoJSON
     return _CT_BY_SUFFIX.get(p.suffix, "application/octet-stream")
 
 
