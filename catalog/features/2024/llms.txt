@@ -1,0 +1,9 @@
+# FTW Global — Sentinel-2 Planting & Harvest Composites (2024)
+
+Sentinel-2 planting/harvest median composites (10 m) — the model-input features for the FTW field-boundary predictions. Part of Fields of the World.
+
+- Global Zarr mosaic: https://data.source.coop/ftw/global-data/features/zarr/alpha/global.zarr (xr.open_zarr; EPSG:4326, dims time,band,y,x)
+- Per-tile COG items indexed by STAC-GeoParquet: https://data.source.coop/ftw/global-data/features/2024/items.parquet
+- Each tile item: `planting` + `harvest` COGs, bands B02/B03/B04/B08 + N_VALID_PIXELS, native UTM, 10 m.
+- Composites feed the PRUE U-Net model (arXiv:2603.27101) trained on the FTW benchmark (data: https://source.coop/kerner-lab/fields-of-the-world; arXiv:2409.16252).
+- License: CC-BY-4.0; Sentinel-2 © Copernicus/ESA.

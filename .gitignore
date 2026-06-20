@@ -5,3 +5,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+# features per-tile STAC items + stac-geoparquet are generated to S3, never committed
+# (the items.parquet is already covered by *.parquet above)
+catalog/features/*/items/
+features/*/items/
