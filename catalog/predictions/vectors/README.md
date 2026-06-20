@@ -38,10 +38,10 @@ not part of the raw model vector output:
   cell-level model reliability, **not** individual-polygon geometric accuracy.
 
 It is computed by the scripts in this repo:
-[`add_confidence.py`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/add_confidence.py),
-[`process_partition.sh`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/process_partition.sh),
-[`run_rails.sh`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/run_rails.sh),
-[`make_pmtiles.py`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/make_pmtiles.py).
+[`add_confidence.py`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/confidence/add_confidence.py),
+[`process_partition.sh`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/confidence/process_partition.sh),
+[`run_rails.sh`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/confidence/run_rails.sh),
+[`make_pmtiles.py`](https://github.com/fieldsoftheworld/ftw-portolan/blob/main/scripts/confidence/make_pmtiles.py).
 
 ## Schema
 

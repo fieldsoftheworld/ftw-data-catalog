@@ -9,7 +9,7 @@
 #      socket then keeps the connection warm so later ssh calls are passwordless:
 #          ssh rails
 #   2. Copy these scripts over (or git clone the repo) and install deps:
-#          rsync -av scripts/ rails:~/ftw-conf/
+#          rsync -av scripts/confidence/ rails:~/ftw-conf/
 #          ssh rails 'pip install --user pyarrow rasterio shapely numpy affine'
 #      (gpio + tippecanoe + aws are expected to already be on PATH on rails.)
 #   3. Configure AWS write creds for the Source Cooperative bucket on rails

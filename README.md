@@ -32,7 +32,7 @@ CLAUDE.md       developer / agent guide
 1. Edit metadata under `catalog/` (STAC JSON, `README.md`, `llms.txt`, `.portolan/metadata.yaml`).
 2. Validate: `python3 tests/test_links.py && python3 tests/test_publish.py`
 3. Commit.
-4. Publish: `python3 scripts/publish.py` (dry run), then `python3 scripts/publish.py --confirm` (needs AWS credentials).
+4. Publish: `python3 scripts/catalog/publish.py` (dry run), then `python3 scripts/catalog/publish.py --confirm` (needs AWS credentials).
 
 See [CLAUDE.md](./CLAUDE.md) for the full developer guide. Corrections and additions welcome via pull request.
 

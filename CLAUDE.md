@@ -27,8 +27,8 @@ or uploaded by this repo.
 ## Publish workflow
 Edit metadata under `catalog/` -> commit -> publish:
 ```
-python3 scripts/publish.py            # dry run (lists the catalog/ tree -> S3)
-python3 scripts/publish.py --confirm  # upload (needs AWS creds)
+python3 scripts/catalog/publish.py            # dry run (lists the catalog/ tree -> S3)
+python3 scripts/catalog/publish.py --confirm  # upload (needs AWS creds)
 ```
 `publish.py` uploads every file in `catalog/` 1:1, skipping only Portolan-internal
 `.portolan/config.yaml` and `.portolan/state.json`. Config (write_prefix, public_base, region, publish_dir) lives in `catalog.publish.yaml`.
@@ -37,7 +37,7 @@ python3 scripts/publish.py --confirm  # upload (needs AWS creds)
 1. Build it under `staging/<group>/<name>/` (collection.json + `.portolan/metadata.yaml`); hrefs use the public base.
 2. When ready: `git mv staging/<group>/<name> catalog/<group>/<name>`.
 3. Add a `child` link to `catalog/catalog.json`.
-4. `python3 tests/test_links.py && python3 scripts/publish.py` to verify.
+4. `python3 tests/test_links.py && python3 scripts/catalog/publish.py` to verify.
 
 ## Tests (dependency-free; run with python3)
 `tests/test_links.py`, `tests/test_git_ext.py`, `tests/test_publish.py`, `tests/test_scaffolds.py`.

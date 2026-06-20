@@ -8,7 +8,7 @@ Run: python3 tests/test_build_vector_items.py
 import sys
 from pathlib import Path
 
-SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
+SCRIPTS = Path(__file__).resolve().parents[1] / "scripts" / "catalog"
 sys.path.insert(0, str(SCRIPTS))
 
 
