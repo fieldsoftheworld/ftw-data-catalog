@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Burkina_Faso` (country `BF`) contains **29,955,055 field polygons**.
+Partition `Burkina_Faso` (country `BF`) contains **29,955,055 field polygons; 21% fall within the modeled-confidence layer's coverage (confidence 0–100, here 7–100; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

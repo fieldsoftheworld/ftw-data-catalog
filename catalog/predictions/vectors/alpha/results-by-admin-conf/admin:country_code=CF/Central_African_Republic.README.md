@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Central_African_Republic` (country `CF`) contains **19,173,911 field polygons**.
+Partition `Central_African_Republic` (country `CF`) contains **19,173,911 field polygons; 78% fall within the modeled-confidence layer's coverage (confidence 0–100, here 6–99; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 
