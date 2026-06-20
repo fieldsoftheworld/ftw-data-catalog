@@ -7,8 +7,8 @@
     "https://stac-extensions.github.io/render/v1.0.0/schema.json"
   ],
   "id": "confidence",
-  "title": "FTW Global — Prediction Confidence & Quality Layers (500 m)",
-  "description": "Global 500 m raster layers that quantify the reliability of the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) global agricultural field-boundary predictions ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)), part of [Fields of the World](https://fieldsofthe.world). Derived from the full-resolution (10 m) model outputs on a common global grid (EPSG:4326, ~0.004167 deg/px, -180..180 lon, -60..84 lat; each 500 m cell ~ 50x50 of the 10 m pixels). Five products: a modeled confidence score; field & boundary prediction density (unfiltered and confidence-filtered); model entropy; an external cropland-consensus count; and precision/recall against that cropland consensus. These layers let users assess where the field predictions can be trusted and filter the vector dataset accordingly. Temporal coverage inferred as the 2025 prediction year from the [paper](https://arxiv.org/abs/2605.11055) (the cropland-consensus layer is year-independent); pending confirmation from the data authors.",
+  "title": "FTW Global \u2014 Prediction Confidence & Quality Layers (500 m)",
+  "description": "Global 500 m raster layers that quantify the reliability of the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) global agricultural field-boundary predictions ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)), part of [Fields of the World](https://fieldsofthe.world). Derived from the full-resolution (10 m) model outputs on a common global grid (EPSG:4326, ~0.004167 deg/px, -180..180 lon, -60..84 lat; each 500 m cell ~ 50x50 of the 10 m pixels). Five products: a modeled confidence score; field & boundary prediction density (unfiltered and confidence-filtered); model entropy; an external cropland-consensus count; and precision/recall against that cropland consensus. These layers let users assess where the field predictions can be trusted and filter the vector dataset accordingly. Temporal coverage inferred as the 2025 prediction year from the [paper](https://arxiv.org/abs/2605.11055) (the cropland-consensus layer is year-independent); pending confirmation from the data authors. The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
   "license": "CC-BY-4.0",
   "keywords": [
     "agriculture",
@@ -30,74 +30,127 @@
   "providers": [
     {
       "name": "Microsoft AI for Good Research Lab",
-      "roles": ["producer", "processor"],
+      "roles": [
+        "producer",
+        "processor"
+      ],
       "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
     },
     {
       "name": "Taylor Geospatial Institute",
-      "roles": ["producer", "licensor"],
+      "roles": [
+        "producer",
+        "licensor"
+      ],
       "url": "https://taylorgeospatial.org/"
     },
     {
       "name": "Arizona State University",
-      "roles": ["producer"],
+      "roles": [
+        "producer"
+      ],
       "url": "https://www.asu.edu/"
     },
     {
       "name": "Washington University in St. Louis",
-      "roles": ["producer"],
+      "roles": [
+        "producer"
+      ],
       "url": "https://wustl.edu/"
     },
     {
       "name": "Oregon State University",
-      "roles": ["producer"],
+      "roles": [
+        "producer"
+      ],
       "url": "https://oregonstate.edu/"
     },
     {
       "name": "Clark University",
-      "roles": ["producer"],
+      "roles": [
+        "producer"
+      ],
       "url": "https://www.clarku.edu/"
     },
     {
       "name": "Source Cooperative",
-      "roles": ["host"],
+      "roles": [
+        "host"
+      ],
       "url": "https://source.coop/ftw/global-data"
     }
   ],
   "extent": {
     "spatial": {
-      "bbox": [[-180.0, -60.0, 180.0, 84.0]]
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          84.0
+        ]
+      ]
     },
     "temporal": {
-      "interval": [["2024-01-01T00:00:00Z", "2025-12-31T23:59:59Z"]]
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
     }
   },
   "summaries": {
-    "gsd": [500],
-    "proj:code": ["EPSG:4326", "EPSG:3857"]
+    "gsd": [
+      500
+    ],
+    "proj:code": [
+      "EPSG:4326",
+      "EPSG:3857"
+    ]
   },
   "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tarano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
   "sci:publications": [
     {
-      "citation": "Robinson et al. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055."
+      "doi": "10.48550/arXiv.2409.16252",
+      "citation": "Kerner, H. et al. (2025). Fields of the World: A Machine Learning Benchmark Dataset for Global Agricultural Field Boundary Segmentation. AAAI-2025. arXiv:2409.16252."
     },
     {
-      "citation": "Muhawenayo, G., Robinson, C., Khanal, S., et al. (2026). PRUE: A Practical Recipe for Field Boundary Segmentation at Scale. arXiv:2603.27101."
+      "doi": "10.48550/arXiv.2603.27101",
+      "citation": "Muhawenayo, G. et al. (2026). PRUE: A Practical Recipe for Field Boundary Segmentation at Scale. arXiv:2603.27101."
+    },
+    {
+      "doi": "10.48550/arXiv.2602.08131",
+      "citation": "Corley, I. et al. (2026). Fields of The World: A Field Guide for Extracting Agricultural Field Boundaries. arXiv:2602.08131."
     }
   ],
   "renders": {
     "confidence": {
       "title": "Modeled confidence (red low to green high)",
-      "assets": ["data"],
-      "rescale": [[0, 0.578178]],
+      "assets": [
+        "data"
+      ],
+      "rescale": [
+        [
+          0,
+          0.578178
+        ]
+      ],
       "colormap_name": "rdylgn",
       "resampling": "bilinear",
       "nodata": -1
     },
     "field_density": {
       "title": "Field prediction density (magenta low to green high)",
-      "assets": ["fields_only"],
-      "rescale": [[0, 1500]],
+      "assets": [
+        "fields_only"
+      ],
+      "rescale": [
+        [
+          0,
+          1500
+        ]
+      ],
       "colormap_name": "ftw_density",
       "resampling": "bilinear",
       "nodata": 0
@@ -106,11 +159,18 @@
   "item_assets": {
     "data": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data", "cloud-optimized"]
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ]
     },
     "visual": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["visual", "overview", "cloud-optimized"]
+      "roles": [
+        "visual",
+        "overview",
+        "cloud-optimized"
+      ]
     }
   },
   "assets": {
@@ -118,19 +178,25 @@
       "href": "./thumbnail.png",
       "type": "image/png",
       "title": "Collection thumbnail",
-      "roles": ["thumbnail"]
+      "roles": [
+        "thumbnail"
+      ]
     },
     "documentation": {
       "href": "./llms.txt",
       "type": "text/markdown",
       "title": "Agent/LLM usage guide",
-      "roles": ["documentation"]
+      "roles": [
+        "documentation"
+      ]
     },
     "README": {
       "href": "./README.md",
       "type": "text/markdown",
       "title": "Human-readable README",
-      "roles": ["metadata"]
+      "roles": [
+        "metadata"
+      ]
     }
   },
   "links": [
@@ -138,13 +204,13 @@
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "parent",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "self",
@@ -172,7 +238,7 @@
       "rel": "via",
       "href": "https://data.source.coop/ftw/global-data/",
       "type": "text/html",
-      "title": "Fields of the World — Global data product"
+      "title": "Fields of the World \u2014 Global data product"
     },
     {
       "rel": "item",

@@ -99,6 +99,40 @@ _DERIVATION = (
 _PROJECT = (f"Part of [Fields of the World]({FTW_URL}) — agricultural field boundaries "
             "delineated by the PRUE model from Sentinel-2 imagery.")
 
+SCI_EXT = "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+PRUE_PAPER = "https://arxiv.org/abs/2603.27101"
+FTW_PAPER = "https://arxiv.org/abs/2409.16252"
+GUIDE_PAPER = "https://arxiv.org/abs/2602.08131"
+FTW_BENCHMARK_DATA = "https://source.coop/kerner-lab/fields-of-the-world"
+SCI_CITATION = ("Muhawenayo, G. et al. (2026). PRUE: A Practical Recipe for Field "
+                "Boundary Segmentation at Scale. arXiv:2603.27101.")
+SCI_PUBLICATIONS = [
+    {"doi": "10.48550/arXiv.2409.16252",
+     "citation": "Kerner, H. et al. (2025). Fields of the World: A Machine Learning "
+                 "Benchmark Dataset for Global Agricultural Field Boundary Segmentation. "
+                 "AAAI-2025. arXiv:2409.16252."},
+    {"doi": "10.48550/arXiv.2603.27101",
+     "citation": "Muhawenayo, G. et al. (2026). PRUE: A Practical Recipe for Field "
+                 "Boundary Segmentation at Scale. arXiv:2603.27101."},
+    {"doi": "10.48550/arXiv.2602.08131",
+     "citation": "Corley, I. et al. (2026). Fields of The World: A Field Guide for "
+                 "Extracting Agricultural Field Boundaries. arXiv:2602.08131."},
+]
+# How the model & training data work, synthesized from the three FTW papers.
+BACKGROUND = (
+    f"**How this was made.** Predictions come from the **PRUE** model ([Muhawenayo et al. "
+    f"2026]({PRUE_PAPER})) — a U-Net segmentation model with composite losses and targeted "
+    "augmentations that, in a benchmark of 18 models, scored **76% IoU / 47% object-F1** on "
+    "the Fields of the World benchmark, outperforming instance-segmentation and geospatial-"
+    f"foundation-model approaches. The **[Fields of the World benchmark]({FTW_BENCHMARK_DATA})** "
+    f"(get the data on Source Cooperative; Kerner et al. 2025, AAAI, [arXiv:2409.16252]({FTW_PAPER})) "
+    "pairs multi-date multispectral **Sentinel-2** imagery with instance/semantic field masks "
+    "across **70,462 samples in 24 countries on four continents**; models pre-trained on it "
+    "generalize better to held-out countries. PRUE is run over global Sentinel-2 planting/"
+    "harvest median composites, and the softmax outputs are thresholded and polygonized into "
+    f"these vectors. Downstream recipes (crop-type mapping, forest-loss attribution) are in the "
+    f"FTW field guide ([Corley et al. 2026]({GUIDE_PAPER})).")
+
 
 def _fields_phrase(count, conf):
     s = f"{count:,} field polygons" if count is not None else "field polygons"
@@ -322,7 +356,7 @@ def build_collection(item_links, child_links):
     return {
         "type": "Collection",
         "stac_version": "1.1.0",
-        "stac_extensions": [PROJ_EXT, VECTOR_EXT, WEBMAP_EXT, TABLE_EXT, PARTITION_EXT],
+        "stac_extensions": [PROJ_EXT, VECTOR_EXT, WEBMAP_EXT, TABLE_EXT, SCI_EXT, PARTITION_EXT],
         "id": "vectors",
         "title": "FTW Global — Field Boundary Predictions (alpha)",
         "description": (
@@ -331,7 +365,9 @@ def build_collection(item_links, child_links):
             "country (admin, Hive layout), with per-country PMTiles for web visualization. "
             f"{_DERIVATION} Each field also carries a derived `confidence` (0–100). "
             f"Columns: {_COLS_SHORT} — see `table:columns` for definitions (including how "
-            "`confidence` is derived)."),
+            f"`confidence` is derived).\n\n{BACKGROUND}"),
+        "sci:citation": SCI_CITATION,
+        "sci:publications": SCI_PUBLICATIONS,
         "license": "CC-BY-4.0",
         "keywords": ["agriculture", "field boundaries", "Fields of the World",
                      "FTW", "global", "PRUE", "Sentinel-2", "confidence"],
@@ -564,6 +600,7 @@ def _collection_llms(n_countries, n_items):
         "country/subdivision partitions. GeoParquet partitioned by country; query the "
         f"whole set with the glob `{DATA_REL}/admin:country_code=*/*.parquet`.", "",
         "## How the vectors are made", _DERIVATION, "",
+        "## Model & training data", BACKGROUND, "",
         "## Columns",
         "Definitions use the fiboa core spec and vecorel extensions "
         f"([fiboa core]({FIBOA_CORE}), [geometry-metrics]({VECOREL_METRICS}), "

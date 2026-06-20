@@ -6,8 +6,8 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "predictions-zarr",
-  "title": "FTW Global — Field Prediction Probabilities (Zarr)",
-  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands — `non_field_background`, `field`, `field_boundaries` — at ~10 m (`8.983119e-5°`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) but **does not yet implement multiscales/overviews, so it is not yet web-viewable** — that work is in progress. For now it is best consumed analytically (xarray/Zarr), not as map tiles.",
+  "title": "FTW Global \u2014 Field Prediction Probabilities (Zarr)",
+  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands \u2014 `non_field_background`, `field`, `field_boundaries` \u2014 at ~10 m (`8.983119e-5\u00b0`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) but **does not yet implement multiscales/overviews, so it is not yet web-viewable** \u2014 that work is in progress. For now it is best consumed analytically (xarray/Zarr), not as map tiles. The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
   "license": "CC-BY-4.0",
   "keywords": [
     "agriculture",
@@ -29,44 +29,79 @@
   "providers": [
     {
       "name": "Taylor Geospatial Institute",
-      "roles": ["producer", "licensor"],
+      "roles": [
+        "producer",
+        "licensor"
+      ],
       "url": "https://taylorgeospatial.org/"
     },
     {
       "name": "Microsoft AI for Good Research Lab",
-      "roles": ["producer", "processor"],
+      "roles": [
+        "producer",
+        "processor"
+      ],
       "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
     }
   ],
   "extent": {
     "spatial": {
-      "bbox": [[-180.0, -56.93171310991181, 180.00005391686943, 83.748345]]
+      "bbox": [
+        [
+          -180.0,
+          -56.93171310991181,
+          180.00005391686943,
+          83.748345
+        ]
+      ]
     },
     "temporal": {
-      "interval": [["2024-01-01T00:00:00Z", "2025-12-31T23:59:59Z"]]
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
     }
   },
   "summaries": {
-    "proj:code": ["EPSG:4326"],
-    "gsd": [10]
+    "proj:code": [
+      "EPSG:4326"
+    ],
+    "gsd": [
+      10
+    ]
   },
   "cube:dimensions": {
     "time": {
       "type": "temporal",
       "description": "Prediction year (CF time: days since 2024-01-01).",
-      "extent": ["2024-01-01T00:00:00Z", "2025-01-01T00:00:00Z"],
-      "values": ["2024-01-01T00:00:00Z", "2025-01-01T00:00:00Z"]
+      "extent": [
+        "2024-01-01T00:00:00Z",
+        "2025-01-01T00:00:00Z"
+      ],
+      "values": [
+        "2024-01-01T00:00:00Z",
+        "2025-01-01T00:00:00Z"
+      ]
     },
     "band": {
       "type": "bands",
       "description": "PRUE softmax output classes.",
-      "values": ["non_field_background", "field", "field_boundaries"]
+      "values": [
+        "non_field_background",
+        "field",
+        "field_boundaries"
+      ]
     },
     "x": {
       "type": "spatial",
       "axis": "x",
       "description": "Longitude (degrees east).",
-      "extent": [-180.0, 180.00005391686943],
+      "extent": [
+        -180.0,
+        180.00005391686943
+      ],
       "step": 8.98311982e-05,
       "reference_system": 4326
     },
@@ -74,7 +109,10 @@
       "type": "spatial",
       "axis": "y",
       "description": "Latitude (degrees north).",
-      "extent": [-56.93171310991181, 83.748345],
+      "extent": [
+        -56.93171310991181,
+        83.748345
+      ],
       "step": -8.98311982e-05,
       "reference_system": 4326
     }
@@ -83,14 +121,30 @@
     "variables": {
       "type": "data",
       "description": "Per-pixel class probability (softmax) from the PRUE model.",
-      "dimensions": ["time", "band", "y", "x"],
+      "dimensions": [
+        "time",
+        "band",
+        "y",
+        "x"
+      ],
       "data_type": "float32",
       "unit": "1"
     }
   },
-  "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
+  "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., T\u00e1rano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
   "sci:publications": [
-    {"citation": "FTW Global accompanying paper: https://aka.ms/ftw-global-paper"}
+    {
+      "doi": "10.48550/arXiv.2409.16252",
+      "citation": "Kerner, H. et al. (2025). Fields of the World: A Machine Learning Benchmark Dataset for Global Agricultural Field Boundary Segmentation. AAAI-2025. arXiv:2409.16252."
+    },
+    {
+      "doi": "10.48550/arXiv.2603.27101",
+      "citation": "Muhawenayo, G. et al. (2026). PRUE: A Practical Recipe for Field Boundary Segmentation at Scale. arXiv:2603.27101."
+    },
+    {
+      "doi": "10.48550/arXiv.2602.08131",
+      "citation": "Corley, I. et al. (2026). Fields of The World: A Field Guide for Extracting Agricultural Field Boundaries. arXiv:2602.08131."
+    }
   ],
   "assets": {
     "data": {
@@ -98,25 +152,35 @@
       "type": "application/vnd+zarr",
       "title": "PRUE prediction probabilities (Zarr V3 datacube)",
       "description": "Open with xarray: xr.open_zarr(href).pipe(rasterix.assign_index).",
-      "roles": ["data", "cloud-optimized"]
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ]
     },
     "thumbnail": {
       "href": "https://data.source.coop/ftw/global-data/docs/prediction_mosaic.png",
       "type": "image/png",
       "title": "Global prediction mosaic preview",
-      "roles": ["thumbnail", "overview"]
+      "roles": [
+        "thumbnail",
+        "overview"
+      ]
     },
     "documentation": {
       "href": "./llms.txt",
       "type": "text/markdown",
       "title": "Agent/LLM usage guide",
-      "roles": ["documentation"]
+      "roles": [
+        "documentation"
+      ]
     },
     "README": {
       "href": "./README.md",
       "type": "text/markdown",
       "title": "Human-readable README",
-      "roles": ["metadata"]
+      "roles": [
+        "metadata"
+      ]
     }
   },
   "links": [
@@ -124,7 +188,7 @@
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "parent",

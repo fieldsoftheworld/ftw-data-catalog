@@ -21,6 +21,33 @@ web visualization. Part of [Fields of the World](https://fieldsofthe.world).
 - **MapLibre styles** in `styles/` that color fields by confidence (red→green,
   0–100) with the recommended `>= 69` reliability filter and a legend.
 
+## How this was made — the model & training data
+
+These boundaries are predictions from the **PRUE** model ([Muhawenayo et al. 2026,
+*PRUE: A Practical Recipe for Field Boundary Segmentation at Scale*](https://arxiv.org/abs/2603.27101))
+— a **U-Net** semantic-segmentation model with composite loss functions and targeted
+data augmentations. In a benchmark of 18 models it reached **76% IoU and 47% object-F1**
+on the FTW benchmark (a +6% / +9% gain over the prior baseline), outperforming
+instance-segmentation and geospatial-foundation-model approaches, and is more robust to
+changes in illumination, spatial scale, and geographic location.
+
+PRUE was trained and evaluated on the **Fields of the World (FTW) benchmark** —
+**get the data on Source Cooperative: <https://source.coop/kerner-lab/fields-of-the-world>**
+(Kerner et al. 2025, AAAI, [arXiv:2409.16252](https://arxiv.org/abs/2409.16252)). The benchmark
+is **70,462 samples across 24 countries on four continents** (Europe, Africa, Asia, South
+America), pairing multi-date multispectral **Sentinel-2** imagery with instance- and
+semantic-segmentation field masks; models pre-trained on FTW generalize better (zero-shot and
+fine-tuned) to held-out countries.
+
+To build this global layer, PRUE is run over global Sentinel-2 planting/harvest median
+composites (the `features` collection / prediction Zarr), and the softmax outputs for
+`[non_field_background, field, field_boundaries]` are thresholded at 0.5 and polygonized
+into these vectors; the `confidence` raster summarizes per-cell reliability. The broader
+FTW ecosystem and downstream recipes (crop-type mapping, forest-loss attribution) are in
+the **FTW field guide** ([Corley et al. 2026](https://arxiv.org/abs/2602.08131)), which
+reports median predicted field sizes of **0.06 ha (Rwanda) to 0.28 ha (Switzerland)**
+across five countries / 4.76M km².
+
 ## The `confidence` column
 
 Each polygon carries a **`confidence`** value on a **0–100** scale. It is derived,
