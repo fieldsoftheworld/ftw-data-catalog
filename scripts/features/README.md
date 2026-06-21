@@ -36,11 +36,15 @@ to the AWS/Earth Search L2A COGs actually used).
 # in the repo (writes the committed collections)
 python3 scripts/features/build_features_items.py collections
 
-# on rails (anonymous S3 read for COG headers + index.parquet; AWS creds to upload)
-python3 scripts/features/build_features_items.py items 2024
-python3 scripts/features/build_features_items.py items 2025
-# test first: --limit 5 --no-upload
+# on rails: submit via Slurm (NOT the login node — it reaps heavy jobs). One job per year:
+rsync -av scripts/features/ rails:ftw-feat/
+ssh rails 'cd ~/ftw-feat && sbatch --export=ALL,YEAR=2024 features_items.sbatch'
+ssh rails 'cd ~/ftw-feat && sbatch --export=ALL,YEAR=2025 features_items.sbatch'
+# the sbatch runs: build_features_items.py items <YEAR>  (test first with --limit 5 --no-upload)
 ```
+
+See the root `scripts/README.md` "Running on TGI rails" for the full Slurm recipe
+(account `bgtj-tgirails`, partition `cpu`, env on `/u`, compute-node S3 egress).
 
 Needs `duckdb`, `rasterio`, `pyarrow`, `aws`, and (for a proper stac-geoparquet)
 `stac-geoparquet`; falls back to a minimal index parquet if that isn't installed.

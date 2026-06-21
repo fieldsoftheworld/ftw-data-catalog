@@ -33,6 +33,12 @@ page cache counting against it, so memory must be kept bounded), `/u` is NFS whi
 `/tmp` is RAM-backed tmpfs, and the toolchain is bootstrapped per-user
 (`rails_install.sh`).
 
+> **Run via Slurm, not the login node.** rails is a Slurm cluster and its `railsl*`
+> login node reaps heavy jobs (they die mid-run even with `nohup`). These `rails_*`
+> steps predate that lesson; run them on a compute node with `sbatch` — see the root
+> `scripts/README.md` "Running on TGI rails" and the ready-made templates
+> `scripts/confidence/run_rails.sbatch` / `scripts/features/features_items.sbatch`.
+
 None of that is essential — these are ordinary `gpio` + `aws` + Python steps and
 **adapt easily to any cloud computing environment** (an EC2/GCE VM, a batch job, etc.).
 To run elsewhere, adjust the hardcoded paths/working dirs at the top of each script,

@@ -28,7 +28,9 @@ S3_BUCKET = "us-west-2.opendata.source.coop"
 S3_PREFIX = "tge-labs/ftw-global-data"
 COG_BASE = f"{PUB}/features/cogs/alpha"
 ZARR_HREF = f"{PUB}/features/zarr/alpha/global.zarr"
-INDEX_PARQUET = (f"s3://{S3_BUCKET}/{S3_PREFIX}/features/cogs/alpha/index.parquet")
+# Read the COG index over public HTTPS (duckdb s3:// hits an SSL/virtual-host issue
+# with the dotted Source Coop bucket name).
+INDEX_PARQUET = f"{PUB}/features/cogs/alpha/index.parquet"
 FTW_URL = "https://fieldsofthe.world"
 FTW_BENCHMARK_DATA = "https://source.coop/kerner-lab/fields-of-the-world"
 
@@ -261,7 +263,8 @@ def generate_items(year, workdir, limit=None, upload=True):
     NOT committed (the workdir should be gitignored)."""
     import duckdb, json as _json
     import rasterio
-    con = duckdb.connect(); con.execute("INSTALL spatial; LOAD spatial; SET TimeZone='UTC';")
+    con = duckdb.connect()
+    con.execute("INSTALL spatial; LOAD spatial; INSTALL httpfs; LOAD httpfs; SET TimeZone='UTC';")
     q = (f"SELECT tile_id, ST_AsGeoJSON(ANY_VALUE(geometry)) g, "
          f"ST_XMin(ANY_VALUE(geometry)) xmin, ST_YMin(ANY_VALUE(geometry)) ymin, "
          f"ST_XMax(ANY_VALUE(geometry)) xmax, ST_YMax(ANY_VALUE(geometry)) ymax "

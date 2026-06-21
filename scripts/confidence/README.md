@@ -16,14 +16,20 @@ the `vectors` collection alpha release), run on the **rails** box.
 ## Running on rails
 
 1. From your laptop, `ssh rails` once (Kerberos + Duo) to open the ControlMaster.
-2. Deploy these scripts and bring up the toolchain (a `micromamba` env with
+2. Deploy these scripts (toolchain is a `micromamba` env on shared `/u` with
    `tippecanoe`/`rasterio`/`duckdb`/`gpio@main` + `awscli`):
    ```
    rsync -av scripts/confidence/ rails:~/ftw-conf/
    ```
-3. Run detached: `nohup ./run_rails.sh --all -j 4 > all.log 2>&1 &`. Idempotent, so
-   re-running resumes. Keep memory bounded (`DUCKDB_MEM`, default 24 GB/worker) to
-   avoid the 64 GB-cgroup OOM.
+3. **Submit via Slurm** — do NOT run on the login node (it reaps heavy jobs mid-run):
+   ```
+   ssh rails 'cd ~/ftw-conf && sbatch run_rails.sbatch'   # exclusive compute node, -j 4
+   ssh rails 'squeue -u $USER'
+   ```
+   `run_rails.sbatch` runs `run_rails.sh --all -j 4` on a dedicated node. Idempotent
+   (skip-existing), so re-submitting sweeps any stragglers. Bound memory with
+   `DUCKDB_MEM` (default 24 GB/worker). See the root `scripts/README.md` "Running on
+   TGI rails" for the full Slurm recipe.
 
 `add_confidence.py` ordering note: ideally this runs at the `fiboa/` stage (before
 admin partitioning) — see the root `scripts/README.md`. Next stage:

@@ -47,15 +47,43 @@ predictions zarr ──(Wherobots, not yet scripted here)──▶ results/  (sn
 > partitioning) so confidence is intrinsic to every downstream product — a target for
 > the post-1.1 consolidation, once the whole chain (zarr → refined) is scripted.
 
-## Environment & gotchas (apply to all folders)
+## Running on TGI rails — use Slurm, NOT the login node
+
+**This is the way to run the heavy steps.** rails is a Slurm cluster
+([docs](https://docs.ncsa.illinois.edu/systems/tgirails/en/latest/running_jobs.html));
+the `railsl*` **login node reaps heavy jobs** — tippecanoe/duckdb runs started there
+(even with `nohup`/`setsid`) get silently killed mid-run by the login-node watchdog.
+Submit to a **compute node with `sbatch`** instead:
+
+```bash
+# one-time: open the SSH ControlMaster (Kerberos + Duo) and deploy
+ssh rails                                    # establishes the persistent socket
+rsync -av scripts/confidence/ rails:ftw-conf/
+rsync -av scripts/features/   rails:ftw-feat/
+
+# submit (ready-made templates):
+ssh rails 'cd ~/ftw-conf && sbatch run_rails.sbatch'                       # vectors confidence+PMTiles
+ssh rails 'cd ~/ftw-feat && sbatch --export=ALL,YEAR=2024 features_items.sbatch'
+ssh rails 'cd ~/ftw-feat && sbatch --export=ALL,YEAR=2025 features_items.sbatch'
+ssh rails 'squeue -u $USER'                  # watch the queue
+```
+
+Facts (verified): account `bgtj-tgirails`, partitions `cpu` / `cpu_amd`; the toolchain is
+a **micromamba env on shared `/u`** (`/u/cholmes/micromamba/envs/ftw`, reachable from
+compute nodes — no `module load` needed); **compute nodes have outbound S3 access**
+(read + authed write); use **node-local `/tmp` as the scratch `WORK`** for fast tippecanoe
+temp. Slurm jobs survive SSH disconnects (the login-node runs do not). The sbatch
+templates (`scripts/confidence/run_rails.sbatch`, `scripts/features/features_items.sbatch`)
+encode all of this; jobs are idempotent (skip-existing), so re-running sweeps stragglers.
+
+## Other environment & gotchas
 
 - **`gpio` = geoparquet-io CLI.** Several scripts hardcode a `GPIO` path — update it for
   the host. We often run **branches**, so check `gpio … --help` rather than released docs.
-- **rails:** SSH needs Duo MFA (use an SSH ControlMaster; the user opens it once with
-  `ssh rails`). There's a **64 GB per-user cgroup cap** (not the 251 GB physical RAM), and
-  **NFS page cache counts against it** → big duckdb/COPY jobs get OOM-killed; keep memory
-  bounded, stage I/O on `/tmp` (tmpfs), write final files to `/u` once.
+- Within a job, keep memory bounded (`DUCKDB_MEM`, default 24 GB/worker) — duckdb otherwise
+  grabs ~80% of node RAM per worker and OOMs under concurrency.
 - S3 paths (`results/`, `results-fiboa/`, `results-by-admin/`, `results-by-admin-conf/`)
   and `~/ftw-crs-fix` working dirs are duplicated at the top of the `rails_*` scripts.
-- Reads are anonymous; writes need default AWS creds. Run long jobs detached
-  (`nohup`/`setsid`); rely on skip-existing for resumability.
+- Reads are anonymous; writes need default AWS creds (on `/u`, reachable from compute nodes).
+- The older `admin/` `rails_*` scripts predate this Slurm setup (and reference a 64 GB
+  per-user cgroup cap from the shared login node) — run them via `sbatch` too.
