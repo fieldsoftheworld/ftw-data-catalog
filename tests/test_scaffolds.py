@@ -4,11 +4,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STAGING = ROOT / "staging"
 CATALOG = ROOT / "catalog"
-# Remaining scaffolds. predictions/vectors and the features collections (now the
-# per-year s2-planting-harvest-composites) have been promoted into catalog/.
-EXPECTED = {
-    "predictions/zarr": "predictions-zarr",
-}
+# Remaining scaffolds. predictions/vectors, predictions/zarr, and the features
+# collections (now the per-year s2-planting-harvest-composites) have all been
+# promoted into catalog/, so there are currently no staging scaffolds.
+EXPECTED = {}
 errs = []
 for path, cid in EXPECTED.items():
     cj = STAGING / path / "collection.json"
@@ -32,4 +31,4 @@ for path in EXPECTED:
         errs.append(f"catalog.json still links staged collection {href}")
 if errs:
     print("\n".join(errs)); sys.exit(1)
-print("OK: 1 scaffold collection staged and unlinked from published catalog")
+print(f"OK: {len(EXPECTED)} scaffold collection(s) staged and unlinked from published catalog")
