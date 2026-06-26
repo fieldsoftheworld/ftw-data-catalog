@@ -1222,9 +1222,9 @@
       ]
     },
     "thumbnail": {
-      "href": "https://data.source.coop/ftw/global-data/docs/prediction_mosaic.png",
+      "href": "https://data.source.coop/ftw/global-data/docs/global-ftw-map.png",
       "type": "image/png",
-      "title": "Global field-boundary predictions preview",
+      "title": "Global field-boundary predictions map",
       "roles": [
         "thumbnail",
         "overview"

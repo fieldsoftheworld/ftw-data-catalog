@@ -355,6 +355,38 @@ def _write_stac_geoparquet(items, path):
         pq.write_table(pa.table(cols), str(path))
 
 
+def make_thumbnail(tile, year, workdir, upload=True):
+    """Render a true-color (B04/B03/B02) preview of one tile's harvest composite to
+    features/thumbnail.png (the collection thumbnail)."""
+    import numpy as np
+    import rasterio
+    from rasterio.enums import Resampling
+    from PIL import Image
+    Path(workdir).mkdir(parents=True, exist_ok=True)
+    out = Path(workdir) / "thumbnail.png"
+    cog = f"{COG_BASE}/s2med_harvest/{tile}/{year}0101.tif"
+    target = 600
+    with rasterio.open(cog) as ds:
+        scale = max(1, ds.width // target)
+        w, h = ds.width // scale, ds.height // scale
+        rgb = ds.read([3, 2, 1], out_shape=(3, h, w),
+                      resampling=Resampling.average).astype("float32")  # R=B04, G=B03, B=B02
+    arr = np.zeros((h, w, 3), dtype="uint8")
+    for i in range(3):
+        b = rgb[i]
+        v = b[np.isfinite(b) & (b > 0)]
+        if v.size:
+            lo, hi = np.percentile(v, [2, 98])
+            arr[..., i] = (np.clip((np.nan_to_num(b) - lo) / (hi - lo + 1e-6), 0, 1) * 255).astype("uint8")
+    Image.fromarray(arr).save(out)
+    print(f"wrote {out} ({w}x{h}) from harvest tile {tile} {year}")
+    if upload:
+        subprocess.run(["aws", "s3", "cp", str(out),
+                        f"s3://{S3_BUCKET}/{S3_PREFIX}/features/thumbnail.png",
+                        "--quiet", "--region", "us-west-2", "--content-type", "image/png"], check=True)
+        print("uploaded features/thumbnail.png")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -364,9 +396,15 @@ def main(argv=None):
     it.add_argument("--workdir", default=os.environ.get("WORK", "/tmp/ftw-features"))
     it.add_argument("--limit", type=int, default=None)
     it.add_argument("--no-upload", action="store_true")
+    th = sub.add_parser("thumbnail"); th.add_argument("--tile", default="31UDP")
+    th.add_argument("--year", type=int, default=2024)
+    th.add_argument("--workdir", default=os.environ.get("WORK", "/tmp/ftw-features"))
+    th.add_argument("--no-upload", action="store_true")
     args = ap.parse_args(argv)
     if args.cmd == "collections":
         write_collections(args.out)
+    elif args.cmd == "thumbnail":
+        make_thumbnail(args.tile, args.year, args.workdir, upload=not args.no_upload)
     else:
         generate_items(args.year, args.workdir, args.limit, upload=not args.no_upload)
     return 0

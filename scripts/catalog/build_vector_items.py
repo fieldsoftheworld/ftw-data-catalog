@@ -412,9 +412,9 @@ def build_collection(item_links, child_links):
                 "href": "./styles/confidence-2024.json", "type": "application/json",
                 "title": "Confidence (2024)", "roles": ["style"]},
             "thumbnail": {
-                "href": f"{PUBLIC_BASE}/docs/prediction_mosaic.png",
+                "href": f"{PUBLIC_BASE}/docs/global-ftw-map.png",
                 "type": "image/png",
-                "title": "Global field-boundary predictions preview",
+                "title": "Global field-boundary predictions map",
                 "roles": ["thumbnail", "overview"]},
             "documentation": {
                 "href": "./llms.txt", "type": "text/markdown",
