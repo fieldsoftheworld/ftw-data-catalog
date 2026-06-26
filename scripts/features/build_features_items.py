@@ -288,11 +288,25 @@ def _llms(year):
             "- License: CC-BY-4.0; Sentinel-2 © Copernicus/ESA.\n")
 
 
+def _features_catalog_readme():
+    return (
+        f"# {FEAT_CATALOG_TITLE}\n\n"
+        + _DESC.replace("\\n", "\n") + "\n\n"
+        "## Browse by year\n\n"
+        "- [**2024 composites**](./2024/) — per-tile planting + harvest COGs, a global Zarr "
+        "mosaic, and a STAC-GeoParquet item index.\n"
+        "- [**2025 composites**](./2025/)\n\n"
+        "Each year is a STAC Collection; see its `collection.json` / `README.md` for the assets "
+        "and access snippets. Source imagery: [Sentinel-2 L2A](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2) "
+        "(ESA / Copernicus). License: CC-BY-4.0.\n")
+
+
 def write_collections(out_root):
     feat = Path(out_root) / "features"
     feat.mkdir(parents=True, exist_ok=True)
     (feat / "catalog.json").write_text(json.dumps(build_features_catalog(), indent=2) + "\n")
-    print(f"wrote {feat}/catalog.json (sub-catalog grouping the per-year collections)")
+    (feat / "README.md").write_text(_features_catalog_readme())
+    print(f"wrote {feat}/catalog.json (+ README) — sub-catalog grouping the per-year collections")
     for year in (2024, 2025):
         d = feat / str(year)
         d.mkdir(parents=True, exist_ok=True)
