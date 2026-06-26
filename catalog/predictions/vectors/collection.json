@@ -1262,5 +1262,11 @@
         "metadata"
       ]
     }
-  }
+  },
+  "portolan:styles": [
+    "styles/2025",
+    "styles/2024",
+    "styles/confidence-2025",
+    "styles/confidence-2024"
+  ]
 }

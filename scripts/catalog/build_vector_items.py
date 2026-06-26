@@ -252,6 +252,9 @@ def build_item(stem, country_code, bbox, feature_count, is_split=False, conf=Non
             "geoparquet:geometry_type": "Polygon",
             "geoparquet:feature_count": feature_count,
             "table:columns": TABLE_COLUMNS,
+            # the Portolan browser reads this list to populate the style picker
+            "portolan:styles": ["style-2025", "style-2024",
+                                "style-confidence-2025", "style-confidence-2024"],
         },
         "collection": "vectors",
         "assets": {
@@ -369,6 +372,9 @@ def build_collection(item_links, child_links):
         "type": "Collection",
         "stac_version": "1.1.0",
         "stac_extensions": [PROJ_EXT, VECTOR_EXT, TABLE_EXT, SCI_EXT, PARTITION_EXT],
+        # the Portolan browser reads this list to populate the style picker
+        "portolan:styles": ["styles/2025", "styles/2024",
+                            "styles/confidence-2025", "styles/confidence-2024"],
         "id": "vectors",
         "title": "FTW Global — Field Boundary Predictions (GeoParquet)",
         "description": (
