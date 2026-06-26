@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `PK_HEL` (country `PK`) contains **38 field polygons**.
+Partition `PK_HEL` (country `PK`) contains **38 field polygons; 3% fall within the modeled-confidence layer's coverage (confidence 0–100, here 38–38; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Palau` (country `PW`) contains **1,225 field polygons**.
+Partition `Palau` (country `PW`) contains **1,225 field polygons; 96% fall within the modeled-confidence layer's coverage (confidence 0–100, here 13–49; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

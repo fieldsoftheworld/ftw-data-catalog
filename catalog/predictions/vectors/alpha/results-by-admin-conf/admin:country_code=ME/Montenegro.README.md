@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Montenegro` (country `ME`) contains **26,204 field polygons**.
+Partition `Montenegro` (country `ME`) contains **26,204 field polygons; 94% fall within the modeled-confidence layer's coverage (confidence 0–100, here 14–99; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

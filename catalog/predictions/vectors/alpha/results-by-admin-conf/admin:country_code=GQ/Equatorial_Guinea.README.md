@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Equatorial_Guinea` (country `GQ`) contains **8,067 field polygons**.
+Partition `Equatorial_Guinea` (country `GQ`) contains **8,067 field polygons; 80% fall within the modeled-confidence layer's coverage (confidence 0–100, here 12–56; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

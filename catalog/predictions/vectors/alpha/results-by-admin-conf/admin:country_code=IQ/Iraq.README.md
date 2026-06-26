@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Iraq` (country `IQ`) contains **7,549,297 field polygons**.
+Partition `Iraq` (country `IQ`) contains **7,549,297 field polygons; 95% fall within the modeled-confidence layer's coverage (confidence 0–100, here 6–100; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

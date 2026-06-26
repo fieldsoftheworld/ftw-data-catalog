@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Finland` (country `FI`) contains **713,942 field polygons**.
+Partition `Finland` (country `FI`) contains **713,942 field polygons; 92% fall within the modeled-confidence layer's coverage (confidence 0–100, here 11–100; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

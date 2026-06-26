@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Dominica` (country `DM`) contains **590 field polygons**.
+Partition `Dominica` (country `DM`) contains **590 field polygons; 11% fall within the modeled-confidence layer's coverage (confidence 0–100, here 15–33; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

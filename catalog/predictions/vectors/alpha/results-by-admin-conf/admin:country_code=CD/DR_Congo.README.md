@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `DR_Congo` (country `CD`) contains **43,907,040 field polygons**.
+Partition `DR_Congo` (country `CD`) contains **43,907,040 field polygons; 1% fall within the modeled-confidence layer's coverage (confidence 0–100, here 6–99; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

@@ -6,8 +6,8 @@ Reads catalog.publish.yaml and uploads everything under the configured publish_d
 .portolan/state.json. Never uploads data (*.tif/*.parquet/*.zarr), scripts/, or config.
 
 Usage:
-  python3 scripts/publish.py            # dry run (prints planned uploads)
-  python3 scripts/publish.py --confirm  # execute aws s3 cp
+  python3 scripts/catalog/publish.py            # dry run (prints planned uploads)
+  python3 scripts/catalog/publish.py --confirm  # execute aws s3 cp
 """
 from __future__ import annotations
 import argparse
@@ -94,7 +94,7 @@ def main(argv=None) -> int:
     ap.add_argument("--confirm", action="store_true", help="execute uploads (default: dry run)")
     args = ap.parse_args(argv)
 
-    root = Path(__file__).resolve().parents[1]
+    root = Path(__file__).resolve().parents[2]
     manifest = _load_manifest(root)
     region = manifest.get("region", "us-west-2")
     uploads = collect_uploads(manifest, root)

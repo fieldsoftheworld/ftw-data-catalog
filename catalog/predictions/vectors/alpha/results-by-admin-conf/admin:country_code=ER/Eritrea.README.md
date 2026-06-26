@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Eritrea` (country `ER`) contains **10,771,752 field polygons**.
+Partition `Eritrea` (country `ER`) contains **10,771,752 field polygons; 98% fall within the modeled-confidence layer's coverage (confidence 0–100, here 6–100; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

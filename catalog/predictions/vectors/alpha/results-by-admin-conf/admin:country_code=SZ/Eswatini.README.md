@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Eswatini` (country `SZ`) contains **669,532 field polygons**.
+Partition `Eswatini` (country `SZ`) contains **669,532 field polygons; 98% fall within the modeled-confidence layer's coverage (confidence 0–100, here 7–100; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

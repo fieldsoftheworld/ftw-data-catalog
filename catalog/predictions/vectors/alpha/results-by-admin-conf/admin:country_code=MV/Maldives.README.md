@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Maldives` (country `MV`) contains **92 field polygons**.
+Partition `Maldives` (country `MV`) contains **92 field polygons; 18% fall within the modeled-confidence layer's coverage (confidence 0–100, here 17–34; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 

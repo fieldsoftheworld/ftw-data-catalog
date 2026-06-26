@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Peru` (country `PE`) contains **21,429,750 field polygons**.
+Partition `Peru` (country `PE`) contains **21,429,750 field polygons; 89% fall within the modeled-confidence layer's coverage (confidence 0–100, here 5–100; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 
