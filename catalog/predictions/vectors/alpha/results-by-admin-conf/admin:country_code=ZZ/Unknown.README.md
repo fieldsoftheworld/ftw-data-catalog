@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-Partition `Unknown` (country `ZZ`) contains **46,428,784 field polygons**.
+Partition `Unknown` (country `ZZ`) contains **46,428,784 field polygons; 0% fall within the modeled-confidence layer's coverage (confidence 0–100, here 25–25; null elsewhere means outside the layer's coverage, not low confidence)**.
 
 ## How it was made
 
