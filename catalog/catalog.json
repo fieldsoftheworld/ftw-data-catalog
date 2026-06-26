@@ -3,7 +3,7 @@
   "id": "ftw-global-data",
   "stac_version": "1.1.0",
   "title": "Fields of the World \u2014 Global",
-  "description": "Global agricultural field boundaries and prediction-quality layers at 10 m resolution, produced by applying the PRUE field-boundary segmentation model to global Sentinel-2 mosaics (Robinson et al. 2026, arXiv:2605.11055). Published openly under CC-BY-4.0 by Taylor Geospatial and collaborators. This STAC catalog currently describes the prediction confidence & quality layers; additional products (vector field boundaries, mosaics, Zarr) will be added.",
+  "description": "Global agricultural field boundaries and prediction-quality layers at 10 m resolution — ~1.6 billion field polygons per year (2024 & 2025) across 195 countries — produced by applying the [PRUE field-boundary segmentation model](https://arxiv.org/abs/2603.27101) to global Sentinel-2 mosaics ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)). Part of [Fields of the World](https://fieldsofthe.world); published openly under CC-BY-4.0 by the [Taylor Geospatial Institute](https://taylorgeospatial.org/) and collaborators. Dataset home page: [source.coop/ftw/global-data](https://source.coop/ftw/global-data). Background reading: the [global field-boundary map](https://arxiv.org/abs/2605.11055), the [Fields of the World benchmark](https://arxiv.org/abs/2409.16252), the [PRUE recipe](https://arxiv.org/abs/2603.27101), and the [FTW field guide](https://arxiv.org/abs/2602.08131).\n\nThe data itself (billions of polygons, COGs, and Zarr — hundreds of GB) lives on [Source Cooperative](https://source.coop/ftw/global-data); the STAC / [Portolan](https://portolan-sdi.org) **catalog metadata** is managed in the [ftw-data-catalog GitHub repository](https://github.com/fieldsoftheworld/ftw-data-catalog). Pull requests to improve the catalog are welcome there.",
   "git:repository": "https://github.com/fieldsoftheworld/ftw-data-catalog",
   "git:ref": "main",
   "git:provider": "github",
@@ -45,9 +45,9 @@
     },
     {
       "rel": "about",
-      "href": "https://data.source.coop/ftw/global-data/README.md",
-      "type": "text/markdown",
-      "title": "Dataset README"
+      "href": "https://source.coop/ftw/global-data",
+      "type": "text/html",
+      "title": "Global FTW Dataset homepage"
     },
     {
       "rel": "llms",
