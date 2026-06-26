@@ -185,6 +185,11 @@ def build_features_catalog():
             "input features for the FTW Global field-boundary predictions — organized by "
             "prediction year. See each year's collection for the COGs, the global Zarr mosaic, "
             "and the STAC-GeoParquet item index."),
+        "assets": {
+            "thumbnail": {"href": THUMB_HREF, "type": "image/png",
+                          "title": "Sentinel-2 composite preview",
+                          "roles": ["thumbnail", "overview"]},
+        },
         "links": [
             {"rel": "root", "href": "../catalog.json", "type": "application/json",
              "title": "Fields of the World — Global"},
@@ -192,6 +197,8 @@ def build_features_catalog():
              "title": "Fields of the World — Global"},
             {"rel": "self", "href": f"{PUB}/features/catalog.json", "type": "application/json",
              "title": FEAT_CATALOG_TITLE},
+            {"rel": "preview", "href": THUMB_HREF, "type": "image/png",
+             "title": "Sentinel-2 composite preview"},
             {"rel": "child", "href": "./2024/collection.json", "type": "application/json",
              "title": f"{FEAT_CATALOG_TITLE} (2024)"},
             {"rel": "child", "href": "./2025/collection.json", "type": "application/json",

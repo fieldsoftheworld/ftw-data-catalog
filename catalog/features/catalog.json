@@ -4,6 +4,17 @@
   "id": "s2-planting-harvest-composites",
   "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites",
   "description": "Sentinel-2 planting- and harvest-season median composites (10 m) \u2014 the model-input features for the FTW Global field-boundary predictions \u2014 organized by prediction year. See each year's collection for the COGs, the global Zarr mosaic, and the STAC-GeoParquet item index.",
+  "assets": {
+    "thumbnail": {
+      "href": "https://data.source.coop/ftw/global-data/features/thumbnail.png",
+      "type": "image/png",
+      "title": "Sentinel-2 composite preview",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ]
+    }
+  },
   "links": [
     {
       "rel": "root",
@@ -22,6 +33,12 @@
       "href": "https://data.source.coop/ftw/global-data/features/catalog.json",
       "type": "application/json",
       "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites"
+    },
+    {
+      "rel": "preview",
+      "href": "https://data.source.coop/ftw/global-data/features/thumbnail.png",
+      "type": "image/png",
+      "title": "Sentinel-2 composite preview"
     },
     {
       "rel": "child",
