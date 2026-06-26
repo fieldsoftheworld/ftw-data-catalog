@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Field boundaries by confidence (2024)",
+  "name": "Field boundaries by confidence (2025)",
   "metadata": {
     "portolan:legend": {
       "title": "Confidence (0\u2013100)",
@@ -34,12 +34,12 @@
         }
       ]
     },
-    "description": "PRUE 2024 field-boundary predictions colored by modeled confidence (red = low, green = high). Each field is shaded by its confidence_mean attribute, rescaled to 0\u2013100 using 0.578178 as 100%."
+    "description": "PRUE 2025 field-boundary predictions colored by modeled confidence (red = low, green = high). Each field is shaded by its confidence_mean attribute, rescaled to 0\u2013100 using 0.578178 as 100%."
   },
   "sources": {
     "data": {
       "type": "vector",
-      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors/alpha/2024_with_confidence.pmtiles"
+      "url": "pmtiles://https://data.source.coop/ftw/global-field-boundaries/pmtiles/ftw-global-fields-2025.pmtiles"
     }
   },
   "layers": [
@@ -47,7 +47,7 @@
       "id": "fields-fill",
       "type": "fill",
       "source": "data",
-      "source-layer": "2024",
+      "source-layer": "fields",
       "paint": {
         "fill-color": [
           "interpolate",
@@ -87,7 +87,7 @@
       "id": "fields-outline",
       "type": "line",
       "source": "data",
-      "source-layer": "2024",
+      "source-layer": "fields",
       "paint": {
         "line-color": [
           "interpolate",

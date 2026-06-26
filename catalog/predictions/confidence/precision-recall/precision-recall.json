@@ -113,7 +113,7 @@
   ],
   "assets": {
     "data": {
-      "href": "./prue_v1_precision_recall_500m.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/precision-recall/prue_v1_precision_recall_500m.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Precision & recall vs cropland agreement",
       "roles": [

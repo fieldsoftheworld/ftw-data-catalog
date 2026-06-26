@@ -1,0 +1,45 @@
+{
+  "version": 8,
+  "name": "Field boundaries (2025)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Field boundaries (2025)",
+      "type": "category",
+      "stops": [
+        {
+          "color": "#33a02c",
+          "label": "Predicted field"
+        }
+      ]
+    },
+    "description": "PRUE field-boundary predictions for 2025 (determination year), solid green."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-field-boundaries/pmtiles/ftw-global-fields-2025.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "fill-color": "#33a02c",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "line-color": "#33a02c",
+        "line-width": 1
+      }
+    }
+  ]
+}

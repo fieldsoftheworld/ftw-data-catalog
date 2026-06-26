@@ -98,7 +98,7 @@
   ],
   "assets": {
     "data": {
-      "href": "./prue_v1_confidence_global.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Confidence score (EPSG:4326, float32)",
       "roles": [
@@ -144,7 +144,7 @@
       ]
     },
     "visual": {
-      "href": "./prue_v1_confidence_global_uint8_3857.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global_uint8_3857.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Confidence score, 8-bit web-mercator (display)",
       "roles": [

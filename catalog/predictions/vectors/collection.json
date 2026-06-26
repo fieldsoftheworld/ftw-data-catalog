@@ -1205,10 +1205,26 @@
         "visual"
       ]
     },
-    "styles/default": {
-      "href": "./styles/default.json",
+    "styles/2025": {
+      "href": "./styles/2025.json",
       "type": "application/json",
-      "title": "Confidence (2025) \u2014 default",
+      "title": "Field boundaries (2025) \u2014 default",
+      "roles": [
+        "style"
+      ]
+    },
+    "styles/2024": {
+      "href": "./styles/2024.json",
+      "type": "application/json",
+      "title": "Field boundaries (2024)",
+      "roles": [
+        "style"
+      ]
+    },
+    "styles/confidence-2025": {
+      "href": "./styles/confidence-2025.json",
+      "type": "application/json",
+      "title": "Field boundaries by confidence (2025)",
       "roles": [
         "style"
       ]
@@ -1216,7 +1232,7 @@
     "styles/confidence-2024": {
       "href": "./styles/confidence-2024.json",
       "type": "application/json",
-      "title": "Confidence (2024)",
+      "title": "Field boundaries by confidence (2024)",
       "roles": [
         "style"
       ]

@@ -113,7 +113,7 @@
   ],
   "assets": {
     "data": {
-      "href": "./prue_v1_entropy_500m.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/entropy/prue_v1_entropy_500m.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Model entropy (field & boundary)",
       "roles": [

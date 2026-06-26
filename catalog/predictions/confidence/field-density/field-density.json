@@ -115,7 +115,7 @@
   ],
   "assets": {
     "field_boundary": {
-      "href": "./prue_v1_field_area_500m.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Field & boundary pixel count, unfiltered",
       "roles": [
@@ -172,7 +172,7 @@
       ]
     },
     "field_boundary_conf0.4": {
-      "href": "./prue_v1_field_area_500m_conf0.4.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_conf0.4.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Field & boundary pixel count, confidence >= 0.4 (default filter)",
       "roles": [
@@ -229,7 +229,7 @@
       ]
     },
     "field_boundary_conf0.5": {
-      "href": "./prue_v1_field_area_500m_conf0.5.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_conf0.5.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Field & boundary pixel count, confidence >= 0.5 (conservative)",
       "roles": [
@@ -286,7 +286,7 @@
       ]
     },
     "field_boundary_filtered": {
-      "href": "./prue_v1_field_area_500m_filtered.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_filtered.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Field & boundary pixel count, default filtered",
       "roles": [
@@ -343,7 +343,7 @@
       ]
     },
     "fields_only": {
-      "href": "./prue_v1_field_area_500m_fieldsonly.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_fieldsonly.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Field pixel count only (single band)",
       "roles": [
@@ -388,7 +388,7 @@
       ]
     },
     "visual": {
-      "href": "./prue_v1_field_area_500m_fieldsonly_uint8_3857.tif",
+      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_fieldsonly_uint8_3857.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Field density, 8-bit web-mercator (display)",
       "roles": [

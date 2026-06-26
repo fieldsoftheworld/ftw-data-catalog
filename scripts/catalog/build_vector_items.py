@@ -405,12 +405,18 @@ def build_collection(item_links, child_links):
                 "title": "Field boundaries 2024 with confidence (PMTiles)",
                 "roles": ["visual"],
             },
-            "styles/default": {
-                "href": "./styles/default.json", "type": "application/json",
-                "title": "Confidence (2025) — default", "roles": ["style"]},
+            "styles/2025": {
+                "href": "./styles/2025.json", "type": "application/json",
+                "title": "Field boundaries (2025) — default", "roles": ["style"]},
+            "styles/2024": {
+                "href": "./styles/2024.json", "type": "application/json",
+                "title": "Field boundaries (2024)", "roles": ["style"]},
+            "styles/confidence-2025": {
+                "href": "./styles/confidence-2025.json", "type": "application/json",
+                "title": "Field boundaries by confidence (2025)", "roles": ["style"]},
             "styles/confidence-2024": {
                 "href": "./styles/confidence-2024.json", "type": "application/json",
-                "title": "Confidence (2024)", "roles": ["style"]},
+                "title": "Field boundaries by confidence (2024)", "roles": ["style"]},
             "thumbnail": {
                 "href": f"{PUBLIC_BASE}/docs/global-ftw-map.png",
                 "type": "image/png",
