@@ -20,6 +20,12 @@
       "type": "application/json"
     },
     {
+      "rel": "icon",
+      "href": "https://data.source.coop/ftw/global-data/docs/ftw-logo.svg",
+      "type": "image/svg+xml",
+      "title": "Fields of the World"
+    },
+    {
       "rel": "child",
       "href": "./predictions/confidence/collection.json",
       "type": "application/json",

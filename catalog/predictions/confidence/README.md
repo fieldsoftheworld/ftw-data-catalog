@@ -1,6 +1,6 @@
 # FTW Global — Prediction Confidence & Quality Layers (500 m)
 
-![Global prediction confidence](https://data.source.coop/ftw/global-data/predictions/confidence/thumbnail.png)
+<img src="https://data.source.coop/ftw/global-data/predictions/confidence/thumbnail.png" width="600" alt="Global prediction confidence">
 
 Global 500 m raster layers that quantify the reliability of the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) global agricultural field-boundary predictions ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)), part of [Fields of the World](https://fieldsofthe.world). Derived from the full-resolution (10 m) model outputs on a common global grid (EPSG:4326, ~0.004167 deg/px, -180..180 lon, -60..84 lat; each 500 m cell ~ 50x50 of the 10 m pixels). Five products: a modeled confidence score; field & boundary prediction density (unfiltered and confidence-filtered); model entropy; an external cropland-consensus count; and precision/recall against that cropland consensus. These layers let users assess where the field predictions can be trusted and filter the [vector dataset](https://source.coop/ftw/global-data/predictions/vectors) accordingly. Temporal coverage inferred as the 2025 prediction year from the [paper](https://arxiv.org/abs/2605.11055) (the cropland-consensus layer is year-independent); pending confirmation from the data authors.
 

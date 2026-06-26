@@ -355,7 +355,7 @@ def build_item(tile_id, year, geometry, bbox, proj_code, proj_shape, proj_transf
 
 def _readme(year):
     return (f"# {cog_title(year)}\n\n"
-            f"![Sentinel-2 composite preview]({THUMB_HREF})\n\n"
+            f'<img src="{THUMB_HREF}" width="600" alt="Sentinel-2 composite preview">\n\n'
             + _DESC.replace("\\n", "\n") + "\n\n"
             "## Access (COGs)\n\n"
             "Per-tile COGs are indexed by the STAC-GeoParquet item index "
@@ -383,7 +383,7 @@ def _llms(year):
 def _features_catalog_readme():
     return (
         f"# {FEAT_CATALOG_TITLE}\n\n"
-        f"![Sentinel-2 composite preview]({THUMB_HREF})\n\n"
+        f'<img src="{THUMB_HREF}" width="600" alt="Sentinel-2 composite preview">\n\n'
         + _DESC.replace("\\n", "\n") + "\n\n"
         "## Collections\n\n"
         f"- [**COGs — 2024**]({SRC}/features/2024) — per-tile planting + harvest COGs + a STAC-GeoParquet item index.\n"
@@ -401,7 +401,7 @@ def _features_catalog_readme():
 
 def _zarr_readme():
     return (f"# {ZARR_TITLE}\n\n"
-            f"![Sentinel-2 composite preview]({THUMB_HREF})\n\n"
+            f'<img src="{THUMB_HREF}" width="600" alt="Sentinel-2 composite preview">\n\n'
             "The FTW Sentinel-2 planting/harvest composites as a single global EPSG:4326 **Zarr "
             "mosaic** (Zarr V3, ~10 m), with a `time` dimension over 2024 & 2025 — the **same data** "
             f"as the per-tile COG collections ([COGs 2024]({SRC}/features/2024), "

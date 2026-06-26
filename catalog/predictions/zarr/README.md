@@ -6,6 +6,10 @@ global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube
 of [Fields of the World](https://fieldsofthe.world); accompanying paper:
 <https://aka.ms/ftw-global-paper>.
 
+<img src="https://data.source.coop/ftw/global-data/docs/prediction_mosaic.png" width="600" alt="Prediction Zarr opened in xarray">
+
+*The prediction Zarr opened in xarray (`xr.open_zarr`) — dimensions, bands, and chunking.*
+
 ## What's here
 
 A single store: `…/predictions/zarr/alpha/global.zarr`, with dimensions

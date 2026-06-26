@@ -1,6 +1,6 @@
 # FTW Global — Field Boundary Predictions (GeoParquet)
 
-![Global field-boundary predictions](https://data.source.coop/ftw/global-data/docs/global-ftw-map.png)
+<img src="https://data.source.coop/ftw/global-data/docs/global-ftw-map.png" width="600" alt="Global field-boundary predictions">
 
 Global agricultural **field-boundary polygons** predicted by the PRUE model
 ([ftw-baselines](https://github.com/fieldsoftheworld/ftw-baselines)), published as

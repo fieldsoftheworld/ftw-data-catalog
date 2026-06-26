@@ -1,6 +1,6 @@
 # FTW Global — Sentinel-2 Planting & Harvest Composites — Zarr mosaic (2024 & 2025)
 
-![Sentinel-2 composite preview](https://data.source.coop/ftw/global-data/features/thumbnail.png)
+<img src="https://data.source.coop/ftw/global-data/features/thumbnail.png" width="600" alt="Sentinel-2 composite preview">
 
 The FTW Sentinel-2 planting/harvest composites as a single global EPSG:4326 **Zarr mosaic** (Zarr V3, ~10 m), with a `time` dimension over 2024 & 2025 — the **same data** as the per-tile COG collections ([COGs 2024](https://source.coop/ftw/global-data/features/2024), [COGs 2025](https://source.coop/ftw/global-data/features/2025)), in datacube form. Bands B02/B03/B04/B08 + N_VALID_PIXELS; the model-input features for the FTW [field-boundary predictions](https://source.coop/ftw/global-data/predictions).
 
