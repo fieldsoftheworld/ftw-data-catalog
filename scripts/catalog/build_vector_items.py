@@ -338,12 +338,10 @@ def build_collection(item_links, child_links):
          "title": "vecorel geometry-metrics extension (metrics:area, metrics:perimeter)"},
         {"rel": "describedby", "href": VECOREL_ADMIN, "type": "text/html",
          "title": "vecorel administrative-division extension (admin:*)"},
-        # web-map-links extension: PMTiles exposed as links (default = 2025)
-        {"rel": "pmtiles", "href": PMTILES_2025, "type": "application/vnd.pmtiles",
-         "title": "Field boundaries 2025 (default)"},
-        {"rel": "pmtiles", "href": PMTILES_2024, "type": "application/vnd.pmtiles",
-         "title": "Field boundaries 2024 with confidence"},
     ]
+    # NOTE: PMTiles are exposed as visual *assets* (below). We deliberately do NOT also
+    # add web-map-links `pmtiles` links — the Portolan browser auto-loads both and then
+    # errors with "Layer ... already exists" (duplicate default layers per source-layer).
     for stem, cc in item_links:
         links.append({"rel": "item",
                       "href": f"./{DATA_REL}/admin:country_code={cc}/{stem}.json",
@@ -356,7 +354,7 @@ def build_collection(item_links, child_links):
     return {
         "type": "Collection",
         "stac_version": "1.1.0",
-        "stac_extensions": [PROJ_EXT, VECTOR_EXT, WEBMAP_EXT, TABLE_EXT, SCI_EXT, PARTITION_EXT],
+        "stac_extensions": [PROJ_EXT, VECTOR_EXT, TABLE_EXT, SCI_EXT, PARTITION_EXT],
         "id": "vectors",
         "title": "FTW Global — Field Boundary Predictions (alpha)",
         "description": (

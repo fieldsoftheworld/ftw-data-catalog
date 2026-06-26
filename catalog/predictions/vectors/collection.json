@@ -4,7 +4,6 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json",
     "https://stac-extensions.github.io/table/v1.2.0/schema.json",
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
     "https://portolan-sdi.github.io/stac-partition-extension/v1.0.0/schema.json"
@@ -194,18 +193,6 @@
       "href": "https://github.com/vecorel/administrative-division-extension",
       "type": "text/html",
       "title": "vecorel administrative-division extension (admin:*)"
-    },
-    {
-      "rel": "pmtiles",
-      "href": "https://data.source.coop/ftw/global-field-boundaries/pmtiles/ftw-global-fields-2025.pmtiles",
-      "type": "application/vnd.pmtiles",
-      "title": "Field boundaries 2025 (default)"
-    },
-    {
-      "rel": "pmtiles",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/2024_with_confidence.pmtiles",
-      "type": "application/vnd.pmtiles",
-      "title": "Field boundaries 2024 with confidence"
     },
     {
       "rel": "item",
