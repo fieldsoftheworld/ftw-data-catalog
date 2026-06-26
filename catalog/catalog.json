@@ -39,15 +39,9 @@
     },
     {
       "rel": "child",
-      "href": "./features/2024/collection.json",
+      "href": "./features/catalog.json",
       "type": "application/json",
-      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites (2024)"
-    },
-    {
-      "rel": "child",
-      "href": "./features/2025/collection.json",
-      "type": "application/json",
-      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites (2025)"
+      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites"
     },
     {
       "rel": "about",

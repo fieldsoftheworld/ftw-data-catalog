@@ -356,7 +356,7 @@ def build_collection(item_links, child_links):
         "stac_version": "1.1.0",
         "stac_extensions": [PROJ_EXT, VECTOR_EXT, TABLE_EXT, SCI_EXT, PARTITION_EXT],
         "id": "vectors",
-        "title": "FTW Global — Field Boundary Predictions (alpha)",
+        "title": "FTW Global — Field Boundary Predictions (GeoParquet)",
         "description": (
             f"Global agricultural field-boundary polygons. {_PROJECT} ~3.2 billion field "
             "polygons across 195 countries, as cloud-native GeoParquet partitioned by "
@@ -411,6 +411,11 @@ def build_collection(item_links, child_links):
             "styles/confidence-2024": {
                 "href": "./styles/confidence-2024.json", "type": "application/json",
                 "title": "Confidence (2024)", "roles": ["style"]},
+            "thumbnail": {
+                "href": f"{PUBLIC_BASE}/docs/prediction_mosaic.png",
+                "type": "image/png",
+                "title": "Global field-boundary predictions preview",
+                "roles": ["thumbnail", "overview"]},
             "documentation": {
                 "href": "./llms.txt", "type": "text/markdown",
                 "title": "Agent/LLM usage guide", "roles": ["documentation"]},
@@ -592,7 +597,7 @@ def _country_llms(cc, stems):
 
 def _collection_llms(n_countries, n_items):
     return "\n".join([
-        "# FTW Global — Field Boundary Predictions (alpha)", "",
+        "# FTW Global — Field Boundary Predictions (GeoParquet)", "",
         _PROJECT, "",
         f"~3.2 billion field polygons across {n_countries} countries in {n_items} "
         "country/subdivision partitions. GeoParquet partitioned by country; query the "

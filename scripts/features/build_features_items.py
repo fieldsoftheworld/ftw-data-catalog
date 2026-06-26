@@ -47,6 +47,12 @@ S2_MISSION = "https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2"
 S2_L2A_OFFICIAL = "https://stac.dataspace.copernicus.eu/v1/collections/sentinel-2-l2a"
 S2_L2A_COGS = "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a"
 
+# The two per-year collections live under one STAC sub-catalog, so the root shows a
+# single "composites" entry that expands into 2024/2025.
+FEAT_CATALOG_ID = "s2-planting-harvest-composites"
+FEAT_CATALOG_TITLE = "FTW Global — Sentinel-2 Planting & Harvest Composites"
+THUMB_HREF = f"{PUB}/features/thumbnail.png"
+
 SPECTRAL_BANDS = [
     {"name": "B02", "eo:common_name": "blue", "eo:center_wavelength": 0.49},
     {"name": "B03", "eo:common_name": "green", "eo:center_wavelength": 0.56},
@@ -123,6 +129,9 @@ def build_collection(year):
         },
         "sci:publications": SCI_PUBLICATIONS,
         "assets": {
+            "thumbnail": {"href": THUMB_HREF, "type": "image/png",
+                          "title": "Sentinel-2 composite preview",
+                          "roles": ["thumbnail", "overview"]},
             "zarr": {"href": ZARR_HREF, "type": "application/vnd+zarr",
                      "title": "Global Sentinel-2 composite mosaic (Zarr V3, EPSG:4326, ~10 m)",
                      "description": "All tiles reprojected/resampled to EPSG:4326; dims (time, band, y, x). "
@@ -142,8 +151,8 @@ def build_collection(year):
         "links": [
             {"rel": "root", "href": "../../catalog.json", "type": "application/json",
              "title": "Fields of the World — Global"},
-            {"rel": "parent", "href": "../../catalog.json", "type": "application/json",
-             "title": "Fields of the World — Global"},
+            {"rel": "parent", "href": "../catalog.json", "type": "application/json",
+             "title": FEAT_CATALOG_TITLE},
             {"rel": "self", "href": f"{base}/collection.json", "type": "application/json",
              "title": f"FTW Global — Sentinel-2 Planting & Harvest Composites ({year})"},
             {"rel": "license", "href": "https://creativecommons.org/licenses/by/4.0/",
@@ -159,6 +168,34 @@ def build_collection(year):
              "type": "application/json", "title": "Prediction probabilities (Zarr) made from these features"},
             {"rel": "llms", "href": "./llms.txt", "type": "text/markdown",
              "title": "Agent/LLM usage guide"},
+        ],
+    }
+
+
+def build_features_catalog():
+    """A STAC Catalog grouping the per-year composite collections, so the root shows
+    one 'composites' entry that expands into 2024 / 2025."""
+    return {
+        "type": "Catalog",
+        "stac_version": "1.1.0",
+        "id": FEAT_CATALOG_ID,
+        "title": FEAT_CATALOG_TITLE,
+        "description": (
+            "Sentinel-2 planting- and harvest-season median composites (10 m) — the model-"
+            "input features for the FTW Global field-boundary predictions — organized by "
+            "prediction year. See each year's collection for the COGs, the global Zarr mosaic, "
+            "and the STAC-GeoParquet item index."),
+        "links": [
+            {"rel": "root", "href": "../catalog.json", "type": "application/json",
+             "title": "Fields of the World — Global"},
+            {"rel": "parent", "href": "../catalog.json", "type": "application/json",
+             "title": "Fields of the World — Global"},
+            {"rel": "self", "href": f"{PUB}/features/catalog.json", "type": "application/json",
+             "title": FEAT_CATALOG_TITLE},
+            {"rel": "child", "href": "./2024/collection.json", "type": "application/json",
+             "title": f"{FEAT_CATALOG_TITLE} (2024)"},
+            {"rel": "child", "href": "./2025/collection.json", "type": "application/json",
+             "title": f"{FEAT_CATALOG_TITLE} (2025)"},
         ],
     }
 
@@ -246,8 +283,12 @@ def _llms(year):
 
 
 def write_collections(out_root):
+    feat = Path(out_root) / "features"
+    feat.mkdir(parents=True, exist_ok=True)
+    (feat / "catalog.json").write_text(json.dumps(build_features_catalog(), indent=2) + "\n")
+    print(f"wrote {feat}/catalog.json (sub-catalog grouping the per-year collections)")
     for year in (2024, 2025):
-        d = Path(out_root) / "features" / str(year)
+        d = feat / str(year)
         d.mkdir(parents=True, exist_ok=True)
         (d / "collection.json").write_text(json.dumps(build_collection(year), indent=2) + "\n")
         (d / "README.md").write_text(_readme(year))

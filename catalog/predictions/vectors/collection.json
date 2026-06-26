@@ -9,7 +9,7 @@
     "https://portolan-sdi.github.io/stac-partition-extension/v1.0.0/schema.json"
   ],
   "id": "vectors",
-  "title": "FTW Global \u2014 Field Boundary Predictions (alpha)",
+  "title": "FTW Global \u2014 Field Boundary Predictions (GeoParquet)",
   "description": "Global agricultural field-boundary polygons. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. ~3.2 billion field polygons across 195 countries, as cloud-native GeoParquet partitioned by country (admin, Hive layout), with per-country PMTiles for web visualization. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing. Each field also carries a derived `confidence` (0\u2013100). Columns: id, geometry, bbox, metrics:area, metrics:perimeter, determination:datetime, determination:method, admin:country_code, admin:subdivision_code, confidence \u2014 see `table:columns` for definitions (including how `confidence` is derived).\n\n**How this was made.** Predictions come from the **PRUE** model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101)) \u2014 a U-Net segmentation model with composite losses and targeted augmentations that, in a benchmark of 18 models, scored **76% IoU / 47% object-F1** on the Fields of the World benchmark, outperforming instance-segmentation and geospatial-foundation-model approaches. The **[Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world)** (get the data on Source Cooperative; Kerner et al. 2025, AAAI, [arXiv:2409.16252](https://arxiv.org/abs/2409.16252)) pairs multi-date multispectral **Sentinel-2** imagery with instance/semantic field masks across **70,462 samples in 24 countries on four continents**; models pre-trained on it generalize better to held-out countries. PRUE is run over global Sentinel-2 planting/harvest median composites, and the softmax outputs are thresholded and polygonized into these vectors. Downstream recipes (crop-type mapping, forest-loss attribution) are in the FTW field guide ([Corley et al. 2026](https://arxiv.org/abs/2602.08131)).",
   "sci:citation": "Muhawenayo, G. et al. (2026). PRUE: A Practical Recipe for Field Boundary Segmentation at Scale. arXiv:2603.27101.",
   "sci:publications": [
@@ -1219,6 +1219,15 @@
       "title": "Confidence (2024)",
       "roles": [
         "style"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://data.source.coop/ftw/global-data/docs/prediction_mosaic.png",
+      "type": "image/png",
+      "title": "Global field-boundary predictions preview",
+      "roles": [
+        "thumbnail",
+        "overview"
       ]
     },
     "documentation": {

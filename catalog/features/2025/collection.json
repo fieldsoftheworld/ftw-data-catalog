@@ -187,6 +187,15 @@
     }
   ],
   "assets": {
+    "thumbnail": {
+      "href": "https://data.source.coop/ftw/global-data/features/thumbnail.png",
+      "type": "image/png",
+      "title": "Sentinel-2 composite preview",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ]
+    },
     "zarr": {
       "href": "https://data.source.coop/ftw/global-data/features/zarr/alpha/global.zarr",
       "type": "application/vnd+zarr",
@@ -232,9 +241,9 @@
     },
     {
       "rel": "parent",
-      "href": "../../catalog.json",
+      "href": "../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World \u2014 Global"
+      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites"
     },
     {
       "rel": "self",
