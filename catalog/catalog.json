@@ -7,14 +7,6 @@
   "git:repository": "https://github.com/fieldsoftheworld/ftw-data-catalog",
   "git:ref": "main",
   "git:provider": "github",
-  "assets": {
-    "documentation": {
-      "href": "./llms.txt",
-      "type": "text/markdown",
-      "title": "Agent/LLM usage guide",
-      "roles": ["documentation"]
-    }
-  },
   "links": [
     {
       "rel": "root",

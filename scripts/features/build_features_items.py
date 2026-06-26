@@ -185,11 +185,10 @@ def build_features_catalog():
             "input features for the FTW Global field-boundary predictions — organized by "
             "prediction year. See each year's collection for the COGs, the global Zarr mosaic, "
             "and the STAC-GeoParquet item index."),
-        "assets": {
-            "thumbnail": {"href": THUMB_HREF, "type": "image/png",
-                          "title": "Sentinel-2 composite preview",
-                          "roles": ["thumbnail", "overview"]},
-        },
+        # NOTE: STAC Catalogs must NOT carry `assets` — stac-js doesn't wrap catalog
+        # assets as Asset objects, so a catalog thumbnail asset crashes the browser
+        # (`asset.hasRole is not a function`). The card thumbnail comes from the
+        # rel="preview" link below, which stac-js's getThumbnails uses for catalogs.
         "links": [
             {"rel": "root", "href": "../catalog.json", "type": "application/json",
              "title": "Fields of the World — Global"},
