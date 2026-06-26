@@ -8,8 +8,8 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "s2-planting-harvest-composites-2024",
-  "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites (2024)",
-  "description": "Sentinel-2 **planting- and harvest-season median composites** at 10 m \u2014 the model-input features for the FTW Global field-boundary predictions. For each grid tile and season, ~5\u201310 quality-masked Sentinel-2 scenes (selected by latitude-based day-of-year heuristics) are reduced to a per-pixel median; bands are B02/B03/B04/B08 plus N_VALID_PIXELS, in the tile's native UTM zone. Part of [Fields of the World](https://fieldsofthe.world). These composites feed the **PRUE** U-Net model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101); 76% IoU / 47% object-F1 on the [Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries, [Kerner et al. 2025](https://arxiv.org/abs/2409.16252)), whose outputs are the `predictions` collections. Also available as a single global EPSG:4326 Zarr mosaic (collection `data` asset), stackable with the prediction Zarr.\n\n**Items & index:** ~22.7k per-tile items (each with a `planting` and `harvest` COG asset) are indexed by the collection's STAC-GeoParquet asset (`items.parquet`); query that rather than enumerating item links.",
+  "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 COGs (2024)",
+  "description": "Sentinel-2 **planting- and harvest-season median composites** at 10 m \u2014 the model-input features for the FTW Global field-boundary predictions. For each grid tile and season, ~5\u201310 quality-masked Sentinel-2 scenes (selected by latitude-based day-of-year heuristics) are reduced to a per-pixel median; bands are B02/B03/B04/B08 plus N_VALID_PIXELS, in the tile's native UTM zone. Part of [Fields of the World](https://fieldsofthe.world). These composites feed the **PRUE** U-Net model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101); 76% IoU / 47% object-F1 on the [Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries, [Kerner et al. 2025](https://arxiv.org/abs/2409.16252)), whose outputs are the [field-boundary predictions](https://source.coop/ftw/global-data/predictions). The same composites are published in two equivalent formats: per-tile **COGs** (these per-year collections) and a single global EPSG:4326 **[Zarr mosaic](https://source.coop/ftw/global-data/features/zarr)** (its own collection), stackable with the prediction Zarr.\n\n**Items & index:** ~22.7k per-tile items (each with a `planting` and `harvest` COG asset) are indexed by the collection's STAC-GeoParquet asset (`items.parquet`); query that rather than enumerating item links.",
   "license": "CC-BY-4.0",
   "keywords": [
     "Sentinel-2",
@@ -196,16 +196,6 @@
         "overview"
       ]
     },
-    "zarr": {
-      "href": "https://data.source.coop/ftw/global-data/features/zarr/alpha/global.zarr",
-      "type": "application/vnd+zarr",
-      "title": "Global Sentinel-2 composite mosaic (Zarr V3, EPSG:4326, ~10 m)",
-      "description": "All tiles reprojected/resampled to EPSG:4326; dims (time, band, y, x). Open with xarray: xr.open_zarr(href).pipe(rasterix.assign_index).",
-      "roles": [
-        "data",
-        "cloud-optimized"
-      ]
-    },
     "geoparquet-items": {
       "href": "https://data.source.coop/ftw/global-data/features/2024/items.parquet",
       "type": "application/vnd.apache.parquet",
@@ -249,7 +239,7 @@
       "rel": "self",
       "href": "https://data.source.coop/ftw/global-data/features/2024/collection.json",
       "type": "application/json",
-      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites (2024)"
+      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 COGs (2024)"
     },
     {
       "rel": "license",
@@ -279,6 +269,12 @@
       "href": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a",
       "type": "application/json",
       "title": "Sentinel-2 L2A COGs (AWS Open Data / Earth Search \u2014 source scenes used)"
+    },
+    {
+      "rel": "related",
+      "href": "https://data.source.coop/ftw/global-data/features/zarr/collection.json",
+      "type": "application/json",
+      "title": "Same composites as a global Zarr mosaic"
     },
     {
       "rel": "related",
