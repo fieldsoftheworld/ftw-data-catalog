@@ -1,0 +1,45 @@
+{
+  "version": 8,
+  "name": "IN_MP \u2014 field boundaries (2025)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Field boundaries (2025)",
+      "type": "category",
+      "stops": [
+        {
+          "color": "#33a02c",
+          "label": "Predicted field"
+        }
+      ]
+    },
+    "description": "PRUE 2025 field boundaries for IN_MP, solid green."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://./IN_MP.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2025",
+      "paint": {
+        "fill-color": "#33a02c",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "2025",
+      "paint": {
+        "line-color": "#33a02c",
+        "line-width": 1
+      }
+    }
+  ]
+}

@@ -121,10 +121,34 @@
         "visual"
       ]
     },
-    "style": {
-      "href": "./Eswatini.style.json",
+    "style-2025": {
+      "href": "./Eswatini.2025.style.json",
       "type": "application/json",
-      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "title": "MapLibre style \u2014 field boundaries (2025)",
+      "roles": [
+        "style"
+      ]
+    },
+    "style-2024": {
+      "href": "./Eswatini.2024.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 field boundaries (2024)",
+      "roles": [
+        "style"
+      ]
+    },
+    "style-confidence-2025": {
+      "href": "./Eswatini.confidence-2025.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 by confidence (2025)",
+      "roles": [
+        "style"
+      ]
+    },
+    "style-confidence-2024": {
+      "href": "./Eswatini.confidence-2024.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ]

@@ -121,10 +121,34 @@
         "visual"
       ]
     },
-    "style": {
-      "href": "./Lesotho.style.json",
+    "style-2025": {
+      "href": "./Lesotho.2025.style.json",
       "type": "application/json",
-      "title": "MapLibre style \u2014 confidence, one year layer at a time",
+      "title": "MapLibre style \u2014 field boundaries (2025)",
+      "roles": [
+        "style"
+      ]
+    },
+    "style-2024": {
+      "href": "./Lesotho.2024.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 field boundaries (2024)",
+      "roles": [
+        "style"
+      ]
+    },
+    "style-confidence-2025": {
+      "href": "./Lesotho.confidence-2025.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 by confidence (2025)",
+      "roles": [
+        "style"
+      ]
+    },
+    "style-confidence-2024": {
+      "href": "./Lesotho.confidence-2024.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ]

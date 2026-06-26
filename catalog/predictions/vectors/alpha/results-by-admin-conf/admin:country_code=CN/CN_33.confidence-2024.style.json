@@ -1,0 +1,111 @@
+{
+  "version": 8,
+  "name": "CN_33 \u2014 field boundaries by confidence (2024)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Confidence (0\u2013100)",
+      "unit": "%",
+      "type": "ramp",
+      "stops": [
+        {
+          "value": 0,
+          "color": "#d7191c",
+          "label": "0"
+        },
+        {
+          "value": 70,
+          "color": "#fec379",
+          "label": "70"
+        },
+        {
+          "value": 80,
+          "color": "#f3fabb",
+          "label": "80"
+        },
+        {
+          "value": 90,
+          "color": "#cfecb0",
+          "label": "90"
+        },
+        {
+          "value": 100,
+          "color": "#33a02c",
+          "label": "100"
+        }
+      ]
+    },
+    "description": "PRUE 2024 field boundaries for CN_33, with each field shaded by its confidence (0\u2013100, red\u2192green)."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://./CN_33.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2024",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "to-number",
+            [
+              "get",
+              "confidence"
+            ]
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "2024",
+      "paint": {
+        "line-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "to-number",
+            [
+              "get",
+              "confidence"
+            ]
+          ],
+          0,
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "line-width": 1
+      }
+    }
+  ]
+}

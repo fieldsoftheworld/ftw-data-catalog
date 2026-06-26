@@ -1,3 +1,4 @@
+import json
 """Tests for scripts/build_vector_items.py — STAC generation for the field-
 boundary prediction-vectors collection (per-parquet items, split-country
 sub-catalogs, glob data asset, confidence provenance docs).
@@ -61,6 +62,23 @@ def test_build_item_structure_and_relative_hrefs():
     assert any(l["rel"] == "derived_from" and "zarr" in l["href"] for l in item["links"])
 
 
+def test_item_styles_four_per_item():
+    import build_vector_items as b
+    styles = b.item_styles("Andorra")
+    # four styles, named like the collection-level set
+    assert set(styles) == {"2024", "2025", "confidence-2024", "confidence-2025"}
+    for name, st in styles.items():
+        assert st["version"] == 8
+        # each binds to the matching per-year PMTiles source-layer
+        year = name.split("-")[-1]
+        assert all(layer["source-layer"] == year for layer in st["layers"])
+        assert st["sources"]["data"]["url"] == "pmtiles://./Andorra.pmtiles"
+    # plain styles = solid green; confidence styles = a confidence-driven ramp
+    assert styles["2024"]["layers"][0]["paint"]["fill-color"] == "#33a02c"
+    conf_fill = styles["confidence-2024"]["layers"][0]["paint"]["fill-color"]
+    assert conf_fill[0] == "interpolate" and "confidence" in json.dumps(conf_fill)
+
+
 def test_build_collection_has_glob_and_two_pmtiles_and_styles():
     import build_vector_items as b
     col = b.build_collection(item_links=[("Andorra", "AD")], child_links=["AU"])
@@ -98,6 +116,7 @@ def main() -> int:
     tests = [test_bbox_to_polygon, test_title_for_single_file_country,
              test_title_for_split_subdivision,
              test_build_item_structure_and_relative_hrefs,
+             test_item_styles_four_per_item,
              test_build_collection_has_glob_and_two_pmtiles_and_styles]
     failures = []
     for t in tests:

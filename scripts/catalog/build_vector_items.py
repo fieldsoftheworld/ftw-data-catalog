@@ -172,42 +172,50 @@ def title_for(stem, country_code):
 
 # Confidence ramp (0-100 scale, as stored in the per-country PMTiles `confidence`).
 _RAMP = [0, "#d7191c", 70, "#fec379", 80, "#f3fabb", 90, "#cfecb0", 100, "#33a02c"]
-_FILTER = ["all", ["has", "confidence"], [">=", ["get", "confidence"], 69]]
+_GREEN = "#33a02c"
+_LEGEND_RAMP = {"title": "Confidence (0–100)", "unit": "%", "type": "ramp",
+                "stops": [{"value": 0, "color": "#d7191c", "label": "0"},
+                          {"value": 70, "color": "#fec379", "label": "70"},
+                          {"value": 80, "color": "#f3fabb", "label": "80"},
+                          {"value": 90, "color": "#cfecb0", "label": "90"},
+                          {"value": 100, "color": "#33a02c", "label": "100"}]}
+
+# The four per-item styles, named like the collection-level styles.
+ITEM_STYLE_NAMES = ("2024", "2025", "confidence-2024", "confidence-2025")
 
 
-def item_style(stem, years=("2024", "2025"), default_year="2025"):
-    """A MapLibre style for one item's PMTiles: a layer per year, with only the
-    default year visible (toggle the other on in the viewer). Colored by the
-    0-100 confidence (red->green), filtered to the recommended >= 69, with a
-    legend layer."""
-    src = {"data": {"type": "vector", "url": f"pmtiles://./{stem}.pmtiles"}}
-    color = ["interpolate", ["linear"], ["get", "confidence"], *_RAMP]
-    layers = [{
-        "id": "confidence-legend", "type": "fill", "source": "data",
-        "source-layer": default_year,
-        "paint": {"fill-color": ["step", ["get", "confidence"], *_RAMP], "fill-opacity": 0},
-    }]
-    for y in years:
-        vis = "visible" if y == default_year else "none"
-        layers.append({
-            "id": f"fields-{y}-fill", "type": "fill", "source": "data",
-            "source-layer": y, "layout": {"visibility": vis}, "filter": _FILTER,
-            "paint": {"fill-color": color, "fill-opacity": 0.5}})
-        layers.append({
-            "id": f"fields-{y}-outline", "type": "line", "source": "data",
-            "source-layer": y, "layout": {"visibility": vis}, "filter": _FILTER,
-            "paint": {"line-color": color, "line-width": 1}})
-    return {
-        "version": 8,
-        "name": f"{stem} field boundaries by confidence (year layers)",
-        "metadata": {
-            "portolan:legend": {"title": "Confidence (0–100)", "unit": "%", "type": "ramp"},
-            "description": (f"Per-year field boundaries for {stem}; one year layer "
-                            f"visible at a time (default {default_year}). Colored by "
-                            "confidence (0–100, red→green), filtered to confidence >= 69.")},
-        "sources": src,
-        "layers": layers,
-    }
+def item_styles(stem):
+    """Four MapLibre styles for one item's PMTiles — the same set as the collection:
+    plain green field boundaries and a confidence ramp, for 2024 and 2025 (the
+    per-country PMTiles carries a `2024` and a `2025` source-layer). Returns
+    {style_name: style_dict}; each is written as `<stem>.<name>.style.json`."""
+    url = f"pmtiles://./{stem}.pmtiles"
+    conf = ["interpolate", ["linear"], ["to-number", ["get", "confidence"]], *_RAMP]
+    out = {}
+    for year in ("2024", "2025"):
+        out[year] = {
+            "version": 8, "name": f"{stem} — field boundaries ({year})",
+            "metadata": {"portolan:legend": {"title": f"Field boundaries ({year})", "type": "category",
+                          "stops": [{"color": _GREEN, "label": "Predicted field"}]},
+                         "description": f"PRUE {year} field boundaries for {stem}, solid green."},
+            "sources": {"data": {"type": "vector", "url": url}},
+            "layers": [
+                {"id": "fields-fill", "type": "fill", "source": "data", "source-layer": year,
+                 "paint": {"fill-color": _GREEN, "fill-opacity": 0.2}},
+                {"id": "fields-outline", "type": "line", "source": "data", "source-layer": year,
+                 "paint": {"line-color": _GREEN, "line-width": 1}}]}
+        out[f"confidence-{year}"] = {
+            "version": 8, "name": f"{stem} — field boundaries by confidence ({year})",
+            "metadata": {"portolan:legend": _LEGEND_RAMP,
+                         "description": (f"PRUE {year} field boundaries for {stem}, with each field "
+                                         "shaded by its confidence (0–100, red→green).")},
+            "sources": {"data": {"type": "vector", "url": url}},
+            "layers": [
+                {"id": "fields-fill", "type": "fill", "source": "data", "source-layer": year,
+                 "paint": {"fill-color": conf, "fill-opacity": 0.5}},
+                {"id": "fields-outline", "type": "line", "source": "data", "source-layer": year,
+                 "paint": {"line-color": conf, "line-width": 1}}]}
+    return out
 
 
 def item_description(stem, country_code, feature_count=None, conf=None):
@@ -259,12 +267,18 @@ def build_item(stem, country_code, bbox, feature_count, is_split=False, conf=Non
                 "title": f"{title} field boundaries (PMTiles, 2024/2025 layers)",
                 "roles": ["visual"],
             },
-            "style": {
-                "href": f"./{stem}.style.json",
-                "type": "application/json",
-                "title": "MapLibre style — confidence, one year layer at a time",
-                "roles": ["style"],
-            },
+            "style-2025": {
+                "href": f"./{stem}.2025.style.json", "type": "application/json",
+                "title": "MapLibre style — field boundaries (2025)", "roles": ["style"]},
+            "style-2024": {
+                "href": f"./{stem}.2024.style.json", "type": "application/json",
+                "title": "MapLibre style — field boundaries (2024)", "roles": ["style"]},
+            "style-confidence-2025": {
+                "href": f"./{stem}.confidence-2025.style.json", "type": "application/json",
+                "title": "MapLibre style — by confidence (2025)", "roles": ["style"]},
+            "style-confidence-2024": {
+                "href": f"./{stem}.confidence-2024.style.json", "type": "application/json",
+                "title": "MapLibre style — by confidence (2024)", "roles": ["style"]},
             "README": {
                 "href": f"./{stem}.README.md",
                 "type": "text/markdown",
@@ -559,7 +573,8 @@ def main(argv=None) -> int:
             bbox, count, conf = _item_stats(cc, fname)
             item = build_item(stem, cc, bbox, count, is_split=is_split, conf=conf)
             (cdir / f"{stem}.json").write_text(json.dumps(item, indent=2))
-            (cdir / f"{stem}.style.json").write_text(json.dumps(item_style(stem), indent=2))
+            for sname, sdict in item_styles(stem).items():
+                (cdir / f"{stem}.{sname}.style.json").write_text(json.dumps(sdict, indent=2))
             (cdir / f"{stem}.README.md").write_text(item_readme(stem, cc, count, conf))
             n_items += 1
             if not is_split:
@@ -597,7 +612,8 @@ def _country_llms(cc, stems):
         f"[administrative-division]({VECOREL_ADMIN})):",
         *_columns_md(), "",
         "## Files", *[f"- `{s}.parquet` (GeoParquet) + `{s}.pmtiles` (vector tiles, "
-                      "2024/2025 layers) + `{s}.style.json`".replace("{s}", s) for s in stems],
+                      "2024/2025 layers) + 4 `{s}.*.style.json` (green/confidence × 2024/2025)"
+                      .replace("{s}", s) for s in stems],
     ]) + "\n"
 
 

@@ -1,0 +1,45 @@
+{
+  "version": 8,
+  "name": "TZ_RT \u2014 field boundaries (2024)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Field boundaries (2024)",
+      "type": "category",
+      "stops": [
+        {
+          "color": "#33a02c",
+          "label": "Predicted field"
+        }
+      ]
+    },
+    "description": "PRUE 2024 field boundaries for TZ_RT, solid green."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://./TZ_RT.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2024",
+      "paint": {
+        "fill-color": "#33a02c",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "2024",
+      "paint": {
+        "line-color": "#33a02c",
+        "line-width": 1
+      }
+    }
+  ]
+}
