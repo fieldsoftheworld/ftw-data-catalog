@@ -191,6 +191,9 @@ def item_styles(stem):
     {style_name: style_dict}; each is written as `<stem>.<name>.style.json`."""
     url = f"pmtiles://./{stem}.pmtiles"
     conf = ["interpolate", ["linear"], ["to-number", ["get", "confidence"]], *_RAMP]
+    # a `step` expression drives the browser's legend (extractLegend only reads step/match);
+    # carried on a hidden first fill layer so the visible fill stays a smooth interpolate.
+    conf_step = ["step", ["to-number", ["get", "confidence"]], *_RAMP[1:]]
     out = {}
     for year in ("2024", "2025"):
         out[year] = {
@@ -211,6 +214,8 @@ def item_styles(stem):
                                          "shaded by its confidence (0–100, red→green).")},
             "sources": {"data": {"type": "vector", "url": url}},
             "layers": [
+                {"id": "fields-legend", "type": "fill", "source": "data", "source-layer": year,
+                 "paint": {"fill-color": conf_step, "fill-opacity": 0}},
                 {"id": "fields-fill", "type": "fill", "source": "data", "source-layer": year,
                  "paint": {"fill-color": conf, "fill-opacity": 0.5}},
                 {"id": "fields-outline", "type": "line", "source": "data", "source-layer": year,

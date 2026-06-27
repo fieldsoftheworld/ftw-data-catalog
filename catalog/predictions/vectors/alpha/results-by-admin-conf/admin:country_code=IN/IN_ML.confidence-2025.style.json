@@ -44,6 +44,34 @@
   },
   "layers": [
     {
+      "id": "fields-legend",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "2025",
+      "paint": {
+        "fill-color": [
+          "step",
+          [
+            "to-number",
+            [
+              "get",
+              "confidence"
+            ]
+          ],
+          "#d7191c",
+          70,
+          "#fec379",
+          80,
+          "#f3fabb",
+          90,
+          "#cfecb0",
+          100,
+          "#33a02c"
+        ],
+        "fill-opacity": 0
+      }
+    },
+    {
       "id": "fields-fill",
       "type": "fill",
       "source": "data",

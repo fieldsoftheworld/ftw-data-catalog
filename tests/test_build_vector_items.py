@@ -75,8 +75,12 @@ def test_item_styles_four_per_item():
         assert st["sources"]["data"]["url"] == "pmtiles://./Andorra.pmtiles"
     # plain styles = solid green; confidence styles = a confidence-driven ramp
     assert styles["2024"]["layers"][0]["paint"]["fill-color"] == "#33a02c"
-    conf_fill = styles["confidence-2024"]["layers"][0]["paint"]["fill-color"]
-    assert conf_fill[0] == "interpolate" and "confidence" in json.dumps(conf_fill)
+    conf_layers = styles["confidence-2024"]["layers"]
+    # a hidden step layer drives the browser legend; the visible fill is a smooth interpolate
+    legend = conf_layers[0]
+    assert legend["paint"]["fill-color"][0] == "step" and legend["paint"]["fill-opacity"] == 0
+    fill = next(l for l in conf_layers if l["id"] == "fields-fill")
+    assert fill["paint"]["fill-color"][0] == "interpolate" and "confidence" in json.dumps(fill["paint"]["fill-color"])
 
 
 def test_build_collection_has_glob_and_two_pmtiles_and_styles():
