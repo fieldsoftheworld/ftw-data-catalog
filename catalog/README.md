@@ -4,58 +4,118 @@
   </a>
 </div>
 
-# Global Fields of The World (FTW)
+# Fields of the World — Global
 
-Global mosaics and agricultural field predictions for 2024 and 2025, from Taylor Geospatial.
+The first global, wall-to-wall agricultural field-boundary dataset at 10 m resolution:
+**~1.6 billion field polygons per year** — **1.63 billion for 2024** and **1.58 billion for 2025**
+(~3.2 billion polygon records across both years) — spanning **195 countries and territories**,
+produced by applying the [PRUE field-boundary segmentation model](https://huggingface.co/wherobots/prue-pt2)
+(a U-Net with an EfficientNet-B7 encoder, trained on the Fields of The World benchmark) to
+cloud-free Sentinel-2 mosaics. Published openly under CC-BY-4.0 by Taylor Geospatial and
+collaborators (Microsoft AI for Good, ASU, WashU in St. Louis, Oregon State, Clark).
 
-Accompanying paper: <https://aka.ms/ftw-global-paper>
+Paper: Robinson et al. 2026, *The first global agricultural field boundary map at 10 m resolution*
+([arXiv:2605.11055](https://arxiv.org/abs/2605.11055)).
 
-## Data Products
+## Explore this catalog
 
-- `features` (version `alpha`)
-    - Planting and harvest median composites over 5–10 Sentinel-2 scenes.
-    - Distributed as COGs and as a single `EPSG:4326` Zarr V3 mosaic.
-- `predictions` (version `alpha`)
-    - Outputs of the [PRUE model](https://huggingface.co/wherobots/prue-pt2) run on the features above.
-    - Distributed as Zarr V3, GeoParquet v1.1.0 (with covering), and PMTiles.
+- **STAC catalog (root):** <https://data.source.coop/ftw/global-data/catalog.json>
+- **Browse interactively:** [Portolan browser](https://browser.portolan-sdi.org/#/external/data.source.coop/ftw/global-data/catalog.json)
+- **For AI agents:** [`llms.txt`](https://data.source.coop/ftw/global-data/llms.txt) — a machine-readable
+  description of the whole dataset. Point [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
+  or [Gemini CLI](https://github.com/google-gemini/gemini-cli) at it and ask it to query the data,
+  build interactive maps, or generate charts. Each collection also has its own `llms.txt`.
+- **Source repository:** <https://github.com/fieldsoftheworld/ftw-data-catalog>
 
----
+Storage: the public URL base `https://data.source.coop/ftw/global-data/` is physically backed by
+`s3://us-west-2.opendata.source.coop/tge-labs/ftw-global-data/` (anonymous read).
 
-## Features (COGs)
+## Collections
 
-**Location**: `s3://us-west-2.opendata.source.coop/ftw/global-data/features/cogs/alpha/`.
+| Collection | Format | Description |
+|---|---|---|
+| [Field Boundary Predictions (GeoParquet)](https://source.coop/ftw/global-data/predictions/vectors) | GeoParquet + PMTiles | ~3.2 B field-boundary polygons (2024 & 2025) in the [fiboa](https://fiboa.org)/[vecorel](https://vecorel.org) schema, each with a per-polygon `confidence` score (0–100). One partition per country (195 countries, 574 files; large countries split by admin subdivision), plus global & per-country PMTiles and MapLibre styles for web maps. ([llms.txt](https://data.source.coop/ftw/global-data/predictions/vectors/llms.txt)) |
+| [Prediction Confidence & Quality (500 m)](https://source.coop/ftw/global-data/predictions/confidence) | COG | Global 500 m rasters showing where the 10 m predictions can be trusted — confidence, entropy, field/boundary density, cropland consensus, precision/recall. ([llms.txt](https://data.source.coop/ftw/global-data/predictions/confidence/llms.txt)) |
+| [Sentinel-2 Planting & Harvest Composites](https://source.coop/ftw/global-data/features) | COG + Zarr | The model-input Sentinel-2 median composites (10 m), per year: ~22.7 k tiles/year, each with a planting and a harvest COG, plus a global EPSG:4326 Zarr mosaic and a STAC-GeoParquet item index. |
+| [Field Prediction Probabilities (Zarr)](https://source.coop/ftw/global-data/predictions/zarr) | Zarr | The raw PRUE softmax probabilities (non-field / field / field-boundary) the vectors are thresholded from. |
 
-Features are defined by selecting DOY ranges as planting/harvest heuristics and computing the median
-of masked pixels across ~5–10 scenes. See [Appendix](#appendix) for the heuristics and masking details.
+## Key facts
 
-- `s2med_harvest/*`:
-    - Contains bands `["B02", "B03", "B04", "B08", "N_VALID_PIXELS"]`
-    - Each band is the median over the respective Sentinel-2 scenes.
-    - `N_VALID_PIXELS` is the number of valid scenes after quality-flag masking.
+- **1.63 billion** field polygons for **2024** and **1.58 billion** for **2025** (~3.2 B across both
+  years), over **195 countries** and **574 admin partitions**, at 10 m resolution. Each year is an
+  independent global prediction, so the per-year count (~1.6 B) — not the both-years sum — is the
+  number of distinct fields in a year.
+- Every vector polygon carries a **`confidence` score (0–100)**, sampled at the polygon's
+  representative point from the 500 m PRUE confidence layer and rescaled (`raw / 0.578178 × 100`,
+  the same scaling the [FTW inference app](https://github.com/fieldsoftheworld/ftw-inference-app) uses).
+- Model: **PRUE** (U-Net / EfficientNet-B7), trained on the CC-BY subset of the
+  [Fields of The World benchmark](https://source.coop/kerner-lab/fields-of-the-world) (24 countries).
+- A field here is a *remote-sensing field unit* (a connected component of predicted field-interior
+  pixels), **not** a cadastral/legal parcel. This is not a land-tenure product.
+- Outputs are [fiboa](https://fiboa.org)/[vecorel](https://vecorel.org)-compliant GeoParquet (vectors) and Cloud-Optimized GeoTIFFs / Zarr (rasters).
+- Validation (paper): mean pixel-level recall 0.85 over 24 countries (14 > 0.90); confidence-model
+  leave-one-country-out mean AUC 0.842.
 
-- `s2med_planting/*`:
-    - Contains bands `["B02", "B03", "B04", "B08", "N_VALID_PIXELS"]`
-    - Each band is the median over the respective Sentinel-2 scenes.
-    - `N_VALID_PIXELS` is the number of valid scenes after quality-flag masking.
+## Data products
 
-- `index.parquet`:
+All files are anonymous-read on Source Cooperative and work directly over HTTP — no account or API key.
+
+### Field boundary predictions (GeoParquet + PMTiles)
+
+The PRUE model runs over the Sentinel-2 feature composites to produce per-pixel field probabilities;
+vectors are derived by thresholding and polygonizing into **[fiboa](https://fiboa.org)/[vecorel](https://vecorel.org) GeoParquet v1.1.0**, then
+partitioned **one file per country** (195 countries / 574 files, ~210 GB; the nine largest countries —
+e.g. the US, India, China, Brazil — are split by admin subdivision) and enriched with a per-polygon
+**`confidence`** column (0–100). Each polygon also carries `metrics:area`, `metrics:perimeter`, and a
+`determination:datetime` (2024 or 2025). Query a country partition directly with DuckDB — only the
+needed bytes are fetched:
+
 ```python
-import geopandas as gpd
+import duckdb
 
-gpd.read_parquet("s3://us-west-2.opendata.source.coop/ftw/global-data/features/cogs/alpha/index.parquet")
+con = duckdb.connect()
+con.execute("INSTALL spatial; LOAD spatial; INSTALL httpfs; LOAD httpfs;")
+base = "s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf"
+con.execute(f"""
+SELECT id, EXTRACT(year FROM "determination:datetime") AS year,
+       confidence, "metrics:area" AS area_m2, geometry
+FROM read_parquet('{base}/admin:country_code=FR/France.parquet')
+WHERE confidence >= 80          -- high-confidence fields only
+""").df()
 ```
 
-<img src="https://data.source.coop/ftw/global-data/docs/cog_index.png" alt="cog index" width="80%" />
-<img src="https://data.source.coop/ftw/global-data/docs/cog_explore.png" alt="cog explore" width="80%" />
+For web maps, the collection also exposes global PMTiles (a 2024 and a 2025 layer) and per-country
+PMTiles, with MapLibre styles for plain green boundaries and for shading each field by its confidence.
 
---- 
+### Prediction confidence & quality (500 m)
 
-## Features (Zarr)
+Global 500 m rasters quantifying where the 10 m field predictions can be trusted (confidence,
+field/boundary density, entropy, cropland consensus, precision/recall). Read a window of the
+confidence COG — only the needed bytes are fetched:
 
-**Location**: `s3://us-west-2.opendata.source.coop/ftw/global-data/features/zarr/alpha/global.zarr`
+```python
+import rasterio
+from rasterio.windows import from_bounds
 
-All feature COGs are reprojected and resampled to `EPSG:4326` at `8.983119e-5°` (~10 m at the equator)
-using GDAL cubic resampling, producing a single Zarr mosaic with dimensions `(time, band, y, x)`.
+url = "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global.tif"
+with rasterio.open(url) as ds:
+    conf = ds.read(1, window=from_bounds(2.0, 47.5, 3.0, 48.5, ds.transform), masked=True)
+```
+
+Or load the whole collection lazily as an xarray stack:
+
+```python
+import pystac, odc.stac
+col = pystac.Collection.from_file(
+    "https://data.source.coop/ftw/global-data/predictions/confidence/collection.json")
+ds = odc.stac.load(list(col.get_items()), chunks={})
+```
+
+### Features — Sentinel-2 composites (COG & Zarr)
+
+Planting- and harvest-season median composites over ~5–10 quality-masked Sentinel-2 scenes (the
+model's inputs), as per-tile COGs (~22.7 k tiles/year) and a single global EPSG:4326 Zarr V3 mosaic
+at `8.983119e-5°` (~10 m at the equator):
 
 ```python
 import rasterix
@@ -64,236 +124,35 @@ import xarray as xr
 features = xr.open_zarr(
     "s3://us-west-2.opendata.source.coop/ftw/global-data/features/zarr/alpha/global.zarr"
 ).pipe(rasterix.assign_index)
-features
 ```
 
-<img src="https://data.source.coop/ftw/global-data/docs/features_mosaic.png" alt="features mosaic" width="80%" />
+### Prediction probabilities (Zarr)
 
---- 
+The raw PRUE softmax bands `[non_field_background, field, field_boundaries]` on the same grid as the
+features (so they stack), from which the vectors are thresholded at `0.5` and polygonized.
 
-## Predictions (Zarr)
+## Caveats
 
-**Location**: `s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr`
-
-The PRUE model is run over `features/zarr/alpha/global.zarr` to produce a Zarr dataset with bands
-`[non_field_background, field, field_boundaries]`. Feature and prediction Zarrs share the same grid,
-so they are stackable.
-
-```python
-predictions = xr.open_zarr(
-    "s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr"
-).pipe(rasterix.assign_index)
-predictions
-```
-
-<img src="https://data.source.coop/ftw/global-data/docs/prediction_mosaic.png" alt="prediction mosaic" width="80%" />
-
-### Features and Predictions
-
-We can inspect inputs and outputs side-by-side since they are stackable. This enables researchers
-to validate inputs to better understand their influence in model outputs.
-
-```python
-planting_bands = ["s2med_planting:B04", "s2med_planting:B03", "s2med_planting:B02"]
-harvest_bands = ["s2med_harvest:B04", "s2med_harvest:B03", "s2med_harvest:B02"]
-xmin, ymin, xmax, ymax = -93.75, 41.5, -93.5, 41.75
-year = "2024"
-
-fig, axs = plt.subplots(1, 3, figsize=(15, 5))
-
-features["variables"].sel(
-    band=planting_bands, time=year, y=slice(ymax, ymin), x=slice(xmin, xmax)
-)[0].plot.imshow(robust=True, ax=axs[0])
-axs[0].axis("off")
-axs[0].set_title("Planting")
-
-features["variables"].sel(
-    band=harvest_bands, time=year, y=slice(ymax, ymin), x=slice(xmin, xmax)
-)[0].plot.imshow(robust=True, ax=axs[1])
-axs[1].axis("off")
-axs[1].set_title("Harvest")
-
-predictions["variables"].sel(band="field", time=year, y=slice(ymax, ymin), x=slice(xmin, xmax))[
-    0
-].plot.imshow(ax=axs[2])
-axs[2].axis("off")
-axs[2].set_title("Predictions")
-
-plt.tight_layout()
-plt.show()
-```
-
-<img src="https://data.source.coop/ftw/global-data/docs/comparison.png" alt="comparison" width="100%" />
-
----
-
-## Predictions (GeoParquet)
-
-**Location**: `s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/vectors/alpha/results/`
-
-A GeoParquet vector dataset is derived from the prediction Zarr by thresholding the softmax outputs
-for `[non_field_background, field, field_boundaries]` at `0.5` and polygonizing.
-
-Files follow the [GeoParquet v1.1.0 spec](https://geoparquet.org/releases/v1.1.0): ~8.2B rows across
-1,001 files, ~629 GB on S3, with the following schema:
-
-```bash
-┌─────────────┬────────────────────────────────────────────────────────────┬─────────┬─────────┬─────────┬─────────┐
-│ column_name │                        column_type                         │  null   │   key   │ default │  extra  │
-│   varchar   │                          varchar                           │ varchar │ varchar │ varchar │ varchar │
-├─────────────┼────────────────────────────────────────────────────────────┼─────────┼─────────┼─────────┼─────────┤
-│ geometry    │ GEOMETRY                                                   │ YES     │ NULL    │ NULL    │ NULL    │
-│ time        │ TIMESTAMP                                                  │ YES     │ NULL    │ NULL    │ NULL    │
-│ label       │ VARCHAR                                                    │ YES     │ NULL    │ NULL    │ NULL    │
-│ bbox        │ STRUCT(xmax DOUBLE, xmin DOUBLE, ymax DOUBLE, ymin DOUBLE) │ YES     │ NULL    │ NULL    │ NULL    │
-└─────────────┴────────────────────────────────────────────────────────────┴─────────┴─────────┴─────────┴─────────┘
-```
-
-Query with DuckDB and visualize with Lonboard:
-
-```python
-import duckdb
-from lonboard import Map, PolygonLayer
-from lonboard.basemap import CartoStyle
-
-con = duckdb.connect()
-con.execute("INSTALL spatial; LOAD spatial;")
-con.execute("INSTALL httpfs; LOAD httpfs;")
-
-q = """
-SELECT geometry AS geometry, time, label, bbox
-FROM read_parquet('s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/vectors/alpha/results/*.parquet')
-WHERE label = 'field'
-  AND struct_extract(bbox, 'xmax') >= -93.71488
-  AND struct_extract(bbox, 'xmin') <= -93.06492
-  AND struct_extract(bbox, 'ymax') >= 41.78201
-  AND struct_extract(bbox, 'ymin') <= 42.09459
-"""
-
-layer = PolygonLayer.from_duckdb(q, con, get_fill_color=[0, 0, 139])
-m = Map(layer, height=700, basemap_style=CartoStyle.Positron)
-m
-```
-
-<img src="https://data.source.coop/ftw/global-data/docs/lonboard_gpq_example.png" alt="gpq example" width="100%" />
-
----
-
-## Predictions (PMTiles)
-
-**Location**: `s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/vectors/alpha/global.pmtiles`
-
-[PMTiles](https://guide.cloudnativegeo.org/pmtiles/intro.html) built from the GeoParquet above for
-scalable browser-side visualization.
-
-```python
-import leafmap.foliumap as leafmap
-
-url = "s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/vectors/alpha/global.pmtiles"
-
-metadata = leafmap.pmtiles_metadata(url)
-m = leafmap.Map(center=[0, 20], zoom=2, height="800px")
-m.add_basemap("SATELLITE", visible=True)
-style = leafmap.pmtiles_style(url, layers="field-2024-01-01 00:00:00", opacity=0.7)
-m.add_pmtiles(url, style=style)
-m
-```
-
-<img src="https://data.source.coop/ftw/global-data/docs/kenya_pmtile_view.png" alt="kenya view" width="100%" />
-
---- 
-
-## Appendix
-
-### Season Heuristics (`alpha`)
-
-Relevant Sentinel-2 scenes are selected by acquisition DOY using the following functions:
-
-```python
-def tile_to_planting_season_heuristic_doy(point: Point) -> tuple[int, int]:
-    lat = point.y
-    abs_lat = abs(lat)
-    if abs_lat > 45:
-        start_doy, end_doy = (91, 151) if lat > 0 else (274, 334)  # Apr-May or Oct-Nov
-    elif 20 < abs_lat <= 45:
-        start_doy, end_doy = (60, 120) if lat > 0 else (244, 334)  # Mar-Apr or Sep-Nov
-    elif 5 < abs_lat <= 20:
-        start_doy, end_doy = (121, 212) if lat > 0 else (305, 365)  # May-Jul or Nov-Dec
-    else:  # Equatorial
-        start_doy, end_doy = (60, 121)  # Approx. Mar-Apr and Sep-Oct (simplified)
-    return start_doy, end_doy
-
-
-def tile_to_harvest_season_heuristic_doy(point: Point) -> tuple[int, int]:
-    lat = point.y
-    abs_lat = abs(lat)
-    if abs_lat > 45:
-        start_doy, end_doy = (244, 304) if lat > 0 else (60, 151)  # Sep-Oct or Mar-May
-    elif 20 < abs_lat <= 45:
-        start_doy, end_doy = (213, 304) if lat > 0 else (32, 120)  # Aug-Oct or Feb-Apr
-    elif 5 < abs_lat <= 20:
-        start_doy, end_doy = (274, 365) if lat > 0 else (91, 181)  # Oct-Dec or Apr-Jun
-    else:  # Equatorial
-        start_doy, end_doy = (182, 243)  # Approx. Jul-Aug and Jan-Feb (simplified)
-    return start_doy, end_doy
-```
-
-### Sentinel-2 Source
-
-All Sentinel-2 scenes were sourced from `s3://sentinel-cogs/sentinel-s2-l2a-cogs`.
-
-### Sentinel-2 SCL Flags
-
-Pixels with the following
-[SCL](https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel-2.html#algorithm)
-values are masked out before taking the median:
-
-- 0: No Data
-- 1: Saturated Defective
-- 3: Cloud Shadow
-- 7: Cloud Low Probability / Unclassified
-- 8: Cloud Medium Probability
-- 9: Cloud High Probability
-- 10: Thin Cirrus
+- The field-density `_filtered` variant's exact threshold/method is pending author confirmation.
+- The confidence layer is conservative outside the FTW training distribution (e.g. smallholder
+  systems): real fields there may receive low confidence. Prefer the unfiltered density + continuous
+  confidence over a hard threshold in such regions.
+- Polygons are remote-sensing field units, not legal parcels; one parcel may map to many polygons or none.
 
 ## License
 
-CC-BY-4.0
+CC-BY-4.0.
+
+## Cite
+
+Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J.,
+Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). *The first global
+agricultural field boundary map at 10 m resolution.* arXiv:2605.11055.
 
 ## Contact
 
 `isaac.corley@taylorgeospatial.org`
 
-## Cite
+---
 
-If you use this dataset in your research please cite the following papers:
-
-```bibtex
-@inproceedings{kerner2025fields,
-  title={Fields of the world: A machine learning benchmark dataset for global agricultural field boundary segmentation},
-  author={Kerner, Hannah and Chaudhari, Snehal and Ghosh, Aninda and Robinson, Caleb and Ahmad, Adeel and Choi, Eddie and Jacobs, Nathan and Holmes, Chris and Mohr, Matthias and Dodhia, Rahul and others},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={39},
-  number={27},
-  pages={28151--28159},
-  year={2025}
-}
-```
-
-```bibtex
-@article{muhawenayo2026prue,
-  title={PRUE: A Practical Recipe for Field Boundary Segmentation at Scale},
-  author={Muhawenayo, Gedeon and Robinson, Caleb and Khanal, Subash and Fang, Zhanpei and Corley, Isaac and Wollam, Alexander and Gao, Tianyi and Strnad, Leonard and Avery, Ryan and Estes, Lyndon and others},
-  journal={arXiv preprint arXiv:2603.27101},
-  year={2026}
-}
-```
-
-```bibtex
-@article{corley2026fields,
-  title={Fields of The World: A Field Guide for Extracting Agricultural Field Boundaries},
-  author={Corley, Isaac and Kerner, Hannah and Robinson, Caleb and Marcus, Jennifer},
-  journal={arXiv preprint arXiv:2602.08131},
-  year={2026}
-}
-```
+*Published with [Portolan](https://portolan-sdi.org).*
