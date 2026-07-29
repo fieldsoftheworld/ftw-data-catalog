@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Egypt",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Egypt field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1339863119,
+      "file:checksum": "12204cb80e58f266eaf976963745aef12ec4f08442acf45ebba61e721a1359d312a2"
     },
     "pmtiles": {
       "href": "./Egypt.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Egypt field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 697144443,
+      "file:checksum": "122026b826f0362676d19e65c44f09018b49e32ad2d42013034ac8d95d75b5815e59"
     },
     "style-2025": {
       "href": "./Egypt.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206cec7cf2ccc87ef4ce7d5de16255ac84696e1768e9e8e94b754218a5f48cbb75"
     },
     "style-2024": {
       "href": "./Egypt.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209456c825d39767124c680d86e18e41ed8d4df4f15aa07402aef9fc74e3df88b1"
     },
     "style-confidence-2025": {
       "href": "./Egypt.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122031a6f091cefef8fb8ff9dfd1698c21465ad479d1cc3b74812e68d11b2f263dd8"
     },
     "style-confidence-2024": {
       "href": "./Egypt.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200bb5f3145a9b94c5b78a02faa236dde7216025e3c21325a52c3be3dfcfc46cd5"
     },
     "README": {
       "href": "./Egypt.README.md",
@@ -165,7 +178,9 @@
       "title": "Egypt \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4581,
+      "file:checksum": "1220dd22bb12ffda464d55332da98ef004c08a1c9b63445c8ab7c18fa6c13bf02cff"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=EG/Egypt.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "El_Salvador",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "El_Salvador field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 174778041,
+      "file:checksum": "1220a4c059b5b5c7f0cd26ce2853e341e6718534eb66546a164ad79f10702ccc06fe"
     },
     "pmtiles": {
       "href": "./El_Salvador.pmtiles",
@@ -125,39 +128,49 @@
       "title": "El_Salvador field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 106406646,
+      "file:checksum": "1220131e3953d04e785c1dc1a6aae2dcd65e5f095c7a9f7ab14caf69713a4c2fc100"
     },
     "style-2025": {
       "href": "./El_Salvador.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "12203ad58a76031cb4ac31c2882537b035c5224b3addb4fd136a4bb1c6155f1e741c"
     },
     "style-2024": {
       "href": "./El_Salvador.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "1220c38e2fedfd2caaa51875cef43821e13dda47c006d148f81165e91375608d155f"
     },
     "style-confidence-2025": {
       "href": "./El_Salvador.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "1220189ab3dd09cfd64a40630a77e221b0bfe4f136d3e7f82a66bb0f7e7661cc14f4"
     },
     "style-confidence-2024": {
       "href": "./El_Salvador.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "12203fa19e62673781373938e144d17939f39fa4f85ca2f8ab102e98dd3233142f7b"
     },
     "README": {
       "href": "./El_Salvador.README.md",
@@ -165,7 +178,9 @@
       "title": "El_Salvador \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4598,
+      "file:checksum": "1220aefd33c3417cddf6ce6a003b5f1e2007a96d924d3087b73752caf662d66bcc46"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SV/El_Salvador.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

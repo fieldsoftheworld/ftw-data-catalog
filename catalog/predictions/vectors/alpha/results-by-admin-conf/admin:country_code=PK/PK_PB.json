@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_PB",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Pakistan \u2014 Punjab field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 4252033287,
+      "file:checksum": "12200370fc3304edf58ab0b7e135888beb7e1b70b5c97f7c2f407b3a92e9dbef4b2e"
     },
     "pmtiles": {
       "href": "./PK_PB.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Pakistan \u2014 Punjab field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1990090770,
+      "file:checksum": "1220b49daad5859da750cc7030b93bcb51b30be3e8c8bb1719bb3f6e81388e21915d"
     },
     "style-2025": {
       "href": "./PK_PB.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220aa4c13ff9a187b89950f1d347aaa5a2bb7b9bb5e4ae3b346c14bcaa916e554e4"
     },
     "style-2024": {
       "href": "./PK_PB.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e2f5cb1d6c34199fa413ea717c8146c6c792db7130f2673a7c1c88730fff2ffd"
     },
     "style-confidence-2025": {
       "href": "./PK_PB.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b595a569c329a41cdf2affa4ce285ca11580d06fb136af8f8050d23f35cfc9e4"
     },
     "style-confidence-2024": {
       "href": "./PK_PB.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122004833378bc24e6f1610af2b39c910ec1ae39836e2afab2d65fa8e97aaed5bd49"
     },
     "README": {
       "href": "./PK_PB.README.md",
@@ -165,7 +178,9 @@
       "title": "Pakistan \u2014 Punjab \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4433,
+      "file:checksum": "122092bb0b5b3198537a056809112462fddc02c10b592679ed51d3059670737e0499"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_PB.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

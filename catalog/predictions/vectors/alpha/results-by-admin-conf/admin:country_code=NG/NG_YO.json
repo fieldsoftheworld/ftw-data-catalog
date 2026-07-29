@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_YO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Yobe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 425413259,
+      "file:checksum": "1220229dac5dce975e0a5d4a46c06bc4effc93d059f3a92baf424295fe678ef24da6"
     },
     "pmtiles": {
       "href": "./NG_YO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Yobe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 218608167,
+      "file:checksum": "122078212fb80d5d27346dc4c6a45210bcf2c884a094bd558af04a670cc0d13da7cc"
     },
     "style-2025": {
       "href": "./NG_YO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e3add99c789914dd80e8c6a82808a0050bb0e6a282a8e6a8d3139154909b4ca9"
     },
     "style-2024": {
       "href": "./NG_YO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a9392bcc5186331659173d43ce5649744788beb94e494c518a7b23c20120e93c"
     },
     "style-confidence-2025": {
       "href": "./NG_YO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205bd0402202bf72c9128449a5e04a3088aa4b74c1eabcda737502cfcbeb5e7d60"
     },
     "style-confidence-2024": {
       "href": "./NG_YO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202c0743b0489527c34a86552437cf38712969a526b371b9ee03e93c27f604cf9f"
     },
     "README": {
       "href": "./NG_YO.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Yobe \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4591,
+      "file:checksum": "1220710ed5b0d06069879516bbdc358708c351ebf4075e13601f4c1773c06857d796"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_YO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_MP",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Madhya Pradesh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 6580924967,
+      "file:checksum": "12208cafe70e3abebb2cf7d5676eb621bfbaf212b40dfa77f602a10f39fa597dba07"
     },
     "pmtiles": {
       "href": "./IN_MP.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Madhya Pradesh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3199151384,
+      "file:checksum": "1220cd09f39b1a67fbea720636092ad8af1002ada778393e91c67c3df81d46d5c8d3"
     },
     "style-2025": {
       "href": "./IN_MP.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220727e687a9806364899ba024a366f826eee312b9c71305b4eb8cbbbee0fdd5f75"
     },
     "style-2024": {
       "href": "./IN_MP.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c3e8beafd33deb9891c257293eb1620701ccacc6f1eadaed78b1340557e90393"
     },
     "style-confidence-2025": {
       "href": "./IN_MP.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fed8abd38d1f318d376b5a02d9077224fbd35c15c5814771db1bd4fe82932f6a"
     },
     "style-confidence-2024": {
       "href": "./IN_MP.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b35f2b7d5ea99111ca159f41987ec84960966f6d9a875deadffa7adc160e0110"
     },
     "README": {
       "href": "./IN_MP.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Madhya Pradesh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "12200b6d970be286deb059745fe57b3ae86ba2eb0e4256b2e4dd55a788d9d1adf283"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_MP.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

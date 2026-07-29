@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Bahrain",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Bahrain field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1132560,
+      "file:checksum": "1220b87f3269e2badfaee582301877e38812a6492ea5ac2d1824b1cd739957f93c82"
     },
     "pmtiles": {
       "href": "./Bahrain.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Bahrain field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 850070,
+      "file:checksum": "122073ed229199b889237bad29d67c57a14166d1a3ff3495c02fc88db81e20aca0c9"
     },
     "style-2025": {
       "href": "./Bahrain.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220347034ace2373d79179fab2ba1606ba09f675eb1a7f8b7b79a9d0a8644a00de9"
     },
     "style-2024": {
       "href": "./Bahrain.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12201ebb95c1e66da4bd8d59f720b69f8230e33b94a980ad96a626c52f5bcac42700"
     },
     "style-confidence-2025": {
       "href": "./Bahrain.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220d0fc6c03ac3d20417fe743766e4f4b5fecac63332c6d2178b1b1f248bb0cb29b"
     },
     "style-confidence-2024": {
       "href": "./Bahrain.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220a8dea4e0e2278114c902610caf4d8f943f1c6c21f233bca05f1eac8c2830b13d"
     },
     "README": {
       "href": "./Bahrain.README.md",
@@ -165,7 +178,9 @@
       "title": "Bahrain \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4583,
+      "file:checksum": "1220944fa2513e55c0fe789fd20edeec452d33959073769a4c78a90ed198470f10b1"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BH/Bahrain.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

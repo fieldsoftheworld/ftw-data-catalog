@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "ET_SI",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Ethiopia \u2014 Sidama field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 75040890,
+      "file:checksum": "1220a84f7a9b37a5a20485ebd3468f283b89893d67309491da6db8539fe150d9c11c"
     },
     "pmtiles": {
       "href": "./ET_SI.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Ethiopia \u2014 Sidama field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 48125868,
+      "file:checksum": "1220e0be7020def1bf593cb01ec92a6012544bbf4c5c6de3bd6e27d96b36712f41be"
     },
     "style-2025": {
       "href": "./ET_SI.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c8b93e8afc3ef15e35eb7eab22da5827d647aec652e3b816da14b273c989dad8"
     },
     "style-2024": {
       "href": "./ET_SI.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205124e35b687d035ab3ad0e191bb4d68c4b8300ebfe018f259e5731986a71c249"
     },
     "style-confidence-2025": {
       "href": "./ET_SI.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220383fba38e17cd0dee1bc30635163b4a001b9e28b00cd2916c5a3f26515e3c411"
     },
     "style-confidence-2024": {
       "href": "./ET_SI.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220981895a731f4bd1040506a063b0e84fb0b2035f0ad4a28339d364cca3715c63a"
     },
     "README": {
       "href": "./ET_SI.README.md",
@@ -165,7 +178,9 @@
       "title": "Ethiopia \u2014 Sidama \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "1220a02eb15c6026551e737df2589e820b0723b6cf564728a88db05da2dfab6d624a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_SI.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

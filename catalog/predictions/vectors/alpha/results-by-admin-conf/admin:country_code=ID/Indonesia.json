@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Indonesia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Indonesia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3917438214,
+      "file:checksum": "1220105484040d1c55eb6bae09cc9a5c439791c9a0c8eb030a60bcdbc7bc4d22a38d"
     },
     "pmtiles": {
       "href": "./Indonesia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Indonesia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1868712225,
+      "file:checksum": "12202dd6f69b5943d4cb191c796c3bc0e67321805d57a2a3509af1e5d8ae0f193326"
     },
     "style-2025": {
       "href": "./Indonesia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "122064d7b20ce6525205c04435e625ba123c2160568ac2be2a527be5c0234ce19fe7"
     },
     "style-2024": {
       "href": "./Indonesia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "12207cb52663fd7d9c298daee69cd27f6ed92409314211a16442df641c72667fd3ac"
     },
     "style-confidence-2025": {
       "href": "./Indonesia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "1220cded0790d094560d763ea6d3dc18d1818712c7e67a0a77d335c71ad8dd81c8eb"
     },
     "style-confidence-2024": {
       "href": "./Indonesia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "12207f144a328748387fd45168a9d9c848d17e727e1fed6097c907b1001dd3d56676"
     },
     "README": {
       "href": "./Indonesia.README.md",
@@ -165,7 +178,9 @@
       "title": "Indonesia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4593,
+      "file:checksum": "12204e0e7d9b0b745f47e02f923ce78e15d02276942881e7cb3cc3b0964d7bcf0d00"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ID/Indonesia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

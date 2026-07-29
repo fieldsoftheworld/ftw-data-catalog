@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_C",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "TZ_C field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 272380,
+      "file:checksum": "12204c41fd03a46f97cc99e025f5e1f3ff29e91227bf69107fe55fa06b3e0e819647"
     },
     "pmtiles": {
       "href": "./TZ_C.pmtiles",
@@ -125,39 +128,49 @@
       "title": "TZ_C field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 169003,
+      "file:checksum": "1220be2ac1357468a5c9bf48b17f479f6cd9aa8eb9a40b2e035f00e19f411dffe081"
     },
     "style-2025": {
       "href": "./TZ_C.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220b6c98641dec3777ad5ff6445fce5de1e1b0e0a0d8a8dce9f70a1982df6dfaebe"
     },
     "style-2024": {
       "href": "./TZ_C.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220e3194ac07b57bba956c14eab4de7a2c81cb7d59ed9b0e5276d436095b5fcd0b3"
     },
     "style-confidence-2025": {
       "href": "./TZ_C.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "12202227acfe2bdca42c7f7f63e0f642db0e23ed17a8f2b5d7d8b260df1d2f38535a"
     },
     "style-confidence-2024": {
       "href": "./TZ_C.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "12207f30804e3a399c0b1e12f5b6875eaf54e3627977557ebfa5c6db8ad519b83fcb"
     },
     "README": {
       "href": "./TZ_C.README.md",
@@ -165,7 +178,9 @@
       "title": "TZ_C \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4408,
+      "file:checksum": "1220d342e32d07cd270b7b50d4ed63a79c58b55c7baa12bba51f3978fccbb0700aec"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_C.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

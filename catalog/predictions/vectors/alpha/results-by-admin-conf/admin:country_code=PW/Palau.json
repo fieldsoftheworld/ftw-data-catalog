@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Palau",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Palau field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 262311,
+      "file:checksum": "12209e8bac2799326b0d03b442dc38a261045c513920f673c93fb8765f1869b69c37"
     },
     "pmtiles": {
       "href": "./Palau.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Palau field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 298779,
+      "file:checksum": "1220a6920f4e7839f0525dcf02453e5a75f435854a33ff902bd50c08447e7eb6a1ac"
     },
     "style-2025": {
       "href": "./Palau.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207e404d4f9310c0e24f210088ad9df0a8a1522ed83f22c98e1e42dcd3c47a202a"
     },
     "style-2024": {
       "href": "./Palau.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122029dc48d1db0f219b39aa552836e9e223c3c11473bd678c09c152cc29445a1aad"
     },
     "style-confidence-2025": {
       "href": "./Palau.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202ff7d2e7ea2bb5257a12df9a230a9a711303b2ab7352086cabf2e9fcff2d2959"
     },
     "style-confidence-2024": {
       "href": "./Palau.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203e2a5e56af5e193f9b5f8dd4a6fbd12e383fa6741e6759938b6407d5becce4f3"
     },
     "README": {
       "href": "./Palau.README.md",
@@ -165,7 +178,9 @@
       "title": "Palau \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4577,
+      "file:checksum": "122014c19b3277eb95384befa2a6eb0d63d7edc715017ac3fbb3f858b08bd285e5a7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PW/Palau.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

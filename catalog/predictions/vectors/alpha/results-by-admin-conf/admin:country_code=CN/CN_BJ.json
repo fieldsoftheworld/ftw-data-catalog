@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_BJ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Beijing Shi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 23716508,
+      "file:checksum": "1220a71a17785b8edc656b70de28f2f15ba6d5ea236ece153a429ee036e6cc0a2049"
     },
     "pmtiles": {
       "href": "./CN_BJ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Beijing Shi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 25254148,
+      "file:checksum": "1220b89107edaf9c5c893d880c64812f35df95cd3bb64f8868ba8df976ff5e6d65c7"
     },
     "style-2025": {
       "href": "./CN_BJ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e0e1900cca313f4efe4e03c973f5e0a04d50d6bf463c61147ac79d824b0cc906"
     },
     "style-2024": {
       "href": "./CN_BJ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122019582f42090817152a92ae89725f60d229e307f026a8a1f23f4ce6391d087b25"
     },
     "style-confidence-2025": {
       "href": "./CN_BJ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122028f350b0b146378bafda842d755e10aa8bf3c54d8cd8ce6cbbbabe1069d093bc"
     },
     "style-confidence-2024": {
       "href": "./CN_BJ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206472988fc2aab650fe99600dbaa86b7ccc65f0cac26b4592e4991d6e92919453"
     },
     "README": {
       "href": "./CN_BJ.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Beijing Shi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "12200b641e206c1187c052ae0a1647da2b650d739615800002065cbcccd15705df28"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_BJ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

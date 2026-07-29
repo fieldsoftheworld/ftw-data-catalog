@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Suriname",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Suriname field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 22729194,
+      "file:checksum": "1220f8a5bcbf4c549bc822baa821a1bcfd4723e7a6d73910d2be50bf54b16dd3c324"
     },
     "pmtiles": {
       "href": "./Suriname.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Suriname field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 19264092,
+      "file:checksum": "12206eda8b15bfc079afc64833d6253e1639af3d200898f057c714580d4b79168419"
     },
     "style-2025": {
       "href": "./Suriname.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220c5b19335a6a5a501a08c9a329ff3b6a3e1735fe0584f89695925b5d437429f49"
     },
     "style-2024": {
       "href": "./Suriname.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220c993b747cc288707e8c3b41870cd9206789882baebcc64433fdda1da45a40ae3"
     },
     "style-confidence-2025": {
       "href": "./Suriname.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220c78482edfd2ef23aed85e91a22dcabf58ea4afd002d8f2bf88a92a7dd5e23663"
     },
     "style-confidence-2024": {
       "href": "./Suriname.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12201a6cb2d6ce794c471f2bd030e69b7fc3b754ca227eafe6eeefe5b99a6d41fe8a"
     },
     "README": {
       "href": "./Suriname.README.md",
@@ -165,7 +178,9 @@
       "title": "Suriname \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4589,
+      "file:checksum": "12203935d86d6d5b32badfa8a215f3d648e644595bc4cb80152881130f9997e40af0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SR/Suriname.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

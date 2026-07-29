@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_28",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Katavi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 340774709,
+      "file:checksum": "1220530175c0272300163dad8b97163e2be32a6609d6aa917be93210f7a1b1d23866"
     },
     "pmtiles": {
       "href": "./TZ_28.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Katavi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 204662885,
+      "file:checksum": "1220a0a8e647ed6d2c2db4bebe09f205e7052141fe8d561313d45ffea5404865479a"
     },
     "style-2025": {
       "href": "./TZ_28.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220170b6cbcba93c92bf6badbcedfe2761a72294ba5b324f86d791616624fec609f"
     },
     "style-2024": {
       "href": "./TZ_28.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209e21563abc48912cf832c221102ee7d4a01e140f29ba569fd6c9b3fe689ddd11"
     },
     "style-confidence-2025": {
       "href": "./TZ_28.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ea3b72482f73b583bf1077f3b5b388223ec588666dc9eaa2e829f971e86db600"
     },
     "style-confidence-2024": {
       "href": "./TZ_28.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b6609ad56bbbfb8c449db6c44bd74bd39e3b30791b7db3803e554ee01bb44b0d"
     },
     "README": {
       "href": "./TZ_28.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Katavi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "1220a4eb78e4648104105731e850b72a4131e30014009eb0d08c13aa8547915887c6"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_28.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_03",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Dodoma field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 572441264,
+      "file:checksum": "122025c623002b8155eaf8c53426407409a7459f4c18d87b1cb6ec1ee00d7a9c6d77"
     },
     "pmtiles": {
       "href": "./TZ_03.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Dodoma field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 306850017,
+      "file:checksum": "12209951a73c83119c0806a693bc08e6652a29fd6d9be0af4f68e363902d7e7d7e6b"
     },
     "style-2025": {
       "href": "./TZ_03.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d888fbf95990fc6789d03bd03346b189b7ec08a9c3b0c47e95137ed2bbc4ad19"
     },
     "style-2024": {
       "href": "./TZ_03.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220160c3d4db9577ca6a5e04dec03e6f4f2424ddbb6b978d32ae416c031e0ff64b4"
     },
     "style-confidence-2025": {
       "href": "./TZ_03.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f30421e33e2eb565e04b78a3330a000755defdb98d0a00f902011db9356af3d1"
     },
     "style-confidence-2024": {
       "href": "./TZ_03.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220546db681817f63f510861ebcd9101c8d56387c7bff35f020866a547b7ca0c180"
     },
     "README": {
       "href": "./TZ_03.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Dodoma \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "1220c7b76f8fe7698f31cf67567e9631bcd6c17b806a4f3ad58e0c1f03ed233fd83d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_03.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

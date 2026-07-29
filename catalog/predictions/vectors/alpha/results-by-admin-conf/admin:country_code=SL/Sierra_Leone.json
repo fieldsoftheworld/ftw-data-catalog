@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Sierra_Leone",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Sierra_Leone field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 199932029,
+      "file:checksum": "12208f0bbce45c8570661214e1003a732bc01aa7289d36d4ec50ef106bb765ae1b9b"
     },
     "pmtiles": {
       "href": "./Sierra_Leone.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Sierra_Leone field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 144113424,
+      "file:checksum": "12204e0c84eba2bda3a2d94ab15a053e90bf4fb380c9f710e66ea24465a3cdb5a46e"
     },
     "style-2025": {
       "href": "./Sierra_Leone.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "1220640878272622a513551c474f1174b1b663302feffe5b55b812cac9746b0254f8"
     },
     "style-2024": {
       "href": "./Sierra_Leone.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "1220a84503bfe3de43a8c5bc1e249b956cab8ecaaddb4e71c24c7bbfa52c3afa19cd"
     },
     "style-confidence-2025": {
       "href": "./Sierra_Leone.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "12205b250ed06acca8d7bdde3d074abd005938734357d04e35ff440a41bd766df96b"
     },
     "style-confidence-2024": {
       "href": "./Sierra_Leone.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "1220ae9527bcb1c0ac72a1f58347a058c4e6d0e95f07fa129ba1e20abe7bd99d7b1a"
     },
     "README": {
       "href": "./Sierra_Leone.README.md",
@@ -165,7 +178,9 @@
       "title": "Sierra_Leone \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4602,
+      "file:checksum": "1220a5eecaaa417a2eb171398ad1a935127c10a12ac3cf48b37778a7636f2d2aa672"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SL/Sierra_Leone.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

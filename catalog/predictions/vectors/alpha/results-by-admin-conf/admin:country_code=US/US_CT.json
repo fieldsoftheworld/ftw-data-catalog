@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_CT",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Connecticut field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3406695,
+      "file:checksum": "1220be6a9aabaa316402a8f991f556bf23584c57d739b5af37c5e13ccbf2f5d11dbc"
     },
     "pmtiles": {
       "href": "./US_CT.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Connecticut field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3233160,
+      "file:checksum": "1220acefd7d6959d050a9f15118e2112c7a56249261108003775f6946b70085b16fc"
     },
     "style-2025": {
       "href": "./US_CT.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122034be096c517b65c7d92e7108ab6d5eb5cec945ab6509ae27654bae7fa3aac665"
     },
     "style-2024": {
       "href": "./US_CT.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203d250117b38f3115d10afe9bc217448299167bca8dcf1285552f8316c335a263"
     },
     "style-confidence-2025": {
       "href": "./US_CT.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207f33e5a23d74951638c2869c05e70d824ee91800c551c9ed39be926856f54749"
     },
     "style-confidence-2024": {
       "href": "./US_CT.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201b5ff6b6b41467bfbb57c42ad25848076a7d7a7429d993afe9a3baad746fd94e"
     },
     "README": {
       "href": "./US_CT.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Connecticut \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4439,
+      "file:checksum": "122029001270a6112dceb4b041d3d7dfe4e40024a29bca5ce184548e60c57a381cf6"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_CT.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

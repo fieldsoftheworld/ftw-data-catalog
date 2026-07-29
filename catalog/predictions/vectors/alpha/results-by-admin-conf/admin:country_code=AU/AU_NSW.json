@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_NSW",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 New South Wales field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1885262024,
+      "file:checksum": "12202785e4247818bf32688a5f144316f5c2f3691c0364277e274320e8a66d43eacc"
     },
     "pmtiles": {
       "href": "./AU_NSW.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 New South Wales field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1119474340,
+      "file:checksum": "12205588a494f41fcedeb82218b14ff7a220fa062c126de2ad328ff58943ebe15eb4"
     },
     "style-2025": {
       "href": "./AU_NSW.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12207954a69ae8078ba358c054ccf7a72ab4c34503ad02f335cde9189cf04b81e5bf"
     },
     "style-2024": {
       "href": "./AU_NSW.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220cc6cbda67e6dc914b3c2989d6b2425cf37939ad85eac97386281331553d40c68"
     },
     "style-confidence-2025": {
       "href": "./AU_NSW.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12200b049320b2d9610d94f72aa096bb0bf503879f0ecf8a73e4145b10d24ddb9010"
     },
     "style-confidence-2024": {
       "href": "./AU_NSW.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220b23f65687215415fb49d7ad017618900eb4b383a222bdb68fc8067634d33ae8e"
     },
     "README": {
       "href": "./AU_NSW.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 New South Wales \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4605,
+      "file:checksum": "1220210ef9a1aab47ae0c222f66425fb105b5639ce00d1cf5b3f3d0ee444427817aa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_NSW.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

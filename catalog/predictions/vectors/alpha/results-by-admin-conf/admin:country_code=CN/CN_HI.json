@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_HI",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Hainan Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 373722960,
+      "file:checksum": "122057efe22e85923d1120a9754850c6db38da174deab0d40e6765b3b8e7c18a9cc9"
     },
     "pmtiles": {
       "href": "./CN_HI.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Hainan Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 202350262,
+      "file:checksum": "1220ee03305fae89e498bdd654639ac65b207bc051f235f383352261359be7443a2d"
     },
     "style-2025": {
       "href": "./CN_HI.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cbed0649045755581767382679577804d20833b5839a1697ea7216b6d813a4d5"
     },
     "style-2024": {
       "href": "./CN_HI.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220bcb5935ff0f56edac7d3b7b533652480c370fd57f9db0b8cf5058e3542efb180"
     },
     "style-confidence-2025": {
       "href": "./CN_HI.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206e9f06b9864dadd941051e80f1c7babb79da033485db9d862e681e81aaf8d4c9"
     },
     "style-confidence-2024": {
       "href": "./CN_HI.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fd9437aa0a3db9a7fb9a3ef06a564ea470f03fba19a8f36a46f79f06a1c604e7"
     },
     "README": {
       "href": "./CN_HI.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Hainan Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "1220fa5330169e3bd9bd414dd0408af23ffd516b9d6e7c7e8e05e275c548b2483c27"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_HI.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

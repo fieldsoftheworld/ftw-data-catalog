@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_PE",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Pernambuco field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 554234100,
+      "file:checksum": "1220bcf77b091eb95db52a44267e212eaa9a59049623de573c54efeef769c5bf31b2"
     },
     "pmtiles": {
       "href": "./BR_PE.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Pernambuco field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 331151709,
+      "file:checksum": "1220dc1b9dedd07cdfddb07fc8104812fc67dd286ce253e3bfd57e338e5754299f3b"
     },
     "style-2025": {
       "href": "./BR_PE.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c2a88f42e3cd2829848b5b0b8c4ad5bbe2b18abcb28c8f354a7b90ec297ddab0"
     },
     "style-2024": {
       "href": "./BR_PE.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122093e274a8fe45d5220192af8f7dd60fbcd38f737c5d549b579e46e1c64d1bca1b"
     },
     "style-confidence-2025": {
       "href": "./BR_PE.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d30244c0c616a0151df0d05f8b089e480eaf05e6dc4b3f0745875bcba90d70f2"
     },
     "style-confidence-2024": {
       "href": "./BR_PE.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d36c0097fcf2509adb79aa1982d3303dda497fc325ce6bc8a53f873b0323993d"
     },
     "README": {
       "href": "./BR_PE.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Pernambuco \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "122062903f88d31560ab0b891bc242cb011185eb400fe2a7ac1f63ee83eaf914c096"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_PE.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

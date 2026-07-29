@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "DR_Congo",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "DR_Congo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3531463755,
+      "file:checksum": "122012c855f163ae018857bd0d043dc40a6d5e7196026313ee834da3e3c14e468213"
     },
     "pmtiles": {
       "href": "./DR_Congo.pmtiles",
@@ -125,39 +128,49 @@
       "title": "DR_Congo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2040333631,
+      "file:checksum": "1220d1ce89bb88685915016c01cd6906107f882becfe392f762569e7c6ba1602c558"
     },
     "style-2025": {
       "href": "./DR_Congo.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12200cfa8500b8eb9e792d8f8f083466397dc5456c72b5b75010bdc08485417e638a"
     },
     "style-2024": {
       "href": "./DR_Congo.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220f8ff1284797a3e6a971c343b4bac1c969317c59bb83c2e068a75d5fd2d3d3b2e"
     },
     "style-confidence-2025": {
       "href": "./DR_Congo.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12205309dbe27555666cdc16814c2e9b72dc0e38efe1ee5cc2d4c1f06632e69faf4b"
     },
     "style-confidence-2024": {
       "href": "./DR_Congo.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220b9771aa1193329969bab03b112e083643a65ad6b748220785aec5aa05cd5ac8b"
     },
     "README": {
       "href": "./DR_Congo.README.md",
@@ -165,7 +178,9 @@
       "title": "DR_Congo \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4589,
+      "file:checksum": "12204e1613d2ddce92a904ba1003aea898f80c070a5a531bdaa9659c9189ff991b5e"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CD/DR_Congo.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_CA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 California field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 629136095,
+      "file:checksum": "1220a5fc01b43126fb87585c2ed58e077f4a20f5d1cc0026be8c5f0e03bd2d044d6e"
     },
     "pmtiles": {
       "href": "./US_CA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 California field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 393467596,
+      "file:checksum": "1220bca947bd28eefcc85399bd63b4c0fd7dd8af4fc5b139a3751bbcbd78a7d96607"
     },
     "style-2025": {
       "href": "./US_CA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204515b388d7df4e8a239a9715501e53c66d05e2bdc0fb8b7bbc14997cd7ac8b2c"
     },
     "style-2024": {
       "href": "./US_CA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122073b171147ed626f9818a0fdd538690f6c02398d9dff85df89fe36c5efdb73972"
     },
     "style-confidence-2025": {
       "href": "./US_CA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122076e0762278c29678994d8adf52152c7d3cc0cfe3666b8d5a7a8b143ed288c1a2"
     },
     "style-confidence-2024": {
       "href": "./US_CA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12204d4ea752c2995606bf708efaf5a04ef666794c4ddde268964e450ddd323c1644"
     },
     "README": {
       "href": "./US_CA.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 California \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "1220a92cae2679e6dd2bbd43ac03d963f92b16bb03d295272a61fd506b40ca4af08b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_CA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

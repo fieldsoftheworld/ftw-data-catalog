@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_TX",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Texas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1427102388,
+      "file:checksum": "12201c024adb2f04fbe050ee62067661e137ff465228871dd411b9325841502de5e4"
     },
     "pmtiles": {
       "href": "./US_TX.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Texas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 874580125,
+      "file:checksum": "12206db73663e0951a8d6936435a41e716bca1f43dcb87b1d1939d38fc1c962f8c8d"
     },
     "style-2025": {
       "href": "./US_TX.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ac5b40402e892938e5e10518988251ce4a932b8121876f73f2af2c98f9759e9b"
     },
     "style-2024": {
       "href": "./US_TX.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220315d935fed7dcb8fd426c5cdd910bb26cace1f27ea6a8b5cb4970d9313bdd2d2"
     },
     "style-confidence-2025": {
       "href": "./US_TX.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220bd5d2bba5ac2a060fdb2d23dbcdda4bdbb4c4f8a3d58ab7757d4f1cb143e4e58"
     },
     "style-confidence-2024": {
       "href": "./US_TX.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220922deef62554d83bd48bbf4dc18dffd8a2a1830edddb52591f730de5c4b6b9e1"
     },
     "README": {
       "href": "./US_TX.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Texas \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "122007d199ebfdd814ad68d9bf9bdf6c8ea9cd47b38c2c7526e368af9c787970c975"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_TX.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

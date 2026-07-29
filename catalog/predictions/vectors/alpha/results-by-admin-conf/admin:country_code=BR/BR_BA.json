@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_BA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Bahia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1872107922,
+      "file:checksum": "1220d1af60b89934738661d694d8a0ff392566bafc937037d8588e3992451b2cfecd"
     },
     "pmtiles": {
       "href": "./BR_BA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Bahia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1061481862,
+      "file:checksum": "1220ffd5966d94c0afc2e68cac153a5f8ed281d37b6b26e336187868b63c738489b2"
     },
     "style-2025": {
       "href": "./BR_BA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200e9d1fc40e598bcd57b8a3a5c81877b6bb94ba91b781459cd7035769a28c6e1f"
     },
     "style-2024": {
       "href": "./BR_BA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206100c868cb736de0ab16694cc69446bf09d8791e8cbad486bf3a9134154646e5"
     },
     "style-confidence-2025": {
       "href": "./BR_BA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fc60bae332065ffb80ddfc9217bccfef8776e677362c26e83771387bb5b01e20"
     },
     "style-confidence-2024": {
       "href": "./BR_BA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220cf4a46dc608bf62f05f194e1ad6ff77481c3fba5c258b22e4662486b512d41b1"
     },
     "README": {
       "href": "./BR_BA.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Bahia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "1220907d984ab43ea2ca2efbdbd1ec94f4d7f69a1a78099c9a6d58d992a7837d5ea1"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_BA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_RJ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Rio de Janeiro field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 20496014,
+      "file:checksum": "12205b85821325bcf57fb70a46bf3e135bb9e1018a919c8d1bfb39f1e596fe7b0e14"
     },
     "pmtiles": {
       "href": "./BR_RJ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Rio de Janeiro field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 18750840,
+      "file:checksum": "122053ce0ee8a695ee14a480cf899bacdadf3ff6a9f60d323c03383a639952a139dd"
     },
     "style-2025": {
       "href": "./BR_RJ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122096d847e3ccf31f3fd974a376314c3cbffc80b1aa272e6924c697a7498bcd75bb"
     },
     "style-2024": {
       "href": "./BR_RJ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220150c131a243d29d31d52e21e0e48d358f8063925e0d9bad8655ae9f6f9d81ba4"
     },
     "style-confidence-2025": {
       "href": "./BR_RJ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122082c671bad7948b7dad16d9e4bc2a00834d03e0f2012899fb4fdcd51205bdafce"
     },
     "style-confidence-2024": {
       "href": "./BR_RJ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208629cb5a5a8e1d86cab3bd29b2630e8b8476091c0443bdcfd5ecaecdfdfd4c77"
     },
     "README": {
       "href": "./BR_RJ.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Rio de Janeiro \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "12202ffcaba652703f77fc5deffe5ea6826db124df7faeb360f32b3c65e4bdb7d794"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_RJ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -3,7 +3,8 @@
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "confidence",
   "geometry": {
@@ -85,11 +86,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/confidence.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "llms",
       "href": "./llms.txt",
       "type": "text/markdown",
@@ -141,7 +137,9 @@
             "valid_percent": 7.192
           }
         }
-      ]
+      ],
+      "file:size": 1124253797,
+      "file:checksum": "12205b654afcb093d7069bedcc871e4e4a0fc3ed4aacdc28f2d78e4d5eab4d052504"
     },
     "visual": {
       "href": "https://data.source.coop/ftw/global-data/predictions/confidence/confidence/prue_v1_confidence_global_uint8_3857.tif",
@@ -187,7 +185,9 @@
             "stddev": 23.582517091367556
           }
         }
-      ]
+      ],
+      "file:size": 334497875,
+      "file:checksum": "1220af5eaa4ced0b4caa49fce75ea7adea5deda894462f920224aea80f57b17bf1aa"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -195,7 +195,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 3582,
+      "file:checksum": "1220c8efb31719d5650416102d3f37b216e26d4ce0a12aa565f27258a7ed830b71e1"
     }
   }
 }

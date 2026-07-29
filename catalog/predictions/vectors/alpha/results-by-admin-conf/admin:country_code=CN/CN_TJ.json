@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_TJ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Tianjin Shi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 56817270,
+      "file:checksum": "1220842285a5b4927f65f43ec2bc0fdfe518b0e539bc6f826ffff6df5ebe4c6c8738"
     },
     "pmtiles": {
       "href": "./CN_TJ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Tianjin Shi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 45453098,
+      "file:checksum": "1220f55d48e947174f230b952e4bb8228bfda4b85b497231add51f1574fb12e712a6"
     },
     "style-2025": {
       "href": "./CN_TJ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204d91358417042e608a8d7a13a49b3c22adfe18beddeaf7b302d145e1c420a738"
     },
     "style-2024": {
       "href": "./CN_TJ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204820db32cf27d7bf3e4e7df9ce109cd794a38f1d5c5dcd5cb9bc704fbbd311f9"
     },
     "style-confidence-2025": {
       "href": "./CN_TJ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e793dbf12d3ee182b812589001e00e221822b28e89279acf451e98994d5787d4"
     },
     "style-confidence-2024": {
       "href": "./CN_TJ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209a390163be1dd8aee27c87c15e608870b96ae74650bcdedc6bc14ca593074879"
     },
     "README": {
       "href": "./CN_TJ.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Tianjin Shi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "122020bd6db3063c239ab95d4245f4c0d6e99eda478ebe9969d91a42f1366b1d5d3d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_TJ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

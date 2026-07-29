@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Gabon",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Gabon field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 52747773,
+      "file:checksum": "1220e4df8a1b8a34886bf25602130203bcc771f2d0e1ac363b56917bd6710550e020"
     },
     "pmtiles": {
       "href": "./Gabon.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Gabon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 47545035,
+      "file:checksum": "12203f67e0c8dfea362112c70c10c71c7022ffe19230bb29e2267b48ebe58dfdacba"
     },
     "style-2025": {
       "href": "./Gabon.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d9e2bf31491c6861749d6d88a064db4d630dd4d1d13e2458bc13f2cf8ac3b546"
     },
     "style-2024": {
       "href": "./Gabon.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201387fad2971870d4b5543e44d191dedafd6c33520900b4ee4430834391b544d6"
     },
     "style-confidence-2025": {
       "href": "./Gabon.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208ee2e5d6ed8ad51500e19a159ada50be38b70c6dc65fd9b385413223122451ed"
     },
     "style-confidence-2024": {
       "href": "./Gabon.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ada1f20b73cb352d77c40484eff2ea17fd568ca602edeb66df4d2f20b93e2739"
     },
     "README": {
       "href": "./Gabon.README.md",
@@ -165,7 +178,9 @@
       "title": "Gabon \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4579,
+      "file:checksum": "1220ab9aa126f5e946a65e6404309b5527d91fcd4b8cec4ab0b60f5914c09ba4c6fd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GA/Gabon.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

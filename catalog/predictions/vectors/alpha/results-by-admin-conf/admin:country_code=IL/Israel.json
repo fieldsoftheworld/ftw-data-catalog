@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Israel",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Israel field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 55143924,
+      "file:checksum": "12203acd1c5bb0ee7c8f1c2149a770bd64ea1cdaf8a206fa10b0e64664b50e3d20fb"
     },
     "pmtiles": {
       "href": "./Israel.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Israel field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 42094454,
+      "file:checksum": "1220520da65c6ec00e792864ec86c7dd4b9d156de0997e62313c50e1cafcc83da47e"
     },
     "style-2025": {
       "href": "./Israel.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220e51582a85d6afb7d1376cf378c2cb83f8b284679c0dc59dee5caed36a9820594"
     },
     "style-2024": {
       "href": "./Israel.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12208339f5f5976f40ffdef40699141b987716427b2d626c6c606e6875b99ddcff39"
     },
     "style-confidence-2025": {
       "href": "./Israel.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122052f68a7acd0f79b24137eda2a4fd3ea41dcf0008275f93991c01521c09adbdd2"
     },
     "style-confidence-2024": {
       "href": "./Israel.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122069a984a4cafb51fe89b56f71452281e94cef871cc1010c58c07dcb50fe4b83b7"
     },
     "README": {
       "href": "./Israel.README.md",
@@ -165,7 +178,9 @@
       "title": "Israel \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4582,
+      "file:checksum": "12201ad56c598960c6c08d7510f02467cb71f4ff15a017096229451197fa2a58975b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IL/Israel.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

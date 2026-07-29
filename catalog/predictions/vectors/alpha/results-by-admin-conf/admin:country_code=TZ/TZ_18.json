@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_18",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Mwanza field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 229388503,
+      "file:checksum": "1220eab0e697a97b040dd7df02a4867c5685ee397300db4ff28b611dd9e1fe40d2c5"
     },
     "pmtiles": {
       "href": "./TZ_18.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Mwanza field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 117033300,
+      "file:checksum": "12204ebde6dbf0e8d93aeb1dca13f3e0ce2a82cda673b6ba56adb85301de2013ced9"
     },
     "style-2025": {
       "href": "./TZ_18.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122014635138691b2ad334945a49972251b5fc9d6ce8d88cfa2daa70b9826fa3a7a1"
     },
     "style-2024": {
       "href": "./TZ_18.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f0d1768ffdd3e0c8e360aef98081586be3c66224f0a82a6ff39c11bafc0ad133"
     },
     "style-confidence-2025": {
       "href": "./TZ_18.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e99f64fdbb60aaa622be0ac67bc00918485617bd6fe8652d1c108210e11ca6cf"
     },
     "style-confidence-2024": {
       "href": "./TZ_18.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f76a31a7ad33ebe9088dc3191c7619150348a6deee76b4c9448dcfee3ccfb33a"
     },
     "README": {
       "href": "./TZ_18.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Mwanza \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "12208ff2cc0dfc1c7917f4a686dac32c843bcd13b043dec1f384102f4605ae0839ae"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_18.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

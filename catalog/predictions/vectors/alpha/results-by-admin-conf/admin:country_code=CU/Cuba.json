@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Cuba",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Cuba field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 286996640,
+      "file:checksum": "122001cd5d8af998ad9ba2571956ce4b2ccd293d41e3f55a6cfd4ecedea18d53a883"
     },
     "pmtiles": {
       "href": "./Cuba.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Cuba field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 194552699,
+      "file:checksum": "122093ed91be62c28aaa2f29c3f210987a7bcc3e5237f87d244321b097b8fcac1fc9"
     },
     "style-2025": {
       "href": "./Cuba.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220557d51b2c4a1bc0cac412865b3620292ecc84ff3f32ed619258864344613d4d1"
     },
     "style-2024": {
       "href": "./Cuba.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220f272f863c21d79daafdcfeabd2822fcd07238721833bfac61cbf3794f709c12f"
     },
     "style-confidence-2025": {
       "href": "./Cuba.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "1220311182beff3265987f8b6dc00982b4ec48aedb330e50949e3be4e3b4c8dddbab"
     },
     "style-confidence-2024": {
       "href": "./Cuba.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "1220f47a84f6b8e8eb2f345a19423fc1c53fbc2844aeba741f8b9d57b7d58dc238f6"
     },
     "README": {
       "href": "./Cuba.README.md",
@@ -165,7 +178,9 @@
       "title": "Cuba \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4578,
+      "file:checksum": "1220c112100c92e6037225f49f66f6ac0855f3aa4912f8e89541e7e3f5ccea254a78"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CU/Cuba.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -3,7 +3,8 @@
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "field-density",
   "geometry": {
@@ -102,11 +103,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/field-density.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "llms",
       "href": "./llms.txt",
       "type": "text/markdown",
@@ -169,7 +165,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 1057301448,
+      "file:checksum": "122084fc945054441314ac85d651204f7604180bb452935d6714d583e15e0104d428"
     },
     "field_boundary_conf0.4": {
       "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_conf0.4.tif",
@@ -226,7 +224,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 439058967,
+      "file:checksum": "12208f403aa1fa7dbbbbe32219ef6b15525efefd868a9d299acbeda4c60ed2377926"
     },
     "field_boundary_conf0.5": {
       "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_conf0.5.tif",
@@ -283,7 +283,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 326599427,
+      "file:checksum": "1220abc4ae78975623679b5240b1d2964876e01f40752139cbf688e3a7dbdef7eb65"
     },
     "field_boundary_filtered": {
       "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_filtered.tif",
@@ -340,7 +342,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 495155980,
+      "file:checksum": "12208c1cc87780c277befbbfccea69d490f4d2e6f7cd0ca5b7bf1637464a1bb65d76"
     },
     "fields_only": {
       "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_fieldsonly.tif",
@@ -385,7 +389,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 516345855,
+      "file:checksum": "1220af58c008f29b98b1516e316fdc8114f4522391bbb64fa4638c59ebb1f55753e2"
     },
     "visual": {
       "href": "https://data.source.coop/ftw/global-data/predictions/confidence/field-density/prue_v1_field_area_500m_fieldsonly_uint8_3857.tif",
@@ -431,7 +437,9 @@
             "stddev": 20.578715163965313
           }
         }
-      ]
+      ],
+      "file:size": 347557256,
+      "file:checksum": "1220b4906353c3ba3cda7599b89fb79d86fe1b141f0c2c71d30854a0002f7ec4dedf"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -439,7 +447,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 4982,
+      "file:checksum": "122014f3288ffb8400011f314fd21fb02202fd7b431a95b7aae00ddc744ff38c9fcb"
     }
   }
 }

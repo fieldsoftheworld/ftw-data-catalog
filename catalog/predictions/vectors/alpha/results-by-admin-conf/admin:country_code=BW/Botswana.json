@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Botswana",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Botswana field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 732872896,
+      "file:checksum": "12208c70f7286fe8488253c52b4ce0beb936613ef6745e4aa768e7bf2606f4f95d49"
     },
     "pmtiles": {
       "href": "./Botswana.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Botswana field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 451714338,
+      "file:checksum": "1220f0d52603f788f6aaebc96ff88a0f19d6156c8b3a48f141a7be8d401bf98f4006"
     },
     "style-2025": {
       "href": "./Botswana.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12201b479be30fbfc507a2d15192a87849ed80a8c6ab21d689b80aeea64384fe1cf9"
     },
     "style-2024": {
       "href": "./Botswana.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12201d96a19837fe8deb353e57aeec4e2537eb85af7349c98948be85f4e25b139a82"
     },
     "style-confidence-2025": {
       "href": "./Botswana.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220e98c8ba2d83d456ad6f8144b8203380f8c4e07b51b09e3b5fab4e3ffebdfc846"
     },
     "style-confidence-2024": {
       "href": "./Botswana.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12207f91fce2db5bbe87b22d7defe1bc973d32fdc5b9f2ce72c2663068cb76e95ffc"
     },
     "README": {
       "href": "./Botswana.README.md",
@@ -165,7 +178,9 @@
       "title": "Botswana \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4590,
+      "file:checksum": "1220797696da6f40f57134175add3ce4e9fbe47783dada6f1954f2f84f8ff51287a3"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BW/Botswana.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

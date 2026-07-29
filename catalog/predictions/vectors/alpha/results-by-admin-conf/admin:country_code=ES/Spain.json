@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Spain",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Spain field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3289208460,
+      "file:checksum": "1220f228a3c9ddaae334d54a2369ce70511b5c2b2ad33845cb4e0d8a6d45575791b7"
     },
     "pmtiles": {
       "href": "./Spain.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Spain field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1797835977,
+      "file:checksum": "1220ad328f6e74f7a5ef590bcf3a784ffccb6a1acda6ea537930a447047076cb34b1"
     },
     "style-2025": {
       "href": "./Spain.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207091959c6b72dba33b4404b1002922885891858880462cb126d18876bf46c20f"
     },
     "style-2024": {
       "href": "./Spain.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ecebd06325c351b8d9d0a3397899c7ed082140ac7e846510ade1a1240cc7ff22"
     },
     "style-confidence-2025": {
       "href": "./Spain.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200f71cfe5ca4a5fe9b423f8834ae803dc8e4bd95516085737bba09589af7cb3a8"
     },
     "style-confidence-2024": {
       "href": "./Spain.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a9e4fd838b231fddd5c500e53e91c397bf3497ced79b1e069408aaac1eac05d3"
     },
     "README": {
       "href": "./Spain.README.md",
@@ -165,7 +178,9 @@
       "title": "Spain \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4582,
+      "file:checksum": "12202aa2105f0de1b72a6d9d2a921efe450d4ffda0a525cb100ee8d4b6e01a11d046"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ES/Spain.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

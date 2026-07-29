@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_AM",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Amazonas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 101066549,
+      "file:checksum": "122085c39ba147a1bcb2f039db59bb5a97d0703329435d70c214827fb50b74963c94"
     },
     "pmtiles": {
       "href": "./BR_AM.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Amazonas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 101504982,
+      "file:checksum": "1220baa82cbadf67799f6371df53a314bc7750c05ce47eb0ce2d50df4548109ddce5"
     },
     "style-2025": {
       "href": "./BR_AM.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d12ec7f9bbb901621d32c71e1e63e03661c662730ead36a39d58bf83f840a076"
     },
     "style-2024": {
       "href": "./BR_AM.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203aafd0f8e6d8c0ba83f3eedd2856f3066f71d528f883cf9feadf47026401a19a"
     },
     "style-confidence-2025": {
       "href": "./BR_AM.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d2bebea7e6969b721c1eb2fdd18538f70fe296ab869a3f7ffbc3975c6c7ab4d1"
     },
     "style-confidence-2024": {
       "href": "./BR_AM.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a0c6996c1baf05e7d50c3dd5172806b6e0625b9fceed22e181aa48e2118d89a1"
     },
     "README": {
       "href": "./BR_AM.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Amazonas \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "1220ce621a2c1563a50e3a0e2835a3a3e3e19ec10f1e666c446477fa362b0443751a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_AM.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

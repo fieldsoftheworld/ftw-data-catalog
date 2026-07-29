@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_MZ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Mizoram field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1763714,
+      "file:checksum": "1220553fa06d80e783b85087429c9c2cc632ff050a7e88ac7873556f80c446505fd6"
     },
     "pmtiles": {
       "href": "./IN_MZ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Mizoram field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2111011,
+      "file:checksum": "1220bbd4ec3911ce202e2bbde08eb6c1b01a83a11b9f03efeead2a050e07d2768e0b"
     },
     "style-2025": {
       "href": "./IN_MZ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122014ffcd624b88e4e13404f96edef8f476a50c74df49631de054d26778ac0d64d1"
     },
     "style-2024": {
       "href": "./IN_MZ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f8cfedc5418b447c776f4711db4d5347520c80e0e60cdbbc7f2e3bfa35f7690f"
     },
     "style-confidence-2025": {
       "href": "./IN_MZ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a3251f27eefff4473bdd68d9a64b86763c91f78b3644c18ce64250a2a3a8f5dc"
     },
     "style-confidence-2024": {
       "href": "./IN_MZ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122061a6fddedba3dc6e1567e29698d67cf51c48954d59bc23dd7eef53c47d1277e8"
     },
     "README": {
       "href": "./IN_MZ.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Mizoram \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4427,
+      "file:checksum": "12206c87b349f1dc85a8207450f00e10b07611c7fcfb4b793c975a1ca5bccbca8f10"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_MZ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

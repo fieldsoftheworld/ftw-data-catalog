@@ -2,10 +2,12 @@
   "type": "Collection",
   "stac_version": "1.1.0",
   "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
     "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "s2-planting-harvest-composites-2025",
   "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 COGs (2025)",
@@ -28,7 +30,8 @@
       "name": "Taylor Geospatial Institute",
       "roles": [
         "producer",
-        "licensor"
+        "licensor",
+        "processor"
       ],
       "url": "https://taylorgeospatial.org/"
     },
@@ -47,6 +50,13 @@
       ],
       "url": "https://sentinels.copernicus.eu/",
       "description": "Sentinel-2 source imagery"
+    },
+    {
+      "name": "Source Cooperative",
+      "roles": [
+        "host"
+      ],
+      "url": "https://source.coop/ftw/global-data"
     }
   ],
   "extent": {
@@ -194,7 +204,9 @@
       "roles": [
         "thumbnail",
         "overview"
-      ]
+      ],
+      "file:size": 947099,
+      "file:checksum": "1220b251d835a63140033f5d3eb99da85287a0976618468134f2320ac6880c1190ae"
     },
     "geoparquet-items": {
       "href": "https://data.source.coop/ftw/global-data/features/2025/items.parquet",
@@ -202,8 +214,10 @@
       "title": "STAC-GeoParquet item index (per-tile items)",
       "description": "STAC-GeoParquet listing all per-tile items for this year; the scalable item index in lieu of item links.",
       "roles": [
-        "metadata"
-      ]
+        "collection-mirror"
+      ],
+      "file:size": 4540445,
+      "file:checksum": "1220b4fc4691a88f20161c2787be9cc3ae1340e2a0a1973a587cc98a1b2ab59c1931"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -211,7 +225,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 799,
+      "file:checksum": "1220ada880c0a0d0b5262b0b309bd5589c06170a55982c7f8891ea4d268586623319"
     },
     "README": {
       "href": "./README.md",
@@ -219,7 +235,9 @@
       "title": "Human-readable README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 2202,
+      "file:checksum": "12207b734fca4d63e82441654bbceb21adf80fe5ecba36ce2f0d6481796f1b3688bc"
     }
   },
   "links": [
@@ -234,12 +252,6 @@
       "href": "../catalog.json",
       "type": "application/json",
       "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/features/2025/collection.json",
-      "type": "application/json",
-      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 COGs (2025)"
     },
     {
       "rel": "license",
@@ -265,7 +277,7 @@
       "title": "Sentinel-2 L2A \u2014 Copernicus Data Space Ecosystem (ESA, official)"
     },
     {
-      "rel": "via",
+      "rel": "related",
       "href": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a",
       "type": "application/json",
       "title": "Sentinel-2 L2A COGs (AWS Open Data / Earth Search \u2014 source scenes used)"
@@ -287,6 +299,19 @@
       "href": "./llms.txt",
       "type": "text/markdown",
       "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "updated": "2026-07-28T16:34:06Z"
 }

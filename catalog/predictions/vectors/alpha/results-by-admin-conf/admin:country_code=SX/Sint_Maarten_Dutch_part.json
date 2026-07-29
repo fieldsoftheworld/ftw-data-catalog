@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Sint_Maarten_Dutch_part",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Sint_Maarten_Dutch_part field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 179689,
+      "file:checksum": "122091a3dd3e1498b5b9f2bf006491e84b8ec67dbaed8eb9f489d7c72839a0a0e424"
     },
     "pmtiles": {
       "href": "./Sint_Maarten_Dutch_part.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Sint_Maarten_Dutch_part field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 141176,
+      "file:checksum": "122030cd76b7060a2aa0553259618f9230d24da359eb6b1d4b165de2fd1dc0327d54"
     },
     "style-2025": {
       "href": "./Sint_Maarten_Dutch_part.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 954,
+      "file:checksum": "122089fee6f11541e7f5217231f570b95065ab418998e2c3cc0229bd8d572d3e5544"
     },
     "style-2024": {
       "href": "./Sint_Maarten_Dutch_part.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 954,
+      "file:checksum": "122080784b8d58def36f5b230ae1e25431d76d34f1a3faaf67c7762b9206974f1738"
     },
     "style-confidence-2025": {
       "href": "./Sint_Maarten_Dutch_part.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2698,
+      "file:checksum": "1220d494d0e7b8fcc66a9c6b9fda119890aee724be567b8b1ad29568104232906e6f"
     },
     "style-confidence-2024": {
       "href": "./Sint_Maarten_Dutch_part.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2698,
+      "file:checksum": "1220624324c6f0bf4d55f8148c6922da8d9762e8da4af8c708493d59216918730a5b"
     },
     "README": {
       "href": "./Sint_Maarten_Dutch_part.README.md",
@@ -165,7 +178,9 @@
       "title": "Sint_Maarten_Dutch_part \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4629,
+      "file:checksum": "12203f77f7cbdaea9f5c048b3fe338f9b9336e8f921156db04cf8e568522d1485e2b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SX/Sint_Maarten_Dutch_part.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

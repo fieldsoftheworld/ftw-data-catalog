@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_AR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Arkansas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 85208124,
+      "file:checksum": "122050e32db65611affaf460ee2478a31e5639dc1a6ccc48020978732bc02c30e7fd"
     },
     "pmtiles": {
       "href": "./US_AR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Arkansas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 68183261,
+      "file:checksum": "12201176c829fc13062741f0bb876cf85c1fd9f12e4a6546d61b49e7c55c13431317"
     },
     "style-2025": {
       "href": "./US_AR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209643fa3e8b3621412575f04af7c4352b85b6ec7da5cdfa0565e0ac095efc70f7"
     },
     "style-2024": {
       "href": "./US_AR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fc8b83739d90b1301d6e1edb72055a037658788b345326386c29eef7d0145f1d"
     },
     "style-confidence-2025": {
       "href": "./US_AR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f7208aa554c8726d4283571b1ede27aaa3d27a2cc548dd0ee6cd7b0f4d7cf593"
     },
     "style-confidence-2024": {
       "href": "./US_AR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d0aaade07cd1d090aa34f5c0931c26412996bfc2c7a5c0d0e665ffaf913792ee"
     },
     "README": {
       "href": "./US_AR.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Arkansas \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "122007398a19873a9feb8da8c4e7e425f187f5639aa2be603a0e91f185e68a096d2d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_AR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

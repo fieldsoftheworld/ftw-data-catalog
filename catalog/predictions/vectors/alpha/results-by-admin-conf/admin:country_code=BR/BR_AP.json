@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_AP",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Amap\u00e1 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 47863471,
+      "file:checksum": "1220c17babff9754345c328e59a79a1fd836bab965dc8487823afcac513de319de73"
     },
     "pmtiles": {
       "href": "./BR_AP.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Amap\u00e1 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 38724208,
+      "file:checksum": "1220568a4f2aaac47f01c755b479c663e45a60ff60fbdafac5b8c612ab4e660a199e"
     },
     "style-2025": {
       "href": "./BR_AP.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209e52ab11ea5f300dd69e6e8a42b34cab8cd8bb7896a080cb9d415614d82e7ef3"
     },
     "style-2024": {
       "href": "./BR_AP.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220eec4f1b096ca2516ec97fbe5fb9574274b307114d3297c69f128350c37d05acd"
     },
     "style-confidence-2025": {
       "href": "./BR_AP.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122051f1bccc690cb419512d9ca0d586ab0b1ab6fbcd59ebd75d0e9a638410cab537"
     },
     "style-confidence-2024": {
       "href": "./BR_AP.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220dc242743d9c935fbceb8624646b9f743d700e86187e43bf10579af2301f6d27b"
     },
     "README": {
       "href": "./BR_AP.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Amap\u00e1 \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4428,
+      "file:checksum": "1220fad8b6e75034d65a85409a4b30b96bfe6e99fae1a19cef245dfe4858ab00b0a7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_AP.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_05",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Kagera field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 225364713,
+      "file:checksum": "122030038edca8e124772316dbff798180b8b684943b8c983b2b9b2dcbe3df13b370"
     },
     "pmtiles": {
       "href": "./TZ_05.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Kagera field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 135188687,
+      "file:checksum": "1220cb478c8d2e8d2acfacddc9877fda60e9057809c62cf4f7d937e3b5b3038d1d34"
     },
     "style-2025": {
       "href": "./TZ_05.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b4375be2571ce6117687bd076fa2a238970de68da2ce920f3a243a0514c38fc5"
     },
     "style-2024": {
       "href": "./TZ_05.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220381fa70d78f9738772bd7651a92915ac3057fb900b6bb5292d918bc4511f8c26"
     },
     "style-confidence-2025": {
       "href": "./TZ_05.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209ed603c8855fd0b736205c887b9eb646dc20d7745d29dea0793c9eb12681985b"
     },
     "style-confidence-2024": {
       "href": "./TZ_05.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a65a41a0431a928925dc20472db311f97da91a4b6916299f6039cb7a0afa9dbb"
     },
     "README": {
       "href": "./TZ_05.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Kagera \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "122093df55a40c08f028786ed1c098ec8c2b83d3ab5ba81d706faf9589a0997008d8"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_05.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

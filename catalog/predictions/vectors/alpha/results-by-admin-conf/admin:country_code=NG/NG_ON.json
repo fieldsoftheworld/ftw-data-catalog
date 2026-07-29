@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_ON",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Ondo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 67115536,
+      "file:checksum": "12202047b4b0604b8b5bcb37f2ad01516234b342099024a62d6ed484e1fc066ade21"
     },
     "pmtiles": {
       "href": "./NG_ON.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Ondo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 44531931,
+      "file:checksum": "1220f0a3e1ae9aa1b3dda2b0670ce164fc51f3bca1b86da9f89e7c449f33f853f552"
     },
     "style-2025": {
       "href": "./NG_ON.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207127100408ae823f248d95000267f57ad61dd32fb32e82bcd240a215573831f1"
     },
     "style-2024": {
       "href": "./NG_ON.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d0618fa9be24dd9230e807b4aa4519900a4979785f365a613ec3e5be3f8d14d5"
     },
     "style-confidence-2025": {
       "href": "./NG_ON.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220636dfc2cd1275f1346bed773a24453c12531754f226909ba4fa1bc81ecf17574"
     },
     "style-confidence-2024": {
       "href": "./NG_ON.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220845c69d8746e0f4c2e9ba3f088b598bac63432eecb664d3551558f51d689577d"
     },
     "README": {
       "href": "./NG_ON.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Ondo \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4427,
+      "file:checksum": "122083d5a0027d5e61cfb058d59a8764477928c819412f52ac65114e8a8122541d16"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_ON.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

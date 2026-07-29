@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_TR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Tripura field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 57133334,
+      "file:checksum": "12204351ce00266e78b4a045196407eb784be614e8739f6b223ee2f59793ab583c80"
     },
     "pmtiles": {
       "href": "./IN_TR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Tripura field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 47040521,
+      "file:checksum": "122027d75ca6fe46f1c6d6caad21b15c1d776ed9a9cfd544c3f06fdfe11201cbada2"
     },
     "style-2025": {
       "href": "./IN_TR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122041c16d702c7b5389d435df9d337923bf0f05fc5b0d0163d1c385222ba688aa41"
     },
     "style-2024": {
       "href": "./IN_TR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209865f039501aa475f8ff52e51aa694860010decb913d8ba0377eb86c60d70c49"
     },
     "style-confidence-2025": {
       "href": "./IN_TR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202ae0a3efb69ff02c87f9e0f622308970714e0402e0c9fb1b493b1dfdda476884"
     },
     "style-confidence-2024": {
       "href": "./IN_TR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209c32a57752fb931998032a6803d13c92be0a805931678c514fff9f75e9429b63"
     },
     "README": {
       "href": "./IN_TR.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Tripura \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4428,
+      "file:checksum": "1220b34ade0261be7d3f736e5f1a9beff2c6af027aae93564a6e390139a4990b6dc6"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_TR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

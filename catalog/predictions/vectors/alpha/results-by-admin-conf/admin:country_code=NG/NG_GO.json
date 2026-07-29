@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_GO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Gombe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 275807914,
+      "file:checksum": "1220352b9946088653fcd53b01329942dcbc5149ad009bc26a7db90fe4f7976b2923"
     },
     "pmtiles": {
       "href": "./NG_GO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Gombe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 144945689,
+      "file:checksum": "122099e707331d2a39de7ad9980e7d17776e09dc1eeb174868ecd1235b898e2099f4"
     },
     "style-2025": {
       "href": "./NG_GO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122012b9dd4a4c0e5537678e7e2678d628e4b90cb34d6942c241ccb99eccf8f8991c"
     },
     "style-2024": {
       "href": "./NG_GO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220bd3739f94a38b3dd8b302b86e337c0e2e36973f930acb46724012f5a6e4e7b8d"
     },
     "style-confidence-2025": {
       "href": "./NG_GO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122032759e2befee240922288271bb78738bb1338b816a873c43b786973e24a77d4d"
     },
     "style-confidence-2024": {
       "href": "./NG_GO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200ac1bb66d6d35a276c71fa8400115c565c3f49425381f237ec620e64f8ed02e2"
     },
     "README": {
       "href": "./NG_GO.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Gombe \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "122018db68c5a51e80c9c52bec954e598a0c4e32825f64fe468e5f289849eea255f9"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_GO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

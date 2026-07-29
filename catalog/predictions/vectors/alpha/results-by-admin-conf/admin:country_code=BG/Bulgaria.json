@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Bulgaria",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Bulgaria field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 297306940,
+      "file:checksum": "1220c11a57495ad65f31a0dac829b23a09f0dd1e2339053198ac3bf828c1a5ed8da5"
     },
     "pmtiles": {
       "href": "./Bulgaria.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Bulgaria field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 187518710,
+      "file:checksum": "122084ae9d6a226d5583cf91c67a33656a0061cb01b6739ed0b7e6358e6a7ee6152c"
     },
     "style-2025": {
       "href": "./Bulgaria.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220440794a2ccd6428cacd55a2184b76be4cfaba4b1d53391db099531d8ee5e114c"
     },
     "style-2024": {
       "href": "./Bulgaria.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12204264704e60b9c139df4c79dcbf10a183fd28db7b69adde63002cb58a2098c533"
     },
     "style-confidence-2025": {
       "href": "./Bulgaria.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "122057669d431374000b836a948f648f7294aa053540eb4fd6034aca6f14b62fba67"
     },
     "style-confidence-2024": {
       "href": "./Bulgaria.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220909784eb8787b792e571afd4b0a0f039cc136158b531ccd3bcf4a4980415a530"
     },
     "README": {
       "href": "./Bulgaria.README.md",
@@ -165,7 +178,9 @@
       "title": "Bulgaria \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4589,
+      "file:checksum": "1220b65902d533dbfee2fcc0999108623124765c85dcf2293f6d285a842ca3bc10bb"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BG/Bulgaria.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

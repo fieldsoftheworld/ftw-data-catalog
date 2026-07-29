@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Sri_Lanka",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Sri_Lanka field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 449773623,
+      "file:checksum": "12204594c5fde44f52fce34124fe637145d224d08851163758f7d42219a26f7f8d26"
     },
     "pmtiles": {
       "href": "./Sri_Lanka.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Sri_Lanka field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 264277930,
+      "file:checksum": "122098848aec7c685a077403f3b9f62e81457594aa6cc2a88cc2871240e3eebbf006"
     },
     "style-2025": {
       "href": "./Sri_Lanka.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "1220600ae26bb5e4a0e9fb4d3dcdb943a74f97a59295d67297df13ccc5d16e038945"
     },
     "style-2024": {
       "href": "./Sri_Lanka.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "1220518211b99797b8874eb96b1608e05fabef80c2f5b8c651992c4e0788d311fce4"
     },
     "style-confidence-2025": {
       "href": "./Sri_Lanka.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "12207cecb1aaeeba5f2a75ec955e66fa3b606ba33accd4e02416f16ff5ecf229bdb4"
     },
     "style-confidence-2024": {
       "href": "./Sri_Lanka.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "122058f65cbddf957222b87325205aab499277e3c2192d442c7f18a7d1636518dcc1"
     },
     "README": {
       "href": "./Sri_Lanka.README.md",
@@ -165,7 +178,9 @@
       "title": "Sri_Lanka \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4593,
+      "file:checksum": "12206208288dc808aca9e5f6ae0132456efdf067807f71041a1cb6b8fcbbdcbb5557"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LK/Sri_Lanka.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

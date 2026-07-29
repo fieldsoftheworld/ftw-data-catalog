@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_VA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Virginia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 74633607,
+      "file:checksum": "122021b0b49402c691269f4a73ec00db78d0e372a20f1d4a50a60448cbcf93fcdaeb"
     },
     "pmtiles": {
       "href": "./US_VA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Virginia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 56480481,
+      "file:checksum": "1220148e45a8a7f1530c588435d7a1b66f8c1eedcc7fd097f273ce56bb959274dc51"
     },
     "style-2025": {
       "href": "./US_VA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c53c7f172a019d878f0e57c6f321d7ffa8cc196348bbfd423069e1eaf8ca8849"
     },
     "style-2024": {
       "href": "./US_VA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209ad67d213eec9b6d3d71e2a97e8d6d0ef740f57c64175a0f8b8c3a911a047139"
     },
     "style-confidence-2025": {
       "href": "./US_VA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122057abdb5861238da7075e5ae1955f4538b0b6c6f708b805c13c3bac020e2fb5eb"
     },
     "style-confidence-2024": {
       "href": "./US_VA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202ed6987f95cde21ce5e273140e1af308075f9453d07f54681a608480fb6c838e"
     },
     "README": {
       "href": "./US_VA.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Virginia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220835da744213f5031a9d02748bcc8709f89866f6b838c0359429b75864dd87668"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_VA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

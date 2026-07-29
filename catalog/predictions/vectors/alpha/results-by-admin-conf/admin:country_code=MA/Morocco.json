@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Morocco",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Morocco field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1798476832,
+      "file:checksum": "122035d330b451b38be18a729a15b1bdbc0a2ef7930e5c151c76983d532aaf990e3f"
     },
     "pmtiles": {
       "href": "./Morocco.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Morocco field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 961953406,
+      "file:checksum": "12202ef8a2cdf68849c2f23c021af7bdd6c89d3069e80b3a154cad66c9309b5c874c"
     },
     "style-2025": {
       "href": "./Morocco.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220368d0c90c97a97e3bc913b603db40178f1128151a11af8dd0f254cec6810753a"
     },
     "style-2024": {
       "href": "./Morocco.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "122007a3433383269666f5cae5d95f760fb8665f9818c5ffdf272fb09cc88620ca2e"
     },
     "style-confidence-2025": {
       "href": "./Morocco.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220c62581ca843ed55d090f40c7fb74fe2cc4d711640aaca67107b0f11b37b74238"
     },
     "style-confidence-2024": {
       "href": "./Morocco.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12200fbd516022b923ed14a0794bca3cfe018f32a1fa08831acb4d7676adf8fd5ca4"
     },
     "README": {
       "href": "./Morocco.README.md",
@@ -165,7 +178,9 @@
       "title": "Morocco \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4587,
+      "file:checksum": "12207b77dd6c8baffbfd61dbe3ff0f4d5d31e68db3b5d564dfeb31b4916227c0022d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MA/Morocco.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

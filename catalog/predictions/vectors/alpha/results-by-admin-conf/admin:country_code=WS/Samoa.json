@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Samoa",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Samoa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 5201106,
+      "file:checksum": "1220733e5928f24b12d8278727ce0314817dca8c70e0f3137b85ea2158f9fbf488fe"
     },
     "pmtiles": {
       "href": "./Samoa.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Samoa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 4934759,
+      "file:checksum": "1220725bd79425ed5f671622b85fe0597312a42ad3be7572907325bdaddb9756e902"
     },
     "style-2025": {
       "href": "./Samoa.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220673a3a92c07e6f003f3063b95bc424527e9a33557c5e0384704a21cac9af7d4c"
     },
     "style-2024": {
       "href": "./Samoa.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204f7cee44eb3bbea83276eae05f1490d04fcd50c2d0c46f760fc3a74de54023dd"
     },
     "style-confidence-2025": {
       "href": "./Samoa.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122034f0b2dc8acafe2a6d2997cfe102ce95938a395206922260f62734fcd44cae10"
     },
     "style-confidence-2024": {
       "href": "./Samoa.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220cd477dc6be790ecd179945119063279b5d4ad99672693ab8c3c3f6445e867c6a"
     },
     "README": {
       "href": "./Samoa.README.md",
@@ -165,7 +178,9 @@
       "title": "Samoa \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4578,
+      "file:checksum": "122016aa4cc635df773e65c90e83a7bdb9d0fcef9919812fd0258c84f93a22527c1a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=WS/Samoa.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_AN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Anambra field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 53534843,
+      "file:checksum": "1220171a0376a8bb0d3aacc711ad2fa4f7d3dc5d84bdc372196b6bdd9126f427e33b"
     },
     "pmtiles": {
       "href": "./NG_AN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Anambra field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 33812615,
+      "file:checksum": "12204d0edb6ce1e6b441de50ba55a3182ca12196f21d5cd82b47fd73563c789ca3c7"
     },
     "style-2025": {
       "href": "./NG_AN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204fd6d304cf3c08a8b85f40ed0cb8611e02e9ea09116837d63b3e173896448fcb"
     },
     "style-2024": {
       "href": "./NG_AN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122050dba7d6c1eaf5589110f4216d8d4da06e546c8cf7a8d4b0de686d18667f9024"
     },
     "style-confidence-2025": {
       "href": "./NG_AN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209a526edb3fb872fc71f6f15f548d3080f0a710bb48ea4fb92712a019b42218aa"
     },
     "style-confidence-2024": {
       "href": "./NG_AN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a68e521e56ab83bcf50e3dcece8b03269f893ec6c73205c6ff742c9699801e1d"
     },
     "README": {
       "href": "./NG_AN.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Anambra \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12201889a6880bea7a9eb9bd9d05e90b3986daec5e95541a937f259ad97269f0464a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_AN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

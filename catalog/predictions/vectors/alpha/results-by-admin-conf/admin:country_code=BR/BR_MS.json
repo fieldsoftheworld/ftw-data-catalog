@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_MS",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Mato Grosso do Sul field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1009310085,
+      "file:checksum": "1220dda4664771e125f2fd8f88e8f18a81a27b9ca586bd42d069be93a3d36f9c5197"
     },
     "pmtiles": {
       "href": "./BR_MS.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Mato Grosso do Sul field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 570053162,
+      "file:checksum": "1220f64b101e835409c83b5e79e09346b5c8c277c1929f4588acb1a322585f209ae5"
     },
     "style-2025": {
       "href": "./BR_MS.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cc28294d0f9a2653cbc674cf941ef1be91974f00fa9e51d2f03a4a0f15970619"
     },
     "style-2024": {
       "href": "./BR_MS.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c76b2dc931b2cec8824f3724f711845694785d3d2f718ed97afd7cbb3288d39c"
     },
     "style-confidence-2025": {
       "href": "./BR_MS.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220901438c5701f15ad1b80ac7c960547900412fd0e6ceaff0476e070cc6cadaee7"
     },
     "style-confidence-2024": {
       "href": "./BR_MS.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220801336ca34e7019b408e3fc2a6cbb9e93b25c5d4d8bfae33aa4e9de08b42ad61"
     },
     "README": {
       "href": "./BR_MS.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Mato Grosso do Sul \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4604,
+      "file:checksum": "12208c057d38520c06c25b64e6d3316fd29035d71a12dc5e3ead04a944eea7b306f2"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_MS.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

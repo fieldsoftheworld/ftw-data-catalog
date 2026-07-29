@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_VT",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Vermont field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 8065075,
+      "file:checksum": "122047c2c1948cb8434204f76728972c930749af1b3d04ba9b198a496c78a65d7bb4"
     },
     "pmtiles": {
       "href": "./US_VT.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Vermont field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 7310922,
+      "file:checksum": "1220e8e43fb788cb872f0d2ba11946104b0511d26f787bc8d094790ea6088825a2e3"
     },
     "style-2025": {
       "href": "./US_VT.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122012c18aa6a847a844dccd80236669eeeb431231771236ec9e4318797ab29b01d6"
     },
     "style-2024": {
       "href": "./US_VT.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d430c604b3a6334d608493318b36496d2c47285912cfc28fa34786ad2787c283"
     },
     "style-confidence-2025": {
       "href": "./US_VT.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205791a7602414296590cda35cb483bdb04d0edf1df4940544d4ba89a87857b661"
     },
     "style-confidence-2024": {
       "href": "./US_VT.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122083d90009dc4dd466a0944cdd3cef31c364c00f8c590847f7d317fc6ffa40651a"
     },
     "README": {
       "href": "./US_VT.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Vermont \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "122089bb4c6dbc12a866fcf9c95f28b64116a5c239a4a01eeb4510cd8ccbd10c6d88"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_VT.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

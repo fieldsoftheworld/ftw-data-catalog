@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Iraq",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Iraq field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1910576425,
+      "file:checksum": "1220929a9735bb09d68000e312a185b71d2dd472cd7b5468cb4d2b325656d19b7085"
     },
     "pmtiles": {
       "href": "./Iraq.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Iraq field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1016901252,
+      "file:checksum": "12202f696049705f29a5db5488a326047c029ae6ca4c6e91f6a1f29b1aa0a9e51d6d"
     },
     "style-2025": {
       "href": "./Iraq.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "12200fc89e4aab7b6927b900296f4d653fe71802ec95504430eecfbea34d18980313"
     },
     "style-2024": {
       "href": "./Iraq.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220569a7c4caaa002533655ea411b8190e596a69a50492df67337b30743bc52a026"
     },
     "style-confidence-2025": {
       "href": "./Iraq.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "1220f7bbe7ea95df29dbdbf0d7c81f842800537edf921656be12ad68a67d0f7b3453"
     },
     "style-confidence-2024": {
       "href": "./Iraq.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "12201c35edee07c209e713ee42b47f62aa019e99e24548ed4a69ca1547d3e7964fd1"
     },
     "README": {
       "href": "./Iraq.README.md",
@@ -165,7 +178,9 @@
       "title": "Iraq \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4578,
+      "file:checksum": "1220ff8c7591c228c80812d8ed0de42c88bdb7714b4a6f9220f3e5525528219a1ea5"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IQ/Iraq.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

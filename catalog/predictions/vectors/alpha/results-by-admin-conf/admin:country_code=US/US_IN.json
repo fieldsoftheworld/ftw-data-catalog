@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_IN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Indiana field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 215594981,
+      "file:checksum": "1220c8080fd6bb5e3d21c8cb6432b1bec89c8d0c18b90a5da63ec6306a10ac75c114"
     },
     "pmtiles": {
       "href": "./US_IN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Indiana field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 181492672,
+      "file:checksum": "1220c75ff1b41cfe6f0a87cb862b162e5ece9dc36eef758443f313611b30030c8183"
     },
     "style-2025": {
       "href": "./US_IN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e29fe9a501dd18c13159981710efd94ca599ca0f87c4827749f1ca39242ef185"
     },
     "style-2024": {
       "href": "./US_IN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220235d622ed4d223d6d6fbbdfb3a96239e6661132fa165ddc0c70b790d4b68a46a"
     },
     "style-confidence-2025": {
       "href": "./US_IN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a6531584e96c5e296103bc55a5cf1dc5982fde695b13637d6b031dbb6a763786"
     },
     "style-confidence-2024": {
       "href": "./US_IN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e2fb87f59ed2d95e33acbf84e00d691a0c62333c06978b312dd58a0440f93d8e"
     },
     "README": {
       "href": "./US_IN.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Indiana \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "122025b0c39f5be898c1552c90b5e236cf5a50756f940618a0049a1143f37c17b1ca"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_IN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

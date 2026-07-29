@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Madagascar",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Madagascar field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 4553441522,
+      "file:checksum": "12201b678ff688dd195d709d00876e5db76e1a2fd50d427d1b0442fda6240790f076"
     },
     "pmtiles": {
       "href": "./Madagascar.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Madagascar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2531879060,
+      "file:checksum": "1220b39e042dea400c3c1d3b78150db338d8d9c1dac7de03c0025a805d1d50abd626"
     },
     "style-2025": {
       "href": "./Madagascar.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220c5915a445cc86ff0bd50f5cb94d2d91398ddd98a7662767eda887e5e855c973c"
     },
     "style-2024": {
       "href": "./Madagascar.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "12203b5d652d2fa37114e1fa5d5ff5322b03936dd87cf3bf056e9f86d3df21aad281"
     },
     "style-confidence-2025": {
       "href": "./Madagascar.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220bd8c9c68a3ab56129ba4cb64f3bbb065716d2f2b611eb0244e9dd52eff6f64c0"
     },
     "style-confidence-2024": {
       "href": "./Madagascar.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220e85b2b31c22a69c4c64e91564d3a8f0d723f1e8cc1a955acec6d9ed15b98b1ef"
     },
     "README": {
       "href": "./Madagascar.README.md",
@@ -165,7 +178,9 @@
       "title": "Madagascar \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4597,
+      "file:checksum": "12202def9b87a3438c603704f9e5897d45b48eb68f0197e0fa8ae39b735769290f4d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MG/Madagascar.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

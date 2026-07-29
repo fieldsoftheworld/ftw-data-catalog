@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_20",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Rukwa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 350299430,
+      "file:checksum": "12204321fec729383dd5dab3faddd9f93afb521fb0dc36421b4602d09e57b16e168d"
     },
     "pmtiles": {
       "href": "./TZ_20.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Rukwa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 183928421,
+      "file:checksum": "12200a47f575dea04757289fb4198ea12dc1c3e3253cb9da3725b15ce4665dc867a0"
     },
     "style-2025": {
       "href": "./TZ_20.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e4b8ad300db89396a4aad5de35009143b7a73701bf16c7fedb3929120eae23f7"
     },
     "style-2024": {
       "href": "./TZ_20.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c2d748e064afee416089ec542e0c16a1a2a570a8afad886133d1c8702e5127b2"
     },
     "style-confidence-2025": {
       "href": "./TZ_20.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200a3e8feabb1bf7e907e9b2bdb46374bf7270536ce54562ac9ebc51bcd3691241"
     },
     "style-confidence-2024": {
       "href": "./TZ_20.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203f5e2852487f7af6f6f34a2249482c763df8801fb4fa75336f5963b049b6fcaf"
     },
     "README": {
       "href": "./TZ_20.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Rukwa \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4451,
+      "file:checksum": "1220f6301a48c5738336154f118eecd2bb9382aa761b6fc5bcb30b06851ffd2e76b1"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_20.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

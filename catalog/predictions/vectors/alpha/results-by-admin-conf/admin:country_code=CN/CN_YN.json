@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_YN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Yunnan Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1726963288,
+      "file:checksum": "1220b1df514e552cc9694576febe4f406af75939fed76e1f7b3e9612313857e6a090"
     },
     "pmtiles": {
       "href": "./CN_YN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Yunnan Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1048937293,
+      "file:checksum": "1220d93e3939d9bf5715a61a376da1f78ff11ca03caf69732f95ac56e56fb462a054"
     },
     "style-2025": {
       "href": "./CN_YN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f0cb9bc8ce9f51e3d7140be4438632e27a4ca0d7be980de751a84744ee4b890d"
     },
     "style-2024": {
       "href": "./CN_YN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a175239be8e0a4664ad25e5ea4115460a4bccb6614dadb0057bba85b631151cc"
     },
     "style-confidence-2025": {
       "href": "./CN_YN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122056fe5effd515d7b3783dd79f6308a20b51da8f5cffea6ddc8bbed99eca7be4fc"
     },
     "style-confidence-2024": {
       "href": "./CN_YN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208d495dc1a6e6ce6e63127dc4b3b2fcaff169999d56e2732241f3f82023f07636"
     },
     "README": {
       "href": "./CN_YN.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Yunnan Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4597,
+      "file:checksum": "122094dd49ca32cf2a29344bf69fe31965fd9ac6384ecd0a0fd2b753abff85e28b36"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_YN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

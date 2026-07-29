@@ -13,14 +13,27 @@ tens of thousands of item links.
 Subcommands:
     build_features_items.py collections                 # write the 2 collection.json + README + llms (repo)
     build_features_items.py items 2024 [--limit N]      # generate per-tile items + items.parquet (S3); run on rails
+
+Portolan 0.1: everything this script emits is spec-conformant — catalogs/collections
+declare the v0.1.0 schema URI, structural links are relative with no `self`, each
+carries AGENTS.md + rel:agents/describedby, Source Cooperative is the sole `host`
+(last) so collections are "mirrors" (rel:via text/html + `updated`), and assets carry
+the file extension. Per-item COG assets get `file:size` (via HTTP HEAD). **`file:checksum`
+is deferred**: hashing ~90k COGs (~tens of TB) post-hoc is impractical, so per
+PORTO-CORE-030 it should be stamped by the COG generation/upload pipeline, not here.
+After re-running `collections`, re-run scripts/migrate/backfill_file_meta.py --local-only
+to restore file:size/file:checksum on the in-repo assets (README/llms/thumbnail).
 """
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import os
 import subprocess
 import sys
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 PUB = "https://data.source.coop/ftw/global-data"
@@ -34,11 +47,54 @@ INDEX_PARQUET = f"{PUB}/features/cogs/alpha/index.parquet"
 FTW_URL = "https://fieldsofthe.world"
 FTW_BENCHMARK_DATA = "https://source.coop/kerner-lab/fields-of-the-world"
 
+PORTOLAN_EXT = "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
 PROJ_EXT = "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
 EO_EXT = "https://stac-extensions.github.io/eo/v2.0.0/schema.json"
 GRID_EXT = "https://stac-extensions.github.io/grid/v1.1.0/schema.json"
 ITEM_ASSETS_EXT = "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
 SCI_EXT = "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+FILE_EXT = "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+
+# Portolan 0.1 providers: the dataset is self-published by Taylor Geospatial and
+# served on Source Cooperative, which is the `host` (last); host != producer makes
+# each collection a "mirror" (so it keeps a rel:via text/html + `updated`).
+SOURCE_COOP_PROVIDER = {"name": "Source Cooperative", "roles": ["host"],
+                        "url": "https://source.coop/ftw/global-data"}
+FTW_PRODUCERS = [
+    {"name": "Taylor Geospatial Institute", "roles": ["producer", "licensor", "processor"],
+     "url": "https://taylorgeospatial.org/"},
+    {"name": "Microsoft AI for Good Research Lab", "roles": ["producer", "processor"],
+     "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"},
+    {"name": "European Space Agency / Copernicus", "roles": ["producer"],
+     "url": "https://sentinels.copernicus.eu/", "description": "Sentinel-2 source imagery"},
+]
+
+
+def _now():
+    return datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _doc_links():
+    """The rel:agents / rel:describedby markdown links every catalog+collection needs."""
+    return [
+        {"rel": "agents", "href": "./AGENTS.md", "type": "text/markdown",
+         "title": "Guidance for AI agents"},
+        {"rel": "describedby", "href": "./README.md", "type": "text/markdown",
+         "title": "Human-readable documentation"},
+    ]
+
+
+def _agents_md(title):
+    return (
+        f"# AGENTS.md — {title}\n\n"
+        "Guidance for AI agents and automated clients working with this Portolan/STAC object.\n\n"
+        "- Part of the **Fields of the World — Global** catalog "
+        "(`https://data.source.coop/ftw/global-data/`).\n"
+        "- Data files (COG, Zarr) are hosted on Source Cooperative and referenced in place; "
+        "this repo carries metadata only.\n"
+        "- Prefer `llms.txt` for query snippets and `README.md` for human documentation.\n"
+        "- Resolve assets and structural links relative to this object; there are no `self` links.\n"
+    )
 
 # Source Sentinel-2 imagery. derived_from -> the official ESA Copernicus Data Space
 # Ecosystem STAC (Sentinel-2 L2A); via -> the AWS Open Data / Earth Search L2A COG
@@ -111,21 +167,15 @@ def build_collection(year):
     return {
         "type": "Collection",
         "stac_version": "1.1.0",
-        "stac_extensions": [PROJ_EXT, EO_EXT, ITEM_ASSETS_EXT, SCI_EXT],
+        "stac_extensions": [PORTOLAN_EXT, PROJ_EXT, EO_EXT, ITEM_ASSETS_EXT, SCI_EXT, FILE_EXT],
         "id": collection_id(year),
         "title": cog_title(year),
         "description": _DESC,
         "license": "CC-BY-4.0",
+        "updated": _now(),
         "keywords": ["Sentinel-2", "median composite", "agriculture", "field boundaries",
                      "Fields of the World", "FTW", "model input", "features", "10m", str(year)],
-        "providers": [
-            {"name": "Taylor Geospatial Institute", "roles": ["producer", "licensor"],
-             "url": "https://taylorgeospatial.org/"},
-            {"name": "Microsoft AI for Good Research Lab", "roles": ["producer", "processor"],
-             "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"},
-            {"name": "European Space Agency / Copernicus", "roles": ["producer"],
-             "url": "https://sentinels.copernicus.eu/", "description": "Sentinel-2 source imagery"},
-        ],
+        "providers": [*FTW_PRODUCERS, dict(SOURCE_COOP_PROVIDER)],
         "extent": {
             "spatial": {"bbox": [[-180.0, -57.830146, 180.0, 83.748345]]},
             "temporal": {"interval": [[f"{year}-01-01T00:00:00Z", f"{year}-12-31T23:59:59Z"]]},
@@ -149,7 +199,7 @@ def build_collection(year):
                                  "title": "STAC-GeoParquet item index (per-tile items)",
                                  "description": "STAC-GeoParquet listing all per-tile items for this "
                                                 "year; the scalable item index in lieu of item links.",
-                                 "roles": ["metadata"]},
+                                 "roles": ["collection-mirror"]},
             "documentation": {"href": "./llms.txt", "type": "text/markdown",
                               "title": "Agent/LLM usage guide", "roles": ["documentation"]},
             "README": {"href": "./README.md", "type": "text/markdown",
@@ -160,16 +210,16 @@ def build_collection(year):
              "title": "Fields of the World — Global"},
             {"rel": "parent", "href": "../catalog.json", "type": "application/json",
              "title": FEAT_CATALOG_TITLE},
-            {"rel": "self", "href": f"{base}/collection.json", "type": "application/json",
-             "title": cog_title(year)},
             {"rel": "license", "href": "https://creativecommons.org/licenses/by/4.0/",
              "type": "text/html", "title": "CC-BY-4.0"},
             {"rel": "cite-as", "href": "https://aka.ms/ftw-global-paper", "title": "FTW Global paper"},
+            # Mirror provenance: a text/html rel:via to the original source (PTL-PRO-001).
             {"rel": "via", "href": FTW_BENCHMARK_DATA, "type": "text/html",
              "title": "Fields of the World benchmark (training data) on Source Cooperative"},
             {"rel": "derived_from", "href": S2_L2A_OFFICIAL, "type": "application/json",
              "title": "Sentinel-2 L2A — Copernicus Data Space Ecosystem (ESA, official)"},
-            {"rel": "via", "href": S2_L2A_COGS, "type": "application/json",
+            # non-html source ref uses rel:related (a rel:via must be text/html)
+            {"rel": "related", "href": S2_L2A_COGS, "type": "application/json",
              "title": "Sentinel-2 L2A COGs (AWS Open Data / Earth Search — source scenes used)"},
             {"rel": "related", "href": ZARR_COLL_HREF, "type": "application/json",
              "title": "Same composites as a global Zarr mosaic"},
@@ -177,6 +227,7 @@ def build_collection(year):
              "type": "application/json", "title": "Prediction probabilities (Zarr) made from these features"},
             {"rel": "llms", "href": "./llms.txt", "type": "text/markdown",
              "title": "Agent/LLM usage guide"},
+            *_doc_links(),
         ],
     }
 
@@ -187,9 +238,10 @@ def build_zarr_collection():
     return {
         "type": "Collection",
         "stac_version": "1.1.0",
-        "stac_extensions": [DATACUBE_EXT, SCI_EXT],
+        "stac_extensions": [PORTOLAN_EXT, DATACUBE_EXT, SCI_EXT, FILE_EXT],
         "id": ZARR_ID,
         "title": ZARR_TITLE,
+        "updated": _now(),
         "description": (
             "The FTW Sentinel-2 planting/harvest median composites as a single global **Zarr "
             "mosaic** (Zarr V3, EPSG:4326, ~10 m), with a `time` dimension covering 2024 and "
@@ -205,14 +257,7 @@ def build_zarr_collection():
         "license": "CC-BY-4.0",
         "keywords": ["Sentinel-2", "median composite", "agriculture", "field boundaries",
                      "Fields of the World", "FTW", "features", "Zarr", "GeoZarr", "datacube", "10m"],
-        "providers": [
-            {"name": "Taylor Geospatial Institute", "roles": ["producer", "licensor"],
-             "url": "https://taylorgeospatial.org/"},
-            {"name": "Microsoft AI for Good Research Lab", "roles": ["producer", "processor"],
-             "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"},
-            {"name": "European Space Agency / Copernicus", "roles": ["producer"],
-             "url": "https://sentinels.copernicus.eu/", "description": "Sentinel-2 source imagery"},
-        ],
+        "providers": [*FTW_PRODUCERS, dict(SOURCE_COOP_PROVIDER)],
         "extent": {
             "spatial": {"bbox": [[-180.0, -57.830146, 180.0, 83.748345]]},
             "temporal": {"interval": [["2024-01-01T00:00:00Z", "2025-12-31T23:59:59Z"]]},
@@ -243,10 +288,12 @@ def build_zarr_collection():
              "title": "Fields of the World — Global"},
             {"rel": "parent", "href": "../catalog.json", "type": "application/json",
              "title": FEAT_CATALOG_TITLE},
-            {"rel": "self", "href": ZARR_COLL_HREF, "type": "application/json", "title": ZARR_TITLE},
             {"rel": "license", "href": "https://creativecommons.org/licenses/by/4.0/",
              "type": "text/html", "title": "CC-BY-4.0"},
             {"rel": "cite-as", "href": "https://aka.ms/ftw-global-paper", "title": "FTW Global paper"},
+            # Mirror provenance: a text/html rel:via to the original source (PTL-PRO-001).
+            {"rel": "via", "href": FTW_BENCHMARK_DATA, "type": "text/html",
+             "title": "Fields of the World benchmark (training data) on Source Cooperative"},
             {"rel": "related", "href": f"{PUB}/features/2024/collection.json",
              "type": "application/json", "title": "Same composites as per-tile COGs (2024)"},
             {"rel": "related", "href": f"{PUB}/features/2025/collection.json",
@@ -257,6 +304,7 @@ def build_zarr_collection():
              "title": "Sentinel-2 L2A — Copernicus Data Space Ecosystem (ESA, official)"},
             {"rel": "llms", "href": "./llms.txt", "type": "text/markdown",
              "title": "Agent/LLM usage guide"},
+            *_doc_links(),
         ],
     }
 
@@ -267,6 +315,7 @@ def build_features_catalog():
     return {
         "type": "Catalog",
         "stac_version": "1.1.0",
+        "stac_extensions": [PORTOLAN_EXT],
         "id": FEAT_CATALOG_ID,
         "title": FEAT_CATALOG_TITLE,
         "description": (
@@ -275,6 +324,7 @@ def build_features_catalog():
             "The same composites in two formats: per-tile **COGs** (one collection per year, 2024 "
             "& 2025) and a single global **Zarr mosaic**. See each collection for assets and "
             "access snippets."),
+        "updated": _now(),
         # NOTE: STAC Catalogs must NOT carry `assets` — stac-js doesn't wrap catalog
         # assets as Asset objects, so a catalog thumbnail asset crashes the browser
         # (`asset.hasRole is not a function`). The card thumbnail comes from the
@@ -284,8 +334,6 @@ def build_features_catalog():
              "title": "Fields of the World — Global"},
             {"rel": "parent", "href": "../catalog.json", "type": "application/json",
              "title": "Fields of the World — Global"},
-            {"rel": "self", "href": f"{PUB}/features/catalog.json", "type": "application/json",
-             "title": FEAT_CATALOG_TITLE},
             {"rel": "preview", "href": THUMB_HREF, "type": "image/png",
              "title": "Sentinel-2 composite preview"},
             {"rel": "child", "href": "./2024/collection.json", "type": "application/json",
@@ -294,14 +342,16 @@ def build_features_catalog():
              "title": cog_title(2025)},
             {"rel": "child", "href": "./zarr/collection.json", "type": "application/json",
              "title": ZARR_TITLE},
+            *_doc_links(),
         ],
     }
 
 
-def build_item(tile_id, year, geometry, bbox, proj_code, proj_shape, proj_transform):
+def build_item(tile_id, year, geometry, bbox, proj_code, proj_shape, proj_transform, sizes=None):
     iid = f"{tile_id.lower()}_{year}"
-    def asset(ds, season):
-        return {
+    sizes = sizes or {}
+    def asset(ds, season, key):
+        a = {
             "href": f"{COG_BASE}/{ds}/{tile_id}/{year}0101.tif",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized",
             "title": f"{season}-season Sentinel-2 median composite",
@@ -309,9 +359,16 @@ def build_item(tile_id, year, geometry, bbox, proj_code, proj_shape, proj_transf
                             f"{season.lower()} day-of-year window; 10 m, bands B02/B03/B04/B08 + N_VALID_PIXELS."),
             "roles": ["data"], "gsd": 10, "data_type": "float32", "bands": SPECTRAL_BANDS,
         }
+        # Portolan 0.1 requires file:size + file:checksum. file:size is cheap (HTTP HEAD).
+        # file:checksum (multihash of the full COG) is DEFERRED — hashing ~90k COGs (~tens of
+        # TB) post-hoc is impractical; per PORTO-CORE-030 it should be stamped by the COG
+        # generation/upload pipeline. See module docstring.
+        if sizes.get(key) is not None:
+            a["file:size"] = sizes[key]
+        return a
     return {
         "type": "Feature", "stac_version": "1.1.0",
-        "stac_extensions": [PROJ_EXT, EO_EXT, GRID_EXT],
+        "stac_extensions": [PROJ_EXT, EO_EXT, GRID_EXT, FILE_EXT],
         "id": iid, "geometry": geometry, "bbox": bbox,
         "properties": {
             "title": f"Sentinel-2 planting & harvest composites — tile {tile_id} ({year})",
@@ -332,22 +389,20 @@ def build_item(tile_id, year, geometry, bbox, proj_code, proj_shape, proj_transf
             "proj:code": proj_code, "proj:shape": proj_shape, "proj:transform": proj_transform,
         },
         "collection": collection_id(year),
-        "assets": {"planting": asset("s2med_planting", "Planting"),
-                   "harvest": asset("s2med_harvest", "Harvest")},
+        "assets": {"planting": asset("s2med_planting", "Planting", "planting"),
+                   "harvest": asset("s2med_harvest", "Harvest", "harvest")},
+        # Structural links MUST be relative and there is no self link (item at
+        # features/<year>/items/<iid>.json -> root is three levels up).
         "links": [
-            {"rel": "root", "href": f"{PUB}/catalog.json", "type": "application/json",
+            {"rel": "root", "href": "../../../catalog.json", "type": "application/json",
              "title": "Fields of the World — Global"},
-            {"rel": "collection", "href": f"{PUB}/features/{year}/collection.json",
-             "type": "application/json",
+            {"rel": "collection", "href": "../collection.json", "type": "application/json",
              "title": f"FTW Global — Sentinel-2 Planting & Harvest Composites ({year})"},
-            {"rel": "parent", "href": f"{PUB}/features/{year}/collection.json",
-             "type": "application/json",
+            {"rel": "parent", "href": "../collection.json", "type": "application/json",
              "title": f"FTW Global — Sentinel-2 Planting & Harvest Composites ({year})"},
-            {"rel": "self", "href": f"{PUB}/features/{year}/items/{iid}.json",
-             "type": "application/geo+json"},
             {"rel": "derived_from", "href": S2_L2A_OFFICIAL, "type": "application/json",
              "title": "Sentinel-2 L2A — Copernicus Data Space Ecosystem (ESA, official)"},
-            {"rel": "via", "href": S2_L2A_COGS, "type": "application/json",
+            {"rel": "related", "href": S2_L2A_COGS, "type": "application/json",
              "title": "Sentinel-2 L2A COGs (AWS Open Data / Earth Search — source scenes used)"},
         ],
     }
@@ -435,23 +490,37 @@ def write_collections(out_root):
     feat.mkdir(parents=True, exist_ok=True)
     (feat / "catalog.json").write_text(json.dumps(build_features_catalog(), indent=2) + "\n")
     (feat / "README.md").write_text(_features_catalog_readme())
-    print(f"wrote {feat}/catalog.json (+ README) — sub-catalog grouping the COG + Zarr collections")
+    (feat / "AGENTS.md").write_text(_agents_md(FEAT_CATALOG_TITLE))
+    print(f"wrote {feat}/catalog.json (+ README, AGENTS) — sub-catalog grouping the COG + Zarr collections")
     for year in (2024, 2025):
         d = feat / str(year)
         d.mkdir(parents=True, exist_ok=True)
         (d / "collection.json").write_text(json.dumps(build_collection(year), indent=2) + "\n")
         (d / "README.md").write_text(_readme(year))
         (d / "llms.txt").write_text(_llms(year))
-        print(f"wrote {d}/collection.json (+ README, llms)")
+        (d / "AGENTS.md").write_text(_agents_md(cog_title(year)))
+        print(f"wrote {d}/collection.json (+ README, llms, AGENTS)")
     z = feat / "zarr"
     z.mkdir(parents=True, exist_ok=True)
     (z / "collection.json").write_text(json.dumps(build_zarr_collection(), indent=2) + "\n")
     (z / "README.md").write_text(_zarr_readme())
     (z / "llms.txt").write_text(_zarr_llms())
-    print(f"wrote {z}/collection.json (+ README, llms) — Zarr mosaic collection")
+    (z / "AGENTS.md").write_text(_agents_md(ZARR_TITLE))
+    print(f"wrote {z}/collection.json (+ README, llms, AGENTS) — Zarr mosaic collection")
 
 
 # ── S3-only item + stac-geoparquet generation (run on rails) ──────────────────
+
+def _head_size(url):
+    """Byte size of a remote asset via HTTP HEAD (Content-Length), or None."""
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "ftw-features"})
+        with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310 - trusted host
+            cl = r.headers.get("Content-Length")
+            return int(cl) if cl else None
+    except Exception:  # noqa: BLE001
+        return None
+
 
 def generate_items(year, workdir, limit=None, upload=True):
     """Per (tile, year): read COG header for proj, build item JSON, write to S3;
@@ -479,11 +548,21 @@ def generate_items(year, workdir, limit=None, upload=True):
             print(f"SKIP {tile_id}: cannot read COG ({e})"); continue
         item = build_item(tile_id, year, _json.loads(g), [xmin, ymin, xmax, ymax],
                           proj_code, shape, transform)
-        (d / f"{item['id']}.json").write_text(_json.dumps(item))
         records.append(item)
+    # file:size via HTTP HEAD (cheap, parallel). file:checksum is deferred (see build_item).
+    hrefs = sorted({a["href"] for it in records for a in it["assets"].values()})
+    with ThreadPoolExecutor(max_workers=16) as pool:
+        sizes = dict(zip(hrefs, pool.map(_head_size, hrefs)))
+    n_size = 0
+    for it in records:
+        for a in it["assets"].values():
+            if sizes.get(a["href"]) is not None:
+                a["file:size"] = sizes[a["href"]]; n_size += 1
+        (d / f"{it['id']}.json").write_text(_json.dumps(it))
     # STAC-GeoParquet (one row per item) via stac-geoparquet if available, else a simple parquet
     _write_stac_geoparquet(records, Path(workdir) / "features" / str(year) / "items.parquet")
-    print(f"{year}: wrote {len(records)} items + items.parquet to {workdir}")
+    print(f"{year}: wrote {len(records)} items ({n_size} asset file:size set; "
+          f"file:checksum deferred) + items.parquet to {workdir}")
     if upload:
         base = f"s3://{S3_BUCKET}/{S3_PREFIX}/features/{year}"
         subprocess.run(["aws", "s3", "cp", str(d), f"{base}/items/", "--recursive",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Timor-Leste",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Timor-Leste field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 29423391,
+      "file:checksum": "122072898b29caed859aab6e33fa9c7c5ecd32838358ad001f93d0548e4be0007e55"
     },
     "pmtiles": {
       "href": "./Timor-Leste.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Timor-Leste field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 29346832,
+      "file:checksum": "1220acf37672b6bb85310f3a99fcc0cb404f890a89b1d0e525b17dcd39b9bf276375"
     },
     "style-2025": {
       "href": "./Timor-Leste.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "1220090fc73e75e8d2d67370d47080b5ebaa0b78636d959050dfc9c3eea3d4d7e950"
     },
     "style-2024": {
       "href": "./Timor-Leste.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "122080c9e283e62e143741eb09f27316f537e7ae06b56cd45b7dbb804dcecf4ffb20"
     },
     "style-confidence-2025": {
       "href": "./Timor-Leste.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "12202c0fe58446966dd2904a884ecde803672de9c87e23106db9493ae95584327a45"
     },
     "style-confidence-2024": {
       "href": "./Timor-Leste.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "12208b9204a70dd679567e66d6f79d30ac0b08e28efba49c5e5978f037bcc81b9b3e"
     },
     "README": {
       "href": "./Timor-Leste.README.md",
@@ -165,7 +178,9 @@
       "title": "Timor-Leste \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4597,
+      "file:checksum": "122041715e742cff560ef7039f38d1caa9883ede92b122fccd80929197b2e56eb1c8"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TL/Timor-Leste.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

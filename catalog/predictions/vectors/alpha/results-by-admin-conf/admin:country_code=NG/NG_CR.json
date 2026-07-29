@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_CR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Cross River field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 78191312,
+      "file:checksum": "12203eee62b27fd2b1fb53ce60b193e117fb69544f9da2b04bf6581a91e40710d2d7"
     },
     "pmtiles": {
       "href": "./NG_CR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Cross River field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 52690604,
+      "file:checksum": "12201c4e6821087b9b958c2a83e574ee0c932ffac70b7d08331b94955c22dbea9ca2"
     },
     "style-2025": {
       "href": "./NG_CR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122042b847a2468a4e2b279fe1a7a4c294125c757a5326240e09b438f59086174c8b"
     },
     "style-2024": {
       "href": "./NG_CR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220be85c36637aa38ba50f4ca7cdcba42397c3c07f82dd80702cd24384f497db8e2"
     },
     "style-confidence-2025": {
       "href": "./NG_CR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fc83e5d9b97e24273ed715bc710d9156a0e290898aa751c22aa6ac4780c86aba"
     },
     "style-confidence-2024": {
       "href": "./NG_CR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203ab2fff6f3524e1e63e1b0778d649c97a4ef070d7ee9f73c0694a1aea75ca9ea"
     },
     "README": {
       "href": "./NG_CR.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Cross River \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "1220b1e62e93d0d95a48f2b4580741c37b3c69cdb8d4a1ae6ad2ec9ce62620d95c86"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_CR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

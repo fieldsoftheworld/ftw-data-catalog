@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_ES",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Esp\u00edrito Santo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 67603748,
+      "file:checksum": "1220826928e044a303754f7fbd8c885811b13a4e17b69014060d231edd2e6918be66"
     },
     "pmtiles": {
       "href": "./BR_ES.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Esp\u00edrito Santo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 51161437,
+      "file:checksum": "1220376836c3e1268ebb18fc6cedb91cb2bd01e1e242fa8664f0d329a7508839b239"
     },
     "style-2025": {
       "href": "./BR_ES.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c9329005777885793460fb68838de51ddc183ac0eeeef5848e2244d95cbac7f8"
     },
     "style-2024": {
       "href": "./BR_ES.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200bc94ae35d382b5c8ecc902fc6657e93c1729f420c8c039e61adbfd3892e9b95"
     },
     "style-confidence-2025": {
       "href": "./BR_ES.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202b1ce55a31a17beeb05fc479726921cc0fb2f9e34515cdd572d591ae0c0605d7"
     },
     "style-confidence-2024": {
       "href": "./BR_ES.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206e3e79e03f5a979015934a7138de2c35f8705461667354e9296092c7d31eefd6"
     },
     "README": {
       "href": "./BR_ES.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Esp\u00edrito Santo \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220f1920ae759af63c293740829385feca87d203bd18c458eca1ada51b4d718f3fe"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_ES.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

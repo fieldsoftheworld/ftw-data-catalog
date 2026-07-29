@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Canada",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Canada field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3751271848,
+      "file:checksum": "12203eade3d67c65ee4043d1480b4238e06f5ec5f70d950cf28c7629732ff793ef76"
     },
     "pmtiles": {
       "href": "./Canada.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Canada field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2920684296,
+      "file:checksum": "12207d70ed86d2c48a0402c295c049b4f26c9ce0537ad9b657c8473f0f16142dfc6b"
     },
     "style-2025": {
       "href": "./Canada.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12200d0f8b7f44a94639e83e8dce9c465c998447ba126105900d60c2f3bad311c5d5"
     },
     "style-2024": {
       "href": "./Canada.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122034ca09e2a7d088c187c42802665d620dc53befed197d2b8f3f807a7d057cfc8b"
     },
     "style-confidence-2025": {
       "href": "./Canada.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220161692eabbe1f862c928819e225f68999e4275682fb483b9920321ccddc341db"
     },
     "style-confidence-2024": {
       "href": "./Canada.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220132a85a0d7eb680a2a319e27c81120692687a2b50933ac5e124eee2b543c5e33"
     },
     "README": {
       "href": "./Canada.README.md",
@@ -165,7 +178,9 @@
       "title": "Canada \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4585,
+      "file:checksum": "12204dae0666fe97d7a0aac64cca1df6a07f5a317220b414b413686a70bc476a505c"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CA/Canada.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

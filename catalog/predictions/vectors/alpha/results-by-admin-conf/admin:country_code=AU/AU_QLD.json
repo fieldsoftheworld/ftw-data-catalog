@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_QLD",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 Queensland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 4908004886,
+      "file:checksum": "1220add69a5e55d24f0978affbb5ce5aaee0289ffbe843c55e1c611fb470df326ad9"
     },
     "pmtiles": {
       "href": "./AU_QLD.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 Queensland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2704358514,
+      "file:checksum": "12207878e954a2d6b01a881abc477ccca28c9710a070c7feb4c4c5ef1adc1566416c"
     },
     "style-2025": {
       "href": "./AU_QLD.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220f7b86f431741d8bd97ea359a3987248c744d2b3b328b9a83d3844d0bec58ca25"
     },
     "style-2024": {
       "href": "./AU_QLD.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122011c22fc23f6e7f294b374652a400b8cab08262eda0d9ce852334f9c0f9622ba2"
     },
     "style-confidence-2025": {
       "href": "./AU_QLD.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220a4e3459d2f677419c898175b6221bd57b767b9e0930540dd0696387b62f9475c"
     },
     "style-confidence-2024": {
       "href": "./AU_QLD.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12206d7f5c6ae889e0f33b3b00aadf785d2393008baf74670bb98013ce31e5a74e30"
     },
     "README": {
       "href": "./AU_QLD.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 Queensland \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4440,
+      "file:checksum": "1220009a3cf94d5171f6af3feef8af8e251e92899735d528feeb98df6c9ffd148437"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_QLD.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

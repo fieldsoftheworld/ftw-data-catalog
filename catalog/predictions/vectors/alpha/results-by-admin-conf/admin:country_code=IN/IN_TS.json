@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_TS",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Telang\u0101na field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2424263589,
+      "file:checksum": "1220909d10ecc06993ec331e79d2e539f9031feeeada5a60e9117a947c8ac566a233"
     },
     "pmtiles": {
       "href": "./IN_TS.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Telang\u0101na field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1212324412,
+      "file:checksum": "1220e83a216e20d7b71ccb0c92469fd4adbbfd9642f3fef54900afaadc06ad33b21f"
     },
     "style-2025": {
       "href": "./IN_TS.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122010e979c9c5a38ed617572affe9573b2f58ba36bc86f5ea116f96bf85aa5b0a58"
     },
     "style-2024": {
       "href": "./IN_TS.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201a501067f5d72b736f702f363c9bd39f901b71d9fdb0e7557001961dd0ee4019"
     },
     "style-confidence-2025": {
       "href": "./IN_TS.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220af926c41026efee879428868c4af2048fe1bfa39f29b14324fe46eb82dd91f24"
     },
     "style-confidence-2024": {
       "href": "./IN_TS.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220117e68891987cab1eb7dcab4f303449fcd0930ebbc56990a5b7c31f6fb9fe1c6"
     },
     "README": {
       "href": "./IN_TS.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Telang\u0101na \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "12208654828e9ff18b4bc8cdc0ab1715a26d233067433df8dc3319dd2fce9a09eb74"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_TS.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

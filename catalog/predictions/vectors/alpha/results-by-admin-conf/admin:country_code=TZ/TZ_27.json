@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_27",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Geita field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 300397649,
+      "file:checksum": "12200a632ade4548f52ddb17f9e12dad38b1bc0aeea79a69085998d0d0f36507c1fe"
     },
     "pmtiles": {
       "href": "./TZ_27.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Geita field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 161034117,
+      "file:checksum": "1220edde990475483bda14ac6c4182b2e1bcc7d71d7ed8a2604cd0abcb4703a5c0a5"
     },
     "style-2025": {
       "href": "./TZ_27.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c6c107833d966cfb6a28b7a8966b8c80b21df2ba0f0a6f1eea05eb815288f367"
     },
     "style-2024": {
       "href": "./TZ_27.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ca786fbcafaad6cb319d5a6ae44f71df8e1a105fc4cd66f490e34f30b98f4683"
     },
     "style-confidence-2025": {
       "href": "./TZ_27.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205cdc3887a6b406055d630d0ebdf0d5079ae1a32c30488dca082bd1da8f0cee3e"
     },
     "style-confidence-2024": {
       "href": "./TZ_27.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220376374ca980469a1f094ff5d2a5cc5dc383f5be1b4fe9f5aa924f5f82a5b6255"
     },
     "README": {
       "href": "./TZ_27.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Geita \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4451,
+      "file:checksum": "122012c72cd388d89782f79723ec49dc5a1f8465437c0f4b59906e0f4ca2f309af0f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_27.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

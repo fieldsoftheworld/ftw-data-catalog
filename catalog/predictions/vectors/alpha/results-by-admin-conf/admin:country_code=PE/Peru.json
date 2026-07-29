@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Peru",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Peru field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2495686772,
+      "file:checksum": "12203d1cff58849c9b64344f9e84081022c5b4c8c43b3b310b43d29ee1d8be7e1cad"
     },
     "pmtiles": {
       "href": "./Peru.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Peru field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1402166739,
+      "file:checksum": "122015f7c17ae185da898907aa38c851c88d09f4300245a3d2a0d2107bbbb042229a"
     },
     "style-2025": {
       "href": "./Peru.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "12206de1ae4efac3e065b5878b2939f6416457ddcb144ed5f2280f2bd6998f456909"
     },
     "style-2024": {
       "href": "./Peru.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "122038646541db90a66e815d228791c5f05430dab5b5dfb4cf90caf3e36168e3a2ab"
     },
     "style-confidence-2025": {
       "href": "./Peru.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "1220d9b5bf324479a48fcc05c246dc698464a7cd782b9467c77abccf8c096fdfd5e0"
     },
     "style-confidence-2024": {
       "href": "./Peru.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "12206b1e6b3c41d127765b6ff42cea5ae3a8635f2f1328a7d69d3e2d376f289f1ba3"
     },
     "README": {
       "href": "./Peru.README.md",
@@ -165,7 +178,9 @@
       "title": "Peru \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4579,
+      "file:checksum": "122041018dc62ff3b4d018656a2e8c3f08258cd9572300e41ffc53c55cd6b5591656"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PE/Peru.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

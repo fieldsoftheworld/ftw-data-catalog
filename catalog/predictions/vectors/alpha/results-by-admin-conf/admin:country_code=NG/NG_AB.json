@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_AB",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Abia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 38271338,
+      "file:checksum": "1220db1be612f54b64deb2fdbfa1f73973bcf14c22ac5379cf3ec84da957aa762dba"
     },
     "pmtiles": {
       "href": "./NG_AB.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Abia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 28768496,
+      "file:checksum": "12204b97c24eb5ca605b8440d62062e5990ab652ec39a9db199341f392509b204667"
     },
     "style-2025": {
       "href": "./NG_AB.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205f89e74cd6b7ef7de657ba6738e0660f36955caf5b277a31fcf97aec1c55511e"
     },
     "style-2024": {
       "href": "./NG_AB.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207714968c37ff1287f48be3e222c5947ba436455015b453b04f34b2457f52cd4a"
     },
     "style-confidence-2025": {
       "href": "./NG_AB.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ff6e5e7f26bbc88f40f47512ff40f96087d3d71de3d886f1c4c0af2f5656aa1b"
     },
     "style-confidence-2024": {
       "href": "./NG_AB.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220abafa15794720ca01e5cdcbe788afddffd32dcfbfb3bc8295f260789566843da"
     },
     "README": {
       "href": "./NG_AB.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Abia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4427,
+      "file:checksum": "1220a30a39cb551c0e0a25a9ea3988fc18b48c24ace171571a366e3605a1e4827d60"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_AB.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

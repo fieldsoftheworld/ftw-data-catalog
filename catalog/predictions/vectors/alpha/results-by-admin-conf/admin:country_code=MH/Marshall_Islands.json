@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Marshall_Islands",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Marshall_Islands field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 8114,
+      "file:checksum": "122017de7d6268662f2457b03cb3ddf8430e02fb5ed702d3b11e1de973dd53ca7577"
     },
     "pmtiles": {
       "href": "./Marshall_Islands.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Marshall_Islands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3900,
+      "file:checksum": "122071233975fc5f346d3d9b2dec2734707f2a051bc3948be7327f3e2087ed710de4"
     },
     "style-2025": {
       "href": "./Marshall_Islands.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 933,
+      "file:checksum": "1220c121e72c3c73865992178b2b565ce2a32d68115692d22147cf1d841deb8d6398"
     },
     "style-2024": {
       "href": "./Marshall_Islands.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 933,
+      "file:checksum": "12205befdff8382c629b7442e837e0c17ef256328987916f9dcae0ad8ccdaadd8408"
     },
     "style-confidence-2025": {
       "href": "./Marshall_Islands.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2677,
+      "file:checksum": "1220e257aafd63c1b5b38b273c7fdde93277e86f2a967d22f033ab9e7968de499fc8"
     },
     "style-confidence-2024": {
       "href": "./Marshall_Islands.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2677,
+      "file:checksum": "1220923dbe589388d9d47a1078328ccf110aa9de9f1a03e125aeccc4cbe0cc3c9cfc"
     },
     "README": {
       "href": "./Marshall_Islands.README.md",
@@ -165,7 +178,9 @@
       "title": "Marshall_Islands \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4606,
+      "file:checksum": "12203605be5a095b140188f17a8bde38c2434113ac486109d0d37337b638ec9b8b22"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MH/Marshall_Islands.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

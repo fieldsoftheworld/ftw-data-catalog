@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_WI",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Wisconsin field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 291058927,
+      "file:checksum": "1220f3585f8d2e3ed129f34496b3824c220554ae3a85af68635c5f83a25284231831"
     },
     "pmtiles": {
       "href": "./US_WI.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Wisconsin field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 228893386,
+      "file:checksum": "1220d13cc72a5684a098e877756386ece0a470aa02bd8fcef0e04edc5fac41ad9a0c"
     },
     "style-2025": {
       "href": "./US_WI.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fdd0394407c4fd070ecbae3c4ddbf8b18955516bf39bea4c3bd59da22b076fd7"
     },
     "style-2024": {
       "href": "./US_WI.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e0f6ffd203635be8b940b3d4112f22617979562f0b90c185f86b8fca77e97219"
     },
     "style-confidence-2025": {
       "href": "./US_WI.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205e75bd7df8da4a2701472c78ee92edc220fe5557ce8c5db4009b9895b0061860"
     },
     "style-confidence-2024": {
       "href": "./US_WI.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206c5bba7d755c00536c980d656fd6d8c7586396b89a5302a038a0ee44c073e833"
     },
     "README": {
       "href": "./US_WI.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Wisconsin \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "12203b85fa7fe813d3b9c2ab8a0b6c2caf72e60d0049e3bc6c8f5e434424e98f6ddb"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_WI.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Latvia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Latvia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 175170448,
+      "file:checksum": "122025d7150ced2e3142b10e0ba0f2ea956c85b056bfb696ff781cdf44fa10c7c035"
     },
     "pmtiles": {
       "href": "./Latvia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Latvia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 132742300,
+      "file:checksum": "1220f52e7986ca4f3c0dc4183405a1945f91f30fabb1cacb8b93f31520b0a5d1ef52"
     },
     "style-2025": {
       "href": "./Latvia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122057757313049953eb45315946d1fed43e25bff9a201ef40171ea21ae4b6be8399"
     },
     "style-2024": {
       "href": "./Latvia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220318eb3e4c0566a9a5730ddab60b10771d99cbbf33376c579cc329f93f1521a4f"
     },
     "style-confidence-2025": {
       "href": "./Latvia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220bead14c36658ca54cc2bdf3d2e6805f98d5c4198868346b0b8dc514e2b92f072"
     },
     "style-confidence-2024": {
       "href": "./Latvia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220bdaf0af6d7160448600342d355ebc029ac45c9b6eacb6a6eb6e3b12651799713"
     },
     "README": {
       "href": "./Latvia.README.md",
@@ -165,7 +178,9 @@
       "title": "Latvia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4583,
+      "file:checksum": "1220b793d3f174bbb9e1cc843c36b9e6943e14bb63fb9472971c6ec5769b41ca90ff"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LV/Latvia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

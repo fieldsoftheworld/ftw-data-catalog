@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_KE",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Kebbi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 575188471,
+      "file:checksum": "1220ad9435820cf252f6f719485210e0a1f72238275b9ea058a987c01304ac0695d9"
     },
     "pmtiles": {
       "href": "./NG_KE.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Kebbi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 302985622,
+      "file:checksum": "12206731e548174e50d8d1232203796a17ce19116bfcb1262433631d140a70f57493"
     },
     "style-2025": {
       "href": "./NG_KE.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12202f54c0828d74a3b7c29d4cc78d21bb954b0efad5d39ae097c7805e23f6e84c7a"
     },
     "style-2024": {
       "href": "./NG_KE.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207222f1e3802a723e7bb00e1f96bb0a9cf39de904fa6e02da18adf42de7888964"
     },
     "style-confidence-2025": {
       "href": "./NG_KE.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ca4a1d7a871f174bfce5367ffcd4c147e64e353b73e45ddad419ea9f0ba89285"
     },
     "style-confidence-2024": {
       "href": "./NG_KE.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220bb243cb077999d18a0316be1b2e47fa7705ac0ae8ec6ec24064445bddd22ee99"
     },
     "README": {
       "href": "./NG_KE.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Kebbi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12208c951874c5343eed8776b49efee00428897326593440a3ad275e6ddb8df25dd0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_KE.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

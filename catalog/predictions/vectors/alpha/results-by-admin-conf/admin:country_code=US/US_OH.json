@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_OH",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Ohio field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 233694543,
+      "file:checksum": "1220564cb290e86f6c37896e5b2050269b939708b7ad30da30c71a2cb91c2dc8c503"
     },
     "pmtiles": {
       "href": "./US_OH.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Ohio field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 178241871,
+      "file:checksum": "12207b3468a51f8c9bd41f13f59c2781d1fa379fd1c4d5af61b71b3a9c7c3f24bef4"
     },
     "style-2025": {
       "href": "./US_OH.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220543268a4523a3ee5e4443aa0572c359f7c678499e376a416c7cf5d46954fa068"
     },
     "style-2024": {
       "href": "./US_OH.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220122af4415923b145fb5e2c31e4991e5e594edcd1676092536d92d9ef4c88e45e"
     },
     "style-confidence-2025": {
       "href": "./US_OH.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f1608f53a6aeeeb0879b801bf6cfd96de67763b856d63d890adbe26cafac427d"
     },
     "style-confidence-2024": {
       "href": "./US_OH.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205c0bcdfebffa6882b73a65e05eb5ef12a614d3581b396e77fcf8ab7dd5e7a721"
     },
     "README": {
       "href": "./US_OH.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Ohio \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4433,
+      "file:checksum": "1220265912d801d2ea4fef6ad1a1d241147247b3a146750ac8dfdcc4455f859f13b4"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_OH.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

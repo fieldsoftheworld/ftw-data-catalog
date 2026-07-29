@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_29",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Njombe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 206849203,
+      "file:checksum": "1220e0d39fc5619fb17e1372ee1e88757ac8d4fa981e309c256cfc95c594e49aefe0"
     },
     "pmtiles": {
       "href": "./TZ_29.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Njombe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 123277184,
+      "file:checksum": "12207bda62bc1453782541cc69888dd125cacaccea6a82156c2dd1fda27688c9fc8d"
     },
     "style-2025": {
       "href": "./TZ_29.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207294300bc1f8621510ef147229e9e33b0890e89562ce6247d6705352d3de2cc5"
     },
     "style-2024": {
       "href": "./TZ_29.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e56b0b4833eda08a872336233fdd96d1198f3834b0fb29191e1fbbb7e38bed64"
     },
     "style-confidence-2025": {
       "href": "./TZ_29.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122085ba7d93f446ad9ab712447d6018678185562c29adb2655d5743be6c55970e72"
     },
     "style-confidence-2024": {
       "href": "./TZ_29.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ef8dd3b20cbf9a7ba98d51e6b3e81969cfdc9c079c2d504b1820acde4ff54638"
     },
     "README": {
       "href": "./TZ_29.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Njombe \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "122036f295a57769f82635467151e36e76bc8458ee42bd09c109986e08dd1261d23d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_29.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

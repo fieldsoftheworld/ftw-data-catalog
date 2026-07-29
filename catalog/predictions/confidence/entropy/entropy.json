@@ -3,7 +3,8 @@
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "entropy",
   "geometry": {
@@ -100,11 +101,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/entropy/entropy.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "llms",
       "href": "./llms.txt",
       "type": "text/markdown",
@@ -167,7 +163,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 2389859497,
+      "file:checksum": "1220e77779b58de02075d3ee7a4693e1654dcf8dd42164d0d483a87f626e1f6b8914"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -175,7 +173,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 3014,
+      "file:checksum": "1220e880ddbf7fd52a28d74edeefdafc7ddd15e77efffba7224cbd7427940d72bedd"
     }
   }
 }

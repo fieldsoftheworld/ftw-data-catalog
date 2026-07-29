@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Austria",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Austria field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 298289485,
+      "file:checksum": "1220fbbfeb3661fec5bbd65d4842fea60274578e231d148418d9a6d7131d9dbd71ef"
     },
     "pmtiles": {
       "href": "./Austria.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Austria field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 183380144,
+      "file:checksum": "12201e287e5062720cd6e962c13747af0908d0a4ff5753bec76f6684cb198e7f7a5d"
     },
     "style-2025": {
       "href": "./Austria.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12202cf969433bf20121402dfc7e134a1df0152edaeffafe72cae6df8585893b5bf7"
     },
     "style-2024": {
       "href": "./Austria.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12205a1b4ba57ade300418f9e0ecfb34771cfeb15af0deb2b67aa6d64190793dd5bc"
     },
     "style-confidence-2025": {
       "href": "./Austria.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220f661e873bca73f813a378c719a4c86fbd9f9f963671a7f87cc2fadddb26f6745"
     },
     "style-confidence-2024": {
       "href": "./Austria.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12209147b1dccb50f9d6241f9ec54b453fc8c7fbeeffc5cb3a2e65a56dcb9e0b99ef"
     },
     "README": {
       "href": "./Austria.README.md",
@@ -165,7 +178,9 @@
       "title": "Austria \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4586,
+      "file:checksum": "1220c908819176cc0fdef186576a6a0e867d9ba24c703a2b0f1892af0964206448c0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AT/Austria.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

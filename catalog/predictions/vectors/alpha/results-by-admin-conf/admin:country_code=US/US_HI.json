@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_HI",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Hawaii field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 21983407,
+      "file:checksum": "12206d2ea51ba295222b1075f55e11b08e43fd4f290dc4fd101306df16f0d94b8ac4"
     },
     "pmtiles": {
       "href": "./US_HI.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Hawaii field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 19275624,
+      "file:checksum": "122064cd801e58b1b4684f4e3e8851feb1db69c9508e9948adb1c1af5043ced8835e"
     },
     "style-2025": {
       "href": "./US_HI.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ae2713a727acd3190bba6c1ceab526db30d7597a41cf3dc93d06e6bcfb4cf161"
     },
     "style-2024": {
       "href": "./US_HI.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220743f9e1e7d462c1ef262f00aa91083d717ff4dc54c01ff24b7665d9c83f2e60f"
     },
     "style-confidence-2025": {
       "href": "./US_HI.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b68988cd6355fd697812ae3a0d5b5cc38328f95aa815c666ec09a89da8b05eb9"
     },
     "style-confidence-2024": {
       "href": "./US_HI.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205b81e6f3da8198dd7ba4cc170c8fa6f5921603ffcbbdeee4431cf5d6551713a8"
     },
     "README": {
       "href": "./US_HI.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Hawaii \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "12202fe147c4b84c4e5a4f17f60a2a414e40b651a23a560878c732fdf227ee48f3f5"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_HI.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

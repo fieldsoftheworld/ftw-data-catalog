@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_TAS",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 Tasmania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 21214870,
+      "file:checksum": "12206e3ffb261b5397a88c25490604da34b0450144925c379604aa0c1d59dc5c7437"
     },
     "pmtiles": {
       "href": "./AU_TAS.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 Tasmania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 18397436,
+      "file:checksum": "12207f8180a4f74ad5bffaa7b4589d5aac2b60c661326def88dc6f637950ed5eac4a"
     },
     "style-2025": {
       "href": "./AU_TAS.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220090baa67afa1a8ee33b475d500ef3c74e8ddddd6da542915da13c6daf721a166"
     },
     "style-2024": {
       "href": "./AU_TAS.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220659916cf7f099b8e5ca35b7ca2e6507580b791b7de0279067bc6a2fdcb964b11"
     },
     "style-confidence-2025": {
       "href": "./AU_TAS.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12200aaa0e9c4a1ce72ccb0824c7742245ad85c7ec5cd298098ad867ca2bec2d909a"
     },
     "style-confidence-2024": {
       "href": "./AU_TAS.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220725edee1ddcc7d71a9da1446143e0b8a396b16d0bb2fb066cbc2228a6d78675b"
     },
     "README": {
       "href": "./AU_TAS.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 Tasmania \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "122079d09d65b384c5fcf1b80690586507498264b138c188ef95c43060de7ed29a79"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_TAS.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

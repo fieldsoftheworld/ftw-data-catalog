@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_MG",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Minas Gerais field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1109675899,
+      "file:checksum": "122015b7fceaeda73bc8d07157de446865166b50190c9e2398eb754b758ec04f8976"
     },
     "pmtiles": {
       "href": "./BR_MG.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Minas Gerais field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 621255015,
+      "file:checksum": "122065e4da9f0629ea488240144dc007b3d2b735e532beea4f72c1c4aa3678472d9d"
     },
     "style-2025": {
       "href": "./BR_MG.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b5078cda75e1e56a53a398a673ce98dc282eeafbcdf6c23c01d25533f9476667"
     },
     "style-2024": {
       "href": "./BR_MG.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122083d633a83ecc4d61d0614f66ccd0a015cb17e0dbcfbabe2e44091a67fb4e0a32"
     },
     "style-confidence-2025": {
       "href": "./BR_MG.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220797edf1c57bef2f7dd2ca4dd2cc40fadd44194a8a9cbdc713057a11e6b3aedc1"
     },
     "style-confidence-2024": {
       "href": "./BR_MG.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d6c98c3f04498d25c7f3d90404139ee1f78f205a36ac56173f353051df8e132a"
     },
     "README": {
       "href": "./BR_MG.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Minas Gerais \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "1220bc0d3a6ca80f7d9fc284731dca0967a6d091001c2907462a078695d8c7c9fa0a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_MG.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

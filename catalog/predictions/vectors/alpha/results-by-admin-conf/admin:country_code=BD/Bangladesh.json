@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Bangladesh",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Bangladesh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2203978386,
+      "file:checksum": "1220ebce144dfa9d368ba50c8bb6a0d52da0ace751c3606abf65a4273e11c3db68be"
     },
     "pmtiles": {
       "href": "./Bangladesh.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Bangladesh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1192615392,
+      "file:checksum": "1220a15de00fd25d5d00fb3f8b4d2f90f89d148e7ba32f641fa89ec805985cd6612b"
     },
     "style-2025": {
       "href": "./Bangladesh.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "122060ff5204c1d88ea8df8e46a4e98faf6548991958bef7deaae8510959e007f551"
     },
     "style-2024": {
       "href": "./Bangladesh.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220436fe32482397ecad12ce334b5a58aaad65ad15d3fa94f63cfda8949600c52ef"
     },
     "style-confidence-2025": {
       "href": "./Bangladesh.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220bdfa2af46df4d7f4089bfdd1474df2aed50e8c06b7b3a2eb16a14385775c87e2"
     },
     "style-confidence-2024": {
       "href": "./Bangladesh.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "12208253cb99746e4591fa376978219e67d049b1988e604fbbf8a52d98903f213edb"
     },
     "README": {
       "href": "./Bangladesh.README.md",
@@ -165,7 +178,9 @@
       "title": "Bangladesh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4598,
+      "file:checksum": "12204c8794e391521d761c040f9fce0a51a05756b5245a0138e98a7419a18ea01de9"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BD/Bangladesh.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

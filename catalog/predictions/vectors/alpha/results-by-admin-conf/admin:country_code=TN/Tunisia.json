@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Tunisia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tunisia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 858725330,
+      "file:checksum": "1220aa510ce5e553882122274ccf26a90a44f7ee4ec2a13e8caa5d8fe8bd0a2e30d2"
     },
     "pmtiles": {
       "href": "./Tunisia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tunisia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 441279364,
+      "file:checksum": "1220113cb00071ff61e0b2b200f546db75bfb991981f4b5013ff1f82040d4abc8229"
     },
     "style-2025": {
       "href": "./Tunisia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12207bff2efd8184c841a96818570cf529f738b2195e2569f386496baea5631c24b3"
     },
     "style-2024": {
       "href": "./Tunisia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "122021e6d27647239d2af2dcf3a9884292ba6aaba19097b697afff2ed4329f17650e"
     },
     "style-confidence-2025": {
       "href": "./Tunisia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220268267cd874d09bd63bce86d541fc5aaf00d423399d79776951f6b985f2cc725"
     },
     "style-confidence-2024": {
       "href": "./Tunisia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12201101d1ecc989e94deca537eeb012b8ee2fdc43948fa3f2dc5898d909aa61f7c4"
     },
     "README": {
       "href": "./Tunisia.README.md",
@@ -165,7 +178,9 @@
       "title": "Tunisia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4587,
+      "file:checksum": "1220df23f6732195d88559375dd2ccd3ce345f32cbc68ee4cf85dc8a98dc75faf963"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TN/Tunisia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

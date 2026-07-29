@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_09",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Kilimanjaro field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 76379354,
+      "file:checksum": "122077766c3226ed30861b13d53f06aa5b0363abc106efda28d185fc049183209df5"
     },
     "pmtiles": {
       "href": "./TZ_09.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Kilimanjaro field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 51670954,
+      "file:checksum": "1220bf14a4b739389d16102fb16f0a22d96d643d75f87e09493eb25be8dc9de3231b"
     },
     "style-2025": {
       "href": "./TZ_09.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a6ec980db692bee5e3f3c1f20a378fb52bf0ad5d23e509845fa7b85934a0eb65"
     },
     "style-2024": {
       "href": "./TZ_09.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cb70257eea3e787ac040ebe19f155c2436ee133b37ca108602e586fd8739926b"
     },
     "style-confidence-2025": {
       "href": "./TZ_09.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207bd73896bff8d3af8f3498ba2b4798f6de325b27b7c0e51df6ebcd7dc837fe33"
     },
     "style-confidence-2024": {
       "href": "./TZ_09.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a0e5f4cfe2c6f04ad9b0646e09b7df1090e76b31ae6fb24c47f2e1f48a16f54b"
     },
     "README": {
       "href": "./TZ_09.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Kilimanjaro \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4619,
+      "file:checksum": "122087894ac020e6f05ce3be724b0e08318353707a5901f2a11ec581a04f5aaefd76"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_09.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

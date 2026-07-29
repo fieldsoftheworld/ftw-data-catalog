@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Mozambique",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Mozambique field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 5152181998,
+      "file:checksum": "122000c2950f86e56717e1571b43f2a86b1e5722817491bb93a1b6e929f57d9c5abb"
     },
     "pmtiles": {
       "href": "./Mozambique.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Mozambique field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2725861968,
+      "file:checksum": "122068a446fe35f004882e5ac6e5d15be0a014f51806f4c5bd2246003bc5847348c7"
     },
     "style-2025": {
       "href": "./Mozambique.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "122001aeefa0f83601f9d9e0e3942b2717021e450c57d3ed418e35813e091dd0f778"
     },
     "style-2024": {
       "href": "./Mozambique.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220b0dd71a446ffc8b402977d10a9bd8646ac5f22c86dce118b61000fc396eb21b0"
     },
     "style-confidence-2025": {
       "href": "./Mozambique.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "122066d1a771ea088879ad4ae2bcc6c70f65d24dfb735e446772d4b7cbbc1db17bbe"
     },
     "style-confidence-2024": {
       "href": "./Mozambique.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "122074707941ea5bb0229c53562995cf17129310fd7e93f9a6e70fbe041325c0c64e"
     },
     "README": {
       "href": "./Mozambique.README.md",
@@ -165,7 +178,9 @@
       "title": "Mozambique \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4595,
+      "file:checksum": "1220a91a3131effd3a3f80bef937d1801bb1dd002d9ae8f337dba80a8547eb3523dd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MZ/Mozambique.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_PY",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Puducherry field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 6559781,
+      "file:checksum": "12205f38546a9fa81525485b39238fcd1261a62726d16a9ac9bff2ed4d847963554a"
     },
     "pmtiles": {
       "href": "./IN_PY.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Puducherry field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 7742457,
+      "file:checksum": "1220a01ffb4ffafc9164bb78d8ea277d1dde1a4e2666860f741138314cef8738e4a3"
     },
     "style-2025": {
       "href": "./IN_PY.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220adb490e869d4a184802b5285ececf149d8472ade8d5480871fde162e82ea0b5f"
     },
     "style-2024": {
       "href": "./IN_PY.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220935fec9f0fcde56842533084b2c1a82287f5e00bee19967b44c49241164d45fb"
     },
     "style-confidence-2025": {
       "href": "./IN_PY.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220649752db3d671623f219cb2ef2809f05f2b06840056f9847839677722a075faa"
     },
     "style-confidence-2024": {
       "href": "./IN_PY.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122052ec7e76699e4b9f053f79b2b5cf853304f4a6219461427cfcf34bc1d40700db"
     },
     "README": {
       "href": "./IN_PY.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Puducherry \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "122066b0bb5f2cdb8baf3815ad932f8bc46d7f533be17a85e974c08b8e45cae55b10"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_PY.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

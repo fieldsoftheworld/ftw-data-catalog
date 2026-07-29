@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Tajikistan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tajikistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 351515532,
+      "file:checksum": "12206f260b32f5020b94717fdfb23445b5694512297a516499f99320d44e4ec65cb6"
     },
     "pmtiles": {
       "href": "./Tajikistan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tajikistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 221258281,
+      "file:checksum": "12203c8902ce8fa1f8b48d834b4d6a43bf314b0bdb1f446e2b9caf22646ea8c0984f"
     },
     "style-2025": {
       "href": "./Tajikistan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "12203496262e9ab62b38b14d7f5ab21122fe21a87a3177ef7ad7709cc5bf25217c4f"
     },
     "style-2024": {
       "href": "./Tajikistan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "12204de5ae86414dcfbcd0dac9226a85cdc61c2642ccaf5d7860cae6f1765c0448e5"
     },
     "style-confidence-2025": {
       "href": "./Tajikistan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "122064d6db2b0fa724f3982fb696a57fa76226f13b7812f9215cee5e03755c37ffa5"
     },
     "style-confidence-2024": {
       "href": "./Tajikistan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220e11f6a679ca3e6d6092558c8f5484ce58db0885dc5f507a4294c7486270483e4"
     },
     "README": {
       "href": "./Tajikistan.README.md",
@@ -165,7 +178,9 @@
       "title": "Tajikistan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4596,
+      "file:checksum": "1220a007c4f7d66ac0a5f6f586c3e0c0e1812057757281e0dbd8830437b815a58432"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TJ/Tajikistan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

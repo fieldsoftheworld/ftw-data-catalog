@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Guatemala",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Guatemala field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 635607331,
+      "file:checksum": "12206950634b9e22e885cd0bb11f79588349251696d6c6442965f5f476b4bb605f53"
     },
     "pmtiles": {
       "href": "./Guatemala.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Guatemala field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 397452795,
+      "file:checksum": "1220be37eddb492fce4304b3d8f4bf146228e2a2528efc7a790fa1cc97faeffc67c5"
     },
     "style-2025": {
       "href": "./Guatemala.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "1220addf172578afbd6deba6c1913febcd4e05367b1087dc4f5d75d6b1f6f0fb3147"
     },
     "style-2024": {
       "href": "./Guatemala.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "12200580a67e6fa3f6399f014edfeefa3db4b50d40f1a03940b6b638ae22b54698e4"
     },
     "style-confidence-2025": {
       "href": "./Guatemala.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "12209646332f050c5b04d17df932f4b17dc79219e904d3f88831dcc3d4d4ad86373c"
     },
     "style-confidence-2024": {
       "href": "./Guatemala.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "122068ec81561d1706f0fb9307f7b73f3fceaf0d0bf754ecc94bf3a9dff73795421b"
     },
     "README": {
       "href": "./Guatemala.README.md",
@@ -165,7 +178,9 @@
       "title": "Guatemala \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4593,
+      "file:checksum": "12201f580f2a93644427b943d80ca540269205b1c347b85b2873deae0d787ce39ea7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GT/Guatemala.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

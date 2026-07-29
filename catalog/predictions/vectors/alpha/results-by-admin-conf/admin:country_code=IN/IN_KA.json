@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_KA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Karn\u0101taka field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3295515674,
+      "file:checksum": "1220308d42c5353e2c5d17fea3f040bf578a86b5293f8e613b97b3eb94b4ceb03db5"
     },
     "pmtiles": {
       "href": "./IN_KA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Karn\u0101taka field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1689375356,
+      "file:checksum": "12203aae3b9dcc973c831f3a2b6fdd7a8f090c681d305a4ac908c22b96aab80e718e"
     },
     "style-2025": {
       "href": "./IN_KA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d6267b7dbec791b8689500738048829b3974ab34654192e205b4287067e2e96b"
     },
     "style-2024": {
       "href": "./IN_KA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122082034fb7079eeadeecf97208daadc0eba488b2b63c008719c4eae7ad2676051e"
     },
     "style-confidence-2025": {
       "href": "./IN_KA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220817f74cd2cffbfedb739e154147784ded67af21d970350a9b0cff60db57a4d29"
     },
     "style-confidence-2024": {
       "href": "./IN_KA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12204656ebc952460b45736f941345eddbcb83f54145132250195d9460e2deb092f2"
     },
     "README": {
       "href": "./IN_KA.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Karn\u0101taka \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "1220eb6f675c62552932995a508d27f2e8d83c24167ff2aba067c5f25cf65c61e073"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_KA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

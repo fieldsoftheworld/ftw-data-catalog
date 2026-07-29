@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_HL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Heilongjiang Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2649507724,
+      "file:checksum": "12203c1fe10007c9d635cfabb1662cab7895eb55003c278e6cce4489c59ff2fc3898"
     },
     "pmtiles": {
       "href": "./CN_HL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Heilongjiang Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1574274336,
+      "file:checksum": "1220758cb7ce36247103a65503e191fdef53809c1fd5b12e4d085eec996a1d8d7f68"
     },
     "style-2025": {
       "href": "./CN_HL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205958d2c1591c761e93e04727a28edc48d4d2baa32c57ec3153513921f7e9863b"
     },
     "style-2024": {
       "href": "./CN_HL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122047ddbf9d1d797d3b73b670ace886bf964beac8829428fce2f8781f5c1a2900f7"
     },
     "style-confidence-2025": {
       "href": "./CN_HL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122030cd1a09f94b69c575a55a1b6f0b1da2b05ec5804339721a845acbb2618a75b7"
     },
     "style-confidence-2024": {
       "href": "./CN_HL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205811f59611fa10186744f089948b50e478a114432e1bff572027676eaf724eca"
     },
     "README": {
       "href": "./CN_HL.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Heilongjiang Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4442,
+      "file:checksum": "12201681686d8fce42356e87647b25f963c3fac438073a05d826f9826e53f1b35ba7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_HL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

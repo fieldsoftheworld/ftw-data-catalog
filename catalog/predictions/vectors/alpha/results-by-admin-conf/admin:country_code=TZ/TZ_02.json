@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_02",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Dar es Salaam field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 10052041,
+      "file:checksum": "1220beefe88936cc42ac4ebb5748e9d87376c5fda47d9011875c9e22013325b43e72"
     },
     "pmtiles": {
       "href": "./TZ_02.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Dar es Salaam field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 10020619,
+      "file:checksum": "1220bb6740ddaf4e5ffb8ea771ebb4d9c19f5a88732859d12eccdaf027fbe92a4d1b"
     },
     "style-2025": {
       "href": "./TZ_02.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220eca68bed3c7040c3d53ef266e24fbb6c540269eb5b4f81dd2fe4555e7aefade4"
     },
     "style-2024": {
       "href": "./TZ_02.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c608363050a7c4549e3d13cd2bb250195e711224b62bb9f0d673ad53fe994b55"
     },
     "style-confidence-2025": {
       "href": "./TZ_02.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220048fee8a6dfc34f29940aa1b19e21201c589c5bae38992ab4c97b871f61fe4bb"
     },
     "style-confidence-2024": {
       "href": "./TZ_02.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208556f894da8041cdfcc0aa772f45f7c76fd119fa4763af88ebe52317c09ad7cf"
     },
     "README": {
       "href": "./TZ_02.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Dar es Salaam \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4457,
+      "file:checksum": "1220ac1a6df715a14e3149c0c294536606188123457295b534cae2d89462bb84958f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_02.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

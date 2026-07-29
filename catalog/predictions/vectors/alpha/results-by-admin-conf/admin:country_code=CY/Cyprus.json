@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Cyprus",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Cyprus field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 81156848,
+      "file:checksum": "1220c1929b7bd64946eb749909ef9d2bf1d49f5a4a119dcf379ac5b0051999182a1a"
     },
     "pmtiles": {
       "href": "./Cyprus.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Cyprus field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 56243888,
+      "file:checksum": "1220da112da086253c4ff2c5cfee05544796175ce7d1ff07ab7995aada3d1db59927"
     },
     "style-2025": {
       "href": "./Cyprus.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122009236c5d3b1cd74889075c5495d6ab15e8b1f03e68ea99679fbe7cf2119be8e4"
     },
     "style-2024": {
       "href": "./Cyprus.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220872ef1762866cf093671887b5fc4c94381a71e30f54e0364ac123b0dce48d4af"
     },
     "style-confidence-2025": {
       "href": "./Cyprus.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220bd2ea2f950abb3561b5a86204913c0efe14d0deff6bf412629b9bdf89ee5f564"
     },
     "style-confidence-2024": {
       "href": "./Cyprus.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220a8d0161f3f4c4d31d28339296bc89e56e400f9269a2218e3501e629f1cb4c363"
     },
     "README": {
       "href": "./Cyprus.README.md",
@@ -165,7 +178,9 @@
       "title": "Cyprus \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4583,
+      "file:checksum": "1220b75e3ec731ac86163f3a60cb23b764d38eb1585a072d64572f7eb1827c8855d6"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CY/Cyprus.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_DE",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Delta field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 146594385,
+      "file:checksum": "1220dba1cb98336eb9aa2a9821f6ce218926842fb8039a3aeccbdadd5833c258dd23"
     },
     "pmtiles": {
       "href": "./NG_DE.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Delta field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 84741623,
+      "file:checksum": "12208b7b8f547017c440bfe321f52e3302c6fce1676658d5a5cce15930a7bc0ff796"
     },
     "style-2025": {
       "href": "./NG_DE.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c93a26ed0c83c5a015e2f8287bd31200b12e2ff5991ddd57dceda5f759ee83d9"
     },
     "style-2024": {
       "href": "./NG_DE.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a51e4ee6095c48477461029f64fc0c42f279db465387498809d9ff5fc5946b5e"
     },
     "style-confidence-2025": {
       "href": "./NG_DE.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200ba16b16ec32d5d2dbc71f33ac1e6e6e40788383df513253e8cb1642850c59d2"
     },
     "style-confidence-2024": {
       "href": "./NG_DE.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220290419e03a6e5b38887e54cb13dfb9356404f676f92b9848f779cf76510d1d05"
     },
     "README": {
       "href": "./NG_DE.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Delta \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "1220f7f02aaa75a601b7ec578820306273464531d10f171a0655d4abe4520dfdb9ae"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_DE.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

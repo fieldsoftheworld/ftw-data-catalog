@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_MA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Massachusetts field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3436189,
+      "file:checksum": "12205718f464c99359f40599cb21516ceb9cbbbf75b6d76a51c490ce75fe58aed555"
     },
     "pmtiles": {
       "href": "./US_MA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Massachusetts field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3317492,
+      "file:checksum": "1220cac61a521be5552eecdf8f5a97d47fe095fe5d9dd3a83af9ba8440434d6ef06b"
     },
     "style-2025": {
       "href": "./US_MA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d2f2eacfd3e398bbf6d2d9ed38c8c9a02f2f942deb45d414a489fd54ced27b0d"
     },
     "style-2024": {
       "href": "./US_MA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122087acfefa6215b27bc8767bd8f61fa3c93bccc28583c88df980f26ec2447e9180"
     },
     "style-confidence-2025": {
       "href": "./US_MA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206a4e81559ae002ceaed75ad7216c3c8f24550a51cfb539018a5e1ee682554bf7"
     },
     "style-confidence-2024": {
       "href": "./US_MA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122075848cee9ccd27a2ef2bf9125ca92f122234fd31c43ba82d1f9e6a83f551d915"
     },
     "README": {
       "href": "./US_MA.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Massachusetts \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "1220ea4f81c379027a11fd1cae3ec0d6d1cc91702e84a2ef83513ffb29e977abab1f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_MA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

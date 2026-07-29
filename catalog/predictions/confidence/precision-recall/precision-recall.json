@@ -3,7 +3,8 @@
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "precision-recall",
   "geometry": {
@@ -100,11 +101,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/precision-recall/precision-recall.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "llms",
       "href": "./llms.txt",
       "type": "text/markdown",
@@ -191,7 +187,9 @@
             "valid_percent": 100.0
           }
         }
-      ]
+      ],
+      "file:size": 1489877700,
+      "file:checksum": "12200e64fc1a90ee11db692cab3e81f6b796a04a33950e2f2eebb912640174daba6f"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -199,7 +197,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 3211,
+      "file:checksum": "12202c142577d24f4c37992264915cd80a8ee89e468229953278066ab594a9958201"
     }
   }
 }

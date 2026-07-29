@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_TN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Tennessee field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 84863213,
+      "file:checksum": "1220e99d37917519dc4f54775f09fb326ef904127d6b3758a5a0c28556b258fbf8dd"
     },
     "pmtiles": {
       "href": "./US_TN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Tennessee field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 63290403,
+      "file:checksum": "1220461e3e1e8eb6162d8136d19919353dbb426f31edb11d528ecb3421dd3924c067"
     },
     "style-2025": {
       "href": "./US_TN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220994f806acec9a52439f8eb64bc5496a150a3cecd48678370a7eccfc147b61792"
     },
     "style-2024": {
       "href": "./US_TN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208829f586e7efc7eea23b804a406a5bba4abdd4984acba2ecb89ab9b2dc873003"
     },
     "style-confidence-2025": {
       "href": "./US_TN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122009d288410098d3e861efe341a6d72e05b3e07fcecd7d4e0acfaa2271c0536f56"
     },
     "style-confidence-2024": {
       "href": "./US_TN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122001b52fe1640be1068423145f6c24e7f5aea37edf0d5cab5e373dd56bde864776"
     },
     "README": {
       "href": "./US_TN.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Tennessee \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "1220052a68519388b9f70769d9afb3c0e94f3a3be80e636b5f94fc84c21d4c37d717"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_TN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

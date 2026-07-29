@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_WV",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 West Virginia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 5438927,
+      "file:checksum": "12206882bce5267d501d0b11c0a1fa597a2b1fea69fc476d72fe0ad8bc45c8b11688"
     },
     "pmtiles": {
       "href": "./US_WV.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 West Virginia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 4419191,
+      "file:checksum": "12202e8d7c168c81814d9424e39a5ce5873b8011bac7c78c25c8cbb9b5a1289bb45f"
     },
     "style-2025": {
       "href": "./US_WV.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f086b3ae838a30a53e2669b9ee0cd93a888f9a76e0c3ec9d4c1a9bbf1b137d73"
     },
     "style-2024": {
       "href": "./US_WV.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220edcd2a004febcd726dac6c07312dc1753566a237a0abd0f7074b0b78d3071950"
     },
     "style-confidence-2025": {
       "href": "./US_WV.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220211f624d2c84ea5af00eba53821051838a02a3c2724174b4a8361e9e5d4ccc83"
     },
     "style-confidence-2024": {
       "href": "./US_WV.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122091b97cffaf6382c89bc8cce84291d6a77ccbdc44cb88f3f6758b81b04c3b4efe"
     },
     "README": {
       "href": "./US_WV.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 West Virginia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "12206f5ab561f1244152c241a2c234df087e5bf621ee356aaa82371b3aa89daa78c4"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_WV.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

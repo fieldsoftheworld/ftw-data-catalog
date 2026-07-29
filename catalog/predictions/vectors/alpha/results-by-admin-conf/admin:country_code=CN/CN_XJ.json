@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_XJ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Xinjiang Uygur Zizhiqu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2537536991,
+      "file:checksum": "12202e9aee3e6a4f216982cfd9fe1848669cea279b0271c8d2cd61351d551e7c3fd3"
     },
     "pmtiles": {
       "href": "./CN_XJ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Xinjiang Uygur Zizhiqu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1537615093,
+      "file:checksum": "1220947528114f45b311aab812b556e68607edb66095d0ffbda192b4e94bccc62d4b"
     },
     "style-2025": {
       "href": "./CN_XJ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200faef7c2c7a678dc1b7fe3d3b411832918af2d308b135e9e335ef0ade1c3c078"
     },
     "style-2024": {
       "href": "./CN_XJ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203df8a19e2bc356d79b764c8c77aca2cb041b3caf9dd531a0b35bb74f6118d175"
     },
     "style-confidence-2025": {
       "href": "./CN_XJ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122056c1471a8b7eabc1fe5fa2c9ffd42596cca13ca1c2fae6344fde0a373a8d26b2"
     },
     "style-confidence-2024": {
       "href": "./CN_XJ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122029fc8ba9026f2484c25d9e42141ad9813c9eda34e181def3fa08c06336b1d229"
     },
     "README": {
       "href": "./CN_XJ.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Xinjiang Uygur Zizhiqu \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4446,
+      "file:checksum": "12209ecbfaff27806448deec8dfb3154d4008f1c60974e69cad43c2df9b1ba052426"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_XJ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_AC",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Acre field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 16551325,
+      "file:checksum": "122067016343da636a3b90a8506fecf5a77f66d3e206eec98956e65e1238efd14d70"
     },
     "pmtiles": {
       "href": "./BR_AC.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Acre field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 17898324,
+      "file:checksum": "1220b564d965572a8515713775e1bc5eaeeb60ff0b2475862d594ba4d0a867348db4"
     },
     "style-2025": {
       "href": "./BR_AC.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d3aad1aab5b970453558d01932dc397e292bdecfdb19e526ed85c3f7165b4f05"
     },
     "style-2024": {
       "href": "./BR_AC.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208e2b38f2ccf874057621d1edf24c9de2d607f54198b63218975b041e05f8537b"
     },
     "style-confidence-2025": {
       "href": "./BR_AC.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220eeb8b47ab6572ebcbe50d6b7adf76a899b56fa499c030b9763a650eae745fbd8"
     },
     "style-confidence-2024": {
       "href": "./BR_AC.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220aadb6204279c759225dfc59e206e28489da36d13723cbbc788f237143ce7e6d9"
     },
     "README": {
       "href": "./BR_AC.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Acre \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4426,
+      "file:checksum": "1220ed62dd32893cdb7ede1f8f05518d1a0bbc1e17bc026948078e88f0b6d2c1d619"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_AC.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

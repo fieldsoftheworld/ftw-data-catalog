@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_AR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Arun\u0101chal Pradesh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 35376850,
+      "file:checksum": "12200a0a6145e57e91db8c45d5a4eaa1886a1d7326758acafa92040ccf0269ddbd7a"
     },
     "pmtiles": {
       "href": "./IN_AR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Arun\u0101chal Pradesh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 29143726,
+      "file:checksum": "12207105211ba7e76f08df506f5d0265cee9e045b7cbb15bd46543bd4850f6fe4301"
     },
     "style-2025": {
       "href": "./IN_AR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206f61f7c2ecec5203753cec784cf96424a5ff477245d2e7b740857f1b2a1c6828"
     },
     "style-2024": {
       "href": "./IN_AR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206575684c35e624626107464a76f9baf1b504e3d1b7005851b3a78972485cd597"
     },
     "style-confidence-2025": {
       "href": "./IN_AR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208534885e2c6441fe58e8f68dd0419bcc2a5a9288d771b6c8f7397f1712513cb1"
     },
     "style-confidence-2024": {
       "href": "./IN_AR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220216e670663c8dcc074e7c2b782937cbd141c367f8700086670b2a7321adef000"
     },
     "README": {
       "href": "./IN_AR.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Arun\u0101chal Pradesh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4439,
+      "file:checksum": "122058b4caba34d604d502e5461f5d97d096c6a079d41e2798f5d998009a1826d627"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_AR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

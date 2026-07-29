@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Netherlands",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Netherlands field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 246225600,
+      "file:checksum": "1220dc57fdf90c85daf3d750c5b0788639f70bf6af8708476db8da4e7737b98fb285"
     },
     "pmtiles": {
       "href": "./Netherlands.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Netherlands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 160118497,
+      "file:checksum": "12200b496ef55f0117cbd5cd04107e5d7dd9d09dcd1c835e64f49d245b55a94a43d2"
     },
     "style-2025": {
       "href": "./Netherlands.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "12203c196e31007590c37a18ea1a8ee6794db37b46ffaef95348cdd8f25f09c3690e"
     },
     "style-2024": {
       "href": "./Netherlands.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "122006ae32780afcb8886fd3c76bde59b1409035b740c9bbed83215c7a7eb6a1654b"
     },
     "style-confidence-2025": {
       "href": "./Netherlands.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "12209b0d53a1b76e7532357fac6be5435c4b564d13cb9b22d9d6a83f203ac0e78196"
     },
     "style-confidence-2024": {
       "href": "./Netherlands.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "1220ba59087c614773eadd4169b96dc5c02403c873b569a83894dec10e146b9a2613"
     },
     "README": {
       "href": "./Netherlands.README.md",
@@ -165,7 +178,9 @@
       "title": "Netherlands \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4598,
+      "file:checksum": "12204e2d23b43f55de0f9cce252a18591a7d2a7002dc3bbd016e8de0ac14c3151e6d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NL/Netherlands.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Croatia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Croatia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 168949925,
+      "file:checksum": "1220d1e4c091cf58188e9f132ba058338d12cdac29bd0313264446ec9219c3f6920c"
     },
     "pmtiles": {
       "href": "./Croatia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Croatia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 122359695,
+      "file:checksum": "122011905be62852ff4df937872341ae88a13ee02e5c03e543ac64a9c207a2f1b7f7"
     },
     "style-2025": {
       "href": "./Croatia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220c6256c86a25030136fd46f7457369093cc1373ddef676877ca0df294be1fa493"
     },
     "style-2024": {
       "href": "./Croatia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220fa2516c54f316fb1cfc5674b6314c174c802a36530960d0524c2c7b45a52898d"
     },
     "style-confidence-2025": {
       "href": "./Croatia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220809ead79b09d15fa4ae69d49108eab4a368ca50f56eabf24eea42280c711a23a"
     },
     "style-confidence-2024": {
       "href": "./Croatia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220fcd91489ec0fee241c2d5cd69d7269cae72266ebd4dd27bedbdfbe22c1ef2321"
     },
     "README": {
       "href": "./Croatia.README.md",
@@ -165,7 +178,9 @@
       "title": "Croatia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4586,
+      "file:checksum": "1220e512b6365e19d19048682eb5010b1d3ae1a701a752a63bfc30b5052c9a376eda"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=HR/Croatia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

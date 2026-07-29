@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_AN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Andaman and Nicobar Islands field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 4573062,
+      "file:checksum": "122034fef0bb21f1e2f770bb4eaaf9dd41bcccc192418a333962a470504177fafdbc"
     },
     "pmtiles": {
       "href": "./IN_AN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Andaman and Nicobar Islands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 4853979,
+      "file:checksum": "12202f1fe91187d2e9357001a299defd01411ebc6a9f489b298218d48611e38c3dd1"
     },
     "style-2025": {
       "href": "./IN_AN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220152dd5174e8be689d24eca75a48f92ba838630b50883e7de73726d9db923547d"
     },
     "style-2024": {
       "href": "./IN_AN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220510e9eb86af6f78b81b41ab32f2b2dcdb1f4c2c0a9884d07d54279918ce7633e"
     },
     "style-confidence-2025": {
       "href": "./IN_AN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122065d1c20cc494ce81dc2d32b5b6c6178df9c2cf6cbc0ee534ba85e8097e7c8ad9"
     },
     "style-confidence-2024": {
       "href": "./IN_AN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201fc4c5dc165a1fd17d172fa2b7f62570701c284a16e3554dc4c54e91a13a334b"
     },
     "README": {
       "href": "./IN_AN.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Andaman and Nicobar Islands \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4447,
+      "file:checksum": "1220fd09a0f0af8ca2481c6dafdb754c7a3fec71356257740ff3a6a5923249f3a091"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_AN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

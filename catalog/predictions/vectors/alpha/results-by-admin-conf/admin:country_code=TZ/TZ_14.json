@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_14",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Mbeya field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 423044765,
+      "file:checksum": "122008f74ef6ab220752d09db4ae61c518c90a1130515e66f1fcbe44bb4a3f07489f"
     },
     "pmtiles": {
       "href": "./TZ_14.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Mbeya field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 234046027,
+      "file:checksum": "1220f85b76846e94d8d0b860382c1c281ed1267b6c32e994990085e9eb2cbdb9620b"
     },
     "style-2025": {
       "href": "./TZ_14.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122074bbec8b9613fe2579e0978094f80614e1c63ebbf2567c20ce9126843961575c"
     },
     "style-2024": {
       "href": "./TZ_14.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220526280fa997c313640722fe18e72398e8c136b37ccc83e1fe3b52802ecebba73"
     },
     "style-confidence-2025": {
       "href": "./TZ_14.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205aa72387de44d1b3e60ee1bb81625bffa4323aa12d5681ef5dae519129f2be25"
     },
     "style-confidence-2024": {
       "href": "./TZ_14.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220be6df4a1f30db9f0cb9499d1ddfbacb14ac24fb1bfad29cb13f0c1bf160467f7"
     },
     "README": {
       "href": "./TZ_14.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Mbeya \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4451,
+      "file:checksum": "1220f1659c0b456e0a8a13c79234fe3c1eff3832bfd409136b555ec8545c92ae87bf"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_14.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

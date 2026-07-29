@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Mauritania",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Mauritania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 325654890,
+      "file:checksum": "12208a6a673259b9188104dafba01e73287169592154a2ae07a0490f120e6f612c7e"
     },
     "pmtiles": {
       "href": "./Mauritania.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Mauritania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 209446218,
+      "file:checksum": "122098764d02f137fe0d03c354baa45349f09b9ff53491a1fcee58c33262fab2039c"
     },
     "style-2025": {
       "href": "./Mauritania.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220441d0f166da29a64a2142126ac2338403c4b95e78b24fb2895163c4928c47fb4"
     },
     "style-2024": {
       "href": "./Mauritania.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "122034cc84a5cd2e76d2dc7c96a232a49760499e61d4ef73ce94a57db4bf6b4b079d"
     },
     "style-confidence-2025": {
       "href": "./Mauritania.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "12205b201b378c366248c24b204c843cffaa8cf956ea0fa3aaa6794c84516ab2e672"
     },
     "style-confidence-2024": {
       "href": "./Mauritania.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220628b2fe8c49e0741bcf42be88e3b51caa0b5b7d4fb5101a68ccddced883b1b05"
     },
     "README": {
       "href": "./Mauritania.README.md",
@@ -165,7 +178,9 @@
       "title": "Mauritania \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4596,
+      "file:checksum": "1220f83dbecd96890baafeba0a0b2e87798041a448c611d4ea0bb4cbc50dcf437ad5"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MR/Mauritania.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_TN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Tamil N\u0101du field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2450093397,
+      "file:checksum": "12203450eb4f9eda04848f889befe4dc45a77f2e2291ab4807411d4bf1c5e12f161b"
     },
     "pmtiles": {
       "href": "./IN_TN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Tamil N\u0101du field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1218062239,
+      "file:checksum": "1220b13e4c1b1963af42c66bc1338294897d7d69ef5848ea85a46fabe1321138257a"
     },
     "style-2025": {
       "href": "./IN_TN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122005143d6cec3d0fe3a43205d16468acc97d31508aa23e0151f375ac0991f10809"
     },
     "style-2024": {
       "href": "./IN_TN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220936ad89e9dbc66e3d68524ceb398bd98a52f139578571d56c502f7df408f6b4c"
     },
     "style-confidence-2025": {
       "href": "./IN_TN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203e39250bf87a87f7fb54051883f9ec737d2001200e8ee29b8f293cdefa82acb5"
     },
     "style-confidence-2024": {
       "href": "./IN_TN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122033a96a0f983ad2a40f37ceb83e2536ad3f21757b6b126927429abecc97e008fd"
     },
     "README": {
       "href": "./IN_TN.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Tamil N\u0101du \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "1220ae7da3826f725213f9dfec721315a6ffcfc0b269fa57cedc09a23077fa4a11ad"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_TN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

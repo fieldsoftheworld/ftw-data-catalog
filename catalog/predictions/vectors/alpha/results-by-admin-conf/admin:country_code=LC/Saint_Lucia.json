@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Saint_Lucia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Saint_Lucia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3256395,
+      "file:checksum": "122012938570fd2a4d30b8802bd040bcc40d0d7d526726819b28e8e7dba130e6bccf"
     },
     "pmtiles": {
       "href": "./Saint_Lucia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Saint_Lucia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2796275,
+      "file:checksum": "1220b806ad1d9ac9fb9133f93128790a4ee19c782dedc3600dc4d7ac8d3090428507"
     },
     "style-2025": {
       "href": "./Saint_Lucia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "1220167e7c4ed1a86873c91d6cb730cd651586f806c9848da633f9a7d939889076c8"
     },
     "style-2024": {
       "href": "./Saint_Lucia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "1220138b61107cd668da5ae85b58bed265edcf536d5ec463db03b042ba0241feba7a"
     },
     "style-confidence-2025": {
       "href": "./Saint_Lucia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "1220848f6b91efd6413c0425402a12d1b0c6b0022e3b632bbdff498cced23cdff726"
     },
     "style-confidence-2024": {
       "href": "./Saint_Lucia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "1220db1dcfc26e503f32852d8207728e25de37423ae7fdc8a4753c71f710d63fbe6a"
     },
     "README": {
       "href": "./Saint_Lucia.README.md",
@@ -165,7 +178,9 @@
       "title": "Saint_Lucia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4596,
+      "file:checksum": "12206ef804cc034f866444a80a05d4cbf9b2edc23c7a47b1540914b1cfc9218f9a32"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LC/Saint_Lucia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

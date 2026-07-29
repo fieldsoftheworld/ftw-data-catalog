@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_NY",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 New York field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 108288892,
+      "file:checksum": "1220d1443291bb34be1bcc0e5ba37e6f1708763728e208c6fa2b251592b9838bba2f"
     },
     "pmtiles": {
       "href": "./US_NY.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 New York field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 90044543,
+      "file:checksum": "1220c21edc1797ca798592ee597b41e4bebbdf87bc5a3fb05f432cc78cfd3b71542e"
     },
     "style-2025": {
       "href": "./US_NY.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220182c777e810f21c1b888d14e705ceb32cbaf08f449dc68c26928aea65266a00b"
     },
     "style-2024": {
       "href": "./US_NY.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e35b3a29c137dc96f442192f106b3e7c49e66b3550d6d4587efd52c039035542"
     },
     "style-confidence-2025": {
       "href": "./US_NY.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b4e3b001d14b7b8edf514a1e6d5b020eee07655f33e6561f1401f2b447d979a4"
     },
     "style-confidence-2024": {
       "href": "./US_NY.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ad5297892c9fa624ef2faf85ab437d1aa26e810524273fe800b89e1b9a379149"
     },
     "README": {
       "href": "./US_NY.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 New York \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "122079f383cf04364b86c1ed447c5903674c41a97911cf7fe1c88c8a38de3f0a9165"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NY.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

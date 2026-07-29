@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_JI",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Jigawa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 343936389,
+      "file:checksum": "1220ae6f1e8d6ec8e36d3a2726463b51f263a21ea00962fc78d37d06277de4c94bb1"
     },
     "pmtiles": {
       "href": "./NG_JI.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Jigawa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 181743155,
+      "file:checksum": "12205f3e1b636e04f86074f5f319a35b0427a24eebca0844dc34f9ce6756367fc7b3"
     },
     "style-2025": {
       "href": "./NG_JI.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fb0a6790522ba9b6c4dd66f7160c7f391e7d8a68561bcf1042b3bb0d3420c145"
     },
     "style-2024": {
       "href": "./NG_JI.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d0ae29f39ed073b64c1d3943cbe5959d00fa58b4f581817d11ca1f85536cdf56"
     },
     "style-confidence-2025": {
       "href": "./NG_JI.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e8662aff612b8f297cbbcd3c5b138731f50b16212962c16414143077460f8f60"
     },
     "style-confidence-2024": {
       "href": "./NG_JI.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122009bcd620135459a5d85fb4102b154c4ef30f1c8b0e30ba34939567213a98ccc6"
     },
     "README": {
       "href": "./NG_JI.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Jigawa \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "1220943d929db4c2b507f3907303c1ba27fd220e7b73ae43c9b857f147bf3e880cc3"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_JI.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

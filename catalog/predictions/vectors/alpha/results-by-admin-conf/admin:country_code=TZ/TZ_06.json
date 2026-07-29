@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_06",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Pemba North field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1402952,
+      "file:checksum": "1220c9aea87e52a91e4e72e72868f7ca11f3e9e35e50c506aded3524fca095b41c0e"
     },
     "pmtiles": {
       "href": "./TZ_06.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Pemba North field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1648974,
+      "file:checksum": "1220f35f0ca9233ae05a14e6f4c6f3f223d692e07e1b1f62e12939753a205cb6102a"
     },
     "style-2025": {
       "href": "./TZ_06.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ef1f02126c07cb14012679feec894d63547cd94799bc142d73818ec6ac869980"
     },
     "style-2024": {
       "href": "./TZ_06.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d61dc70e0fb620a9660805a8928cb497033d0fec63336890085d44ccee7c9c3a"
     },
     "style-confidence-2025": {
       "href": "./TZ_06.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b09212e4ec5c2018894001ddf0744f03048d1c600af2c9c91a09f2d0e2e9c09c"
     },
     "style-confidence-2024": {
       "href": "./TZ_06.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fd85cabbc42d7356f4b50166aea1651115a23b8bf247ec9eaa8fbe2d14022552"
     },
     "README": {
       "href": "./TZ_06.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Pemba North \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4454,
+      "file:checksum": "12208ec4be16716c0cb58304fc67301713313739515eb5e99e3abeb722bbf0d7c3fa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_06.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

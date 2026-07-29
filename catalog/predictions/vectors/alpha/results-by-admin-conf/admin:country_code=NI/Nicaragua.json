@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Nicaragua",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nicaragua field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 528487152,
+      "file:checksum": "122072839e1ab55a2d36d0d9e0bfb9117be93b7c1c907d37e26a516cb7950fd7da2e"
     },
     "pmtiles": {
       "href": "./Nicaragua.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nicaragua field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 348482243,
+      "file:checksum": "1220e130eca2439dee94f615104b04b58ebaa5815a93f1be8824bd690c02be9c67a9"
     },
     "style-2025": {
       "href": "./Nicaragua.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "12204eba383cac1ef9a7b913b2dfcbccb9f367d2666e68e2f4066a4262015947b46d"
     },
     "style-2024": {
       "href": "./Nicaragua.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "1220b127b5b0894985810ecb492b3a6cc1399c6e240e5f4ed895a4a0bede95d4bcb3"
     },
     "style-confidence-2025": {
       "href": "./Nicaragua.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "12201e86bbde72dd83359e51512b8dac17e3c8c9cc495a39e02e63fbaf4bbd750d5c"
     },
     "style-confidence-2024": {
       "href": "./Nicaragua.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "122056e741f6e86c211b4ad36bfce1730c32847d7efe91349ff9dc1e12e2111d24f6"
     },
     "README": {
       "href": "./Nicaragua.README.md",
@@ -165,7 +178,9 @@
       "title": "Nicaragua \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4593,
+      "file:checksum": "1220f38f45a068a7eb1f325e9aa35501a5eb7ef7291e9a2055e221bd62e8ecc3cf47"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NI/Nicaragua.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

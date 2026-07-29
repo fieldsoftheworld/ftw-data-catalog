@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Antigua_and_Barbuda",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Antigua_and_Barbuda field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1579985,
+      "file:checksum": "1220351c69c0593e8c1e8deb0010c83c20cd405a452ccb837e32cd8d0ce272f1d46d"
     },
     "pmtiles": {
       "href": "./Antigua_and_Barbuda.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Antigua_and_Barbuda field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1775265,
+      "file:checksum": "1220bb6c525062c7e16d67720b11c1576551700d799004c66558a718a4789bad0e6b"
     },
     "style-2025": {
       "href": "./Antigua_and_Barbuda.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 942,
+      "file:checksum": "12202463f4bdb59bd4bdfc1b9e34b92ac1bffa6ad8424a7d327fe259cfdadd99c916"
     },
     "style-2024": {
       "href": "./Antigua_and_Barbuda.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 942,
+      "file:checksum": "122054d779a4a7bb8fd4668069a5b64f39991d597573f3afd84e371c6db055664e5b"
     },
     "style-confidence-2025": {
       "href": "./Antigua_and_Barbuda.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2686,
+      "file:checksum": "12205123a0b76a55093fed59126c12e51cf45ff5d1d06810b51a9c63b44de9a8cf51"
     },
     "style-confidence-2024": {
       "href": "./Antigua_and_Barbuda.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2686,
+      "file:checksum": "122060dd3c2d2f24dbacb78bb9fea5a6b9e220f462016ddf96f9461098ec1617b565"
     },
     "README": {
       "href": "./Antigua_and_Barbuda.README.md",
@@ -165,7 +178,9 @@
       "title": "Antigua_and_Barbuda \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4619,
+      "file:checksum": "1220265ba2bb6cb5eefed9520f2dda510ef88fbbbb8564105384b0db8008fd060fbc"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AG/Antigua_and_Barbuda.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

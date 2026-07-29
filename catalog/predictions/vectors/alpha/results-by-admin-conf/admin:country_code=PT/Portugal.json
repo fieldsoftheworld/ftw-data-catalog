@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Portugal",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Portugal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 297129505,
+      "file:checksum": "12200877d935937ffa6564ec255b0aa621bb774d69780789544e866585bf477a4f20"
     },
     "pmtiles": {
       "href": "./Portugal.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Portugal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 194410369,
+      "file:checksum": "1220da70ece756ef126ebace574289f14672ab3bda2b4d27c689cbf4b3c3276bbe72"
     },
     "style-2025": {
       "href": "./Portugal.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220db8f4a5e6650e113876f4ca4c2a7b640a7205bb121fe303f1197d3d5fc04ee37"
     },
     "style-2024": {
       "href": "./Portugal.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220483d28488b2bbde4790b431dc0d137b5b3ac7a06f823ee08d8b6ce0cfbd67b5e"
     },
     "style-confidence-2025": {
       "href": "./Portugal.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12209cf77bc607096502abe93e0ef18b15f753da92dee1e637c60647b8d0c82fd4bf"
     },
     "style-confidence-2024": {
       "href": "./Portugal.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220db9cb649bcd78aa0ce6505eac494c13c6a9532ce8c7d019f950287c4787098f8"
     },
     "README": {
       "href": "./Portugal.README.md",
@@ -165,7 +178,9 @@
       "title": "Portugal \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4591,
+      "file:checksum": "1220aa1d39a56343e4868919955678b86a349ba563d5f200eaab32d7f34620389145"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PT/Portugal.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

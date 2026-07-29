@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_19",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Coast field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 176076996,
+      "file:checksum": "122001340d294bc6ddf2020d1e61cca2de428106a170b32ef90c28b33593f4e8f403"
     },
     "pmtiles": {
       "href": "./TZ_19.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Coast field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 109703340,
+      "file:checksum": "12207474ce7a9c82518d4247cbae2283291f122f5fec7fb0ded717b15c1c169eb38d"
     },
     "style-2025": {
       "href": "./TZ_19.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220966a69d0c4658b0901749fe37fccd9620dccc19258a81b2456662c28d322948d"
     },
     "style-2024": {
       "href": "./TZ_19.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122007b5a621917b65355258d7f48212399ea1b1957193e84c9c59c51bfb58a91ba5"
     },
     "style-confidence-2025": {
       "href": "./TZ_19.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122098fb25df8a7c1c90181a778803cb6f0dced8ac0bb9d5b33aafdcd7fb8b219edb"
     },
     "style-confidence-2024": {
       "href": "./TZ_19.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122052fb31c5b8ddfc1013878ea166872fbc90431e8a3ee7ce235015b2f4dc0b0028"
     },
     "README": {
       "href": "./TZ_19.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Coast \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4451,
+      "file:checksum": "12209c49cba92be084060b642e09afaef8aa95c8ceeaf455652cd700ebe563b28ea5"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_19.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

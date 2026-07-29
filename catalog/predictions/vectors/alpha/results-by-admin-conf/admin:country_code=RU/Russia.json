@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Russia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Russian Federation field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 7275828872,
+      "file:checksum": "122029d7af05fe66e6de382648196380a05c1e1b04a6cf8990f4e8445aaa7d03b5c3"
     },
     "pmtiles": {
       "href": "./Russia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Russian Federation field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 4740385365,
+      "file:checksum": "1220cc2cf303f7ed91f7e264bc46e6766739b24fbcc29899f015c12a7f614c14a4c6"
     },
     "style-2025": {
       "href": "./Russia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220802ac7b13867f413295fae192bb5ecf3a4fe9b87be143eba1c7af28f16879e93"
     },
     "style-2024": {
       "href": "./Russia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220491beca30684208d42da1611d3a07a25a762e3c707f880463c699d976e5c49b3"
     },
     "style-confidence-2025": {
       "href": "./Russia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122081422e9bf15ddbeeb1526e31e93b7bd401f6b1673b9ee155f2da2f0666791806"
     },
     "style-confidence-2024": {
       "href": "./Russia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220d7755b0f225779bf6feafb71443637cf814bd27262c4e781f34716a54ccd687f"
     },
     "README": {
       "href": "./Russia.README.md",
@@ -165,7 +178,9 @@
       "title": "Russian Federation \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4597,
+      "file:checksum": "1220257eda71a4f219329778fb24ec119ef9e83e3ec3c51c0b83e997649750eed1a8"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=RU/Russia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

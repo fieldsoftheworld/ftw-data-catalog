@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Micronesia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Micronesia, Federated States of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 378501,
+      "file:checksum": "122099529f1a233977e6527dfddb00c03ca381a84f1ef638f81065365d0a90a3e97a"
     },
     "pmtiles": {
       "href": "./Micronesia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Micronesia, Federated States of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 371397,
+      "file:checksum": "12209537378ad45af3f73a2128f58e7ebd309c69499703ae593c84d4e97d34cf487e"
     },
     "style-2025": {
       "href": "./Micronesia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220ba10b0caba614522674fb7f04b28790597a05470bb17d0b2fe7f597da5ba8abc"
     },
     "style-2024": {
       "href": "./Micronesia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220692edbb6e1e1c2afd186386d4bc539a2087ae82f23d9729c9768a45cb04edf42"
     },
     "style-confidence-2025": {
       "href": "./Micronesia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "122058d08cfb36cf5bddf7a69b67e4c600332479e4007c6291d94a51da39de01444b"
     },
     "style-confidence-2024": {
       "href": "./Micronesia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "12200fde94e89ece23ef691a6c09501fc531cb2b52ec19884a7f14b9e5c046bee06d"
     },
     "README": {
       "href": "./Micronesia.README.md",
@@ -165,7 +178,9 @@
       "title": "Micronesia, Federated States of \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4613,
+      "file:checksum": "1220e44db8bfe1c1774ece89654e1f9f0be56be9d21fa479f484bddf387cb46a36e3"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=FM/Micronesia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

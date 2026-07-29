@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Albania",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Albania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 75070310,
+      "file:checksum": "122046c668d4fb3f389d5c850e995c361fd76443e4dd1f587d90147ead6beb43a116"
     },
     "pmtiles": {
       "href": "./Albania.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Albania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 59214459,
+      "file:checksum": "12206dff211857ecd5785f08d29dce897b781f91ed566b7ff0f5b5364d007b52549f"
     },
     "style-2025": {
       "href": "./Albania.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220ac5ffa600a1ef45a86daf96e23583267b05e546278f638b23de8a2e66dc10cba"
     },
     "style-2024": {
       "href": "./Albania.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12204ac729992ff6b90f48a320ceda09efe4e8d98c8828c80adc00a3b0be572ef411"
     },
     "style-confidence-2025": {
       "href": "./Albania.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220a4fc5afeee7376d3e0b031605117d606a69319a293753f87416b9957bfc4a38d"
     },
     "style-confidence-2024": {
       "href": "./Albania.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220b47dc92962d98be8fe473af4e903785632d58fa2ce41c39229927e75004a5896"
     },
     "README": {
       "href": "./Albania.README.md",
@@ -165,7 +178,9 @@
       "title": "Albania \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4586,
+      "file:checksum": "12204449c020ce3d7d94ce7a9a1bfa9f8f39fe99b6115fd9cdbf732dfe8002419149"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AL/Albania.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_RS",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Rio Grande do Sul field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 435384604,
+      "file:checksum": "1220be72c027faa05308395e99d38d6052a2cfe3559b2e174d43cf3c6505883398a8"
     },
     "pmtiles": {
       "href": "./BR_RS.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Rio Grande do Sul field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 289927822,
+      "file:checksum": "12203ccdd91014cbb6029537c23caffff08bdc2eb6854df9e9b8243674b1c8f09df1"
     },
     "style-2025": {
       "href": "./BR_RS.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cfe4f6a0c5bec5fba93bd31ab1fdac4399f0e06795970ce3691fbfa68841b6c8"
     },
     "style-2024": {
       "href": "./BR_RS.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200a3e151a34d0feed97882c562852554f1611a5d6ce2ba0a87c41672c0638dcf3"
     },
     "style-confidence-2025": {
       "href": "./BR_RS.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f34f00f53476f628e4f50aa3f7e1a729902711fcdbce6eee03c8ce622fc6c08a"
     },
     "style-confidence-2024": {
       "href": "./BR_RS.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122074251c4631d01a56d9bcdb7b53018b1c8c44b92ffad007b2f1f9f025f9ee8c71"
     },
     "README": {
       "href": "./BR_RS.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Rio Grande do Sul \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "1220fac81b2fd095e2a9ca5cef43f6537df85dc7dcaf088baa3995313942791ceaaa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_RS.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Malaysia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Malaysia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 201675516,
+      "file:checksum": "12209d1bf3985bc506f26dbada2d05e683ccc314218fb6c616ff47eb0071e534834b"
     },
     "pmtiles": {
       "href": "./Malaysia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Malaysia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 127518055,
+      "file:checksum": "1220df0da73dee61f9ae7d8a6bda6eb460c2144d74ba127f0f8e3ebdfba0fee38077"
     },
     "style-2025": {
       "href": "./Malaysia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220056389f515b46ef49e563fd3bdd35d036af681fa974e91e5381395b1bf69d1cd"
     },
     "style-2024": {
       "href": "./Malaysia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12209201595bd5836eba60c53bfde0eb0e9b58cbfd05cae1ee6b3486da73dde09fcd"
     },
     "style-confidence-2025": {
       "href": "./Malaysia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220a91a9fbe9731d37ec28b07a0a287d88a4d213194342f0d978bb7e124dc3a8624"
     },
     "style-confidence-2024": {
       "href": "./Malaysia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12209cdee5b01fe6496699a0e45cf8ddececdec90c559a9f2e1530006b1d75e520d0"
     },
     "README": {
       "href": "./Malaysia.README.md",
@@ -165,7 +178,9 @@
       "title": "Malaysia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4590,
+      "file:checksum": "12207bed0e861ee1f5f64f3fc88494c80141141f63f1db3774cb0be8dd40b9ed00fa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MY/Malaysia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

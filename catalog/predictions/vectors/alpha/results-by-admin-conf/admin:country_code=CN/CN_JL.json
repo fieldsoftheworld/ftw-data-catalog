@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_JL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Jilin Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1632037003,
+      "file:checksum": "12201f1301dd24ea38850655ef5e066d5fa2fb9d6c7265cb23b7ab5cafd914cec199"
     },
     "pmtiles": {
       "href": "./CN_JL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Jilin Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 908749262,
+      "file:checksum": "122034d4f2f9b230fb548f9721e9448c9522e0ee64ea48fac2d7860089fb6f8ade3a"
     },
     "style-2025": {
       "href": "./CN_JL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205f6ee4f09f3c4fa01b41be02bf8af255ba827787f75cb9bec8289261681f9df2"
     },
     "style-2024": {
       "href": "./CN_JL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220471d38aab38161e70dbe1d85e790ba44b4dfafa84a370c3a0bd6c90dfa63ec15"
     },
     "style-confidence-2025": {
       "href": "./CN_JL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e263240955b37eaf453a2839c7ba2ad7afa0b294471c56b8e4d29a5ac6fbf2e2"
     },
     "style-confidence-2024": {
       "href": "./CN_JL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122066d1440f931ffb776d23f92c140e8e089565908943950a9d753ba97480799543"
     },
     "README": {
       "href": "./CN_JL.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Jilin Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "12203a29a3d51087f421fe0d4096837cf77973944d83365b8a3539e71d6a04784786"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_JL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

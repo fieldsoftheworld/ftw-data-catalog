@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Brunei",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brunei Darussalam field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 568287,
+      "file:checksum": "122090585c44d27781585d04a25f6d146a1bbc862ee5da2a07e0e3546655901060a7"
     },
     "pmtiles": {
       "href": "./Brunei.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brunei Darussalam field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 601579,
+      "file:checksum": "1220786c0e4add2ce73547e34dcf5625a8a7ba17e23df8b0a2e046735303ac7f5619"
     },
     "style-2025": {
       "href": "./Brunei.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220f46bd7fe058629d76d388e36453d79650e4a73a81cd12e479e8044692811e576"
     },
     "style-2024": {
       "href": "./Brunei.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220c07ec1504dc8da6edcaeda797f238f2136cab1f202cf4dcbf729a1ee774cb232"
     },
     "style-confidence-2025": {
       "href": "./Brunei.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220da87df999ced636e3f5b1aa66ec0bf8ab56dc4e192f7a54d832ad5196be848d1"
     },
     "style-confidence-2024": {
       "href": "./Brunei.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12204fb65801a8f7866af1815bf0b7ed7d662fc192a8ea919b0dc961b0aa5e4f1103"
     },
     "README": {
       "href": "./Brunei.README.md",
@@ -165,7 +178,9 @@
       "title": "Brunei Darussalam \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4591,
+      "file:checksum": "1220cbaa6ef30e46917274cf9e07c632eb11db6948146760171c07c745d0b2fe47ec"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BN/Brunei.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "France",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "France field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2373430029,
+      "file:checksum": "1220967e8a78ffacae241df32f096d9078586e142f388bebff96f146fca52e47c852"
     },
     "pmtiles": {
       "href": "./France.pmtiles",
@@ -125,39 +128,49 @@
       "title": "France field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1406328796,
+      "file:checksum": "1220909fcedbfb319f308f2afaaba195221287560384f81d9e452793ee344b5648c6"
     },
     "style-2025": {
       "href": "./France.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220c66f7a96c7eec15b039e7a1c3aae9d909eb7ff9dc7434967f54987ef7ebda2ef"
     },
     "style-2024": {
       "href": "./France.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122044a92c7927110eb44ca5c103779760959bc7b67e06edaf74d8cbd8a1673c54b3"
     },
     "style-confidence-2025": {
       "href": "./France.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220fbaf1c9f833853b5dcd936119c9a4af2f15d2d4b148f1ffa2ec29bc1bc18b9da"
     },
     "style-confidence-2024": {
       "href": "./France.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220f732ec2263ebd766112dddb01e444b93c68f0f6c1de357e6294bea1db6376af2"
     },
     "README": {
       "href": "./France.README.md",
@@ -165,7 +178,9 @@
       "title": "France \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4585,
+      "file:checksum": "1220928e57045f7441986c6908c9d944fd5a62653ede231ea8e07356ec3632137aca"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=FR/France.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

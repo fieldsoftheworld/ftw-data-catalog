@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Zambia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Zambia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 6105134034,
+      "file:checksum": "12209ff1e6f1b8089a7fd1603e1d5c20de7290fdd8818b1f8b58522beaffa3e27c67"
     },
     "pmtiles": {
       "href": "./Zambia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Zambia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3180692609,
+      "file:checksum": "1220fed59e3750df2dd0bdd858bdce050dc1f0222bf3c5134637973a9d21175602ee"
     },
     "style-2025": {
       "href": "./Zambia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122007eac5eb22bc11459ee3b82209c938d2f8979220b3f30c0ec626b063fd2629bf"
     },
     "style-2024": {
       "href": "./Zambia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12205a8559bbde4ea10e68590eaf078eeaed7796bc42cf6032fcee5ee6386d05899f"
     },
     "style-confidence-2025": {
       "href": "./Zambia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12204a88f4e3f0e976f54d42b39e20a001b8d2cef8d2270c7b67f68d4b76fd03ad2f"
     },
     "style-confidence-2024": {
       "href": "./Zambia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220dbff0dbca49dec72c7430c5aabe956b16e92b331693e95fa0a50eb0ee6db5b6c"
     },
     "README": {
       "href": "./Zambia.README.md",
@@ -165,7 +178,9 @@
       "title": "Zambia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4585,
+      "file:checksum": "122043cdb97af3bb7a1212edd419e6cf6e1b62bbb1f5f011ce352e37820ac85234fd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ZM/Zambia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_OK",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Oklahoma field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 265179755,
+      "file:checksum": "1220335b80329d4de1ce06371af9988b1b6d8a18848d6588fb50a26c592e85bccecc"
     },
     "pmtiles": {
       "href": "./US_OK.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Oklahoma field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 203622158,
+      "file:checksum": "1220ab991efa14a97d2d50b642335a7d0468c9d29d68cd1db9c80c197745edc1e28f"
     },
     "style-2025": {
       "href": "./US_OK.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cb3da788c8b2b99d9b9957f4132c955c206bbbf5cc516866e4637ffd6edd8842"
     },
     "style-2024": {
       "href": "./US_OK.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122053abccc232ecd52f52a93c9fdc9541cb8096565503f2d49baa2de69f649c4669"
     },
     "style-confidence-2025": {
       "href": "./US_OK.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203a8d54cfc28545cfe97b568a9f8b02a996a37654b8d573018109038453dbfae9"
     },
     "style-confidence-2024": {
       "href": "./US_OK.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220254957aa90f9046a2f779e94379d10f42cdecdfd9073cf0b9c091d04209970ab"
     },
     "README": {
       "href": "./US_OK.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Oklahoma \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "12208994c6cdb8ab5250765954ad7972a12a7174ae72d4894a4ba53e023ec92c72aa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_OK.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_DF",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Distrito Federal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 16219415,
+      "file:checksum": "12201ecbf2a385bf9db18b1aac83f0335846b5024705b3600137af88789decc4d679"
     },
     "pmtiles": {
       "href": "./BR_DF.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Distrito Federal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 14826956,
+      "file:checksum": "1220aeac8325fb3ec94b32ae9fc168fea422d89949289feafc124cb9483eb4ed5d33"
     },
     "style-2025": {
       "href": "./BR_DF.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122078f777174b1be6deb21451a40db2915baed4b6d09527e20d6fc5f1543fa87cb2"
     },
     "style-2024": {
       "href": "./BR_DF.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220426d712d45005fd7a9b51b9e70c93020fb71f564187215679da660dc5d860573"
     },
     "style-confidence-2025": {
       "href": "./BR_DF.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220bfe96e411859b2ab8a8ad3bd1e515e0682f3b3ad01350239decd825e2f1a0d5a"
     },
     "style-confidence-2024": {
       "href": "./BR_DF.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b2b45f688d0329cb1d9b2396773cdd5c76c24aaf2e802833fe85e3990127300a"
     },
     "README": {
       "href": "./BR_DF.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Distrito Federal \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220aac0a40df9607d3f19a16d2c99db7849309d3fe3907034d64c640b15f8ddb70f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_DF.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

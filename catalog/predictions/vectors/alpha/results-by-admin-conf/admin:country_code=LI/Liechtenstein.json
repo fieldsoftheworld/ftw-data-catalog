@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Liechtenstein",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Liechtenstein field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 218429,
+      "file:checksum": "12206230de93464ca9ba75aca30f76ae3c9a158c6aeebb2d411895b017c12884278c"
     },
     "pmtiles": {
       "href": "./Liechtenstein.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Liechtenstein field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 236787,
+      "file:checksum": "122011c0065d6fe1103865824a6075551e4962815f64cbe400c823a2389143af0608"
     },
     "style-2025": {
       "href": "./Liechtenstein.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 924,
+      "file:checksum": "1220883a4ca564b1dd17f7a6f61f4fa9e979974ad4672697630d819d4e85334c3cde"
     },
     "style-2024": {
       "href": "./Liechtenstein.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 924,
+      "file:checksum": "12204551beca900091441488284390ca64c3a26233befb88e82f3b0240e75adf44f5"
     },
     "style-confidence-2025": {
       "href": "./Liechtenstein.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2668,
+      "file:checksum": "1220c9732deb214bb739c7de71d9a0e9dc5b405c7a251a2bbfe8e81cf60ac5da8182"
     },
     "style-confidence-2024": {
       "href": "./Liechtenstein.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2668,
+      "file:checksum": "12207bb5ce223366511aa6ca1de6e9f21f477db3d4733e477af2311d661bfbee7f36"
     },
     "README": {
       "href": "./Liechtenstein.README.md",
@@ -165,7 +178,9 @@
       "title": "Liechtenstein \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4599,
+      "file:checksum": "12208790b9cc9abfc74892aec9a3225948f63f3d011a91082d25a325ca9e38c78ee7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LI/Liechtenstein.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

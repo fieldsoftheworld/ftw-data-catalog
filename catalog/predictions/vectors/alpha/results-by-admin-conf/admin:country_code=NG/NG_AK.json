@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_AK",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Akwa Ibom field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 6013839,
+      "file:checksum": "1220e6cd4123ab531f90bb66e9763c1f81ea076d002b76ee3cfeb7826e2c1e8ffb48"
     },
     "pmtiles": {
       "href": "./NG_AK.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Akwa Ibom field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 6040298,
+      "file:checksum": "12201428fd67a5c5b9747fa6d8ea546b7b30473d68dbef595d61fcc0f68073e0d3fc"
     },
     "style-2025": {
       "href": "./NG_AK.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204e975ea3c4acb0f605d72ac2302e6ebc053c5c944b78230688fa00b7ac4aa7b1"
     },
     "style-2024": {
       "href": "./NG_AK.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207dca3ac20cc0066831e21f191e9d1b8ad48e4f1602eef38f85cbf3f07bf850b1"
     },
     "style-confidence-2025": {
       "href": "./NG_AK.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122059ae822e2efad41389bd762c86991ee7a93a4a7dcb7c389d2d3a63afe8c34aaf"
     },
     "style-confidence-2024": {
       "href": "./NG_AK.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f82c7068ca542dcdfaf2be82c4aca3e0dc4116037de9d1650cab48c940ee2bd0"
     },
     "README": {
       "href": "./NG_AK.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Akwa Ibom \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "12207a0e761334d5dd0673a34d39a65755d1145a7031fa220d7532da4b8e6198ba65"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_AK.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

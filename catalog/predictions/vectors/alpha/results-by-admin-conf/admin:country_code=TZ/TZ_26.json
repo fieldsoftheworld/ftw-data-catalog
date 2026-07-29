@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_26",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Manyara field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 376929366,
+      "file:checksum": "12200e4930f5386891f447b97e34153748c6de26a7f707bf8cb10fab920c7f2f047b"
     },
     "pmtiles": {
       "href": "./TZ_26.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Manyara field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 211643677,
+      "file:checksum": "12202dd0dc4decf14ffdc06d25612bb6f4ed5999f5ff74d0f6b08e1eab505576cc16"
     },
     "style-2025": {
       "href": "./TZ_26.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122033c07e12abb4bd6a53c00f14f21ed9a78ab1123cdc3f9773a3ccd006e1ec189f"
     },
     "style-2024": {
       "href": "./TZ_26.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f57b57d2399e4ee721412df00637d9b84db1c44d380f0c7382225c2cb8bded6e"
     },
     "style-confidence-2025": {
       "href": "./TZ_26.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202d15fbbd499829eb919c290bda029ca6bfaa8900454fc1eec1f874689a52be3a"
     },
     "style-confidence-2024": {
       "href": "./TZ_26.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d458b4a56ffa8a4a6f660eb839b1c8f0e8c229986539a52760e656baedec033e"
     },
     "README": {
       "href": "./TZ_26.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Manyara \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4616,
+      "file:checksum": "1220567d7053a67133a8c844e81f8719a12d241c500106ceb6a728d6bdfb506f69dd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_26.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

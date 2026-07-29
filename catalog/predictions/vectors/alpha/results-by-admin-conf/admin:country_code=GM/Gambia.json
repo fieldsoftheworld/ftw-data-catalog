@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Gambia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Gambia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 147393863,
+      "file:checksum": "12207b6f28a730d951119dbc949004839925a517cf075767e0c7908d1e8753c0dc96"
     },
     "pmtiles": {
       "href": "./Gambia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Gambia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 91167709,
+      "file:checksum": "12207137390b539010faf1a7610cbfd35300d76408fad8e67f1bdcbf1a819d7cd036"
     },
     "style-2025": {
       "href": "./Gambia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220faed1b01ebffaa9ecaf353c5b1363a92612328e20a31286c540ea7829bd65c7e"
     },
     "style-2024": {
       "href": "./Gambia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122051582725171e5dd05615e179eb1db8d3997be0a1a1a986078fbbdde558c866a3"
     },
     "style-confidence-2025": {
       "href": "./Gambia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122069f8f42e9102d00abc711816ec7ac29d56e90c8241574cfe6cbb46be4a4d387e"
     },
     "style-confidence-2024": {
       "href": "./Gambia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220db29928976bfec0540e2f46af97d7d92a249f1fd1ca27e55d92721594aa19433"
     },
     "README": {
       "href": "./Gambia.README.md",
@@ -165,7 +178,9 @@
       "title": "Gambia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4582,
+      "file:checksum": "12209429b97f11e18ac7cc1d881a3092d628561f958e5c4db967b5aac202fe7653a0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GM/Gambia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

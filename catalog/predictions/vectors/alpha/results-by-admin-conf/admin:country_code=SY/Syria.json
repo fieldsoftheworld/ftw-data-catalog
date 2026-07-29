@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Syria",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Syrian Arab Republic field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 849172707,
+      "file:checksum": "1220c1dc59598507cfbbc7874682e7dab5cf9a1c42cc7ba1acbe6a8833c56e2c45fd"
     },
     "pmtiles": {
       "href": "./Syria.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Syrian Arab Republic field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 487979453,
+      "file:checksum": "1220bf477344d5276ddd97ad5bf89d7592c72e21e2e9fd00463e603e53704c438f18"
     },
     "style-2025": {
       "href": "./Syria.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f377713783f93caa62d0e3f328c8ff49b349babec02fab15490198f2e32c1d0e"
     },
     "style-2024": {
       "href": "./Syria.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f86ee6d7713e9fdcb3d1e14e78e869cfc1598deba109a676b0279e1b710fd42a"
     },
     "style-confidence-2025": {
       "href": "./Syria.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203c05729905d1571c6ca9deb25af0a5db5877b5ce4a428d0997081fded1fdddaa"
     },
     "style-confidence-2024": {
       "href": "./Syria.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b7fe8633b1fa36801c27a7cf8af1c632a781040df13c2e53b27b13a7bc8c0d66"
     },
     "README": {
       "href": "./Syria.README.md",
@@ -165,7 +178,9 @@
       "title": "Syrian Arab Republic \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4596,
+      "file:checksum": "1220f75d60436433454623a1a1ce420c69efba0c9e4719f65ccdcce51db785484bdd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SY/Syria.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

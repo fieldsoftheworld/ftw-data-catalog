@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_RO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Rond\u00f4nia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 162464145,
+      "file:checksum": "1220d65c4cb2ba133b7991d2d1b5e9b297d79d822a0dae58ca5dbd09050be45c2336"
     },
     "pmtiles": {
       "href": "./BR_RO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Rond\u00f4nia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 139006301,
+      "file:checksum": "122074830bcfc0f995caaff7bf0d03a1c55b046fecd89b3492fcc35f5b481c2c3488"
     },
     "style-2025": {
       "href": "./BR_RO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12202e924a6ce46bed63df6b5449e4465fe0971c39c4c3703ab2424134e6d29016b7"
     },
     "style-2024": {
       "href": "./BR_RO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122016f08c0540e7552eb819863ee997ce84bb70733a6e296173abfa840fc9534c6e"
     },
     "style-confidence-2025": {
       "href": "./BR_RO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122070797a0d7aef6f1b932b8fc5699b9855558c2065a59d591157f37266038a5a6b"
     },
     "style-confidence-2024": {
       "href": "./BR_RO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205716148591880ab3dd424f7e9f9f6431c4428814d53890773954e2ef6b021505"
     },
     "README": {
       "href": "./BR_RO.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Rond\u00f4nia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "1220f64b68246c84e60f6246bddcaacece2cb38074c35cd1ad2d78794d2d4936fd5a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_RO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

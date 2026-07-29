@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "South_Africa",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "South_Africa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3450977919,
+      "file:checksum": "1220b4bd47e22ccb63f1dc62009ebc601cf2b6ce7c79036fb7244a43f5ca9a6f7371"
     },
     "pmtiles": {
       "href": "./South_Africa.pmtiles",
@@ -125,39 +128,49 @@
       "title": "South_Africa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1984000272,
+      "file:checksum": "1220e3dc7c322b46b2ac629065a3cec4e7746765312ab24aa3b14eafba5e93d8240c"
     },
     "style-2025": {
       "href": "./South_Africa.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "12207d40cd8d03e53bbc1da68cb6b3de47a2e4910f1a9b76b1e9b1f38e050508351a"
     },
     "style-2024": {
       "href": "./South_Africa.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "122029e703d7bc974f49ed97f79b46e33dc6c2ece0c48d3f375bc05684fd317716fb"
     },
     "style-confidence-2025": {
       "href": "./South_Africa.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "1220509da5a8ee4ed2daca6a8c5524b0918c40a5cfca9c25ed341bc610c2f6b894ee"
     },
     "style-confidence-2024": {
       "href": "./South_Africa.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "1220b6c128ec7a57dc7b078b9153b232b775a60e2ad444742d6894dd8b5b1cdb214b"
     },
     "README": {
       "href": "./South_Africa.README.md",
@@ -165,7 +178,9 @@
       "title": "South_Africa \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4603,
+      "file:checksum": "12207877838161a52202b86c14c53cb9b0a3f3461f523dbd14b80d912e7108e276f4"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ZA/South_Africa.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

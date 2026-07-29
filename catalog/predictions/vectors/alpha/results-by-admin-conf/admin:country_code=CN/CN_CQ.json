@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_CQ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Chongqing Shi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 394547530,
+      "file:checksum": "1220c6c2c0a3133b390480780945e51c8a2055a87e496fb640fcefdda1b29c5471d7"
     },
     "pmtiles": {
       "href": "./CN_CQ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Chongqing Shi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 259543778,
+      "file:checksum": "1220effbb49c81b11fc35591bafbefe98479621c7f975ceefceef0c132232006bc8f"
     },
     "style-2025": {
       "href": "./CN_CQ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220dc542ab88e7499a4ad5e3b063951fbaa050792d779fcd5d0cc91a22a6196518f"
     },
     "style-2024": {
       "href": "./CN_CQ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207010d63e4a47eb952122e583eccdd1467cf65fae5a27063f40962d84e8d7d200"
     },
     "style-confidence-2025": {
       "href": "./CN_CQ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220539160c1583747a2c51471a05e9281a3917303c87596e0d76c26a704df45a85b"
     },
     "style-confidence-2024": {
       "href": "./CN_CQ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206c9d0f348461c595b597f50e2053ae1d64a72378fa849db71e8c436be8cac17e"
     },
     "README": {
       "href": "./CN_CQ.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Chongqing Shi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "1220dca340c3ac8b96c41ec9122f0f16482c677805cc7c8bc27d78f7fa6dda036bde"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_CQ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_MH",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Mah\u0101r\u0101shtra field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 6122606258,
+      "file:checksum": "1220968a45af337e92bd11c86ab4f3d7f7e5e272a0630f7c071ef4f076744b6107bd"
     },
     "pmtiles": {
       "href": "./IN_MH.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Mah\u0101r\u0101shtra field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3030359983,
+      "file:checksum": "1220b387d50aa3d68853ea7a0af27a8c3557c3a9984f610907703ebd8ae9c22f05f5"
     },
     "style-2025": {
       "href": "./IN_MH.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122085e5510c4485125387d95d8a22b64feb30e1d4a331506582bf58effce10f8e84"
     },
     "style-2024": {
       "href": "./IN_MH.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220497517dbd4acca0c34652a140e76275cb32c63211cb268868e716f6735b2c54d"
     },
     "style-confidence-2025": {
       "href": "./IN_MH.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c4e4830893038a03d97707ef75003599fc6cb2aa1cbe176c6650a8e1920d207c"
     },
     "style-confidence-2024": {
       "href": "./IN_MH.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220adc7605e9fcb005f6297aea1516be8e813f0273a68e48a993e4d3338c86510d2"
     },
     "README": {
       "href": "./IN_MH.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Mah\u0101r\u0101shtra \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220cc0adcc64ed2ac4f4b307a42c10167d5da8035c2198e498254f289d54e21cec9"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_MH.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

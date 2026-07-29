@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_SD",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Pakistan \u2014 Sindh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1991635567,
+      "file:checksum": "122034bab2aca1c8e3d284ea0fbd44e8616123a544b4db6f7315cfbb557972ed8d69"
     },
     "pmtiles": {
       "href": "./PK_SD.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Pakistan \u2014 Sindh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 974110426,
+      "file:checksum": "1220810cf89787ce0c66040d21a24de995c1bd626fc1307fbda04d77b2d9f96ce094"
     },
     "style-2025": {
       "href": "./PK_SD.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220522a1e32c239afe1895bfe62c91ada92915a0ec34e02b5b0d0c5aa372fcab99e"
     },
     "style-2024": {
       "href": "./PK_SD.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206d63923bf4615bac599fc14f33792b6fcb22e6a3fdf4369ddf2426aed888a98d"
     },
     "style-confidence-2025": {
       "href": "./PK_SD.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207a3258c5707371ac528a15e9413eca19e1aac20988f129ffb822d46684bd2c53"
     },
     "style-confidence-2024": {
       "href": "./PK_SD.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208da6edc698abdc139cb8dbeac6ba103812d63eea3ee79ce4924243a833e8f2cc"
     },
     "README": {
       "href": "./PK_SD.README.md",
@@ -165,7 +178,9 @@
       "title": "Pakistan \u2014 Sindh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "1220fadd721daa5b144557e39b48ec83e8e9212ef49d6fc851351d16c8951e27e2f0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_SD.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

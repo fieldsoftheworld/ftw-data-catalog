@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Honduras",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Honduras field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 452654333,
+      "file:checksum": "1220387e09affa8c5d109d8d62f4ab8991be82e0b85674ec955b62891f345b665ef9"
     },
     "pmtiles": {
       "href": "./Honduras.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Honduras field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 299099284,
+      "file:checksum": "1220d0ebbee5b07dafa7321a2b9fe11353a8808cb600f92c864e65558cee27ebdf09"
     },
     "style-2025": {
       "href": "./Honduras.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220926cb01d4995b9c1dfa396dfd7e1d5e72629edb76ff966bdfcd0ecf6e5e2542b"
     },
     "style-2024": {
       "href": "./Honduras.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "122011fc06cc6f6d8d652ff4a1e1dc3c1aa9b8b3d782a4a17331265ca2cb4769ef1f"
     },
     "style-confidence-2025": {
       "href": "./Honduras.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220b065c3a722488d6edd090a1af33aca63d991d8e52cc52a458bf578a1be8c590b"
     },
     "style-confidence-2024": {
       "href": "./Honduras.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12205f560a3f03053b99f74de796205869c4fc09ba058afaeef270c4908d6e1e4315"
     },
     "README": {
       "href": "./Honduras.README.md",
@@ -165,7 +178,9 @@
       "title": "Honduras \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4590,
+      "file:checksum": "1220b5ac0bf54db5110a95bd5b08fbfee6252d70f579d1e1d58ba61991be8451f52e"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=HN/Honduras.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

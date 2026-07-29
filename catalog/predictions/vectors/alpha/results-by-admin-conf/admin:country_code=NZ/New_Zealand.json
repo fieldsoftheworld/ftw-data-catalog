@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "New_Zealand",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "New_Zealand field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 254317600,
+      "file:checksum": "12201c0ab1250326fc8d9cef03acf56cb5fff0a01264d9987194a9c3a1189d4c2f8a"
     },
     "pmtiles": {
       "href": "./New_Zealand.pmtiles",
@@ -125,39 +128,49 @@
       "title": "New_Zealand field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 163144281,
+      "file:checksum": "12208d3c714c6a459e4c56b0faa9d63f707695948a59d96b2c713077f2f214faff1a"
     },
     "style-2025": {
       "href": "./New_Zealand.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "122093582770d39263cfe706a40ed9cc1b56de5fe2e19a1e8b845b7864f762adb4e2"
     },
     "style-2024": {
       "href": "./New_Zealand.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 918,
+      "file:checksum": "12201685860383789a4eb9bfb7d22d7c4ab2b3963460cef837808b22a707e6eaacaf"
     },
     "style-confidence-2025": {
       "href": "./New_Zealand.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "122044560d3af75bd06c54deae697e8396ffd82a395493b242f8cac491dfc166b5a9"
     },
     "style-confidence-2024": {
       "href": "./New_Zealand.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2662,
+      "file:checksum": "1220a9710930eeaa11a69ad634bb884472b50c667e93583115cb11baed9b2e329d5a"
     },
     "README": {
       "href": "./New_Zealand.README.md",
@@ -165,7 +178,9 @@
       "title": "New_Zealand \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4598,
+      "file:checksum": "12200a90b848404298710a9b84cb0e469698946f24d2ca10450407953afb5d0ef271"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NZ/New_Zealand.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

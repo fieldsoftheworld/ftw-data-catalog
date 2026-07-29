@@ -3,7 +3,8 @@
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "crop-consensus",
   "geometry": {
@@ -85,11 +86,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/crop-consensus/crop-consensus.json",
-      "type": "application/geo+json"
-    },
-    {
       "rel": "llms",
       "href": "./llms.txt",
       "type": "text/markdown",
@@ -141,7 +137,9 @@
             "valid_percent": 9.481
           }
         }
-      ]
+      ],
+      "file:size": 1040896487,
+      "file:checksum": "12204d54b2d08832e1e6d3b6706b8697933096ea2335ee1c9f39200ff5d4b8fafb22"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -149,7 +147,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 3060,
+      "file:checksum": "122025f8bb4ce8f18960fdcefb92ab7bc8b6794b3be28d284208abd512d7ee23523e"
     }
   }
 }

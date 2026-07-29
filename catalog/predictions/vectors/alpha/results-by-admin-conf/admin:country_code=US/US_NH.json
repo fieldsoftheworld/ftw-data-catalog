@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_NH",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 New Hampshire field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1496963,
+      "file:checksum": "12203e45db406d457eac669469f5c1395192def0f4c0bf506dba825c323eae10450c"
     },
     "pmtiles": {
       "href": "./US_NH.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 New Hampshire field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1331573,
+      "file:checksum": "1220ced0f63fe0365b62f67b9a25112fa997ec4169759f925dea5ae6b39de30ae1ca"
     },
     "style-2025": {
       "href": "./US_NH.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201c43c2719aa38b73b3aa99a941a082b18d625c1fad19dab3d26b9ccdf3c4790f"
     },
     "style-2024": {
       "href": "./US_NH.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ff4db5c2c75cec06c06206b391bde0ee699502dd5f02060899f58aea4d888b24"
     },
     "style-confidence-2025": {
       "href": "./US_NH.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e7aa9973933c22809880bbb3de0557f3f4c1255059391607f6128556f9077ae4"
     },
     "style-confidence-2024": {
       "href": "./US_NH.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d998fbe0b95ba53a96dd323351e36c0fb53b738edea69fd7f82e22e2eae6a756"
     },
     "README": {
       "href": "./US_NH.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 New Hampshire \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4440,
+      "file:checksum": "1220ce9f9927f93d23f4406873a9d0e300d570d71de7aeeacb7d3578e6847e492c99"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NH.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_HR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Hary\u0101na field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 937528657,
+      "file:checksum": "1220fcea8e6b0a8a19c2ad40ef49038fcc34890a32679306bedbfbcaf3bc222e6408"
     },
     "pmtiles": {
       "href": "./IN_HR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Hary\u0101na field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 568957132,
+      "file:checksum": "12203193d0c364298bf5a59a3f36ea70720cde7412d8137b7a0dc28bb22965932965"
     },
     "style-2025": {
       "href": "./IN_HR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220665603e4ecd47fade4de7bf0829279c35a78665420172967ea5d02993c18343c"
     },
     "style-2024": {
       "href": "./IN_HR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201efd925ed7813f0de1caed262a92609a8f105f9c24a91e112303855b4fcbd7ab"
     },
     "style-confidence-2025": {
       "href": "./IN_HR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122045e2bb450c4b2e794720d860cdcf4ff667f903d3c3ce4a0daab8f4e8932c67dd"
     },
     "style-confidence-2024": {
       "href": "./IN_HR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220003739557622afd35d1b7f499df5f30529e06118d1d6bfa318c4fe4f58867d50"
     },
     "README": {
       "href": "./IN_HR.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Hary\u0101na \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "12206137c905957383f07a7ee3fc796826b9365ca85a60a21d7421e6e09800d4ce3c"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_HR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_CH",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Chand\u012bgarh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 353326,
+      "file:checksum": "1220dc9e716eaa38fd63b0989b220a9116165dd949bbe96db1e2a9d6df6991e059f8"
     },
     "pmtiles": {
       "href": "./IN_CH.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Chand\u012bgarh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 546752,
+      "file:checksum": "122058c35615825bb6303f9bf42d492031cacdaa196e8fd9f9fad5171679230e189e"
     },
     "style-2025": {
       "href": "./IN_CH.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204f6820ea2b861a2a40f0fbddc86f35732d49bcb374ec221e1669ebbabd3aba15"
     },
     "style-2024": {
       "href": "./IN_CH.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b3f58668df03a70d3730cf51f35ddd353a088adcbb4216b7807aa5405df589fc"
     },
     "style-confidence-2025": {
       "href": "./IN_CH.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b417b5a393242ba11cf85f2cb9c9bac979b34a93853fd9d4d97d14b642fcb74f"
     },
     "style-confidence-2024": {
       "href": "./IN_CH.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122052124cd86083a14e80be859f824dcb578f40aec81fcc8c837e59cc5a040a1ce9"
     },
     "README": {
       "href": "./IN_CH.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Chand\u012bgarh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12203edd1deddee37e306d2f2a8d54c80c8856e0762a0c75738ee3f0d811b6776d65"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_CH.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

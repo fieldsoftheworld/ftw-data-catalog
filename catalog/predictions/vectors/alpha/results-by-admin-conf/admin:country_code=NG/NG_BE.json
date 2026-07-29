@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_BE",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Benue field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 496620116,
+      "file:checksum": "1220b9881a5884ae3a683e8ad04c5dcaa0f9fe1a8760817797ff78eb46ba624f3c42"
     },
     "pmtiles": {
       "href": "./NG_BE.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Benue field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 233195241,
+      "file:checksum": "1220e8b8df8c8a4945b698eeccd7e93edd7998dc5aff790531f479f4a0c6a5b65b7d"
     },
     "style-2025": {
       "href": "./NG_BE.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f8a51a6018f8e22f769696c481e70176e1a924bd785aba0be406e84a703ddb12"
     },
     "style-2024": {
       "href": "./NG_BE.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fe670e60823ee9e47cfd41e3b9d950ec6790bec68a26d6e9a5657bfd731a3268"
     },
     "style-confidence-2025": {
       "href": "./NG_BE.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c53fad78c84013b033055a6501a6906161827ca375dc74eea0cd3887b890a54b"
     },
     "style-confidence-2024": {
       "href": "./NG_BE.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209f9b42da77ee5302ca8833713d6fdfa1a74193363b338b579335221feacd12ac"
     },
     "README": {
       "href": "./NG_BE.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Benue \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12209765fa40ab91d248cdb3f62a1cc087e017221e9af5107e12bf99c51c0b16484f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_BE.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

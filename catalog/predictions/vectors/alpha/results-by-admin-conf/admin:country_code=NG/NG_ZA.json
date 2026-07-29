@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_ZA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Zamfara field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 635308712,
+      "file:checksum": "12207833b82f3f0a09a7c22e84e68079181a742641d534c47a0a2558ee76f377b05d"
     },
     "pmtiles": {
       "href": "./NG_ZA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Zamfara field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 316322445,
+      "file:checksum": "1220743d1eb8b206277cd74a582711278f49d6a9b1ff6f05015dafdb16a6089aa7ff"
     },
     "style-2025": {
       "href": "./NG_ZA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206442dad92b136d9d23e4ba8bc2545e714977db5cffa0c79bb17d32bb5f0ab1ca"
     },
     "style-2024": {
       "href": "./NG_ZA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220beb0de06e4eb88faf51fb70356f8fd3ee4f20b04b483c90a2d80ee0c594a33ba"
     },
     "style-confidence-2025": {
       "href": "./NG_ZA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b9c50c311705c0e8270d4a366c0aa1110ec6027988ee50ffd099a99d2dbfa0b9"
     },
     "style-confidence-2024": {
       "href": "./NG_ZA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ba9a2821f7feecb420961cfd5811700adb2b01cfa1e9884c88a62f507fad209c"
     },
     "README": {
       "href": "./NG_ZA.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Zamfara \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "122028d701ec15bd04c1e9b58e5fa4337a8413a1f4293933d5fc213de1be3aa28880"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_ZA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

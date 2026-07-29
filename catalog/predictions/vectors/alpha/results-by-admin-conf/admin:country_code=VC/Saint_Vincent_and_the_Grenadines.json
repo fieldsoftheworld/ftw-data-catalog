@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Saint_Vincent_and_the_Grenadines",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Saint_Vincent_and_the_Grenadines field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1023258,
+      "file:checksum": "1220b336d430e21974cbb165f1b2ee55b16bb59f175957180cab51f2efa6d1673a3c"
     },
     "pmtiles": {
       "href": "./Saint_Vincent_and_the_Grenadines.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Saint_Vincent_and_the_Grenadines field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1299144,
+      "file:checksum": "122047f9f50dc9fe69df91096adb12243ace0e5a1924a418e5c5419fd7e9687e262c"
     },
     "style-2025": {
       "href": "./Saint_Vincent_and_the_Grenadines.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 981,
+      "file:checksum": "1220e6fb5961d72eb5c674d87539220a343e30a846f279c37774aa27b8301707346f"
     },
     "style-2024": {
       "href": "./Saint_Vincent_and_the_Grenadines.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 981,
+      "file:checksum": "1220785ca7ac1009bf60551cef6737cc011525be40ef81027eacd1e2dda3fb1c17e4"
     },
     "style-confidence-2025": {
       "href": "./Saint_Vincent_and_the_Grenadines.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2725,
+      "file:checksum": "1220904d2db2d2639a0dfb974da58158ceab74fb267e4d6320d1025f6dcb79f79207"
     },
     "style-confidence-2024": {
       "href": "./Saint_Vincent_and_the_Grenadines.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2725,
+      "file:checksum": "1220a3315f2dde9c260b953632db2501b18b0fc019c6fd5e2ea094d1b536d772b20f"
     },
     "README": {
       "href": "./Saint_Vincent_and_the_Grenadines.README.md",
@@ -165,7 +178,9 @@
       "title": "Saint_Vincent_and_the_Grenadines \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4658,
+      "file:checksum": "1220eb03413054d222d179136117b7d7a7adb689aa8a6649d056c0a969f5b60a2817"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=VC/Saint_Vincent_and_the_Grenadines.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

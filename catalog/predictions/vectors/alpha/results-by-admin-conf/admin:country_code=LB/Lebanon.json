@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Lebanon",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Lebanon field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 36146205,
+      "file:checksum": "1220dcfcf0e28ccc433ae621e7d99f6509c1d4ec4302470ef28bb022fdc24263b351"
     },
     "pmtiles": {
       "href": "./Lebanon.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Lebanon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 25257376,
+      "file:checksum": "1220ff6b6082b731cc14b1c9f7f589450a2927c1f753587ea4f7324fec55aac59bd4"
     },
     "style-2025": {
       "href": "./Lebanon.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220be2293451959ed6a8b0062fe1f8518034c572d326d380d9884deb0cf7b1db0e6"
     },
     "style-2024": {
       "href": "./Lebanon.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220846070890bdd5dddaf4e11bfad6425275bb8a7653537b4cbb60d3fc8a4aa7744"
     },
     "style-confidence-2025": {
       "href": "./Lebanon.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220d4da85b8f0b9b26fe8796546bb9df899d2aff75e3178d05ab9c77bf321fc5d3e"
     },
     "style-confidence-2024": {
       "href": "./Lebanon.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220d15237d9dd7eaef86a7014bb4de22db2c74446bd7ca5c264d5099e8357893c2e"
     },
     "README": {
       "href": "./Lebanon.README.md",
@@ -165,7 +178,9 @@
       "title": "Lebanon \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4585,
+      "file:checksum": "12207f56597d731d10ab97a32b27a4951543826f2350bca031c63414ab22af3ff621"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LB/Lebanon.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

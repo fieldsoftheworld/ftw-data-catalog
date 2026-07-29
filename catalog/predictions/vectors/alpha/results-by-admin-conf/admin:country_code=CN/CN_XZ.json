@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_XZ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Xizang Zizhiqu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1577326070,
+      "file:checksum": "1220530b443fefab662728e482d21cf4853ae37c550a6bb04e7dd99c0116106560c2"
     },
     "pmtiles": {
       "href": "./CN_XZ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Xizang Zizhiqu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1009239353,
+      "file:checksum": "122096da991fc1a3c7e9fe5ea9d814fad04180e63c26cc64ea6a02f9c682db22989a"
     },
     "style-2025": {
       "href": "./CN_XZ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f8b1f71145ade2c7605d3f153d1277164783655de71a27f01164530bbb9a9486"
     },
     "style-2024": {
       "href": "./CN_XZ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b1b8c4564c59e2ca42fdb1181cb971176ba9bfab9649a1ff5b2982e0b67fd0cb"
     },
     "style-confidence-2025": {
       "href": "./CN_XZ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220969c79620a97dda5397364e7c66454c2ffe1c77b106916a199e98a2fe872c14c"
     },
     "style-confidence-2024": {
       "href": "./CN_XZ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220901022ba9f25476d34d0c13afaad8951f506e9dd71c22290aa447f5847bf79b7"
     },
     "README": {
       "href": "./CN_XZ.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Xizang Zizhiqu \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "122040b064c33535508cc2dd25af9643e2cf238b37294fb0c40e582a06f454912c99"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_XZ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

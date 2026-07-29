@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_ND",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 North Dakota field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 499317681,
+      "file:checksum": "12203201ce42c63cb209fff4372471eb843ef759ca6f5924f51ea93049302e0efc12"
     },
     "pmtiles": {
       "href": "./US_ND.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 North Dakota field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 380515063,
+      "file:checksum": "1220a60c76d80aa5c427f2defa6794ca5e38ecc36b418b668fd2f29d78228b8cde91"
     },
     "style-2025": {
       "href": "./US_ND.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207b3b64ce0d9820965fb596879ce0fd91bb7b30a41811c534d2678c0d5d63e4d1"
     },
     "style-2024": {
       "href": "./US_ND.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201cd80294f96e866c9245016e4ed95c8d743108e15378d8bf428006861ae5b488"
     },
     "style-confidence-2025": {
       "href": "./US_ND.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122084c6e79129e715ae08d4ddd2f2083642ca3dd74f8a9aef92460751bd89289729"
     },
     "style-confidence-2024": {
       "href": "./US_ND.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205caff17dece9fca8e248a4652d7fae82258b5017d440eedba59a1af1e05d8676"
     },
     "README": {
       "href": "./US_ND.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 North Dakota \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "12201a7daf5f17b5b39c8f6b40bbedf00ac5b1f3c8c52870440346970e8cde50dc6a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_ND.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

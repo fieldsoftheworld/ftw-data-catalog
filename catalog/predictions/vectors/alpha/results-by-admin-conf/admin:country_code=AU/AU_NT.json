@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_NT",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 Northern Territory field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1561981496,
+      "file:checksum": "12204a8bac0e220d1e0203b9607784f1a8d2d0e163933341691e2548c0603ca745d4"
     },
     "pmtiles": {
       "href": "./AU_NT.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 Northern Territory field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 977514603,
+      "file:checksum": "122063e0b474a7680b04149b87bdeadbeed4b870d53101305f8097be247244a07be8"
     },
     "style-2025": {
       "href": "./AU_NT.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206e65cf2bfb60943a4f8f4a35fecf18d6fb4ebbc3111039977b61b5085f80b21a"
     },
     "style-2024": {
       "href": "./AU_NT.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200dbdedc31b3a397203bde4611f3e3cca890f071a187e198d05ff1a20dd31eb78"
     },
     "style-confidence-2025": {
       "href": "./AU_NT.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206497febbba5f873804cb0db659ced3fcab74f0ea9bf8598c3880313c6c91767a"
     },
     "style-confidence-2024": {
       "href": "./AU_NT.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205be72bd46cd995f4ad713d3190b82ba518fdecbe9d20fec8baac8e1d3cef8303"
     },
     "README": {
       "href": "./AU_NT.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 Northern Territory \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4446,
+      "file:checksum": "1220db97569b7b4053be7ce1ed78c7e5b5a3e6d99dc61fdfe808783db1aa9a5e63c0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_NT.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_25",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Tanga field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 280416491,
+      "file:checksum": "12207ee6c4b69e0f0d2f4231e46b65329957323fa608fe04a1ac6c1cfbc1c87ddcca"
     },
     "pmtiles": {
       "href": "./TZ_25.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Tanga field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 150732814,
+      "file:checksum": "122085a6a4591bca191272dd779c53f235963c668ec538915de2b4466a980511f461"
     },
     "style-2025": {
       "href": "./TZ_25.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122072e80f7783960bab31a9017efd95d70ef0fb2e58e61f7014c46b15c2b49950d2"
     },
     "style-2024": {
       "href": "./TZ_25.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12202bbc044003b4f14d57c80ac82552b5de3d0a621c6a2258202cfbce548c454c64"
     },
     "style-confidence-2025": {
       "href": "./TZ_25.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206ac6794e89a95b88c5b055d4ccb16abd18232d37ec7594873006f9d623b1ef7e"
     },
     "style-confidence-2024": {
       "href": "./TZ_25.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202e5767dbba1b9f7208393f62ce0de3ee129dd02e093bab0d55683157bcbc7cb5"
     },
     "README": {
       "href": "./TZ_25.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Tanga \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4451,
+      "file:checksum": "12207357089e7dc906a6d584c12b05eae4a8b2870dc8f33e35a8e9f4d8335609d5ee"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_25.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

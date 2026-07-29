@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Colombia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Colombia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1537801849,
+      "file:checksum": "12204979dc6d48a96d32e9ea232b152ae28f3623d8f9565aca472758d5685b4df674"
     },
     "pmtiles": {
       "href": "./Colombia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Colombia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 917042133,
+      "file:checksum": "12202a253c7eecd1ce1eefbf90541f156eaf73780049654de8170c35aa887e319575"
     },
     "style-2025": {
       "href": "./Colombia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "122098540d99c58d3e104e89166ef72c68507e513da1da6ab1ddb764cb8e9c691d71"
     },
     "style-2024": {
       "href": "./Colombia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "122019da2a443e6f7fa6a8b894daa1330c04b6e9b0432a669a71b2bcdb3c63627eae"
     },
     "style-confidence-2025": {
       "href": "./Colombia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220244fb8698bd4b20c9e813c591710e63536e6dec9a88d1af82fd78f27ed500078"
     },
     "style-confidence-2024": {
       "href": "./Colombia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12204e2d61ca0c6071245a73cd91c2784d70e34558bdc3330b8fa08560584bd72e84"
     },
     "README": {
       "href": "./Colombia.README.md",
@@ -165,7 +178,9 @@
       "title": "Colombia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4591,
+      "file:checksum": "1220f17ec8f44ac33d79551e9f28bc6492cb7de24f0d2b62bf70d05f9ca2432365d8"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CO/Colombia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

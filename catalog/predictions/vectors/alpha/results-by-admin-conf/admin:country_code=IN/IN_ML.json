@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_ML",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Megh\u0101laya field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 19724261,
+      "file:checksum": "1220e2111015fa124a7e8e11abd0237e2e1997fc0cad40a89245d82a86380c38b369"
     },
     "pmtiles": {
       "href": "./IN_ML.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Megh\u0101laya field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 23407038,
+      "file:checksum": "1220ac33c8e96e712e552cfe9c3d7e340315398a1a45b06545f6eac93fa018f4a7f3"
     },
     "style-2025": {
       "href": "./IN_ML.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d3fa67956f3fcfcc2e6dc65fdaaab1338f6a1bfb18d4b208494d041198f906a4"
     },
     "style-2024": {
       "href": "./IN_ML.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220632d3098204f6950ffa7e8f3fe1be5fff222c3dbd2b13aae111007e0045cec3e"
     },
     "style-confidence-2025": {
       "href": "./IN_ML.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f820b983748ea448e4a11b78e31b641b1d263fe1d9c52452231ee7031b99f3ee"
     },
     "style-confidence-2024": {
       "href": "./IN_ML.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122068736e22f7ec6f88856597667ad1226fbdd7b9e4dd0268d4eaa6a0d24e2fcc5c"
     },
     "README": {
       "href": "./IN_ML.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Megh\u0101laya \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "1220e204b3a07d3126d16b594de3bbc3bce8dcb54ffa4fd03752fe9b19d6cc835e80"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_ML.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

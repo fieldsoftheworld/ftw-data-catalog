@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_KT",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Katsina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 446423460,
+      "file:checksum": "12201fed1f5b07873590746cc71882d9dde114ab41619a78efbea1a22213deb59cb3"
     },
     "pmtiles": {
       "href": "./NG_KT.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Katsina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 230580642,
+      "file:checksum": "12209b0ab80f2bb56b7638f7520e19ea167124d8d8e4ba483a4bf69bc703ba7cbb4f"
     },
     "style-2025": {
       "href": "./NG_KT.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200887ed1d9e6c79b38cbbf7b85fa840884cb155dc74e67acfd23031a62fbbaed7"
     },
     "style-2024": {
       "href": "./NG_KT.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122030f193e1d86d1849b7980f4b65f548915ea7ecfcedf21e954939ce4fcd4492b2"
     },
     "style-confidence-2025": {
       "href": "./NG_KT.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205f5a3dd1cf744aeaa669f6e12b00bddefe33cf2bebbb667744176f233b6c0a9a"
     },
     "style-confidence-2024": {
       "href": "./NG_KT.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122022a1fed52396a79838c6a884e5ff7640a05c91e59bd83d6e95bd01917cc6c88e"
     },
     "README": {
       "href": "./NG_KT.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Katsina \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "12206bdf3decf3e0093927a0a58c81521cebfb20b2eb193fc4225724c2aef9edbd84"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_KT.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

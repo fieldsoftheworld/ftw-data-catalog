@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_KN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Kano field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 371422152,
+      "file:checksum": "12201c4b06cd8589f7879ad40282ed3234654824d85a07625e2c62fee4ac4f946173"
     },
     "pmtiles": {
       "href": "./NG_KN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Kano field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 188274385,
+      "file:checksum": "1220eb6d2aed6979a4e4dbf3cf8edf9889e0afc6cdd2fd60c5700caa00a26b636248"
     },
     "style-2025": {
       "href": "./NG_KN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220205c6fd4904bb6c19cedb73708767c071bd33614fa853d221aab32fbf091fd99"
     },
     "style-2024": {
       "href": "./NG_KN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122098d185542872c87cbd61e461ac02dd0a8d7b9360d109d555caf0def2564afabe"
     },
     "style-confidence-2025": {
       "href": "./NG_KN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206abc747e58d8c619256bd7dce8d4bc3e37c8994eb8440ff39d70895baf106d15"
     },
     "style-confidence-2024": {
       "href": "./NG_KN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a4a363c24fd756a67689129b83bbe7cb3d4bd77860378964637236b9a235bd0d"
     },
     "README": {
       "href": "./NG_KN.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Kano \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4429,
+      "file:checksum": "12203ef8ca66708ae1b0f896759a61f53f110124793d524e176b0042943e5d117de0"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_KN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

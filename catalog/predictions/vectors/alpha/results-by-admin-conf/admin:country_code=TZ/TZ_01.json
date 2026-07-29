@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_01",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Arusha field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 203932109,
+      "file:checksum": "12208231b207bf4d38f4e4d4f4d0bbf249f359ae3c5ce88dbb6a20ae927de2a055db"
     },
     "pmtiles": {
       "href": "./TZ_01.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Arusha field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 122104731,
+      "file:checksum": "1220be41ce492dfc32e51f51d90d99dae090ba64676b9d1bc34817f16e8dc19f4e11"
     },
     "style-2025": {
       "href": "./TZ_01.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220677b1fcc73e010c65108d99860d432c7f22f969b42e4596ed55476436d806441"
     },
     "style-2024": {
       "href": "./TZ_01.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122006312e397aa20cf13fdeb2878f6e895ec3e742fa4827ab65f80e10f2704be75f"
     },
     "style-confidence-2025": {
       "href": "./TZ_01.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122013a0078e119303086ca0e8c08242c9d4cc23945ce042622dd24aa0ab44de0670"
     },
     "style-confidence-2024": {
       "href": "./TZ_01.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206367d3e94cbfa83e95e642fc11fcf040132b52cbe4b9c63173ff798c423cd874"
     },
     "README": {
       "href": "./TZ_01.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Arusha \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4615,
+      "file:checksum": "122008453424424a1ba3508ad731c709bcf02230d5bacf9f3246469e42ffedb5d906"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_01.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

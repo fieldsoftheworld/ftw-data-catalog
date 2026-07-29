@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Nauru",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nauru field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 16927,
+      "file:checksum": "1220c764756b591fa87af57d82e760d25d974093eedc63bd0849f8229f3f2b1a5851"
     },
     "pmtiles": {
       "href": "./Nauru.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nauru field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 5494,
+      "file:checksum": "122077c57caf72fd5563348f2353f4b3a288ce7e3cb266a5c7d67bef1b43e993127e"
     },
     "style-2025": {
       "href": "./Nauru.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122045680030a234c5ff2375f6d35d6d4168b0666e908636e48301d1ab2bd2418029"
     },
     "style-2024": {
       "href": "./Nauru.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c3e1ca403c78032072b735f328409ffaa7e4d9b1f1a7b622322bc861074c20b4"
     },
     "style-confidence-2025": {
       "href": "./Nauru.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ec33db97118f3518241d51f5a6df5528ed972038174ecf5aefa3cdda1a1d3686"
     },
     "style-confidence-2024": {
       "href": "./Nauru.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a3e499d10df05a6238eea8f0b28aad0a892fd139b647894fe5e095634cc2cfe5"
     },
     "README": {
       "href": "./Nauru.README.md",
@@ -165,7 +178,9 @@
       "title": "Nauru \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4574,
+      "file:checksum": "1220889d0e3746b1487c0ad0037cd39a9607ed3a9d45fd3686ba86d95b7e71be752a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NR/Nauru.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

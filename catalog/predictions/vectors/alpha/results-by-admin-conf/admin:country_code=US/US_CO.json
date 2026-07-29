@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_CO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Colorado field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 512070088,
+      "file:checksum": "1220596f77cc552a5013acb6943ebc6dfa0293ac520005e92d7d9756853c6d20f7e6"
     },
     "pmtiles": {
       "href": "./US_CO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Colorado field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 354260759,
+      "file:checksum": "122015cbcd64ba04333ec94e7cc6add20f9bcf46ec54d519850ecafdfff9d0e4dfdf"
     },
     "style-2025": {
       "href": "./US_CO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d411afaa35dfb0408ca6f6bc7c4ef7f894070b2bbc8c135a63e1c87ff2e28d73"
     },
     "style-2024": {
       "href": "./US_CO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cb851a4c46af6a372278078e1a95af99280079311ff047ade882932df634bd8c"
     },
     "style-confidence-2025": {
       "href": "./US_CO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a5cde2d9f7f1f621c63ecb5662f5f13af08c6fc08ce444d535e51bb4be37900a"
     },
     "style-confidence-2024": {
       "href": "./US_CO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122090f6149b9005d579774820277e9e33927313a4f4df1eb8bcd313f8f6f218738d"
     },
     "README": {
       "href": "./US_CO.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Colorado \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4439,
+      "file:checksum": "122088f5b590e31fdc7b8c34cbbf4b4f545e9942d047396501a0106dc1d272574bbc"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_CO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Paraguay",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Paraguay field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 743583908,
+      "file:checksum": "12205055248728f1f31720a6685e5386460394c48c90cbbf4be8979f74f49375a096"
     },
     "pmtiles": {
       "href": "./Paraguay.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Paraguay field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 524986710,
+      "file:checksum": "1220eb03cd7b6a6f797cba710093f3043e590c6cf574673e724c4cdd61ca230ef204"
     },
     "style-2025": {
       "href": "./Paraguay.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12208e7a504492a85814520bd70c8711d793232fd379c41290d460ab248c9d147703"
     },
     "style-2024": {
       "href": "./Paraguay.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220e9be402e67fe4e1bc80dac49540224a308885fa595c47b95b0478d75c820eadb"
     },
     "style-confidence-2025": {
       "href": "./Paraguay.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "122097c9c53c337a30bad714678a83a6aa75e3056b5a8eb05b95bece2874c86626b6"
     },
     "style-confidence-2024": {
       "href": "./Paraguay.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220ac7e7a8c6f66ad515b623b061427f1559abdc109b999265bcbd00bd47eafe63f"
     },
     "README": {
       "href": "./Paraguay.README.md",
@@ -165,7 +178,9 @@
       "title": "Paraguay \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4590,
+      "file:checksum": "1220529a9f3cfd3f5490d3301695e09c7a9fbead98a02b93f4312dddf93963d06967"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PY/Paraguay.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

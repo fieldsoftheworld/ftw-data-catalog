@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Comoros",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Comoros field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 894861,
+      "file:checksum": "12207b5d79bf368e68d9cc79796972b93ce14a2248471db1e1e044d42d749710a3dd"
     },
     "pmtiles": {
       "href": "./Comoros.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Comoros field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1031265,
+      "file:checksum": "1220dcc9594efe73ecab10aeab038d8a4672bc41241dd1e24123787e89b5fe68cc2b"
     },
     "style-2025": {
       "href": "./Comoros.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12206950aa6cba905a23fc322be46de2e88d65e15716e1118bf67f9c8fd885d10ab7"
     },
     "style-2024": {
       "href": "./Comoros.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220f23ee8fb5f90bffe6c372775ec4759e1d37fb6714fa0df48dc4e27978c5c13e7"
     },
     "style-confidence-2025": {
       "href": "./Comoros.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12209de9d42c9c44e8d99a4c348c9917f192e8ed1f5fe92ff3f96a2d984d9d0b085f"
     },
     "style-confidence-2024": {
       "href": "./Comoros.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12209dae77bdafabad0bab1c287b0d9598fedeaa104999d26e031f596f670fa8d4e2"
     },
     "README": {
       "href": "./Comoros.README.md",
@@ -165,7 +178,9 @@
       "title": "Comoros \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4582,
+      "file:checksum": "1220ede1d23bfed9e2dda0fd87c7db2404ccde3afdbb00295ed69f37251fd1a90252"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=KM/Comoros.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

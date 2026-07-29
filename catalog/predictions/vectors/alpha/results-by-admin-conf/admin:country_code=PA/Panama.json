@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Panama",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Panama field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 194475689,
+      "file:checksum": "1220bb58d810406f46dca9d526823c27d6c25cc101ada518577bb5423404c3aeb4e2"
     },
     "pmtiles": {
       "href": "./Panama.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Panama field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 131064065,
+      "file:checksum": "1220728830f90a7f1c9c32d68910b3e2dee7ee8371f15cf44c87d55a4d64bf4d845c"
     },
     "style-2025": {
       "href": "./Panama.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12208cf86ce891b6e630e0b6a7459c0672441eac55ce7cbc97260510202df7b88c87"
     },
     "style-2024": {
       "href": "./Panama.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220b6da7d3c850d3bb8684608ad6acd67a7273659c0758363cdc92412875343d7f9"
     },
     "style-confidence-2025": {
       "href": "./Panama.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122078dd9f7202cd8590cfa4c5cff39248d2b905e19a241067d86f5f961248f98846"
     },
     "style-confidence-2024": {
       "href": "./Panama.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220724909f915a7ee083aeefe38ea0d349c878b08827655ef244093f7bc52b39c0b"
     },
     "README": {
       "href": "./Panama.README.md",
@@ -165,7 +178,9 @@
       "title": "Panama \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4584,
+      "file:checksum": "122084059618d42dbc58ffa3271d10cd1c05d1adab06167cd28ce84aafffeedbe7f7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PA/Panama.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

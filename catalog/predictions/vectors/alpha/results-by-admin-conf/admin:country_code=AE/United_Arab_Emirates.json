@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "United_Arab_Emirates",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United_Arab_Emirates field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 73704884,
+      "file:checksum": "1220589450533da922c083596fd8499e676f42d255a35f41b083c056d72f73c6f816"
     },
     "pmtiles": {
       "href": "./United_Arab_Emirates.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United_Arab_Emirates field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 55134757,
+      "file:checksum": "12203ae84d0c5aa8ceaf17beb054db2321ff03b6852a28e8b7fd89ca1101b02d2d54"
     },
     "style-2025": {
       "href": "./United_Arab_Emirates.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 945,
+      "file:checksum": "1220a0238b173761c37eb4464f068bd37e20bd022a5167a4c031563f73d0df361ad0"
     },
     "style-2024": {
       "href": "./United_Arab_Emirates.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 945,
+      "file:checksum": "1220a5d5f1539cbb223610dd01880297d107e8dcf50a6fff7359eaec6a36e09fd3dc"
     },
     "style-confidence-2025": {
       "href": "./United_Arab_Emirates.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2689,
+      "file:checksum": "122090207b740d58c4ae980adfd488feeba6ae8b44f13b91291f7470f0abca6437e6"
     },
     "style-confidence-2024": {
       "href": "./United_Arab_Emirates.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2689,
+      "file:checksum": "122026b7e58c1327bda63fe39b3210dd3c9fc9f3e81b9c9a12800566dda35da035ac"
     },
     "README": {
       "href": "./United_Arab_Emirates.README.md",
@@ -165,7 +178,9 @@
       "title": "United_Arab_Emirates \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4624,
+      "file:checksum": "12209f86c691d2fb8f5418968401a1c66c1b39c6f6024d10406a045fdd0ab83bbbcf"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AE/United_Arab_Emirates.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

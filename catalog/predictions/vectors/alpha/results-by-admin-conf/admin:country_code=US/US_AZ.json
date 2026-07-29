@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_AZ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Arizona field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 422878951,
+      "file:checksum": "12200340795418b7c2f7a922421711aea1d77688cbc6af60bc392cd3687746beb14a"
     },
     "pmtiles": {
       "href": "./US_AZ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Arizona field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 302868119,
+      "file:checksum": "12209f799a275cd0d1ac17454054be5ceda0002aa08b360ebc0191b4dbea4479a31c"
     },
     "style-2025": {
       "href": "./US_AZ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d2d28b0fd5b1e969e3cc1d7e79642eb9f4f3c14b13aa5fb3e6e40bef20241d0a"
     },
     "style-2024": {
       "href": "./US_AZ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c59a0b3b7ea13fe34926763519b78d8a1e2d404fd55b3b56055d74ca6e312c26"
     },
     "style-confidence-2025": {
       "href": "./US_AZ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122031fdfd935d490513f86cc9ee95a0b900ef1ef31d1cd5143c82ff17770b781228"
     },
     "style-confidence-2024": {
       "href": "./US_AZ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122053cd1cb722726146ce4a6241c171c12d5323190a53a6521af18212494b1f6375"
     },
     "README": {
       "href": "./US_AZ.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Arizona \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "1220e6ad575b17114c561500b19ea37b471049315d97a59d0d518e269c5ca24e6406"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_AZ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

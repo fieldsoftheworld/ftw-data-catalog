@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_24",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Tabora field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 974060399,
+      "file:checksum": "1220530703ccb30f6122fae176f79a7e7cc1e490aab4b57c4fe91227fa0fca6496a1"
     },
     "pmtiles": {
       "href": "./TZ_24.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Tabora field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 512701648,
+      "file:checksum": "12209278b5b8d6b00f04ce184d5dd4946b919e6ca95cc461413d0b35538d94723916"
     },
     "style-2025": {
       "href": "./TZ_24.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200959c4d63e38471af18ffb95fe73398ab79172641b46adb3c9a90594c2b870d5"
     },
     "style-2024": {
       "href": "./TZ_24.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201c0ec639ae41eb5bbdb434bf4bb6fd2c21a606d1f4996e1f5d674545eb9c4f60"
     },
     "style-confidence-2025": {
       "href": "./TZ_24.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220725af18661fca6bf7f05d751f4ccbdfaeee1a07799da6dbf93d2e3c2fa61241f"
     },
     "style-confidence-2024": {
       "href": "./TZ_24.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206cdd800af190f8af666b3d9e828f0fbdda407738d7229fe9d30d9aea4a92588f"
     },
     "README": {
       "href": "./TZ_24.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Tabora \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4453,
+      "file:checksum": "122015014e1621dc617e00fedc7498367571bac920e60da87f13bb5d70cc478e4119"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_24.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_OY",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Oyo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 489902005,
+      "file:checksum": "1220b94850a25f81525cfa4260198a7d4fbf6ae571de92ef663caa0c09cbbf5ffd37"
     },
     "pmtiles": {
       "href": "./NG_OY.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Oyo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 240469678,
+      "file:checksum": "122094f587f9daaebb0a2cc9e584fa7cab9e38af8a4d781f7f2428315303c0d61900"
     },
     "style-2025": {
       "href": "./NG_OY.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122013cec8434cd3b33f7484f994f1745e91af7b90073be9ef88e4d24b79c754e3b4"
     },
     "style-2024": {
       "href": "./NG_OY.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e6f3d214bee613500e433d5f4f6031e4b0733481a560259c4d688713e2b5362f"
     },
     "style-confidence-2025": {
       "href": "./NG_OY.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220bf641a1220c1bdfc7742abc7639e876cbcf736dc8d886488fa2a8f9cb920756f"
     },
     "style-confidence-2024": {
       "href": "./NG_OY.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122012613e8c397e3073339d533007fd791acf1883b6cb5bcafee0cbf361bcafe460"
     },
     "README": {
       "href": "./NG_OY.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Oyo \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4428,
+      "file:checksum": "122097e7aea15ba8998d36ad76dd95dc0603aa416a7ed25c4799cef0db53de2cf6aa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_OY.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_GD",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Guangdong Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 815003533,
+      "file:checksum": "12200a7cb3f359d64b4e2747b0e018344d92e255b1063d8bf903891c35d2331df09f"
     },
     "pmtiles": {
       "href": "./CN_GD.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Guangdong Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 450572693,
+      "file:checksum": "1220aac6cac86910017795779d82615de8066460c4320604fb18dbd037725303bb5c"
     },
     "style-2025": {
       "href": "./CN_GD.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220075ca12b6c10823dfd69e9705bc08733460f522c23b43e67ddf13817f5b73607"
     },
     "style-2024": {
       "href": "./CN_GD.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207a2e1f2e2fcdf2db2d7c4cb53198c608898375af57c1f9c5e62937bc8ae07de4"
     },
     "style-confidence-2025": {
       "href": "./CN_GD.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220824b33c6aac74b1c8110a36d7ccb4881a1ae3e1621645601cb71e9ea9b580b1d"
     },
     "style-confidence-2024": {
       "href": "./CN_GD.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122098ec07eb8f7f25785ab232beb1a2a27891b6d7851e3c4abe57a1372dc166a1d1"
     },
     "README": {
       "href": "./CN_GD.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Guangdong Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "12203bafd7b5f468faa2ebadca7333f1e49abf6c94de0ebb674f497d8fa9c2c44991"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_GD.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_31",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Songwe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 306650496,
+      "file:checksum": "12209640e37257a2f350690012c0df9cf63f4cd952acb6e07b3183133a72045091cf"
     },
     "pmtiles": {
       "href": "./TZ_31.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Songwe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 169494832,
+      "file:checksum": "1220faf03da7a96d64587b658fe54b99775156dd1a03ce30bb0fabeb4f596e08ae76"
     },
     "style-2025": {
       "href": "./TZ_31.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201337d0442ab7dd43773a26b1f040a8a69a6a7f452c3ff2044d1c3ac7b80594e9"
     },
     "style-2024": {
       "href": "./TZ_31.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a5db4d8f1c5e23997cfbf2685db177d04657be2cc66f8391f635835313a4f047"
     },
     "style-confidence-2025": {
       "href": "./TZ_31.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c4af9afd7672d6cb0c3cf0d984f760bf78ebf0f0179b1430ad57df8383893764"
     },
     "style-confidence-2024": {
       "href": "./TZ_31.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205dbd1b0a99232cd5301dad9e910f0b3310e09104a93b7ff06b0e7d791657b1fa"
     },
     "README": {
       "href": "./TZ_31.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Songwe \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "1220c7e9be199fb68e9d64a7dd15375f052ed283437a8efe9a86da3de055da8eef53"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_31.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

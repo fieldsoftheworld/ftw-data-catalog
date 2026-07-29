@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_PB",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Punjab field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 992132790,
+      "file:checksum": "12201c9583885e692c60781e433af38521bd0424a58bfd14d2b6ad992561cb66719d"
     },
     "pmtiles": {
       "href": "./IN_PB.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Punjab field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 586620932,
+      "file:checksum": "1220732a218a5f92a7e476adc9976a56eb739c29d04a15180712a10cad8c323e395f"
     },
     "style-2025": {
       "href": "./IN_PB.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d61a9b29e5bbc8525c026c0800dec2c4087a3e8b2f1d628390e332435073ee6f"
     },
     "style-2024": {
       "href": "./IN_PB.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ae9f0ababb6a932d0426b5310778ecdb047e5c72ed6282c64aa6f1a325a7ae3d"
     },
     "style-confidence-2025": {
       "href": "./IN_PB.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207f8c555b4333e35cf87809e49ed802398cebf383149def4cc2fe0a0fcba0125d"
     },
     "style-confidence-2024": {
       "href": "./IN_PB.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d4303ed4deff9d03bce24d9266c2f0c46202db7d735e6961846580e4a2dd6abd"
     },
     "README": {
       "href": "./IN_PB.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Punjab \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12203dcdb3662ed4d85f4971a0041ea2fe78b148f3d82683ce66c732f73e023a4cbd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_PB.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

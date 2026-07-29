@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Uzbekistan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Uzbekistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1155972114,
+      "file:checksum": "12200931384daaa48531c4789d3d4b35ffaba3de9511325b0c392372e258c198c09c"
     },
     "pmtiles": {
       "href": "./Uzbekistan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Uzbekistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 675435914,
+      "file:checksum": "1220f62c211d3761fa9cb03bf590f7584c0529be84881b44404b2b3a2fa0d9869807"
     },
     "style-2025": {
       "href": "./Uzbekistan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220124d54fb74ff75b6ad5c9226deaa46989d879c751f009134b6415b24afa38847"
     },
     "style-2024": {
       "href": "./Uzbekistan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "122079e32affe05e29e29a1904100907a6b333c3f494b429787810c835a5310ff7a8"
     },
     "style-confidence-2025": {
       "href": "./Uzbekistan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "12209f9726b281a292f09dfad6cb48727025145c988e5084909d2783505a2623d08e"
     },
     "style-confidence-2024": {
       "href": "./Uzbekistan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "122037aa02926f20b6fc7951cb1e6887e073752c4d51d672bcff867580bf65e16418"
     },
     "README": {
       "href": "./Uzbekistan.README.md",
@@ -165,7 +178,9 @@
       "title": "Uzbekistan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4596,
+      "file:checksum": "1220936f0b034a714df7411c16e4ec0f7aff0f9f219c665fe265557ece063ac48744"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=UZ/Uzbekistan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

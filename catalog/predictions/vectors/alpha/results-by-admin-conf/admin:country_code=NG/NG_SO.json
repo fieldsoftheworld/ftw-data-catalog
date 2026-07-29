@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_SO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Sokoto field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 280295695,
+      "file:checksum": "12209f217c5c9cf28407c968756e856077aef06cec71ea6338e4b5c594c8bdb480e7"
     },
     "pmtiles": {
       "href": "./NG_SO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Sokoto field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 161099427,
+      "file:checksum": "1220d3d3d3b2c66e90c344062bc179b188b4fa838be0ae8ba92c0ba1bcfe2c9fa230"
     },
     "style-2025": {
       "href": "./NG_SO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a9495cef3efc0ab4766ff5eb1a04bce775b90042a203e53f93b410e1efce76d8"
     },
     "style-2024": {
       "href": "./NG_SO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c92d35276bc910848334b40cafef0df960aa20834cdd8ce719d3c385620ffa1e"
     },
     "style-confidence-2025": {
       "href": "./NG_SO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209e2033af273fb1e155cb279c0ddf6ad7c5c346308b5d8902a5ff77676d09195f"
     },
     "style-confidence-2024": {
       "href": "./NG_SO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220cc087d446f1e8ffef30edb72973809a5967127213c517f70c2150796b943e535"
     },
     "README": {
       "href": "./NG_SO.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Sokoto \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "12201024edfb7ac69ac420dbc930717be410b2c31e206ee037eac3b35ba2d0ef4616"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_SO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

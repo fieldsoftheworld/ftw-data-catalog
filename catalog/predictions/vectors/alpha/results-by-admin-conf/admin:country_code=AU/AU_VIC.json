@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_VIC",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 Victoria field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 315982056,
+      "file:checksum": "1220e07401ae212dd44804d5546cc926f14c4fda73efc7ce2fc1020f38959b94323e"
     },
     "pmtiles": {
       "href": "./AU_VIC.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 Victoria field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 226975411,
+      "file:checksum": "1220d45acbd3b929ceebf0921a2524794e2aeb6f4eebaed1e3f377c6c33fbe85fb4a"
     },
     "style-2025": {
       "href": "./AU_VIC.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220ce09b5b22a90341caaec03d27c25e0af930199dff31468e86adcf0851053cc51"
     },
     "style-2024": {
       "href": "./AU_VIC.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220427b5a92e250fe1967ba28cc6a5801392894c8ca9083cfd9c542cdc9ef8b2962"
     },
     "style-confidence-2025": {
       "href": "./AU_VIC.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122059401e4c6091f3c0d4d9c4a0e385526c653e0ca701c2d7536e5a41e932764fa8"
     },
     "style-confidence-2024": {
       "href": "./AU_VIC.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220f978fbfd7e88de7adbc9c41e4fbdd868fb5d66d57bbac0290e5a247dbe333ce1"
     },
     "README": {
       "href": "./AU_VIC.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 Victoria \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "122054a88a8963405c0b9fc00655b7f1ba995806f1189a62385e44cd798633a665bd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_VIC.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

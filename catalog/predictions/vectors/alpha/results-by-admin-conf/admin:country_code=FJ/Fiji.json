@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Fiji",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Fiji field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 41879379,
+      "file:checksum": "122091b0dc6d33df3d9eadd9568c9e81503a90412fa3859f07d7265a0a57c8d0de9d"
     },
     "pmtiles": {
       "href": "./Fiji.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Fiji field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 34146043,
+      "file:checksum": "12200ea2d63613c1344e979eefb1746788a70d12d1422b9d3cf0d537f42059b2cb88"
     },
     "style-2025": {
       "href": "./Fiji.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220738eeead4a641e0bdb6c32c431d9c47c98f9cb4cd996f110b8b7de88bb9376f4"
     },
     "style-2024": {
       "href": "./Fiji.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "122040e5a0842466d7c23daf43b970723d8052b1e3797e355b89576d7df73a0ab6b8"
     },
     "style-confidence-2025": {
       "href": "./Fiji.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "1220aa47914e27116b9d8296be8cb4b891b971a47efbcb8781ff0523f91eb3c740ea"
     },
     "style-confidence-2024": {
       "href": "./Fiji.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "1220d7da41865e0add1c9a712a5d9026557ba6c7eea49d9b32fbf42ac80a249ef4f6"
     },
     "README": {
       "href": "./Fiji.README.md",
@@ -165,7 +178,9 @@
       "title": "Fiji \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4577,
+      "file:checksum": "12208432eacd42e15f85c9dccac06ebc518f00524c1a1d52331cc48611aa8b04d8e7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=FJ/Fiji.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

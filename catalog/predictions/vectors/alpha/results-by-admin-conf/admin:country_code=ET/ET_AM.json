@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "ET_AM",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Ethiopia \u2014 Amara field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3722006426,
+      "file:checksum": "12200e293bc64dcdc3280810371454e6e1bbd6475484c9ab90b5aa85cf06475c8686"
     },
     "pmtiles": {
       "href": "./ET_AM.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Ethiopia \u2014 Amara field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1526302790,
+      "file:checksum": "1220376994cfa2555d9facc95b48083ba5885955c338e5816692daea936ca4b73cc8"
     },
     "style-2025": {
       "href": "./ET_AM.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e695bdd27a7ad09570432b8b8838276cd9de5e757d47e2bbb29ec6ebafaf9830"
     },
     "style-2024": {
       "href": "./ET_AM.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a29e4f5a52b63a34a4672cdb85e4ae2660a819ea636878e3b58fa2451eae2ced"
     },
     "style-confidence-2025": {
       "href": "./ET_AM.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122090f15ce5947be8e1ec213a653e79b9d46a228702b1daa15084e297009b6220c3"
     },
     "style-confidence-2024": {
       "href": "./ET_AM.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a9eb31eda882cf33e1a3463f89098928f80b2ed810994bd52cc170ef07861cb5"
     },
     "README": {
       "href": "./ET_AM.README.md",
@@ -165,7 +178,9 @@
       "title": "Ethiopia \u2014 Amara \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "1220027986cd2300aafd634780f2c7214ffa4b8cf0f9573c7863803e297be2befa40"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_AM.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

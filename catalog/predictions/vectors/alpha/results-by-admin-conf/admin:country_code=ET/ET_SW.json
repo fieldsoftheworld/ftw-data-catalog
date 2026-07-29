@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "ET_SW",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Ethiopia \u2014 Southwest Ethiopia Peoples field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 272395007,
+      "file:checksum": "1220c22f4753ba0a9c090d8cb65fade86903c76d6ed1794d6c95aa34c372ebdae072"
     },
     "pmtiles": {
       "href": "./ET_SW.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Ethiopia \u2014 Southwest Ethiopia Peoples field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 158135303,
+      "file:checksum": "1220c858d95f0e52b8fc1623905202f24de78858b80dc630c25e60db3c199940f88d"
     },
     "style-2025": {
       "href": "./ET_SW.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204c66656806b34c6eb4ac5e706e76f7bd205942fdfdb576a159d9c6e186b9d06b"
     },
     "style-2024": {
       "href": "./ET_SW.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e71976aab3465ea4a478c9ea29c3cb000eba2619030efef9029b865ea2e86c9c"
     },
     "style-confidence-2025": {
       "href": "./ET_SW.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122033b96aea2cf3c38312a0f28c896fbea248662953c1a063c61a3857162c938d9c"
     },
     "style-confidence-2024": {
       "href": "./ET_SW.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201cb4d983d8691da0ea2fece71c6fe9e9f6086a6b90cd27e5d6c83aa84e3b54f4"
     },
     "README": {
       "href": "./ET_SW.README.md",
@@ -165,7 +178,9 @@
       "title": "Ethiopia \u2014 Southwest Ethiopia Peoples \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "1220dab139efce64fd3770f9de1df6cef6fac39885ccd8f8bd8ba036a8bf9360b30e"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_SW.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

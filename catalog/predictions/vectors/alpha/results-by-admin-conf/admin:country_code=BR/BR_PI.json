@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_PI",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Piau\u00ed field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 651934638,
+      "file:checksum": "1220c8112fd10348c9a187c9a36980b9d29d92586621306285bf2635858ea66b4125"
     },
     "pmtiles": {
       "href": "./BR_PI.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Piau\u00ed field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 392309143,
+      "file:checksum": "1220c58f0da600a1709010f81eda8948eac08514b419b55c03172513d5bceff15e05"
     },
     "style-2025": {
       "href": "./BR_PI.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203d74341b804d894d4f853b99b9db538dd21d1001882dbf4f3aff425ba0b66cfd"
     },
     "style-2024": {
       "href": "./BR_PI.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d3c13f8c1f4dfb08847cafe6a41d24e0ba3b119aeab525ba9a55ef28a3cf798e"
     },
     "style-confidence-2025": {
       "href": "./BR_PI.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f670c44a96766897cf919141f13dc9203650019e7cf4db5f6ac833d9f1cc2d01"
     },
     "style-confidence-2024": {
       "href": "./BR_PI.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220988e6dd6bcf66224c310aec2927acfc415ab3e68bc73107aa0fcf51200fac33a"
     },
     "README": {
       "href": "./BR_PI.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Piau\u00ed \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12202cd26428ab88f67daf01a913f3dea6cbae2b1087c2c0a5f9178bbbae1c07372c"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_PI.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

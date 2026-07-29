@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Andorra",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Andorra field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 26751,
+      "file:checksum": "12203f36b09e10b58b57fd8afa4c26d2ed5b427fd35c04dad315dfdfc413328dc2c6"
     },
     "pmtiles": {
       "href": "./Andorra.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Andorra field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 24023,
+      "file:checksum": "12206125b48253070f5501078de414d26519492cd231b84574e283f03a4b80c389dc"
     },
     "style-2025": {
       "href": "./Andorra.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220e9f2126899953a5663436415efbbe7e182da668b4a207a6681e55aa046ed60a0"
     },
     "style-2024": {
       "href": "./Andorra.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220457573e9cbff7df443af6463a8a87fe465afe178d9c59e9fc70d6b4300236fe2"
     },
     "style-confidence-2025": {
       "href": "./Andorra.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220a00f0c53b7b3b65866d1c6bbed42255535fc3b05a39e6a6f72f55adf791b6f4f"
     },
     "style-confidence-2024": {
       "href": "./Andorra.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12208bc6eafd596a9c372533bacc08710fe3d98a3bb3fe6f735b1f4a6397f6ac520c"
     },
     "README": {
       "href": "./Andorra.README.md",
@@ -165,7 +178,9 @@
       "title": "Andorra \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4580,
+      "file:checksum": "12201e78a016a0466bf0f73f4c04eb8470b2f7ed04ed86b3261a083785e9b997afae"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AD/Andorra.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

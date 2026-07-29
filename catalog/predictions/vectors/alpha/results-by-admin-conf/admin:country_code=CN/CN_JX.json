@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_JX",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Jiangxi Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 816710327,
+      "file:checksum": "1220ae49aa6679081933a1dfc956cc3765bf7d9b52f3ddb214dd6c8e9c79c42ba233"
     },
     "pmtiles": {
       "href": "./CN_JX.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Jiangxi Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 491377023,
+      "file:checksum": "12206f23d3e5df0a7b1227c1579bb35e315604ef0a49657ad6e33c825b563e2aaed6"
     },
     "style-2025": {
       "href": "./CN_JX.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12201c33b0d7c1dd36650d9d022bc93447f90e6232fb4e3b8e6b00c737b5428da8e7"
     },
     "style-2024": {
       "href": "./CN_JX.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220388860fca53ec75b8b685b2c225e58d43c5299ae3efa733738f539afd1d848c3"
     },
     "style-confidence-2025": {
       "href": "./CN_JX.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207cea6e85d7a57371f347ea07a2253d283a7f3c65a311793529a33ee754f9c15f"
     },
     "style-confidence-2024": {
       "href": "./CN_JX.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b746d459724bd0e07d5d15295fdcbbd2fbab4c358020ff25ea92a6c4b30842cd"
     },
     "README": {
       "href": "./CN_JX.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Jiangxi Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "12205855e5d7fc6bf63f48713411291292fdd9feed0e415c8b406f378bdc00ead456"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_JX.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

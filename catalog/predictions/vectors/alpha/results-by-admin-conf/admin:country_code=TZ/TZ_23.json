@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_23",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Singida field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 583536290,
+      "file:checksum": "1220752f5597113807832546381710576054ae16b82784a265ce3107d974250065b0"
     },
     "pmtiles": {
       "href": "./TZ_23.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Singida field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 317895610,
+      "file:checksum": "1220b15c5485f2cbf07384225e135d278fefefd9b15325e85b2ebb66ea66f72d352a"
     },
     "style-2025": {
       "href": "./TZ_23.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a94b9f4de75963af1e65ded7b8e01e4f9f4735a66f97915a4a2bbbe4949c959a"
     },
     "style-2024": {
       "href": "./TZ_23.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220761cc4200df151219e024563e8aa886028fa3d67d398edd4e0ae1037f006c73f"
     },
     "style-confidence-2025": {
       "href": "./TZ_23.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220107a660ef92b16917106db0cf5854aaf942837b7f669d706c06a826aab89fef6"
     },
     "style-confidence-2024": {
       "href": "./TZ_23.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220dc0a2aed8dbe4dd50bca6a5f8e835de749983a111dfe854b59510746f1225617"
     },
     "README": {
       "href": "./TZ_23.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Singida \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4614,
+      "file:checksum": "12200928cb8bc35b40ec1d4192ae0d8172e98d4ae689e59196927cab895bfc578b7d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_23.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

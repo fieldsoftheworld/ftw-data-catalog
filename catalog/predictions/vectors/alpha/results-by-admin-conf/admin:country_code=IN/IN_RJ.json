@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_RJ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 R\u0101jasth\u0101n field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 7286940900,
+      "file:checksum": "1220033895b7b1278090b19e6f30d1c08e8ab7f1baf9363cc020a15b561e200ee266"
     },
     "pmtiles": {
       "href": "./IN_RJ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 R\u0101jasth\u0101n field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3305384968,
+      "file:checksum": "122075173f2bac110fbec46d206bd35d4f1bd255a1c83b0d3fdb2e998aac9b7eb3f4"
     },
     "style-2025": {
       "href": "./IN_RJ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fab9a843ed24665b90c82ad6cc14e13a85398ba9cd9e6b1e5b1aead19969e0c0"
     },
     "style-2024": {
       "href": "./IN_RJ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e3ca9eadc3efd0b7cdce7d81586a655c897fc96cbb59e3288315f72f618587a0"
     },
     "style-confidence-2025": {
       "href": "./IN_RJ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b861939b5178fbfdcb6c632d3ea4cca4d4646a6427a329f18b924ac54fec28d7"
     },
     "style-confidence-2024": {
       "href": "./IN_RJ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220022bf94054285f3d0c35427c1bec41e684f2a54d24697191a4de4bb95608dde1"
     },
     "README": {
       "href": "./IN_RJ.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 R\u0101jasth\u0101n \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "1220a165511a695f399b123477cb8321175549548c30af2f89fa18b0fa96edebbef4"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_RJ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

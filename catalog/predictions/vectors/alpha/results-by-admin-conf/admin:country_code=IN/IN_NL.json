@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_NL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 N\u0101g\u0101land field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 11128172,
+      "file:checksum": "1220f19f9319b2f48dc3d005e863979da5aa9c50c58798550795d777dc99b4813fad"
     },
     "pmtiles": {
       "href": "./IN_NL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 N\u0101g\u0101land field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 10482375,
+      "file:checksum": "12205c49660f99b3624202a61e38cadbb756f63cbbd30f9319603198a377f9fcc061"
     },
     "style-2025": {
       "href": "./IN_NL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c7631016d5d687826d4bd2ecbcf2bb69f62e429186350930473f19f8972a98f0"
     },
     "style-2024": {
       "href": "./IN_NL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220edf51118ca6cccc027d27a47ddf6d7acccc6a2e13945920ed7ce0518b8bba562"
     },
     "style-confidence-2025": {
       "href": "./IN_NL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b8353eafdbcd889084a7736265ae0eaf940c687fcea1a8e27a5c294c94ec59d5"
     },
     "style-confidence-2024": {
       "href": "./IN_NL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b678d9d20a0abfd03151e94a888eb4ea193d0ea706bd50bb48995a04909814a3"
     },
     "README": {
       "href": "./IN_NL.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 N\u0101g\u0101land \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "1220e12eaa1a72e64610525ca520d4982a3fa773ce7d53e4f88c15c5165cb05759e6"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_NL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

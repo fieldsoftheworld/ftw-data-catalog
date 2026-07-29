@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_XJ",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "PK_XJ field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 10685,
+      "file:checksum": "12208bcd54bf4422bee1a435a47f3591d24ee4d2361dca4af0dde9b9c2ba9ed95621"
     },
     "pmtiles": {
       "href": "./PK_XJ.pmtiles",
@@ -125,39 +128,49 @@
       "title": "PK_XJ field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2183,
+      "file:checksum": "122089a9b1db91a9d41d49aad25dd0129a189247dd2888d1802550c6f8572ee3c816"
     },
     "style-2025": {
       "href": "./PK_XJ.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209fad16998cf017954d8c208a593be89f4e5763323f7ecd1ef7663b934b6f4744"
     },
     "style-2024": {
       "href": "./PK_XJ.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122004981ba9d5f9fc574594fd6b9f50dc00fbd9036a92e32c64c4a9d5aed27b5fa6"
     },
     "style-confidence-2025": {
       "href": "./PK_XJ.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205d2a31ddbc79717eac6a943457f02fbd84fc04a0ba39256adc01d6912f6d218c"
     },
     "style-confidence-2024": {
       "href": "./PK_XJ.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202c5ec012504841fb52448602e0d569924268cc4f6dcb329d958642b47f0d0609"
     },
     "README": {
       "href": "./PK_XJ.README.md",
@@ -165,7 +178,9 @@
       "title": "PK_XJ \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4410,
+      "file:checksum": "12203a43fb019d89f7512ca6a67281ede46fc19d981d045f22a5a1f4fbe3a24b59fa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_XJ.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

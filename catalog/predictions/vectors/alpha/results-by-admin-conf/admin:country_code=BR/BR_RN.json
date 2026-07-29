@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_RN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Rio Grande do Norte field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 144050269,
+      "file:checksum": "122009b2dd57366ad59c7691dec71275afd7a6911473cb98fe35e9b333def82cc62e"
     },
     "pmtiles": {
       "href": "./BR_RN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Rio Grande do Norte field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 100803438,
+      "file:checksum": "1220c22d158abcf2f15e0d38e87d25fd8e6331eaad32805c5c75f2b3c074fe1fbc01"
     },
     "style-2025": {
       "href": "./BR_RN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203df0722e1d467823724cce5dc16b10f285868a33d0520768a5e75b1e0d2b7cc1"
     },
     "style-2024": {
       "href": "./BR_RN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ef5378018b631f1f1230651fff29332c985a7d2131bf581bcddd18436bd3a103"
     },
     "style-confidence-2025": {
       "href": "./BR_RN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208960f74330923a51f2a9e1fff9ad68487a486cf2a83ec68fa8d55b288faf698b"
     },
     "style-confidence-2024": {
       "href": "./BR_RN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202ea57561b1b7baaae619850487440f71c47b54e231e89fdf8e964bd2dc1a7fd4"
     },
     "README": {
       "href": "./BR_RN.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Rio Grande do Norte \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "1220c541edb8e49314b294136327f15d79be3b14518fb720accaa27880357399e73f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_RN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

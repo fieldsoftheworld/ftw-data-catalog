@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_13",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Mara field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 228977941,
+      "file:checksum": "1220f85883c15b9d65705d20bf2956d33010ed6f27e081e9dc79d61583b69a4b6ecb"
     },
     "pmtiles": {
       "href": "./TZ_13.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Mara field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 121519839,
+      "file:checksum": "12204884cfcefac863396b364fc6083d7a23850d1a3589cff1d970997216dec7ea36"
     },
     "style-2025": {
       "href": "./TZ_13.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209faa53483ff14fdeb3f86ee0085f206b86e8fd9177df4d65afc8b29b948daf7d"
     },
     "style-2024": {
       "href": "./TZ_13.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b8cdc355840295aa7060c9286b28faf5bf9ca2d8648c131618b4bbd111b2c39b"
     },
     "style-confidence-2025": {
       "href": "./TZ_13.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202d2cbf40f070cbd54562b942e70cd2523fe10f0fa768789d183d5324902ae31b"
     },
     "style-confidence-2024": {
       "href": "./TZ_13.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a864ee73da597d36be88d7a3c3aa1772d06c40b3a92aa127f4cf02ae13c27c54"
     },
     "README": {
       "href": "./TZ_13.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Mara \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4611,
+      "file:checksum": "1220aa8f6c58b43a1f08b23111d0bac930b9d28be1ad8b567d111ba53d3eed6f45e4"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_13.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

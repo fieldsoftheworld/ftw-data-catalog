@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "BR_CE",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Brazil \u2014 Cear\u00e1 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 249663566,
+      "file:checksum": "1220517cffd7e499a1a7bc655e16e50abff94d9ad737026bdeda86e7da775d9595ae"
     },
     "pmtiles": {
       "href": "./BR_CE.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Brazil \u2014 Cear\u00e1 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 178113711,
+      "file:checksum": "1220eb39fe1ef2150482a657473288fff05d8a13f5ce96d0842279190d8e6a01d833"
     },
     "style-2025": {
       "href": "./BR_CE.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a9235cfa5e60d5e27b25987090c54e9ad7428aa92d9ac5e3e15b316c805e57c9"
     },
     "style-2024": {
       "href": "./BR_CE.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b1bb31c51c328ced85041258bb03a88c08f1b6fd09099171803c9f0d076e7740"
     },
     "style-confidence-2025": {
       "href": "./BR_CE.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d6a8106c5b30b34cf3323a0a44e36211fb87463cee985a3be3e060dc33527683"
     },
     "style-confidence-2024": {
       "href": "./BR_CE.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203229afd6e258b2714cfd7bb3cf3d6e489d1ed24a99010d916c9a24e8fc5d5a68"
     },
     "README": {
       "href": "./BR_CE.README.md",
@@ -165,7 +178,9 @@
       "title": "Brazil \u2014 Cear\u00e1 \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "1220a41fdd211529ede5fe2d6940592aafc4e1b01b49a751697af883bcfe390e09ac"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_CE.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

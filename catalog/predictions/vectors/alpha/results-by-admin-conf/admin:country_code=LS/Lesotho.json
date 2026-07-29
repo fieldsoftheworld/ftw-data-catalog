@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Lesotho",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Lesotho field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 223989894,
+      "file:checksum": "1220aa2aa8635a2984ca308374a84f071aef9e50d72c246a28c365446197fde1a84a"
     },
     "pmtiles": {
       "href": "./Lesotho.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Lesotho field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 143092581,
+      "file:checksum": "1220651596caeaee942debde76a467a38286693614698c657ac4586616a162de15e6"
     },
     "style-2025": {
       "href": "./Lesotho.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220d71533af7418043dc588159b32d743a14c98985bbf0baa087bb731bfba1b9ec8"
     },
     "style-2024": {
       "href": "./Lesotho.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "122018ca008e2d6fe1822892041fd6e5002d43dcfa675a8d2cf31fc2d12d604b4546"
     },
     "style-confidence-2025": {
       "href": "./Lesotho.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "122037b971205f1f3e0779503e9d09a51ed9214e89f2451c085766efc77f7b60c938"
     },
     "style-confidence-2024": {
       "href": "./Lesotho.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12207f4db198b58f570c6650c710cb3dbd2f0b68c5c070df15bc85bb7ff358bcb6b1"
     },
     "README": {
       "href": "./Lesotho.README.md",
@@ -165,7 +178,9 @@
       "title": "Lesotho \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4587,
+      "file:checksum": "1220eedf7804b593a47c6fc1d38828bd007773a032ebfa458d77dab906b621cdb00f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LS/Lesotho.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

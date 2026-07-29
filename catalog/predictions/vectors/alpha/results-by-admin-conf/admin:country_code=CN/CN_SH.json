@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_SH",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Shanghai Shi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 43486434,
+      "file:checksum": "1220aad62972502a74f747d9507b6de6a80030b92dda7b109e8e694aa62364fcffc4"
     },
     "pmtiles": {
       "href": "./CN_SH.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Shanghai Shi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 32754718,
+      "file:checksum": "1220d63f51f9253a80979ada030488745cb24e6964cfb10924e143f550bfeb470ae7"
     },
     "style-2025": {
       "href": "./CN_SH.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208003b972acf83c199e442a472fbd0d3a3245e4325c7438962a2ebc258abec9ef"
     },
     "style-2024": {
       "href": "./CN_SH.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220dcf7eafee378490c00672575da210fa6fbd58dd4605224264a738dad982d0bb0"
     },
     "style-confidence-2025": {
       "href": "./CN_SH.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207f5af0dd48bdeff2ce0580a0f4f51f6d18a58db47d7403027432b5a70af6a2fa"
     },
     "style-confidence-2024": {
       "href": "./CN_SH.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d5da55dd7c533d2d3b8fbd0b6a51bed46cc6641dc96b5f7f4b5d87b6c77e2751"
     },
     "README": {
       "href": "./CN_SH.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Shanghai Shi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4433,
+      "file:checksum": "1220aafbeaf1b2de649310ae98f302cde393846e2ab317925f6fa4968ca15a318208"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_SH.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

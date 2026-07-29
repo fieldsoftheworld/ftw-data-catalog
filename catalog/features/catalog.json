@@ -18,12 +18,6 @@
       "title": "Fields of the World \u2014 Global"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/features/catalog.json",
-      "type": "application/json",
-      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites"
-    },
-    {
       "rel": "preview",
       "href": "https://data.source.coop/ftw/global-data/features/thumbnail.png",
       "type": "image/png",
@@ -46,6 +40,22 @@
       "href": "./zarr/collection.json",
       "type": "application/json",
       "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 Zarr mosaic (2024 & 2025)"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+  ],
+  "updated": "2026-07-28T16:34:06Z"
 }

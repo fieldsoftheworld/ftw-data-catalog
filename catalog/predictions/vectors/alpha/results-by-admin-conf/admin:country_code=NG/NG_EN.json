@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_EN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Enugu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 49765878,
+      "file:checksum": "122069a379bd42b3926f432e1d5c52d2438f581767f48a3811d281b8b90f4bae0751"
     },
     "pmtiles": {
       "href": "./NG_EN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Enugu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 37495942,
+      "file:checksum": "122018719ace9221c93ee4bf3f88eaee26403d65b809233621876b00041448bab232"
     },
     "style-2025": {
       "href": "./NG_EN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e42b9492c1fbd0e87f62666729c30c97ffad01a1c0ca5b649e97319af7f3ef94"
     },
     "style-2024": {
       "href": "./NG_EN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122061ea5f2d8c54a4243f31202c591c728c6ca1cc9047ad57bb305f2f08bdb3ffa0"
     },
     "style-confidence-2025": {
       "href": "./NG_EN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f11e6b8d0b737554cb43fd5ba227e8ee700f57bac39a2ddc49285796ed8804ba"
     },
     "style-confidence-2024": {
       "href": "./NG_EN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205676844d3ce25e1fa68341c42929a19906bf769b33b5a428733ebb877b215e9c"
     },
     "README": {
       "href": "./NG_EN.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Enugu \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4428,
+      "file:checksum": "122011cbe325c4b23317d555a1f94d37a1480d896e7c2974eb4721d277fbd6fd4b4b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_EN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

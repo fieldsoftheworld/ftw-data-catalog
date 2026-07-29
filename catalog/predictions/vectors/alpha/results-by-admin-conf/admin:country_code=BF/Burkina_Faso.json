@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Burkina_Faso",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Burkina_Faso field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3465416619,
+      "file:checksum": "12205c07035696f535362685b34abceeafb77c1d6e92e26401a87cdc60647ee68e51"
     },
     "pmtiles": {
       "href": "./Burkina_Faso.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Burkina_Faso field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1710328601,
+      "file:checksum": "1220933d3f3023b680cb09976a41c10ee45a8e586937ffb60dee81255bc3cf466686"
     },
     "style-2025": {
       "href": "./Burkina_Faso.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "1220c54116cfa78479e73fbfabfee7da34ccf66f186c9e79ec6329b5b2ac6b9e8266"
     },
     "style-2024": {
       "href": "./Burkina_Faso.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "12202a5754ff68389141f534d42a6b5e5b8c6e29978c1fc10b9b54f28970dd24f9e2"
     },
     "style-confidence-2025": {
       "href": "./Burkina_Faso.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "1220be44eac83a2105bcc842603f36f0c4a23229e5ce315f15b094fe88499f528a5e"
     },
     "style-confidence-2024": {
       "href": "./Burkina_Faso.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "1220d30de1cfa7bb20391d497114bdd4c51c719acabe8f01b0bb60ea6585c0ac3ab6"
     },
     "README": {
       "href": "./Burkina_Faso.README.md",
@@ -165,7 +178,9 @@
       "title": "Burkina_Faso \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4603,
+      "file:checksum": "12206d0cca3ef3a68ad594c30771224bfaa0fbb4d72aaae2693516bf29d6f0b808f9"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BF/Burkina_Faso.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

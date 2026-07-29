@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_BR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Bih\u0101r field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2041325581,
+      "file:checksum": "122060c545c5a3d81a11f3ffbf90f9a07be6bea50d81d8027538e6ca13a7726a646e"
     },
     "pmtiles": {
       "href": "./IN_BR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Bih\u0101r field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1018492468,
+      "file:checksum": "1220fb31c1c365f556dc5ef59b6b2e4e645332ef9481ef70cefe3098cff031e474a6"
     },
     "style-2025": {
       "href": "./IN_BR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12202b1397d47c47efa10578b53fa3542393a70871949f3ec572fa3144394bee4b2f"
     },
     "style-2024": {
       "href": "./IN_BR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d4bc114a9be0c42a5cdc02440910b0ea8dc1919234312c9eeef9f80b9881601b"
     },
     "style-confidence-2025": {
       "href": "./IN_BR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122032224587ec6b75507635d8455a7b6e5b8da23300aa18b998c064b56cca00ef25"
     },
     "style-confidence-2024": {
       "href": "./IN_BR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209a70c2e8f0aa3d274e6cea639c617e432c668d6f75b18c502d465222454f6420"
     },
     "README": {
       "href": "./IN_BR.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Bih\u0101r \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "12200bdf772853c6c8cdb6bdac2c5b89f9abefd90ddf1b815025f2441dd8c040add1"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_BR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

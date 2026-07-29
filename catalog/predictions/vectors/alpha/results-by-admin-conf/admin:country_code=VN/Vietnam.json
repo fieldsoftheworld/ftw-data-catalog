@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Vietnam",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Viet Nam field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 2910695248,
+      "file:checksum": "12205271fbac1e6e15c68b1a3cc6c32ac58a2cd88f1af680a2faa8a8cdf40668895e"
     },
     "pmtiles": {
       "href": "./Vietnam.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Viet Nam field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1396668241,
+      "file:checksum": "1220a91b01bbb8da83f206dc3441c8a636c5cd8e5954620b6db96054e05573a55f05"
     },
     "style-2025": {
       "href": "./Vietnam.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220d8b3df5456dc42a5b02baec3294aa396826e376e1694c8b61d81062aee299c59"
     },
     "style-2024": {
       "href": "./Vietnam.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220e08c7d0fb95d5423678d688e9025ff521522560482dc92745c2a505b802e7bc8"
     },
     "style-confidence-2025": {
       "href": "./Vietnam.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "122003acfd6712f10a6732ebf2547bf736fee2dc3ce4d492fa952cad7bec770003a5"
     },
     "style-confidence-2024": {
       "href": "./Vietnam.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "122082e507da05f40c2c7b7d061ed8967a2a09ffda452a1d823934167b2520799993"
     },
     "README": {
       "href": "./Vietnam.README.md",
@@ -165,7 +178,9 @@
       "title": "Viet Nam \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4589,
+      "file:checksum": "1220b0a20a807cbf802ebecb7eace7d6922c8704c78cba34b7cf97e71320002b33e7"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=VN/Vietnam.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

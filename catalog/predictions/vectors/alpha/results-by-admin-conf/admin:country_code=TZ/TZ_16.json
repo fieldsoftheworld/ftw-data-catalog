@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_16",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Morogoro field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 429732011,
+      "file:checksum": "12205db144b38c51f83e34dc621db662badc9f7852997b2e245c2a3790cd00de8e67"
     },
     "pmtiles": {
       "href": "./TZ_16.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Morogoro field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 237606458,
+      "file:checksum": "12203bbf67771063f0afd0dbdebbaa0bf89b8f19b036b3f9bcbfa66f0dfa37ad51fe"
     },
     "style-2025": {
       "href": "./TZ_16.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12202e371648beecb1b71ac53c81375e480db5ec2c148bcef6216ffebd8003b77ab3"
     },
     "style-2024": {
       "href": "./TZ_16.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122003f3b24070eac112a081a87ed0b3eb879250d393ce0957c2de13c9e2cf73da7a"
     },
     "style-confidence-2025": {
       "href": "./TZ_16.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220dac2c978c97b587926c98798207fe5236c1482419771da1ec82edcb7b6e1b0bb"
     },
     "style-confidence-2024": {
       "href": "./TZ_16.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a528092f96a49f0968cebc5fa137941a6baecf67217b36922cee5685aaf02d5e"
     },
     "README": {
       "href": "./TZ_16.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Morogoro \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4454,
+      "file:checksum": "1220214265d66a59bff82342992a146be28cc2e7f97eaeb8a73690b744bbe5ecbe4f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_16.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

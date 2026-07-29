@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Liberia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Liberia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 62353941,
+      "file:checksum": "1220d0019285653fe89d53e3b4a30d097e98f7b36fa716cb1d7eea512998cd1701e2"
     },
     "pmtiles": {
       "href": "./Liberia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Liberia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 52354153,
+      "file:checksum": "1220a3b8f2317b6b8cc47d891f0d30d4494abed720bacd7a31a3765e0737078452ae"
     },
     "style-2025": {
       "href": "./Liberia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12202fb2050afa2332c8349dadcaa2e942cebc3fbe98dc78b6470fa2afb58779636a"
     },
     "style-2024": {
       "href": "./Liberia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220507e2b390f158d7678ce33ba3bf6d61fd5ce9d75765f4a42289cc18234319864"
     },
     "style-confidence-2025": {
       "href": "./Liberia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220dc4a3854e36633fb2284e4bea3795c8f5777a92e608a0c5e6f74e69df5b53698"
     },
     "style-confidence-2024": {
       "href": "./Liberia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "122064d20c9f7b87f646241c8f9ca19c1182a52146560727cb646f95b06ad75ec594"
     },
     "README": {
       "href": "./Liberia.README.md",
@@ -165,7 +178,9 @@
       "title": "Liberia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4584,
+      "file:checksum": "1220fb396b199770c60242cd53bc306b195246fd9b2de99cfe77cc0e2000e0bc61ec"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LR/Liberia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

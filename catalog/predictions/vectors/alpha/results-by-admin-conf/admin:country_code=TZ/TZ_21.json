@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_21",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Ruvuma field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 406042005,
+      "file:checksum": "1220fce26817c0ffd6f8d2eb2d5e8f066ef7d2e311e4fb4db4407bd7b2e2a54c2aa4"
     },
     "pmtiles": {
       "href": "./TZ_21.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Ruvuma field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 238103370,
+      "file:checksum": "1220b24504633a7366b9c52646db1d4a449572d3d938fcbce204663012819502758b"
     },
     "style-2025": {
       "href": "./TZ_21.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204221d1fd15830ab8cac1d29e088582f4e2df410901802a5061230b7e8be1b642"
     },
     "style-2024": {
       "href": "./TZ_21.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220934131f417ad4f2a54ecf621beeef91d6ed57102cbbd7105c0746174358618b7"
     },
     "style-confidence-2025": {
       "href": "./TZ_21.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c86978bad8bc166331ec0f5630896987fc69b829038bc4611b5a3d227ea9da58"
     },
     "style-confidence-2024": {
       "href": "./TZ_21.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f435392ea4dd37d5ac9aba7248991942abcdc7f84250ba1fb8361ec399a2f416"
     },
     "README": {
       "href": "./TZ_21.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Ruvuma \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "122087ea4ca0e3577c4e01aea4b617e66c4d3b881c6b86f0d83edd3ee9f7261ff11d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_21.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

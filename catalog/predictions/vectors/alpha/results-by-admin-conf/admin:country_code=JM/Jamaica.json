@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Jamaica",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Jamaica field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 61586564,
+      "file:checksum": "1220eabdb8c30254d38659c406199254937c3c1fc80bd720b5c01b76734da41c878b"
     },
     "pmtiles": {
       "href": "./Jamaica.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Jamaica field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 45203579,
+      "file:checksum": "1220762e6d3b285010ff5d23073ee14275e0e7f9e7911717ff1dfabc9e1d9933bcc4"
     },
     "style-2025": {
       "href": "./Jamaica.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220b3927eb3a0bca10d48dda07065b74f2ceaf794d6313bd504c9c9cfca8fd0b950"
     },
     "style-2024": {
       "href": "./Jamaica.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220c9f56b095f67271b4d6db800e22e1d5be432db83a9dbb4551d356b6629ca6edb"
     },
     "style-confidence-2025": {
       "href": "./Jamaica.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220a9d782b0a8a160bf55431a9d5d043ac10c274834b371ee51a8daa92af8c1c6fe"
     },
     "style-confidence-2024": {
       "href": "./Jamaica.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220a56684ac857151b407d84694f28aa2a1995cb6da5adf3d010908971535dfdd56"
     },
     "README": {
       "href": "./Jamaica.README.md",
@@ -165,7 +178,9 @@
       "title": "Jamaica \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4585,
+      "file:checksum": "12207246521426f102cab7f58a56f7f793d84ce50d1a68336c8c9bb34a7416e33fdd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=JM/Jamaica.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

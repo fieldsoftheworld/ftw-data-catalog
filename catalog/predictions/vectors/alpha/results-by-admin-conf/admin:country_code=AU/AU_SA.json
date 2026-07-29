@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_SA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 South Australia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1153021671,
+      "file:checksum": "1220a9fcc91b24ad87a407ad643592dc39f8e4d2127c84eb1afacb98b80b95674822"
     },
     "pmtiles": {
       "href": "./AU_SA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 South Australia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 730222094,
+      "file:checksum": "12205a13a047cc83e4062d3ea4a3fcce68f2f8ade94d2a5eb39fc0c8d84b3a51c03f"
     },
     "style-2025": {
       "href": "./AU_SA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205c7dfcb1e02750b84f98a2f75ecc81a6525c2108e2f7d6a539ff05e58286969b"
     },
     "style-2024": {
       "href": "./AU_SA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c33f68a52d0aebce6a8d2241d5831f0a115f255acc555e9d0a122ad79f0c0d0d"
     },
     "style-confidence-2025": {
       "href": "./AU_SA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220273850ce3495e06ff652b032e76fcfc7c5565762cd61e33d04e202294ba5e463"
     },
     "style-confidence-2024": {
       "href": "./AU_SA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ee6e64a36372d4ddb09a0135989408fbacc57e39071b62c464f1020fafe05726"
     },
     "README": {
       "href": "./AU_SA.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 South Australia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4442,
+      "file:checksum": "12207e9e856db1938bc3033560959006bb6065d434ac4a20decd4bfed386ff1da976"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_SA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_UP",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Uttar Pradesh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 8200449730,
+      "file:checksum": "12209809ab06d0a1e90e6a79fea5021a0848b6a5fa6303d90b4709b5503b6673c097"
     },
     "pmtiles": {
       "href": "./IN_UP.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Uttar Pradesh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3438471692,
+      "file:checksum": "122084b2e3d027da190234c4946d4303590b0cfcee257f8ce4c69978741e3a4fa52a"
     },
     "style-2025": {
       "href": "./IN_UP.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206eb4bb3e1e4a2db64af278bcfcdbad7a34d82d85374eb37ac2368222de4ec21e"
     },
     "style-2024": {
       "href": "./IN_UP.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220221baeb33e8358fb15c3f8b542147063b5f892736f659d92e9fc5a052a7121a7"
     },
     "style-confidence-2025": {
       "href": "./IN_UP.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122064766940804bff01cfefad4da7c2adcb3f769820691cc6226d1d1834437d20f0"
     },
     "style-confidence-2024": {
       "href": "./IN_UP.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122018da56f96132bc7a3d7e54ca8e5a674758528218f7267f3a0527ee072557ae11"
     },
     "README": {
       "href": "./IN_UP.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Uttar Pradesh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "12202e1dd5aa5caab467ffe6adc26e1aa9d6664c1bfd5f4c51569dececbadff29a23"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_UP.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

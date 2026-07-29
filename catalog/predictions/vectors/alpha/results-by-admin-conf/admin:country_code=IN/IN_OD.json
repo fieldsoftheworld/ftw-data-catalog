@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_OD",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Odisha field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1654983897,
+      "file:checksum": "1220596e13a09348b32ea17a9215e630f23735754458ba9ec273efade5e8461846d9"
     },
     "pmtiles": {
       "href": "./IN_OD.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Odisha field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 882290497,
+      "file:checksum": "1220b73919b4d04c268f0b7de6383237384999b1d08dae7fba7391cfeb39c98c3f4a"
     },
     "style-2025": {
       "href": "./IN_OD.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209aec1d0af7e420a9724348d5bfebb133d20e3603618aa0dfd965095bdb593bc4"
     },
     "style-2024": {
       "href": "./IN_OD.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205eb492d27336469c0cbe2510a8a824ec6e21f58fdb016ce2fe3ea2008ad3cd2d"
     },
     "style-confidence-2025": {
       "href": "./IN_OD.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220306a23163e7f6b9239b25bd9bf537f7691047c3b27ea247d44578297fbd5a746"
     },
     "style-confidence-2024": {
       "href": "./IN_OD.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122046e0ff6235f8f993e6285d805fcfed5e3868c74cd3e4b51cfb61a4c383d9531e"
     },
     "README": {
       "href": "./IN_OD.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Odisha \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4430,
+      "file:checksum": "1220fc34bca7fca428ba766af09ea92e7ca4a860a0dc4392fde4c4008f27b015e86a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_OD.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

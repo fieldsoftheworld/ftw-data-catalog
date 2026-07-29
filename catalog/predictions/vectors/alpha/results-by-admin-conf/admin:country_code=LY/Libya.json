@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Libya",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Libya field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 488282964,
+      "file:checksum": "122041f81a2df2a144853949fb35b1c384f1706b9072d687c69b3763590a88f23ac2"
     },
     "pmtiles": {
       "href": "./Libya.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Libya field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 341710887,
+      "file:checksum": "1220d9d04efc32e6a63c5ff4706b85e242b2e87a39f3aae935958f65ec9b111cfdf2"
     },
     "style-2025": {
       "href": "./Libya.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209fc8220d39b56cb86a6427170cfaef752ac457cd167670bcfe402a58f4f7f7a3"
     },
     "style-2024": {
       "href": "./Libya.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204aaaa944114972529004e82acd52baecd8cd6db47052619c7cf8339933105061"
     },
     "style-confidence-2025": {
       "href": "./Libya.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122000bb2bd4e3447dadef168d42160cca2fb5ca1a23f7f58547d5369e78372257be"
     },
     "style-confidence-2024": {
       "href": "./Libya.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c8137946433f6c087da19eb16e45c0f6570e50a6643d17fcce730a0b75132411"
     },
     "README": {
       "href": "./Libya.README.md",
@@ -165,7 +178,9 @@
       "title": "Libya \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4581,
+      "file:checksum": "122099859c0b35e4c24b9f20d46a2f69a5c54d844bc10e628d7ca0109623eb4fba43"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LY/Libya.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

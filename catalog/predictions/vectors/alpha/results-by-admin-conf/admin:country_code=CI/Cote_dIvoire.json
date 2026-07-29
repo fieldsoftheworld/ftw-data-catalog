@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Cote_dIvoire",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Cote_dIvoire field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1794364582,
+      "file:checksum": "12201c05eee3f2dff31318801172235c384c16ba62591a2f61572cb114dac7bfd6f8"
     },
     "pmtiles": {
       "href": "./Cote_dIvoire.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Cote_dIvoire field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 975026286,
+      "file:checksum": "1220a5f52df61ef57215f78143ec85d491ecad2bf64f169704e42cf2596ec25cc021"
     },
     "style-2025": {
       "href": "./Cote_dIvoire.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "122016badcbe26a5959b6eed3c556778bf5ec7d7c95e7f2955ab9c3fc0b7436b4994"
     },
     "style-2024": {
       "href": "./Cote_dIvoire.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "1220b2668828fcb211e21764e44cba08c3a5f28c518660d7cb170acabe0cea256bf7"
     },
     "style-confidence-2025": {
       "href": "./Cote_dIvoire.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "122036adaf2dbb46abb6ebd82edd4c2522acf0c624488ecca760e1c2c9e966e3d965"
     },
     "style-confidence-2024": {
       "href": "./Cote_dIvoire.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "1220346fba7f152bcde99b1f9442879bb6f5df9fa357fe51406e0c2309b0fecb9632"
     },
     "README": {
       "href": "./Cote_dIvoire.README.md",
@@ -165,7 +178,9 @@
       "title": "Cote_dIvoire \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4603,
+      "file:checksum": "122073c93d43a851021ed6cdc616ca6dbb326c054ccd60e76b876352bd0cc9057a5b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CI/Cote_dIvoire.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

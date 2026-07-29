@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "ET_SO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Ethiopia \u2014 Somali field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 489918633,
+      "file:checksum": "12205fb72c860e1e837c1a62330a35079bd4ea7097d0282e59545732553fbb5272f8"
     },
     "pmtiles": {
       "href": "./ET_SO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Ethiopia \u2014 Somali field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 288324668,
+      "file:checksum": "1220b72f3d906f7ad9441791b0ea3fbd6a3b55dec5f7280dbdf73cb4f8d8b8f11f1b"
     },
     "style-2025": {
       "href": "./ET_SO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220dd9bf053a3c96d17d3a12e7d93ca4eb2bc371ea74447d758e33826c5be0acb99"
     },
     "style-2024": {
       "href": "./ET_SO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220013fe7c75cc44bf78e9379256bd8457356138397cdf0517a2490d2fd8ba1cfc4"
     },
     "style-confidence-2025": {
       "href": "./ET_SO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203d52022d735648923f5ad106162efa0ca5f9942d34c5dfe581a9b45962905031"
     },
     "style-confidence-2024": {
       "href": "./ET_SO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12204012a7cb2990b9eb868e1e8c74ea93a1f232168dd31db5c05b671bcdd92a4723"
     },
     "README": {
       "href": "./ET_SO.README.md",
@@ -165,7 +178,9 @@
       "title": "Ethiopia \u2014 Somali \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4593,
+      "file:checksum": "1220879e22558342e5e9f1326084be8046e341bb4da98d04d6fc95a28e450d04d8dc"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_SO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_AL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Alabama field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 41410527,
+      "file:checksum": "1220af6d8f9b1cd5ee9173859b6ff676f036b201637a44ccfd3f293e13d5a38abb3a"
     },
     "pmtiles": {
       "href": "./US_AL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Alabama field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 37424594,
+      "file:checksum": "1220398cf1290c6924c3928861c978f52f4501bb1a4bafec86fecae8ef6fe2ea711f"
     },
     "style-2025": {
       "href": "./US_AL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f39976c4935301d5607226b3dac834bf68bbfe98addbcc2f82cf1fe67b460340"
     },
     "style-2024": {
       "href": "./US_AL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f3ee94ee7d422c348828ba6c6c683fcce015c0488b90c54bf21c26f0e6c90923"
     },
     "style-confidence-2025": {
       "href": "./US_AL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200d0b018874ea2da95278d8a95e901599a0c75b6c329114819fef71654d5d40fe"
     },
     "style-confidence-2024": {
       "href": "./US_AL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203e6e49d8aea29503cafa9c88481f4eb06790f2c82c208125865a3b4de8de4cfe"
     },
     "README": {
       "href": "./US_AL.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Alabama \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4436,
+      "file:checksum": "122006d45e065462652f4d1dc411d6dbdcfc88e8977f31825819e55923326d99c97f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_AL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

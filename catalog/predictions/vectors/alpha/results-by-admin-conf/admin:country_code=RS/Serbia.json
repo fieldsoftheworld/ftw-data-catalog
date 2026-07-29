@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Serbia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Serbia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 478514449,
+      "file:checksum": "12205b20352fd34957e39a8243e1e62cfde9c6b3ea149811fb67c83c66b71378696a"
     },
     "pmtiles": {
       "href": "./Serbia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Serbia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 285189691,
+      "file:checksum": "1220a40d28303a87ab81d6f83ee79f00c7930b5faf0aa6a676d9c0ae25b1a4932b8d"
     },
     "style-2025": {
       "href": "./Serbia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122003f602d85400d62e27346494ce5ba38237e337fb3debeb52a5723139217bdbd7"
     },
     "style-2024": {
       "href": "./Serbia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220626b6cd7c7e2f911e4eab2c9c6452c26f13219027568ca31197f4fa456db7cf8"
     },
     "style-confidence-2025": {
       "href": "./Serbia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220ce09428469009fac0b65b5b7ae6786175f90cdc2b773430b046f6d8b9821af43"
     },
     "style-confidence-2024": {
       "href": "./Serbia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122005228fb850f03c35da20452c98e189bed1624fe4767b12a15241df0d514a4053"
     },
     "README": {
       "href": "./Serbia.README.md",
@@ -165,7 +178,9 @@
       "title": "Serbia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4584,
+      "file:checksum": "12206cc76294d620773e85e68af7ade983da2467d342e5c569c79e18fce59548fd31"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=RS/Serbia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

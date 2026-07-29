@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Sudan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Sudan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 6859698997,
+      "file:checksum": "12202d5ec5b97f06e9dd2f3c8e26c52250a65222b340d77b82be04d736b08cd3d481"
     },
     "pmtiles": {
       "href": "./Sudan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Sudan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 3174987355,
+      "file:checksum": "1220829fb87f31ff7163d98d9d6eebdfa97bc283cdbd1b74c29c9e0accdf99a27d89"
     },
     "style-2025": {
       "href": "./Sudan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220664b9289b987a13e4c3dfd7efb8d6f25d7f06e1cd3bb0775026ba620d8f94cd6"
     },
     "style-2024": {
       "href": "./Sudan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122033cffb28a1652ba1c17ad1b1638789e2c7fbe5f8a40507afa72162d949675ddd"
     },
     "style-confidence-2025": {
       "href": "./Sudan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220023f13790bbdb9f759a5a7b829c40a4843f4f34f16b83310ea8f8390a04affbd"
     },
     "style-confidence-2024": {
       "href": "./Sudan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202e0cfd6912786af6c01ba627e41ff0c156304bdc8da0ed032075f5db6bffe953"
     },
     "README": {
       "href": "./Sudan.README.md",
@@ -165,7 +178,9 @@
       "title": "Sudan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4580,
+      "file:checksum": "1220a3196b7add6f34aa5edc80fdbcaa325af05ffdc93f61c6333eff6aeb35ab8d62"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SD/Sudan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

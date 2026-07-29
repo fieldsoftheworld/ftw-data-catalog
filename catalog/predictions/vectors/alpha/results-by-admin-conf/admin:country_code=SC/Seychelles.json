@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Seychelles",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Seychelles field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 419591,
+      "file:checksum": "12202e8de118a7e7507a152762602911d0726c96c65184b9e698b1fb32f8a37da873"
     },
     "pmtiles": {
       "href": "./Seychelles.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Seychelles field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 429979,
+      "file:checksum": "1220d3f11795884c8d0ec6dc367e7ddc24ee5402e7b9e3cbc51ce2febb93db954070"
     },
     "style-2025": {
       "href": "./Seychelles.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "122053d1eccac1ec4b4d466bb4704b8b0309ca02cb27b4bb65e67233ef6ea44920b7"
     },
     "style-2024": {
       "href": "./Seychelles.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "12201311715edb6fb0b4671ce1f76784e9eb388e84c0050b137d0a3c5434db78b346"
     },
     "style-confidence-2025": {
       "href": "./Seychelles.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220699c43843106d58065f78cafee706c8ebfbf15288e20422c34fa6385043c78bf"
     },
     "style-confidence-2024": {
       "href": "./Seychelles.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "12202af07a3f0ca640d954be0ffe8d4a5cd1411d54aa5328f7a8424be3e181257c8c"
     },
     "README": {
       "href": "./Seychelles.README.md",
@@ -165,7 +178,9 @@
       "title": "Seychelles \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4592,
+      "file:checksum": "122009521ed0a8f4f546af07aa71d1f8b0c91226494888687b9fbe71c1a6f6da4ffd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SC/Seychelles.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

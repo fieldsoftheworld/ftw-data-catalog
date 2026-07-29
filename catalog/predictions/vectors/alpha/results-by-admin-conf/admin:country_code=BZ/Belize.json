@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Belize",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Belize field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 44530421,
+      "file:checksum": "122036d7596e8fc8df0a8e40795501083268d023c2fb43fbe727c1302e00eb4a394d"
     },
     "pmtiles": {
       "href": "./Belize.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Belize field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 36018801,
+      "file:checksum": "1220055e9e30987bda42158d91ae31982ee5e7bdb92ce81c4a44c69ce8392187047f"
     },
     "style-2025": {
       "href": "./Belize.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12206dcc2ad8b9ed6f21f9e2c06bace015719d488f802492311741134c8c40625b09"
     },
     "style-2024": {
       "href": "./Belize.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "12207fdb4112eab380bc260895dec8a385156133e6959224bf07ef6c83f3a001df87"
     },
     "style-confidence-2025": {
       "href": "./Belize.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "1220a7ab6874cedf00e0bd279c577e0ae5fac5480739b4c71c71f39738d16377d284"
     },
     "style-confidence-2024": {
       "href": "./Belize.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12208024e46f2e361dba379b78c9771f0ffa390b0fef71084ccb08f5813556b57f19"
     },
     "README": {
       "href": "./Belize.README.md",
@@ -165,7 +178,9 @@
       "title": "Belize \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4582,
+      "file:checksum": "12204d29ad376edc0989515422ef183178906f86a58c4148cdb6383dafb5699a9fbf"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BZ/Belize.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

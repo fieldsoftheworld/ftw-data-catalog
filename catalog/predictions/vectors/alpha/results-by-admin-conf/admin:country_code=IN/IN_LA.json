@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_LA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Lad\u0101kh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 20072345,
+      "file:checksum": "1220ab8afbb51df5420a19b31347f50590e8cd3e586d7cbf06a658317afb9ede2a8d"
     },
     "pmtiles": {
       "href": "./IN_LA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Lad\u0101kh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 16455347,
+      "file:checksum": "1220c9921835bb4c4cd580990525121aadf9f63e80fcb0fb4ea7d4994ae95ee0de2d"
     },
     "style-2025": {
       "href": "./IN_LA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122077b89b5568d0b1730a60a2812bb28e4f2fcca25ef6bcf716c58ff659250f2ed2"
     },
     "style-2024": {
       "href": "./IN_LA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204ee64144843495ad5de20ad8a446b549852950fb21fca9eebac92bb1a2929903"
     },
     "style-confidence-2025": {
       "href": "./IN_LA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209264760d2144b48c83ce1a900202e711890d653c72da5076b17aefa3a72280da"
     },
     "style-confidence-2024": {
       "href": "./IN_LA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122047b0362f4f71e6038ae59942224c7082d8d2ee221062df83cce0b50b777c846c"
     },
     "README": {
       "href": "./IN_LA.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Lad\u0101kh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4427,
+      "file:checksum": "12209067b1ac84e831df02a733997171974b4a9b8cc0cf8e818e97a70029443e45f2"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_LA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

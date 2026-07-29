@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_MN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Minnesota field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 311706885,
+      "file:checksum": "122084ea046579f4052c38f29c5d7a769bdaf58a16076fd8040a7e465f3a9213c4b1"
     },
     "pmtiles": {
       "href": "./US_MN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Minnesota field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 248514059,
+      "file:checksum": "122043470491969b3e12425cbe6483610b75cf22f9da017eda51bee522667ecb1291"
     },
     "style-2025": {
       "href": "./US_MN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220718a48cac1b178b91a6d44c0606448b29258eba30bf1e2111646cb8f6ab0b8e3"
     },
     "style-2024": {
       "href": "./US_MN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b05ec5eff13da8b25700370a50e5fe689b1dbbb6a9c9b79ebd0761ddc7f98c8c"
     },
     "style-confidence-2025": {
       "href": "./US_MN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205c58ce4801e2081d1cbdd63ba426ce93a5fdfd0d31ae2b84ec959982b32e7e73"
     },
     "style-confidence-2024": {
       "href": "./US_MN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f4684f042725d5574414ba4d292230ec7616ce34960fad7e7220f0089ceca378"
     },
     "README": {
       "href": "./US_MN.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Minnesota \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "1220bfb928cee00eb8b8089ce4c9be2d483d2d16e629eea2d265d201283637f03ba6"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_MN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

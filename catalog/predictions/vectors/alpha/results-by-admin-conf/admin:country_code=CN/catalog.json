@@ -16,11 +16,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/catalog.json",
-      "type": "application/json"
-    },
-    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -34,347 +29,432 @@
     {
       "rel": "item",
       "href": "./CN_01.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_01"
     },
     {
       "rel": "item",
       "href": "./CN_02.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_02"
     },
     {
       "rel": "item",
       "href": "./CN_03.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_03"
     },
     {
       "rel": "item",
       "href": "./CN_04.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_04"
     },
     {
       "rel": "item",
       "href": "./CN_043.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_043"
     },
     {
       "rel": "item",
       "href": "./CN_051.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_051"
     },
     {
       "rel": "item",
       "href": "./CN_053.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_053"
     },
     {
       "rel": "item",
       "href": "./CN_061.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_061"
     },
     {
       "rel": "item",
       "href": "./CN_063.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_063"
     },
     {
       "rel": "item",
       "href": "./CN_065.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_065"
     },
     {
       "rel": "item",
       "href": "./CN_069.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_069"
     },
     {
       "rel": "item",
       "href": "./CN_07.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_07"
     },
     {
       "rel": "item",
       "href": "./CN_09.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_09"
     },
     {
       "rel": "item",
       "href": "./CN_10.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_10"
     },
     {
       "rel": "item",
       "href": "./CN_11.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_11"
     },
     {
       "rel": "item",
       "href": "./CN_13.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_13"
     },
     {
       "rel": "item",
       "href": "./CN_17.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_17"
     },
     {
       "rel": "item",
       "href": "./CN_19.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_19"
     },
     {
       "rel": "item",
       "href": "./CN_33.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_33"
     },
     {
       "rel": "item",
       "href": "./CN_63.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_63"
     },
     {
       "rel": "item",
       "href": "./CN_AH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Anhui Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_AL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_AL"
     },
     {
       "rel": "item",
       "href": "./CN_AMU.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_AMU"
     },
     {
       "rel": "item",
       "href": "./CN_AR.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_AR"
     },
     {
       "rel": "item",
       "href": "./CN_BJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Beijing Shi"
     },
     {
       "rel": "item",
       "href": "./CN_CQ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Chongqing Shi"
     },
     {
       "rel": "item",
       "href": "./CN_FJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Fujian Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_GB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_GB"
     },
     {
       "rel": "item",
       "href": "./CN_GD.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Guangdong Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_GS.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Gansu Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_GX.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Guangxi Zhuangzu Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_GZ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Guizhou Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Henan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Hubei Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HE.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Hebei Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HI.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Hainan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Heilongjiang Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Hunan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_JL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Jilin Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_JS.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Jiangsu Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_JX.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Jiangxi Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_LA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_LA"
     },
     {
       "rel": "item",
       "href": "./CN_LM.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_LM"
     },
     {
       "rel": "item",
       "href": "./CN_LN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Liaoning Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_NM.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Nei Mongol Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_NX.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Ningxia Huizu Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_O.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_O"
     },
     {
       "rel": "item",
       "href": "./CN_P1.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_P1"
     },
     {
       "rel": "item",
       "href": "./CN_P4.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_P4"
     },
     {
       "rel": "item",
       "href": "./CN_P6.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_P6"
     },
     {
       "rel": "item",
       "href": "./CN_PH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_PH"
     },
     {
       "rel": "item",
       "href": "./CN_PRI.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_PRI"
     },
     {
       "rel": "item",
       "href": "./CN_QH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Qinghai Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SC.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Sichuan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SD.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Shandong Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Shanghai Shi"
     },
     {
       "rel": "item",
       "href": "./CN_SK.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_SK"
     },
     {
       "rel": "item",
       "href": "./CN_SN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Shaanxi Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SX.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Shanxi Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_TJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Tianjin Shi"
     },
     {
       "rel": "item",
       "href": "./CN_UK.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_UK"
     },
     {
       "rel": "item",
       "href": "./CN_XJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Xinjiang Uygur Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_XZ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Xizang Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_Y.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_Y"
     },
     {
       "rel": "item",
       "href": "./CN_YEV.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_YEV"
     },
     {
       "rel": "item",
       "href": "./CN_YN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Yunnan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_ZAB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_ZAB"
     },
     {
       "rel": "item",
       "href": "./CN_ZJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "China \u2014 Zhejiang Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_ZZ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "CN_ZZ"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+  ],
+  "updated": "2026-07-28T16:34:06Z"
 }

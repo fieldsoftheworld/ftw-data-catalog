@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_OR",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Oregon field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 452504479,
+      "file:checksum": "1220a98cad547c5660dd36933e7de713aee3e23249186730b7b8560fc972a4dab225"
     },
     "pmtiles": {
       "href": "./US_OR.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Oregon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 297172456,
+      "file:checksum": "1220d3c122d3af92daa64a6d9f9fbe9dcb71312bb25ad1c9c87a78308e81f7b9c779"
     },
     "style-2025": {
       "href": "./US_OR.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122098aaac4562bf706f08b165b779f830d23927d27b56ba092112593c1731dfc41c"
     },
     "style-2024": {
       "href": "./US_OR.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205b59d7d6156bfe1c02921efaaf557bb27aac9fdb4de65604af252e926284a741"
     },
     "style-confidence-2025": {
       "href": "./US_OR.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201334989237a4629ffe3b719b2ec3939b809a1af79842734a054e4e60884a4346"
     },
     "style-confidence-2024": {
       "href": "./US_OR.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d666010f4bb92d3fe269031b5d65fa16d1bdbcc9f5aa36fd85468410a81add17"
     },
     "README": {
       "href": "./US_OR.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Oregon \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220d0b477e3998fe5da0a536b1f453a95cc4421f817ecbad2ff33fe2b371869286e"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_OR.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

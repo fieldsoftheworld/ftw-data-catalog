@@ -16,11 +16,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/catalog.json",
-      "type": "application/json"
-    },
-    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -34,102 +29,138 @@
     {
       "rel": "item",
       "href": "./PK_11.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_11"
     },
     {
       "rel": "item",
       "href": "./PK_BA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Balochistan"
     },
     {
       "rel": "item",
       "href": "./PK_GB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Gilgit-Baltistan"
     },
     {
       "rel": "item",
       "href": "./PK_GJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_GJ"
     },
     {
       "rel": "item",
       "href": "./PK_HEL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_HEL"
     },
     {
       "rel": "item",
       "href": "./PK_IS.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Islamabad"
     },
     {
       "rel": "item",
       "href": "./PK_JK.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Azad Jammu and Kashmir"
     },
     {
       "rel": "item",
       "href": "./PK_KAN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_KAN"
     },
     {
       "rel": "item",
       "href": "./PK_KHO.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_KHO"
     },
     {
       "rel": "item",
       "href": "./PK_KP.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Khyber Pakhtunkhwa"
     },
     {
       "rel": "item",
       "href": "./PK_LA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_LA"
     },
     {
       "rel": "item",
       "href": "./PK_NAN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_NAN"
     },
     {
       "rel": "item",
       "href": "./PK_NIM.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_NIM"
     },
     {
       "rel": "item",
       "href": "./PK_PB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Punjab"
     },
     {
       "rel": "item",
       "href": "./PK_PIA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_PIA"
     },
     {
       "rel": "item",
       "href": "./PK_PKA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_PKA"
     },
     {
       "rel": "item",
       "href": "./PK_RJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_RJ"
     },
     {
       "rel": "item",
       "href": "./PK_SD.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Pakistan \u2014 Sindh"
     },
     {
       "rel": "item",
       "href": "./PK_XJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_XJ"
     },
     {
       "rel": "item",
       "href": "./PK_ZAB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "PK_ZAB"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+  ],
+  "updated": "2026-07-28T16:34:06Z"
 }

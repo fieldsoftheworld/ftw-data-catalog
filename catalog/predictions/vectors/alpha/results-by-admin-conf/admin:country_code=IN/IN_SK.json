@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_SK",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Sikkim field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 767753,
+      "file:checksum": "1220d88192c607a74b573c76c37fde487e03b02b0f4b10f6eae6969d3964163ada25"
     },
     "pmtiles": {
       "href": "./IN_SK.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Sikkim field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 673412,
+      "file:checksum": "122056d6bf73b2f586c6b02ac08aa10076176499ca08cc0127134d5dd175eb5692c5"
     },
     "style-2025": {
       "href": "./IN_SK.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203e3dd70dc6689dff68cb29e5a71f25e7ba809b5b78d8e23fafbe039ac8c6800d"
     },
     "style-2024": {
       "href": "./IN_SK.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122094b94a1fa43aceff1f6ec6d2f781e52434cf825205929d1a3f2d5c21fb994208"
     },
     "style-confidence-2025": {
       "href": "./IN_SK.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c61cd23feb88c43734c42ca443422151704a057abf0279426bc384295a2524db"
     },
     "style-confidence-2024": {
       "href": "./IN_SK.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fa71d0f1e86af6eefa82e0364e45ecc81b0d94a15d0c4d501c942fc6eac579bb"
     },
     "README": {
       "href": "./IN_SK.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Sikkim \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4425,
+      "file:checksum": "12204d1ad6e45309d940b00cf4bfce295db821c896b0643afbb5dd8ea901e12b3226"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_SK.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_KL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Kerala field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 250133788,
+      "file:checksum": "12201b9d68ecb834e9e77aba8eebd42228ca7e778034e8da3633b6461dddab335fbf"
     },
     "pmtiles": {
       "href": "./IN_KL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Kerala field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 153094449,
+      "file:checksum": "1220d4a38ae7a2c8e039ced4208231f71d150ef1826ae5d83de42847e617b51ef689"
     },
     "style-2025": {
       "href": "./IN_KL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203e42badb068f4c05ceab21334978851c7d490b3f64b8a6d2a5ea81206748e914"
     },
     "style-2024": {
       "href": "./IN_KL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e1d4ed97858edeeab3d24bd689e4308017622c763e17d9539af0177d1c3409a0"
     },
     "style-confidence-2025": {
       "href": "./IN_KL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209ce2518627841efaec77860ce90ee11eb0593a20fe037192c980335bac4e2a8d"
     },
     "style-confidence-2024": {
       "href": "./IN_KL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122013bf99bb022958b6a4ae0f60cff735d9cb454e41c17b704487b841d2d696c08c"
     },
     "README": {
       "href": "./IN_KL.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Kerala \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4429,
+      "file:checksum": "1220b92e67679e386caf824ede341cbf9bf5cdcc4d626f5267e5f255e4b3b4d43712"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_KL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

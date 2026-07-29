@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_MS",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Mississippi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 70299375,
+      "file:checksum": "12207be12a7e59e111c43ad3ae31d5288bdce2d3968799f4b7ee80d2fb80b2b2b5fb"
     },
     "pmtiles": {
       "href": "./US_MS.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Mississippi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 52342514,
+      "file:checksum": "1220fcd2c10baddf90a1ab2f276dcedf1adcbf8b5c7aae1a26947c54ed2403210e02"
     },
     "style-2025": {
       "href": "./US_MS.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12209fb75d16e5f6dd6df178b9092750757c550d3d218f2465f948e8d49cc12e45eb"
     },
     "style-2024": {
       "href": "./US_MS.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c06d6cd4f01fb80c659d00ec837037d65b01816fb4d35e079844011b921d2cf7"
     },
     "style-confidence-2025": {
       "href": "./US_MS.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122001516c4935aa9e60c1c169c337e12475fcd69e9245be883f4600bdf769a840cb"
     },
     "style-confidence-2024": {
       "href": "./US_MS.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209fc6b2701efe8fecc1fb74afd8d05c2b3ad4a4998603276f8717d2e08374207d"
     },
     "README": {
       "href": "./US_MS.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Mississippi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4440,
+      "file:checksum": "12203dcda650b4a3eb174071a45efddbbbd8698dc45fa4ca0c0670cbb528f21c289a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_MS.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

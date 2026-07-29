@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_HE",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Hebei Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1618377499,
+      "file:checksum": "1220ee1120bdd1dec62c9f13d459d9681a2759464c6538baa038f8d463b2a4cec1b2"
     },
     "pmtiles": {
       "href": "./CN_HE.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Hebei Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 978459686,
+      "file:checksum": "1220cf3e62ddc3e7f6a2ce373923ae8d4892df18dfbc7e85b58b48e5adfe9d6021d6"
     },
     "style-2025": {
       "href": "./CN_HE.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b004984481cd57b072ac03ba8ec754449a0494b5d6cdfbbea4c01ecee9663b71"
     },
     "style-2024": {
       "href": "./CN_HE.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220eaa03d7cd8e758c6ccb067cca4b6e9e1563d11488a4294b50e0f1a3dd8a05bc1"
     },
     "style-confidence-2025": {
       "href": "./CN_HE.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209f985dfa948dc1a0ea312df11e90908cdeb7293c9fd147577ebd8490046d32fc"
     },
     "style-confidence-2024": {
       "href": "./CN_HE.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207e1960e79490e2a869690ac87c6ee14c9068cd067f15ba91f6ab9df03555f1c3"
     },
     "README": {
       "href": "./CN_HE.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Hebei Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "1220e567152ec61bf8f052eef9bbe7eb8ca1397cddf975a8bfce3e7686e92140466b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_HE.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

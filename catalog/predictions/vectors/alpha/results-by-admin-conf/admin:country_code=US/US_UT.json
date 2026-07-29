@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_UT",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Utah field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 305878033,
+      "file:checksum": "1220e13178602b5faf1ff7a362a3319ca0156017fad3d269167430e90a5ceb595b36"
     },
     "pmtiles": {
       "href": "./US_UT.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Utah field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 231793846,
+      "file:checksum": "12202d15ce067ff9423ed610d87949245b46be25ba1c2a3252f7d1d81a5fc76b685b"
     },
     "style-2025": {
       "href": "./US_UT.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b0d8243abe38b64fa1f4a1bb89a73a46baf1596854991ad98973e23033316e56"
     },
     "style-2024": {
       "href": "./US_UT.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220dd58c9f09011fa7124bcef639b341d870c5e8aee6ba3fdfc88e7db8f1d37bc35"
     },
     "style-confidence-2025": {
       "href": "./US_UT.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201f4d34dc2969acc51042cb92ac7f8a148b7b1ce853dfc71e7949c1c59150258b"
     },
     "style-confidence-2024": {
       "href": "./US_UT.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203a8d12f100e51e4f5a6cec7d4655eb850ec801c40dd4e71bb5c5bddafbe81b46"
     },
     "README": {
       "href": "./US_UT.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Utah \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "12204818ef08b82ed8ec7d7b1a559f38264577bd02b977cb3aa339e717564eba00f9"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_UT.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

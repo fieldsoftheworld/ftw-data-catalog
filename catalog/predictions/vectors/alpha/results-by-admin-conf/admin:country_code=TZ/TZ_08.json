@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_08",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Kigoma field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 341099899,
+      "file:checksum": "122097936799c402dcd46f6e2631289540e9973242a2386cde3e038efb7e84657f90"
     },
     "pmtiles": {
       "href": "./TZ_08.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Kigoma field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 171131284,
+      "file:checksum": "1220f4637071f7cc5272840637ab470397d4f40121607a464738ac14f4658198206a"
     },
     "style-2025": {
       "href": "./TZ_08.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122063ba63794010993f4b36d9612083617f21fee9813b9f02cc7b37353a729223f0"
     },
     "style-2024": {
       "href": "./TZ_08.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122060c41413ddfa7ca511b6eeec6b6853aae9a551cae6b813e21dbb45e11deb5cfe"
     },
     "style-confidence-2025": {
       "href": "./TZ_08.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122051c83a0290f9817af0936e75284562f1c98be51e4a8b36de905e6296c59d53ea"
     },
     "style-confidence-2024": {
       "href": "./TZ_08.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e520da3c2f62540dffe824d9365647b05a349aa56f0fd2d142da0d5257a6f5c4"
     },
     "README": {
       "href": "./TZ_08.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Kigoma \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "1220ed427dd55d0d3d5a3c9365e48c3f88476156157926b55a007d3ffcf9387f80fc"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_08.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

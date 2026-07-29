@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_NM",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Nei Mongol Zizhiqu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 5522954074,
+      "file:checksum": "122039d310dca6a69bc1585f3e4d7bc61fd3d5b56715ffd5f6ad52694e5c3e32f519"
     },
     "pmtiles": {
       "href": "./CN_NM.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Nei Mongol Zizhiqu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2979477846,
+      "file:checksum": "12203e1e301f0275df907fa9047b1d4b403ab040e809f7b353177453e3c661242354"
     },
     "style-2025": {
       "href": "./CN_NM.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206c5e01abde402c1bedf1abf2f6e660d1e49fa2672b0586eadfa9059ccbd73e57"
     },
     "style-2024": {
       "href": "./CN_NM.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e617b6a6c1298fdbcd636b3ea1ff26758a3c0b9d29448aa153e5a9626b790f40"
     },
     "style-confidence-2025": {
       "href": "./CN_NM.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220276f2dbff266ee3b4e4cf85dc340ba48b7403b93d1239f10b3aaa25dd7516a46"
     },
     "style-confidence-2024": {
       "href": "./CN_NM.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12206ba3973466d0fb95e8acf7baa21a10e28d4d6b52e4c86a55ee340c704d350e58"
     },
     "README": {
       "href": "./CN_NM.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Nei Mongol Zizhiqu \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4442,
+      "file:checksum": "1220216a33cfd96e31af270333f0502ce4e2ea43b799e8534885dbeec1894d7b46fb"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_NM.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_11",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Zanzibar South field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 11903934,
+      "file:checksum": "122008bb8fda78ed4745407594d19599f5ab98af5b9b3d3379b95f714b2d9774d4e3"
     },
     "pmtiles": {
       "href": "./TZ_11.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Zanzibar South field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 10516583,
+      "file:checksum": "1220b912aed5341a1c39dbb88a8c14b98a025c8ce08a52f328c235495f43a3067a82"
     },
     "style-2025": {
       "href": "./TZ_11.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220230e2b2fc89cef430f29cf2477c70cdcf633304cd842526967403105a40dc546"
     },
     "style-2024": {
       "href": "./TZ_11.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122076234d0b8375206494678566969fc14c34fda31e942961d2188ce549887036ea"
     },
     "style-confidence-2025": {
       "href": "./TZ_11.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12204905f888314bdb7b71644f875fef27eb76e5d2618aac85c1c7c24b9066bc9cea"
     },
     "style-confidence-2024": {
       "href": "./TZ_11.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122009f90458d57dc111148acd1473fd0470190f0911fa86d57759d054a88792f51f"
     },
     "README": {
       "href": "./TZ_11.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Zanzibar South \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4458,
+      "file:checksum": "122040b6f578421b904ac99f4a59e0889f2cfe9558da5b397e804d5a32ffe88f0449"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_11.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

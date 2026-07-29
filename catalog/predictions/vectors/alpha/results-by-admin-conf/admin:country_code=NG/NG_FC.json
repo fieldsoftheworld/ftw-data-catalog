@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_FC",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Abuja Federal Capital Territory field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 127671960,
+      "file:checksum": "1220de5da3034ecc210320dea9ddb8d6cab7e9f567a2b0f1d6cb283ff6c30db308fa"
     },
     "pmtiles": {
       "href": "./NG_FC.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Abuja Federal Capital Territory field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 72353723,
+      "file:checksum": "12202150bc810bb1190035c01d6a03089482602a0e4b81ee783d044345ff49306a4e"
     },
     "style-2025": {
       "href": "./NG_FC.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207c6b090fee150a850896696dc573f92c0fb436ecb771595acdce2969c962e6e7"
     },
     "style-2024": {
       "href": "./NG_FC.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203fed53f33fde9ddb10b18b5abaaa3c5ceff4616d0b53a29c81323f3a72ec9e4e"
     },
     "style-confidence-2025": {
       "href": "./NG_FC.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f598ba437208366050682f00b8a56b56e39077d83645a6bc4290cddcbe7985f7"
     },
     "style-confidence-2024": {
       "href": "./NG_FC.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209dfd031e0ed9142c895d8b03b5fa1dccfd33bdd5748216153fdee799e6610b93"
     },
     "README": {
       "href": "./NG_FC.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Abuja Federal Capital Territory \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4456,
+      "file:checksum": "1220bb7664668f30a45f006aac7e17227638aa05d4f636ce505fe18b276c55691014"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_FC.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

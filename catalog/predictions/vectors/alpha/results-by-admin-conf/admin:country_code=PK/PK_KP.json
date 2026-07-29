@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_KP",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Pakistan \u2014 Khyber Pakhtunkhwa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 658892896,
+      "file:checksum": "1220c41b00851daf7f358f8e1d948ecb9892256c837b5f06dfcce284e6c90b4892d3"
     },
     "pmtiles": {
       "href": "./PK_KP.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Pakistan \u2014 Khyber Pakhtunkhwa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 354013741,
+      "file:checksum": "1220310bee007ae23adf505ade3c7b3b53bfbcd5a3dcddc45e0d2a4a160a5a3428ff"
     },
     "style-2025": {
       "href": "./PK_KP.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220babda929179951e0b936022a7c6035f49ad3627fc4ef142d236d174adb448401"
     },
     "style-2024": {
       "href": "./PK_KP.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220745bf1a980df01e79969d808df257e69b0577eef61e1d010ad2254fa495fca07"
     },
     "style-confidence-2025": {
       "href": "./PK_KP.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205a2067ce81ab7eefa1e46a968ad198a2a8823df004810fc8516043e8db6ec635"
     },
     "style-confidence-2024": {
       "href": "./PK_KP.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220881bbe835f80f21e61df8f05dd88d1bdd2c8e13184aaddcb4f01ffd365382ca6"
     },
     "README": {
       "href": "./PK_KP.README.md",
@@ -165,7 +178,9 @@
       "title": "Pakistan \u2014 Khyber Pakhtunkhwa \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4444,
+      "file:checksum": "12204cf8b1a1f62f9808cc2eef10082690b1ff58ed7b28317ef5409debdab46343cd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_KP.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

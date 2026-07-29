@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_IS",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Pakistan \u2014 Islamabad field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 8583306,
+      "file:checksum": "1220b43658668228ef34b360557371403689b778e5a76c727832aa723ae84e7c4769"
     },
     "pmtiles": {
       "href": "./PK_IS.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Pakistan \u2014 Islamabad field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 8108722,
+      "file:checksum": "1220186aa1893226f03c7d2c1a4c6f17f8c100cc134f31b7725309bb312480d79853"
     },
     "style-2025": {
       "href": "./PK_IS.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fea45c0190a0cfc89b55f2f1d5bfcef4d5a0fe2251aeb39f2adfe740f0108930"
     },
     "style-2024": {
       "href": "./PK_IS.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208cb770387daa8703f28daed60a73e380bf4cb5277e05298ba2527a236a12b8ed"
     },
     "style-confidence-2025": {
       "href": "./PK_IS.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203dca39a2be0e7f6ca1951f37f41c37795e26685a9c4e456cc4289304e2620ca9"
     },
     "style-confidence-2024": {
       "href": "./PK_IS.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122029827a9c70df144b8203356f51bdefa49a394082be94addafca0e3d858c4aa4a"
     },
     "README": {
       "href": "./PK_IS.README.md",
@@ -165,7 +178,9 @@
       "title": "Pakistan \u2014 Islamabad \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4433,
+      "file:checksum": "122027d2efacfab5104edab2e11113ea896c5e6aab75318a1cc9f04199b596e9ae5b"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_IS.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

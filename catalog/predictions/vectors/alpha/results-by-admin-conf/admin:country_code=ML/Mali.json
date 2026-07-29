@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Mali",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Mali field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 5309488960,
+      "file:checksum": "122043de3c071030c425a2fa5e672ac462b8a3ade59d8616cd8a2e84890966f01cd9"
     },
     "pmtiles": {
       "href": "./Mali.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Mali field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 2638787525,
+      "file:checksum": "122032ca642b435847db402450bbb75e7836c074c904d7077d029797c2fa932d1c4b"
     },
     "style-2025": {
       "href": "./Mali.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "12201f1d7f1620cb05efb460d1bd5f19ece673c01e508a27e1a44ba137f308f2c2c4"
     },
     "style-2024": {
       "href": "./Mali.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 897,
+      "file:checksum": "1220c9dc4afeb785a1fe2d85a7cf41162146ecd8a5f072b35c465f83edd189071522"
     },
     "style-confidence-2025": {
       "href": "./Mali.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "12209588caf3443de21ce35c0db3c69edb4ea2fe453a1337c387fbdb2be6750ac8eb"
     },
     "style-confidence-2024": {
       "href": "./Mali.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2641,
+      "file:checksum": "122097b6312e6e1deba4961bb5dbcd37fa594a5ebe835906a2f94cfa44648bee560c"
     },
     "README": {
       "href": "./Mali.README.md",
@@ -165,7 +178,9 @@
       "title": "Mali \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4579,
+      "file:checksum": "1220e62a45c63332645c20d53038c51107e2c181190933a6276312590a08845848d5"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ML/Mali.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

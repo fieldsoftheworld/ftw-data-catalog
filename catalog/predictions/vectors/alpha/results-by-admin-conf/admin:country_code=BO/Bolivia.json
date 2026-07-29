@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Bolivia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Bolivia, Plurinational State of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1688155913,
+      "file:checksum": "12208b436f4e8957729f333f2a66bbc8b22bfd0a06a73b0f4a44e8f0bcab3d27ee16"
     },
     "pmtiles": {
       "href": "./Bolivia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Bolivia, Plurinational State of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1033389575,
+      "file:checksum": "1220b0aed77cecf3ce79ae5c1be2935870abf5343e0c1e8d862b8d07ecd933a29504"
     },
     "style-2025": {
       "href": "./Bolivia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12201438b6e838fb6aba67971cf424ee15fa09f71cc52348849536bd51a7074a8fc7"
     },
     "style-2024": {
       "href": "./Bolivia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220b3864ddadc4b856d76635f36f3ad49885afbedd9b832cc55ed3ebc8cea4912b7"
     },
     "style-confidence-2025": {
       "href": "./Bolivia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220e7603422ea6a900df6eb6e33e82505bc05f96d4eada75252798ff7b14b415cd8"
     },
     "style-confidence-2024": {
       "href": "./Bolivia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12203f8edd1e1e3e3b2c205c96201127a6c9881dce648aa1a10deb50e5b6408ee2a0"
     },
     "README": {
       "href": "./Bolivia.README.md",
@@ -165,7 +178,9 @@
       "title": "Bolivia, Plurinational State of \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4612,
+      "file:checksum": "1220347ab50ef2d1c7ed5f074f80b6d4a276a2efbfa89a7fc876eef1d3cbeeb0f4af"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BO/Bolivia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

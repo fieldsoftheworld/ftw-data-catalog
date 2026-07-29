@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_WY",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Wyoming field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 583340069,
+      "file:checksum": "122018e8c4c6c31a5aeac21ea4cbf7fac5b8f992b03c0878b66e930134e9dc82b861"
     },
     "pmtiles": {
       "href": "./US_WY.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Wyoming field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 377521974,
+      "file:checksum": "122018f90e6cb0a200027c92ebff0fda6581d85f7e92d59dad770bbf556580277403"
     },
     "style-2025": {
       "href": "./US_WY.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203ccb4ab938aaf618286564a268034b67d5602710f39e6904cee17849e933a105"
     },
     "style-2024": {
       "href": "./US_WY.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205614f6a31da090259d7c09eda18c9540f648f9a674787ac3466990a393453573"
     },
     "style-confidence-2025": {
       "href": "./US_WY.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12205ec594b81d67b5ccecf2bd695832797a0260a82a6cc71aa92e41e1023ed086a6"
     },
     "style-confidence-2024": {
       "href": "./US_WY.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220f9512fb176293537ec4c7a40d612fb0ff683819355b98a37d99f00d2ceb0026c"
     },
     "README": {
       "href": "./US_WY.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Wyoming \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4438,
+      "file:checksum": "12204b8e321710d6cc590ded9531a43ee13379b3eeabceec83426288c2941c80d645"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_WY.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

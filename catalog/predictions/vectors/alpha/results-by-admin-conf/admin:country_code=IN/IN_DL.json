@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_DL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Delhi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 13044206,
+      "file:checksum": "1220ae4fcb25348afc23ea2c93633be286e35aa6e6249c69e3397fb76dfe7238f98f"
     },
     "pmtiles": {
       "href": "./IN_DL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Delhi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 12203556,
+      "file:checksum": "12200da158b75a58b2ef6f0237c35e296cd3a2c75d5b809c1ca2715582b96f376d15"
     },
     "style-2025": {
       "href": "./IN_DL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f17bad45208023e9c529b182f5af19f46ef2a77fa47f986cfab703b7b8b4b7b6"
     },
     "style-2024": {
       "href": "./IN_DL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207fa013de8dd19bcbfaa075d3d4c42b4a2a10c591cde52e2dbd5f628d4cf9db6e"
     },
     "style-confidence-2025": {
       "href": "./IN_DL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ccba2521624eb6557e4a93bd2b2e410241c81b4b35c32d524fa2ba5558cedf2e"
     },
     "style-confidence-2024": {
       "href": "./IN_DL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122078d3a9b1f119e770619db2e3d09f289ea2fc2357ca2dd6a5e780c96b5348094d"
     },
     "README": {
       "href": "./IN_DL.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Delhi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4426,
+      "file:checksum": "12209f085b43395b224cf1d86e6104c63614921521765eb79451a929172c906b0a4a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_DL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

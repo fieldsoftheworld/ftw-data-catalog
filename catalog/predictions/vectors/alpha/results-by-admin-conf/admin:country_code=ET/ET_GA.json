@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "ET_GA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Ethiopia \u2014 Gambela Peoples field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 135514713,
+      "file:checksum": "1220206a2d585b15a0cb8c7c89b35b2ea9dfad3639fdd1abb47a0f82af6a818b85bf"
     },
     "pmtiles": {
       "href": "./ET_GA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Ethiopia \u2014 Gambela Peoples field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 86509363,
+      "file:checksum": "1220d54675dd87422306584dfc226f516e8c8ce7678fe556c6c28baa1df7c2bc5f75"
     },
     "style-2025": {
       "href": "./ET_GA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a2828d59b4867ac80aecf65fd88d03f35aa4a3a5ba20e6e9b10e960bb67c9a8b"
     },
     "style-2024": {
       "href": "./ET_GA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e1a70143fc07c1f08d4ec0d1f439cc8a64d4b07ecaa2a96fefd458f10f06e8f2"
     },
     "style-confidence-2025": {
       "href": "./ET_GA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122096f0c7e263efcd66846869c9af60250553bad78f85d411e0a16b08a924f4be7d"
     },
     "style-confidence-2024": {
       "href": "./ET_GA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12200b658db209436239f4ffa8f48e171d4e6badb748593f01612de5b1aa7aee3aab"
     },
     "README": {
       "href": "./ET_GA.README.md",
@@ -165,7 +178,9 @@
       "title": "Ethiopia \u2014 Gambela Peoples \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4441,
+      "file:checksum": "12206aebe41a3a4fcd04356b18b4fca87ec2e2f2c3ca9d7200a5a205e0569fb103de"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_GA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

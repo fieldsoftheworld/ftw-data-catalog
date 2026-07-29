@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_SN",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Shaanxi Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1131360937,
+      "file:checksum": "12204151b868e5bd26cc65a64850e4f47398c59cc484d08c71919ca9fac8161fae59"
     },
     "pmtiles": {
       "href": "./CN_SN.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Shaanxi Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 679030750,
+      "file:checksum": "12205b013f8c323b891e418e14486a405aa78ff8e37f3993da683647baf40efc1a25"
     },
     "style-2025": {
       "href": "./CN_SN.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220881494f89004bde6972efee8c81e27f32f15247f9fd98b68ce5b76dff6f79337"
     },
     "style-2024": {
       "href": "./CN_SN.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12205ee6743d9951d8da154b08884f78b2693f2f80e034067c2690d1915d0366dc92"
     },
     "style-confidence-2025": {
       "href": "./CN_SN.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220112f066a3eb48eaf849f7cc511088042ff960d7a1c4a9e4dada288b1d1d55c4c"
     },
     "style-confidence-2024": {
       "href": "./CN_SN.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e8254a36220e416c94f3cd0f236643d44b520807e404a7187771c4f174b168c2"
     },
     "README": {
       "href": "./CN_SN.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Shaanxi Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "12204c64d58a80f912c6a3fd6db96528953234a1b6b74dde2ed6acca0e5a2ade4d68"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_SN.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

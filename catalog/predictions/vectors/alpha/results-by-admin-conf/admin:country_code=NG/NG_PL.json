@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_PL",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Plateau field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 478645543,
+      "file:checksum": "1220da5284e0ab0e27f6cd866f2a529c41b779cbf1bd48a76886d4fd1009894838f9"
     },
     "pmtiles": {
       "href": "./NG_PL.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Plateau field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 225565184,
+      "file:checksum": "12204e9a591409302aef6d2687dc37dbdd5f5060a667db2031fe4018cd198afd677a"
     },
     "style-2025": {
       "href": "./NG_PL.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220f2b1098a5fe15f81abeec0521a48d203a614d1b24ab824a453bcb6b800fff0bb"
     },
     "style-2024": {
       "href": "./NG_PL.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122091dd3506768cf29794193295bfe67621092fd12b77b0e1cdc803df0579d274af"
     },
     "style-confidence-2025": {
       "href": "./NG_PL.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fbc2a16b3cf9971713bc9d15a57890e3f0e0670f4152722f1d8faf9666c0a72e"
     },
     "style-confidence-2024": {
       "href": "./NG_PL.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122006ce4bd6f5ce22b1b9ee2883ef65d8cd886baca240ccbd0cd930b6438f38bfc0"
     },
     "README": {
       "href": "./NG_PL.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Plateau \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4432,
+      "file:checksum": "1220261dc13385afa23dd77fae049c821b0061b80becaee925bc0bf3d961e6bb7826"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_PL.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

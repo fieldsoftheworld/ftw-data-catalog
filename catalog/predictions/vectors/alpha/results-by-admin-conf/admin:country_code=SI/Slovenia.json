@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Slovenia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Slovenia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 45166133,
+      "file:checksum": "12200171f318fddc59421af52f462949573f444641912647c25a38fdff2c556149af"
     },
     "pmtiles": {
       "href": "./Slovenia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Slovenia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 35302502,
+      "file:checksum": "1220916f27bbd02d01393a6d3d228f0274bc2d3c935045712caa427fb4f46951e788"
     },
     "style-2025": {
       "href": "./Slovenia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "122069f1454b2fe7bb73741efa400349e701cba9bf22e317171bce4b284b6d697ec9"
     },
     "style-2024": {
       "href": "./Slovenia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220314501e2d0a55d5265b017193939b43f87c7cc63036f1f81a14cbd747d5edb5a"
     },
     "style-confidence-2025": {
       "href": "./Slovenia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "122005c5c0a7ff741a714086959409b15026dd136df44714a090851ff62478ae631a"
     },
     "style-confidence-2024": {
       "href": "./Slovenia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "122020931d7af3a623831545277298092bc1df9ba5493bd06ade15461aef62cc3c41"
     },
     "README": {
       "href": "./Slovenia.README.md",
@@ -165,7 +178,9 @@
       "title": "Slovenia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4589,
+      "file:checksum": "122046a69d129d8b38af8d3c0f61fd0f220211a3a73c22a3fe500cca132769a8dabd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SI/Slovenia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

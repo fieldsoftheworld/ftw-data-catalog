@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_EB",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Ebonyi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 74243984,
+      "file:checksum": "12209f6b40bf3556bf4f39386c59c82348733dd934aa46a42b3d48e479247bdcd19b"
     },
     "pmtiles": {
       "href": "./NG_EB.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Ebonyi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 48389314,
+      "file:checksum": "122017edbecb8b7ee26567d77e0ea3c20bea081ed71f76d4b28d369049d415aa21d0"
     },
     "style-2025": {
       "href": "./NG_EB.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122052618f8cebfb9b7481890c5fa19a595f696d20934e3843ff6d5fa2b7b10ef29b"
     },
     "style-2024": {
       "href": "./NG_EB.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b090abfb5f62d030518c6370da62e1982035d58045f42acc92557d915506167e"
     },
     "style-confidence-2025": {
       "href": "./NG_EB.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b0e0d015cffb168bb3ff4a181bb22b31adc7e106fbe6c396ced4c1104e40bb83"
     },
     "style-confidence-2024": {
       "href": "./NG_EB.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a4d045c823d11d68b42a13700b8bdf0297e44597c1424a62ed35f616324742a2"
     },
     "README": {
       "href": "./NG_EB.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Ebonyi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "1220270a5ed4658ae6f53900212bb308a80d641f258e23441a74eceeb5894d116c32"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_EB.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

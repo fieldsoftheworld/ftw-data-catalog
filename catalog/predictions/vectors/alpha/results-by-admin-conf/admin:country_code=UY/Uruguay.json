@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Uruguay",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Uruguay field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 219124023,
+      "file:checksum": "12200c2d6eaccf876d6e9e58d1fab137a23dee2d289b5a08b06ce888a9e2c0800ddf"
     },
     "pmtiles": {
       "href": "./Uruguay.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Uruguay field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 137688124,
+      "file:checksum": "122080b3f83309682461de6e2fc34b86267f71e2228bde5978d881f3e11b6b07cdaf"
     },
     "style-2025": {
       "href": "./Uruguay.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220b3fed9dcd13e2e218d518fc398ec5a2a325c55778353562de55968926cd43a5d"
     },
     "style-2024": {
       "href": "./Uruguay.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12202550360d8ee06ff739c28bcf928962274a263bd44dbb2549300dc356785b868d"
     },
     "style-confidence-2025": {
       "href": "./Uruguay.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12203ce256f51e48d67d61e269a24868451f313b792631c95386a206386527cbebfe"
     },
     "style-confidence-2024": {
       "href": "./Uruguay.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220a487e0e4dc3739050478d77cd0ff99537082162878356569dd53f128ead0e1ef"
     },
     "README": {
       "href": "./Uruguay.README.md",
@@ -165,7 +178,9 @@
       "title": "Uruguay \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4586,
+      "file:checksum": "1220f452e68512459120b7cf2423a508e61e10aec9e2cfa2ba26a5219f9fa85d7058"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=UY/Uruguay.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

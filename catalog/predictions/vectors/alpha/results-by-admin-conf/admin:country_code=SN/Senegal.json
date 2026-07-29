@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Senegal",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Senegal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1645844093,
+      "file:checksum": "12207baad712ee18bc375bc63c693c19dafe7c57c1ca45e6da5568ae8f8e9a97b8fb"
     },
     "pmtiles": {
       "href": "./Senegal.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Senegal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 814907236,
+      "file:checksum": "1220467abbbb1f1169fce1b41ee17d33c8228e16700d62ed6812fb9503919a54bc93"
     },
     "style-2025": {
       "href": "./Senegal.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220737019451d6efd6c9fc61d3186214fe06427a4b475c3468abcd2cbf4e83aec2f"
     },
     "style-2024": {
       "href": "./Senegal.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220dc1b6974ab1aa27eeb150d302688d6f6989588f3214b072a98d7be464cff1302"
     },
     "style-confidence-2025": {
       "href": "./Senegal.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220bfcd79a046287cd9d707eb40ae22cdb8058ea9e4e2557bd593d45b4048670ed3"
     },
     "style-confidence-2024": {
       "href": "./Senegal.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220411188000e171bfc1ec84f4fb7815cfd685786aa1bd472b3562ac3b9afae0410"
     },
     "README": {
       "href": "./Senegal.README.md",
@@ -165,7 +178,9 @@
       "title": "Senegal \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4588,
+      "file:checksum": "12200c81b2c214a71d1ed269c29923cf67dbdabc16fe1be5a099125c4bc1fe97c0cb"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SN/Senegal.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

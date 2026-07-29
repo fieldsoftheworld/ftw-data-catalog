@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Guinea-Bissau",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Guinea-Bissau field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 285441591,
+      "file:checksum": "1220e6217dbd728424d58dc42f176d02580c28be915ae8256a0359518d8e0f2d1dc3"
     },
     "pmtiles": {
       "href": "./Guinea-Bissau.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Guinea-Bissau field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 173459974,
+      "file:checksum": "122066c23bb6eb309fd03404950e9a526c1c2d6a675f097efe38a9a807224428bb6e"
     },
     "style-2025": {
       "href": "./Guinea-Bissau.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 924,
+      "file:checksum": "12208a20f831409e452c877bba40352bd0cdd674f8e40ad3487d7da776d751b348ca"
     },
     "style-2024": {
       "href": "./Guinea-Bissau.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 924,
+      "file:checksum": "1220c1087a8f5db4612803d7773566dbab362aec807eb2cac884e53ed14df79b4a27"
     },
     "style-confidence-2025": {
       "href": "./Guinea-Bissau.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2668,
+      "file:checksum": "12202a9c0643d6ff771451fd4fae27ef31e0a9a87ac3b8b79d306408d3aa9ff6d134"
     },
     "style-confidence-2024": {
       "href": "./Guinea-Bissau.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2668,
+      "file:checksum": "12208a833edfe1a7d79065791e62138699c54f160495bcaa3f11f48ce6c1ce71228d"
     },
     "README": {
       "href": "./Guinea-Bissau.README.md",
@@ -165,7 +178,9 @@
       "title": "Guinea-Bissau \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4605,
+      "file:checksum": "1220803fa6484c65a68c9343a0b980da31a62ee9e3d6bb975dedd5e5399745a9ea8d"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GW/Guinea-Bissau.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

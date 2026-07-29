@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "AU_WA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Australia \u2014 Western Australia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3120306357,
+      "file:checksum": "1220cfc27d7d4f8dc60f47ef0d843d25a6a90d6364a5529331989ef51a19ab23c93f"
     },
     "pmtiles": {
       "href": "./AU_WA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Australia \u2014 Western Australia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1870499322,
+      "file:checksum": "122011bd63a3b19cf887d37bf03bc3656c325482f308e28374df68a1f83a262afd95"
     },
     "style-2025": {
       "href": "./AU_WA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122017957d04a32964adca0cfea6be3f0b6af0eda8135dd832e10786b855ffd81130"
     },
     "style-2024": {
       "href": "./AU_WA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220fa47f0c66d041f2900f51d9e8b161522f678d0df80ffb0c0cb67cfaa372d12c8"
     },
     "style-confidence-2025": {
       "href": "./AU_WA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122075d6db778e25990fa7274853245290fe23c5f0a82bd5d63fdf77ecb547616581"
     },
     "style-confidence-2024": {
       "href": "./AU_WA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220437379d79a35cbc99c720cdae2d72d0758c9b05d2c63ddd7eb031630ac26062f"
     },
     "README": {
       "href": "./AU_WA.README.md",
@@ -165,7 +178,9 @@
       "title": "Australia \u2014 Western Australia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4445,
+      "file:checksum": "1220c84e1281248f9408dfe80e5dfb2d68e30b1990a75289a7383b48358888b5e3a8"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_WA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

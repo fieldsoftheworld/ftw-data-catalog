@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_JK",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Pakistan \u2014 Azad Jammu and Kashmir field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 23260167,
+      "file:checksum": "1220e7492fe0ee1cc97e36b40a138e74c98805f4da6defcd8e37ef879554de413bca"
     },
     "pmtiles": {
       "href": "./PK_JK.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Pakistan \u2014 Azad Jammu and Kashmir field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 18898083,
+      "file:checksum": "1220be6eb40d6d023194148a30d9ffca43cd36fb6f152632fff507d3bc62121ddc8d"
     },
     "style-2025": {
       "href": "./PK_JK.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220cd2d3f976555d7c110d6952a1ed378eb3273fe867f25df9cd51959b056a27ec5"
     },
     "style-2024": {
       "href": "./PK_JK.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200d3d7cc92e4aa8cc74cb2127f723e7611fce6152eb42c988c94f282bf63c38ed"
     },
     "style-confidence-2025": {
       "href": "./PK_JK.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12208155d23c0f6c7834a94a1d827f01fd6eb6f033ec6b27e7dc24beb4254443e073"
     },
     "style-confidence-2024": {
       "href": "./PK_JK.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ececaace16a1dc2fe53f8877a2970760f8c39be8438ed76b5271f1f44cd6c65e"
     },
     "README": {
       "href": "./PK_JK.README.md",
@@ -165,7 +178,9 @@
       "title": "Pakistan \u2014 Azad Jammu and Kashmir \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4446,
+      "file:checksum": "1220eb1be1ca23c3cd68a7fc538aa6e9092d918b2da3afe43891768d4629cfdee147"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_JK.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

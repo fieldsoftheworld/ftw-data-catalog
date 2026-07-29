@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Bosnia_and_Herzegovina",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Bosnia_and_Herzegovina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 86390202,
+      "file:checksum": "12203922885f42736070126f9b2da0c475d18b7deba3f30b2749669650621d2310f4"
     },
     "pmtiles": {
       "href": "./Bosnia_and_Herzegovina.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Bosnia_and_Herzegovina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 67221908,
+      "file:checksum": "12201d924578f8360429f3cb885718249db5d4ecd14324b1e696815a871265b3c1e3"
     },
     "style-2025": {
       "href": "./Bosnia_and_Herzegovina.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 951,
+      "file:checksum": "12203296ff029e1a229fd99c6dbc126e480513284dbdcc10b4fd584ce180a747d242"
     },
     "style-2024": {
       "href": "./Bosnia_and_Herzegovina.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 951,
+      "file:checksum": "1220c75de201ca434c8271702964836ad20fcc63b69e2a141cae658ecc4101531bda"
     },
     "style-confidence-2025": {
       "href": "./Bosnia_and_Herzegovina.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2695,
+      "file:checksum": "1220c4571fceac123c055048f962e6a868fbf9b1f6bd0b8ba7839c6ff25d4e1d067f"
     },
     "style-confidence-2024": {
       "href": "./Bosnia_and_Herzegovina.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2695,
+      "file:checksum": "1220979e7fbea8190feaf1242b6e75b9486827958b9e08cc8770fd3cd0aa97872c8b"
     },
     "README": {
       "href": "./Bosnia_and_Herzegovina.README.md",
@@ -165,7 +178,9 @@
       "title": "Bosnia_and_Herzegovina \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4631,
+      "file:checksum": "12207b59b44c968c8950c3bcc51093dbc0cfb8b294187564050ab14a93dcd3d23a2a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BA/Bosnia_and_Herzegovina.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

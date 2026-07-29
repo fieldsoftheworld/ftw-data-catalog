@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Moldova",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Moldova, Republic of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 206481236,
+      "file:checksum": "12200e98bab4cc771ac5e2ff92eb0e3b502684dc244ccf5f59ba3677f7d9aa8dfa4b"
     },
     "pmtiles": {
       "href": "./Moldova.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Moldova, Republic of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 127360969,
+      "file:checksum": "12200acba3fe7a879dcf0c5b3922e5ecc0a5a4c278f43a4d5925e3ab03a30e039a47"
     },
     "style-2025": {
       "href": "./Moldova.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12203fc83c0ec8453f2fce8ea8c928dd6228cbb760eb6c5447d917fd72c0509ba65b"
     },
     "style-2024": {
       "href": "./Moldova.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220e1fa98c07feff00d1635b80b36df6150d2cf1e1558ba28fbaecfc9236d1ffea7"
     },
     "style-confidence-2025": {
       "href": "./Moldova.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220ae0ca783530bb0f7bd255e6620d044c6fcc8d34ebf072252d5d62730df4d2111"
     },
     "style-confidence-2024": {
       "href": "./Moldova.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "122018a7790fb832ed4d1cf7f5e8bf7868c6af81bd38423aff99623405e36c6103b3"
     },
     "README": {
       "href": "./Moldova.README.md",
@@ -165,7 +178,9 @@
       "title": "Moldova, Republic of \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4598,
+      "file:checksum": "1220a6d5b67fe982783ffb964c5941c5cab5c5f499c34d9cfb0391522a031b59f818"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MD/Moldova.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

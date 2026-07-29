@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_NV",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Nevada field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 232933148,
+      "file:checksum": "1220328b986dee8043c6ae943eed145c85e58e8459cdc96e8fec132190a18f386f6d"
     },
     "pmtiles": {
       "href": "./US_NV.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Nevada field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 191544002,
+      "file:checksum": "1220daba6e0b473223bd1dd357fda782636bfd96fd9ac804a7f0662de96b013b36fb"
     },
     "style-2025": {
       "href": "./US_NV.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208f3dca697407f03cf8a5797f27b8a7232996cd4c487e8bb8d704c5f90358b54a"
     },
     "style-2024": {
       "href": "./US_NV.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b799f3e058171c8945a0bcb65914cc3cc46e04e42bf9057fa4b73a9a90636af8"
     },
     "style-confidence-2025": {
       "href": "./US_NV.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122074e0496bd1ded30e2af450fd64f2e98dff6cd28e285e10a019c3eab047bc6147"
     },
     "style-confidence-2024": {
       "href": "./US_NV.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220e14d907d469bcaa7c2bca17f393a31f8db23bf84ba3c4d705dd7756af072f266"
     },
     "README": {
       "href": "./US_NV.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Nevada \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220968f235c30e43040c1f24e1e8da5c6589893eacdeefe6f134d17cf6fc2615a0f"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NV.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

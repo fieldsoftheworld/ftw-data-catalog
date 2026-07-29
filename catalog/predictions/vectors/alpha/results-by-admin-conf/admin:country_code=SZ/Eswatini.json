@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Eswatini",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Eswatini field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 78949501,
+      "file:checksum": "1220ea03e60eccdb20920de143fb844883a9763ee015de54b9cac9fdc74171840950"
     },
     "pmtiles": {
       "href": "./Eswatini.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Eswatini field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 62935504,
+      "file:checksum": "1220d22a9bc07efb0dbc29e91504038cecfc7b30057693338ffb9d8a9ea8ce0b55b8"
     },
     "style-2025": {
       "href": "./Eswatini.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220a3c5a4e85e8a4b1c9deefcd8489d07220c59b66d7d9e2493e959c4eaefde7907"
     },
     "style-2024": {
       "href": "./Eswatini.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12207f22c291b7a91f1618a0b1e1531eaacef479d4f255150837cb5c45cf62f47655"
     },
     "style-confidence-2025": {
       "href": "./Eswatini.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12200eb9c53b7f1b2efb042610f81e69449939e2f306a605fa4c10c699ac1d51d797"
     },
     "style-confidence-2024": {
       "href": "./Eswatini.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "122059fa2521bb23a451e1622271e3a5b9c3da2e38e9feebbcd34a99e1875565dcae"
     },
     "README": {
       "href": "./Eswatini.README.md",
@@ -165,7 +178,9 @@
       "title": "Eswatini \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4588,
+      "file:checksum": "1220ed88cc394a1a881657af4e2c562907cb9dc8d1f3043eb8029ecfdd1d8b85a766"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SZ/Eswatini.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

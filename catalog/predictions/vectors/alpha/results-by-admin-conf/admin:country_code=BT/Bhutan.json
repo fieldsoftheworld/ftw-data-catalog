@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Bhutan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Bhutan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3942540,
+      "file:checksum": "12209e8ec176625b04511d7c94a591732dc18adc00c1db0c030966047e0a95be3bbd"
     },
     "pmtiles": {
       "href": "./Bhutan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Bhutan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 4958401,
+      "file:checksum": "1220d23e70ec621ace147ff1f6fe702a3de7c52bb3309164b9b0d9deff851612e760"
     },
     "style-2025": {
       "href": "./Bhutan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "1220e3b38816454707d7c89b4192a25f8a0ab69eae5ce74bee4c533409a4de520e61"
     },
     "style-2024": {
       "href": "./Bhutan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 903,
+      "file:checksum": "122004debbd99da7685c791d679877672b834ee1c16dc5a220ec85bac33d62f1c946"
     },
     "style-confidence-2025": {
       "href": "./Bhutan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "122002e1ed71ce6810be4a19a9ca451076802aab565065576082786b8ba29c8e863a"
     },
     "style-confidence-2024": {
       "href": "./Bhutan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2647,
+      "file:checksum": "12206a05c7c2312b570bedec7669278a433b61ed04e5ea172c14aee098f1ea229b75"
     },
     "README": {
       "href": "./Bhutan.README.md",
@@ -165,7 +178,9 @@
       "title": "Bhutan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4581,
+      "file:checksum": "122008fbb35cb1a4867ed9bebbc9f7d3d15769c42f5d9b06d79bbee47b69c666ec70"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BT/Bhutan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

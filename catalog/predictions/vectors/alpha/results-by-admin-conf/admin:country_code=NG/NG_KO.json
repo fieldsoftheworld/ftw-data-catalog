@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_KO",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Kogi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 260079841,
+      "file:checksum": "1220f4186753e2c7922adcd92c04a76913a562bf2caf0d5dae6420b0eb45174ecdea"
     },
     "pmtiles": {
       "href": "./NG_KO.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Kogi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 148178563,
+      "file:checksum": "122098ce1092f5983f74bbc98fd28ad21954b713bbed907df13caac796ff5aa22848"
     },
     "style-2025": {
       "href": "./NG_KO.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122059287a4aecde061e64676b0544f50da925e41f85de712a6b06b6c7a46776ef08"
     },
     "style-2024": {
       "href": "./NG_KO.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208b21210d3c9181db171b707be7ee68636e3a5019922bef0effbb9ff2acd15190"
     },
     "style-confidence-2025": {
       "href": "./NG_KO.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201f6c7ef8eb5abc1d41a7cabc35bedf68a7fd97a9343c1252fb92b6854e17e1fa"
     },
     "style-confidence-2024": {
       "href": "./NG_KO.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220fc1b66081670e24cb43458977b6487955d438921cfeb8cd3f0704fb584f26521"
     },
     "README": {
       "href": "./NG_KO.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Kogi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4429,
+      "file:checksum": "12204525e958f0f5ae3cd24fe42ac2ec9a2c4bd87c53f3d6b99574104759b6415d57"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_KO.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

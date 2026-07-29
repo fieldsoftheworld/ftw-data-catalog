@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_AK",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Alaska field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 81920823,
+      "file:checksum": "12206ae7cded82e8b3a5dd21927b54bee45d6c614f8930b4afad5211ba46a6c82555"
     },
     "pmtiles": {
       "href": "./US_AK.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Alaska field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 93001336,
+      "file:checksum": "12200f0768f7e078fcdbdd07dc232fe22a6e27a7d92af2354ce669d4526d6f006f6f"
     },
     "style-2025": {
       "href": "./US_AK.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220132b22db0fb98eac00c208730e0791e32fde7c725df8a57ca5063a3c4c99bb48"
     },
     "style-2024": {
       "href": "./US_AK.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b92fdc0d168ce1a4491ec5f6eef99ae2b2c5ee442ee73b2942fccf7fe25800a3"
     },
     "style-confidence-2025": {
       "href": "./US_AK.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220445280d2d935da791abb68871c374cf86cf0573af66fca9874f2d5cf1b8d3d1f"
     },
     "style-confidence-2024": {
       "href": "./US_AK.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12207d64dedeffd13daa171b35606e7773a32c5515a3a6c5e6c5ce72a7ea9e9e69da"
     },
     "README": {
       "href": "./US_AK.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Alaska \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4435,
+      "file:checksum": "12208ca84f3ac6d457f2a94f735287c904fc22b68c77c6d11113cf1e631a13feda68"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_AK.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

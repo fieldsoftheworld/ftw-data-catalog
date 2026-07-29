@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "ET_AA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Ethiopia \u2014 Addis Ababa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3703582,
+      "file:checksum": "1220dd60f2448f273b75eb473806ecac14436c65636140e57e38da87a2b4eb5e9f31"
     },
     "pmtiles": {
       "href": "./ET_AA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Ethiopia \u2014 Addis Ababa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 4216830,
+      "file:checksum": "122063678aa444e9b1e640d3caa3b26c22a3ef407397d105a4fa5545b021a0e80a92"
     },
     "style-2025": {
       "href": "./ET_AA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12200cf58d6b2074c8f4acf5425ec07b6adf10c9f45f0bcdb8f98d185eb507dfbd3f"
     },
     "style-2024": {
       "href": "./ET_AA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203aabd056dd1afe58d2d15b27ebec58ae25f97979c4ff07e00365547b1710755f"
     },
     "style-confidence-2025": {
       "href": "./ET_AA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122058e417461a64e7294259fed7d4b07b6e39c7ebcc65d7a3df958c7142c33df421"
     },
     "style-confidence-2024": {
       "href": "./ET_AA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a1b99f9d5af4a24de0fe1beee8faf8bd6d850617eede6a2e98600e8c54e6a128"
     },
     "README": {
       "href": "./ET_AA.README.md",
@@ -165,7 +178,9 @@
       "title": "Ethiopia \u2014 Addis Ababa \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "12202ce1e98e0f250193e29691b04d0d1db8677341e84471e519f49aded1da4fb630"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_AA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

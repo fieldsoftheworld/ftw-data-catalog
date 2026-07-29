@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Armenia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Armenia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 126966205,
+      "file:checksum": "12203828e17da4da7938079c1342897504f5160bfbb6fac57bf4211313e8c44f6c81"
     },
     "pmtiles": {
       "href": "./Armenia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Armenia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 84671317,
+      "file:checksum": "1220c41d0e2ef6b56a2afc2b986ababe2c1a6d683861252d1a56ca54bfb63cf1f8a5"
     },
     "style-2025": {
       "href": "./Armenia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220c04de956424ff33e97d3ecd044e91c351afcf50e98266a9a17d50dc87f7a1b64"
     },
     "style-2024": {
       "href": "./Armenia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220a30bfc43c4a26adcd12be269ba05ad0196a8720dc8d5f558c16130ad93d53d34"
     },
     "style-confidence-2025": {
       "href": "./Armenia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220404e68edb3884100fa2f3b0f462a36508b8aee29ca685d4c5749c5e133c975c9"
     },
     "style-confidence-2024": {
       "href": "./Armenia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220521b377f9d63673ef128e0ae8780c38d495bd0604d22dd94c6a87f4cd594f05b"
     },
     "README": {
       "href": "./Armenia.README.md",
@@ -165,7 +178,9 @@
       "title": "Armenia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4585,
+      "file:checksum": "122021f6136182ddb917e58f5fce1a6f1918c716c93a4bf1538fc3a2df1edf39bcff"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AM/Armenia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

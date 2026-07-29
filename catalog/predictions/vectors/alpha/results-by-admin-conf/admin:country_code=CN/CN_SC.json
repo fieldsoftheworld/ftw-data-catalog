@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "CN_SC",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "China \u2014 Sichuan Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1711752315,
+      "file:checksum": "12203e4890f1b7c6fba19855bab758d0a4a1f3157b3d888f7fda80f7941bff2562a8"
     },
     "pmtiles": {
       "href": "./CN_SC.pmtiles",
@@ -125,39 +128,49 @@
       "title": "China \u2014 Sichuan Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 967811851,
+      "file:checksum": "1220fb80ca3c251bcfcc988bbccddb3551f4680e6b52e6551dd67accd29bb63c5b64"
     },
     "style-2025": {
       "href": "./CN_SC.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12202fbdb26222443fa6f646bc10a27f2ec239b944541f19844f751a5cb948b2ff80"
     },
     "style-2024": {
       "href": "./CN_SC.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12206968f7c82e41984e442fada283e75da8de4bc8fcc5aaf7b3b7b909e0002e4b0a"
     },
     "style-confidence-2025": {
       "href": "./CN_SC.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122059839892e712ef4547665cf2903ff39c3101cc1823d01c7bf3b31e539539628d"
     },
     "style-confidence-2024": {
       "href": "./CN_SC.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220342ab6fd3217a4336dd298a94bb60c2ad43a4b431162b69b3b39557fec46c0a6"
     },
     "README": {
       "href": "./CN_SC.README.md",
@@ -165,7 +178,9 @@
       "title": "China \u2014 Sichuan Sheng \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "1220d77676d90a8e0e3d3a846e3bc665d9b68f22dea53064c62911e1f732b37ed2df"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_SC.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

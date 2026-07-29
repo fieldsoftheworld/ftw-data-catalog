@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_BA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Bauchi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 853698868,
+      "file:checksum": "122042ef0d387cd0d0cc7d5d68bf0156fa4342bdbafc09c0a00814083d6e40a6fdd7"
     },
     "pmtiles": {
       "href": "./NG_BA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Bauchi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 410225199,
+      "file:checksum": "1220b92bf56510be1aef3af36068c91587b9b80fc743f1b686b8614758b560decbb7"
     },
     "style-2025": {
       "href": "./NG_BA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220a1f9e84948d208146bb1b69630195b128019aff22a141fabfc24d812247496da"
     },
     "style-2024": {
       "href": "./NG_BA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220b2e2c4ddb5ccdf0d4c4c0697be53b621c916df909e2b8542a022a3ecbd479170"
     },
     "style-confidence-2025": {
       "href": "./NG_BA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12209d89c8d18b4ca96b916d8cc21869de9c13d08c867eccf8aa31d2ca6896002e30"
     },
     "style-confidence-2024": {
       "href": "./NG_BA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220b60a10e47b269ce8ea09856b14581db8b9b9e925e7bf768c5af650040948fb07"
     },
     "README": {
       "href": "./NG_BA.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Bauchi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4431,
+      "file:checksum": "1220f81497e4c5f2ed178ba8ece9b26d8610e29162b4800018da2f761b8f2b00617a"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_BA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

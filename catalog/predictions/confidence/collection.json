@@ -2,9 +2,11 @@
   "type": "Collection",
   "stac_version": "1.1.0",
   "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "confidence",
   "title": "FTW Global \u2014 Prediction Confidence & Quality Layers (500 m)",
@@ -40,7 +42,8 @@
       "name": "Taylor Geospatial Institute",
       "roles": [
         "producer",
-        "licensor"
+        "licensor",
+        "processor"
       ],
       "url": "https://taylorgeospatial.org/"
     },
@@ -180,7 +183,9 @@
       "title": "Collection thumbnail",
       "roles": [
         "thumbnail"
-      ]
+      ],
+      "file:size": 462676,
+      "file:checksum": "1220f1793fefc8374f34e7345ba617f3a5a82ba9eb139567a4ef0b181b3ddf07cee7"
     },
     "documentation": {
       "href": "./llms.txt",
@@ -188,7 +193,9 @@
       "title": "Agent/LLM usage guide",
       "roles": [
         "documentation"
-      ]
+      ],
+      "file:size": 2836,
+      "file:checksum": "1220cfee3ec1231c067de0d27ac3629118be8d87e31d57d18ed77aac2552c8a58ea6"
     },
     "README": {
       "href": "./README.md",
@@ -196,7 +203,9 @@
       "title": "Human-readable README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4775,
+      "file:checksum": "12208e14aa41893345caa00e4bf29283cf74c85685abc28fb0ee5453a697473a942f"
     }
   },
   "links": [
@@ -211,11 +220,6 @@
       "href": "../../catalog.json",
       "type": "application/json",
       "title": "Fields of the World \u2014 Global"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/confidence/collection.json",
-      "type": "application/json"
     },
     {
       "rel": "license",
@@ -269,6 +273,19 @@
       "href": "./precision-recall/precision-recall.json",
       "type": "application/geo+json",
       "title": "Precision & recall vs cropland agreement (500 m)"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "updated": "2026-07-28T16:34:06Z"
 }

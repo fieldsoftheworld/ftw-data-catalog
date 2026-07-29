@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Japan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Japan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 841616871,
+      "file:checksum": "12209d4b81e92419b6d36eb5ee92916a32803f0bc0c1de7c6e56da4ab8ddd1cbc4e3"
     },
     "pmtiles": {
       "href": "./Japan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Japan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 597982493,
+      "file:checksum": "1220830e071a8857797308faf8d52860d36b37580be95e6af170e9758603b77e64b4"
     },
     "style-2025": {
       "href": "./Japan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220c3a58dbad80bb6fa022a214948ad69fc9f11cccc0e7cc52b2c038ccf118498c9"
     },
     "style-2024": {
       "href": "./Japan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220db595c528235f7e658ea880d6e9f71afecfd9719da7b0e6314016b847b6da52a"
     },
     "style-confidence-2025": {
       "href": "./Japan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12203a98b5dd39160859c0e52f0a0e01ed930cd241b2d2f8a0a781b99c651579ce9e"
     },
     "style-confidence-2024": {
       "href": "./Japan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122014e6bb026fedd8115f178d11cc205746a1b541d5578289882aff566059c7bb3b"
     },
     "README": {
       "href": "./Japan.README.md",
@@ -165,7 +178,9 @@
       "title": "Japan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4581,
+      "file:checksum": "1220f7530ae97874a95a223a4e84506745a71997eac6a65d8560fec709d8aafb4fcd"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=JP/Japan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Turkmenistan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Turkmenistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 739436876,
+      "file:checksum": "1220de0914a60c45a27a8e9138374ddd8829562e7b843e67e18b292544c53e92b63d"
     },
     "pmtiles": {
       "href": "./Turkmenistan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Turkmenistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 430733984,
+      "file:checksum": "1220068847ccc1387103a43013abd96b831857d9448e96884e2e2129aedc67ad8e16"
     },
     "style-2025": {
       "href": "./Turkmenistan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "12203af7f87342c6c814ecfcb69e0ff6e522c655c0bf7505a34bb7333a791015fde8"
     },
     "style-2024": {
       "href": "./Turkmenistan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 921,
+      "file:checksum": "1220cadf5760ed6a197e435eb65f5199a586c2dfdacc921f8e3b5749819e4859a327"
     },
     "style-confidence-2025": {
       "href": "./Turkmenistan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "122093c6ff414c888e33a22c36501309d19d13774c27ab44e3e799f29d7aee978a28"
     },
     "style-confidence-2024": {
       "href": "./Turkmenistan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2665,
+      "file:checksum": "122022fd0dffa6b8748d67b1709ad64d22208b891243e3bd31ef04327cd90b683d26"
     },
     "README": {
       "href": "./Turkmenistan.README.md",
@@ -165,7 +178,9 @@
       "title": "Turkmenistan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4602,
+      "file:checksum": "12209bde3861174286fff2e9f58c6567068b0c3985dd1d66ac02375c383f92df1274"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TM/Turkmenistan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

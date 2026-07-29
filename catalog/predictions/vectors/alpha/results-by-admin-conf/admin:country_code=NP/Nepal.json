@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Nepal",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nepal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 469081185,
+      "file:checksum": "1220b253ef050faed67d9519f5879cf5ad928da411c99734cc5829419d07618ec0bc"
     },
     "pmtiles": {
       "href": "./Nepal.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nepal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 282664575,
+      "file:checksum": "122065942ce3c3c640a073ba9a377832f42bee5b11dcfdb603232298ac2562956aa0"
     },
     "style-2025": {
       "href": "./Nepal.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12208ed5091dfa8fbbce303a699e131e46764ab759febf6e194828a8cc884b732c06"
     },
     "style-2024": {
       "href": "./Nepal.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220379c3d07aa091a78115b000fc0d13e9240104392cdf23233eaaf0c503b377e89"
     },
     "style-confidence-2025": {
       "href": "./Nepal.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122021c31e2beb7737722669ed212a0424380127fe3a6e60bf94ddffb6a3f4eae3aa"
     },
     "style-confidence-2024": {
       "href": "./Nepal.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220d4a710be82e884bc3495f2c88b9a618210554325a441aea2bc5f4f4d95ea2359"
     },
     "README": {
       "href": "./Nepal.README.md",
@@ -165,7 +178,9 @@
       "title": "Nepal \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4582,
+      "file:checksum": "1220d65bac8f9fffcb839606403b5014c181c549b3e7d114974d71b975a33a05aed5"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NP/Nepal.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "PK_BA",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Pakistan \u2014 Balochistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1154235061,
+      "file:checksum": "1220154c51f15d2c5d86ac6da49f6639b8f351a83e92989aa5d18b85ec487bcddb8c"
     },
     "pmtiles": {
       "href": "./PK_BA.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Pakistan \u2014 Balochistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 651366948,
+      "file:checksum": "1220ac168f66654c8890ee7e0b053e05febf29b7d4449f858eacc526111e71e8e4b2"
     },
     "style-2025": {
       "href": "./PK_BA.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220002ef4da7cf61789bcf3554802f64bea4b844d2617489e67de253f8d7f8ae2bc"
     },
     "style-2024": {
       "href": "./PK_BA.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12204c668f72796b80a270ff4411aecb873c0df7e51da1d68a20684869dea9223256"
     },
     "style-confidence-2025": {
       "href": "./PK_BA.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12201e6c0db4acc85516713cbfd752ee5616ccfbbb7e8b8ab670c72073e0b17ec833"
     },
     "style-confidence-2024": {
       "href": "./PK_BA.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220dab68a0747d685aefa76be8a77042c3da2489afea58f3e14e243516ee25638a4"
     },
     "README": {
       "href": "./PK_BA.README.md",
@@ -165,7 +178,9 @@
       "title": "Pakistan \u2014 Balochistan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4599,
+      "file:checksum": "1220221e217ddf052f2aa56af7402286ab456ae6f35c7a37e01173fa03a98911daee"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_BA.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "TZ_17",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Tanzania, United Republic of \u2014 Mtwara field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 153297696,
+      "file:checksum": "1220d4a15afbc78cdc92cb1abb75b93e1579cff8fc671aa6cae7d2983d22798b87d5"
     },
     "pmtiles": {
       "href": "./TZ_17.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Tanzania, United Republic of \u2014 Mtwara field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 114869239,
+      "file:checksum": "122044dd6f2429e7dd42101a8401ced6b7b7872f8a55c956f9cf30c8a9f352aaa3ed"
     },
     "style-2025": {
       "href": "./TZ_17.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122026a0fef1bdaeaaf9df91b514372483631c4d80c54d8a836077cf112cea82b7b0"
     },
     "style-2024": {
       "href": "./TZ_17.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220d86c1e6b0ba6f2c0e09dec7083996738a2cb52ff34c01f5f6b271151f07af84b"
     },
     "style-confidence-2025": {
       "href": "./TZ_17.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "122028a93afcdfb4f3cc8baf92bc121a68c6d00d5279bf8e0fe8fa1e5c8f6b39a43c"
     },
     "style-confidence-2024": {
       "href": "./TZ_17.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "12202cee6841ea68c1956af1d38cac91af1711316ddbf4e24818308f32957a1e5ac1"
     },
     "README": {
       "href": "./TZ_17.README.md",
@@ -165,7 +178,9 @@
       "title": "Tanzania, United Republic of \u2014 Mtwara \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4452,
+      "file:checksum": "1220945ddab7bb29afd264143cce0e9d2afd9da7974bb2875eb0e07894cf73c74094"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_17.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

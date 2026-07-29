@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Mauritius",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Mauritius field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 19397612,
+      "file:checksum": "12206e05109cadd6783c81c2e5b14ba86aa80bcf3c5134ad2b054cd196483240d2b4"
     },
     "pmtiles": {
       "href": "./Mauritius.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Mauritius field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 15363616,
+      "file:checksum": "1220804ee5ff104a64a07d9c83c288f60a9cba79c07b9d1e9deef9c146f0b4b357a2"
     },
     "style-2025": {
       "href": "./Mauritius.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "122002dbb99fa35d36dd30214693cb1f79c71591e45c073c4147bc7361e8b1e824f1"
     },
     "style-2024": {
       "href": "./Mauritius.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 912,
+      "file:checksum": "122050192fd55ec52e1153af368e60ef1bda6a87ba58273c418e3f3f7949c0a7024c"
     },
     "style-confidence-2025": {
       "href": "./Mauritius.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "12209c9ba0a005338ec87abb42f526a8fa11f5ae0289380b3cc9180b5aa34bd46bfa"
     },
     "style-confidence-2024": {
       "href": "./Mauritius.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2656,
+      "file:checksum": "1220cb8eefabb4abca0ad32d88f18099173deeb167a36822459d832c9c1f68123916"
     },
     "README": {
       "href": "./Mauritius.README.md",
@@ -165,7 +178,9 @@
       "title": "Mauritius \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4592,
+      "file:checksum": "12208ed3b88031ab018e666de1cafdb16619dd36288c5c5648d2ce134902a33098ad"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MU/Mauritius.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

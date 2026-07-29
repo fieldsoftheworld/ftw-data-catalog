@@ -16,11 +16,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/catalog.json",
-      "type": "application/json"
-    },
-    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -34,307 +29,384 @@
     {
       "rel": "item",
       "href": "./US_AB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_AB"
     },
     {
       "rel": "item",
       "href": "./US_AK.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Alaska"
     },
     {
       "rel": "item",
       "href": "./US_AL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Alabama"
     },
     {
       "rel": "item",
       "href": "./US_AR.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Arkansas"
     },
     {
       "rel": "item",
       "href": "./US_AZ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Arizona"
     },
     {
       "rel": "item",
       "href": "./US_BC.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_BC"
     },
     {
       "rel": "item",
       "href": "./US_BCN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_BCN"
     },
     {
       "rel": "item",
       "href": "./US_CA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 California"
     },
     {
       "rel": "item",
       "href": "./US_CHH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_CHH"
     },
     {
       "rel": "item",
       "href": "./US_CO.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Colorado"
     },
     {
       "rel": "item",
       "href": "./US_COA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_COA"
     },
     {
       "rel": "item",
       "href": "./US_CT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Connecticut"
     },
     {
       "rel": "item",
       "href": "./US_DE.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Delaware"
     },
     {
       "rel": "item",
       "href": "./US_FL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Florida"
     },
     {
       "rel": "item",
       "href": "./US_GA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Georgia"
     },
     {
       "rel": "item",
       "href": "./US_HI.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Hawaii"
     },
     {
       "rel": "item",
       "href": "./US_IA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Iowa"
     },
     {
       "rel": "item",
       "href": "./US_ID.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Idaho"
     },
     {
       "rel": "item",
       "href": "./US_IL.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Illinois"
     },
     {
       "rel": "item",
       "href": "./US_IN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Indiana"
     },
     {
       "rel": "item",
       "href": "./US_KS.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Kansas"
     },
     {
       "rel": "item",
       "href": "./US_KY.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Kentucky"
     },
     {
       "rel": "item",
       "href": "./US_LA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Louisiana"
     },
     {
       "rel": "item",
       "href": "./US_MA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Massachusetts"
     },
     {
       "rel": "item",
       "href": "./US_MB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_MB"
     },
     {
       "rel": "item",
       "href": "./US_MD.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Maryland"
     },
     {
       "rel": "item",
       "href": "./US_ME.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Maine"
     },
     {
       "rel": "item",
       "href": "./US_MI.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Michigan"
     },
     {
       "rel": "item",
       "href": "./US_MN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Minnesota"
     },
     {
       "rel": "item",
       "href": "./US_MO.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Missouri"
     },
     {
       "rel": "item",
       "href": "./US_MS.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Mississippi"
     },
     {
       "rel": "item",
       "href": "./US_MT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Montana"
     },
     {
       "rel": "item",
       "href": "./US_NB.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_NB"
     },
     {
       "rel": "item",
       "href": "./US_NC.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 North Carolina"
     },
     {
       "rel": "item",
       "href": "./US_ND.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 North Dakota"
     },
     {
       "rel": "item",
       "href": "./US_NE.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Nebraska"
     },
     {
       "rel": "item",
       "href": "./US_NH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 New Hampshire"
     },
     {
       "rel": "item",
       "href": "./US_NJ.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 New Jersey"
     },
     {
       "rel": "item",
       "href": "./US_NM.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 New Mexico"
     },
     {
       "rel": "item",
       "href": "./US_NV.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Nevada"
     },
     {
       "rel": "item",
       "href": "./US_NY.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 New York"
     },
     {
       "rel": "item",
       "href": "./US_OH.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Ohio"
     },
     {
       "rel": "item",
       "href": "./US_OK.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Oklahoma"
     },
     {
       "rel": "item",
       "href": "./US_OR.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Oregon"
     },
     {
       "rel": "item",
       "href": "./US_PA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Pennsylvania"
     },
     {
       "rel": "item",
       "href": "./US_QC.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_QC"
     },
     {
       "rel": "item",
       "href": "./US_RI.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Rhode Island"
     },
     {
       "rel": "item",
       "href": "./US_SC.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 South Carolina"
     },
     {
       "rel": "item",
       "href": "./US_SD.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 South Dakota"
     },
     {
       "rel": "item",
       "href": "./US_SK.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_SK"
     },
     {
       "rel": "item",
       "href": "./US_SON.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_SON"
     },
     {
       "rel": "item",
       "href": "./US_TN.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Tennessee"
     },
     {
       "rel": "item",
       "href": "./US_TX.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Texas"
     },
     {
       "rel": "item",
       "href": "./US_UT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Utah"
     },
     {
       "rel": "item",
       "href": "./US_VA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Virginia"
     },
     {
       "rel": "item",
       "href": "./US_VT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Vermont"
     },
     {
       "rel": "item",
       "href": "./US_WA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Washington"
     },
     {
       "rel": "item",
       "href": "./US_WI.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Wisconsin"
     },
     {
       "rel": "item",
       "href": "./US_WV.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 West Virginia"
     },
     {
       "rel": "item",
       "href": "./US_WY.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "United States \u2014 Wyoming"
     },
     {
       "rel": "item",
       "href": "./US_YT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "US_YT"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+  ],
+  "updated": "2026-07-28T16:34:06Z"
 }

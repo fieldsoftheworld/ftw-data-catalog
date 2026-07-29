@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Azerbaijan",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Azerbaijan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 410250477,
+      "file:checksum": "1220269df75bea130ec429aedb81fe8047d4ad88781d00d576935168ed7ac2d58176"
     },
     "pmtiles": {
       "href": "./Azerbaijan.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Azerbaijan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 231238952,
+      "file:checksum": "12208951c45f029f04f10973d1615412d91cbc8b5d5c1dc14e9a0abe0fb989f2232e"
     },
     "style-2025": {
       "href": "./Azerbaijan.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "1220be2a0e4cf41108b46fc0270a29839bd1f6eb8451bbcf92f9f7506173e7eb03a8"
     },
     "style-2024": {
       "href": "./Azerbaijan.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 915,
+      "file:checksum": "122009495478dfd44adb8c0025486e9f967ae12b525cd0c09cf6d5f8465325015b7c"
     },
     "style-confidence-2025": {
       "href": "./Azerbaijan.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220c741c4530b7160d5a6443e11d4d678272fd4622a5eaee7efc0a29448b5ef167d"
     },
     "style-confidence-2024": {
       "href": "./Azerbaijan.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2659,
+      "file:checksum": "1220a7b71e965afdd47cf37fa466798dcc0b8fc5be5dd9e2b5e6dde68b5b8efc998f"
     },
     "README": {
       "href": "./Azerbaijan.README.md",
@@ -165,7 +178,9 @@
       "title": "Azerbaijan \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4597,
+      "file:checksum": "1220cd667143b657173f731d940da834b655b1661287affc0a63b846e74e452ea235"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AZ/Azerbaijan.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

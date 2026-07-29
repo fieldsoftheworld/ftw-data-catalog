@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_ME",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Maine field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 10316544,
+      "file:checksum": "1220634cf2ebb7bc7d82943974ea1dc86e603c93e5aaa863bef0d154ece10bd183c5"
     },
     "pmtiles": {
       "href": "./US_ME.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Maine field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 9919332,
+      "file:checksum": "1220ef5919091e5c69c991a52ccb3aeeadf0c2636e2145859b58b7fa91aeb89d88ad"
     },
     "style-2025": {
       "href": "./US_ME.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220910da791ea0041c3c171394f068a8c721f73898eac6e641a8bc25a0c75d93625"
     },
     "style-2024": {
       "href": "./US_ME.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12207c6ae204bcaf9d6f217c9cbad79596a6815806944ea003cfcf54bceff330ce5e"
     },
     "style-confidence-2025": {
       "href": "./US_ME.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220a80766f2f6c49a57b63a480e816e524db61bda61fa9c9aae9368875b1930b3c0"
     },
     "style-confidence-2024": {
       "href": "./US_ME.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220317aa038f5a64965be97566f5daa22b551000d9bccaf63d5072c527c9b66bf8a"
     },
     "README": {
       "href": "./US_ME.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Maine \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4433,
+      "file:checksum": "12206982971cff62d718043d7f0fc3f2dea1c0b3ff11fc478c58b01324406de24dfa"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_ME.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

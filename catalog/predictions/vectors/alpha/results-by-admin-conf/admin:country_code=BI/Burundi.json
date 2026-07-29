@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Burundi",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Burundi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 273377255,
+      "file:checksum": "1220793816b2ac6129604982e80a26d980f85a9284bd42549a0f1eeab93ad1e43c84"
     },
     "pmtiles": {
       "href": "./Burundi.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Burundi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 163583786,
+      "file:checksum": "12202a3c358a27ee2c2ad2363af6bae10d16271ffc755daca7310089af5c0c10a419"
     },
     "style-2025": {
       "href": "./Burundi.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "122004da7c2be86782c1c100e265966981b6290471b5721afd7958be5a5390719d1a"
     },
     "style-2024": {
       "href": "./Burundi.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12200425c2c5726d5e5230d5ec7206607837e44e9fc24c143702d4c5b15314187acc"
     },
     "style-confidence-2025": {
       "href": "./Burundi.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220888339a7dbf2f0b4a3dd5bad8799ad49acf320f95ca335b0b266c5b24edbce65"
     },
     "style-confidence-2024": {
       "href": "./Burundi.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "122017502cea69d1d0f9f1cf3f7b27c9a77644b8a4d65da486371c401c2738079f61"
     },
     "README": {
       "href": "./Burundi.README.md",
@@ -165,7 +178,9 @@
       "title": "Burundi \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4587,
+      "file:checksum": "122033f2a8310f72d3f93248cbc10be2de0600cd21b1494209ed2c8839fd01b0b629"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BI/Burundi.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

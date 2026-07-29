@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Maldives",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Maldives field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 21749,
+      "file:checksum": "122074949c729d88e34ecb52acd4f934249c50dc0bb4f0b0f97fae77d683d0ac2eee"
     },
     "pmtiles": {
       "href": "./Maldives.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Maldives field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 19268,
+      "file:checksum": "1220a1f9c46232fe83a89ca88197488a9d1688a4c88f919e54d5ebebcbe2a7a07626"
     },
     "style-2025": {
       "href": "./Maldives.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220f316d29e2c1c3bb1d2402c0d2d332369ccd0655b009a4c4615c005ad96b066dd"
     },
     "style-2024": {
       "href": "./Maldives.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220e470841f28282f2c776aeb7f51b4acedea35a22df036dec534c667a8e56e3ddb"
     },
     "style-confidence-2025": {
       "href": "./Maldives.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "12200c7bcf100ef725e7ad460661feaabce7759f5757d1a76abd8b8445ae8fe1538f"
     },
     "style-confidence-2024": {
       "href": "./Maldives.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "122035b8aeff5193573adcc8999960c574c8d486cf890f8ac5f2d795031315f605d5"
     },
     "README": {
       "href": "./Maldives.README.md",
@@ -165,7 +178,9 @@
       "title": "Maldives \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4583,
+      "file:checksum": "12207fbc8c490c774b6296a11025bda17d2f4398d34a6d2a355e657ed76b7797338c"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MV/Maldives.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

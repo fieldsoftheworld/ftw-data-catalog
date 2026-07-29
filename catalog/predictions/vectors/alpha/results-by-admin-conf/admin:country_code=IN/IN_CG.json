@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "IN_CG",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "India \u2014 Chhatt\u012bsgarh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1823007376,
+      "file:checksum": "12205be883a01fa030f8ca798137576532aa59d2899edfe93b4154b296c2ddb5c0da"
     },
     "pmtiles": {
       "href": "./IN_CG.pmtiles",
@@ -125,39 +128,49 @@
       "title": "India \u2014 Chhatt\u012bsgarh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 891489865,
+      "file:checksum": "122033add33bbf2037deef7d23cef40547918560942df7ee86b14defa60d92253745"
     },
     "style-2025": {
       "href": "./IN_CG.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122081e1baee8741abc39f20a5a0ed07f7aef2531c249e992a9d111dbcd9e6d35048"
     },
     "style-2024": {
       "href": "./IN_CG.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "12203a8d3db746df38ee9abf79ff15fe82fae7fff7321d5d4ac03d1b641fea2fc21b"
     },
     "style-confidence-2025": {
       "href": "./IN_CG.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220c458ae6b1f82e904170e73853a0e6c507c601a2ba4319853dbc0cc8ee78c245d"
     },
     "style-confidence-2024": {
       "href": "./IN_CG.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220796a6b89162ccb6242c9d753daf422fec3ed957d97e8f28ab4fdaf3cc29c8932"
     },
     "README": {
       "href": "./IN_CG.README.md",
@@ -165,7 +178,9 @@
       "title": "India \u2014 Chhatt\u012bsgarh \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4437,
+      "file:checksum": "12202c6eda19c46ae1b2e9aa17484a252e4fb7edf587eed1a3f6b63ddcfa22e15d80"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_CG.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

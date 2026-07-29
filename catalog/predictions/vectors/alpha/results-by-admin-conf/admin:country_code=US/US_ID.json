@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "US_ID",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "United States \u2014 Idaho field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 275594399,
+      "file:checksum": "1220e761796669398647acbdc8de7469f21ed86f97cf051b6366fe46259ee73beb5f"
     },
     "pmtiles": {
       "href": "./US_ID.pmtiles",
@@ -125,39 +128,49 @@
       "title": "United States \u2014 Idaho field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 190530138,
+      "file:checksum": "1220d53305e94d1180a276a524c327789f994ae908e3e43ef43cb83207ff2354c0bb"
     },
     "style-2025": {
       "href": "./US_ID.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122031e83dcd24666da567faec356a62ebee29f94b436fb8ce049c8128da4e54d27a"
     },
     "style-2024": {
       "href": "./US_ID.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220e724f93a73de9fd5d73ac8474e5e4d59c01df1185bc0d61cc59a14b626cc8152"
     },
     "style-confidence-2025": {
       "href": "./US_ID.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220529a769cdda7d39086b1938a5ad57ecc539abcbf065be18df227c8f0ee3bdab7"
     },
     "style-confidence-2024": {
       "href": "./US_ID.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220cce87ff4aad87aed70281a013f1fd596685db5dabe5b8212d1f9a76a8330cdc3"
     },
     "README": {
       "href": "./US_ID.README.md",
@@ -165,7 +178,9 @@
       "title": "United States \u2014 Idaho \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4434,
+      "file:checksum": "122097a889438a1c89817a1f76b70751abfd1f38f046f663479a2c2532f87bf31a90"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_ID.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

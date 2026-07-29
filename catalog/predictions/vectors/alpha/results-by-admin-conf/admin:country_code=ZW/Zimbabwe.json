@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Zimbabwe",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Zimbabwe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 3726126903,
+      "file:checksum": "1220c704bc1d5c4abd022c5587ed8d2cca91a25824515a021e517436c21f8912e94f"
     },
     "pmtiles": {
       "href": "./Zimbabwe.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Zimbabwe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 1973582068,
+      "file:checksum": "122026b73d8ca5af449df79ee6df1efcb1cfbe6fb260cb2f2af2b83bc0ff6663dcc1"
     },
     "style-2025": {
       "href": "./Zimbabwe.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "1220ab289c2c712cf0367820fc7730a056458c2e2d9a21991bd5a5c3e18ebcd5434e"
     },
     "style-2024": {
       "href": "./Zimbabwe.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 909,
+      "file:checksum": "12208081a11109870936383a271bde37a9047ccf9b9e8a0a2e362fb40604d3a95997"
     },
     "style-confidence-2025": {
       "href": "./Zimbabwe.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220aaf073725766953e8f774afffe29244ffbe8596eaf2ec47e5c91aed450a31bba"
     },
     "style-confidence-2024": {
       "href": "./Zimbabwe.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2653,
+      "file:checksum": "1220f79a2d52cd1f60aaae5b67834320a336ab13b4dabc653c3f4b326a2c1e5c4b1a"
     },
     "README": {
       "href": "./Zimbabwe.README.md",
@@ -165,7 +178,9 @@
       "title": "Zimbabwe \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4590,
+      "file:checksum": "122028aeae9b40473e8ea187d838bde9fc442dc46de352f27a531f2ad500ffc4f407"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ZW/Zimbabwe.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

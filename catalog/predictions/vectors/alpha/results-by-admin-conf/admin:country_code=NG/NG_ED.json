@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "NG_ED",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Nigeria \u2014 Edo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 233506154,
+      "file:checksum": "1220726d6b44a761c0e05d47de7d634ce065c4a2bd4ed4fec9f5dd904011d870b6ad"
     },
     "pmtiles": {
       "href": "./NG_ED.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Nigeria \u2014 Edo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 126826928,
+      "file:checksum": "122029415657c53d31c9e21c6e8f3a1fc5d13acb523f99df73fc4edfd8a0d4b37a2a"
     },
     "style-2025": {
       "href": "./NG_ED.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "1220ce29004bd5ef54e36a5de7bfa3c336f52bcf1793ed029e750389d0c473cfb756"
     },
     "style-2024": {
       "href": "./NG_ED.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 900,
+      "file:checksum": "122028c63f684f13c1fa1d64a2fe267c42db3431704a4296d134a86c8960be90cccf"
     },
     "style-confidence-2025": {
       "href": "./NG_ED.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ca50041b1df1c5dd6a8cfe74ee8f17c2569a7922915fab9d6c3855050e788c97"
     },
     "style-confidence-2024": {
       "href": "./NG_ED.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2644,
+      "file:checksum": "1220ce66a7d674c5b797385dde7d724bf64555915c1b63541fca82dd224b0a4fa54a"
     },
     "README": {
       "href": "./NG_ED.README.md",
@@ -165,7 +178,9 @@
       "title": "Nigeria \u2014 Edo \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4428,
+      "file:checksum": "1220ad0a91d1fe4df2d60892085ec2105fb49539aa9b7162f995c53a3621d0397495"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_ED.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

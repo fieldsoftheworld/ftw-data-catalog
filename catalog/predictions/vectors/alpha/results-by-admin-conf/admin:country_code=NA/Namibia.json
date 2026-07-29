@@ -4,7 +4,8 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "Namibia",
   "geometry": {
@@ -117,7 +118,9 @@
       "title": "Namibia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ]
+      ],
+      "file:size": 1139768047,
+      "file:checksum": "12205e9c3a0efcb9b53fe76fa99b632d63d92ec787202f016f1ea6f0e1c4f0094607"
     },
     "pmtiles": {
       "href": "./Namibia.pmtiles",
@@ -125,39 +128,49 @@
       "title": "Namibia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ]
+      ],
+      "file:size": 696089216,
+      "file:checksum": "12200b0bbb6f252e8455ceafd07691dd596d0e0b7203011fa0193d25c485b704ce27"
     },
     "style-2025": {
       "href": "./Namibia.2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "12206098ed8821505558332ab5754334ce50ea00f642495709baeb3b2d69eacc8496"
     },
     "style-2024": {
       "href": "./Namibia.2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 906,
+      "file:checksum": "1220039268adc14b00557b483da2a3be8d51275216c72f8884a39bf1f4b84e5c6f6e"
     },
     "style-confidence-2025": {
       "href": "./Namibia.confidence-2025.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "1220929991483c009ce53ac7aae3de389cb71dcd29fca961e2ab6c5b0b6759c0208c"
     },
     "style-confidence-2024": {
       "href": "./Namibia.confidence-2024.style.json",
-      "type": "application/json",
+      "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
-      ]
+      ],
+      "file:size": 2650,
+      "file:checksum": "12209bf9f003915e6d2de74cf06af7c44c68fce200c57d089aef95748d50dd1cdf1e"
     },
     "README": {
       "href": "./Namibia.README.md",
@@ -165,7 +178,9 @@
       "title": "Namibia \u2014 README",
       "roles": [
         "metadata"
-      ]
+      ],
+      "file:size": 4587,
+      "file:checksum": "1220613882627681754fec9126c3844300fbe5f3b7f65b8dbd034504933445a7cb63"
     }
   },
   "links": [
@@ -183,11 +198,6 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NA/Namibia.json",
-      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",
