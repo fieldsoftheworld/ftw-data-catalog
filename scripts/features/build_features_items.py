@@ -32,8 +32,9 @@ import json
 import os
 import subprocess
 import sys
+import time
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from pathlib import Path
 
 PUB = "https://data.source.coop/ftw/global-data"
@@ -511,23 +512,52 @@ def write_collections(out_root):
 
 # ── S3-only item + stac-geoparquet generation (run on rails) ──────────────────
 
-def _head_size(url):
-    """Byte size of a remote asset via HTTP HEAD (Content-Length), or None."""
+def _head_size(url, tries=3):
+    """Byte size of a remote asset via HTTP HEAD (Content-Length), or None.
+
+    Retried: a handful of HEADs per thousand fail transiently, and file:size is
+    a Portolan MUST — a miss silently drops the field from that asset.
+    """
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "ftw-features"})
+            with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310 - trusted host
+                cl = r.headers.get("Content-Length")
+                return int(cl) if cl else None
+        except Exception:  # noqa: BLE001
+            if attempt == tries - 1:
+                return None
+            time.sleep(2 ** attempt)
+
+
+def _probe_proj(task):
+    """(tile_id, year) -> (tile_id, proj:code, proj:shape, proj:transform), or None.
+
+    Runs in a worker *process*, not a thread: GDAL serialises /vsicurl behind a
+    process-global lock, so threads measure ~1.5 s/tile at any pool size (worse
+    than the ~1.2 s serial), while processes hit ~90 ms/tile.
+    """
+    import rasterio
+    tile_id, year = task
+    cog = f"{COG_BASE}/s2med_harvest/{tile_id}/{year}0101.tif"
     try:
-        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "ftw-features"})
-        with urllib.request.urlopen(req, timeout=60) as r:  # noqa: S310 - trusted host
-            cl = r.headers.get("Content-Length")
-            return int(cl) if cl else None
-    except Exception:  # noqa: BLE001
+        with rasterio.open(cog) as ds:
+            return tile_id, f"EPSG:{ds.crs.to_epsg()}", list(ds.shape), list(ds.transform)[:6]
+    except Exception as e:  # noqa: BLE001
+        print(f"SKIP {tile_id}: cannot read COG ({e})")
         return None
 
 
-def generate_items(year, workdir, limit=None, upload=True):
+def generate_items(year, workdir, limit=None, upload=True, workers=16):
     """Per (tile, year): read COG header for proj, build item JSON, write to S3;
     accumulate a STAC-GeoParquet items.parquet and write it to S3. Outputs are
-    NOT committed (the workdir should be gitignored)."""
+    NOT committed (the workdir should be gitignored).
+
+    The two remote passes are pure network latency — ~1.3 s/tile serially, i.e.
+    ~8 h for a year's 22.7k tiles — so both are parallelised: COG headers across
+    *processes* (see _probe_proj), HEAD across threads. Run in-region (rails).
+    """
     import duckdb, json as _json
-    import rasterio
     con = duckdb.connect()
     con.execute("INSTALL spatial; LOAD spatial; INSTALL httpfs; LOAD httpfs; SET TimeZone='UTC';")
     q = (f"SELECT tile_id, ST_AsGeoJSON(ANY_VALUE(geometry)) g, "
@@ -537,21 +567,21 @@ def generate_items(year, workdir, limit=None, upload=True):
          f"GROUP BY tile_id ORDER BY tile_id" + (f" LIMIT {limit}" if limit else ""))
     rows = con.execute(q).fetchall()
     d = Path(workdir) / "features" / str(year) / "items"; d.mkdir(parents=True, exist_ok=True)
+
+    with ProcessPoolExecutor(max_workers=workers) as pool:
+        proj = {r[0]: r[1:] for r in
+                pool.map(_probe_proj, [(row[0], year) for row in rows], chunksize=8)
+                if r is not None}
     records = []
     for tile_id, g, xmin, ymin, xmax, ymax in rows:
-        cog = f"{COG_BASE}/s2med_harvest/{tile_id}/{year}0101.tif"
-        try:
-            with rasterio.open(cog) as ds:
-                proj_code = f"EPSG:{ds.crs.to_epsg()}"; shape = list(ds.shape)
-                transform = list(ds.transform)[:6]
-        except Exception as e:  # noqa: BLE001
-            print(f"SKIP {tile_id}: cannot read COG ({e})"); continue
-        item = build_item(tile_id, year, _json.loads(g), [xmin, ymin, xmax, ymax],
-                          proj_code, shape, transform)
-        records.append(item)
+        if tile_id not in proj:
+            continue
+        proj_code, shape, transform = proj[tile_id]
+        records.append(build_item(tile_id, year, _json.loads(g), [xmin, ymin, xmax, ymax],
+                                  proj_code, shape, transform))
     # file:size via HTTP HEAD (cheap, parallel). file:checksum is deferred (see build_item).
     hrefs = sorted({a["href"] for it in records for a in it["assets"].values()})
-    with ThreadPoolExecutor(max_workers=16) as pool:
+    with ThreadPoolExecutor(max_workers=workers) as pool:
         sizes = dict(zip(hrefs, pool.map(_head_size, hrefs)))
     n_size = 0
     for it in records:
@@ -561,8 +591,9 @@ def generate_items(year, workdir, limit=None, upload=True):
         (d / f"{it['id']}.json").write_text(_json.dumps(it))
     # STAC-GeoParquet (one row per item) via stac-geoparquet if available, else a simple parquet
     _write_stac_geoparquet(records, Path(workdir) / "features" / str(year) / "items.parquet")
-    print(f"{year}: wrote {len(records)} items ({n_size} asset file:size set; "
-          f"file:checksum deferred) + items.parquet to {workdir}")
+    n_missing = sum(1 for h in hrefs if sizes.get(h) is None)
+    print(f"{year}: wrote {len(records)} items ({n_size} asset file:size set, "
+          f"{n_missing} unresolved; file:checksum deferred) + items.parquet to {workdir}")
     if upload:
         base = f"s3://{S3_BUCKET}/{S3_PREFIX}/features/{year}"
         subprocess.run(["aws", "s3", "cp", str(d), f"{base}/items/", "--recursive",
@@ -629,6 +660,8 @@ def main(argv=None):
     it = sub.add_parser("items"); it.add_argument("year", type=int, choices=[2024, 2025])
     it.add_argument("--workdir", default=os.environ.get("WORK", "/tmp/ftw-features"))
     it.add_argument("--limit", type=int, default=None)
+    it.add_argument("--workers", type=int, default=16,
+                    help="parallel remote reads (COG header + HEAD); network-bound")
     it.add_argument("--no-upload", action="store_true")
     th = sub.add_parser("thumbnail"); th.add_argument("--tile", default="31UDP")
     th.add_argument("--year", type=int, default=2024)
@@ -640,7 +673,8 @@ def main(argv=None):
     elif args.cmd == "thumbnail":
         make_thumbnail(args.tile, args.year, args.workdir, upload=not args.no_upload)
     else:
-        generate_items(args.year, args.workdir, args.limit, upload=not args.no_upload)
+        generate_items(args.year, args.workdir, args.limit, upload=not args.no_upload,
+                       workers=args.workers)
     return 0
 
 
