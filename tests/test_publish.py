@@ -1,9 +1,11 @@
-"""Dependency-free test of publisher file selection. Run: python3 tests/test_publish.py"""
+"""Dependency-free test of publisher file selection and change detection.
+Run: python3 tests/test_publish.py"""
+import hashlib
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "catalog"))
-from publish import collect_uploads  # noqa: E402
+from publish import collect_uploads, is_unchanged, key_dirs, split_s3_uri  # noqa: E402
 
 
 def build_tree(tmp: Path):
@@ -32,6 +34,43 @@ def build_tree(tmp: Path):
     (c / "confidence/confidence.json").write_text("{}")
 
 
+def check_change_detection(tmp: Path, manifest: dict):
+    """Unchanged bytes are skipped; anything else re-uploads."""
+    assert split_s3_uri("s3://bucket/ftw-global-data") == ("bucket", "ftw-global-data")
+    assert split_s3_uri("s3://bucket/a/b/") == ("bucket", "a/b")
+    assert split_s3_uri("s3://bucket") == ("bucket", "")
+
+    by_rel = {u.local.relative_to(tmp / "catalog").as_posix(): u
+              for u in collect_uploads(manifest, tmp)}
+    u = by_rel["catalog.json"]
+    key = split_s3_uri(u.s3_uri)[1]
+    etag = hashlib.md5(u.local.read_bytes()).hexdigest()
+    size = u.local.stat().st_size
+
+    assert is_unchanged(u, {key: (etag, size)}), "identical bytes must be skipped"
+    assert is_unchanged(u, {key: (f'"{etag}"', size)}), "quoted ETag must be tolerated"
+    assert not is_unchanged(u, {}), "absent object must upload"
+    assert not is_unchanged(u, {key: ("0" * 32, size)}), "differing ETag must upload"
+    assert not is_unchanged(u, {key: (etag, size + 1)}), "differing size must upload"
+    assert not is_unchanged(u, {key: (f"{etag}-2", size)}), "multipart ETag must upload"
+    assert not is_unchanged(u, {"other/key": (etag, size)}), "key must match exactly"
+
+    # An empty index (the offline / no-credentials fallback) uploads everything.
+    assert all(not is_unchanged(x, {}) for x in by_rel.values())
+
+    # Only the directories the catalog occupies get listed -- never a bare recursive
+    # sweep of write_prefix, which would walk every zarr chunk and COG sharing it.
+    dirs = key_dirs(list(by_rel.values()))
+    assert dirs == [
+        "ftw-global-data/",
+        "ftw-global-data/.portolan/",
+        "ftw-global-data/predictions/confidence/",
+        "ftw-global-data/predictions/confidence/confidence/",
+    ], dirs
+    assert all(d.endswith("/") for d in dirs)
+    assert len(dirs) == len(set(dirs)), "directories must be deduplicated"
+
+
 def main():
     import tempfile
     manifest = {
@@ -45,6 +84,7 @@ def main():
         build_tree(tmp)
         uploads = collect_uploads(manifest, tmp)
         rels = {u.local.relative_to(tmp / "catalog").as_posix() for u in uploads}
+        check_change_detection(tmp, manifest)  # needs the files to still exist
 
     expected = {
         "catalog.json", "llms.txt", "README.md", "versions.json",
@@ -66,7 +106,8 @@ def main():
     assert by_rel["predictions/confidence/README.md"].content_type.startswith("text/markdown")
     assert by_rel["versions.json"].content_type == "application/json"
     assert by_rel[".portolan/metadata.yaml"].content_type.startswith("text/yaml")
-    print("OK: publisher walks catalog/ 1:1, excludes root/staging/scripts and .portolan internals")
+    print("OK: publisher walks catalog/ 1:1, excludes root/staging/scripts and .portolan "
+          "internals, and skips objects S3 already holds")
 
 
 if __name__ == "__main__":

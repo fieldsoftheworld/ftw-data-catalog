@@ -27,11 +27,24 @@ or uploaded by this repo.
 ## Publish workflow
 Edit metadata under `catalog/` -> commit -> publish:
 ```
-python3 scripts/catalog/publish.py            # dry run (lists the catalog/ tree -> S3)
+python3 scripts/catalog/publish.py            # dry run (what would change)
 python3 scripts/catalog/publish.py --confirm  # upload (needs AWS creds)
 ```
-`publish.py` uploads every file in `catalog/` 1:1, skipping only Portolan-internal
-`.portolan/config.yaml` and `.portolan/state.json`. Config (write_prefix, public_base, region, publish_dir) lives in `catalog.publish.yaml`.
+`publish.py` syncs `catalog/` 1:1, skipping only Portolan-internal `.portolan/config.yaml`
+and `.portolan/state.json`. Config (write_prefix, public_base, region, publish_dir) lives in
+`catalog.publish.yaml`.
+
+**Change detection:** objects whose bytes already match S3 are skipped (local size+MD5 vs the
+object's size+ETag), so a typical publish uploads only what you edited and a no-op run takes
+~25 s instead of re-writing all 3.7 k objects. The remote side is read by listing each of the
+~213 directories the catalog occupies **non-recursively** (`--delimiter /`), 16 at a time — a
+plain recursive listing of `write_prefix` would walk every zarr chunk and COG sharing it
+(~709 k keys, ~3 min). Caveats:
+- A listing carries no ContentType, so a file whose *bytes* are unchanged but whose
+  content-type mapping changed is skipped — run `--force` after editing `_content_type()`.
+- `--force` re-uploads everything and skips the listing entirely.
+- If listing fails (no creds), it warns and treats every file as changed, so a dry run still
+  works offline; it never silently skips.
 
 ## Add / promote a collection
 1. Build it under `staging/<group>/<name>/` (collection.json + `.portolan/metadata.yaml`); hrefs use the public base.
