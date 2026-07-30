@@ -22,6 +22,7 @@ keywords:
   - probabilities
   - Zarr
   - GeoZarr
+  - multiscales
   - datacube
   - Sentinel-2
   - 10m
@@ -37,13 +38,15 @@ processing_notes: >-
   global EPSG:4326 grid for 2024 and 2025. Stored as a Zarr V3 datacube with dimensions
   (time, band, y, x) = (2, 3, 1566049, 4007517), float32, chunks (1, 3, 8192, 8192), CF-1.8,
   using the emerging Zarr proj:/spatial: geo-conventions. Shares the features/zarr grid (stackable).
+  The store implements multiscales: 14 average-resampled levels declared against the WGS84Quad tile
+  matrix set — full resolution at path "." plus overview groups 2x through 8192x — so it is readable
+  at any zoom and tileable for web display.
   The vectors and confidence collections are derived from these probabilities.
 
 known_issues: >-
-  GeoZarr-style but multiscales/overviews are NOT yet implemented, so the store is not yet
-  web-viewable as map tiles (work in progress); consume analytically with xarray/Zarr. Probabilities
-  are softmax (sum ~1 across the three bands per pixel). The full ~10 m global float32 cube is very
-  large — always subset by time/band/bbox; never load the whole array.
+  Probabilities are softmax (sum ~1 across the three bands per pixel). The full ~10 m global float32
+  cube is very large — always subset by time/band/bbox, or read one of the overview levels; never
+  load the whole full-resolution array.
 
 examples:
   - engine: python

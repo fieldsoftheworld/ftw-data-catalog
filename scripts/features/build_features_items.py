@@ -274,7 +274,7 @@ def build_zarr_collection():
             "thumbnail": {"href": THUMB_HREF, "type": "image/png",
                           "title": "Sentinel-2 composite preview",
                           "roles": ["thumbnail", "overview"]},
-            "data": {"href": ZARR_HREF, "type": "application/vnd+zarr",
+            "data": {"href": ZARR_HREF, "type": "application/vnd.zarr; version=3",
                      "title": "Global Sentinel-2 composite mosaic (Zarr V3, EPSG:4326, ~10 m)",
                      "description": "Dims (time, band, y, x). "
                                     "Open with xarray: xr.open_zarr(href).pipe(rasterix.assign_index).",

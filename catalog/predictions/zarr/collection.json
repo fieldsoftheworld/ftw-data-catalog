@@ -7,7 +7,7 @@
   ],
   "id": "predictions-zarr",
   "title": "FTW Global \u2014 Field Prediction Probabilities (Zarr)",
-  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands \u2014 `non_field_background`, `field`, `field_boundaries` \u2014 at ~10 m (`8.983119e-5\u00b0`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) but **does not yet implement multiscales/overviews, so it is not yet web-viewable** \u2014 that work is in progress. For now it is best consumed analytically (xarray/Zarr), not as map tiles. The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
+  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands \u2014 `non_field_background`, `field`, `field_boundaries` \u2014 at ~10 m (`8.983119e-5\u00b0`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) and it **implements multiscales**: 14 `average`-resampled overview levels (1\u00d7 through 8192\u00d7, at group paths `.`, `2x`, `4x`, \u2026 `8192x`) declared against the `WGS84Quad` tile matrix set, so the store can be read at any zoom by multiscale-aware clients and tiled for web display, as well as consumed analytically (xarray/Zarr). The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
   "license": "CC-BY-4.0",
   "keywords": [
     "agriculture",
@@ -149,9 +149,9 @@
   "assets": {
     "data": {
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr",
-      "type": "application/vnd+zarr",
-      "title": "PRUE prediction probabilities (Zarr V3 datacube)",
-      "description": "Open with xarray: xr.open_zarr(href).pipe(rasterix.assign_index).",
+      "type": "application/vnd.zarr; version=3; profile=multiscales",
+      "title": "PRUE prediction probabilities (Zarr V3 datacube, multiscale)",
+      "description": "Open with xarray: xr.open_zarr(href).pipe(rasterix.assign_index). Multiscale: 14 average-resampled levels (WGS84Quad), full resolution at the root and overviews at 2x/4x/.../8192x.",
       "roles": [
         "data",
         "cloud-optimized"

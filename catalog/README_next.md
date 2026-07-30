@@ -37,7 +37,7 @@ Storage: the public URL base `https://data.source.coop/ftw/global-data/` is phys
 | [Field Boundary Predictions (GeoParquet)](https://source.coop/ftw/global-data/predictions/vectors) | GeoParquet + PMTiles | ~3.2 B field-boundary polygons (2024 & 2025) in the [fiboa](https://fiboa.org)/[vecorel](https://vecorel.org) schema, each with a per-polygon `confidence` score (0–100). One partition per country (195 countries, 574 files; large countries split by admin subdivision), plus global & per-country PMTiles and MapLibre styles for web maps. ([llms.txt](https://data.source.coop/ftw/global-data/predictions/vectors/llms.txt)) |
 | [Prediction Confidence & Quality (500 m)](https://source.coop/ftw/global-data/predictions/confidence) | COG | Global 500 m rasters showing where the 10 m predictions can be trusted — confidence, entropy, field/boundary density, cropland consensus, precision/recall. ([llms.txt](https://data.source.coop/ftw/global-data/predictions/confidence/llms.txt)) |
 | [Sentinel-2 Planting & Harvest Composites](https://source.coop/ftw/global-data/features) | COG + Zarr | The model-input Sentinel-2 median composites (10 m), per year: ~22.7 k tiles/year, each with a planting and a harvest COG, plus a global EPSG:4326 Zarr mosaic and a STAC-GeoParquet item index. |
-| [Field Prediction Probabilities (Zarr)](https://source.coop/ftw/global-data/predictions/zarr) | Zarr | The raw PRUE softmax probabilities (non-field / field / field-boundary) the vectors are thresholded from. |
+| [Field Prediction Probabilities (Zarr)](https://source.coop/ftw/global-data/predictions/zarr) | Zarr | The raw PRUE softmax probabilities (non-field / field / field-boundary) the vectors are thresholded from. Multiscale (14 WGS84Quad levels), so it reads at any zoom. |
 
 ## Key facts
 
@@ -130,6 +130,17 @@ features = xr.open_zarr(
 
 The raw PRUE softmax bands `[non_field_background, field, field_boundaries]` on the same grid as the
 features (so they stack), from which the vectors are thresholded at `0.5` and polygonized.
+
+This store implements **multiscales** — 14 `average`-resampled levels declared against the
+`WGS84Quad` tile matrix set, full resolution at the root group and overviews at `2x` … `8192x` — so
+it can be read at any zoom and tiled for web display, not just subset analytically:
+
+```python
+predictions = xr.open_zarr(
+    "s3://us-west-2.opendata.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr",
+    group="64x",  # omit for full 10 m resolution
+).pipe(rasterix.assign_index)
+```
 
 ## Caveats
 

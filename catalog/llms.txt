@@ -96,7 +96,8 @@ Browser preview (titiler): https://titiler.xyz/cog/preview.png?url=<COG-URL>&res
 - Vector field boundaries (fiboa GeoParquet), admin-partitioned by country:
   https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin/
 - Raw polygonized predictions and PMTiles: .../predictions/vectors/alpha/
-- Prediction probability Zarr: .../predictions/zarr/alpha/global.zarr
+- Prediction probability Zarr: .../predictions/zarr/alpha/global.zarr (multiscale: 14 WGS84Quad
+  levels, full res at the root group plus overviews 2x ... 8192x)
 - Sentinel-2 feature mosaics (COGs + Zarr): .../features/cogs/alpha/ and .../features/zarr/alpha/global.zarr
 
 ## Cite

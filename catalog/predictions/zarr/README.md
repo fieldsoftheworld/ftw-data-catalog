@@ -29,12 +29,35 @@ A single store: `…/predictions/zarr/alpha/global.zarr`, with dimensions
 - The `vectors` (field-boundary polygons) and `confidence` (raster) collections are
   **derived** from these probabilities.
 
-## Status — not yet web-viewable
+## Multiscales
 
 This is a GeoZarr-style store (CF-1.8 plus the emerging Zarr `proj:` / `spatial:`
-geo-conventions), but it **does not yet implement multiscales / overviews**, so it
-cannot be served as map tiles yet. That work is **in progress**. For now, consume it
-analytically with xarray/Zarr.
+geo-conventions) and it **implements multiscales**, so it can be read at any zoom and
+tiled for web display as well as consumed analytically.
+
+The root group declares a `multiscales` attribute against the **`WGS84Quad`** tile
+matrix set, with **14 `average`-resampled levels**. Full resolution lives at the root
+(`path: "."`); each overview is a sibling group named by its decimation factor:
+
+| Level | Path | Shape (y, x) |
+|---|---|---|
+| 1× | `.` | 1,566,049 × 4,007,517 |
+| 2× | `2x` | 783,025 × 2,003,759 |
+| 4× | `4x` | 391,513 × 1,001,880 |
+| … | … | … |
+| 4096× | `4096x` | 383 × 979 |
+| 8192× | `8192x` | 192 × 490 |
+
+Every level is a complete group — same `(time, band, y, x)` layout, its own coordinate
+arrays and `spatial:transform`. Open an overview directly by pointing `xr.open_zarr` at
+its group:
+
+```python
+overview = xr.open_zarr(
+    "https://data.source.coop/ftw/global-data/predictions/zarr/alpha/global.zarr",
+    group="64x",
+).pipe(rasterix.assign_index)
+```
 
 ## Using the data
 
