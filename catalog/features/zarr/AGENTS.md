@@ -1,4 +1,4 @@
-# AGENTS.md — FTW Global — Sentinel-2 Planting & Harvest Composites
+# AGENTS.md — FTW Global — Sentinel-2 Planting & Harvest Composites — Zarr mosaic (2024 & 2025)
 
 Guidance for AI agents and automated clients working with this Portolan/STAC object.
 

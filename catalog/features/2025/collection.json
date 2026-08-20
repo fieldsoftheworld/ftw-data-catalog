@@ -11,8 +11,9 @@
   ],
   "id": "s2-planting-harvest-composites-2025",
   "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 COGs (2025)",
-  "description": "Sentinel-2 **planting- and harvest-season median composites** at 10 m \u2014 the model-input features for the FTW Global field-boundary predictions. For each grid tile and season, ~5\u201310 quality-masked Sentinel-2 scenes (selected by latitude-based day-of-year heuristics) are reduced to a per-pixel median; bands are B02/B03/B04/B08 plus N_VALID_PIXELS, in the tile's native UTM zone. Part of [Fields of the World](https://fieldsofthe.world). These composites feed the **PRUE** U-Net model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101); 76% IoU / 47% object-F1 on the [Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries, [Kerner et al. 2025](https://arxiv.org/abs/2409.16252)), whose outputs are the [field-boundary predictions](https://source.coop/ftw/global-data/predictions). The same composites are published in two equivalent formats: per-tile **COGs** (these per-year collections) and a single global EPSG:4326 **[Zarr mosaic](https://source.coop/ftw/global-data/features/zarr)** (its own collection), stackable with the prediction Zarr.\n\n**Items & index:** ~22.7k per-tile items (each with a `planting` and `harvest` COG asset) are indexed by the collection's STAC-GeoParquet asset (`items.parquet`); query that rather than enumerating item links.",
+  "description": "Sentinel-2 **planting- and harvest-season median composites** at 10 m \u2014 the model-input features for the FTW Global field-boundary predictions. For each grid tile and season, ~5\u201310 quality-masked Sentinel-2 scenes (selected by latitude-based day-of-year heuristics) are reduced to a per-pixel median; bands are B02/B03/B04/B08 plus N_VALID_PIXELS, in the tile's native UTM zone. Part of [Fields of the World](https://fieldsofthe.world). These composites feed the **PRUE** U-Net model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101); 76% IoU / 47% object-F1 on the [Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries, [Kerner et al. 2025](https://arxiv.org/abs/2409.16252)), whose outputs are the [field-boundary predictions](https://source.coop/ftw/global-data/predictions). The same composites are published in two equivalent formats: per-tile **COGs** (these per-year collections) and a single global EPSG:4326 **[Zarr mosaic](https://source.coop/ftw/global-data/features/zarr)** (its own collection), stackable with the prediction Zarr.\n\n**Items & index:** ~22.7k per-tile items (each with a `planting` and `harvest` COG asset). Browse them through the **MGRS grid**: each per-year collection's children are the 60 UTM zones, each expanding into its grid-zone cells (`35U`, ~36 tiles each) and then the tiles themselves. To *query* rather than browse, use the collection's STAC-GeoParquet asset (`items.parquet`), which lists every item for the year in one file.",
   "license": "CC-BY-4.0",
+  "updated": "2026-08-20T13:38:51Z",
   "keywords": [
     "Sentinel-2",
     "median composite",
@@ -204,9 +205,7 @@
       "roles": [
         "thumbnail",
         "overview"
-      ],
-      "file:size": 947099,
-      "file:checksum": "1220b251d835a63140033f5d3eb99da85287a0976618468134f2320ac6880c1190ae"
+      ]
     },
     "geoparquet-items": {
       "href": "https://data.source.coop/ftw/global-data/features/2025/items.parquet",
@@ -215,9 +214,7 @@
       "description": "STAC-GeoParquet listing all per-tile items for this year; the scalable item index in lieu of item links.",
       "roles": [
         "collection-mirror"
-      ],
-      "file:size": 4540445,
-      "file:checksum": "1220b4fc4691a88f20161c2787be9cc3ae1340e2a0a1973a587cc98a1b2ab59c1931"
+      ]
     },
     "documentation": {
       "href": "./llms.txt",
@@ -226,8 +223,8 @@
       "roles": [
         "documentation"
       ],
-      "file:size": 799,
-      "file:checksum": "1220ada880c0a0d0b5262b0b309bd5589c06170a55982c7f8891ea4d268586623319"
+      "file:size": 968,
+      "file:checksum": "122093f5ceeeb57cb962a587097b98950d0820e520ebc041e082aa4365e30efb5e70"
     },
     "README": {
       "href": "./README.md",
@@ -236,8 +233,8 @@
       "roles": [
         "metadata"
       ],
-      "file:size": 2202,
-      "file:checksum": "12207b734fca4d63e82441654bbceb21adf80fe5ecba36ce2f0d6481796f1b3688bc"
+      "file:size": 2417,
+      "file:checksum": "122095a7215f572ec28f67e0930b5382250278e9422ff1d4af4b618d5fb192ea1fdc"
     }
   },
   "links": [
@@ -295,6 +292,366 @@
       "title": "Prediction probabilities (Zarr) made from these features"
     },
     {
+      "rel": "child",
+      "href": "./01/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 1 \u2014 Russia, Fiji, United States of America, Tonga (+2 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./02/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 2 \u2014 United States of America, Russia, Kiribati, Samoa (+1 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./03/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 3 \u2014 United States of America (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./04/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 4 \u2014 United States of America, Kiribati (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./05/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 5 \u2014 United States of America, Kiribati (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./06/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 6 \u2014 United States of America (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./07/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 7 \u2014 Canada, United States of America (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./08/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 8 \u2014 Canada, United States of America (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./09/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 9 \u2014 Canada, United States of America (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./10/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 10 \u2014 Canada, United States of America (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./11/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 11 \u2014 Canada, United States of America, Mexico (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./12/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 12 \u2014 Canada, United States of America, Mexico, Chile (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./13/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 13 \u2014 United States of America, Canada, Mexico (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./14/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 14 \u2014 United States of America, Canada, Mexico (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./15/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 15 \u2014 United States of America, Canada, Mexico, Guatemala (+4 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./16/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 16 \u2014 United States of America, Canada, Honduras, Nicaragua (+7 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./17/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 17 \u2014 Canada, United States of America, Peru, Ecuador (+10 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./18/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 18 \u2014 Canada, Peru, Colombia, Chile (+13 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./19/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 19 \u2014 Argentina, Canada, Brazil, Chile (+13 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./20/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 20 \u2014 Brazil, Argentina, Canada, Bolivia (+21 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./21/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 21 \u2014 Brazil, Argentina, Paraguay, Canada (+8 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./22/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 22 \u2014 Brazil, France, Uruguay, Canada (+2 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./23/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 23 \u2014 Brazil (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./24/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 24 \u2014 Brazil (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./25/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 25 \u2014 Brazil, Portugal (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./26/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 26 \u2014 Portugal, Cabo Verde, Iceland (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./27/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 27 \u2014 Iceland, Cabo Verde, Spain, Mauritania (+2 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./28/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 28 \u2014 Mauritania, Senegal, Morocco, W. Sahara (+10 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./29/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 29 \u2014 Mauritania, Mali, Morocco, C\u00f4te d'Ivoire (+12 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./30/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 30 \u2014 Mali, Algeria, Spain, United Kingdom (+13 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./31/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 31 \u2014 Algeria, France, Nigeria, Niger (+16 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./32/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 32 \u2014 Algeria, Niger, Nigeria, Germany (+25 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./33/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 33 \u2014 Angola, Chad, Libya, Namibia (+26 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./34/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 34 \u2014 Dem. Rep. Congo, Libya, Chad, Angola (+34 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./35/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 35 \u2014 Dem. Rep. Congo, Sudan, South Africa, Egypt (+27 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./36/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 36 \u2014 Sudan, Russia, Mozambique, Tanzania (+27 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./37/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 37 \u2014 Russia, Ethiopia, Saudi Arabia, Kenya (+19 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./38/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 38 \u2014 Russia, Saudi Arabia, Madagascar, Iraq (+16 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./39/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 39 \u2014 Russia, Iran, Saudi Arabia, Kazakhstan (+12 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./40/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 40 \u2014 Russia, Iran, Kazakhstan, Oman (+8 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./41/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 41 \u2014 Russia, Kazakhstan, Afghanistan, Turkmenistan (+3 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./42/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 42 \u2014 Kazakhstan, Russia, Pakistan, Afghanistan (+5 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./43/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 43 \u2014 India, Russia, Kazakhstan, Pakistan (+7 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./44/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 44 \u2014 India, China, Russia, Kazakhstan (+4 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./45/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 45 \u2014 China, Russia, India, Bangladesh (+4 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./46/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 46 \u2014 China, Russia, India, Myanmar (+4 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./47/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 47 \u2014 China, Russia, Thailand, Myanmar (+7 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./48/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 48 \u2014 China, Russia, Vietnam, Indonesia (+6 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./49/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 49 \u2014 China, Russia, Indonesia, Mongolia (+6 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./50/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 50 \u2014 China, Australia, Russia, Indonesia (+6 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./51/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 51 \u2014 Australia, China, Russia, Indonesia (+7 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./52/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 52 \u2014 Australia, Russia, Indonesia, China (+6 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./53/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 53 \u2014 Australia, Russia, Indonesia, Japan (+3 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./54/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 54 \u2014 Australia, Russia, Japan, Papua New Guinea (+1 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./55/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 55 \u2014 Australia, Russia, Papua New Guinea, Japan (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./56/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 56 \u2014 Russia, Australia, Papua New Guinea, Solomon Is. (+1 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./57/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 57 \u2014 Russia, Solomon Is., Micronesia, Australia (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./58/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 58 \u2014 Russia, New Zealand, Vanuatu, Solomon Is. (+4 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./59/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 59 \u2014 Russia, New Zealand, Kiribati, Vanuatu (+4 more) (2025)"
+    },
+    {
+      "rel": "child",
+      "href": "./60/catalog.json",
+      "type": "application/json",
+      "title": "UTM Zone 60 \u2014 New Zealand, Russia, Fiji, Kiribati (+2 more) (2025)"
+    },
+    {
       "rel": "llms",
       "href": "./llms.txt",
       "type": "text/markdown",
@@ -312,6 +669,5 @@
       "type": "text/markdown",
       "title": "Human-readable documentation"
     }
-  ],
-  "updated": "2026-07-28T16:34:06Z"
+  ]
 }

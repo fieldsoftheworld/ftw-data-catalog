@@ -1,0 +1,9030 @@
+{
+ "gzds": {
+  "01f": {
+   "bbox": [
+    178.7633,
+    -50.5994,
+    180.0,
+    -48.6808
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "01g": {
+   "bbox": [
+    -179.5078,
+    -45.2413,
+    -173.0579,
+    -42.4264
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 12
+  },
+  "01j": {
+   "bbox": [
+    -179.1105,
+    -31.7232,
+    -175.8523,
+    -28.0098
+   ],
+   "countries": [],
+   "tiles": 10
+  },
+  "01k": {
+   "bbox": [
+    -179.9009,
+    -23.5984,
+    180.0,
+    -16.2461
+   ],
+   "countries": [
+    "Fiji",
+    "Tonga"
+   ],
+   "tiles": 51
+  },
+  "01l": {
+   "bbox": [
+    -179.8081,
+    -16.3692,
+    180.0,
+    -8.1329
+   ],
+   "countries": [
+    "Fiji"
+   ],
+   "tiles": 25
+  },
+  "01m": {
+   "bbox": [
+    -176.1009,
+    -6.4143,
+    -173.2969,
+    -1.8055
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 13
+  },
+  "01r": {
+   "bbox": [
+    -179.0514,
+    25.1725,
+    -172.9019,
+    28.9283
+   ],
+   "countries": [],
+   "tiles": 16
+  },
+  "01u": {
+   "bbox": [
+    -179.9952,
+    49.5284,
+    -172.2665,
+    54.1481
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 23
+  },
+  "01v": {
+   "bbox": [
+    -179.0465,
+    58.5018,
+    180.0,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 18
+  },
+  "01w": {
+   "bbox": [
+    -179.9137,
+    63.8758,
+    180.0,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "01x": {
+   "bbox": [
+    176.8951,
+    71.9252,
+    180.0,
+    72.9719
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "02k": {
+   "bbox": [
+    -173.9009,
+    -21.7815,
+    -171.8442,
+    -16.2622
+   ],
+   "countries": [],
+   "tiles": 11
+  },
+  "02l": {
+   "bbox": [
+    -173.8081,
+    -16.3676,
+    -169.9767,
+    -11.7462
+   ],
+   "countries": [
+    "Samoa",
+    "American Samoa"
+   ],
+   "tiles": 18
+  },
+  "02m": {
+   "bbox": [
+    -173.7076,
+    -6.4215,
+    -169.1062,
+    -1.8073
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 21
+  },
+  "02q": {
+   "bbox": [
+    -170.0212,
+    23.3703,
+    -166.9621,
+    24.4102
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "02r": {
+   "bbox": [
+    -174.0503,
+    24.2715,
+    -166.9019,
+    28.0118
+   ],
+   "countries": [],
+   "tiles": 17
+  },
+  "02u": {
+   "bbox": [
+    -174.0596,
+    50.4263,
+    -166.2665,
+    55.9457
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 25
+  },
+  "02v": {
+   "bbox": [
+    -175.0867,
+    55.8117,
+    -166.7138,
+    64.0272
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 33
+  },
+  "02w": {
+   "bbox": [
+    -173.9137,
+    63.8758,
+    -165.4384,
+    72.0994
+   ],
+   "countries": [
+    "Russia",
+    "United States of America"
+   ],
+   "tiles": 21
+  },
+  "03q": {
+   "bbox": [
+    -167.9577,
+    21.568,
+    -160.99,
+    24.4134
+   ],
+   "countries": [],
+   "tiles": 16
+  },
+  "03r": {
+   "bbox": [
+    -168.0018,
+    24.2963,
+    -164.903,
+    26.2073
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "03u": {
+   "bbox": [
+    -168.1995,
+    51.3281,
+    -160.2665,
+    55.9457
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 20
+  },
+  "03v": {
+   "bbox": [
+    -169.0867,
+    55.8117,
+    -160.7138,
+    64.0272
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 35
+  },
+  "03w": {
+   "bbox": [
+    -167.9137,
+    63.8758,
+    -158.9064,
+    72.0996
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 27
+  },
+  "03x": {
+   "bbox": [
+    -165.0006,
+    71.9166,
+    -158.5983,
+    72.9957
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "04m": {
+   "bbox": [
+    -157.1977,
+    -7.3221,
+    -155.29,
+    -2.7085
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 8
+  },
+  "04n": {
+   "bbox": [
+    -161.7116,
+    -0.0885,
+    -155.3159,
+    6.3324
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 26
+  },
+  "04q": {
+   "bbox": [
+    -161.9372,
+    17.9615,
+    -155.0418,
+    23.5105
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 27
+  },
+  "04u": {
+   "bbox": [
+    -162.1995,
+    52.2262,
+    -155.644,
+    55.9457
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 13
+  },
+  "04v": {
+   "bbox": [
+    -163.0867,
+    55.8117,
+    -154.7138,
+    64.0272
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 36
+  },
+  "04w": {
+   "bbox": [
+    -161.9137,
+    63.8758,
+    -152.9064,
+    72.0996
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 27
+  },
+  "04x": {
+   "bbox": [
+    -162.062,
+    71.9166,
+    -152.5983,
+    72.9957
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "05l": {
+   "bbox": [
+    -153.9216,
+    -12.7524,
+    -149.2406,
+    -8.1323
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 23
+  },
+  "05m": {
+   "bbox": [
+    -155.7172,
+    -7.325,
+    -152.9119,
+    -2.7111
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 11
+  },
+  "05q": {
+   "bbox": [
+    -155.8992,
+    17.9794,
+    -152.9062,
+    21.6932
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 10
+  },
+  "05u": {
+   "bbox": [
+    -156.1995,
+    54.0214,
+    -151.2427,
+    55.9457
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 5
+  },
+  "05v": {
+   "bbox": [
+    -157.0867,
+    55.8117,
+    -148.7138,
+    64.0272
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 36
+  },
+  "05w": {
+   "bbox": [
+    -155.9137,
+    63.8758,
+    -146.9064,
+    72.0996
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 27
+  },
+  "05x": {
+   "bbox": [
+    -156.062,
+    71.9854,
+    -149.6405,
+    72.9957
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "06l": {
+   "bbox": [
+    -149.7447,
+    -10.939,
+    -148.7306,
+    -9.036
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "06v": {
+   "bbox": [
+    -151.0867,
+    57.6057,
+    -142.7138,
+    64.0272
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 28
+  },
+  "06w": {
+   "bbox": [
+    -149.9137,
+    63.8758,
+    -140.9064,
+    72.0996
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 27
+  },
+  "07v": {
+   "bbox": [
+    -145.0867,
+    55.8117,
+    -136.7138,
+    64.0272
+   ],
+   "countries": [
+    "United States of America",
+    "Canada"
+   ],
+   "tiles": 31
+  },
+  "07w": {
+   "bbox": [
+    -143.9137,
+    63.8758,
+    -135.1852,
+    72.0996
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 26
+  },
+  "08u": {
+   "bbox": [
+    -138.1995,
+    49.4856,
+    -130.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 23
+  },
+  "08v": {
+   "bbox": [
+    -139.0867,
+    55.8117,
+    -130.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 36
+  },
+  "08w": {
+   "bbox": [
+    -137.7797,
+    63.8758,
+    -128.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 26
+  },
+  "08x": {
+   "bbox": [
+    -132.1012,
+    71.9166,
+    -128.5983,
+    72.9728
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "09t": {
+   "bbox": [
+    -127.7095,
+    39.6055,
+    -124.8647,
+    47.8459
+   ],
+   "countries": [],
+   "tiles": 11
+  },
+  "09u": {
+   "bbox": [
+    -132.1995,
+    47.6909,
+    -124.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 40
+  },
+  "09v": {
+   "bbox": [
+    -133.0867,
+    55.8117,
+    -124.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 36
+  },
+  "09w": {
+   "bbox": [
+    -131.9137,
+    63.8758,
+    -122.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "09x": {
+   "bbox": [
+    -132.6199,
+    71.9166,
+    -122.5983,
+    78.373
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 12
+  },
+  "10s": {
+   "bbox": [
+    -126.499,
+    31.5052,
+    -119.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 37
+  },
+  "10t": {
+   "bbox": [
+    -126.645,
+    39.6055,
+    -118.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "10u": {
+   "bbox": [
+    -126.1995,
+    47.6909,
+    -118.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "10v": {
+   "bbox": [
+    -127.0867,
+    55.8117,
+    -118.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "10w": {
+   "bbox": [
+    -125.9137,
+    63.8758,
+    -116.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "10x": {
+   "bbox": [
+    -127.8018,
+    71.9166,
+    -116.5983,
+    79.2692
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 17
+  },
+  "11q": {
+   "bbox": [
+    -116.0601,
+    17.0601,
+    -112.9621,
+    24.4006
+   ],
+   "countries": [],
+   "tiles": 9
+  },
+  "11r": {
+   "bbox": [
+    -120.132,
+    24.2715,
+    -112.9019,
+    31.6355
+   ],
+   "countries": [
+    "Mexico"
+   ],
+   "tiles": 35
+  },
+  "11s": {
+   "bbox": [
+    -120.499,
+    31.5052,
+    -113.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America",
+    "Mexico"
+   ],
+   "tiles": 54
+  },
+  "11t": {
+   "bbox": [
+    -120.645,
+    39.6055,
+    -112.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "11u": {
+   "bbox": [
+    -120.1995,
+    47.6909,
+    -112.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "11v": {
+   "bbox": [
+    -121.0867,
+    55.8117,
+    -112.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "11w": {
+   "bbox": [
+    -119.9137,
+    63.8758,
+    -110.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "11x": {
+   "bbox": [
+    -122.232,
+    71.9166,
+    -110.5983,
+    80.1653
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 19
+  },
+  "12j": {
+   "bbox": [
+    -111.0002,
+    -28.1137,
+    -107.8482,
+    -25.2841
+   ],
+   "countries": [
+    "Chile"
+   ],
+   "tiles": 7
+  },
+  "12q": {
+   "bbox": [
+    -113.9577,
+    17.077,
+    -106.9621,
+    24.4134
+   ],
+   "countries": [
+    "Mexico"
+   ],
+   "tiles": 31
+  },
+  "12r": {
+   "bbox": [
+    -114.1618,
+    24.2715,
+    -106.9019,
+    31.6355
+   ],
+   "countries": [
+    "Mexico",
+    "United States of America"
+   ],
+   "tiles": 50
+  },
+  "12s": {
+   "bbox": [
+    -114.499,
+    31.5052,
+    -107.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America",
+    "Mexico"
+   ],
+   "tiles": 54
+  },
+  "12t": {
+   "bbox": [
+    -114.645,
+    39.6055,
+    -106.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "12u": {
+   "bbox": [
+    -114.1995,
+    47.6909,
+    -106.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "12v": {
+   "bbox": [
+    -115.0867,
+    55.8117,
+    -106.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "12w": {
+   "bbox": [
+    -113.9137,
+    63.8758,
+    -104.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "12x": {
+   "bbox": [
+    -116.7478,
+    71.9166,
+    -104.0067,
+    81.9569
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 22
+  },
+  "13j": {
+   "bbox": [
+    -107.0191,
+    -28.1137,
+    -103.8824,
+    -25.3028
+   ],
+   "countries": [],
+   "tiles": 6
+  },
+  "13q": {
+   "bbox": [
+    -107.9577,
+    16.1579,
+    -100.9621,
+    24.4134
+   ],
+   "countries": [
+    "Mexico"
+   ],
+   "tiles": 56
+  },
+  "13r": {
+   "bbox": [
+    -108.1618,
+    24.2715,
+    -100.9019,
+    31.6355
+   ],
+   "countries": [
+    "Mexico",
+    "United States of America"
+   ],
+   "tiles": 50
+  },
+  "13s": {
+   "bbox": [
+    -108.499,
+    31.5052,
+    -101.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America",
+    "Mexico"
+   ],
+   "tiles": 54
+  },
+  "13t": {
+   "bbox": [
+    -108.645,
+    39.6055,
+    -100.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "13u": {
+   "bbox": [
+    -108.1995,
+    47.6909,
+    -100.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "13v": {
+   "bbox": [
+    -109.0867,
+    55.8117,
+    -100.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "13w": {
+   "bbox": [
+    -107.9137,
+    63.8758,
+    -98.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "13x": {
+   "bbox": [
+    -111.3781,
+    71.9166,
+    -96.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 25
+  },
+  "14p": {
+   "bbox": [
+    -101.8069,
+    14.3539,
+    -95.1677,
+    16.2808
+   ],
+   "countries": [
+    "Mexico"
+   ],
+   "tiles": 11
+  },
+  "14q": {
+   "bbox": [
+    -101.9577,
+    16.1579,
+    -94.99,
+    24.4134
+   ],
+   "countries": [
+    "Mexico"
+   ],
+   "tiles": 62
+  },
+  "14r": {
+   "bbox": [
+    -102.1618,
+    24.2715,
+    -94.9019,
+    31.6355
+   ],
+   "countries": [
+    "United States of America",
+    "Mexico"
+   ],
+   "tiles": 50
+  },
+  "14s": {
+   "bbox": [
+    -102.499,
+    31.5052,
+    -95.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 54
+  },
+  "14t": {
+   "bbox": [
+    -102.645,
+    39.6055,
+    -94.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "14u": {
+   "bbox": [
+    -102.1995,
+    47.6909,
+    -94.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "14v": {
+   "bbox": [
+    -103.0867,
+    55.8117,
+    -94.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "14w": {
+   "bbox": [
+    -101.9137,
+    63.8758,
+    -92.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "14x": {
+   "bbox": [
+    -105.3781,
+    71.9166,
+    -90.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 25
+  },
+  "15m": {
+   "bbox": [
+    -93.8991,
+    -2.8027,
+    -89.3156,
+    0.0
+   ],
+   "countries": [
+    "Ecuador"
+   ],
+   "tiles": 13
+  },
+  "15n": {
+   "bbox": [
+    -93.9,
+    -0.0885,
+    -89.3181,
+    2.7142
+   ],
+   "countries": [
+    "Ecuador"
+   ],
+   "tiles": 13
+  },
+  "15p": {
+   "bbox": [
+    -95.8069,
+    11.647,
+    -89.1677,
+    16.2808
+   ],
+   "countries": [
+    "Guatemala",
+    "Mexico",
+    "El Salvador",
+    "Honduras"
+   ],
+   "more": 1,
+   "tiles": 25
+  },
+  "15q": {
+   "bbox": [
+    -95.8816,
+    16.1579,
+    -88.9621,
+    24.4102
+   ],
+   "countries": [
+    "Mexico",
+    "Guatemala",
+    "Belize"
+   ],
+   "tiles": 52
+  },
+  "15r": {
+   "bbox": [
+    -96.1618,
+    24.2963,
+    -89.7357,
+    31.6355
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 33
+  },
+  "15s": {
+   "bbox": [
+    -96.499,
+    31.5052,
+    -89.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 54
+  },
+  "15t": {
+   "bbox": [
+    -96.645,
+    39.6055,
+    -88.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "15u": {
+   "bbox": [
+    -96.1995,
+    47.6909,
+    -88.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "15v": {
+   "bbox": [
+    -97.0867,
+    55.8117,
+    -88.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "15w": {
+   "bbox": [
+    -95.9137,
+    63.8758,
+    -86.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "15x": {
+   "bbox": [
+    -99.3781,
+    71.9166,
+    -84.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 25
+  },
+  "16m": {
+   "bbox": [
+    -89.6984,
+    -7.3176,
+    -83.29,
+    0.0
+   ],
+   "countries": [
+    "Ecuador"
+   ],
+   "tiles": 8
+  },
+  "16n": {
+   "bbox": [
+    -89.6965,
+    -0.0885,
+    -83.2828,
+    8.141
+   ],
+   "countries": [],
+   "tiles": 13
+  },
+  "16p": {
+   "bbox": [
+    -89.8069,
+    8.0367,
+    -83.1677,
+    16.2808
+   ],
+   "countries": [
+    "Nicaragua",
+    "Honduras",
+    "Costa Rica",
+    "El Salvador"
+   ],
+   "more": 2,
+   "tiles": 55
+  },
+  "16q": {
+   "bbox": [
+    -89.9577,
+    16.1579,
+    -82.9621,
+    24.4108
+   ],
+   "countries": [
+    "Mexico",
+    "Belize",
+    "Cuba",
+    "Guatemala"
+   ],
+   "more": 1,
+   "tiles": 59
+  },
+  "16r": {
+   "bbox": [
+    -90.1618,
+    24.2715,
+    -82.9019,
+    31.6355
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 33
+  },
+  "16s": {
+   "bbox": [
+    -90.499,
+    31.5052,
+    -83.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 54
+  },
+  "16t": {
+   "bbox": [
+    -90.645,
+    39.6055,
+    -82.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America",
+    "Canada"
+   ],
+   "tiles": 48
+  },
+  "16u": {
+   "bbox": [
+    -90.1995,
+    47.6909,
+    -82.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 43
+  },
+  "16v": {
+   "bbox": [
+    -91.0867,
+    55.8117,
+    -82.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "16w": {
+   "bbox": [
+    -89.9137,
+    63.8758,
+    -80.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "16x": {
+   "bbox": [
+    -93.3781,
+    71.9166,
+    -78.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 25
+  },
+  "17f": {
+   "bbox": [
+    -78.1243,
+    -54.197,
+    -76.2565,
+    -51.3666
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "17h": {
+   "bbox": [
+    -83.1999,
+    -35.3313,
+    -77.5943,
+    -32.4941
+   ],
+   "countries": [
+    "Chile"
+   ],
+   "tiles": 15
+  },
+  "17j": {
+   "bbox": [
+    -81.0002,
+    -28.1099,
+    -77.8482,
+    -25.3015
+   ],
+   "countries": [],
+   "tiles": 7
+  },
+  "17l": {
+   "bbox": [
+    -81.9129,
+    -16.3505,
+    -77.166,
+    -8.125
+   ],
+   "countries": [
+    "Peru"
+   ],
+   "tiles": 25
+  },
+  "17m": {
+   "bbox": [
+    -83.7172,
+    -8.2305,
+    -77.282,
+    0.0
+   ],
+   "countries": [
+    "Peru",
+    "Ecuador"
+   ],
+   "tiles": 58
+  },
+  "17n": {
+   "bbox": [
+    -83.7224,
+    -0.0885,
+    -77.2828,
+    8.142
+   ],
+   "countries": [
+    "Colombia",
+    "Panama",
+    "Ecuador",
+    "Costa Rica"
+   ],
+   "tiles": 49
+  },
+  "17p": {
+   "bbox": [
+    -83.8069,
+    8.0367,
+    -77.1677,
+    16.2808
+   ],
+   "countries": [
+    "Panama",
+    "Costa Rica",
+    "Nicaragua",
+    "Honduras"
+   ],
+   "more": 1,
+   "tiles": 57
+  },
+  "17q": {
+   "bbox": [
+    -83.9577,
+    16.1579,
+    -76.9621,
+    24.4134
+   ],
+   "countries": [
+    "Cuba",
+    "Jamaica",
+    "Bahamas",
+    "Cayman Is."
+   ],
+   "tiles": 56
+  },
+  "17r": {
+   "bbox": [
+    -84.1618,
+    24.2715,
+    -76.9019,
+    31.6355
+   ],
+   "countries": [
+    "United States of America",
+    "Bahamas"
+   ],
+   "tiles": 47
+  },
+  "17s": {
+   "bbox": [
+    -84.499,
+    31.5052,
+    -77.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 54
+  },
+  "17t": {
+   "bbox": [
+    -84.645,
+    39.6055,
+    -76.8647,
+    47.8537
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 48
+  },
+  "17u": {
+   "bbox": [
+    -84.1995,
+    47.6909,
+    -76.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 43
+  },
+  "17v": {
+   "bbox": [
+    -85.0867,
+    55.8117,
+    -76.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "17w": {
+   "bbox": [
+    -83.9137,
+    63.8758,
+    -74.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "17x": {
+   "bbox": [
+    -87.3781,
+    71.9166,
+    -72.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 25
+  },
+  "18e": {
+   "bbox": [
+    -73.3992,
+    -56.9209,
+    -71.5562,
+    -55.8995
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "18f": {
+   "bbox": [
+    -78.0661,
+    -56.0331,
+    -70.2565,
+    -47.7786
+   ],
+   "countries": [
+    "Chile",
+    "Argentina"
+   ],
+   "tiles": 40
+  },
+  "18g": {
+   "bbox": [
+    -77.6766,
+    -47.9412,
+    -70.8578,
+    -39.6935
+   ],
+   "countries": [
+    "Chile",
+    "Argentina"
+   ],
+   "tiles": 43
+  },
+  "18h": {
+   "bbox": [
+    -78.2988,
+    -39.8378,
+    -71.3831,
+    -31.5933
+   ],
+   "countries": [
+    "Chile",
+    "Argentina"
+   ],
+   "tiles": 33
+  },
+  "18j": {
+   "bbox": [
+    -73.9828,
+    -31.7189,
+    -70.8988,
+    -24.3596
+   ],
+   "countries": [],
+   "tiles": 14
+  },
+  "18k": {
+   "bbox": [
+    -75.9412,
+    -24.4728,
+    -70.9592,
+    -16.2461
+   ],
+   "countries": [
+    "Peru"
+   ],
+   "tiles": 14
+  },
+  "18l": {
+   "bbox": [
+    -77.8081,
+    -16.3692,
+    -71.166,
+    -8.125
+   ],
+   "countries": [
+    "Peru",
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "18m": {
+   "bbox": [
+    -77.723,
+    -8.2305,
+    -71.282,
+    0.0
+   ],
+   "countries": [
+    "Peru",
+    "Brazil",
+    "Colombia",
+    "Ecuador"
+   ],
+   "tiles": 63
+  },
+  "18n": {
+   "bbox": [
+    -77.7224,
+    -0.0885,
+    -71.2828,
+    8.142
+   ],
+   "countries": [
+    "Colombia",
+    "Ecuador",
+    "Venezuela",
+    "Panama"
+   ],
+   "more": 1,
+   "tiles": 63
+  },
+  "18p": {
+   "bbox": [
+    -77.8069,
+    8.0367,
+    -71.2005,
+    16.2808
+   ],
+   "countries": [
+    "Colombia",
+    "Venezuela",
+    "Panama"
+   ],
+   "tiles": 43
+  },
+  "18q": {
+   "bbox": [
+    -77.9577,
+    16.1579,
+    -70.9621,
+    24.4134
+   ],
+   "countries": [
+    "Bahamas",
+    "Haiti",
+    "Cuba",
+    "Dominican Rep."
+   ],
+   "more": 2,
+   "tiles": 63
+  },
+  "18r": {
+   "bbox": [
+    -78.0763,
+    24.2963,
+    -72.9003,
+    28.9251
+   ],
+   "countries": [
+    "Bahamas"
+   ],
+   "tiles": 19
+  },
+  "18s": {
+   "bbox": [
+    -78.499,
+    31.5077,
+    -71.3876,
+    39.7503
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 35
+  },
+  "18t": {
+   "bbox": [
+    -78.645,
+    39.6055,
+    -70.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America",
+    "Canada"
+   ],
+   "tiles": 48
+  },
+  "18u": {
+   "bbox": [
+    -78.1995,
+    47.6909,
+    -70.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 43
+  },
+  "18v": {
+   "bbox": [
+    -79.0867,
+    55.8117,
+    -70.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "18w": {
+   "bbox": [
+    -77.9137,
+    63.8758,
+    -68.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "18x": {
+   "bbox": [
+    -81.3781,
+    71.9166,
+    -66.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada",
+    "Greenland"
+   ],
+   "tiles": 25
+  },
+  "19e": {
+   "bbox": [
+    -72.2832,
+    -57.8301,
+    -65.4712,
+    -55.8995
+   ],
+   "countries": [],
+   "tiles": 7
+  },
+  "19f": {
+   "bbox": [
+    -72.2067,
+    -56.0331,
+    -64.2565,
+    -47.7786
+   ],
+   "countries": [
+    "Argentina",
+    "Chile"
+   ],
+   "tiles": 42
+  },
+  "19g": {
+   "bbox": [
+    -72.6501,
+    -47.9412,
+    -64.8578,
+    -39.6935
+   ],
+   "countries": [
+    "Argentina",
+    "Chile"
+   ],
+   "tiles": 48
+  },
+  "19h": {
+   "bbox": [
+    -72.5034,
+    -39.8378,
+    -65.3831,
+    -31.5933
+   ],
+   "countries": [
+    "Argentina",
+    "Chile"
+   ],
+   "tiles": 54
+  },
+  "19j": {
+   "bbox": [
+    -72.1648,
+    -31.7232,
+    -64.8988,
+    -24.3596
+   ],
+   "countries": [
+    "Argentina",
+    "Chile"
+   ],
+   "tiles": 50
+  },
+  "19k": {
+   "bbox": [
+    -71.9598,
+    -24.5018,
+    -64.9592,
+    -16.2461
+   ],
+   "countries": [
+    "Bolivia",
+    "Chile",
+    "Argentina",
+    "Peru"
+   ],
+   "tiles": 63
+  },
+  "19l": {
+   "bbox": [
+    -71.8081,
+    -16.3692,
+    -65.166,
+    -8.125
+   ],
+   "countries": [
+    "Bolivia",
+    "Peru",
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "19m": {
+   "bbox": [
+    -71.723,
+    -8.2305,
+    -65.282,
+    0.0
+   ],
+   "countries": [
+    "Brazil",
+    "Colombia",
+    "Peru"
+   ],
+   "tiles": 63
+  },
+  "19n": {
+   "bbox": [
+    -71.7224,
+    -0.0885,
+    -65.2828,
+    8.142
+   ],
+   "countries": [
+    "Colombia",
+    "Venezuela",
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "19p": {
+   "bbox": [
+    -71.7828,
+    8.0367,
+    -65.2153,
+    14.4728
+   ],
+   "countries": [
+    "Venezuela",
+    "Aruba",
+    "Colombia",
+    "Curaçao"
+   ],
+   "more": 1,
+   "tiles": 45
+  },
+  "19q": {
+   "bbox": [
+    -71.9177,
+    16.1739,
+    -66.9845,
+    22.607
+   ],
+   "countries": [
+    "Dominican Rep.",
+    "Haiti",
+    "Puerto Rico",
+    "Turks and Caicos Is."
+   ],
+   "tiles": 31
+  },
+  "19s": {
+   "bbox": [
+    -72.499,
+    38.7099,
+    -71.1887,
+    39.729
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "19t": {
+   "bbox": [
+    -72.645,
+    39.609,
+    -64.8647,
+    47.8537
+   ],
+   "countries": [
+    "United States of America",
+    "Canada"
+   ],
+   "tiles": 44
+  },
+  "19u": {
+   "bbox": [
+    -72.1995,
+    47.6909,
+    -64.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 43
+  },
+  "19v": {
+   "bbox": [
+    -73.0867,
+    55.8117,
+    -64.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 36
+  },
+  "19w": {
+   "bbox": [
+    -71.9137,
+    63.8758,
+    -62.9064,
+    72.0996
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 27
+  },
+  "19x": {
+   "bbox": [
+    -75.3781,
+    71.9854,
+    -60.0435,
+    83.7483
+   ],
+   "countries": [
+    "Greenland",
+    "Canada"
+   ],
+   "tiles": 16
+  },
+  "20e": {
+   "bbox": [
+    -66.3643,
+    -57.8211,
+    -61.1967,
+    -55.9036
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "20f": {
+   "bbox": [
+    -66.2067,
+    -56.0331,
+    -61.2388,
+    -47.8221
+   ],
+   "countries": [
+    "Argentina"
+   ],
+   "tiles": 14
+  },
+  "20g": {
+   "bbox": [
+    -66.6501,
+    -47.9411,
+    -59.2316,
+    -39.6935
+   ],
+   "countries": [
+    "Argentina"
+   ],
+   "tiles": 32
+  },
+  "20h": {
+   "bbox": [
+    -66.5034,
+    -39.8378,
+    -59.3831,
+    -31.5933
+   ],
+   "countries": [
+    "Argentina"
+   ],
+   "tiles": 54
+  },
+  "20j": {
+   "bbox": [
+    -66.1648,
+    -31.7232,
+    -58.8988,
+    -24.3596
+   ],
+   "countries": [
+    "Argentina",
+    "Paraguay"
+   ],
+   "tiles": 50
+  },
+  "20k": {
+   "bbox": [
+    -65.9598,
+    -24.5018,
+    -58.9592,
+    -16.2461
+   ],
+   "countries": [
+    "Bolivia",
+    "Paraguay",
+    "Argentina",
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "20l": {
+   "bbox": [
+    -65.8081,
+    -16.3692,
+    -59.166,
+    -8.125
+   ],
+   "countries": [
+    "Brazil",
+    "Bolivia"
+   ],
+   "tiles": 63
+  },
+  "20m": {
+   "bbox": [
+    -65.723,
+    -8.2305,
+    -59.282,
+    0.0
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "20n": {
+   "bbox": [
+    -65.7224,
+    -0.0885,
+    -59.2828,
+    8.142
+   ],
+   "countries": [
+    "Venezuela",
+    "Brazil",
+    "Guyana"
+   ],
+   "tiles": 63
+  },
+  "20p": {
+   "bbox": [
+    -65.8069,
+    8.0367,
+    -59.1677,
+    16.2808
+   ],
+   "countries": [
+    "Venezuela",
+    "France",
+    "Trinidad and Tobago",
+    "Dominica"
+   ],
+   "more": 5,
+   "tiles": 60
+  },
+  "20q": {
+   "bbox": [
+    -65.8201,
+    16.1579,
+    -59.1496,
+    19.8964
+   ],
+   "countries": [
+    "Anguilla",
+    "Antigua and Barb.",
+    "Netherlands",
+    "Sint Maarten"
+   ],
+   "more": 7,
+   "tiles": 21
+  },
+  "20t": {
+   "bbox": [
+    -66.645,
+    41.4077,
+    -58.8647,
+    47.8537
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 33
+  },
+  "20u": {
+   "bbox": [
+    -66.1995,
+    47.6909,
+    -58.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 43
+  },
+  "20v": {
+   "bbox": [
+    -67.0867,
+    55.8117,
+    -58.7138,
+    64.0272
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 33
+  },
+  "20w": {
+   "bbox": [
+    -65.7797,
+    63.8758,
+    -57.6691,
+    71.2026
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 20
+  },
+  "20x": {
+   "bbox": [
+    -69.3781,
+    78.2516,
+    -54.0435,
+    83.7483
+   ],
+   "countries": [
+    "Greenland",
+    "Canada"
+   ],
+   "tiles": 9
+  },
+  "21g": {
+   "bbox": [
+    -60.6501,
+    -42.5168,
+    -56.8844,
+    -39.697
+   ],
+   "countries": [],
+   "tiles": 5
+  },
+  "21h": {
+   "bbox": [
+    -60.5034,
+    -39.8378,
+    -53.5154,
+    -31.5933
+   ],
+   "countries": [
+    "Argentina",
+    "Uruguay",
+    "Brazil"
+   ],
+   "tiles": 50
+  },
+  "21j": {
+   "bbox": [
+    -60.1648,
+    -31.7232,
+    -52.8988,
+    -24.3596
+   ],
+   "countries": [
+    "Argentina",
+    "Brazil",
+    "Paraguay",
+    "Uruguay"
+   ],
+   "tiles": 50
+  },
+  "21k": {
+   "bbox": [
+    -59.9598,
+    -24.5018,
+    -52.9592,
+    -16.2461
+   ],
+   "countries": [
+    "Brazil",
+    "Paraguay",
+    "Bolivia",
+    "Argentina"
+   ],
+   "tiles": 63
+  },
+  "21l": {
+   "bbox": [
+    -59.8081,
+    -16.3692,
+    -53.166,
+    -8.125
+   ],
+   "countries": [
+    "Brazil",
+    "Bolivia"
+   ],
+   "tiles": 63
+  },
+  "21m": {
+   "bbox": [
+    -59.723,
+    -8.2305,
+    -53.282,
+    0.0
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "21n": {
+   "bbox": [
+    -59.7224,
+    -0.0885,
+    -53.2907,
+    8.142
+   ],
+   "countries": [
+    "Suriname",
+    "Guyana",
+    "Brazil",
+    "France"
+   ],
+   "tiles": 60
+  },
+  "21p": {
+   "bbox": [
+    -59.7945,
+    8.0445,
+    -56.9112,
+    15.3756
+   ],
+   "countries": [
+    "Barbados",
+    "Guyana"
+   ],
+   "tiles": 13
+  },
+  "21t": {
+   "bbox": [
+    -59.6721,
+    42.3384,
+    -52.8647,
+    47.8537
+   ],
+   "countries": [
+    "Canada",
+    "St. Pierre and Miquelon"
+   ],
+   "tiles": 21
+  },
+  "21u": {
+   "bbox": [
+    -60.1995,
+    47.6909,
+    -52.2665,
+    55.9457
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 43
+  },
+  "21v": {
+   "bbox": [
+    -61.0867,
+    55.8159,
+    -55.2009,
+    64.0154
+   ],
+   "countries": [],
+   "tiles": 8
+  },
+  "21x": {
+   "bbox": [
+    -63.3781,
+    80.0291,
+    -48.0435,
+    83.7483
+   ],
+   "countries": [
+    "Greenland",
+    "Canada"
+   ],
+   "tiles": 6
+  },
+  "22h": {
+   "bbox": [
+    -54.3361,
+    -36.2289,
+    -48.7643,
+    -31.5959
+   ],
+   "countries": [
+    "Brazil",
+    "Uruguay"
+   ],
+   "tiles": 16
+  },
+  "22j": {
+   "bbox": [
+    -54.1648,
+    -31.7232,
+    -46.8988,
+    -24.3596
+   ],
+   "countries": [
+    "Brazil",
+    "Argentina"
+   ],
+   "tiles": 50
+  },
+  "22k": {
+   "bbox": [
+    -53.9598,
+    -24.5018,
+    -46.9592,
+    -16.2461
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "22l": {
+   "bbox": [
+    -53.8081,
+    -16.3692,
+    -47.166,
+    -8.125
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "22m": {
+   "bbox": [
+    -53.723,
+    -8.2305,
+    -47.282,
+    0.0
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "22n": {
+   "bbox": [
+    -53.7167,
+    -0.0885,
+    -47.3159,
+    7.2346
+   ],
+   "countries": [
+    "Brazil",
+    "France"
+   ],
+   "tiles": 42
+  },
+  "22t": {
+   "bbox": [
+    -53.6721,
+    45.037,
+    -49.5327,
+    47.8537
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 8
+  },
+  "22u": {
+   "bbox": [
+    -54.1276,
+    47.7342,
+    -49.5067,
+    55.0388
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "tiles": 13
+  },
+  "22x": {
+   "bbox": [
+    -57.3781,
+    80.0372,
+    -50.3752,
+    81.9564
+   ],
+   "countries": [
+    "Greenland"
+   ],
+   "tiles": 2
+  },
+  "23j": {
+   "bbox": [
+    -48.1063,
+    -29.904,
+    -42.9146,
+    -24.3845
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 14
+  },
+  "23k": {
+   "bbox": [
+    -47.9598,
+    -24.5018,
+    -40.9592,
+    -16.2461
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "23l": {
+   "bbox": [
+    -47.8081,
+    -16.3692,
+    -41.166,
+    -8.125
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 63
+  },
+  "23m": {
+   "bbox": [
+    -47.723,
+    -8.2305,
+    -41.282,
+    0.0
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 60
+  },
+  "23n": {
+   "bbox": [
+    -47.6965,
+    -0.0885,
+    -44.0134,
+    1.809
+   ],
+   "countries": [],
+   "tiles": 5
+  },
+  "24k": {
+   "bbox": [
+    -41.9598,
+    -24.4991,
+    -37.0166,
+    -16.2622
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 34
+  },
+  "24l": {
+   "bbox": [
+    -41.8081,
+    -16.3692,
+    -35.2278,
+    -8.125
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 57
+  },
+  "24m": {
+   "bbox": [
+    -41.723,
+    -8.2305,
+    -35.282,
+    -1.8073
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 45
+  },
+  "25k": {
+   "bbox": [
+    -31.1006,
+    -21.7805,
+    -29.0394,
+    -18.9516
+   ],
+   "countries": [],
+   "tiles": 6
+  },
+  "25l": {
+   "bbox": [
+    -35.7534,
+    -11.8473,
+    -32.9109,
+    -8.1329
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 10
+  },
+  "25m": {
+   "bbox": [
+    -35.723,
+    -8.2305,
+    -31.1062,
+    -2.7111
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 24
+  },
+  "25n": {
+   "bbox": [
+    -31.2033,
+    -0.0884,
+    -29.3181,
+    1.8089
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "25s": {
+   "bbox": [
+    -33.0002,
+    37.8069,
+    -29.3876,
+    39.7503
+   ],
+   "countries": [
+    "Portugal"
+   ],
+   "tiles": 6
+  },
+  "25t": {
+   "bbox": [
+    -33.0002,
+    39.6055,
+    -29.2894,
+    41.5518
+   ],
+   "countries": [],
+   "tiles": 6
+  },
+  "26k": {
+   "bbox": [
+    -29.9009,
+    -21.7918,
+    -26.9056,
+    -19.8728
+   ],
+   "countries": [],
+   "tiles": 6
+  },
+  "26n": {
+   "bbox": [
+    -29.6965,
+    -0.0884,
+    -28.7092,
+    1.809
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "26p": {
+   "bbox": [
+    -26.0761,
+    13.4515,
+    -23.1677,
+    16.2788
+   ],
+   "countries": [
+    "Cabo Verde"
+   ],
+   "tiles": 9
+  },
+  "26q": {
+   "bbox": [
+    -27.0002,
+    16.1579,
+    -23.1304,
+    18.0891
+   ],
+   "countries": [
+    "Cabo Verde"
+   ],
+   "tiles": 8
+  },
+  "26s": {
+   "bbox": [
+    -30.499,
+    35.1072,
+    -23.3876,
+    39.7503
+   ],
+   "countries": [
+    "Portugal"
+   ],
+   "tiles": 24
+  },
+  "26t": {
+   "bbox": [
+    -30.5941,
+    39.609,
+    -24.5196,
+    41.5292
+   ],
+   "countries": [],
+   "tiles": 6
+  },
+  "26v": {
+   "bbox": [
+    -27.0004,
+    62.9811,
+    -22.7138,
+    64.0272
+   ],
+   "countries": [
+    "Iceland"
+   ],
+   "tiles": 2
+  },
+  "26w": {
+   "bbox": [
+    -29.3528,
+    63.8758,
+    -21.8804,
+    68.5126
+   ],
+   "countries": [
+    "Iceland"
+   ],
+   "tiles": 14
+  },
+  "27p": {
+   "bbox": [
+    -23.8069,
+    9.8417,
+    -17.1677,
+    16.2808
+   ],
+   "countries": [
+    "Cabo Verde",
+    "Senegal"
+   ],
+   "tiles": 20
+  },
+  "27q": {
+   "bbox": [
+    -23.8342,
+    16.1579,
+    -16.9621,
+    24.3845
+   ],
+   "countries": [
+    "Cabo Verde",
+    "Mauritania",
+    "W. Sahara"
+   ],
+   "tiles": 18
+  },
+  "27r": {
+   "bbox": [
+    -19.9997,
+    24.2715,
+    -16.9327,
+    31.6181
+   ],
+   "countries": [
+    "Spain"
+   ],
+   "tiles": 12
+  },
+  "27s": {
+   "bbox": [
+    -24.4545,
+    31.5052,
+    -17.6347,
+    38.8284
+   ],
+   "countries": [],
+   "tiles": 7
+  },
+  "27v": {
+   "bbox": [
+    -25.0867,
+    61.1898,
+    -16.7138,
+    64.0272
+   ],
+   "countries": [
+    "Iceland"
+   ],
+   "tiles": 8
+  },
+  "27w": {
+   "bbox": [
+    -23.4459,
+    63.8758,
+    -15.8804,
+    68.5126
+   ],
+   "countries": [
+    "Iceland"
+   ],
+   "tiles": 15
+  },
+  "28n": {
+   "bbox": [
+    -15.0002,
+    4.4257,
+    -11.2828,
+    8.142
+   ],
+   "countries": [
+    "Sierra Leone",
+    "Liberia"
+   ],
+   "tiles": 11
+  },
+  "28p": {
+   "bbox": [
+    -17.8069,
+    8.0367,
+    -11.1677,
+    16.2808
+   ],
+   "countries": [
+    "Senegal",
+    "Guinea",
+    "Guinea-Bissau",
+    "Gambia"
+   ],
+   "more": 3,
+   "tiles": 61
+  },
+  "28q": {
+   "bbox": [
+    -17.9577,
+    16.1579,
+    -10.9621,
+    24.4134
+   ],
+   "countries": [
+    "Mauritania",
+    "W. Sahara",
+    "Morocco",
+    "Senegal"
+   ],
+   "tiles": 63
+  },
+  "28r": {
+   "bbox": [
+    -18.1618,
+    24.2715,
+    -10.9019,
+    31.6355
+   ],
+   "countries": [
+    "Morocco",
+    "Spain",
+    "W. Sahara",
+    "Mauritania"
+   ],
+   "tiles": 49
+  },
+  "28s": {
+   "bbox": [
+    -18.2596,
+    31.5077,
+    -13.8065,
+    34.3417
+   ],
+   "countries": [
+    "Portugal"
+   ],
+   "tiles": 12
+  },
+  "28u": {
+   "bbox": [
+    -13.5913,
+    49.4856,
+    -10.2665,
+    55.9353
+   ],
+   "countries": [
+    "Ireland"
+   ],
+   "tiles": 11
+  },
+  "28v": {
+   "bbox": [
+    -19.0867,
+    55.8117,
+    -10.7138,
+    64.0272
+   ],
+   "countries": [
+    "Iceland"
+   ],
+   "tiles": 17
+  },
+  "28w": {
+   "bbox": [
+    -17.4459,
+    63.8758,
+    -10.2533,
+    68.5125
+   ],
+   "countries": [
+    "Iceland"
+   ],
+   "tiles": 12
+  },
+  "29n": {
+   "bbox": [
+    -11.7224,
+    2.6202,
+    -5.2828,
+    8.142
+   ],
+   "countries": [
+    "Liberia",
+    "Côte d'Ivoire",
+    "Guinea",
+    "Sierra Leone"
+   ],
+   "tiles": 38
+  },
+  "29p": {
+   "bbox": [
+    -11.8069,
+    8.0367,
+    -5.1677,
+    16.2808
+   ],
+   "countries": [
+    "Mali",
+    "Guinea",
+    "Côte d'Ivoire",
+    "Mauritania"
+   ],
+   "more": 4,
+   "tiles": 63
+  },
+  "29q": {
+   "bbox": [
+    -11.9577,
+    16.1579,
+    -4.9621,
+    24.4134
+   ],
+   "countries": [
+    "Mauritania",
+    "Mali"
+   ],
+   "tiles": 63
+  },
+  "29r": {
+   "bbox": [
+    -12.1618,
+    24.2715,
+    -4.9019,
+    31.6355
+   ],
+   "countries": [
+    "Morocco",
+    "Mauritania",
+    "Algeria",
+    "W. Sahara"
+   ],
+   "more": 1,
+   "tiles": 50
+  },
+  "29s": {
+   "bbox": [
+    -12.2255,
+    31.5052,
+    -5.3876,
+    39.7503
+   ],
+   "countries": [
+    "Morocco",
+    "Portugal",
+    "Spain"
+   ],
+   "tiles": 46
+  },
+  "29t": {
+   "bbox": [
+    -11.5431,
+    39.6055,
+    -4.8647,
+    47.8459
+   ],
+   "countries": [
+    "Spain",
+    "Portugal"
+   ],
+   "tiles": 34
+  },
+  "29u": {
+   "bbox": [
+    -12.1995,
+    47.6909,
+    -4.2665,
+    55.9457
+   ],
+   "countries": [
+    "Ireland",
+    "United Kingdom",
+    "Isle of Man"
+   ],
+   "tiles": 38
+  },
+  "29v": {
+   "bbox": [
+    -13.0867,
+    55.8117,
+    -5.1932,
+    64.027
+   ],
+   "countries": [
+    "United Kingdom"
+   ],
+   "tiles": 21
+  },
+  "29w": {
+   "bbox": [
+    -11.1879,
+    63.9245,
+    -8.7865,
+    65.8214
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "30n": {
+   "bbox": [
+    -5.7224,
+    3.5232,
+    0.7172,
+    8.142
+   ],
+   "countries": [
+    "Ghana",
+    "Côte d'Ivoire",
+    "Togo"
+   ],
+   "tiles": 35
+  },
+  "30p": {
+   "bbox": [
+    -5.8069,
+    8.0367,
+    0.8323,
+    16.2808
+   ],
+   "countries": [
+    "Burkina Faso",
+    "Mali",
+    "Ghana",
+    "Côte d'Ivoire"
+   ],
+   "more": 3,
+   "tiles": 63
+  },
+  "30q": {
+   "bbox": [
+    -5.9577,
+    16.1579,
+    1.0379,
+    24.4134
+   ],
+   "countries": [
+    "Mali",
+    "Algeria",
+    "Mauritania"
+   ],
+   "tiles": 63
+  },
+  "30r": {
+   "bbox": [
+    -6.1618,
+    24.2715,
+    1.0981,
+    31.6355
+   ],
+   "countries": [
+    "Algeria",
+    "Morocco",
+    "Mali",
+    "Mauritania"
+   ],
+   "tiles": 50
+  },
+  "30s": {
+   "bbox": [
+    -6.499,
+    31.5052,
+    0.6124,
+    39.7503
+   ],
+   "countries": [
+    "Morocco",
+    "Spain",
+    "Algeria"
+   ],
+   "tiles": 54
+  },
+  "30t": {
+   "bbox": [
+    -6.645,
+    39.6055,
+    1.1353,
+    47.8537
+   ],
+   "countries": [
+    "Spain",
+    "France",
+    "Portugal"
+   ],
+   "tiles": 47
+  },
+  "30u": {
+   "bbox": [
+    -6.1995,
+    47.6909,
+    1.7335,
+    55.9457
+   ],
+   "countries": [
+    "United Kingdom",
+    "France",
+    "Isle of Man",
+    "Guernsey"
+   ],
+   "more": 2,
+   "tiles": 43
+  },
+  "30v": {
+   "bbox": [
+    -6.7325,
+    55.8117,
+    1.0303,
+    62.2318
+   ],
+   "countries": [
+    "United Kingdom"
+   ],
+   "tiles": 27
+  },
+  "31m": {
+   "bbox": [
+    3.8986,
+    -2.8013,
+    6.6844,
+    0.0
+   ],
+   "countries": [],
+   "tiles": 8
+  },
+  "31n": {
+   "bbox": [
+    0.2776,
+    -0.0884,
+    6.7172,
+    8.142
+   ],
+   "countries": [
+    "Nigeria",
+    "Benin",
+    "Togo",
+    "Ghana"
+   ],
+   "more": 1,
+   "tiles": 41
+  },
+  "31p": {
+   "bbox": [
+    0.1931,
+    8.0367,
+    6.8323,
+    16.2808
+   ],
+   "countries": [
+    "Niger",
+    "Nigeria",
+    "Benin",
+    "Burkina Faso"
+   ],
+   "more": 3,
+   "tiles": 63
+  },
+  "31q": {
+   "bbox": [
+    0.0423,
+    16.1579,
+    7.0379,
+    24.4134
+   ],
+   "countries": [
+    "Algeria",
+    "Mali",
+    "Niger"
+   ],
+   "tiles": 63
+  },
+  "31r": {
+   "bbox": [
+    -0.1618,
+    24.2715,
+    7.0981,
+    31.6355
+   ],
+   "countries": [
+    "Algeria"
+   ],
+   "tiles": 50
+  },
+  "31s": {
+   "bbox": [
+    -0.499,
+    31.5052,
+    6.6124,
+    39.7503
+   ],
+   "countries": [
+    "Algeria",
+    "Spain"
+   ],
+   "tiles": 54
+  },
+  "31t": {
+   "bbox": [
+    -0.645,
+    39.6055,
+    7.1353,
+    47.8537
+   ],
+   "countries": [
+    "France",
+    "Spain",
+    "Italy",
+    "Switzerland"
+   ],
+   "more": 1,
+   "tiles": 48
+  },
+  "31u": {
+   "bbox": [
+    -0.1995,
+    47.6909,
+    7.7335,
+    55.9456
+   ],
+   "countries": [
+    "France",
+    "Belgium",
+    "Netherlands",
+    "Germany"
+   ],
+   "more": 2,
+   "tiles": 42
+  },
+  "31v": {
+   "bbox": [
+    -0.8426,
+    55.8159,
+    7.2862,
+    64.0272
+   ],
+   "countries": [
+    "Norway"
+   ],
+   "tiles": 22
+  },
+  "31w": {
+   "bbox": [
+    2.9996,
+    63.8758,
+    7.5815,
+    65.8059
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "32k": {
+   "bbox": [
+    9.9359,
+    -22.6688,
+    12.986,
+    -16.2461
+   ],
+   "countries": [
+    "Namibia",
+    "Angola"
+   ],
+   "tiles": 17
+  },
+  "32l": {
+   "bbox": [
+    9.9243,
+    -16.3672,
+    12.834,
+    -8.125
+   ],
+   "countries": [
+    "Angola"
+   ],
+   "tiles": 19
+  },
+  "32m": {
+   "bbox": [
+    6.3016,
+    -8.2264,
+    12.718,
+    0.0
+   ],
+   "countries": [
+    "Gabon",
+    "Congo",
+    "Angola",
+    "Dem. Rep. Congo"
+   ],
+   "tiles": 42
+  },
+  "32n": {
+   "bbox": [
+    6.2776,
+    -0.0885,
+    12.7172,
+    8.142
+   ],
+   "countries": [
+    "Cameroon",
+    "Nigeria",
+    "Gabon",
+    "Eq. Guinea"
+   ],
+   "more": 1,
+   "tiles": 59
+  },
+  "32p": {
+   "bbox": [
+    6.1931,
+    8.0367,
+    12.8323,
+    16.2808
+   ],
+   "countries": [
+    "Nigeria",
+    "Niger",
+    "Cameroon"
+   ],
+   "tiles": 63
+  },
+  "32q": {
+   "bbox": [
+    6.0423,
+    16.1579,
+    13.0379,
+    24.4134
+   ],
+   "countries": [
+    "Niger",
+    "Algeria",
+    "Libya"
+   ],
+   "tiles": 63
+  },
+  "32r": {
+   "bbox": [
+    5.8382,
+    24.2715,
+    13.0981,
+    31.6355
+   ],
+   "countries": [
+    "Algeria",
+    "Libya",
+    "Tunisia"
+   ],
+   "tiles": 50
+  },
+  "32s": {
+   "bbox": [
+    5.501,
+    31.5052,
+    12.6124,
+    39.7503
+   ],
+   "countries": [
+    "Tunisia",
+    "Algeria",
+    "Italy",
+    "Libya"
+   ],
+   "tiles": 54
+  },
+  "32t": {
+   "bbox": [
+    5.355,
+    39.6055,
+    13.1353,
+    47.8537
+   ],
+   "countries": [
+    "Italy",
+    "France",
+    "Switzerland",
+    "Austria"
+   ],
+   "more": 5,
+   "tiles": 48
+  },
+  "32u": {
+   "bbox": [
+    5.8005,
+    47.6909,
+    13.7335,
+    55.9457
+   ],
+   "countries": [
+    "Germany",
+    "Denmark",
+    "France",
+    "Netherlands"
+   ],
+   "more": 5,
+   "tiles": 43
+  },
+  "32v": {
+   "bbox": [
+    2.8813,
+    55.8117,
+    13.2862,
+    64.0272
+   ],
+   "countries": [
+    "Norway",
+    "Sweden",
+    "Denmark"
+   ],
+   "tiles": 44
+  },
+  "32w": {
+   "bbox": [
+    6.4527,
+    63.8758,
+    14.8148,
+    71.1823
+   ],
+   "countries": [
+    "Norway",
+    "Sweden"
+   ],
+   "tiles": 21
+  },
+  "33h": {
+   "bbox": [
+    16.0545,
+    -35.3263,
+    18.4057,
+    -31.5933
+   ],
+   "countries": [
+    "South Africa"
+   ],
+   "tiles": 8
+  },
+  "33j": {
+   "bbox": [
+    12.9643,
+    -31.7232,
+    19.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Namibia",
+    "South Africa"
+   ],
+   "tiles": 36
+  },
+  "33k": {
+   "bbox": [
+    12.0608,
+    -24.5018,
+    19.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Namibia",
+    "Angola"
+   ],
+   "tiles": 62
+  },
+  "33l": {
+   "bbox": [
+    12.1919,
+    -16.3692,
+    18.834,
+    -8.125
+   ],
+   "countries": [
+    "Angola"
+   ],
+   "tiles": 63
+  },
+  "33m": {
+   "bbox": [
+    12.277,
+    -8.2305,
+    18.718,
+    0.0
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "Congo",
+    "Angola",
+    "Gabon"
+   ],
+   "tiles": 63
+  },
+  "33n": {
+   "bbox": [
+    12.2776,
+    -0.0885,
+    18.7172,
+    8.142
+   ],
+   "countries": [
+    "Central African Rep.",
+    "Cameroon",
+    "Congo",
+    "Gabon"
+   ],
+   "more": 2,
+   "tiles": 59
+  },
+  "33p": {
+   "bbox": [
+    12.1931,
+    8.0367,
+    18.8323,
+    16.2808
+   ],
+   "countries": [
+    "Chad",
+    "Cameroon",
+    "Nigeria",
+    "Niger"
+   ],
+   "more": 1,
+   "tiles": 63
+  },
+  "33q": {
+   "bbox": [
+    12.0423,
+    16.1579,
+    19.0379,
+    24.4134
+   ],
+   "countries": [
+    "Chad",
+    "Niger",
+    "Libya"
+   ],
+   "tiles": 63
+  },
+  "33r": {
+   "bbox": [
+    11.8382,
+    24.2715,
+    19.0981,
+    31.6355
+   ],
+   "countries": [
+    "Libya"
+   ],
+   "tiles": 50
+  },
+  "33s": {
+   "bbox": [
+    11.501,
+    31.5052,
+    18.6124,
+    39.7503
+   ],
+   "countries": [
+    "Italy",
+    "Libya",
+    "Malta"
+   ],
+   "tiles": 51
+  },
+  "33t": {
+   "bbox": [
+    11.355,
+    39.6055,
+    19.1353,
+    47.8537
+   ],
+   "countries": [
+    "Italy",
+    "Croatia",
+    "Bosnia and Herz.",
+    "Hungary"
+   ],
+   "more": 8,
+   "tiles": 48
+  },
+  "33u": {
+   "bbox": [
+    11.8005,
+    47.6909,
+    19.7335,
+    55.9457
+   ],
+   "countries": [
+    "Poland",
+    "Czechia",
+    "Germany",
+    "Austria"
+   ],
+   "more": 4,
+   "tiles": 43
+  },
+  "33v": {
+   "bbox": [
+    10.9133,
+    55.8117,
+    19.2862,
+    64.0272
+   ],
+   "countries": [
+    "Sweden",
+    "Norway",
+    "Denmark"
+   ],
+   "tiles": 36
+  },
+  "33w": {
+   "bbox": [
+    12.0863,
+    63.8758,
+    23.9591,
+    72.0996
+   ],
+   "countries": [
+    "Norway",
+    "Sweden"
+   ],
+   "tiles": 28
+  },
+  "33x": {
+   "bbox": [
+    17.8988,
+    71.8056,
+    24.4079,
+    72.9728
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "34h": {
+   "bbox": [
+    17.6639,
+    -36.2331,
+    24.4443,
+    -31.5933
+   ],
+   "countries": [
+    "South Africa"
+   ],
+   "tiles": 30
+  },
+  "34j": {
+   "bbox": [
+    17.8352,
+    -31.7232,
+    25.1012,
+    -24.3596
+   ],
+   "countries": [
+    "South Africa",
+    "Botswana",
+    "Namibia"
+   ],
+   "tiles": 50
+  },
+  "34k": {
+   "bbox": [
+    18.0402,
+    -24.5018,
+    25.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Botswana",
+    "Namibia",
+    "Angola",
+    "Zambia"
+   ],
+   "tiles": 63
+  },
+  "34l": {
+   "bbox": [
+    18.1919,
+    -16.3692,
+    24.834,
+    -8.125
+   ],
+   "countries": [
+    "Angola",
+    "Zambia",
+    "Dem. Rep. Congo"
+   ],
+   "tiles": 63
+  },
+  "34m": {
+   "bbox": [
+    18.277,
+    -8.2305,
+    24.718,
+    0.0
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "Angola"
+   ],
+   "tiles": 63
+  },
+  "34n": {
+   "bbox": [
+    18.2776,
+    -0.0885,
+    24.7172,
+    8.142
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "Central African Rep.",
+    "Congo",
+    "Chad"
+   ],
+   "tiles": 63
+  },
+  "34p": {
+   "bbox": [
+    18.1931,
+    8.0367,
+    24.8323,
+    16.2808
+   ],
+   "countries": [
+    "Chad",
+    "Sudan",
+    "Central African Rep.",
+    "S. Sudan"
+   ],
+   "tiles": 63
+  },
+  "34q": {
+   "bbox": [
+    18.0423,
+    16.1579,
+    25.0379,
+    24.4134
+   ],
+   "countries": [
+    "Chad",
+    "Libya",
+    "Sudan",
+    "Egypt"
+   ],
+   "tiles": 63
+  },
+  "34r": {
+   "bbox": [
+    17.8382,
+    24.2715,
+    25.0981,
+    31.6355
+   ],
+   "countries": [
+    "Libya",
+    "Egypt"
+   ],
+   "tiles": 50
+  },
+  "34s": {
+   "bbox": [
+    17.501,
+    31.5052,
+    24.6124,
+    39.7503
+   ],
+   "countries": [
+    "Greece",
+    "Libya",
+    "Albania"
+   ],
+   "tiles": 49
+  },
+  "34t": {
+   "bbox": [
+    17.355,
+    39.6055,
+    25.1353,
+    47.8537
+   ],
+   "countries": [
+    "Serbia",
+    "Romania",
+    "Albania",
+    "Bulgaria"
+   ],
+   "more": 10,
+   "tiles": 48
+  },
+  "34u": {
+   "bbox": [
+    17.8005,
+    47.6909,
+    25.7335,
+    55.9457
+   ],
+   "countries": [
+    "Poland",
+    "Ukraine",
+    "Slovakia",
+    "Lithuania"
+   ],
+   "more": 5,
+   "tiles": 43
+  },
+  "34v": {
+   "bbox": [
+    16.9133,
+    55.8117,
+    25.2862,
+    64.0272
+   ],
+   "countries": [
+    "Finland",
+    "Sweden",
+    "Latvia",
+    "Estonia"
+   ],
+   "more": 2,
+   "tiles": 36
+  },
+  "34w": {
+   "bbox": [
+    18.2203,
+    63.8758,
+    27.0936,
+    72.0996
+   ],
+   "countries": [
+    "Sweden",
+    "Finland",
+    "Norway"
+   ],
+   "tiles": 26
+  },
+  "35h": {
+   "bbox": [
+    23.6639,
+    -36.2289,
+    30.3688,
+    -31.5933
+   ],
+   "countries": [
+    "South Africa"
+   ],
+   "tiles": 25
+  },
+  "35j": {
+   "bbox": [
+    23.8352,
+    -31.7232,
+    31.1012,
+    -24.3596
+   ],
+   "countries": [
+    "South Africa",
+    "Lesotho",
+    "Botswana",
+    "eSwatini"
+   ],
+   "tiles": 50
+  },
+  "35k": {
+   "bbox": [
+    24.0402,
+    -24.5018,
+    31.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Zimbabwe",
+    "Botswana",
+    "South Africa",
+    "Zambia"
+   ],
+   "more": 1,
+   "tiles": 63
+  },
+  "35l": {
+   "bbox": [
+    24.1919,
+    -16.3692,
+    30.834,
+    -8.125
+   ],
+   "countries": [
+    "Zambia",
+    "Dem. Rep. Congo",
+    "Zimbabwe",
+    "Mozambique"
+   ],
+   "tiles": 63
+  },
+  "35m": {
+   "bbox": [
+    24.277,
+    -8.2305,
+    30.718,
+    0.0
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "Tanzania",
+    "Rwanda",
+    "Burundi"
+   ],
+   "more": 2,
+   "tiles": 63
+  },
+  "35n": {
+   "bbox": [
+    24.2776,
+    -0.0885,
+    30.7172,
+    8.142
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "S. Sudan",
+    "Central African Rep.",
+    "Uganda"
+   ],
+   "tiles": 63
+  },
+  "35p": {
+   "bbox": [
+    24.1931,
+    8.0367,
+    30.8323,
+    16.2808
+   ],
+   "countries": [
+    "Sudan",
+    "S. Sudan",
+    "Central African Rep."
+   ],
+   "tiles": 63
+  },
+  "35q": {
+   "bbox": [
+    24.0423,
+    16.1579,
+    31.0379,
+    24.4134
+   ],
+   "countries": [
+    "Sudan",
+    "Egypt",
+    "Libya"
+   ],
+   "tiles": 63
+  },
+  "35r": {
+   "bbox": [
+    23.8382,
+    24.2715,
+    31.0981,
+    31.6355
+   ],
+   "countries": [
+    "Egypt",
+    "Libya"
+   ],
+   "tiles": 50
+  },
+  "35s": {
+   "bbox": [
+    23.501,
+    31.5052,
+    30.6124,
+    39.7503
+   ],
+   "countries": [
+    "Greece",
+    "Turkey",
+    "Egypt",
+    "Libya"
+   ],
+   "tiles": 52
+  },
+  "35t": {
+   "bbox": [
+    23.355,
+    39.6055,
+    31.1353,
+    47.8537
+   ],
+   "countries": [
+    "Romania",
+    "Bulgaria",
+    "Turkey",
+    "Greece"
+   ],
+   "more": 2,
+   "tiles": 48
+  },
+  "35u": {
+   "bbox": [
+    23.8005,
+    47.6909,
+    31.7335,
+    55.9457
+   ],
+   "countries": [
+    "Ukraine",
+    "Belarus",
+    "Lithuania",
+    "Moldova"
+   ],
+   "more": 3,
+   "tiles": 43
+  },
+  "35v": {
+   "bbox": [
+    22.9133,
+    55.8117,
+    31.2862,
+    64.0272
+   ],
+   "countries": [
+    "Finland",
+    "Russia",
+    "Estonia",
+    "Latvia"
+   ],
+   "more": 2,
+   "tiles": 36
+  },
+  "35w": {
+   "bbox": [
+    21.1892,
+    63.8758,
+    35.9591,
+    72.0996
+   ],
+   "countries": [
+    "Finland",
+    "Russia",
+    "Norway"
+   ],
+   "tiles": 29
+  },
+  "35x": {
+   "bbox": [
+    20.8951,
+    71.9166,
+    40.195,
+    81.9569
+   ],
+   "countries": [
+    "Norway"
+   ],
+   "tiles": 12
+  },
+  "36g": {
+   "bbox": [
+    35.5835,
+    -47.91,
+    37.1422,
+    -45.9835
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "36h": {
+   "bbox": [
+    29.7712,
+    -33.524,
+    32.0489,
+    -31.5959
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "36j": {
+   "bbox": [
+    29.8352,
+    -31.7232,
+    37.1012,
+    -24.3596
+   ],
+   "countries": [
+    "South Africa",
+    "Mozambique",
+    "eSwatini"
+   ],
+   "tiles": 40
+  },
+  "36k": {
+   "bbox": [
+    30.0402,
+    -24.5018,
+    37.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Mozambique",
+    "Zimbabwe",
+    "South Africa",
+    "Malawi"
+   ],
+   "tiles": 63
+  },
+  "36l": {
+   "bbox": [
+    30.1919,
+    -16.3692,
+    36.834,
+    -8.125
+   ],
+   "countries": [
+    "Zambia",
+    "Mozambique",
+    "Malawi",
+    "Tanzania"
+   ],
+   "more": 2,
+   "tiles": 63
+  },
+  "36m": {
+   "bbox": [
+    30.277,
+    -8.2305,
+    36.718,
+    0.0
+   ],
+   "countries": [
+    "Tanzania",
+    "Kenya",
+    "Uganda",
+    "Burundi"
+   ],
+   "more": 3,
+   "tiles": 63
+  },
+  "36n": {
+   "bbox": [
+    30.2776,
+    -0.0885,
+    36.7172,
+    8.142
+   ],
+   "countries": [
+    "S. Sudan",
+    "Uganda",
+    "Kenya",
+    "Ethiopia"
+   ],
+   "more": 1,
+   "tiles": 63
+  },
+  "36p": {
+   "bbox": [
+    30.1931,
+    8.0367,
+    36.8323,
+    16.2808
+   ],
+   "countries": [
+    "Sudan",
+    "S. Sudan",
+    "Ethiopia",
+    "Eritrea"
+   ],
+   "tiles": 63
+  },
+  "36q": {
+   "bbox": [
+    30.0423,
+    16.1579,
+    37.0379,
+    24.4134
+   ],
+   "countries": [
+    "Sudan",
+    "Egypt"
+   ],
+   "tiles": 63
+  },
+  "36r": {
+   "bbox": [
+    29.8382,
+    24.2715,
+    37.0981,
+    31.6355
+   ],
+   "countries": [
+    "Egypt",
+    "Saudi Arabia",
+    "Israel",
+    "Jordan"
+   ],
+   "more": 1,
+   "tiles": 50
+  },
+  "36s": {
+   "bbox": [
+    29.501,
+    31.5052,
+    36.6124,
+    39.7503
+   ],
+   "countries": [
+    "Turkey",
+    "Syria",
+    "Israel",
+    "Lebanon"
+   ],
+   "more": 5,
+   "tiles": 53
+  },
+  "36t": {
+   "bbox": [
+    29.355,
+    39.6055,
+    37.1353,
+    47.8537
+   ],
+   "countries": [
+    "Turkey",
+    "Ukraine",
+    "Russia"
+   ],
+   "tiles": 48
+  },
+  "36u": {
+   "bbox": [
+    29.8005,
+    47.6909,
+    37.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Ukraine",
+    "Belarus"
+   ],
+   "tiles": 43
+  },
+  "36v": {
+   "bbox": [
+    28.9133,
+    55.8117,
+    37.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia",
+    "Finland",
+    "Belarus"
+   ],
+   "tiles": 36
+  },
+  "36w": {
+   "bbox": [
+    30.2203,
+    63.8758,
+    38.8148,
+    72.0996
+   ],
+   "countries": [
+    "Russia",
+    "Norway"
+   ],
+   "tiles": 25
+  },
+  "37g": {
+   "bbox": [
+    36.3234,
+    -47.9412,
+    40.4697,
+    -46.0244
+   ],
+   "countries": [
+    "South Africa"
+   ],
+   "tiles": 6
+  },
+  "37j": {
+   "bbox": [
+    35.9959,
+    -26.295,
+    43.1012,
+    -24.3596
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "37k": {
+   "bbox": [
+    36.0402,
+    -24.4901,
+    43.0408,
+    -16.261
+   ],
+   "countries": [
+    "Mozambique"
+   ],
+   "tiles": 31
+  },
+  "37l": {
+   "bbox": [
+    36.1919,
+    -16.3692,
+    42.834,
+    -8.1323
+   ],
+   "countries": [
+    "Mozambique",
+    "Tanzania"
+   ],
+   "tiles": 62
+  },
+  "37m": {
+   "bbox": [
+    36.277,
+    -8.2305,
+    42.6919,
+    0.0
+   ],
+   "countries": [
+    "Kenya",
+    "Tanzania",
+    "Somalia"
+   ],
+   "tiles": 59
+  },
+  "37n": {
+   "bbox": [
+    36.2776,
+    -0.0885,
+    42.7172,
+    8.142
+   ],
+   "countries": [
+    "Ethiopia",
+    "Kenya",
+    "Somalia"
+   ],
+   "tiles": 63
+  },
+  "37p": {
+   "bbox": [
+    36.1931,
+    8.0367,
+    42.8323,
+    16.2808
+   ],
+   "countries": [
+    "Ethiopia",
+    "Eritrea",
+    "Djibouti",
+    "Sudan"
+   ],
+   "more": 2,
+   "tiles": 63
+  },
+  "37q": {
+   "bbox": [
+    36.0423,
+    16.1579,
+    43.0379,
+    24.4134
+   ],
+   "countries": [
+    "Saudi Arabia",
+    "Sudan",
+    "Eritrea",
+    "Egypt"
+   ],
+   "more": 1,
+   "tiles": 63
+  },
+  "37r": {
+   "bbox": [
+    35.8382,
+    24.2715,
+    43.0981,
+    31.6355
+   ],
+   "countries": [
+    "Saudi Arabia",
+    "Jordan",
+    "Iraq"
+   ],
+   "tiles": 50
+  },
+  "37s": {
+   "bbox": [
+    35.501,
+    31.5052,
+    42.6124,
+    39.7503
+   ],
+   "countries": [
+    "Syria",
+    "Turkey",
+    "Iraq",
+    "Jordan"
+   ],
+   "more": 3,
+   "tiles": 54
+  },
+  "37t": {
+   "bbox": [
+    35.355,
+    39.6055,
+    43.1353,
+    47.8537
+   ],
+   "countries": [
+    "Russia",
+    "Turkey",
+    "Georgia",
+    "Ukraine"
+   ],
+   "tiles": 48
+  },
+  "37u": {
+   "bbox": [
+    35.8005,
+    47.6909,
+    43.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Ukraine"
+   ],
+   "tiles": 43
+  },
+  "37v": {
+   "bbox": [
+    34.9133,
+    55.8117,
+    43.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "37w": {
+   "bbox": [
+    36.2203,
+    63.8758,
+    44.5616,
+    71.2026
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 22
+  },
+  "37x": {
+   "bbox": [
+    32.6219,
+    78.2448,
+    46.8542,
+    82.8529
+   ],
+   "countries": [
+    "Norway",
+    "Russia"
+   ],
+   "tiles": 9
+  },
+  "38j": {
+   "bbox": [
+    41.9959,
+    -27.2071,
+    49.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Madagascar"
+   ],
+   "tiles": 16
+  },
+  "38k": {
+   "bbox": [
+    42.0402,
+    -24.5018,
+    49.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Madagascar"
+   ],
+   "tiles": 63
+  },
+  "38l": {
+   "bbox": [
+    42.1919,
+    -16.3692,
+    48.834,
+    -8.125
+   ],
+   "countries": [
+    "Madagascar",
+    "Comoros",
+    "France"
+   ],
+   "tiles": 59
+  },
+  "38m": {
+   "bbox": [
+    42.2992,
+    -3.7059,
+    45.9867,
+    0.0
+   ],
+   "countries": [
+    "Somalia"
+   ],
+   "tiles": 9
+  },
+  "38n": {
+   "bbox": [
+    42.2776,
+    -0.0885,
+    48.7172,
+    8.142
+   ],
+   "countries": [
+    "Somalia",
+    "Ethiopia",
+    "Somaliland"
+   ],
+   "tiles": 60
+  },
+  "38p": {
+   "bbox": [
+    42.1931,
+    8.0367,
+    48.8323,
+    16.2808
+   ],
+   "countries": [
+    "Yemen",
+    "Somaliland",
+    "Ethiopia",
+    "Djibouti"
+   ],
+   "more": 2,
+   "tiles": 63
+  },
+  "38q": {
+   "bbox": [
+    42.0423,
+    16.1579,
+    49.0379,
+    24.4134
+   ],
+   "countries": [
+    "Saudi Arabia",
+    "Yemen"
+   ],
+   "tiles": 63
+  },
+  "38r": {
+   "bbox": [
+    41.8382,
+    24.2715,
+    49.0981,
+    31.6355
+   ],
+   "countries": [
+    "Saudi Arabia",
+    "Iraq",
+    "Kuwait",
+    "Iran"
+   ],
+   "tiles": 50
+  },
+  "38s": {
+   "bbox": [
+    41.501,
+    31.5052,
+    48.6124,
+    39.7503
+   ],
+   "countries": [
+    "Iraq",
+    "Iran",
+    "Turkey",
+    "Azerbaijan"
+   ],
+   "more": 2,
+   "tiles": 54
+  },
+  "38t": {
+   "bbox": [
+    41.355,
+    39.6055,
+    49.1353,
+    47.8537
+   ],
+   "countries": [
+    "Russia",
+    "Georgia",
+    "Azerbaijan",
+    "Turkey"
+   ],
+   "more": 3,
+   "tiles": 48
+  },
+  "38u": {
+   "bbox": [
+    41.8005,
+    47.6909,
+    49.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Kazakhstan"
+   ],
+   "tiles": 43
+  },
+  "38v": {
+   "bbox": [
+    40.9133,
+    55.8117,
+    49.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "38w": {
+   "bbox": [
+    42.2203,
+    63.8758,
+    51.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 26
+  },
+  "38x": {
+   "bbox": [
+    38.6219,
+    71.9166,
+    53.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 13
+  },
+  "39j": {
+   "bbox": [
+    47.9959,
+    -26.295,
+    49.1242,
+    -24.3845
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "39k": {
+   "bbox": [
+    48.0402,
+    -24.4901,
+    52.038,
+    -16.2622
+   ],
+   "countries": [
+    "Madagascar"
+   ],
+   "tiles": 23
+  },
+  "39l": {
+   "bbox": [
+    48.1919,
+    -16.3692,
+    54.7269,
+    -8.125
+   ],
+   "countries": [
+    "Madagascar"
+   ],
+   "tiles": 36
+  },
+  "39m": {
+   "bbox": [
+    51.9004,
+    -8.2295,
+    54.718,
+    -2.7085
+   ],
+   "countries": [],
+   "tiles": 16
+  },
+  "39n": {
+   "bbox": [
+    48.2776,
+    2.6228,
+    51.9965,
+    8.142
+   ],
+   "countries": [
+    "Somalia"
+   ],
+   "tiles": 17
+  },
+  "39p": {
+   "bbox": [
+    48.1931,
+    8.0445,
+    54.8323,
+    16.2808
+   ],
+   "countries": [
+    "Somalia",
+    "Yemen",
+    "Somaliland"
+   ],
+   "tiles": 56
+  },
+  "39q": {
+   "bbox": [
+    48.0423,
+    16.1579,
+    55.0379,
+    24.4134
+   ],
+   "countries": [
+    "Saudi Arabia",
+    "Yemen",
+    "Oman",
+    "United Arab Emirates"
+   ],
+   "tiles": 63
+  },
+  "39r": {
+   "bbox": [
+    47.8382,
+    24.2715,
+    55.0981,
+    31.6355
+   ],
+   "countries": [
+    "Iran",
+    "Saudi Arabia",
+    "Qatar",
+    "United Arab Emirates"
+   ],
+   "more": 3,
+   "tiles": 50
+  },
+  "39s": {
+   "bbox": [
+    47.501,
+    31.5052,
+    54.6124,
+    39.7503
+   ],
+   "countries": [
+    "Iran",
+    "Turkmenistan",
+    "Azerbaijan",
+    "Iraq"
+   ],
+   "tiles": 54
+  },
+  "39t": {
+   "bbox": [
+    47.355,
+    39.6055,
+    55.1353,
+    47.8537
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Azerbaijan",
+    "Turkmenistan",
+    "Russia"
+   ],
+   "more": 1,
+   "tiles": 48
+  },
+  "39u": {
+   "bbox": [
+    47.8005,
+    47.6909,
+    55.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Kazakhstan"
+   ],
+   "tiles": 43
+  },
+  "39v": {
+   "bbox": [
+    46.9133,
+    55.8117,
+    55.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "39w": {
+   "bbox": [
+    48.0863,
+    63.8758,
+    57.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "39x": {
+   "bbox": [
+    44.6219,
+    71.9166,
+    59.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 21
+  },
+  "40k": {
+   "bbox": [
+    55.0656,
+    -21.7918,
+    60.8715,
+    -16.2461
+   ],
+   "countries": [
+    "France",
+    "Mauritius"
+   ],
+   "tiles": 24
+  },
+  "40l": {
+   "bbox": [
+    54.2705,
+    -16.3672,
+    60.834,
+    -8.1329
+   ],
+   "countries": [],
+   "tiles": 18
+  },
+  "40m": {
+   "bbox": [
+    54.277,
+    -8.2305,
+    57.9967,
+    -2.7111
+   ],
+   "countries": [
+    "Seychelles"
+   ],
+   "tiles": 23
+  },
+  "40p": {
+   "bbox": [
+    54.1931,
+    10.7549,
+    57.0914,
+    16.2808
+   ],
+   "countries": [
+    "Yemen"
+   ],
+   "tiles": 11
+  },
+  "40q": {
+   "bbox": [
+    54.0423,
+    16.1739,
+    61.0379,
+    24.4134
+   ],
+   "countries": [
+    "Oman",
+    "Saudi Arabia",
+    "United Arab Emirates"
+   ],
+   "tiles": 58
+  },
+  "40r": {
+   "bbox": [
+    53.8382,
+    24.2715,
+    61.0981,
+    31.6355
+   ],
+   "countries": [
+    "Iran",
+    "Oman",
+    "United Arab Emirates"
+   ],
+   "tiles": 50
+  },
+  "40s": {
+   "bbox": [
+    53.501,
+    31.5052,
+    60.6124,
+    39.7503
+   ],
+   "countries": [
+    "Iran",
+    "Turkmenistan"
+   ],
+   "tiles": 54
+  },
+  "40t": {
+   "bbox": [
+    53.355,
+    39.6055,
+    61.1353,
+    47.8537
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Uzbekistan",
+    "Turkmenistan"
+   ],
+   "tiles": 48
+  },
+  "40u": {
+   "bbox": [
+    53.8005,
+    47.6909,
+    61.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Kazakhstan"
+   ],
+   "tiles": 43
+  },
+  "40v": {
+   "bbox": [
+    52.9133,
+    55.8117,
+    61.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "40w": {
+   "bbox": [
+    54.0863,
+    63.8758,
+    63.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "40x": {
+   "bbox": [
+    50.6219,
+    71.9166,
+    65.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 25
+  },
+  "41k": {
+   "bbox": [
+    60.1644,
+    -20.8881,
+    65.0167,
+    -16.2622
+   ],
+   "countries": [],
+   "tiles": 10
+  },
+  "41l": {
+   "bbox": [
+    60.1919,
+    -16.3617,
+    61.2352,
+    -14.4558
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "41q": {
+   "bbox": [
+    60.0423,
+    20.6872,
+    67.0379,
+    24.4134
+   ],
+   "countries": [],
+   "tiles": 11
+  },
+  "41r": {
+   "bbox": [
+    59.8382,
+    24.2715,
+    67.0981,
+    31.6355
+   ],
+   "countries": [
+    "Pakistan",
+    "Iran",
+    "Afghanistan"
+   ],
+   "tiles": 50
+  },
+  "41s": {
+   "bbox": [
+    59.501,
+    31.5052,
+    66.6124,
+    39.7503
+   ],
+   "countries": [
+    "Afghanistan",
+    "Turkmenistan",
+    "Iran",
+    "Uzbekistan"
+   ],
+   "tiles": 54
+  },
+  "41t": {
+   "bbox": [
+    59.355,
+    39.6055,
+    67.1353,
+    47.8537
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Uzbekistan",
+    "Turkmenistan"
+   ],
+   "tiles": 48
+  },
+  "41u": {
+   "bbox": [
+    59.8005,
+    47.6909,
+    67.7335,
+    55.9457
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Russia"
+   ],
+   "tiles": 43
+  },
+  "41v": {
+   "bbox": [
+    58.9133,
+    55.8117,
+    67.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "41w": {
+   "bbox": [
+    60.0863,
+    63.8758,
+    69.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "41x": {
+   "bbox": [
+    56.6219,
+    71.9166,
+    71.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 25
+  },
+  "42m": {
+   "bbox": [
+    71.6948,
+    -2.7995,
+    72.6844,
+    0.0
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "42n": {
+   "bbox": [
+    70.7969,
+    -0.0884,
+    72.7172,
+    8.138
+   ],
+   "countries": [],
+   "tiles": 17
+  },
+  "42p": {
+   "bbox": [
+    70.8145,
+    8.0367,
+    72.8323,
+    16.2622
+   ],
+   "countries": [],
+   "tiles": 15
+  },
+  "42q": {
+   "bbox": [
+    66.0423,
+    16.1579,
+    73.0379,
+    24.4134
+   ],
+   "countries": [
+    "India",
+    "Pakistan"
+   ],
+   "tiles": 41
+  },
+  "42r": {
+   "bbox": [
+    65.8382,
+    24.2715,
+    73.0981,
+    31.6355
+   ],
+   "countries": [
+    "Pakistan",
+    "India",
+    "Afghanistan"
+   ],
+   "tiles": 50
+  },
+  "42s": {
+   "bbox": [
+    65.501,
+    31.5052,
+    72.6124,
+    39.7503
+   ],
+   "countries": [
+    "Afghanistan",
+    "Pakistan",
+    "Tajikistan",
+    "Uzbekistan"
+   ],
+   "more": 2,
+   "tiles": 54
+  },
+  "42t": {
+   "bbox": [
+    65.355,
+    39.6055,
+    73.1353,
+    47.8537
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Uzbekistan",
+    "Kyrgyzstan",
+    "Tajikistan"
+   ],
+   "tiles": 48
+  },
+  "42u": {
+   "bbox": [
+    65.8005,
+    47.6909,
+    73.7335,
+    55.9457
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Russia"
+   ],
+   "tiles": 43
+  },
+  "42v": {
+   "bbox": [
+    64.9133,
+    55.8117,
+    73.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "42w": {
+   "bbox": [
+    66.0863,
+    63.8758,
+    75.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "42x": {
+   "bbox": [
+    62.6219,
+    71.9166,
+    77.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 24
+  },
+  "43m": {
+   "bbox": [
+    72.3016,
+    -2.8024,
+    75.0878,
+    0.0
+   ],
+   "countries": [],
+   "tiles": 8
+  },
+  "43n": {
+   "bbox": [
+    72.2776,
+    -0.0885,
+    78.7172,
+    8.142
+   ],
+   "countries": [
+    "Maldives",
+    "India"
+   ],
+   "tiles": 34
+  },
+  "43p": {
+   "bbox": [
+    72.1931,
+    8.0367,
+    78.8323,
+    16.2808
+   ],
+   "countries": [
+    "India"
+   ],
+   "tiles": 63
+  },
+  "43q": {
+   "bbox": [
+    72.0423,
+    16.1579,
+    79.0379,
+    24.4134
+   ],
+   "countries": [
+    "India"
+   ],
+   "tiles": 63
+  },
+  "43r": {
+   "bbox": [
+    71.8382,
+    24.2715,
+    79.0981,
+    31.6355
+   ],
+   "countries": [
+    "India",
+    "Pakistan"
+   ],
+   "tiles": 50
+  },
+  "43s": {
+   "bbox": [
+    71.501,
+    31.5052,
+    78.6124,
+    39.7503
+   ],
+   "countries": [
+    "Pakistan",
+    "China",
+    "India",
+    "Tajikistan"
+   ],
+   "more": 3,
+   "tiles": 54
+  },
+  "43t": {
+   "bbox": [
+    71.355,
+    39.6055,
+    79.1353,
+    47.8537
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Kyrgyzstan",
+    "China",
+    "Uzbekistan"
+   ],
+   "tiles": 48
+  },
+  "43u": {
+   "bbox": [
+    71.8005,
+    47.6909,
+    79.7335,
+    55.9457
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Russia"
+   ],
+   "tiles": 43
+  },
+  "43v": {
+   "bbox": [
+    70.9133,
+    55.8117,
+    79.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "43w": {
+   "bbox": [
+    72.0863,
+    63.8758,
+    81.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "43x": {
+   "bbox": [
+    68.6219,
+    71.9166,
+    82.8542,
+    82.8529
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 24
+  },
+  "44n": {
+   "bbox": [
+    78.2776,
+    4.4325,
+    83.8107,
+    8.142
+   ],
+   "countries": [
+    "Sri Lanka"
+   ],
+   "tiles": 22
+  },
+  "44p": {
+   "bbox": [
+    78.1931,
+    8.0439,
+    84.8323,
+    16.2808
+   ],
+   "countries": [
+    "India",
+    "Sri Lanka"
+   ],
+   "tiles": 43
+  },
+  "44q": {
+   "bbox": [
+    78.0423,
+    16.1579,
+    85.0379,
+    24.4134
+   ],
+   "countries": [
+    "India"
+   ],
+   "tiles": 63
+  },
+  "44r": {
+   "bbox": [
+    77.8382,
+    24.2715,
+    85.0981,
+    31.6355
+   ],
+   "countries": [
+    "India",
+    "Nepal",
+    "China"
+   ],
+   "tiles": 50
+  },
+  "44s": {
+   "bbox": [
+    77.501,
+    31.5052,
+    84.6124,
+    39.7503
+   ],
+   "countries": [
+    "China",
+    "India",
+    "Siachen Glacier"
+   ],
+   "tiles": 54
+  },
+  "44t": {
+   "bbox": [
+    77.355,
+    39.6055,
+    85.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "Kazakhstan",
+    "Kyrgyzstan"
+   ],
+   "tiles": 48
+  },
+  "44u": {
+   "bbox": [
+    77.8005,
+    47.6909,
+    85.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Kazakhstan"
+   ],
+   "tiles": 43
+  },
+  "44v": {
+   "bbox": [
+    76.9133,
+    55.8117,
+    85.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "44w": {
+   "bbox": [
+    78.0863,
+    63.8758,
+    87.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "44x": {
+   "bbox": [
+    74.6219,
+    71.9166,
+    88.8542,
+    82.8529
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 24
+  },
+  "45q": {
+   "bbox": [
+    84.0423,
+    16.1739,
+    91.0379,
+    24.4134
+   ],
+   "countries": [
+    "India",
+    "Bangladesh"
+   ],
+   "tiles": 47
+  },
+  "45r": {
+   "bbox": [
+    83.8382,
+    24.2715,
+    91.0981,
+    31.6355
+   ],
+   "countries": [
+    "China",
+    "India",
+    "Nepal",
+    "Bangladesh"
+   ],
+   "more": 1,
+   "tiles": 50
+  },
+  "45s": {
+   "bbox": [
+    83.501,
+    31.5052,
+    90.6124,
+    39.7503
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 54
+  },
+  "45t": {
+   "bbox": [
+    83.355,
+    39.6055,
+    91.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "Mongolia",
+    "Kazakhstan"
+   ],
+   "tiles": 48
+  },
+  "45u": {
+   "bbox": [
+    83.8005,
+    47.6909,
+    91.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Mongolia",
+    "Kazakhstan",
+    "China"
+   ],
+   "tiles": 43
+  },
+  "45v": {
+   "bbox": [
+    82.9133,
+    55.8117,
+    91.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "45w": {
+   "bbox": [
+    84.0863,
+    63.8758,
+    93.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "45x": {
+   "bbox": [
+    80.6219,
+    71.9166,
+    94.8542,
+    82.8529
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 24
+  },
+  "46m": {
+   "bbox": [
+    95.6948,
+    -0.9923,
+    96.6806,
+    0.0
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "46n": {
+   "bbox": [
+    91.1848,
+    -0.0884,
+    96.7172,
+    8.142
+   ],
+   "countries": [
+    "Indonesia",
+    "India"
+   ],
+   "tiles": 35
+  },
+  "46p": {
+   "bbox": [
+    90.228,
+    8.0439,
+    96.8323,
+    16.2808
+   ],
+   "countries": [
+    "India",
+    "Myanmar"
+   ],
+   "tiles": 53
+  },
+  "46q": {
+   "bbox": [
+    90.0423,
+    16.1579,
+    97.0379,
+    24.4134
+   ],
+   "countries": [
+    "Myanmar",
+    "Bangladesh",
+    "India"
+   ],
+   "tiles": 58
+  },
+  "46r": {
+   "bbox": [
+    89.8382,
+    24.2715,
+    97.0981,
+    31.6355
+   ],
+   "countries": [
+    "India",
+    "China",
+    "Myanmar",
+    "Bhutan"
+   ],
+   "more": 1,
+   "tiles": 50
+  },
+  "46s": {
+   "bbox": [
+    89.501,
+    31.5052,
+    96.6124,
+    39.7503
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 54
+  },
+  "46t": {
+   "bbox": [
+    89.355,
+    39.6055,
+    97.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "Mongolia"
+   ],
+   "tiles": 48
+  },
+  "46u": {
+   "bbox": [
+    89.8005,
+    47.6909,
+    97.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Mongolia"
+   ],
+   "tiles": 43
+  },
+  "46v": {
+   "bbox": [
+    88.9133,
+    55.8117,
+    97.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "46w": {
+   "bbox": [
+    90.0863,
+    63.8758,
+    99.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "46x": {
+   "bbox": [
+    86.6219,
+    71.9166,
+    100.8542,
+    82.8529
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 24
+  },
+  "47m": {
+   "bbox": [
+    96.3016,
+    -7.3176,
+    102.71,
+    0.0
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 39
+  },
+  "47n": {
+   "bbox": [
+    96.2776,
+    -0.0885,
+    102.7172,
+    8.142
+   ],
+   "countries": [
+    "Indonesia",
+    "Malaysia",
+    "Thailand"
+   ],
+   "tiles": 63
+  },
+  "47p": {
+   "bbox": [
+    96.1931,
+    8.0367,
+    102.8323,
+    16.2808
+   ],
+   "countries": [
+    "Thailand",
+    "Myanmar",
+    "Cambodia"
+   ],
+   "tiles": 63
+  },
+  "47q": {
+   "bbox": [
+    96.0423,
+    16.1579,
+    103.0379,
+    24.4134
+   ],
+   "countries": [
+    "Myanmar",
+    "Thailand",
+    "China",
+    "Laos"
+   ],
+   "more": 1,
+   "tiles": 63
+  },
+  "47r": {
+   "bbox": [
+    95.8382,
+    24.2715,
+    103.0981,
+    31.6355
+   ],
+   "countries": [
+    "China",
+    "Myanmar",
+    "India"
+   ],
+   "tiles": 50
+  },
+  "47s": {
+   "bbox": [
+    95.501,
+    31.5052,
+    102.6124,
+    39.7503
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 54
+  },
+  "47t": {
+   "bbox": [
+    95.355,
+    39.6055,
+    103.1353,
+    47.8537
+   ],
+   "countries": [
+    "Mongolia",
+    "China"
+   ],
+   "tiles": 48
+  },
+  "47u": {
+   "bbox": [
+    95.8005,
+    47.6909,
+    103.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Mongolia"
+   ],
+   "tiles": 43
+  },
+  "47v": {
+   "bbox": [
+    94.9133,
+    55.8117,
+    103.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "47w": {
+   "bbox": [
+    96.0863,
+    63.8758,
+    105.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "47x": {
+   "bbox": [
+    92.6219,
+    71.9166,
+    106.8542,
+    82.8529
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 24
+  },
+  "48l": {
+   "bbox": [
+    106.8149,
+    -9.1306,
+    108.7269,
+    -8.125
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "48m": {
+   "bbox": [
+    102.2828,
+    -8.2305,
+    108.718,
+    0.0
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 61
+  },
+  "48n": {
+   "bbox": [
+    102.2776,
+    -0.0885,
+    108.7172,
+    8.142
+   ],
+   "countries": [
+    "Malaysia",
+    "Indonesia",
+    "Singapore"
+   ],
+   "tiles": 61
+  },
+  "48p": {
+   "bbox": [
+    102.1931,
+    8.0367,
+    108.8323,
+    16.2808
+   ],
+   "countries": [
+    "Cambodia",
+    "Vietnam",
+    "Thailand",
+    "Laos"
+   ],
+   "tiles": 63
+  },
+  "48q": {
+   "bbox": [
+    102.0423,
+    16.1579,
+    109.0379,
+    24.4134
+   ],
+   "countries": [
+    "Vietnam",
+    "China",
+    "Laos",
+    "Thailand"
+   ],
+   "tiles": 63
+  },
+  "48r": {
+   "bbox": [
+    101.8382,
+    24.2715,
+    109.0981,
+    31.6355
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 50
+  },
+  "48s": {
+   "bbox": [
+    101.501,
+    31.5052,
+    108.6124,
+    39.7503
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 54
+  },
+  "48t": {
+   "bbox": [
+    101.355,
+    39.6055,
+    109.1353,
+    47.8537
+   ],
+   "countries": [
+    "Mongolia",
+    "China"
+   ],
+   "tiles": 48
+  },
+  "48u": {
+   "bbox": [
+    101.8005,
+    47.6909,
+    109.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Mongolia"
+   ],
+   "tiles": 43
+  },
+  "48v": {
+   "bbox": [
+    100.9133,
+    55.8117,
+    109.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "48w": {
+   "bbox": [
+    102.0863,
+    63.8758,
+    111.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "48x": {
+   "bbox": [
+    98.6219,
+    71.9166,
+    111.4017,
+    81.9564
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 21
+  },
+  "49h": {
+   "bbox": [
+    113.1081,
+    -35.3113,
+    114.4057,
+    -31.5933
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "49j": {
+   "bbox": [
+    110.9998,
+    -31.7058,
+    115.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 20
+  },
+  "49k": {
+   "bbox": [
+    110.9998,
+    -24.5018,
+    115.0408,
+    -18.9516
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 17
+  },
+  "49l": {
+   "bbox": [
+    108.2705,
+    -10.0393,
+    114.7367,
+    -8.125
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 11
+  },
+  "49m": {
+   "bbox": [
+    108.277,
+    -8.2305,
+    114.718,
+    0.0
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 63
+  },
+  "49n": {
+   "bbox": [
+    108.2776,
+    -0.0885,
+    114.7172,
+    8.142
+   ],
+   "countries": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei"
+   ],
+   "tiles": 61
+  },
+  "49p": {
+   "bbox": [
+    108.1931,
+    8.0367,
+    114.8323,
+    16.2808
+   ],
+   "countries": [
+    "Vietnam"
+   ],
+   "tiles": 49
+  },
+  "49q": {
+   "bbox": [
+    108.0423,
+    16.1579,
+    115.0379,
+    24.4134
+   ],
+   "countries": [
+    "China",
+    "Hong Kong",
+    "Macao"
+   ],
+   "tiles": 60
+  },
+  "49r": {
+   "bbox": [
+    107.8382,
+    24.2715,
+    115.0981,
+    31.6355
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 50
+  },
+  "49s": {
+   "bbox": [
+    107.501,
+    31.5052,
+    114.6124,
+    39.7503
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 54
+  },
+  "49t": {
+   "bbox": [
+    107.355,
+    39.6055,
+    115.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "Mongolia"
+   ],
+   "tiles": 48
+  },
+  "49u": {
+   "bbox": [
+    107.8005,
+    47.6909,
+    115.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "Mongolia"
+   ],
+   "tiles": 43
+  },
+  "49v": {
+   "bbox": [
+    106.9133,
+    55.8117,
+    115.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "49w": {
+   "bbox": [
+    108.0863,
+    63.8758,
+    117.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "49x": {
+   "bbox": [
+    105.768,
+    71.9166,
+    117.4017,
+    80.165
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 17
+  },
+  "50h": {
+   "bbox": [
+    113.7012,
+    -36.2331,
+    120.4443,
+    -31.5933
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 29
+  },
+  "50j": {
+   "bbox": [
+    113.8352,
+    -31.7232,
+    121.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 50
+  },
+  "50k": {
+   "bbox": [
+    114.0402,
+    -24.5018,
+    121.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 54
+  },
+  "50l": {
+   "bbox": [
+    114.2632,
+    -16.3672,
+    120.834,
+    -8.125
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 26
+  },
+  "50m": {
+   "bbox": [
+    114.277,
+    -8.2305,
+    120.718,
+    0.0
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 63
+  },
+  "50n": {
+   "bbox": [
+    114.2776,
+    -0.0885,
+    120.7172,
+    8.142
+   ],
+   "countries": [
+    "Indonesia",
+    "Malaysia",
+    "Brunei",
+    "Philippines"
+   ],
+   "tiles": 63
+  },
+  "50p": {
+   "bbox": [
+    114.2381,
+    8.0367,
+    120.8323,
+    16.2788
+   ],
+   "countries": [
+    "Philippines"
+   ],
+   "tiles": 50
+  },
+  "50q": {
+   "bbox": [
+    114.0423,
+    16.1579,
+    121.0379,
+    24.4134
+   ],
+   "countries": [
+    "China",
+    "Philippines",
+    "Taiwan",
+    "Hong Kong"
+   ],
+   "tiles": 48
+  },
+  "50r": {
+   "bbox": [
+    113.8382,
+    24.2715,
+    121.0981,
+    31.6355
+   ],
+   "countries": [
+    "China",
+    "Taiwan"
+   ],
+   "tiles": 50
+  },
+  "50s": {
+   "bbox": [
+    113.501,
+    31.5052,
+    120.6124,
+    39.7503
+   ],
+   "countries": [
+    "China"
+   ],
+   "tiles": 54
+  },
+  "50t": {
+   "bbox": [
+    113.355,
+    39.6055,
+    121.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "Mongolia"
+   ],
+   "tiles": 48
+  },
+  "50u": {
+   "bbox": [
+    113.8005,
+    47.6909,
+    121.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "China",
+    "Mongolia"
+   ],
+   "tiles": 43
+  },
+  "50v": {
+   "bbox": [
+    112.9133,
+    55.8117,
+    121.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "50w": {
+   "bbox": [
+    114.0863,
+    63.8758,
+    123.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "50x": {
+   "bbox": [
+    112.5622,
+    71.9166,
+    123.4017,
+    78.3727
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 14
+  },
+  "51h": {
+   "bbox": [
+    119.6639,
+    -36.2331,
+    126.4057,
+    -31.5933
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 27
+  },
+  "51j": {
+   "bbox": [
+    119.8352,
+    -31.7232,
+    127.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 50
+  },
+  "51k": {
+   "bbox": [
+    120.0402,
+    -24.5018,
+    127.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 63
+  },
+  "51l": {
+   "bbox": [
+    120.1919,
+    -16.3692,
+    126.834,
+    -8.125
+   ],
+   "countries": [
+    "Indonesia",
+    "Australia",
+    "Timor-Leste",
+    "Ashmore and Cartier Is."
+   ],
+   "tiles": 63
+  },
+  "51m": {
+   "bbox": [
+    120.277,
+    -8.2305,
+    126.718,
+    0.0
+   ],
+   "countries": [
+    "Indonesia",
+    "Timor-Leste"
+   ],
+   "tiles": 63
+  },
+  "51n": {
+   "bbox": [
+    120.2776,
+    -0.0885,
+    126.7172,
+    8.142
+   ],
+   "countries": [
+    "Philippines",
+    "Indonesia"
+   ],
+   "tiles": 60
+  },
+  "51p": {
+   "bbox": [
+    120.1931,
+    8.0367,
+    126.8154,
+    16.2808
+   ],
+   "countries": [
+    "Philippines"
+   ],
+   "tiles": 62
+  },
+  "51q": {
+   "bbox": [
+    120.0423,
+    16.1739,
+    127.0379,
+    24.4134
+   ],
+   "countries": [
+    "Philippines",
+    "Taiwan",
+    "Japan"
+   ],
+   "tiles": 41
+  },
+  "51r": {
+   "bbox": [
+    119.8382,
+    24.2715,
+    127.0981,
+    31.6355
+   ],
+   "countries": [
+    "China",
+    "Japan",
+    "Taiwan"
+   ],
+   "tiles": 46
+  },
+  "51s": {
+   "bbox": [
+    119.501,
+    31.5052,
+    126.6124,
+    39.7503
+   ],
+   "countries": [
+    "China",
+    "South Korea",
+    "North Korea"
+   ],
+   "tiles": 54
+  },
+  "51t": {
+   "bbox": [
+    119.355,
+    39.6055,
+    127.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "North Korea"
+   ],
+   "tiles": 48
+  },
+  "51u": {
+   "bbox": [
+    119.8005,
+    47.6909,
+    127.7335,
+    55.9457
+   ],
+   "countries": [
+    "China",
+    "Russia"
+   ],
+   "tiles": 43
+  },
+  "51v": {
+   "bbox": [
+    118.9133,
+    55.8117,
+    127.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "51w": {
+   "bbox": [
+    120.0863,
+    63.8758,
+    129.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "51x": {
+   "bbox": [
+    119.3801,
+    71.9166,
+    129.4017,
+    75.6847
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 9
+  },
+  "52h": {
+   "bbox": [
+    125.737,
+    -34.4118,
+    132.3688,
+    -31.5933
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 14
+  },
+  "52j": {
+   "bbox": [
+    125.8352,
+    -31.7232,
+    133.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 50
+  },
+  "52k": {
+   "bbox": [
+    126.0402,
+    -24.5018,
+    133.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 63
+  },
+  "52l": {
+   "bbox": [
+    126.1919,
+    -16.3692,
+    132.834,
+    -8.125
+   ],
+   "countries": [
+    "Australia",
+    "Indonesia",
+    "Timor-Leste"
+   ],
+   "tiles": 61
+  },
+  "52m": {
+   "bbox": [
+    126.277,
+    -8.2305,
+    132.718,
+    0.0
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 63
+  },
+  "52n": {
+   "bbox": [
+    126.2776,
+    -0.0885,
+    132.7024,
+    8.1412
+   ],
+   "countries": [
+    "Indonesia",
+    "Philippines",
+    "Palau"
+   ],
+   "tiles": 53
+  },
+  "52p": {
+   "bbox": [
+    126.228,
+    8.0445,
+    128.1814,
+    13.5623
+   ],
+   "countries": [
+    "Philippines"
+   ],
+   "tiles": 10
+  },
+  "52q": {
+   "bbox": [
+    126.0423,
+    23.3703,
+    133.0379,
+    24.4134
+   ],
+   "countries": [],
+   "tiles": 5
+  },
+  "52r": {
+   "bbox": [
+    125.8965,
+    24.2715,
+    133.0981,
+    31.6355
+   ],
+   "countries": [
+    "Japan"
+   ],
+   "tiles": 47
+  },
+  "52s": {
+   "bbox": [
+    125.501,
+    31.5052,
+    132.5665,
+    39.7503
+   ],
+   "countries": [
+    "South Korea",
+    "Japan",
+    "North Korea"
+   ],
+   "tiles": 53
+  },
+  "52t": {
+   "bbox": [
+    125.355,
+    39.609,
+    133.1353,
+    47.8537
+   ],
+   "countries": [
+    "China",
+    "North Korea",
+    "Russia"
+   ],
+   "tiles": 47
+  },
+  "52u": {
+   "bbox": [
+    125.8005,
+    47.6909,
+    133.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "China"
+   ],
+   "tiles": 43
+  },
+  "52v": {
+   "bbox": [
+    124.9133,
+    55.8117,
+    133.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "52w": {
+   "bbox": [
+    126.0863,
+    63.8758,
+    135.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "52x": {
+   "bbox": [
+    125.3801,
+    71.9166,
+    135.4017,
+    77.4773
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 11
+  },
+  "53h": {
+   "bbox": [
+    131.737,
+    -38.0302,
+    138.5268,
+    -31.5933
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 33
+  },
+  "53j": {
+   "bbox": [
+    131.8352,
+    -31.7232,
+    139.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 50
+  },
+  "53k": {
+   "bbox": [
+    132.0402,
+    -24.5018,
+    139.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 63
+  },
+  "53l": {
+   "bbox": [
+    132.1919,
+    -16.3692,
+    138.834,
+    -8.125
+   ],
+   "countries": [
+    "Australia",
+    "Indonesia"
+   ],
+   "tiles": 63
+  },
+  "53m": {
+   "bbox": [
+    132.277,
+    -8.2305,
+    138.718,
+    0.0
+   ],
+   "countries": [
+    "Indonesia"
+   ],
+   "tiles": 63
+  },
+  "53n": {
+   "bbox": [
+    132.2884,
+    -0.0885,
+    138.7172,
+    8.142
+   ],
+   "countries": [
+    "Palau"
+   ],
+   "tiles": 26
+  },
+  "53p": {
+   "bbox": [
+    133.1805,
+    8.0367,
+    138.7357,
+    10.85
+   ],
+   "countries": [
+    "Micronesia"
+   ],
+   "tiles": 10
+  },
+  "53q": {
+   "bbox": [
+    132.0423,
+    18.8935,
+    137.0155,
+    24.4018
+   ],
+   "countries": [],
+   "tiles": 7
+  },
+  "53r": {
+   "bbox": [
+    131.8382,
+    24.2963,
+    135.1029,
+    31.6355
+   ],
+   "countries": [],
+   "tiles": 7
+  },
+  "53s": {
+   "bbox": [
+    131.5455,
+    31.5052,
+    138.6124,
+    39.7503
+   ],
+   "countries": [
+    "Japan"
+   ],
+   "tiles": 50
+  },
+  "53t": {
+   "bbox": [
+    131.355,
+    39.6055,
+    139.1353,
+    47.8537
+   ],
+   "countries": [
+    "Russia",
+    "China"
+   ],
+   "tiles": 41
+  },
+  "53u": {
+   "bbox": [
+    131.8005,
+    47.6909,
+    139.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia",
+    "China"
+   ],
+   "tiles": 43
+  },
+  "53v": {
+   "bbox": [
+    130.9133,
+    55.8117,
+    139.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "53w": {
+   "bbox": [
+    132.0863,
+    63.8758,
+    141.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "53x": {
+   "bbox": [
+    130.8739,
+    71.9166,
+    141.4017,
+    78.373
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 14
+  },
+  "54g": {
+   "bbox": [
+    140.9998,
+    -44.3139,
+    144.8815,
+    -39.6935
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 10
+  },
+  "54h": {
+   "bbox": [
+    137.5412,
+    -39.8378,
+    144.6169,
+    -31.5933
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 53
+  },
+  "54j": {
+   "bbox": [
+    137.8352,
+    -31.7232,
+    145.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 50
+  },
+  "54k": {
+   "bbox": [
+    138.0402,
+    -24.5018,
+    145.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 63
+  },
+  "54l": {
+   "bbox": [
+    138.1919,
+    -16.3692,
+    144.834,
+    -8.125
+   ],
+   "countries": [
+    "Australia",
+    "Papua New Guinea",
+    "Indonesia"
+   ],
+   "tiles": 54
+  },
+  "54m": {
+   "bbox": [
+    138.277,
+    -8.2305,
+    144.718,
+    0.0
+   ],
+   "countries": [
+    "Papua New Guinea",
+    "Indonesia"
+   ],
+   "tiles": 60
+  },
+  "54n": {
+   "bbox": [
+    138.2776,
+    5.3286,
+    144.7172,
+    8.142
+   ],
+   "countries": [],
+   "tiles": 14
+  },
+  "54p": {
+   "bbox": [
+    138.2561,
+    8.0367,
+    144.7357,
+    10.8555
+   ],
+   "countries": [],
+   "tiles": 15
+  },
+  "54q": {
+   "bbox": [
+    139.0278,
+    23.4082,
+    143.0688,
+    24.4134
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "54r": {
+   "bbox": [
+    137.8382,
+    24.311,
+    144.1492,
+    31.6355
+   ],
+   "countries": [
+    "Japan"
+   ],
+   "tiles": 33
+  },
+  "54s": {
+   "bbox": [
+    137.501,
+    31.5077,
+    144.6124,
+    39.7503
+   ],
+   "countries": [
+    "Japan"
+   ],
+   "tiles": 44
+  },
+  "54t": {
+   "bbox": [
+    137.355,
+    39.6055,
+    145.1353,
+    47.8537
+   ],
+   "countries": [
+    "Japan",
+    "Russia"
+   ],
+   "tiles": 48
+  },
+  "54u": {
+   "bbox": [
+    137.8005,
+    47.6909,
+    145.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 43
+  },
+  "54v": {
+   "bbox": [
+    136.9133,
+    55.8117,
+    145.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "54w": {
+   "bbox": [
+    138.0863,
+    63.8758,
+    147.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "54x": {
+   "bbox": [
+    136.5622,
+    71.9166,
+    147.4017,
+    78.373
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 15
+  },
+  "55g": {
+   "bbox": [
+    143.3499,
+    -45.2413,
+    150.9421,
+    -39.6935
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 32
+  },
+  "55h": {
+   "bbox": [
+    143.4966,
+    -39.8378,
+    150.6169,
+    -31.5933
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 54
+  },
+  "55j": {
+   "bbox": [
+    143.8352,
+    -31.7232,
+    151.1012,
+    -24.3596
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 50
+  },
+  "55k": {
+   "bbox": [
+    144.0402,
+    -24.5018,
+    151.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 63
+  },
+  "55l": {
+   "bbox": [
+    144.1919,
+    -16.3692,
+    150.834,
+    -8.125
+   ],
+   "countries": [
+    "Papua New Guinea",
+    "Australia"
+   ],
+   "tiles": 52
+  },
+  "55m": {
+   "bbox": [
+    144.277,
+    -8.2305,
+    150.718,
+    0.0
+   ],
+   "countries": [
+    "Papua New Guinea"
+   ],
+   "tiles": 63
+  },
+  "55n": {
+   "bbox": [
+    144.2776,
+    5.3286,
+    150.7172,
+    8.142
+   ],
+   "countries": [],
+   "tiles": 19
+  },
+  "55p": {
+   "bbox": [
+    144.264,
+    8.0367,
+    150.7357,
+    9.9514
+   ],
+   "countries": [],
+   "tiles": 12
+  },
+  "55t": {
+   "bbox": [
+    143.355,
+    39.609,
+    151.1353,
+    47.8537
+   ],
+   "countries": [
+    "Russia",
+    "Japan"
+   ],
+   "tiles": 34
+  },
+  "55u": {
+   "bbox": [
+    143.8005,
+    47.6909,
+    151.2083,
+    55.9373
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 15
+  },
+  "55v": {
+   "bbox": [
+    142.9133,
+    55.8159,
+    151.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 30
+  },
+  "55w": {
+   "bbox": [
+    144.0863,
+    63.8758,
+    153.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "55x": {
+   "bbox": [
+    142.5622,
+    71.9166,
+    153.4017,
+    78.373
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 15
+  },
+  "56f": {
+   "bbox": [
+    155.9946,
+    -54.197,
+    157.7435,
+    -53.1589
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "56g": {
+   "bbox": [
+    149.3499,
+    -42.5168,
+    150.7804,
+    -39.697
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "56h": {
+   "bbox": [
+    149.4966,
+    -39.8331,
+    155.2587,
+    -31.5959
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 29
+  },
+  "56j": {
+   "bbox": [
+    149.8352,
+    -31.7232,
+    155.2138,
+    -24.3845
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 40
+  },
+  "56k": {
+   "bbox": [
+    150.0402,
+    -24.5018,
+    157.0408,
+    -16.2461
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 55
+  },
+  "56l": {
+   "bbox": [
+    150.1919,
+    -16.3692,
+    156.7722,
+    -8.125
+   ],
+   "countries": [
+    "Papua New Guinea",
+    "Solomon Is."
+   ],
+   "tiles": 43
+  },
+  "56m": {
+   "bbox": [
+    150.277,
+    -8.2305,
+    156.718,
+    -0.9034
+   ],
+   "countries": [
+    "Papua New Guinea",
+    "Solomon Is."
+   ],
+   "tiles": 49
+  },
+  "56n": {
+   "bbox": [
+    150.2776,
+    -0.0885,
+    156.7172,
+    8.142
+   ],
+   "countries": [
+    "Micronesia"
+   ],
+   "tiles": 44
+  },
+  "56p": {
+   "bbox": [
+    150.264,
+    8.0367,
+    156.726,
+    9.9504
+   ],
+   "countries": [],
+   "tiles": 9
+  },
+  "56q": {
+   "bbox": [
+    152.0133,
+    23.3923,
+    156.0536,
+    24.4134
+   ],
+   "countries": [],
+   "tiles": 4
+  },
+  "56r": {
+   "bbox": [
+    152.0061,
+    24.311,
+    155.0839,
+    25.3167
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "56t": {
+   "bbox": [
+    150.3279,
+    44.138,
+    157.1353,
+    47.8537
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 14
+  },
+  "56u": {
+   "bbox": [
+    150.2309,
+    47.6909,
+    157.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 31
+  },
+  "56v": {
+   "bbox": [
+    148.9133,
+    55.8117,
+    157.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 32
+  },
+  "56w": {
+   "bbox": [
+    150.0863,
+    63.8758,
+    159.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "56x": {
+   "bbox": [
+    148.5622,
+    71.9166,
+    159.4017,
+    78.373
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 15
+  },
+  "57f": {
+   "bbox": [
+    155.8656,
+    -56.0331,
+    162.3635,
+    -53.2114
+   ],
+   "countries": [
+    "Australia"
+   ],
+   "tiles": 9
+  },
+  "57h": {
+   "bbox": [
+    156.8686,
+    -33.5231,
+    161.2587,
+    -31.6158
+   ],
+   "countries": [],
+   "tiles": 5
+  },
+  "57j": {
+   "bbox": [
+    156.8895,
+    -31.7232,
+    161.2138,
+    -28.0098
+   ],
+   "countries": [],
+   "tiles": 14
+  },
+  "57k": {
+   "bbox": [
+    156.0804,
+    -22.6847,
+    157.2199,
+    -16.2622
+   ],
+   "countries": [],
+   "tiles": 5
+  },
+  "57l": {
+   "bbox": [
+    156.2372,
+    -14.5613,
+    162.801,
+    -8.125
+   ],
+   "countries": [
+    "Solomon Is."
+   ],
+   "tiles": 42
+  },
+  "57m": {
+   "bbox": [
+    156.277,
+    -8.2305,
+    162.718,
+    -2.7111
+   ],
+   "countries": [
+    "Solomon Is."
+   ],
+   "tiles": 33
+  },
+  "57n": {
+   "bbox": [
+    156.2776,
+    4.4257,
+    162.7024,
+    8.1412
+   ],
+   "countries": [
+    "Micronesia"
+   ],
+   "tiles": 21
+  },
+  "57p": {
+   "bbox": [
+    158.9998,
+    8.0367,
+    162.7847,
+    13.5616
+   ],
+   "countries": [],
+   "tiles": 20
+  },
+  "57u": {
+   "bbox": [
+    155.8005,
+    48.633,
+    163.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 32
+  },
+  "57v": {
+   "bbox": [
+    154.9133,
+    55.8117,
+    163.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 36
+  },
+  "57w": {
+   "bbox": [
+    156.0863,
+    63.8758,
+    165.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "57x": {
+   "bbox": [
+    154.5622,
+    71.9898,
+    163.5263,
+    78.3727
+   ],
+   "countries": [],
+   "tiles": 8
+  },
+  "58f": {
+   "bbox": [
+    163.5578,
+    -53.3276,
+    169.6436,
+    -47.7786
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 21
+  },
+  "58g": {
+   "bbox": [
+    163.6606,
+    -47.9412,
+    169.1422,
+    -41.4914
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 22
+  },
+  "58k": {
+   "bbox": [
+    164.9998,
+    -20.8773,
+    168.9365,
+    -16.2461
+   ],
+   "countries": [
+    "Vanuatu",
+    "New Caledonia"
+   ],
+   "tiles": 14
+  },
+  "58l": {
+   "bbox": [
+    162.2372,
+    -16.3692,
+    168.834,
+    -8.1329
+   ],
+   "countries": [
+    "Vanuatu",
+    "Solomon Is."
+   ],
+   "tiles": 49
+  },
+  "58m": {
+   "bbox": [
+    162.277,
+    -8.2297,
+    168.682,
+    0.0
+   ],
+   "countries": [
+    "Nauru"
+   ],
+   "tiles": 11
+  },
+  "58n": {
+   "bbox": [
+    162.2884,
+    -0.0885,
+    168.7172,
+    8.142
+   ],
+   "countries": [
+    "Micronesia",
+    "Marshall Is."
+   ],
+   "tiles": 20
+  },
+  "58p": {
+   "bbox": [
+    162.228,
+    8.0367,
+    168.8323,
+    16.2622
+   ],
+   "countries": [
+    "Marshall Is."
+   ],
+   "tiles": 43
+  },
+  "58u": {
+   "bbox": [
+    161.8005,
+    51.3281,
+    169.7335,
+    55.9457
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 15
+  },
+  "58v": {
+   "bbox": [
+    160.9133,
+    55.8117,
+    169.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 35
+  },
+  "58w": {
+   "bbox": [
+    162.0863,
+    63.8758,
+    171.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "58x": {
+   "bbox": [
+    160.8739,
+    75.5697,
+    165.4032,
+    77.477
+   ],
+   "countries": [],
+   "tiles": 2
+  },
+  "59f": {
+   "bbox": [
+    167.9987,
+    -54.236,
+    172.6839,
+    -47.8221
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 10
+  },
+  "59g": {
+   "bbox": [
+    167.3499,
+    -47.9412,
+    174.9421,
+    -39.6935
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 41
+  },
+  "59h": {
+   "bbox": [
+    169.8309,
+    -39.8378,
+    174.6169,
+    -33.3943
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 22
+  },
+  "59k": {
+   "bbox": [
+    168.0991,
+    -23.586,
+    175.0127,
+    -16.2622
+   ],
+   "countries": [
+    "Vanuatu",
+    "Fiji",
+    "New Caledonia"
+   ],
+   "tiles": 28
+  },
+  "59l": {
+   "bbox": [
+    168.1919,
+    -16.3676,
+    172.015,
+    -9.9397
+   ],
+   "countries": [
+    "Vanuatu"
+   ],
+   "tiles": 20
+  },
+  "59m": {
+   "bbox": [
+    168.3033,
+    -3.7034,
+    174.6877,
+    0.0
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 15
+  },
+  "59n": {
+   "bbox": [
+    168.2776,
+    -0.0885,
+    174.6965,
+    8.142
+   ],
+   "countries": [
+    "Marshall Is.",
+    "Kiribati"
+   ],
+   "tiles": 48
+  },
+  "59p": {
+   "bbox": [
+    168.1931,
+    8.0439,
+    173.8174,
+    16.2733
+   ],
+   "countries": [],
+   "tiles": 36
+  },
+  "59u": {
+   "bbox": [
+    167.8005,
+    51.2789,
+    175.6342,
+    55.9456
+   ],
+   "countries": [
+    "United States of America",
+    "Russia"
+   ],
+   "tiles": 16
+  },
+  "59v": {
+   "bbox": [
+    166.9133,
+    55.8159,
+    175.2862,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 26
+  },
+  "59w": {
+   "bbox": [
+    168.0863,
+    63.8758,
+    177.0936,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 27
+  },
+  "59x": {
+   "bbox": [
+    173.8988,
+    71.9166,
+    177.4017,
+    72.9728
+   ],
+   "countries": [],
+   "tiles": 1
+  },
+  "60f": {
+   "bbox": [
+    175.6118,
+    -50.6397,
+    179.9649,
+    -47.8189
+   ],
+   "countries": [],
+   "tiles": 8
+  },
+  "60g": {
+   "bbox": [
+    173.3499,
+    -47.9412,
+    180.0,
+    -39.697
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 21
+  },
+  "60h": {
+   "bbox": [
+    173.4966,
+    -39.8378,
+    179.451,
+    -33.3971
+   ],
+   "countries": [
+    "New Zealand"
+   ],
+   "tiles": 27
+  },
+  "60k": {
+   "bbox": [
+    174.0608,
+    -23.5872,
+    179.9768,
+    -16.261
+   ],
+   "countries": [
+    "Fiji"
+   ],
+   "tiles": 27
+  },
+  "60l": {
+   "bbox": [
+    175.1276,
+    -16.3692,
+    179.8992,
+    -8.1323
+   ],
+   "countries": [
+    "Fiji",
+    "Tuvalu"
+   ],
+   "tiles": 32
+  },
+  "60m": {
+   "bbox": [
+    174.2992,
+    -8.2305,
+    179.8114,
+    0.0
+   ],
+   "countries": [
+    "Kiribati"
+   ],
+   "tiles": 39
+  },
+  "60n": {
+   "bbox": [
+    174.3018,
+    -0.0884,
+    175.2908,
+    2.713
+   ],
+   "countries": [],
+   "tiles": 3
+  },
+  "60u": {
+   "bbox": [
+    174.0048,
+    50.4263,
+    180.0,
+    54.1481
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 11
+  },
+  "60v": {
+   "bbox": [
+    172.9133,
+    59.403,
+    180.0,
+    64.0272
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 18
+  },
+  "60w": {
+   "bbox": [
+    174.0863,
+    63.9216,
+    180.0,
+    72.0996
+   ],
+   "countries": [
+    "Russia"
+   ],
+   "tiles": 18
+  },
+  "60x": {
+   "bbox": [
+    173.938,
+    71.9869,
+    180.0,
+    72.9957
+   ],
+   "countries": [],
+   "tiles": 2
+  }
+ },
+ "zones": {
+  "01": {
+   "bbox": [
+    -179.9952,
+    -50.5994,
+    180.0,
+    72.9719
+   ],
+   "countries": [
+    "Russia",
+    "Fiji",
+    "United States of America",
+    "Tonga"
+   ],
+   "more": 2,
+   "tiles": 207
+  },
+  "02": {
+   "bbox": [
+    -175.0867,
+    -21.7815,
+    -165.4384,
+    72.0994
+   ],
+   "countries": [
+    "United States of America",
+    "Russia",
+    "Kiribati",
+    "Samoa"
+   ],
+   "more": 1,
+   "tiles": 149
+  },
+  "03": {
+   "bbox": [
+    -169.0867,
+    21.568,
+    -158.5983,
+    72.9957
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 104
+  },
+  "04": {
+   "bbox": [
+    -163.0867,
+    -7.3221,
+    -152.5983,
+    72.9957
+   ],
+   "countries": [
+    "United States of America",
+    "Kiribati"
+   ],
+   "tiles": 140
+  },
+  "05": {
+   "bbox": [
+    -157.0867,
+    -12.7524,
+    -146.9064,
+    72.9957
+   ],
+   "countries": [
+    "United States of America",
+    "Kiribati"
+   ],
+   "tiles": 114
+  },
+  "06": {
+   "bbox": [
+    -151.0867,
+    -10.939,
+    -140.9064,
+    72.0996
+   ],
+   "countries": [
+    "United States of America"
+   ],
+   "tiles": 57
+  },
+  "07": {
+   "bbox": [
+    -145.0867,
+    55.8117,
+    -135.1852,
+    72.0996
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 57
+  },
+  "08": {
+   "bbox": [
+    -139.0867,
+    49.4856,
+    -128.5983,
+    72.9728
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 86
+  },
+  "09": {
+   "bbox": [
+    -133.0867,
+    39.6055,
+    -122.5983,
+    78.373
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 126
+  },
+  "10": {
+   "bbox": [
+    -127.8018,
+    31.5052,
+    -116.5983,
+    79.2692
+   ],
+   "countries": [
+    "Canada",
+    "United States of America"
+   ],
+   "tiles": 208
+  },
+  "11": {
+   "bbox": [
+    -122.232,
+    17.0601,
+    -110.5983,
+    80.1653
+   ],
+   "countries": [
+    "Canada",
+    "United States of America",
+    "Mexico"
+   ],
+   "tiles": 271
+  },
+  "12": {
+   "bbox": [
+    -116.7478,
+    -28.1137,
+    -104.0067,
+    81.9569
+   ],
+   "countries": [
+    "Canada",
+    "United States of America",
+    "Mexico",
+    "Chile"
+   ],
+   "tiles": 318
+  },
+  "13": {
+   "bbox": [
+    -111.3781,
+    -28.1137,
+    -96.0435,
+    83.7483
+   ],
+   "countries": [
+    "United States of America",
+    "Canada",
+    "Mexico"
+   ],
+   "tiles": 345
+  },
+  "14": {
+   "bbox": [
+    -105.3781,
+    14.3539,
+    -90.0435,
+    83.7483
+   ],
+   "countries": [
+    "United States of America",
+    "Canada",
+    "Mexico"
+   ],
+   "tiles": 356
+  },
+  "15": {
+   "bbox": [
+    -99.3781,
+    -2.8027,
+    -84.0435,
+    83.7483
+   ],
+   "countries": [
+    "United States of America",
+    "Canada",
+    "Mexico",
+    "Guatemala"
+   ],
+   "more": 4,
+   "tiles": 369
+  },
+  "16": {
+   "bbox": [
+    -93.3781,
+    -7.3176,
+    -78.0435,
+    83.7483
+   ],
+   "countries": [
+    "United States of America",
+    "Canada",
+    "Honduras",
+    "Nicaragua"
+   ],
+   "more": 7,
+   "tiles": 401
+  },
+  "17": {
+   "bbox": [
+    -87.3781,
+    -54.197,
+    -72.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada",
+    "United States of America",
+    "Peru",
+    "Ecuador"
+   ],
+   "more": 10,
+   "tiles": 550
+  },
+  "18": {
+   "bbox": [
+    -81.3781,
+    -56.9209,
+    -66.0435,
+    83.7483
+   ],
+   "countries": [
+    "Canada",
+    "Peru",
+    "Colombia",
+    "Chile"
+   ],
+   "more": 13,
+   "tiles": 673
+  },
+  "19": {
+   "bbox": [
+    -75.3781,
+    -57.8301,
+    -60.0435,
+    83.7483
+   ],
+   "countries": [
+    "Argentina",
+    "Canada",
+    "Brazil",
+    "Chile"
+   ],
+   "more": 13,
+   "tiles": 696
+  },
+  "20": {
+   "bbox": [
+    -69.3781,
+    -57.8211,
+    -54.0435,
+    83.7483
+   ],
+   "countries": [
+    "Brazil",
+    "Argentina",
+    "Canada",
+    "Bolivia"
+   ],
+   "more": 21,
+   "tiles": 625
+  },
+  "21": {
+   "bbox": [
+    -63.3781,
+    -42.5168,
+    -48.0435,
+    83.7483
+   ],
+   "countries": [
+    "Brazil",
+    "Argentina",
+    "Paraguay",
+    "Canada"
+   ],
+   "more": 8,
+   "tiles": 445
+  },
+  "22": {
+   "bbox": [
+    -57.3781,
+    -36.2289,
+    -46.8988,
+    81.9564
+   ],
+   "countries": [
+    "Brazil",
+    "France",
+    "Uruguay",
+    "Canada"
+   ],
+   "more": 2,
+   "tiles": 320
+  },
+  "23": {
+   "bbox": [
+    -48.1063,
+    -29.904,
+    -40.9592,
+    1.809
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 205
+  },
+  "24": {
+   "bbox": [
+    -41.9598,
+    -24.4991,
+    -35.2278,
+    -1.8073
+   ],
+   "countries": [
+    "Brazil"
+   ],
+   "tiles": 136
+  },
+  "25": {
+   "bbox": [
+    -35.7534,
+    -21.7805,
+    -29.0394,
+    41.5518
+   ],
+   "countries": [
+    "Brazil",
+    "Portugal"
+   ],
+   "tiles": 56
+  },
+  "26": {
+   "bbox": [
+    -30.5941,
+    -21.7918,
+    -21.8804,
+    68.5126
+   ],
+   "countries": [
+    "Portugal",
+    "Cabo Verde",
+    "Iceland"
+   ],
+   "tiles": 71
+  },
+  "27": {
+   "bbox": [
+    -25.0867,
+    9.8417,
+    -15.8804,
+    68.5126
+   ],
+   "countries": [
+    "Iceland",
+    "Cabo Verde",
+    "Spain",
+    "Mauritania"
+   ],
+   "more": 2,
+   "tiles": 80
+  },
+  "28": {
+   "bbox": [
+    -19.0867,
+    4.4257,
+    -10.2533,
+    68.5125
+   ],
+   "countries": [
+    "Mauritania",
+    "Senegal",
+    "Morocco",
+    "W. Sahara"
+   ],
+   "more": 10,
+   "tiles": 236
+  },
+  "29": {
+   "bbox": [
+    -13.0867,
+    2.6202,
+    -4.2665,
+    65.8214
+   ],
+   "countries": [
+    "Mauritania",
+    "Mali",
+    "Morocco",
+    "Côte d'Ivoire"
+   ],
+   "more": 12,
+   "tiles": 355
+  },
+  "30": {
+   "bbox": [
+    -6.7325,
+    3.5232,
+    1.7335,
+    62.2318
+   ],
+   "countries": [
+    "Mali",
+    "Algeria",
+    "Spain",
+    "United Kingdom"
+   ],
+   "more": 13,
+   "tiles": 382
+  },
+  "31": {
+   "bbox": [
+    -0.8426,
+    -2.8013,
+    7.7335,
+    65.8059
+   ],
+   "countries": [
+    "Algeria",
+    "France",
+    "Nigeria",
+    "Niger"
+   ],
+   "more": 16,
+   "tiles": 394
+  },
+  "32": {
+   "bbox": [
+    2.8813,
+    -22.6688,
+    14.8148,
+    71.1823
+   ],
+   "countries": [
+    "Algeria",
+    "Niger",
+    "Nigeria",
+    "Germany"
+   ],
+   "more": 25,
+   "tiles": 523
+  },
+  "33": {
+   "bbox": [
+    10.9133,
+    -35.3263,
+    24.4079,
+    72.9728
+   ],
+   "countries": [
+    "Angola",
+    "Chad",
+    "Libya",
+    "Namibia"
+   ],
+   "more": 26,
+   "tiles": 675
+  },
+  "34": {
+   "bbox": [
+    16.9133,
+    -36.2331,
+    27.0936,
+    72.0996
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "Libya",
+    "Chad",
+    "Angola"
+   ],
+   "more": 34,
+   "tiles": 710
+  },
+  "35": {
+   "bbox": [
+    20.8951,
+    -36.2289,
+    40.195,
+    81.9569
+   ],
+   "countries": [
+    "Dem. Rep. Congo",
+    "Sudan",
+    "South Africa",
+    "Egypt"
+   ],
+   "more": 27,
+   "tiles": 723
+  },
+  "36": {
+   "bbox": [
+    28.9133,
+    -47.91,
+    38.8148,
+    72.0996
+   ],
+   "countries": [
+    "Sudan",
+    "Russia",
+    "Mozambique",
+    "Tanzania"
+   ],
+   "more": 27,
+   "tiles": 679
+  },
+  "37": {
+   "bbox": [
+    32.6219,
+    -47.9412,
+    46.8542,
+    82.8529
+   ],
+   "countries": [
+    "Russia",
+    "Ethiopia",
+    "Saudi Arabia",
+    "Kenya"
+   ],
+   "more": 19,
+   "tiles": 613
+  },
+  "38": {
+   "bbox": [
+    38.6219,
+    -27.2071,
+    53.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia",
+    "Saudi Arabia",
+    "Madagascar",
+    "Iraq"
+   ],
+   "more": 16,
+   "tiles": 603
+  },
+  "39": {
+   "bbox": [
+    44.6219,
+    -26.295,
+    59.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia",
+    "Iran",
+    "Saudi Arabia",
+    "Kazakhstan"
+   ],
+   "more": 12,
+   "tiles": 492
+  },
+  "40": {
+   "bbox": [
+    50.6219,
+    -21.7918,
+    65.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia",
+    "Iran",
+    "Kazakhstan",
+    "Oman"
+   ],
+   "more": 8,
+   "tiles": 417
+  },
+  "41": {
+   "bbox": [
+    56.6219,
+    -20.8881,
+    71.9565,
+    83.7483
+   ],
+   "countries": [
+    "Russia",
+    "Kazakhstan",
+    "Afghanistan",
+    "Turkmenistan"
+   ],
+   "more": 3,
+   "tiles": 306
+  },
+  "42": {
+   "bbox": [
+    62.6219,
+    -2.7995,
+    77.9565,
+    83.7483
+   ],
+   "countries": [
+    "Kazakhstan",
+    "Russia",
+    "Pakistan",
+    "Afghanistan"
+   ],
+   "more": 5,
+   "tiles": 358
+  },
+  "43": {
+   "bbox": [
+    68.6219,
+    -2.8024,
+    82.8542,
+    82.8529
+   ],
+   "countries": [
+    "India",
+    "Russia",
+    "Kazakhstan",
+    "Pakistan"
+   ],
+   "more": 7,
+   "tiles": 450
+  },
+  "44": {
+   "bbox": [
+    74.6219,
+    4.4325,
+    88.8542,
+    82.8529
+   ],
+   "countries": [
+    "India",
+    "China",
+    "Russia",
+    "Kazakhstan"
+   ],
+   "more": 4,
+   "tiles": 410
+  },
+  "45": {
+   "bbox": [
+    80.6219,
+    16.1739,
+    94.8542,
+    82.8529
+   ],
+   "countries": [
+    "China",
+    "Russia",
+    "India",
+    "Bangladesh"
+   ],
+   "more": 4,
+   "tiles": 329
+  },
+  "46": {
+   "bbox": [
+    86.6219,
+    -0.9923,
+    100.8542,
+    82.8529
+   ],
+   "countries": [
+    "China",
+    "Russia",
+    "India",
+    "Myanmar"
+   ],
+   "more": 4,
+   "tiles": 429
+  },
+  "47": {
+   "bbox": [
+    92.6219,
+    -7.3176,
+    106.8542,
+    82.8529
+   ],
+   "countries": [
+    "China",
+    "Russia",
+    "Thailand",
+    "Myanmar"
+   ],
+   "more": 7,
+   "tiles": 510
+  },
+  "48": {
+   "bbox": [
+    98.6219,
+    -9.1306,
+    111.4017,
+    81.9564
+   ],
+   "countries": [
+    "China",
+    "Russia",
+    "Vietnam",
+    "Indonesia"
+   ],
+   "more": 6,
+   "tiles": 529
+  },
+  "49": {
+   "bbox": [
+    105.768,
+    -35.3113,
+    117.4017,
+    80.165
+   ],
+   "countries": [
+    "China",
+    "Russia",
+    "Indonesia",
+    "Mongolia"
+   ],
+   "more": 6,
+   "tiles": 560
+  },
+  "50": {
+   "bbox": [
+    112.5622,
+    -36.2331,
+    123.4017,
+    78.3727
+   ],
+   "countries": [
+    "China",
+    "Australia",
+    "Russia",
+    "Indonesia"
+   ],
+   "more": 6,
+   "tiles": 655
+  },
+  "51": {
+   "bbox": [
+    118.9133,
+    -36.2331,
+    129.4017,
+    75.6847
+   ],
+   "countries": [
+    "Australia",
+    "China",
+    "Russia",
+    "Indonesia"
+   ],
+   "more": 7,
+   "tiles": 692
+  },
+  "52": {
+   "bbox": [
+    124.9133,
+    -34.4118,
+    135.4017,
+    77.4773
+   ],
+   "countries": [
+    "Australia",
+    "Russia",
+    "Indonesia",
+    "China"
+   ],
+   "more": 6,
+   "tiles": 583
+  },
+  "53": {
+   "bbox": [
+    130.8739,
+    -38.0302,
+    141.4017,
+    78.373
+   ],
+   "countries": [
+    "Australia",
+    "Russia",
+    "Indonesia",
+    "Japan"
+   ],
+   "more": 3,
+   "tiles": 533
+  },
+  "54": {
+   "bbox": [
+    136.5622,
+    -44.3139,
+    147.4017,
+    78.373
+   ],
+   "countries": [
+    "Australia",
+    "Russia",
+    "Japan",
+    "Papua New Guinea"
+   ],
+   "more": 1,
+   "tiles": 569
+  },
+  "55": {
+   "bbox": [
+    142.5622,
+    -45.2413,
+    153.4017,
+    78.373
+   ],
+   "countries": [
+    "Australia",
+    "Russia",
+    "Papua New Guinea",
+    "Japan"
+   ],
+   "tiles": 466
+  },
+  "56": {
+   "bbox": [
+    148.5622,
+    -54.197,
+    159.4017,
+    78.373
+   ],
+   "countries": [
+    "Russia",
+    "Australia",
+    "Papua New Guinea",
+    "Solomon Is."
+   ],
+   "more": 1,
+   "tiles": 399
+  },
+  "57": {
+   "bbox": [
+    154.5622,
+    -56.0331,
+    165.0936,
+    78.3727
+   ],
+   "countries": [
+    "Russia",
+    "Solomon Is.",
+    "Micronesia",
+    "Australia"
+   ],
+   "tiles": 252
+  },
+  "58": {
+   "bbox": [
+    160.8739,
+    -53.3276,
+    171.0936,
+    77.477
+   ],
+   "countries": [
+    "Russia",
+    "New Zealand",
+    "Vanuatu",
+    "Solomon Is."
+   ],
+   "more": 4,
+   "tiles": 259
+  },
+  "59": {
+   "bbox": [
+    166.9133,
+    -54.236,
+    177.4017,
+    72.9728
+   ],
+   "countries": [
+    "Russia",
+    "New Zealand",
+    "Kiribati",
+    "Vanuatu"
+   ],
+   "more": 4,
+   "tiles": 290
+  },
+  "60": {
+   "bbox": [
+    172.9133,
+    -50.6397,
+    180.0,
+    72.9957
+   ],
+   "countries": [
+    "New Zealand",
+    "Russia",
+    "Fiji",
+    "Kiribati"
+   ],
+   "more": 2,
+   "tiles": 206
+  }
+ }
+}

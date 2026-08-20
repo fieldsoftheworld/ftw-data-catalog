@@ -1,9 +1,13 @@
 {
   "type": "Catalog",
   "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+  ],
   "id": "s2-planting-harvest-composites",
   "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites",
   "description": "Sentinel-2 planting- and harvest-season median composites (10 m) \u2014 the model-input features for the FTW Global [field-boundary predictions](https://source.coop/ftw/global-data/predictions). The same composites in two formats: per-tile **COGs** (one collection per year, 2024 & 2025) and a single global **Zarr mosaic**. See each collection for assets and access snippets.",
+  "updated": "2026-08-20T13:38:51Z",
   "links": [
     {
       "rel": "root",
@@ -53,9 +57,5 @@
       "type": "text/markdown",
       "title": "Human-readable documentation"
     }
-  ],
-  "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
-  ],
-  "updated": "2026-07-28T16:34:06Z"
+  ]
 }

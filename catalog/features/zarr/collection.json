@@ -2,11 +2,14 @@
   "type": "Collection",
   "stac_version": "1.1.0",
   "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json",
     "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "s2-planting-harvest-composites-zarr",
   "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 Zarr mosaic (2024 & 2025)",
+  "updated": "2026-08-20T13:38:51Z",
   "description": "The FTW Sentinel-2 planting/harvest median composites as a single global **Zarr mosaic** (Zarr V3, EPSG:4326, ~10 m), with a `time` dimension covering 2024 and 2025. **This is the same data as the per-tile COG collections** ([COGs 2024](https://source.coop/ftw/global-data/features/2024), [COGs 2025](https://source.coop/ftw/global-data/features/2025)) \u2014 choose COGs for tile/window access, or this Zarr for analysis-ready, chunked array access stackable with the [prediction Zarr](https://source.coop/ftw/global-data/predictions/zarr). Bands B02/B03/B04/B08 + N_VALID_PIXELS; the model-input features for the [field-boundary predictions](https://source.coop/ftw/global-data/predictions). Note: a GeoZarr that does not yet implement multiscales, so it is not yet directly web-tileable (in progress).",
   "license": "CC-BY-4.0",
   "keywords": [
@@ -27,7 +30,8 @@
       "name": "Taylor Geospatial Institute",
       "roles": [
         "producer",
-        "licensor"
+        "licensor",
+        "processor"
       ],
       "url": "https://taylorgeospatial.org/"
     },
@@ -46,6 +50,13 @@
       ],
       "url": "https://sentinels.copernicus.eu/",
       "description": "Sentinel-2 source imagery"
+    },
+    {
+      "name": "Source Cooperative",
+      "roles": [
+        "host"
+      ],
+      "url": "https://source.coop/ftw/global-data"
     }
   ],
   "extent": {
@@ -165,12 +176,6 @@
       "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/features/zarr/collection.json",
-      "type": "application/json",
-      "title": "FTW Global \u2014 Sentinel-2 Planting & Harvest Composites \u2014 Zarr mosaic (2024 & 2025)"
-    },
-    {
       "rel": "license",
       "href": "https://creativecommons.org/licenses/by/4.0/",
       "type": "text/html",
@@ -180,6 +185,12 @@
       "rel": "cite-as",
       "href": "https://aka.ms/ftw-global-paper",
       "title": "FTW Global paper"
+    },
+    {
+      "rel": "via",
+      "href": "https://source.coop/kerner-lab/fields-of-the-world",
+      "type": "text/html",
+      "title": "Fields of the World benchmark (training data) on Source Cooperative"
     },
     {
       "rel": "related",
@@ -210,6 +221,18 @@
       "href": "./llms.txt",
       "type": "text/markdown",
       "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
   ]
 }

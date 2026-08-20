@@ -5,7 +5,11 @@
 __pycache__/
 *.pyc
 .DS_Store
-# features per-tile STAC items + stac-geoparquet are generated to S3, never committed
+# The features MGRS browse tree (per-tile STAC items + zone/grid-zone catalogs) and its
+# stac-geoparquet are generated to S3, never committed. Items live at
+# features/<year>/<zone>/<gzd>/<id>.json; <zone> is two digits.
 # (the items.parquet is already covered by *.parquet above)
 catalog/features/*/items/
 features/*/items/
+catalog/features/*/[0-9][0-9]/
+features/*/[0-9][0-9]/
