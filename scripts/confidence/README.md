@@ -8,10 +8,32 @@ the `vectors` collection alpha release), run on the **rails** box.
 | Script | Does | Run |
 |---|---|---|
 | `run_rails.sh` | Driver: build a manifest of the `results-by-admin/` parquets, filter to a subset or `--all`, run N partitions in parallel (idempotent). | `bash scripts/confidence/run_rails.sh AD FR` · `… --all -j 4` |
-| `process_partition.sh` | One partition: download → `add_confidence.py` → `make_pmtiles.py` → upload both to `results-by-admin-conf/`. | (invoked by `run_rails.sh`) |
+| `process_partition.sh` | One partition: download → `add_confidence.py` → `gpio sort hilbert` → `make_pmtiles.py` → upload both to `results-by-admin-conf/`. | (invoked by `run_rails.sh`) |
 | `add_confidence.py` | Append a `confidence` (0–100) column: centroid point-on-surface sample of the 500 m confidence COG, rescaled `raw/0.578178×100` (clamped), nodata→null. Streams by row-group (bounded memory). Unit-tested (`tests/test_add_confidence.py`). | `python3 scripts/confidence/add_confidence.py IN.parquet OUT.parquet [--cog URL]` |
 | `make_pmtiles.py` | Build PMTiles via duckdb → GeoJSONSeq → tippecanoe, **one layer per prediction year** (`2024`/`2025`, from `determination:datetime`). Bounded duckdb memory. Workaround for the gpio streaming-geometry crash (geoparquet-io #511). | `python3 scripts/confidence/make_pmtiles.py IN.parquet OUT.pmtiles` |
 | `copy_2024_pmtiles.sh` | Stream the 264 GB `2024_with_confidence.pmtiles` from Azure into the collection's S3 path. | `bash scripts/confidence/copy_2024_pmtiles.sh` |
+
+## Why the sort step
+
+Neither the admin-partition step nor `add_confidence.py` orders rows —
+`add_confidence.py` streams `iter_batches()` and preserves input order — so the
+published parquets inherited whatever order `results-by-admin/` had, which is close
+to none. That costs readers real work, because a spatial query can only skip a row
+group whose bounding box misses the query window.
+
+Measured on Albania (493,729 rows), as a fraction of the row-group skip rate its
+row-group count allows:
+
+| stage | skip rate achieved |
+|---|---|
+| `results-by-admin/` | 38% |
+| `results-by-admin-conf/` (before this step) | 64% |
+| after `gpio sort hilbert` | 95% |
+
+A query window covering 10% of each dimension read **43% of the file** before and
+**19% after**, and the sorted file is **39% smaller** — spatial locality compresses
+better. Re-running this step over the already-published partitions is what brings
+them up to date.
 
 ## Running on rails
 

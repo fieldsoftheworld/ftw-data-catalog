@@ -39,13 +39,23 @@ log="$logdir/$stem.tippecanoe.log"
 # tippecanoe spills large temp files: keep them on scratch disk, not RAM-backed /tmp.
 export TMPDIR="$d"
 trap 'rm -rf "$d"' EXIT
-in="$d/in.parquet"; out="$d/$stem.parquet"; pm="$d/$stem.pmtiles"
+in="$d/in.parquet"; conf="$d/conf.parquet"; out="$d/$stem.parquet"; pm="$d/$stem.pmtiles"
 
 echo "[$REL] download"
 aws s3 cp --no-sign-request "$SRC_PREFIX/$REL" "$in" --quiet
 
 echo "[$REL] add confidence"
-python3 "$SCRIPT_DIR/add_confidence.py" "$in" "$out" --cog "$COG"
+python3 "$SCRIPT_DIR/add_confidence.py" "$in" "$conf" --cog "$COG"
+
+# Spatially sort the output. Neither the admin-partition step nor add_confidence.py
+# orders rows -- add_confidence.py streams iter_batches() and preserves input order
+# -- so the published files inherited whatever order results-by-admin/ had, which is
+# close to none. Measured on Albania: results-by-admin reached 38% of the row-group
+# skip rate its row-group count allows, results-by-admin-conf 64%, and a Hilbert sort
+# 95%. A 10%-of-extent window query read 43% of the file before and 19% after, and the
+# sorted file is 39% smaller because spatial locality compresses better.
+echo "[$REL] spatial sort"
+gpio sort hilbert "$conf" "$out"
 
 echo "[$REL] build pmtiles"
 if ! python3 "$SCRIPT_DIR/make_pmtiles.py" "$out" "$pm" \
