@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Cambodia",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Cambodia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2313951334,
-      "file:checksum": "1220d67d614c52cb4d8478c138c775442388628ed79d8bf0001b8ffc7f9c445f35a2"
+      ]
     },
     "pmtiles": {
       "href": "./Cambodia.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Cambodia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1198388728,
-      "file:checksum": "1220d5ec9bdf2f5254ac87a29724b334b50108d0e4c70a821f7e953d0fd994410d37"
+      ]
     },
     "style-2025": {
       "href": "./Cambodia.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12209975cfdd8ec81fdb0d51f9f617457f7e6f7a51375e15a97101de6b53f50eb374"
+      "file:size": 908,
+      "file:checksum": "12208a8a5850d3d80d41464c5ca42e287500e95aaa532990d6faef2e8e35fe2dcc3e"
     },
     "style-2024": {
       "href": "./Cambodia.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12201d14be49b0cecf0f8166ed2bdc2ed0b59484490201950a4c38e462cbb4c71487"
+      "file:size": 908,
+      "file:checksum": "122049b145bbecef75b641458f88977853748aa86a2490c713d2d5bdad4ee990de91"
     },
     "style-confidence-2025": {
       "href": "./Cambodia.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122090537a06d4ecf9752df426dc80e6ba028ddaebf300703d383edc8218c2be3713"
+      "file:size": 2652,
+      "file:checksum": "1220f06a3fc94719a6bbb5be7f768fec52977e6ecdcfdd5ade6ac37fc4a8b226f8fa"
     },
     "style-confidence-2024": {
       "href": "./Cambodia.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220db896f4e322fa07a7bcc015ef91ed9bf32c0711c1e57f65ae60eeace1e1551a7"
+      "file:size": 2652,
+      "file:checksum": "122043371057e08bef118f7749d3b3b0a7a952dd80a34067bfc45cde0382ee04520c"
     },
     "README": {
       "href": "./Cambodia.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=KH/Cambodia.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

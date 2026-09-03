@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Angola",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          21.955804857294027,
-          -17.63020457261901
+          11.669144520213816,
+          -18.0391161868254
         ],
         [
-          23.427329715008202,
-          -17.63020457261901
+          24.0880381777692,
+          -18.0391161868254
         ],
         [
-          23.427329715008202,
-          -13.715720279855809
+          24.0880381777692,
+          -4.409477639930412
         ],
         [
-          21.955804857294027,
-          -13.715720279855809
+          11.669144520213816,
+          -4.409477639930412
         ],
         [
-          21.955804857294027,
-          -17.63020457261901
+          11.669144520213816,
+          -18.0391161868254
         ]
       ]
     ]
   },
   "bbox": [
-    21.955804857294027,
-    -17.63020457261901,
-    23.427329715008202,
-    -13.715720279855809
+    11.669144520213816,
+    -18.0391161868254,
+    24.0880381777692,
+    -4.409477639930412
   ],
   "properties": {
     "title": "Angola",
@@ -118,9 +117,7 @@
       "title": "Angola field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5517635877,
-      "file:checksum": "1220c1d918923b41456d3bd279e6862a715f787eedd4e28cdc0d171f72fa593d156f"
+      ]
     },
     "pmtiles": {
       "href": "./Angola.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Angola field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2857744474,
-      "file:checksum": "12207200592ec61c1ccc3da344ca3879b67716102ee39a8f943a231509501a2edf0a"
+      ]
     },
     "style-2025": {
       "href": "./Angola.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122091f88e471d7b04c84a2d0d537453f4f8813e7797bafb0916cf158010cd5036b5"
+      "file:size": 902,
+      "file:checksum": "12207a3a9fda5b83f6ac8a3e2dda13b8df906a2ca8c4871243b1316fa5429c29e09c"
     },
     "style-2024": {
       "href": "./Angola.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220288fa91d7c67e231437eb34c0661a4c6877ce67d1d82d46651b240dd96a50dc2"
+      "file:size": 902,
+      "file:checksum": "12203c10fe8346e2beb954a6a73e3b61605aaa1c0eaf1613ccc165c66ec06115bbb4"
     },
     "style-confidence-2025": {
       "href": "./Angola.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220c19ab82b97d98ea84ebae51943c32f7a6a3e5f68a74e44262d46fdda9943f760"
+      "file:size": 2646,
+      "file:checksum": "12200e500a8eb2f45d0ac5996ba841a7f6aa2b85cc647d93f5a559723aff72386d49"
     },
     "style-confidence-2024": {
       "href": "./Angola.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220729989a70a4e010c4b97a01a41d2568f0051c57db24ac3db115322cf3929692f"
+      "file:size": 2646,
+      "file:checksum": "1220baa0625ef8bce6430118628a26aed36b2bac236dcca2f89a0d39e1961f671f95"
     },
     "README": {
       "href": "./Angola.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AO/Angola.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

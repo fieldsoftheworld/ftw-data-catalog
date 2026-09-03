@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Trinidad_and_Tobago",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Trinidad_and_Tobago field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 24510263,
-      "file:checksum": "1220dfb5bce4f1cae8bd75651cb7f9d793a7d2cbd39a8891cd6489da2153ff05e3cb"
+      ]
     },
     "pmtiles": {
       "href": "./Trinidad_and_Tobago.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Trinidad_and_Tobago field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 18474618,
-      "file:checksum": "1220da5c86c49cfbab5df385bb15849dc3b456e63c48a5081dd7b229a6c430d3fbd5"
+      ]
     },
     "style-2025": {
       "href": "./Trinidad_and_Tobago.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 942,
-      "file:checksum": "122000433ed1a0b9ef162bfa76d8e87ab997013c4fb410e100b42f47433cbb757e5f"
+      "file:size": 941,
+      "file:checksum": "122065b514e2abc2b1e142806a596e648495626770f7c246dda55e7826e0461725ce"
     },
     "style-2024": {
       "href": "./Trinidad_and_Tobago.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 942,
-      "file:checksum": "1220b86e2b82f4c0639d59544e4cebded75763665bafe437557187fd66d92b2f1c6c"
+      "file:size": 941,
+      "file:checksum": "12200dbfd1176cceef849ade9fa2a47c2709177df74b9d97e75196f326ce16a6be32"
     },
     "style-confidence-2025": {
       "href": "./Trinidad_and_Tobago.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2686,
-      "file:checksum": "1220cebaccd505c26b223bc7e0147b62e9f1ae8e6bc32822dfef8a840ea7ead91f7d"
+      "file:size": 2685,
+      "file:checksum": "122098afec4f9c5d304feaf67ddbb5340d9ba7e5d307231e0b468c5b217cf169266d"
     },
     "style-confidence-2024": {
       "href": "./Trinidad_and_Tobago.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2686,
-      "file:checksum": "122051f881bf976c68c6a54fa5c0f4d07d0ec10ffe6f9bf7d1601f17a8e3cd116bd8"
+      "file:size": 2685,
+      "file:checksum": "12204045b64b8c844fac7741f8026a145f44cfbb624f5c26dc696348587b9f3a0be3"
     },
     "README": {
       "href": "./Trinidad_and_Tobago.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TT/Trinidad_and_Tobago.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

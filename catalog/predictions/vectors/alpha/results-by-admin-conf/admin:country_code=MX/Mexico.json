@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Mexico",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -92.21282088384278,
-          14.556762898431995
+          -118.3517232736824,
+          14.538167840404594
         ],
         [
-          -92.06064683409198,
-          14.556762898431995
+          -86.8030962970406,
+          14.538167840404594
         ],
         [
-          -92.06064683409198,
-          15.416806789998795
+          -86.8030962970406,
+          32.750365301076194
         ],
         [
-          -92.21282088384278,
-          15.416806789998795
+          -118.3517232736824,
+          32.750365301076194
         ],
         [
-          -92.21282088384278,
-          14.556762898431995
+          -118.3517232736824,
+          14.538167840404594
         ]
       ]
     ]
   },
   "bbox": [
-    -92.21282088384278,
-    14.556762898431995,
-    -92.06064683409198,
-    15.416806789998795
+    -118.3517232736824,
+    14.538167840404594,
+    -86.8030962970406,
+    32.750365301076194
   ],
   "properties": {
     "title": "Mexico",
@@ -118,9 +117,7 @@
       "title": "Mexico field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6365432888,
-      "file:checksum": "122038e8269566a6374a383a31101b4d65b4ffaa3bfdee305cad81bb35ef60bb5cc3"
+      ]
     },
     "pmtiles": {
       "href": "./Mexico.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Mexico field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3452194578,
-      "file:checksum": "12204965650ec90e01cda102238346774b39bb3ce5e5bd31292327de2816b9e5e38a"
+      ]
     },
     "style-2025": {
       "href": "./Mexico.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122033e5fb1f5c5aac095b50ca96112922812cafef62083bedb9511e88357e9f268c"
+      "file:size": 902,
+      "file:checksum": "1220f8f358ad618843f566fa0e25a9c67b13ae8e8072096d8354996ab6f395b6cd6e"
     },
     "style-2024": {
       "href": "./Mexico.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220cf27b3d9855010237caa32ba3cd8174fb4b4be7c9b4af2ce7b10bea9a52f3467"
+      "file:size": 902,
+      "file:checksum": "12201d0eec31980a02a6a8c77213c3267de37b62a89d0b8792d4c03d5a84d72b1c60"
     },
     "style-confidence-2025": {
       "href": "./Mexico.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12207a4866442e90f2fd16fb017fe0990fa1eec79ee8f35f135966ef2fd5df32d66e"
+      "file:size": 2646,
+      "file:checksum": "122019527f6979cdb3cf9ef03caae0569960a39f2702d35d1b8b0f2e5b2b348ac5ea"
     },
     "style-confidence-2024": {
       "href": "./Mexico.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220467a2b08d171860eda0d23e13a80fa32711b08425c2c8bb240e8bf2ebca58873"
+      "file:size": 2646,
+      "file:checksum": "1220c395680d19f8848beb3a75087a0a89076d36af06d7ebd4251ff40528f7a41dce"
     },
     "README": {
       "href": "./Mexico.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MX/Mexico.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

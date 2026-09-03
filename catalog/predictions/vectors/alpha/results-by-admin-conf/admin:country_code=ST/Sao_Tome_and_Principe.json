@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Sao_Tome_and_Principe",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Sao_Tome_and_Principe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 63709,
-      "file:checksum": "122076a95d93f076e1ae8b45738e145f457ef2d6746d246e0c91823e8001229f9df7"
+      ]
     },
     "pmtiles": {
       "href": "./Sao_Tome_and_Principe.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Sao_Tome_and_Principe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 68413,
-      "file:checksum": "1220da3b1692d70be3d207899a557c25b695666305a82b4e740e8de22311d36af168"
+      ]
     },
     "style-2025": {
       "href": "./Sao_Tome_and_Principe.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 948,
-      "file:checksum": "122092622ecfb88dc9fb9a61ba573d460fd95ed7b68c53c3566306d3ebea373277c0"
+      "file:size": 947,
+      "file:checksum": "1220c14a7af8f88084827022a35430894e3d1c485afe26ba5bf5738bf4dd30d71406"
     },
     "style-2024": {
       "href": "./Sao_Tome_and_Principe.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 948,
-      "file:checksum": "1220aa287cb45c064f1559dff28438630100bd70513093a8baad91d78e409453a591"
+      "file:size": 947,
+      "file:checksum": "1220addb2dcfa9a85c60ec03fd1d363653a8add90458352ce1b9f2a32cfa21827d98"
     },
     "style-confidence-2025": {
       "href": "./Sao_Tome_and_Principe.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2692,
-      "file:checksum": "1220e82abbcc1bd78641701760b7dae30a64cc48d34f7b5defcf6722757e863b7309"
+      "file:size": 2691,
+      "file:checksum": "1220ec715d411163db22eedc7cfd145e16e5e9d97500205a67e95d5c2e27480d23cd"
     },
     "style-confidence-2024": {
       "href": "./Sao_Tome_and_Principe.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2692,
-      "file:checksum": "122069a217f6cdbf8309e2938637fda836dda44a8c5e6dd8ccd59ecf5a052070fafa"
+      "file:size": 2691,
+      "file:checksum": "12200b4dfb3db272180e460c89fc14ffb976078ca0640af0555e17451a78f7334bd8"
     },
     "README": {
       "href": "./Sao_Tome_and_Principe.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ST/Sao_Tome_and_Principe.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

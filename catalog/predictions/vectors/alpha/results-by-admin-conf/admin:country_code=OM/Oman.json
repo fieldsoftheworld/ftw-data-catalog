@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Oman",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Oman field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 188688969,
-      "file:checksum": "1220740e63641d15c67c0f641ee027c65c99e493ad26a580cf42877aa4d8543d5a5a"
+      ]
     },
     "pmtiles": {
       "href": "./Oman.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Oman field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 134746370,
-      "file:checksum": "122022374b445fb5236adac9b9319d274b399fbf16a9c5ff36cb7eb0ec1a9d0ac8e4"
+      ]
     },
     "style-2025": {
       "href": "./Oman.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220cc693b4287cfc7c6877a7e4485b1959b2b38423cea51fe4980cb0c28289be1b2"
+      "file:size": 896,
+      "file:checksum": "12201ecc7014b25f394f575cb00630c00a8f4eb4a4c4901eed240f29856432ce9241"
     },
     "style-2024": {
       "href": "./Oman.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220491e7424307e39e9aa1114cc9ae076c075b3b6c4ad1e74238e112b7d326f13e1"
+      "file:size": 896,
+      "file:checksum": "12206cc8cd2cb9e15427420cf953f7dc5872111fe5ff4570a0098ce5a3e577bec87d"
     },
     "style-confidence-2025": {
       "href": "./Oman.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12201ae9e05a7699498bdae9d86afdd4aa104aa161480bfdd26eb97547ee4e662fe8"
+      "file:size": 2640,
+      "file:checksum": "12200a91354ad181c22ed8f36b8bbbf60b3eb8bd280c990dc9399a820b3461682b4d"
     },
     "style-confidence-2024": {
       "href": "./Oman.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220f6210c33181695447c0f899756b1aee9e4d2ef7ac6ef3b5d7bc901ddd912dee1"
+      "file:size": 2640,
+      "file:checksum": "12205706d0edff70045a5f58a2cf6ad0fd8f0ab405d5adf5f9e12f260de923079980"
     },
     "README": {
       "href": "./Oman.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=OM/Oman.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

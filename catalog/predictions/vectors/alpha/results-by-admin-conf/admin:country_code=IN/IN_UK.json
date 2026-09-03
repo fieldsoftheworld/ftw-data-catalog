@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_UK",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          77.57119797489601,
+          28.731586987202796
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          80.7174458606528,
+          28.731586987202796
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          80.7174458606528,
+          31.1369969814042
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          77.57119797489601,
+          31.1369969814042
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          77.57119797489601,
+          28.731586987202796
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    77.57119797489601,
+    28.731586987202796,
+    80.7174458606528,
+    31.1369969814042
   ],
   "properties": {
     "title": "India \u2014 Uttar\u0101khand",
@@ -118,9 +117,7 @@
       "title": "India \u2014 Uttar\u0101khand field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 135650119,
-      "file:checksum": "12204264f97a071333891e6531efb68bdc7c478746e1cec820f61d7a25a0f3004879"
+      ]
     },
     "pmtiles": {
       "href": "./IN_UK.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 Uttar\u0101khand field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 70466612,
-      "file:checksum": "1220f6a2883ca91c22edb15353a78a0f43877de2774e96a35c08139ed374b61f0dfa"
+      ]
     },
     "style-2025": {
       "href": "./IN_UK.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207505f6b0d6c8f96c9a1d0a4c024d7eae9ce6094e6a8a0d84a14ff309f038c584"
+      "file:size": 899,
+      "file:checksum": "1220f620ac6c796cce23c33c940833af56cb9a2ae5a8ec9586b971bbdc01c5f5a5df"
     },
     "style-2024": {
       "href": "./IN_UK.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220791d8c9b0140df5006557c716df48cd1f5abfa44bbe6dc82521d633a0d42d01c"
+      "file:size": 899,
+      "file:checksum": "12207832e0cb9846923533c745d0ca9e72f7c7200b7150139cc3ce89a4435811e219"
     },
     "style-confidence-2025": {
       "href": "./IN_UK.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d0be05626e4f0633a4edbb2093f8b6a801980a8d8a1594b610553ec58cbfb77b"
+      "file:size": 2643,
+      "file:checksum": "12204c4af01efde61d07bbc8b26382031dfef57bc10e277b4b5ca7a67e9a6dfa4e79"
     },
     "style-confidence-2024": {
       "href": "./IN_UK.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a5272a148dfc8529faa7def8d8017de23f0e77759eabafb14b66a4cda0f66900"
+      "file:size": 2643,
+      "file:checksum": "1220a49b2e6e398372b8fe26137d638151d65f3f40565b960a0d19bf096dd04b9ba6"
     },
     "README": {
       "href": "./IN_UK.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_UK.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_31",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          90.26057337023161,
+          26.818631621533793
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          90.54120603340841,
+          26.818631621533793
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          90.54120603340841,
+          26.858426842336396
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          90.26057337023161,
+          26.858426842336396
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          90.26057337023161,
+          26.818631621533793
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    90.26057337023161,
+    26.818631621533793,
+    90.54120603340841,
+    26.858426842336396
   ],
   "properties": {
     "title": "IN_31",
@@ -118,9 +117,7 @@
       "title": "IN_31 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 17417,
-      "file:checksum": "1220dd248d28c011299f04582019da410f997e57045e7cf78493d28055243e1c1c83"
+      ]
     },
     "pmtiles": {
       "href": "./IN_31.pmtiles",
@@ -128,49 +125,47 @@
       "title": "IN_31 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 8670,
-      "file:checksum": "1220ba199a479d7014b7b45a28741bfb919fdba0ed1fcd3bb4af5176920fb874cf6f"
+      ]
     },
     "style-2025": {
       "href": "./IN_31.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d908c41444ef4b98d1af49951085d51fecc8ec54602a0dd893d9ec5342612055"
+      "file:size": 899,
+      "file:checksum": "12206806e1ba9aa09edbcbb3788d88a1e1f7719fba9c514191acd1ae4ff80e162620"
     },
     "style-2024": {
       "href": "./IN_31.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220315b0045184bfdeb91b8b2d6211609e6a853c67433f486666e64542d2866307b"
+      "file:size": 899,
+      "file:checksum": "12200963b8d70e2353023965e4d3dd32f90513abc2ca6273f1da07778d8ce934e583"
     },
     "style-confidence-2025": {
       "href": "./IN_31.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a400fc6d80718b099cbca9cea5e240741a7814ce1b427e72edd80b2d155fad24"
+      "file:size": 2643,
+      "file:checksum": "12209dec216f9f83fe2e0f0baff2faa23b37a3514c5ba34f38a53725fc2fbf69c4b1"
     },
     "style-confidence-2024": {
       "href": "./IN_31.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200f743f47db9050b1185f4d3772f61413d37f934ded296c175d51359c15e1defe"
+      "file:size": 2643,
+      "file:checksum": "1220f4b924c6297d3e21d60303a6318d93987ef70f733e19a57e71ae92ba6a67afd1"
     },
     "README": {
       "href": "./IN_31.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_31.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

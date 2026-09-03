@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "PK_SD",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          66.66003114792942,
+          24.0500340930098
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          71.12536034805503,
+          24.0500340930098
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          71.12536034805503,
+          28.533060039180796
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          66.66003114792942,
+          28.533060039180796
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          66.66003114792942,
+          24.0500340930098
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    66.66003114792942,
+    24.0500340930098,
+    71.12536034805503,
+    28.533060039180796
   ],
   "properties": {
     "title": "Pakistan \u2014 Sindh",
@@ -118,9 +117,7 @@
       "title": "Pakistan \u2014 Sindh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1991635567,
-      "file:checksum": "122034bab2aca1c8e3d284ea0fbd44e8616123a544b4db6f7315cfbb557972ed8d69"
+      ]
     },
     "pmtiles": {
       "href": "./PK_SD.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Pakistan \u2014 Sindh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 974110426,
-      "file:checksum": "1220810cf89787ce0c66040d21a24de995c1bd626fc1307fbda04d77b2d9f96ce094"
+      ]
     },
     "style-2025": {
       "href": "./PK_SD.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220522a1e32c239afe1895bfe62c91ada92915a0ec34e02b5b0d0c5aa372fcab99e"
+      "file:size": 899,
+      "file:checksum": "12201acb51bffecda933754b037d967df49a69c6622f9f35f26050fa6edb877542f1"
     },
     "style-2024": {
       "href": "./PK_SD.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206d63923bf4615bac599fc14f33792b6fcb22e6a3fdf4369ddf2426aed888a98d"
+      "file:size": 899,
+      "file:checksum": "1220e8eb814692a29054145b9bd4f0d1b54af40d47ef5e2fb1c1c89bf7c6124e1855"
     },
     "style-confidence-2025": {
       "href": "./PK_SD.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207a3258c5707371ac528a15e9413eca19e1aac20988f129ffb822d46684bd2c53"
+      "file:size": 2643,
+      "file:checksum": "12206324948865cfa648a21cdf48a87401e21602d9c54af85ef639313a0e98946ff6"
     },
     "style-confidence-2024": {
       "href": "./PK_SD.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208da6edc698abdc139cb8dbeac6ba103812d63eea3ee79ce4924243a833e8f2cc"
+      "file:size": 2643,
+      "file:checksum": "1220c35a838956a7c4c13bec527f54663060257387c70e211f9579683eeb3015d695"
     },
     "README": {
       "href": "./PK_SD.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_SD.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

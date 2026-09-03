@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_NJ",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -75.56260829747279,
+          38.9403636754436
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -73.9992759551982,
+          38.9403636754436
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -73.9992759551982,
+          41.352241515915395
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -75.56260829747279,
+          41.352241515915395
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -75.56260829747279,
+          38.9403636754436
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -75.56260829747279,
+    38.9403636754436,
+    -73.9992759551982,
+    41.352241515915395
   ],
   "properties": {
     "title": "United States \u2014 New Jersey",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 New Jersey field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 17498207,
-      "file:checksum": "122088f3be9505e90cb6c2e681932bf9588e91f9c08afc5e6d8f361511052fd0533e"
+      ]
     },
     "pmtiles": {
       "href": "./US_NJ.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 New Jersey field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 14445785,
-      "file:checksum": "122092e41fb12ea77c8bac95a02710d11bed5a945e35f3c8f55856cb6c11ee18e171"
+      ]
     },
     "style-2025": {
       "href": "./US_NJ.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220096cf2075cd4a2ad7a46ad7f811f80985af12febef60373b45c96a7aaee63265"
+      "file:size": 899,
+      "file:checksum": "122032687abe6578a9009b2025ddf90c3bd9c33f86f679d60bba03b408e497d7fc3e"
     },
     "style-2024": {
       "href": "./US_NJ.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209d2b59221de3791b6b6ac7d27986ce72ca343c23d241400cc43e3138e748404a"
+      "file:size": 899,
+      "file:checksum": "1220f87b84e9fa4fe72914d25522c405100f282a6bcee2abbbecc139b214fa3700fc"
     },
     "style-confidence-2025": {
       "href": "./US_NJ.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e69e986413f2d22fc5bb1248378f7b4f20ecdefce3a2073ac94ae320c3a26ea6"
+      "file:size": 2643,
+      "file:checksum": "1220bf06d39894227def776a2fed50f76a96c29c66de3f8544852fdd290fc2998f13"
     },
     "style-confidence-2024": {
       "href": "./US_NJ.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202379720cc597028f7d594ed5fcd853708f16c0a9a6adbcf0b8e4fef7c59d9716"
+      "file:size": 2643,
+      "file:checksum": "12202482e7ad46f394913f790d71daac24f0b0d974db4694e611b256fa7055f44198"
     },
     "README": {
       "href": "./US_NJ.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NJ.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

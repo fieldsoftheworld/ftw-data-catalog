@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "ET_OR",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          34.145628959439414,
+          3.4982729064173963
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          42.98645616149062,
+          3.4982729064173963
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          42.98645616149062,
+          10.48776894476479
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          34.145628959439414,
+          10.48776894476479
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          34.145628959439414,
+          3.4982729064173963
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    34.145628959439414,
+    3.4982729064173963,
+    42.98645616149062,
+    10.48776894476479
   ],
   "properties": {
     "title": "Ethiopia \u2014 Oromia",
@@ -118,9 +117,7 @@
       "title": "Ethiopia \u2014 Oromia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4020116319,
-      "file:checksum": "1220e74b4174dcb6ec2797cefd113a7900fc1cd787df6712d0e97d693dc59dcdac49"
+      ]
     },
     "pmtiles": {
       "href": "./ET_OR.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ethiopia \u2014 Oromia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1663643359,
-      "file:checksum": "12202df3c55e4e21a9c109785fe71039e9aaf4d33961e99016ace671d006953c1371"
+      ]
     },
     "style-2025": {
       "href": "./ET_OR.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12202d653e9359ec747c563d83dbd4216eb23e46d6666a33d9321ec24f8bb325a2a6"
+      "file:size": 899,
+      "file:checksum": "122093b8e5dc3ba49dc87a1e0cf278b7f5a80cbde4c4415f5ad8f9f06ce014ba1499"
     },
     "style-2024": {
       "href": "./ET_OR.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e8233adb2293f9c66396d171c232bc8770a3b900ab93e314542236ceb797c082"
+      "file:size": 899,
+      "file:checksum": "12206f6f9e6b696297513c1beca7eaebdf43e3f86ef872eb59324c9fc8daa7e07aad"
     },
     "style-confidence-2025": {
       "href": "./ET_OR.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206d07e50d8f1b7c4bf3b6eada6c1c9c19f115986da0cf2b66ac9ecd0028251a51"
+      "file:size": 2643,
+      "file:checksum": "1220f65e1657c7d1a2a6bb9bea0603dbd89e980bdae2f76f741400bf01216ba95e7a"
     },
     "style-confidence-2024": {
       "href": "./ET_OR.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12204542ef4860070ae39c6d7fc2951f665c266a26a8a2be85708fa3f0938a064d40"
+      "file:size": 2643,
+      "file:checksum": "122066e320ca91654e491a2652919aac2024c0ce22667e3a20a94cea091621cadb17"
     },
     "README": {
       "href": "./ET_OR.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_OR.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

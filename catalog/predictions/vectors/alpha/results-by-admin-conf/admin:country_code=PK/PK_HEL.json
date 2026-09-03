@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "PK_HEL",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          62.738899346499416,
+          29.409812533612797
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          64.50614850868801,
+          29.409812533612797
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          64.50614850868801,
+          29.579593498210798
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          62.738899346499416,
+          29.579593498210798
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          62.738899346499416,
+          29.409812533612797
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    62.738899346499416,
+    29.409812533612797,
+    64.50614850868801,
+    29.579593498210798
   ],
   "properties": {
     "title": "PK_HEL",
@@ -118,9 +117,7 @@
       "title": "PK_HEL field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 85469,
-      "file:checksum": "122007eb3c5e262c7ce6e426b751f81da2cdfc6d3a3d92aedae6772a20a12f837072"
+      ]
     },
     "pmtiles": {
       "href": "./PK_HEL.pmtiles",
@@ -128,49 +125,47 @@
       "title": "PK_HEL field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 72495,
-      "file:checksum": "12205985c9e7b0ae88774627209bd5b263981301a58d3ff493fc8a48ba65c16f3618"
+      ]
     },
     "style-2025": {
       "href": "./PK_HEL.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220e36189d1b5c92d68288d83ac753d35f482b9b5403236720274b10f6213a4add2"
+      "file:size": 902,
+      "file:checksum": "1220f1b3f6b03af5a82d5b4da7f81ff5a65b32e8fdefd60c687da701cb2c05f0db3a"
     },
     "style-2024": {
       "href": "./PK_HEL.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12201c56742b2c6dae8eada76d030bf04099df24cf6d365282a349889f9686d9aa41"
+      "file:size": 902,
+      "file:checksum": "12200f062d6c558e71874ea233f388cf1087b40992d7588873d6a1e1bd47abb722b5"
     },
     "style-confidence-2025": {
       "href": "./PK_HEL.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12209ed185e6964e4813f80cef355e766f306891d34dcf14f42b9e090c4c974b8483"
+      "file:size": 2646,
+      "file:checksum": "12200fc388ab0ff348f39fe5bfe3acbc7d8353637446b18d493a2a632db86881a6d0"
     },
     "style-confidence-2024": {
       "href": "./PK_HEL.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12204c3f5c17b088e7d7cf19357287d30e87d3a8aebb52a4af99cead85f4c8503ad8"
+      "file:size": 2646,
+      "file:checksum": "122046da98f8926b2e4bacb1abcd143fdd1ce262385987d406125075f58d1b469b49"
     },
     "README": {
       "href": "./PK_HEL.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_HEL.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

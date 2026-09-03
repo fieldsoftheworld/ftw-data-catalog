@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_BCN",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -116.19119312577419,
+          32.49326841182779
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -114.7462583027272,
+          32.49326841182779
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -114.7462583027272,
+          32.750365301076194
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -116.19119312577419,
+          32.750365301076194
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -116.19119312577419,
+          32.49326841182779
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -116.19119312577419,
+    32.49326841182779,
+    -114.7462583027272,
+    32.750365301076194
   ],
   "properties": {
     "title": "US_BCN",
@@ -118,9 +117,7 @@
       "title": "US_BCN field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 674384,
-      "file:checksum": "12206cd328b9071c3f67ac7a305252d1aca879e4538a484e231f8f9cf6ab1107ef35"
+      ]
     },
     "pmtiles": {
       "href": "./US_BCN.pmtiles",
@@ -128,49 +125,47 @@
       "title": "US_BCN field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 395145,
-      "file:checksum": "1220cea4984488cf3c753d6525529417c756949466edf99db5f6f008ae69b03bd0ae"
+      ]
     },
     "style-2025": {
       "href": "./US_BCN.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220e0b2d76cffbcc31f01e5e5a75dcdc283e6976ea02703bd806a2411842a286862"
+      "file:size": 902,
+      "file:checksum": "1220be1a2919cf5fd89371fef7a8ccc144e7c2c127feeabe402c2777e08d7b975428"
     },
     "style-2024": {
       "href": "./US_BCN.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12208e5186a1d60fba8575ca31b781010ef0146a6b250cd7f9c4fe922da37aaeb9ed"
+      "file:size": 902,
+      "file:checksum": "12201918bc5295f3d895ffde3bb858da7a291f3f66ca01daff8bc0f89514396b210f"
     },
     "style-confidence-2025": {
       "href": "./US_BCN.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220f61b60d1021d98dd8833762fb216b1d6c680387c145ff4a648afcd19b95d7871"
+      "file:size": 2646,
+      "file:checksum": "12209efe158ab11d3f4ed326978465c61e45375ee718ef7be7a67cc00ce3e32228eb"
     },
     "style-confidence-2024": {
       "href": "./US_BCN.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220c97736d5396c97d8af9e645cf450e5155c442ed4a5a33723ebb415c244f2bfaf"
+      "file:size": 2646,
+      "file:checksum": "1220987cab335fed339a9dc8d83a15d64f6d76f3e841ce4ce85a6af9547bc676e1aa"
     },
     "README": {
       "href": "./US_BCN.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_BCN.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

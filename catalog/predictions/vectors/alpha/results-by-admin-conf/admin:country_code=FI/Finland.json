@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Finland",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Finland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 372753091,
-      "file:checksum": "122035019aee3e430039909588e2d9221375488aad47da2af6474edb159571b3bc00"
+      ]
     },
     "pmtiles": {
       "href": "./Finland.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Finland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 298908558,
-      "file:checksum": "12209bee17cf6543d748e3ecd8ac66c5b2b8316d22586fae4f6016288b2930a367f8"
+      ]
     },
     "style-2025": {
       "href": "./Finland.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12206b395c8004ddae343448d93db15cdc8c865a59994465c456d5df72cce4a2844f"
+      "file:size": 905,
+      "file:checksum": "122053a699fbe7eb699a5db944d9e37885531f8e4bf91e4337d892e90b23f73d1cd7"
     },
     "style-2024": {
       "href": "./Finland.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12206ac777a0a588bee9797d9a8cb2080e1609ed6144781914d9db45680f4cbed4c6"
+      "file:size": 905,
+      "file:checksum": "1220ac477a2a7f56bdcd70015c037d8b99f63deb3e8e2ebed446bd5a5fab035eff30"
     },
     "style-confidence-2025": {
       "href": "./Finland.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220d591c1130bdfbc669c5a5dd71c973abc0058434e68f731c1119dfc31630faa49"
+      "file:size": 2649,
+      "file:checksum": "1220a2f1b5dd7f2e44c46533d0326109f53f9b987c4733a513531f327c636728265e"
     },
     "style-confidence-2024": {
       "href": "./Finland.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122079adba8543d9d4fa401092d6b3d34104b462291ee1d242e979493753b25889b1"
+      "file:size": 2649,
+      "file:checksum": "1220365fd39dd717004323b2a2072853bd478bea692e4834029568a612b54d350e5d"
     },
     "README": {
       "href": "./Finland.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=FI/Finland.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

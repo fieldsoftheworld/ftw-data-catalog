@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "North_Korea",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "North_Korea field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 616119112,
-      "file:checksum": "122066397dcf4040ae8dac13f82dda3ccb33484788edc2c1914260332199732de4b0"
+      ]
     },
     "pmtiles": {
       "href": "./North_Korea.pmtiles",
@@ -128,49 +125,47 @@
       "title": "North_Korea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 400331951,
-      "file:checksum": "122002b31b3c5b7367997300b9176ddc0a3663bc16fb274f1348926b0f6bb8717f14"
+      ]
     },
     "style-2025": {
       "href": "./North_Korea.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "122081fd6be92c8610acfeb33962ca0849a62dc58ed14d88d73191c012f35ebb345f"
+      "file:size": 917,
+      "file:checksum": "1220afa8c79dd5be3a1a40870ac8c0043de0663216b7e13ebd93ae146af5ea14d825"
     },
     "style-2024": {
       "href": "./North_Korea.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220f566a01908ce445ed8a31b15b60b3ff3f6605749b66a836a1fc776a416064b50"
+      "file:size": 917,
+      "file:checksum": "1220c307f54810be2db6d346b4f1d2e1a91fdfe255adff70fa31ef0729899105690b"
     },
     "style-confidence-2025": {
       "href": "./North_Korea.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12208f515f11418819ba5d1867f14a25e6ae26dab5ec55289fd5c4660263dfd1a91f"
+      "file:size": 2661,
+      "file:checksum": "1220a343563ce362f8efff536ad9a1753302c3db22bfb454b65a1e8a475bbb22e142"
     },
     "style-confidence-2024": {
       "href": "./North_Korea.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "122091cfbd93b282a51df02a91023cdec2a845d7cb7c1fb983f38232bf186be9b456"
+      "file:size": 2661,
+      "file:checksum": "1220e290b9381f4e38408fc7efb89ce6f554dba599aeec39515dac4095c415c9384a"
     },
     "README": {
       "href": "./North_Korea.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=KP/North_Korea.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Ireland",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Ireland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 218535862,
-      "file:checksum": "1220b96d28dc61f68c772f186cbbb58806be20700bd706997e072813be4a3b2a5eb8"
+      ]
     },
     "pmtiles": {
       "href": "./Ireland.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ireland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 163844321,
-      "file:checksum": "12202a0e6d8ab0137a8758922e77753d2bc1ad2d8f2e5b77aaecd88e521b10ae005d"
+      ]
     },
     "style-2025": {
       "href": "./Ireland.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220633e4903e0e2904a824e11456dacca85b90fe63f3494550af2d2dd8e6462d647"
+      "file:size": 905,
+      "file:checksum": "12209695b959c36db45aef0b8c02a1f9859a09a6e18a6dd78f5d6f80dab5a66eb847"
     },
     "style-2024": {
       "href": "./Ireland.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220dd9d82047fd18d08fd1988bd2fa20262dfb92ad10e90ee61e46abb82e45de87b"
+      "file:size": 905,
+      "file:checksum": "122071f72923cec7ee10d59d0a2ee1863b6d9a7e9f7998731598773599bde12b60bf"
     },
     "style-confidence-2025": {
       "href": "./Ireland.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12202e91ce9f0edbf21ed20683f3dd539bff00d9ff9dc0466c8688281f723e94f67a"
+      "file:size": 2649,
+      "file:checksum": "12202bad0801df88b16c8249fcda07c36e53c372bc5bceb8c7827c519fb1c98b9952"
     },
     "style-confidence-2024": {
       "href": "./Ireland.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12202b6cd68aedbeb23259082a58ae38bf41c5d0a21bfd979234881ab3579cba6d64"
+      "file:size": 2649,
+      "file:checksum": "122009da82ed251fbd386f39f274eb34bfc523dcc6b92b8276203fbc0ad5c15bfaa4"
     },
     "README": {
       "href": "./Ireland.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IE/Ireland.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

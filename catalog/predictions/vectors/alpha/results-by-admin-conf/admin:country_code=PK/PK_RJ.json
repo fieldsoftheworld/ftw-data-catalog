@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "PK_RJ",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          69.48719861767982,
+          24.686937288247798
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          73.97399747417523,
+          24.686937288247798
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          73.97399747417523,
+          30.20445931289
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          69.48719861767982,
+          30.20445931289
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          69.48719861767982,
+          24.686937288247798
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    69.48719861767982,
+    24.686937288247798,
+    73.97399747417523,
+    30.20445931289
   ],
   "properties": {
     "title": "PK_RJ",
@@ -118,9 +117,7 @@
       "title": "PK_RJ field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3675818,
-      "file:checksum": "122059b50a8725e5ef066418c6d7c4f36c7d023d74e37f0750b23fe8839b9919c92e"
+      ]
     },
     "pmtiles": {
       "href": "./PK_RJ.pmtiles",
@@ -128,49 +125,47 @@
       "title": "PK_RJ field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2181259,
-      "file:checksum": "1220f369f73b9747b1a84fd688e5893ca80357f2a85af96f516b0925d5ec2fb06b33"
+      ]
     },
     "style-2025": {
       "href": "./PK_RJ.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e0b68bebe3287217ac2eeaaf8dce02b6c2d0dbfc463d6ef726f47e5f5fadf4e1"
+      "file:size": 899,
+      "file:checksum": "12200cf8dd53d37be977f19dd5f30be135b428e2dd945080040a584e11e85eb1cd12"
     },
     "style-2024": {
       "href": "./PK_RJ.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201296cd0f85794c9053a985832a62dc592c0300515e05c2f22dcefde09554bedd"
+      "file:size": 899,
+      "file:checksum": "1220eb6defd4832b71bb07f50be65c05c1d19c260d3da7a8ea52ef926e885d35b530"
     },
     "style-confidence-2025": {
       "href": "./PK_RJ.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f9e1b329b676ece9bfc05cf4c5d9846fa37a0c61de89ccb48fc4fcb82ae947b8"
+      "file:size": 2643,
+      "file:checksum": "122096ef9229089fca3e8fd070f6f4c1446326f659a8808f42b71ae271dc0ed974c1"
     },
     "style-confidence-2024": {
       "href": "./PK_RJ.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202ec8d4004fcbf0560d66e0cb1015cc49100160768c581a8d109a6af9a684aa52"
+      "file:size": 2643,
+      "file:checksum": "12209e84b4059ad35fc1b58f956c39de6976adf542f2c57c8bc070a8460a0ed60894"
     },
     "README": {
       "href": "./PK_RJ.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_RJ.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

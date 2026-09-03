@@ -2,7 +2,7 @@
 
 Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery.
 
-~3.2 billion field polygons across 195 countries in 574 country/subdivision partitions. GeoParquet partitioned by country; query the whole set with the glob `alpha/results-by-admin-conf/admin:country_code=*/*.parquet`.
+~3.2 billion field polygons across 219 countries in 598 country/subdivision partitions. GeoParquet partitioned by country; query the whole set with the glob `alpha/results-by-admin-conf/admin:country_code=*/*.parquet`.
 
 ## How the vectors are made
 A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.

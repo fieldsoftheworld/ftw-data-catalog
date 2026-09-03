@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_AMU",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          128.03872444844882,
+          48.8846773161836
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          130.2038359874652,
+          48.8846773161836
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          130.2038359874652,
+          49.555626535539396
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          128.03872444844882,
+          49.555626535539396
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          128.03872444844882,
+          48.8846773161836
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    128.03872444844882,
+    48.8846773161836,
+    130.2038359874652,
+    49.555626535539396
   ],
   "properties": {
     "title": "CN_AMU",
@@ -118,9 +117,7 @@
       "title": "CN_AMU field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 12423,
-      "file:checksum": "122013cc10d6d2a0d1e3b4bd9bb0d44f30fce09185393766bce0186f5c593e72bfa6"
+      ]
     },
     "pmtiles": {
       "href": "./CN_AMU.pmtiles",
@@ -128,49 +125,47 @@
       "title": "CN_AMU field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7405,
-      "file:checksum": "1220f42a81040660639acd9f73d7fdbe0aacec1dba8cc686292cda2c490bf679b252"
+      ]
     },
     "style-2025": {
       "href": "./CN_AMU.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12205f72994d4cf13ffed70ace4bbd0df881e7da463c6867fcaf883c0958a2ef60ba"
+      "file:size": 902,
+      "file:checksum": "1220432b3ff1b32b58c274ccba44a6407e26c940638d1dc8d8a038eb888ed57d1a83"
     },
     "style-2024": {
       "href": "./CN_AMU.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220b620ca0783fd61a4e7fb50b2468bba4057c20aa08f4e16b8a8ab60b3ffbe7338"
+      "file:size": 902,
+      "file:checksum": "12206304e69a234cf1d6418366f0c91fa2e0577ee53e4e32f7b6693b489ec00ccf36"
     },
     "style-confidence-2025": {
       "href": "./CN_AMU.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12203a90ef179c493ddf881fc9f6538b21ac61fa5209958eafab9abac746ac1a1851"
+      "file:size": 2646,
+      "file:checksum": "1220dd7f5cc221b44040456b5ad016b67d509d15bf4da9d77c7cc405261b8fb27475"
     },
     "style-confidence-2024": {
       "href": "./CN_AMU.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122068445dffdd0acbd4808b50978f05be12d419b572c50c1cf4a1424cd28b0d3d81"
+      "file:size": 2646,
+      "file:checksum": "1220058697bdbd092c41fe2be786e34e4ee31e6ebdd6ed949c1397f6434a7c70966a"
     },
     "README": {
       "href": "./CN_AMU.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_AMU.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Myanmar",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          93.95443224021562,
-          21.447714112353996
+          92.17272025511681,
+          9.991451574709789
         ],
         [
-          96.98300125633043,
-          21.447714112353996
+          101.06996144963763,
+          9.991451574709789
         ],
         [
-          96.98300125633043,
-          27.265631663776993
+          101.06996144963763,
+          28.054888571162195
         ],
         [
-          93.95443224021562,
-          27.265631663776993
+          92.17272025511681,
+          28.054888571162195
         ],
         [
-          93.95443224021562,
-          21.447714112353996
+          92.17272025511681,
+          9.991451574709789
         ]
       ]
     ]
   },
   "bbox": [
-    93.95443224021562,
-    21.447714112353996,
-    96.98300125633043,
-    27.265631663776993
+    92.17272025511681,
+    9.991451574709789,
+    101.06996144963763,
+    28.054888571162195
   ],
   "properties": {
     "title": "Myanmar",
@@ -118,9 +117,7 @@
       "title": "Myanmar field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4550293543,
-      "file:checksum": "122070f61586336c96c590b93430ea0b8021d30b935dc0fb453a5b5fb9c994da524c"
+      ]
     },
     "pmtiles": {
       "href": "./Myanmar.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Myanmar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2216334551,
-      "file:checksum": "1220f871fafbf8a48ad66802fc216841f1f6aee9c39b88524f8e8fc62309d2e4a440"
+      ]
     },
     "style-2025": {
       "href": "./Myanmar.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12205614738752f48d92a829def3aca9a00a117e49ae157b70b1546065812c581e68"
+      "file:size": 905,
+      "file:checksum": "12201e21c5c1fee5e2b60c693921f36125f2e105098de1b9d77fa6f5707f1228490c"
     },
     "style-2024": {
       "href": "./Myanmar.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12201da8c431fdaabc63d957a26e9b2cf5d205b475efd225e19a331cfbc2b19458dc"
+      "file:size": 905,
+      "file:checksum": "1220093144448c9c103a6773816903d75dabecdc247104566cdbad01125919fcc235"
     },
     "style-confidence-2025": {
       "href": "./Myanmar.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220667b30ad1f69dce209b9af4b6227ec27485d423d8586e2e7e673e893fe75eed8"
+      "file:size": 2649,
+      "file:checksum": "12209da4c7a166723444e89b1194f27eefd79d1af596b2b4c8d0b69dea14f3d5de74"
     },
     "style-confidence-2024": {
       "href": "./Myanmar.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12204d09d1f0e5d1b16110d5536f4f0c250f5be9dcb467fc0796a3d95fe1dfab83f2"
+      "file:size": 2649,
+      "file:checksum": "12207c3d19726e73af07279cda54d4be7658e074381bbb264d2a3b2fca5c7af31561"
     },
     "README": {
       "href": "./Myanmar.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MM/Myanmar.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

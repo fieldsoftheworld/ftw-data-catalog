@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "BR_S",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -61.3059479871418,
+          -20.0690317725508
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -57.47725248865959,
+          -20.0690317725508
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -57.47725248865959,
+          -13.47838625421141
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -61.3059479871418,
+          -13.47838625421141
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -61.3059479871418,
+          -20.0690317725508
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -61.3059479871418,
+    -20.0690317725508,
+    -57.47725248865959,
+    -13.47838625421141
   ],
   "properties": {
     "title": "BR_S",
@@ -118,9 +117,7 @@
       "title": "BR_S field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2497065,
-      "file:checksum": "12200c810f26da3c6b37e62ed0a56303867520274787f7fd90841c453332f5cfac20"
+      ]
     },
     "pmtiles": {
       "href": "./BR_S.pmtiles",
@@ -128,49 +125,47 @@
       "title": "BR_S field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1706828,
-      "file:checksum": "1220e5edc90938e16acf691ae9ed494d3a8cf6997d104ec4da389e9aa185969d6e2d"
+      ]
     },
     "style-2025": {
       "href": "./BR_S.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12202998f7dc8bd6991bf0650f7d834c0a4f236d673d5a861102ccc43c22b104966e"
+      "file:size": 896,
+      "file:checksum": "12209b7530b9b8f4c9cb08509efd1fb8741a284e8fbdbed41ec0d063598d10e7b348"
     },
     "style-2024": {
       "href": "./BR_S.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12203dd029d4ab97096448e5d5f9ef56e350c02ef2e59a55823808759a4533e4390e"
+      "file:size": 896,
+      "file:checksum": "1220947083ee87fdb79b530a58d66e118b6150154880fa8dc669ac9461821f34d0bd"
     },
     "style-confidence-2025": {
       "href": "./BR_S.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220099795aa27f7965ee8ff61d76cb24bf12cf90697b86288f68fcbfe205e660e94"
+      "file:size": 2640,
+      "file:checksum": "12208a542fad651ecf83e4d0a53fc2a1d6dd37d511505277cf74fed879d139043d75"
     },
     "style-confidence-2024": {
       "href": "./BR_S.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12207a266ee7445d1f39bdf5383261084e5ada07de2d72cd45ce021f2c66dc9c7587"
+      "file:size": 2640,
+      "file:checksum": "122076c30c7ab499385586d2d6b578dd8a4f9a5d92f12c6f43b2bcd2539a8a5215e8"
     },
     "README": {
       "href": "./BR_S.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_S.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

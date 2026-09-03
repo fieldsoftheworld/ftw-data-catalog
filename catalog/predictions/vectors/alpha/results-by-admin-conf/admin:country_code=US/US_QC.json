@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_QC",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -74.4936170388928,
+          44.9868117950874
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -69.02882592759399,
+          44.9868117950874
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -69.02882592759399,
+          47.434891608433794
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -74.4936170388928,
+          47.434891608433794
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -74.4936170388928,
+          44.9868117950874
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -74.4936170388928,
+    44.9868117950874,
+    -69.02882592759399,
+    47.434891608433794
   ],
   "properties": {
     "title": "US_QC",
@@ -118,9 +117,7 @@
       "title": "US_QC field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 94672,
-      "file:checksum": "1220bc6e1cb67790b8f9224a698c63c4b78b4bd3c0ad23a479a9680c1aab9a11503f"
+      ]
     },
     "pmtiles": {
       "href": "./US_QC.pmtiles",
@@ -128,49 +125,47 @@
       "title": "US_QC field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 83856,
-      "file:checksum": "12208f560888d22b4ea98ad3191d4d85c64efc99d3a9fab8776e127f43cf98014488"
+      ]
     },
     "style-2025": {
       "href": "./US_QC.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208c8af8fb0fda0408c63d57f22888a0c71bd4c5bec42e1015939fa00358de492e"
+      "file:size": 899,
+      "file:checksum": "12201473422d7ddb1a06c59a203102272d9ec842faec939b30bb02a8d4978869d69c"
     },
     "style-2024": {
       "href": "./US_QC.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e9636772939954b560661b301e1c93ec727ad7e6bab1dd3480db84ac39761e60"
+      "file:size": 899,
+      "file:checksum": "12207db177b2948a6bd57b6c80511d22e77d0e811f11ffa26648f23117f37762a157"
     },
     "style-confidence-2025": {
       "href": "./US_QC.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f3f6cd47151c1be55eedd532abbda79faeaab64203b42f2b0c35698ad56ffb96"
+      "file:size": 2643,
+      "file:checksum": "12208cab84b3afefb91e7ce9244b4322a78d3c203aa7b2a1cee8bed71dda008c6d71"
     },
     "style-confidence-2024": {
       "href": "./US_QC.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208f06b5a92254c92eee64ee10a9fdb71e0034d0cd66845e406312fde29a91a4d6"
+      "file:size": 2643,
+      "file:checksum": "12203af238bd65e7b1bbf90fa136b16ab63d26e7b4ce05c0411696eea044b9c5c128"
     },
     "README": {
       "href": "./US_QC.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_QC.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

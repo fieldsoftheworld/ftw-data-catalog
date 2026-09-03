@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Singapore",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Singapore field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 158024,
-      "file:checksum": "122076018d31c65e6c691a52cfd187398c2df20a8136d01574514b77251be11e638c"
+      ]
     },
     "pmtiles": {
       "href": "./Singapore.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Singapore field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 173171,
-      "file:checksum": "1220ee1cc58deceb7efc233b2a10065635ca073ae6eb0b8dbdebb25011b0bca2eb48"
+      ]
     },
     "style-2025": {
       "href": "./Singapore.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220d0afa0ddf91acbe2cf4bde1976ff0acc6ab03812dcd45dc34d899a01908c2a13"
+      "file:size": 911,
+      "file:checksum": "1220efa59cc537622d0c467209bcbcce28dfdc155d881ac008974037bf5aadbf4d9b"
     },
     "style-2024": {
       "href": "./Singapore.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220ec41bb6e51c136aad15dbd52bee0b017ddc2c3f92e5e60ecd28756d6c514580f"
+      "file:size": 911,
+      "file:checksum": "122024e6a8535b95f7fff09fbbe622d9178cbdbfac24aa292a38ca6e530d53328211"
     },
     "style-confidence-2025": {
       "href": "./Singapore.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "1220b04cb42768f189694261fd47c304eef94c1ed16b26f57b9f13499a2f604ba8fb"
+      "file:size": 2655,
+      "file:checksum": "1220c9600d8cdf664f44d46f38c18521046812128ecf37f62db52452727e8d28b123"
     },
     "style-confidence-2024": {
       "href": "./Singapore.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "122048100fc2cfde61c3b6bfce062741404739c8a9c9f5b24922f0b4dc7ab84151c3"
+      "file:size": 2655,
+      "file:checksum": "1220583e45ee68ce99b04d8cff50dec7c8f110ef683c5474eae6c2213b0e8132ffed"
     },
     "README": {
       "href": "./Singapore.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SG/Singapore.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

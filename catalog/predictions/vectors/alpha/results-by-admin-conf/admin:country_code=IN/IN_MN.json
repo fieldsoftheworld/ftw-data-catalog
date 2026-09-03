@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_MN",
   "geometry": {
@@ -13,7 +12,7 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
+          93.04839477517042,
           23.846027441897597
         ],
         [
@@ -22,24 +21,24 @@
         ],
         [
           94.74000606847463,
-          25.0227263071194
+          25.549406622166
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          93.04839477517042,
+          25.549406622166
         ],
         [
-          94.15466598100342,
+          93.04839477517042,
           23.846027441897597
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
+    93.04839477517042,
     23.846027441897597,
     94.74000606847463,
-    25.0227263071194
+    25.549406622166
   ],
   "properties": {
     "title": "India \u2014 Manipur",
@@ -118,9 +117,7 @@
       "title": "India \u2014 Manipur field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 57628259,
-      "file:checksum": "1220b2ebbdabe5709ce53ce40a2a6bee6e62ed51b6630ef621650c081b2d80213901"
+      ]
     },
     "pmtiles": {
       "href": "./IN_MN.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 Manipur field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 37750889,
-      "file:checksum": "1220c9d927e01eb07b5b0b5c6730784cbd594f4c45ee8008020f6dc073311f761c29"
+      ]
     },
     "style-2025": {
       "href": "./IN_MN.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203549d99977fc0b6a190d9da5708e12b4a502231fa3a2dccce8ad9f1d70710877"
+      "file:size": 899,
+      "file:checksum": "12205851a18fd7c1ef3ee121f2e9178048fb7cdffad6ca283508119bfb14231a8765"
     },
     "style-2024": {
       "href": "./IN_MN.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122016d642ea114e9c31ce381992d4f754ed7f48eefc4be5d19c545798d69c8c9388"
+      "file:size": 899,
+      "file:checksum": "1220821fa8ebfb8a62a80a6fb280d33238f617bf48dbb8c9c2336c95269ece3fb9ca"
     },
     "style-confidence-2025": {
       "href": "./IN_MN.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ce372775bf61ca9bcad0106ca87ef17027cf30640e22040bd6e3373076088b82"
+      "file:size": 2643,
+      "file:checksum": "1220d644223637dd77f28497fa919e4dc9e58f3e3b1faa97ee16ac2afe5a763f01d7"
     },
     "style-confidence-2024": {
       "href": "./IN_MN.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209a06335d92ae2f222db0c4e8573a7e61a5a5c4df7a1783a57fdc07c5be662905"
+      "file:size": 2643,
+      "file:checksum": "1220d3c72b3b250cca06fdd986cabfacead268a3049664b95bf833d34320c4655510"
     },
     "README": {
       "href": "./IN_MN.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_MN.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

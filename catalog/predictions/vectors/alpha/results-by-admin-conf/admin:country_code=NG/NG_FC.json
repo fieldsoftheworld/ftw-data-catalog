@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "NG_FC",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          6.777117128638209,
+          8.420393749390001
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          7.725465088035611,
+          8.420393749390001
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          7.725465088035611,
+          9.409165747977388
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          6.777117128638209,
+          9.409165747977388
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          6.777117128638209,
+          8.420393749390001
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    6.777117128638209,
+    8.420393749390001,
+    7.725465088035611,
+    9.409165747977388
   ],
   "properties": {
     "title": "Nigeria \u2014 Abuja Federal Capital Territory",
@@ -118,9 +117,7 @@
       "title": "Nigeria \u2014 Abuja Federal Capital Territory field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 127671960,
-      "file:checksum": "1220de5da3034ecc210320dea9ddb8d6cab7e9f567a2b0f1d6cb283ff6c30db308fa"
+      ]
     },
     "pmtiles": {
       "href": "./NG_FC.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Nigeria \u2014 Abuja Federal Capital Territory field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 72353723,
-      "file:checksum": "12202150bc810bb1190035c01d6a03089482602a0e4b81ee783d044345ff49306a4e"
+      ]
     },
     "style-2025": {
       "href": "./NG_FC.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207c6b090fee150a850896696dc573f92c0fb436ecb771595acdce2969c962e6e7"
+      "file:size": 899,
+      "file:checksum": "1220c12a5a85d48215fcfc6293a306b034e21e148900cd75ec67f316982916530001"
     },
     "style-2024": {
       "href": "./NG_FC.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203fed53f33fde9ddb10b18b5abaaa3c5ceff4616d0b53a29c81323f3a72ec9e4e"
+      "file:size": 899,
+      "file:checksum": "1220bc5dbe086ef9cdb2a877f7b9c7467b610db9593f3f6c3b5217c54f349a39182c"
     },
     "style-confidence-2025": {
       "href": "./NG_FC.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f598ba437208366050682f00b8a56b56e39077d83645a6bc4290cddcbe7985f7"
+      "file:size": 2643,
+      "file:checksum": "1220fe796350ad84be9889b7ec63332afc44a85d90063aa23f4f6883230782c9db41"
     },
     "style-confidence-2024": {
       "href": "./NG_FC.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209dfd031e0ed9142c895d8b03b5fa1dccfd33bdd5748216153fdee799e6610b93"
+      "file:size": 2643,
+      "file:checksum": "1220ee8a1e5926223c52212a9d2742a87c84196388d83520d5e32a60c2f4a2d4b4bb"
     },
     "README": {
       "href": "./NG_FC.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_FC.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

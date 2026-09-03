@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "NG_5",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          4.607424198513607,
+          13.643449106332595
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          6.270828495583009,
+          13.643449106332595
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          6.270828495583009,
+          13.884735704697794
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          4.607424198513607,
+          13.884735704697794
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          4.607424198513607,
+          13.643449106332595
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    4.607424198513607,
+    13.643449106332595,
+    6.270828495583009,
+    13.884735704697794
   ],
   "properties": {
     "title": "NG_5",
@@ -118,9 +117,7 @@
       "title": "NG_5 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 364840,
-      "file:checksum": "1220145562a182be48dba66eae4c12df34221e441ade736360d36f28440933d4b87f"
+      ]
     },
     "pmtiles": {
       "href": "./NG_5.pmtiles",
@@ -128,49 +125,47 @@
       "title": "NG_5 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 305204,
-      "file:checksum": "12201c24befca65617d455464fbe8c384475ddd9072c712bb793a48da79a54708b92"
+      ]
     },
     "style-2025": {
       "href": "./NG_5.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12202dacbc07206bee7947163536ffefebc24bf42a98877031007db8f1385b6c39a5"
+      "file:size": 896,
+      "file:checksum": "1220b7b6457708f6754da2e5b2536ca2727dcc05c78b68311e07036d5d239ad8280f"
     },
     "style-2024": {
       "href": "./NG_5.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220e14789dde576352632e8b6bf7d295d2a35b4245f0bdb637ef8637596935590fa"
+      "file:size": 896,
+      "file:checksum": "122055eb9cc62e86e4b3dd3a288b5e007d067b7b1d5419a3fd00448edf7236e76403"
     },
     "style-confidence-2025": {
       "href": "./NG_5.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "122012a3510d3ddb39bfef0eb691136942799bf71e71b88fca31a6f431573faf608a"
+      "file:size": 2640,
+      "file:checksum": "12205c148618076ce89c6d1113bb728df16e8959339bd91334261a71a23b8a3d3e2a"
     },
     "style-confidence-2024": {
       "href": "./NG_5.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220e6e85e793e44f8b4dfe3fe62c1467e04ef227db457dd8a73356a8d842cb38990"
+      "file:size": 2640,
+      "file:checksum": "1220b6e43cdaf42fa827ad85d0e9eb106276ed8a7a667a731211c162dcccb9b85393"
     },
     "README": {
       "href": "./NG_5.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_5.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

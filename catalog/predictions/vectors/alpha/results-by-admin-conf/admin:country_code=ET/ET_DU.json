@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "ET_DU",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          38.25280117234162,
+          14.407373615825394
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          39.637459261396415,
+          14.407373615825394
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          39.637459261396415,
+          14.681179107938995
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          38.25280117234162,
+          14.681179107938995
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          38.25280117234162,
+          14.407373615825394
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    38.25280117234162,
+    14.407373615825394,
+    39.637459261396415,
+    14.681179107938995
   ],
   "properties": {
     "title": "ET_DU",
@@ -118,9 +117,7 @@
       "title": "ET_DU field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 713252,
-      "file:checksum": "12205e045bfd47bafd24a6f135a2e3be788e540e99bf81ea6c15ff733043475f5c70"
+      ]
     },
     "pmtiles": {
       "href": "./ET_DU.pmtiles",
@@ -128,49 +125,47 @@
       "title": "ET_DU field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 570008,
-      "file:checksum": "122047f9d81d6f566c93cead1a019a7a1d89c738ff267e079ae6069f8fa671dae5fc"
+      ]
     },
     "style-2025": {
       "href": "./ET_DU.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a89f912cb7050b918e34e0645c27ab5ddaf582195df1a074aefa3bbe3a472a3a"
+      "file:size": 899,
+      "file:checksum": "122037234bd6bbc9d6a8da0a9b1aaf64901a7b4c96bd1f311299661caa36855705e2"
     },
     "style-2024": {
       "href": "./ET_DU.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b7b297642d76cd74cf23084b9e58c0b6c1f8aa6bc434686c639db24628111e6d"
+      "file:size": 899,
+      "file:checksum": "12201e6465e6e711fc53e115f0bf4ff436ec22d602107c1732c4dda0b8c7b7fe0764"
     },
     "style-confidence-2025": {
       "href": "./ET_DU.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ef3b540af91ca21727b6b716c8cfb2dfc942abdfb971d4eb2d821a1eda3cdb38"
+      "file:size": 2643,
+      "file:checksum": "12208a0ac7366d31819a3e34b35eb1a6f9a81ddf7bda72f842a68aaa647a828d083c"
     },
     "style-confidence-2024": {
       "href": "./ET_DU.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220dcab29b7b95cf6797aa9ad0574efda02d511fd8c11a910667bdd5d127df1a351"
+      "file:size": 2643,
+      "file:checksum": "1220b528b72fd31972c0c616ed068de44f137ac45eab19c2505d5da792b00a125d8f"
     },
     "README": {
       "href": "./ET_DU.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_DU.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

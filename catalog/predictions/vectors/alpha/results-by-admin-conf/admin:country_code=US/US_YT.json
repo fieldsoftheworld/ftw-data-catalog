@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_YT",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -141.04380258858802,
+          60.015301760352806
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -139.0725467752872,
+          60.015301760352806
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -139.0725467752872,
+          69.6588605495192
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -141.04380258858802,
+          69.6588605495192
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -141.04380258858802,
+          60.015301760352806
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -141.04380258858802,
+    60.015301760352806,
+    -139.0725467752872,
+    69.6588605495192
   ],
   "properties": {
     "title": "US_YT",
@@ -118,9 +117,7 @@
       "title": "US_YT field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 48779,
-      "file:checksum": "1220c6b97e3844680d1e624c0114a0a2f60cca9c874b8e127b346cfd13a52b49416d"
+      ]
     },
     "pmtiles": {
       "href": "./US_YT.pmtiles",
@@ -128,49 +125,47 @@
       "title": "US_YT field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 46912,
-      "file:checksum": "122012fd1e4405ce8bbcee3e169365f3ec40ccd9697edd9fd64767a0845e1532c784"
+      ]
     },
     "style-2025": {
       "href": "./US_YT.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205722af8bf9bd8242d60268ac88908ee0e3d58d52e1fab2b7d5b30c8a0dfe5b7c"
+      "file:size": 899,
+      "file:checksum": "1220e8d6ae87925f446dac2b02c1888f7bf2d0e326f7f92d842c6361e8de70b0c846"
     },
     "style-2024": {
       "href": "./US_YT.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122049bac6d1684109c1b4c71a2b11ec879b4c1d5d551bcb69f5f512b4a4fd8bb0af"
+      "file:size": 899,
+      "file:checksum": "1220365b289cbf96d026c4ccee3522dff85de11b59227974e6daf5bad1a54388f225"
     },
     "style-confidence-2025": {
       "href": "./US_YT.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d2cce6a0d297130f9b143b3b8966fefa553ef908a31b63af3fe4016d4581efc8"
+      "file:size": 2643,
+      "file:checksum": "12202818de4d7d05e460a99d8eabd6bb3c28ea4f9b1ad3bd82167aaecb53674bd7e2"
     },
     "style-confidence-2024": {
       "href": "./US_YT.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122076a5001987e5529a1346c7ddc2c8aa5b0d20c480e1ffdada8e6194f12fbc3986"
+      "file:size": 2643,
+      "file:checksum": "122098e26a7e81c35fef374eeaee0399852a419b67e7cdaf2d45313fd8f4e7b1f9af"
     },
     "README": {
       "href": "./US_YT.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_YT.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

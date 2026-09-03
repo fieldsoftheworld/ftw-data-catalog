@@ -16,6 +16,11 @@
       "type": "application/json"
     },
     {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/catalog.json",
+      "type": "application/json"
+    },
+    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -29,312 +34,247 @@
     {
       "rel": "item",
       "href": "./NG_2.json",
-      "type": "application/geo+json",
-      "title": "NG_2"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_3.json",
-      "type": "application/geo+json",
-      "title": "NG_3"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_4.json",
-      "type": "application/geo+json",
-      "title": "NG_4"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_5.json",
-      "type": "application/geo+json",
-      "title": "NG_5"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_7.json",
-      "type": "application/geo+json",
-      "title": "NG_7"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_AB.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Abia"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_AD.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Adamawa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_AK.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Akwa Ibom"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_AL.json",
-      "type": "application/geo+json",
-      "title": "NG_AL"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_AN.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Anambra"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_BA.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Bauchi"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_BE.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Benue"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_BO.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Borno"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_BY.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Bayelsa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_CO.json",
-      "type": "application/geo+json",
-      "title": "NG_CO"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_CR.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Cross River"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_DE.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Delta"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_EB.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Ebonyi"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_ED.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Edo"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_EK.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Ekiti"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_EN.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Enugu"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_FC.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Abuja Federal Capital Territory"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_GO.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Gombe"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_IM.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Imo"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_JI.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Jigawa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_KD.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Kaduna"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_KE.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Kebbi"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_KN.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Kano"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_KO.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Kogi"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_KT.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Katsina"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_KW.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Kwara"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_LA.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Lagos"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_LC.json",
-      "type": "application/geo+json",
-      "title": "NG_LC"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_NA.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Nasarawa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_NI.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Niger"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_NO.json",
-      "type": "application/geo+json",
-      "title": "NG_NO"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_NW.json",
-      "type": "application/geo+json",
-      "title": "NG_NW"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_OG.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Ogun"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_ON.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Ondo"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_OS.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Osun"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_OU.json",
-      "type": "application/geo+json",
-      "title": "NG_OU"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_OY.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Oyo"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_PL.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Plateau"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_RI.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Rivers"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_SO.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Sokoto"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_SW.json",
-      "type": "application/geo+json",
-      "title": "NG_SW"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_TA.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Taraba"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_YO.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Yobe"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./NG_ZA.json",
-      "type": "application/geo+json",
-      "title": "Nigeria \u2014 Zamfara"
-    },
-    {
-      "rel": "agents",
-      "href": "./AGENTS.md",
-      "type": "text/markdown",
-      "title": "Guidance for AI agents"
-    },
-    {
-      "rel": "describedby",
-      "href": "./README.md",
-      "type": "text/markdown",
-      "title": "Human-readable documentation"
+      "type": "application/geo+json"
     }
-  ],
-  "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
-  ],
-  "updated": "2026-07-28T16:34:06Z"
+  ]
 }

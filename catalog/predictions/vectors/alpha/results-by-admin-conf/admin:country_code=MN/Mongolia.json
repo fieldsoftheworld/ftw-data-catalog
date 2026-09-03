@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Mongolia",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Mongolia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1163800050,
-      "file:checksum": "1220b789505b6dbed5fe84b4e41106f0c899a9f4b5ee4c38b79652f10dacf2e2ce7d"
+      ]
     },
     "pmtiles": {
       "href": "./Mongolia.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Mongolia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 920021245,
-      "file:checksum": "1220aa7f58162b9d8fc4190fb21f5c8a487ddf8c40723a420b3683a09d074940a492"
+      ]
     },
     "style-2025": {
       "href": "./Mongolia.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220243f58e08a7dc94d7446fb1f046095660d76eb1e1c633c0ca59e54bac427675f"
+      "file:size": 908,
+      "file:checksum": "1220860ce6327395af9d62915f7b1a2188bd792283d278266561f33e6ef4eee9763f"
     },
     "style-2024": {
       "href": "./Mongolia.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122084477eae5a2dbbfb595436562ca4680ed9f69f1d7c9ba84ad9a80a372314bbeb"
+      "file:size": 908,
+      "file:checksum": "12206e8f16b43843ef9b404ca0bd5ac12b7ad5ed38267b900469adeb9cf3dfbdf282"
     },
     "style-confidence-2025": {
       "href": "./Mongolia.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220b0322bd70b5d8262941748bc61dec08a851408cec4ed1a422db07292e222405c"
+      "file:size": 2652,
+      "file:checksum": "1220e863837a9c7b0cf38e068324c2e97610511896d62418c6c240dad2c439fd8a94"
     },
     "style-confidence-2024": {
       "href": "./Mongolia.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220e78776e242de23400f0af5387c2e4d3d873309c41328b70be2fa6bf3becbf3a3"
+      "file:size": 2652,
+      "file:checksum": "1220a5ea6828c0e938bc1052ea648bb4b42c16c14dc2055bbd0a873a7855625976ef"
     },
     "README": {
       "href": "./Mongolia.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=MN/Mongolia.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

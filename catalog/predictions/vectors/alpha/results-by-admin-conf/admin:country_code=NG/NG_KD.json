@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "NG_KD",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          6.048496280038009,
+          8.989833714779788
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          8.823561654832412,
+          8.989833714779788
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          8.823561654832412,
+          11.526307427154991
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          6.048496280038009,
+          11.526307427154991
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          6.048496280038009,
+          8.989833714779788
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    6.048496280038009,
+    8.989833714779788,
+    8.823561654832412,
+    11.526307427154991
   ],
   "properties": {
     "title": "Nigeria \u2014 Kaduna",
@@ -118,9 +117,7 @@
       "title": "Nigeria \u2014 Kaduna field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 851108541,
-      "file:checksum": "12202063e3ca9ecf4a9856ab1c5ed8b149024001884aa23dae5aaa0a0ce0d2d5cbac"
+      ]
     },
     "pmtiles": {
       "href": "./NG_KD.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Nigeria \u2014 Kaduna field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 395654934,
-      "file:checksum": "1220da9a81918535ac781221df80fb50e7369f16cd627f1dda219bdde9a4200bbe0e"
+      ]
     },
     "style-2025": {
       "href": "./NG_KD.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ca3507f4d4bd32da95cd7935fa055d9dcb09a14509fde669a2dcc6a0566e4f66"
+      "file:size": 899,
+      "file:checksum": "12209fbbef77b60647612c54a8c20f9f65760e5b8d7fd901290a5b2723158eea2a7b"
     },
     "style-2024": {
       "href": "./NG_KD.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122025ae217e82e23371138e817659bd4ae7bca8c313732f2a8a01a38b9ded94fb80"
+      "file:size": 899,
+      "file:checksum": "12209b3daa125cab2abb218605c7977d7d7aee443420e5aa4110507c7fea663c8d73"
     },
     "style-confidence-2025": {
       "href": "./NG_KD.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220012175628529b002efbd6a8760ad569b7d64c9e5aa4ac0493fbcdfc1e1e650bb"
+      "file:size": 2643,
+      "file:checksum": "1220b0ea3595582df3b4cb0d38f48926f09c3511dfbb18aad76c5e03761301a6f1d0"
     },
     "style-confidence-2024": {
       "href": "./NG_KD.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220451120e353b3c892dafbf0dffc8b7f27024751af2565e8a7f70ebd562ee428e6"
+      "file:size": 2643,
+      "file:checksum": "1220a98aa0b0fe6a9e02984bfc6576cddb6e071973a89aa7c9b0db74b0dfa24bb773"
     },
     "README": {
       "href": "./NG_KD.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_KD.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

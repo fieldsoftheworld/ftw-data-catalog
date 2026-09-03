@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "United_Kingdom",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "United_Kingdom field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 757153622,
-      "file:checksum": "122023fceea59ac2f40aff46e24b59f9597ac8d0b5effbf7c99f61a3aec9324db284"
+      ]
     },
     "pmtiles": {
       "href": "./United_Kingdom.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United_Kingdom field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 533354023,
-      "file:checksum": "1220377ea4435ad96654edd93ee3b066029be682631ae02b52bd613547d81ab7d40b"
+      ]
     },
     "style-2025": {
       "href": "./United_Kingdom.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 927,
-      "file:checksum": "1220c16414d149d2918e6784e95f128c329d40d80565047bfa4a731b09262070a10e"
+      "file:size": 926,
+      "file:checksum": "1220f64df53e3e58c401cdda574042f2b71d7b9021a6cf9e3e02b5d2e54ee9b9c412"
     },
     "style-2024": {
       "href": "./United_Kingdom.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 927,
-      "file:checksum": "1220608cb04aa3e3029f0d8646f75a8bb40e18f3383c05f0b1e427534462d80f7227"
+      "file:size": 926,
+      "file:checksum": "12200d13aed5ee2381112cdd7b36201bee4b0bfae1d9f91cd5b494e8d550093d8bb3"
     },
     "style-confidence-2025": {
       "href": "./United_Kingdom.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2671,
-      "file:checksum": "1220dc593ba326546ff719264a00ffb58a034a5bf207ee5ed2521b7acc737f51a25f"
+      "file:size": 2670,
+      "file:checksum": "1220b850e5d2806bb030d4b908406865abd3d3c04d042cba1146ab5fc7fc5e358db2"
     },
     "style-confidence-2024": {
       "href": "./United_Kingdom.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2671,
-      "file:checksum": "1220ef6463707ecf4bcca9b2f328009db37dd863ba515db4f24b121b6edd321ef4ec"
+      "file:size": 2670,
+      "file:checksum": "1220597e8435012afc8fddd5916305374615850af3dbadabb0b064cf17011642d0b7"
     },
     "README": {
       "href": "./United_Kingdom.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GB/United_Kingdom.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

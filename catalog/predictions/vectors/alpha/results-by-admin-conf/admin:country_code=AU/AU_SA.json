@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "AU_SA",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          148.75649368931482,
-          -35.943012975274605
+          128.86193754875362,
+          -38.05440545776741
         ],
         [
-          149.39663080768804,
-          -35.943012975274605
+          141.289365170138,
+          -38.05440545776741
         ],
         [
-          149.39663080768804,
-          -35.1693866963762
+          141.289365170138,
+          -25.901322315685807
         ],
         [
-          148.75649368931482,
-          -35.1693866963762
+          128.86193754875362,
+          -25.901322315685807
         ],
         [
-          148.75649368931482,
-          -35.943012975274605
+          128.86193754875362,
+          -38.05440545776741
         ]
       ]
     ]
   },
   "bbox": [
-    148.75649368931482,
-    -35.943012975274605,
-    149.39663080768804,
-    -35.1693866963762
+    128.86193754875362,
+    -38.05440545776741,
+    141.289365170138,
+    -25.901322315685807
   ],
   "properties": {
     "title": "Australia \u2014 South Australia",
@@ -118,9 +117,7 @@
       "title": "Australia \u2014 South Australia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1153021671,
-      "file:checksum": "1220a9fcc91b24ad87a407ad643592dc39f8e4d2127c84eb1afacb98b80b95674822"
+      ]
     },
     "pmtiles": {
       "href": "./AU_SA.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Australia \u2014 South Australia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 730222094,
-      "file:checksum": "12205a13a047cc83e4062d3ea4a3fcce68f2f8ade94d2a5eb39fc0c8d84b3a51c03f"
+      ]
     },
     "style-2025": {
       "href": "./AU_SA.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205c7dfcb1e02750b84f98a2f75ecc81a6525c2108e2f7d6a539ff05e58286969b"
+      "file:size": 899,
+      "file:checksum": "122039072e85d2b61b515146ea5c70bc6c4b846106b7ec45863f50f1912e8db04fdd"
     },
     "style-2024": {
       "href": "./AU_SA.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c33f68a52d0aebce6a8d2241d5831f0a115f255acc555e9d0a122ad79f0c0d0d"
+      "file:size": 899,
+      "file:checksum": "122057a4753bf843a12788264aaf58618e0ca367c68a4bc2ca9ae01bc094039ca4e6"
     },
     "style-confidence-2025": {
       "href": "./AU_SA.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220273850ce3495e06ff652b032e76fcfc7c5565762cd61e33d04e202294ba5e463"
+      "file:size": 2643,
+      "file:checksum": "1220dab7c2b13e911d68b177f2909d5fb8084238ea9abd31b2dc17dacdb74e1e58cd"
     },
     "style-confidence-2024": {
       "href": "./AU_SA.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ee6e64a36372d4ddb09a0135989408fbacc57e39071b62c464f1020fafe05726"
+      "file:size": 2643,
+      "file:checksum": "122014d30c7ad1304db19c1a7e7a03e976a8f2b5ed22e7ffaeb853dc014b091bef81"
     },
     "README": {
       "href": "./AU_SA.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_SA.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "NG_KW",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          2.729143675349806,
+          8.0015108721834
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          6.208036488041209,
+          8.0015108721834
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          6.208036488041209,
+          10.18171405249739
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          2.729143675349806,
+          10.18171405249739
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          2.729143675349806,
+          8.0015108721834
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    2.729143675349806,
+    8.0015108721834,
+    6.208036488041209,
+    10.18171405249739
   ],
   "properties": {
     "title": "Nigeria \u2014 Kwara",
@@ -118,9 +117,7 @@
       "title": "Nigeria \u2014 Kwara field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 530703949,
-      "file:checksum": "1220e395ca5fe69e9124d59f4f0b3d96cf420eec47dcfe6499f30ed13479d484bb61"
+      ]
     },
     "pmtiles": {
       "href": "./NG_KW.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Nigeria \u2014 Kwara field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 275135914,
-      "file:checksum": "1220bd3772fca8ba0dd8791cec357a0e66f4a574c193a6e12e8989ce838c332604d7"
+      ]
     },
     "style-2025": {
       "href": "./NG_KW.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fe8353f14c0de645bd1277efb9a69b6dd9444ad3cacdb2695adb1e30158143a3"
+      "file:size": 899,
+      "file:checksum": "12201ea09bc37127369a0bfc6063f29e48e90c97386a17b344f7b1c1eb571914649a"
     },
     "style-2024": {
       "href": "./NG_KW.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fe4f850546da5a21935280f3270c6e5cba2da9c4afb2eee5f026648c4911eb38"
+      "file:size": 899,
+      "file:checksum": "12209a58d7dce798c43dba226b569cc19d4df658ab1701c92e58c192b170a296d81f"
     },
     "style-confidence-2025": {
       "href": "./NG_KW.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b05196085f50435c00e8c1bd6dd5c6cc731ef80fb88171cee94c06d61e27fc2e"
+      "file:size": 2643,
+      "file:checksum": "122028380daf7382383317de1aa7ab2a4ae46bedd647dd00cf15110ea79b4a1ef01a"
     },
     "style-confidence-2024": {
       "href": "./NG_KW.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206be1f080707d8385989fcd64f43757a901c86c4528edd43b396a3b3aa81f232a"
+      "file:size": 2643,
+      "file:checksum": "1220c64f2ae3f0d4dbaaa0095e08390ce1ab45ab645e1a271cfd3e693bda17640071"
     },
     "README": {
       "href": "./NG_KW.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_KW.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

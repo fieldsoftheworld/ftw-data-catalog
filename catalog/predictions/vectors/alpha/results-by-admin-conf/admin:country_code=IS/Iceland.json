@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Iceland",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Iceland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 23817940,
-      "file:checksum": "122030755610f483bc284ced8ca1dac71e0f807287ecea5d39b800b7cbb8476ff5bf"
+      ]
     },
     "pmtiles": {
       "href": "./Iceland.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Iceland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 26257339,
-      "file:checksum": "12201d7ea35d18727e5834f5109179c299b3526b4b9a10f9469bc2691e6930c2b903"
+      ]
     },
     "style-2025": {
       "href": "./Iceland.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220a75809cd58478ce86c16314538de1bd53eca37de1bd8ae6752737f94fa0450ee"
+      "file:size": 905,
+      "file:checksum": "1220f6f048755d8f26ebcef2fc059f522f28057fe2c4a6faa1a90f0ab047290ca064"
     },
     "style-2024": {
       "href": "./Iceland.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12206b429b799cf627ed1fe1917f4033b7e6156e1e6dfcd2e4120f5e6aa51f964cc2"
+      "file:size": 905,
+      "file:checksum": "1220e7aea30f3d271cd0b169156dff109ce84657567092c79124f17b66f2d643c87c"
     },
     "style-confidence-2025": {
       "href": "./Iceland.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122078d5f48b5e085a8ed1c6b85a1b4727916e6f43f3db9f7e411c235db7ce5ae93c"
+      "file:size": 2649,
+      "file:checksum": "12201d20487f7a8edbfb995bc227f4d9bf1930328c9e476865b885d3bc387ca24c03"
     },
     "style-confidence-2024": {
       "href": "./Iceland.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12202a71556186b9040c975070ce9c0064cf494617ef9f2472fab1b56a1772b7aa1c"
+      "file:size": 2649,
+      "file:checksum": "122092f9ca94641a27161a4655a10ad6ca95881b5391422dfffb6c04a8ca0be5fa97"
     },
     "README": {
       "href": "./Iceland.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IS/Iceland.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Afghanistan",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Afghanistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3728898089,
-      "file:checksum": "122029a2b722a369cc08f7276be1c9384db9d7b60b03321526b94eef516b60617ea1"
+      ]
     },
     "pmtiles": {
       "href": "./Afghanistan.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Afghanistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1995182246,
-      "file:checksum": "122018ff0936be46ec31f269626e56c7d96d9c77599cc2706a7ef384917bc952f78f"
+      ]
     },
     "style-2025": {
       "href": "./Afghanistan.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220f69807c74c7a09015f260f77ae5d1aa786a9dd022ea7acd97b7702e90a10287c"
+      "file:size": 917,
+      "file:checksum": "1220e33b63487a2f6d20893fb59fe0e0bfbb58c0df622172d8c20bca64bb41949d71"
     },
     "style-2024": {
       "href": "./Afghanistan.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220e9aac6f3f224765d7f3957f11944878286474ba51eb8967458be12d4ba59daef"
+      "file:size": 917,
+      "file:checksum": "1220c3f63b15f87e9dd7a43cb2c28d187e1a5ecc3c6c9567fc3f5f4dbc16ffc3ca7c"
     },
     "style-confidence-2025": {
       "href": "./Afghanistan.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12202d89f83a2ed57565e68efcb52a2c1159fa80453a4c0defd09d875c93394265bf"
+      "file:size": 2661,
+      "file:checksum": "1220b40fcf29293713ab01f21aa2ca4233d35233520b08354add7d801a25d20fed42"
     },
     "style-confidence-2024": {
       "href": "./Afghanistan.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "1220b5a9ecc02182ff5992808ffaa9818432b4be2346abdd1ff547447d69b1a793a0"
+      "file:size": 2661,
+      "file:checksum": "1220dfd64aa660227b03638cb540ace0fbf913f86da673c432e1e32058720f9087d5"
     },
     "README": {
       "href": "./Afghanistan.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AF/Afghanistan.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

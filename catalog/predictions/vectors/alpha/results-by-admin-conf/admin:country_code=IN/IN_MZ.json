@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_MZ",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          92.29192625512822,
+          22.102134391240998
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          93.41787049336702,
+          22.102134391240998
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          93.41787049336702,
+          24.4816730003608
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          92.29192625512822,
+          24.4816730003608
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          92.29192625512822,
+          22.102134391240998
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    92.29192625512822,
+    22.102134391240998,
+    93.41787049336702,
+    24.4816730003608
   ],
   "properties": {
     "title": "India \u2014 Mizoram",
@@ -118,9 +117,7 @@
       "title": "India \u2014 Mizoram field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1763714,
-      "file:checksum": "1220553fa06d80e783b85087429c9c2cc632ff050a7e88ac7873556f80c446505fd6"
+      ]
     },
     "pmtiles": {
       "href": "./IN_MZ.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 Mizoram field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2111011,
-      "file:checksum": "1220bbd4ec3911ce202e2bbde08eb6c1b01a83a11b9f03efeead2a050e07d2768e0b"
+      ]
     },
     "style-2025": {
       "href": "./IN_MZ.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122014ffcd624b88e4e13404f96edef8f476a50c74df49631de054d26778ac0d64d1"
+      "file:size": 899,
+      "file:checksum": "12201c7aff8c86561ed45b3108feddd57b2d051624a94a8a77a31508e90bb8510304"
     },
     "style-2024": {
       "href": "./IN_MZ.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f8cfedc5418b447c776f4711db4d5347520c80e0e60cdbbc7f2e3bfa35f7690f"
+      "file:size": 899,
+      "file:checksum": "1220c70a8c9587812ea6bb8e9a5e72b8a5d59fd9a51f7d9715d711561f80a4843c1b"
     },
     "style-confidence-2025": {
       "href": "./IN_MZ.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a3251f27eefff4473bdd68d9a64b86763c91f78b3644c18ce64250a2a3a8f5dc"
+      "file:size": 2643,
+      "file:checksum": "12208f8eef9930859376c1a30d638ce7e83a409cf0704f8cce30efde5f3b49388083"
     },
     "style-confidence-2024": {
       "href": "./IN_MZ.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122061a6fddedba3dc6e1567e29698d67cf51c48954d59bc23dd7eef53c47d1277e8"
+      "file:size": 2643,
+      "file:checksum": "1220f689b255320a619ede33c96a39b530b14a1645a6d935a67e6a3c00f99066cf39"
     },
     "README": {
       "href": "./IN_MZ.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_MZ.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

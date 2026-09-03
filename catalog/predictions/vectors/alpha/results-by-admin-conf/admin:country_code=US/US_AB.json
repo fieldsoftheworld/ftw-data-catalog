@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_AB",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "US_AB field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1716977,
-      "file:checksum": "1220062fe237418dc6c161a6c8f339b6d660a7963fc8fa12c9ad0e09bec5da8883d2"
+      ]
     },
     "pmtiles": {
       "href": "./US_AB.pmtiles",
@@ -128,49 +125,47 @@
       "title": "US_AB field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1223732,
-      "file:checksum": "1220de1b8fe94068396d659e6817960d63b7bbcf35cd8e41d8a400a2bac807e665f2"
+      ]
     },
     "style-2025": {
       "href": "./US_AB.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e851ca2936d989d74be442dfa8a8f0b31da66f9813f0c2d63e47952547b1a2d7"
+      "file:size": 899,
+      "file:checksum": "12207d0301fccdf007af3c94b69c06980356d843e14b4cf47d8204cd807530681e71"
     },
     "style-2024": {
       "href": "./US_AB.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220eecf509f85042846929b2b88aa808226c95053a4444b2da41f4af3b677cf62ea"
+      "file:size": 899,
+      "file:checksum": "122050211dc026caeb7e881d11858411558a8fef84202cb68531f26ead4397e8027a"
     },
     "style-confidence-2025": {
       "href": "./US_AB.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f59f2ea20b4c9a03b6dae71b518edf5bf8444036cc2b9eaacd6861c5ba4f33c5"
+      "file:size": 2643,
+      "file:checksum": "12207d8b8da5ad6e0c14500c14e043256fde883ddbda8a6d6e51c084f6ed58472f44"
     },
     "style-confidence-2024": {
       "href": "./US_AB.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d0e9aca42593956a314f9c4a8eb25c6bb7c9830707ecb129943fa2e247ab3888"
+      "file:size": 2643,
+      "file:checksum": "1220132016e69daf5c5369131760c4529128766c88bda9cadc46cfb09416d21356a8"
     },
     "README": {
       "href": "./US_AB.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_AB.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

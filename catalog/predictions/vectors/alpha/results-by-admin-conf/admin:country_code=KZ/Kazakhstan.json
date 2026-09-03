@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Kazakhstan",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Kazakhstan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4101461699,
-      "file:checksum": "12206653496898a389159f032176fb1317626fec7b27f22beb84d83cbb0dc45096ac"
+      ]
     },
     "pmtiles": {
       "href": "./Kazakhstan.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Kazakhstan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2555174657,
-      "file:checksum": "1220249ab9d92dc0095161298243fc93331d71a74aedc206bb059300e1f222367c9e"
+      ]
     },
     "style-2025": {
       "href": "./Kazakhstan.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "122026a646fa8c13ed3278003655e7cf03156fdc6095a6db21fe0b0bfe013536ce87"
+      "file:size": 914,
+      "file:checksum": "1220e0eacf9ef22c2d247e5eadbd57bca110eb59dffa387cab6d54c69954f520d908"
     },
     "style-2024": {
       "href": "./Kazakhstan.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12200c4d2a2483acdf209dfbf1ac4441ee4b7700737b7370c14823c563b53960b082"
+      "file:size": 914,
+      "file:checksum": "12202a6af938687a704ae1bbe87ad85a82cc5147b72bd330648b04ba0230454d70a6"
     },
     "style-confidence-2025": {
       "href": "./Kazakhstan.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122095f21f22bc9ae796dd34f008071ae8836b09c804ed4d449fe481f40940da3f03"
+      "file:size": 2658,
+      "file:checksum": "12209645e0a48de0b0692b004cae534dc1fcf4fc41a5061a5abbd0e43f072e0cf704"
     },
     "style-confidence-2024": {
       "href": "./Kazakhstan.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122033a07a82dfab5906c5c75e3777db2bca93f70edc367d4e115755ec841d517850"
+      "file:size": 2658,
+      "file:checksum": "122074db6575f5be63eb43f42c227ac176bea97128c0c519d4b83efdab16769e0897"
     },
     "README": {
       "href": "./Kazakhstan.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=KZ/Kazakhstan.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

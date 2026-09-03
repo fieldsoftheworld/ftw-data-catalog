@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Luxembourg",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Luxembourg field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 11060796,
-      "file:checksum": "1220dd3c9089e79be7afd9653891a148602a96503047082ceb3c3d628a56e0e8ade0"
+      ]
     },
     "pmtiles": {
       "href": "./Luxembourg.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Luxembourg field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 10236135,
-      "file:checksum": "12202d7fff3a5e9ce9a4959d4d6e9d5fd9bab3cee9cfde24efb1a110f4a94406eaa3"
+      ]
     },
     "style-2025": {
       "href": "./Luxembourg.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220fc55d9035105d2f225c190099931e9080f1b446ad33d2a9db8f422f9b7b699fd"
+      "file:size": 914,
+      "file:checksum": "12200b6e4d8df46cd09f5b1be022daddccb259ea5674a82bd263ddf551fde3c07f25"
     },
     "style-2024": {
       "href": "./Luxembourg.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12207c81992b2ead3dfb4d35ddf521ea6cd7d1a5046012e84d6416b22098bb825f0b"
+      "file:size": 914,
+      "file:checksum": "1220665d811a7ce7522d776266f1cf00df6e7eced9efcf03c8330e7c122ef7b5fdf0"
     },
     "style-confidence-2025": {
       "href": "./Luxembourg.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "12202af601a83e3e77b469509bf9b264744e881a0aada94826a06994e184810a4818"
+      "file:size": 2658,
+      "file:checksum": "1220e08cca59627758d8754cf197833016dad8636af2b98eedf7663e8e09563d2ea9"
     },
     "style-confidence-2024": {
       "href": "./Luxembourg.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220df1a6556294925ccf783002370f4153f5f17bf1f5ef876c1e21e92c5203e9cff"
+      "file:size": 2658,
+      "file:checksum": "122098fd6549c8acb5af2f21a3433afcd3f4a5f898e304a653af7c5c831edb9e2a86"
     },
     "README": {
       "href": "./Luxembourg.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=LU/Luxembourg.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

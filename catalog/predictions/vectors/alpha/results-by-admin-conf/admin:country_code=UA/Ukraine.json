@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Ukraine",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Ukraine field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1984992259,
-      "file:checksum": "1220e77b6f7df058a89b5b64e5b806b84977aa0639c5a27ea792519b400adfb5dcc3"
+      ]
     },
     "pmtiles": {
       "href": "./Ukraine.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ukraine field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1209471446,
-      "file:checksum": "1220a1bb3725431cc1b1c66a041f61793ba3ca993789e44edb0988f649eb6fb7fb8b"
+      ]
     },
     "style-2025": {
       "href": "./Ukraine.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12204f428c98c62f4bc3ca4e9bb01161aab26d9d358c7a0b9b3ccf0ec0e748eb1318"
+      "file:size": 905,
+      "file:checksum": "122008ee4e8bd329395e85025923ed7ae819e2e34d11ae172f1b0cffdcc95d29cbab"
     },
     "style-2024": {
       "href": "./Ukraine.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203e7e2ff7274a2e60c701004e61bee73ed0bbbd2acd7d7a2d7f7056aa5179f6ea"
+      "file:size": 905,
+      "file:checksum": "12209ef29aaadcd13abae2855624c6c8aba5bfa1c78568e99d7228b8515ec4b86cb8"
     },
     "style-confidence-2025": {
       "href": "./Ukraine.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122030eee097b489b655eb52a934dda36d588fbe609765997b4c60f006608d26d228"
+      "file:size": 2649,
+      "file:checksum": "122028fe004d65eaca32f481868ccb0f12f3ad97f479fb46d99847d7be0b67bfc171"
     },
     "style-confidence-2024": {
       "href": "./Ukraine.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12202dcfd414206c89a2fddccaf6563ae7ee6b8bf2d21d3d09e30bc8ae4b4c20b32e"
+      "file:size": 2649,
+      "file:checksum": "12209f6bb06ef3ff278daac38364dea59e1aa5bf02e7e5689a3e8b50b74f2cdb6d88"
     },
     "README": {
       "href": "./Ukraine.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=UA/Ukraine.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

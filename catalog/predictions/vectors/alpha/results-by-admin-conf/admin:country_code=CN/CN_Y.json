@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_Y",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          80.0010420550078,
+          42.0407976501184
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          80.00140137980061,
+          42.0407976501184
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          80.00140137980061,
+          42.0409773125148
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          80.0010420550078,
+          42.0409773125148
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          80.0010420550078,
+          42.0407976501184
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    80.0010420550078,
+    42.0407976501184,
+    80.00140137980061,
+    42.0409773125148
   ],
   "properties": {
     "title": "CN_Y",
@@ -118,9 +117,7 @@
       "title": "CN_Y field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6050,
-      "file:checksum": "1220031ec32546be41966a817a89708e25eec986edc78d5f9c9814275494e32c8b83"
+      ]
     },
     "pmtiles": {
       "href": "./CN_Y.pmtiles",
@@ -128,49 +125,47 @@
       "title": "CN_Y field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1059,
-      "file:checksum": "1220232de3484577c1adcbddebe8757c11621255c5c777376abb670e91bc68c19a4d"
+      ]
     },
     "style-2025": {
       "href": "./CN_Y.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12202414a3d71c03ffd84e35e507e8aa2fa8d91897043d67ff260a661c2aa0d66414"
+      "file:size": 896,
+      "file:checksum": "1220fd6cf4eb9c800d96dbbc594cb961a38b37668f7f58cdec7b1611fa42992a4c6c"
     },
     "style-2024": {
       "href": "./CN_Y.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "122061a102137409f037d7e4dc7c0243c8bfef812695a6ebf6bcbf3c6d6ec444b25f"
+      "file:size": 896,
+      "file:checksum": "1220af1af9f2f70ac2bc0ce33ddc908df36babc6b0838aa5e8e5de0ef79622e2fc2d"
     },
     "style-confidence-2025": {
       "href": "./CN_Y.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "122039b042cf900a7d01f24053e54e0ff9c5087dae59d5ac16130d3412d341fe6409"
+      "file:size": 2640,
+      "file:checksum": "12207469dfd3f88300c37785a4c8c3fbb30af6e130db9feb29bd43c92d61c3df293c"
     },
     "style-confidence-2024": {
       "href": "./CN_Y.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12200b06febd5b2b175d04bf06d3e7c419efe0ec984fe8a68eb5ab19c87b31dc4b59"
+      "file:size": 2640,
+      "file:checksum": "1220ef1f068ffaefb078c39a88606fc4e701716abfecb556ee09df11a4d5a33c774d"
     },
     "README": {
       "href": "./CN_Y.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_Y.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -16,6 +16,11 @@
       "type": "application/json"
     },
     {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/catalog.json",
+      "type": "application/json"
+    },
+    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -29,240 +34,187 @@
     {
       "rel": "item",
       "href": "./ET_24.json",
-      "type": "application/geo+json",
-      "title": "ET_24"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_25.json",
-      "type": "application/geo+json",
-      "title": "ET_25"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_43.json",
-      "type": "application/geo+json",
-      "title": "ET_43"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_46.json",
-      "type": "application/geo+json",
-      "title": "ET_46"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_AA.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Addis Ababa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_AF.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Afar"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_AM.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Amara"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_AS.json",
-      "type": "application/geo+json",
-      "title": "ET_AS"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_AW.json",
-      "type": "application/geo+json",
-      "title": "ET_AW"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_BE.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Benshangul-Gumaz"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_BK.json",
-      "type": "application/geo+json",
-      "title": "ET_BK"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_DD.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Dire Dawa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_DI.json",
-      "type": "application/geo+json",
-      "title": "ET_DI"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_DK.json",
-      "type": "application/geo+json",
-      "title": "ET_DK"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_DU.json",
-      "type": "application/geo+json",
-      "title": "ET_DU"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_EE.json",
-      "type": "application/geo+json",
-      "title": "ET_EE"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_GA.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Gambela Peoples"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_GB.json",
-      "type": "application/geo+json",
-      "title": "ET_GB"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_GD.json",
-      "type": "application/geo+json",
-      "title": "ET_GD"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_GE.json",
-      "type": "application/geo+json",
-      "title": "ET_GE"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_HA.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Harari People"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_HI.json",
-      "type": "application/geo+json",
-      "title": "ET_HI"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_JG.json",
-      "type": "application/geo+json",
-      "title": "ET_JG"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_KA.json",
-      "type": "application/geo+json",
-      "title": "ET_KA"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_MU.json",
-      "type": "application/geo+json",
-      "title": "ET_MU"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_NB.json",
-      "type": "application/geo+json",
-      "title": "ET_NB"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_NU.json",
-      "type": "application/geo+json",
-      "title": "ET_NU"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_OR.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Oromia"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_SI.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Sidama"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_SK.json",
-      "type": "application/geo+json",
-      "title": "ET_SK"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_SO.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Somali"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_SW.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Southwest Ethiopia Peoples"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_TA.json",
-      "type": "application/geo+json",
-      "title": "ET_TA"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_TI.json",
-      "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Tigrai"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_TO.json",
-      "type": "application/geo+json",
-      "title": "ET_TO"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_WO.json",
-      "type": "application/geo+json",
-      "title": "ET_WO"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./ET_ZZ.json",
-      "type": "application/geo+json",
-      "title": "ET_ZZ"
-    },
-    {
-      "rel": "agents",
-      "href": "./AGENTS.md",
-      "type": "text/markdown",
-      "title": "Guidance for AI agents"
-    },
-    {
-      "rel": "describedby",
-      "href": "./README.md",
-      "type": "text/markdown",
-      "title": "Human-readable documentation"
+      "type": "application/geo+json"
     }
-  ],
-  "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
-  ],
-  "updated": "2026-07-28T16:34:06Z"
+  ]
 }

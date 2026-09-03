@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Slovakia",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Slovakia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 104860005,
-      "file:checksum": "122024ff870a434893da3042cbaed61c2f21bf33ab6f3d019098fac2af68f59054dc"
+      ]
     },
     "pmtiles": {
       "href": "./Slovakia.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Slovakia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 64610752,
-      "file:checksum": "1220c3a2a21b5db923543214e1251440a2c2d3fae54e426fdf4c0425b8ccf415b365"
+      ]
     },
     "style-2025": {
       "href": "./Slovakia.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122055f96833aceaf806e3fce140feb2c4ae20eb92d396b18ce0b9b38112b95e295a"
+      "file:size": 908,
+      "file:checksum": "12201d85d6d35fa412d0d9c82c5db59ff7d6242d56bc045baeed85a192713978cd43"
     },
     "style-2024": {
       "href": "./Slovakia.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122015cae59b92ef698efbd3bb53cb4ea03b9d21dea2e14bdf9a7fd99571df979c23"
+      "file:size": 908,
+      "file:checksum": "12209de4794109e9536d12b72b4ddcbe16e8a14a58fa87a9ab3587fde16a4ec8e39c"
     },
     "style-confidence-2025": {
       "href": "./Slovakia.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220f5963938aa7090e99d0812110a42f5a163cf120809e4b9fe0090749dfb97fe9f"
+      "file:size": 2652,
+      "file:checksum": "12203973c70068ef51f3ec6e65c1554f445f1ce24070cef1f5a42bce37193da5c64f"
     },
     "style-confidence-2024": {
       "href": "./Slovakia.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12201435f64425662f2527f716db79a872f022992bdfc03f4c6d7accd97dcd1c9750"
+      "file:size": 2652,
+      "file:checksum": "122078f67cc8807411f8430a4b307f4fc9569c746e9b9c082e055a5b0d2df0fc9a41"
     },
     "README": {
       "href": "./Slovakia.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SK/Slovakia.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

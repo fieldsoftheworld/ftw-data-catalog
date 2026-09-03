@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "PK_KAN",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          64.47713303166942,
+          29.553003463543597
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          67.79684496115043,
+          29.553003463543597
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          67.79684496115043,
+          31.5067421931954
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          64.47713303166942,
+          31.5067421931954
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          64.47713303166942,
+          29.553003463543597
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    64.47713303166942,
+    29.553003463543597,
+    67.79684496115043,
+    31.5067421931954
   ],
   "properties": {
     "title": "PK_KAN",
@@ -118,9 +117,7 @@
       "title": "PK_KAN field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 360561,
-      "file:checksum": "1220317b0b05ca36edc26a6030d4f0198b3cf24f0d887defc9d098242e836b77a898"
+      ]
     },
     "pmtiles": {
       "href": "./PK_KAN.pmtiles",
@@ -128,49 +125,47 @@
       "title": "PK_KAN field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 271234,
-      "file:checksum": "12200bb091a1054dbff7ea0d7928b3fa761d3885d2f84c0300db4be77440e39fa4b7"
+      ]
     },
     "style-2025": {
       "href": "./PK_KAN.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12202931a35fa33cf24a99b752331958e4fada1ad6342e01b2f65334611d2ba68506"
+      "file:size": 902,
+      "file:checksum": "1220ef86e6d004ce940bddcc2c251682ed4f3094ce9ffac5ba7de367bda84e5a2e12"
     },
     "style-2024": {
       "href": "./PK_KAN.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220d28053bebb683c7db4bf439b62d2889fc5c64578a75c744f84dbb01ee8fa32e3"
+      "file:size": 902,
+      "file:checksum": "12202f8ddc65f40c2d4532b32b2c47d8b52aef807b19f3c20b58690b6cdd9273f0da"
     },
     "style-confidence-2025": {
       "href": "./PK_KAN.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122001f843da4cafd29ffe523ef67b17231da2f697f668923d4684659feeae170fa3"
+      "file:size": 2646,
+      "file:checksum": "12207c54196bb9a825c26dd69fa197dc8aa533e9da3ab7f7db7d2ebf96bcb1ef07b8"
     },
     "style-confidence-2024": {
       "href": "./PK_KAN.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122036df52f0a5429bb381a8144305617cee6e63cf614b20d40c43b39e1eb5dcbd50"
+      "file:size": 2646,
+      "file:checksum": "122090c9e8d9f32ab036cf67ff40d980bb07315917b694ea87bbd815d23c66c4d895"
     },
     "README": {
       "href": "./PK_KAN.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_KAN.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

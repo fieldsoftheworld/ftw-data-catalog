@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_MO",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -95.76375831749058,
+          35.9749459916634
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -89.105200413312,
+          35.9749459916634
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -89.105200413312,
+          40.6164341714592
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -95.76375831749058,
+          40.6164341714592
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -95.76375831749058,
+          35.9749459916634
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -95.76375831749058,
+    35.9749459916634,
+    -89.105200413312,
+    40.6164341714592
   ],
   "properties": {
     "title": "United States \u2014 Missouri",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Missouri field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 286148763,
-      "file:checksum": "122080f33989a6ecb7d1e32d18aea60214688ac6fe4e02e1828cbf173bbfbb5ae7ce"
+      ]
     },
     "pmtiles": {
       "href": "./US_MO.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Missouri field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 217773071,
-      "file:checksum": "12208bae40846896f61ea0c3a8b02cdcdc892eb764f3ce0a692f100d8768e3dd0d09"
+      ]
     },
     "style-2025": {
       "href": "./US_MO.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122059b5f86c1a893202562ade5612e1b646d8dccb542438f01cd75abfc03ea99b42"
+      "file:size": 899,
+      "file:checksum": "12201e89b46d01496c071ac3fc7c9552f0323239828ba429fa6aab5be0901e3ffc01"
     },
     "style-2024": {
       "href": "./US_MO.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122044f1fc6647a705783c6baad6928741dad192a1e6c459d13560dcc1bf70317e45"
+      "file:size": 899,
+      "file:checksum": "12202262f0f16a84aabd6e624b323bf8f0cff0a0b71ee177c09d848b2a1c06a95ca9"
     },
     "style-confidence-2025": {
       "href": "./US_MO.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122018330c23a0c9c79ef15526408c1ba0e1d1868753c6493290d56f371e403d75ac"
+      "file:size": 2643,
+      "file:checksum": "1220b8070edfcee3064cb2a7b544628b2cd632ec338740ea867d397ed052da6a6b0f"
     },
     "style-confidence-2024": {
       "href": "./US_MO.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220455fbd2b296a659664aa02d7461932a37496e660f44588db5bebd0cec24d28f9"
+      "file:size": 2643,
+      "file:checksum": "12200653ede29ec3cb39011624558fe89a4e01c94f6ba7f5113ba28d7a7107258cd6"
     },
     "README": {
       "href": "./US_MO.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_MO.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

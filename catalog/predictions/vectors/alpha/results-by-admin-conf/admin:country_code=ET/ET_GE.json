@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "ET_GE",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          41.90875127668522,
+          3.9843495198775964
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          42.24094704762882,
+          3.9843495198775964
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          42.24094704762882,
+          4.271450029324797
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          41.90875127668522,
+          4.271450029324797
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          41.90875127668522,
+          3.9843495198775964
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    41.90875127668522,
+    3.9843495198775964,
+    42.24094704762882,
+    4.271450029324797
   ],
   "properties": {
     "title": "ET_GE",
@@ -118,9 +117,7 @@
       "title": "ET_GE field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 407602,
-      "file:checksum": "12205d468400437feccd5080feb1bc9d375280a5e1de97ca79d59d87f0182768bcd8"
+      ]
     },
     "pmtiles": {
       "href": "./ET_GE.pmtiles",
@@ -128,49 +125,47 @@
       "title": "ET_GE field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 264768,
-      "file:checksum": "1220b9fb92bfbe4ff44c00a3b3eae186e1edb32d54d6fcb72b9018347768aa803ab7"
+      ]
     },
     "style-2025": {
       "href": "./ET_GE.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a38cefa1a8b13f380aa17b90f89bc58272cb8f99dcb06763fd7a3212b53b619f"
+      "file:size": 899,
+      "file:checksum": "12209ef569faa6f2a753f9f7e5ea757733fd0711bf81f965d60768cdb459374f3759"
     },
     "style-2024": {
       "href": "./ET_GE.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220aac6d44417f446354331c2931a6eec7fa89bc995a635eafa1b5b402f3e2642d3"
+      "file:size": 899,
+      "file:checksum": "12209e949993550f2e0ee1c3a7f699f7ad8283e65df1fe8f28208f2acdb0b11cca73"
     },
     "style-confidence-2025": {
       "href": "./ET_GE.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122080a9dd8a87715bc9e806a78d638ad346f84460ed6db55d1090623f18fab9b3d2"
+      "file:size": 2643,
+      "file:checksum": "1220a686f18c3c10f4df4140c0552e017259fb541016c23b21340405b4c80a0041f9"
     },
     "style-confidence-2024": {
       "href": "./ET_GE.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220588d0ce31d3aa0b9a5713a1671ff74f3048a71b736176da0123b7f4da8b089c9"
+      "file:size": 2643,
+      "file:checksum": "122083a4c976310690e6da00b298cd083bb62c8985390d545c9d0ebb90d4b4e70fe6"
     },
     "README": {
       "href": "./ET_GE.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_GE.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

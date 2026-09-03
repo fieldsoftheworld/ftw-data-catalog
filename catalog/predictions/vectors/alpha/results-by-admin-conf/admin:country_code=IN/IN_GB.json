@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_GB",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          76.8128429996916,
+          35.459135251598994
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          76.8185921963764,
+          35.459135251598994
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          76.8185921963764,
+          35.4639861363018
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          76.8128429996916,
+          35.4639861363018
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          76.8128429996916,
+          35.459135251598994
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    76.8128429996916,
+    35.459135251598994,
+    76.8185921963764,
+    35.4639861363018
   ],
   "properties": {
     "title": "IN_GB",
@@ -118,9 +117,7 @@
       "title": "IN_GB field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 14362,
-      "file:checksum": "122042dbcf67e62a06e52e2b5d64200e2c5d76bcfad6ca120dcbf683603ce8e96e15"
+      ]
     },
     "pmtiles": {
       "href": "./IN_GB.pmtiles",
@@ -128,49 +125,47 @@
       "title": "IN_GB field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3533,
-      "file:checksum": "1220cb280924bdc7f06b6af6ddefa06e2a79dab9bccac689168f413db60f76c25565"
+      ]
     },
     "style-2025": {
       "href": "./IN_GB.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203e403d1d9039adc6cc7bff41570770ce48f1a240b6856355419f8a6a714754dc"
+      "file:size": 899,
+      "file:checksum": "1220c028fbc13c7ffcbd917c733d19a9f06e8ba28ded00680e91ab7e2e3974763b3d"
     },
     "style-2024": {
       "href": "./IN_GB.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ea6130d117b321ca6c7f486d6858430b26e77d3cd51cb5c3b41a2b3fb3b5e50e"
+      "file:size": 899,
+      "file:checksum": "12208c2948fe363d652fe188dab19187a57f16292a80f60b502678e8cc636b268ffc"
     },
     "style-confidence-2025": {
       "href": "./IN_GB.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b235ce8a844c684860b9a5f8100515a6fe08e9e36f73eb456512659f1390f615"
+      "file:size": 2643,
+      "file:checksum": "12207534415579036dbd2c48a6f2fde4d414814fa31122eef78700f1988f857c55fb"
     },
     "style-confidence-2024": {
       "href": "./IN_GB.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200f1fc60aaa0416b2836c6752ea901c8387d3a8abfe655a11f1852085faf1532e"
+      "file:size": 2643,
+      "file:checksum": "1220f9fa15386b78ae0e4e781c3a307039c42a2d04dd3bc59b5239fcda8fb03cec53"
     },
     "README": {
       "href": "./IN_GB.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_GB.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_XJ",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          73.50238368362523,
+          34.302468743575794
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          96.54390635952882,
+          34.302468743575794
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          96.54390635952882,
+          49.167915084108195
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          73.50238368362523,
+          49.167915084108195
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          73.50238368362523,
+          34.302468743575794
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    73.50238368362523,
+    34.302468743575794,
+    96.54390635952882,
+    49.167915084108195
   ],
   "properties": {
     "title": "China \u2014 Xinjiang Uygur Zizhiqu",
@@ -118,9 +117,7 @@
       "title": "China \u2014 Xinjiang Uygur Zizhiqu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2537536991,
-      "file:checksum": "12202e9aee3e6a4f216982cfd9fe1848669cea279b0271c8d2cd61351d551e7c3fd3"
+      ]
     },
     "pmtiles": {
       "href": "./CN_XJ.pmtiles",
@@ -128,49 +125,47 @@
       "title": "China \u2014 Xinjiang Uygur Zizhiqu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1537615093,
-      "file:checksum": "1220947528114f45b311aab812b556e68607edb66095d0ffbda192b4e94bccc62d4b"
+      ]
     },
     "style-2025": {
       "href": "./CN_XJ.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200faef7c2c7a678dc1b7fe3d3b411832918af2d308b135e9e335ef0ade1c3c078"
+      "file:size": 899,
+      "file:checksum": "1220d67a56eff9b885f524381c759b65cad180b10275885c5667630763d38900b1f8"
     },
     "style-2024": {
       "href": "./CN_XJ.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203df8a19e2bc356d79b764c8c77aca2cb041b3caf9dd531a0b35bb74f6118d175"
+      "file:size": 899,
+      "file:checksum": "1220319a827e1c15590e7db4124da0dd27d8f4ff1ce868c59548187da156115a38ba"
     },
     "style-confidence-2025": {
       "href": "./CN_XJ.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122056c1471a8b7eabc1fe5fa2c9ffd42596cca13ca1c2fae6344fde0a373a8d26b2"
+      "file:size": 2643,
+      "file:checksum": "1220580156cad91af60af9b6a720692392df1a066ecdfd01ecef18b85de8752f0df8"
     },
     "style-confidence-2024": {
       "href": "./CN_XJ.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122029fc8ba9026f2484c25d9e42141ad9813c9eda34e181def3fa08c06336b1d229"
+      "file:size": 2643,
+      "file:checksum": "1220f3916c58ad7679d99b371f87e13a6c6c7eee56e3b90666160dba12078f50eec2"
     },
     "README": {
       "href": "./CN_XJ.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_XJ.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

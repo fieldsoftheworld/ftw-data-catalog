@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_MP",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          74.03121994742862,
+          21.071590885490593
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          82.80745851797401,
+          21.071590885490593
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          82.80745851797401,
+          26.867948949345596
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          74.03121994742862,
+          26.867948949345596
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          74.03121994742862,
+          21.071590885490593
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    74.03121994742862,
+    21.071590885490593,
+    82.80745851797401,
+    26.867948949345596
   ],
   "properties": {
     "title": "India \u2014 Madhya Pradesh",
@@ -118,9 +117,7 @@
       "title": "India \u2014 Madhya Pradesh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6580924967,
-      "file:checksum": "12208cafe70e3abebb2cf7d5676eb621bfbaf212b40dfa77f602a10f39fa597dba07"
+      ]
     },
     "pmtiles": {
       "href": "./IN_MP.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 Madhya Pradesh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3199151384,
-      "file:checksum": "1220cd09f39b1a67fbea720636092ad8af1002ada778393e91c67c3df81d46d5c8d3"
+      ]
     },
     "style-2025": {
       "href": "./IN_MP.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220727e687a9806364899ba024a366f826eee312b9c71305b4eb8cbbbee0fdd5f75"
+      "file:size": 899,
+      "file:checksum": "1220c5969e622f60903f4f8c129e699edc4235ff636e551fc49cb2db9ef8611cc501"
     },
     "style-2024": {
       "href": "./IN_MP.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c3e8beafd33deb9891c257293eb1620701ccacc6f1eadaed78b1340557e90393"
+      "file:size": 899,
+      "file:checksum": "12201e9f668f05551aa536bccc934be764c83ffaef44292c576244856cc60cea1b4f"
     },
     "style-confidence-2025": {
       "href": "./IN_MP.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220fed8abd38d1f318d376b5a02d9077224fbd35c15c5814771db1bd4fe82932f6a"
+      "file:size": 2643,
+      "file:checksum": "12200031dfaed5dd9abec2b3a69fdd3cd29fc74057d2e317b8749814045f7e968918"
     },
     "style-confidence-2024": {
       "href": "./IN_MP.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b35f2b7d5ea99111ca159f41987ec84960966f6d9a875deadffa7adc160e0110"
+      "file:size": 2643,
+      "file:checksum": "12209b91b1acaa9bd723f78c5bb2a99a651a89e1c06c69d276c926b8fa4631137d96"
     },
     "README": {
       "href": "./IN_MP.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_MP.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_NY",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -79.76616938604359,
+          40.6174223146394
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -72.1220734064128,
+          40.6174223146394
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -72.1220734064128,
+          45.0233730927548
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -79.76616938604359,
+          45.0233730927548
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -79.76616938604359,
+          40.6174223146394
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -79.76616938604359,
+    40.6174223146394,
+    -72.1220734064128,
+    45.0233730927548
   ],
   "properties": {
     "title": "United States \u2014 New York",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 New York field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 108288892,
-      "file:checksum": "1220d1443291bb34be1bcc0e5ba37e6f1708763728e208c6fa2b251592b9838bba2f"
+      ]
     },
     "pmtiles": {
       "href": "./US_NY.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 New York field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 90044543,
-      "file:checksum": "1220c21edc1797ca798592ee597b41e4bebbdf87bc5a3fb05f432cc78cfd3b71542e"
+      ]
     },
     "style-2025": {
       "href": "./US_NY.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220182c777e810f21c1b888d14e705ceb32cbaf08f449dc68c26928aea65266a00b"
+      "file:size": 899,
+      "file:checksum": "12202f490b5c85932ed15db451be5e2dfe79d7b2d28bcdf76420653dd7bc40c13cf2"
     },
     "style-2024": {
       "href": "./US_NY.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e35b3a29c137dc96f442192f106b3e7c49e66b3550d6d4587efd52c039035542"
+      "file:size": 899,
+      "file:checksum": "12209838c585e31bf6b349b3e362414c09fc1a1862dd6b5198976ea880f615723bbd"
     },
     "style-confidence-2025": {
       "href": "./US_NY.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b4e3b001d14b7b8edf514a1e6d5b020eee07655f33e6561f1401f2b447d979a4"
+      "file:size": 2643,
+      "file:checksum": "122073863edc304af7496ff214479574e3f31fd5957ae3c317dc733726525baa1842"
     },
     "style-confidence-2024": {
       "href": "./US_NY.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ad5297892c9fa624ef2faf85ab437d1aa26e810524273fe800b89e1b9a379149"
+      "file:size": 2643,
+      "file:checksum": "1220fa9e79abef3627fb1ae48127d3623357a2aed997b3e2adce4a558427d7a512ca"
     },
     "README": {
       "href": "./US_NY.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NY.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

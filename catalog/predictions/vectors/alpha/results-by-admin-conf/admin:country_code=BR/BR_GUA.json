@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "BR_GUA",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -69.52110089373,
+          1.7230287675889948
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -68.10895445802599,
+          1.7230287675889948
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -68.10895445802599,
+          1.9662018211163947
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -69.52110089373,
+          1.9662018211163947
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -69.52110089373,
+          1.7230287675889948
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -69.52110089373,
+    1.7230287675889948,
+    -68.10895445802599,
+    1.9662018211163947
   ],
   "properties": {
     "title": "BR_GUA",
@@ -118,9 +117,7 @@
       "title": "BR_GUA field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 31013,
-      "file:checksum": "1220f9ddea2a0c5956ebf27aac5bfeb4d2c330d1133032dbad382afdca4685a39e9e"
+      ]
     },
     "pmtiles": {
       "href": "./BR_GUA.pmtiles",
@@ -128,49 +125,47 @@
       "title": "BR_GUA field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 22988,
-      "file:checksum": "1220e7ab8fdac35365bfa765dfc9e513af5c688b50cff2f74a56a63cacb44ea1967e"
+      ]
     },
     "style-2025": {
       "href": "./BR_GUA.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12205aacb19329528cd9e08aa9cd1ef0c16c4396f55466c1d572360d3187786c20db"
+      "file:size": 902,
+      "file:checksum": "1220981c634c64acedffe976c4b1ac5555c50579d26f0808f591e06383d22bebb6a2"
     },
     "style-2024": {
       "href": "./BR_GUA.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220b8a373d09b4eca34639e68ddb154b64559b679e1ccb0f4d3eab703c90e8e25af"
+      "file:size": 902,
+      "file:checksum": "12201b948097c582da4db9e46f7fc0becb04263ccebeded56b3acbe8f08b452512ed"
     },
     "style-confidence-2025": {
       "href": "./BR_GUA.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220b818d1f1929e5a9984533423c4456dc81b5eaffd7bbc5ef61676655f5a3d3ea7"
+      "file:size": 2646,
+      "file:checksum": "12205e160bf9396dd184ea3f07f889f029220ee842bb98ea8399db501df7bea3e0be"
     },
     "style-confidence-2024": {
       "href": "./BR_GUA.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12200311f7b66a92cce7f291efe99ac5adba35694f6ede22eab13ab903f6ec4e91f9"
+      "file:size": 2646,
+      "file:checksum": "122089dac2080b04b095ca4d84127f6c63fa844e44fe5ab6118954d9e52c992107e6"
     },
     "README": {
       "href": "./BR_GUA.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_GUA.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

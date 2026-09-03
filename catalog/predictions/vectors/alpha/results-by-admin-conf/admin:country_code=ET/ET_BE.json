@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "ET_BE",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          34.09155057812301,
+          8.951385961950189
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          36.74579299133841,
+          8.951385961950189
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          36.74579299133841,
+          11.985344849956991
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          34.09155057812301,
+          11.985344849956991
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          34.09155057812301,
+          8.951385961950189
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    34.09155057812301,
+    8.951385961950189,
+    36.74579299133841,
+    11.985344849956991
   ],
   "properties": {
     "title": "Ethiopia \u2014 Benshangul-Gumaz",
@@ -118,9 +117,7 @@
       "title": "Ethiopia \u2014 Benshangul-Gumaz field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 552948121,
-      "file:checksum": "1220cac289de7607e1747f61339ff8ab39c67ee7b75c363450d6e81e7c2e4e712f83"
+      ]
     },
     "pmtiles": {
       "href": "./ET_BE.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ethiopia \u2014 Benshangul-Gumaz field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 278412739,
-      "file:checksum": "12200d739549194253668477340835af30e7866b7fbf17dc6699a571039bcffbfd3e"
+      ]
     },
     "style-2025": {
       "href": "./ET_BE.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220cb984d02e5c5753396a41eda009f68b19be2b48540e686645a59e3395927a5d3"
+      "file:size": 899,
+      "file:checksum": "1220ce8c19201a0337b8f7797347eed14269e5268ccdfa67e877b87c085baf1de2d6"
     },
     "style-2024": {
       "href": "./ET_BE.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220547ecc9bdcf08f2332222d097f9876da6f0232334c6e7a18e117f227cfd2601e"
+      "file:size": 899,
+      "file:checksum": "12202d42572bf64db5b6cdd83302f61a9fe52a92094edf4c87748e6e4492cbb248a3"
     },
     "style-confidence-2025": {
       "href": "./ET_BE.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f7f30df09de9d87074e9ee5e405998d9e88f88f6596b374c0e2cc9cc988a1856"
+      "file:size": 2643,
+      "file:checksum": "1220acbcc4141f56dc45382eadc748f44bf1fe0dc30c7fcf15dcf3129b5ac106f0b4"
     },
     "style-confidence-2024": {
       "href": "./ET_BE.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e06a6b25e9cde56f0dd4d04ddefd348541fb6b5da3dae4db5cb0d8004f3ee6e5"
+      "file:size": 2643,
+      "file:checksum": "12205107aeaf40b2561dc1d0557b49d23ea1c3170df7a0971d2a49942f9cf8044287"
     },
     "README": {
       "href": "./ET_BE.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_BE.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

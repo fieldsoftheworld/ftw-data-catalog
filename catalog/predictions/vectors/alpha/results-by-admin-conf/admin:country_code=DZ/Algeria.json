@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Algeria",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Algeria field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1909374114,
-      "file:checksum": "1220605767d9f7580469120386b9cb2fccec7957ad6aad3cd0e7055c4a2e435866d5"
+      ]
     },
     "pmtiles": {
       "href": "./Algeria.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Algeria field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1081480009,
-      "file:checksum": "122059b858cac2e2919095d093a9e60b78481e40d4cbbc7a79895e068135d09324d2"
+      ]
     },
     "style-2025": {
       "href": "./Algeria.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220fa4da3d78e934c5738a19b6d0cf333666bc5877618ed52a28556d7109f272409"
+      "file:size": 905,
+      "file:checksum": "1220a434a65d2799b519ccf99a2b6e6a108662e3aefc75d4438560eb9b6c7e8e9504"
     },
     "style-2024": {
       "href": "./Algeria.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220c681b37eaa03da47b55708c7b395d8e7f4dc3932392c378565806b9dfcfea270"
+      "file:size": 905,
+      "file:checksum": "12209ee9604f1ca08e418d9f7700dabccd025c08af334d7b7a659c9996428e4bd53b"
     },
     "style-confidence-2025": {
       "href": "./Algeria.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220574da2e3afcb6201986607b40c76f4276eb35b9a6b27d2558bb8bf968b29ce20"
+      "file:size": 2649,
+      "file:checksum": "1220bf1675d5f4dd9f679f62917330507cd0081eb2d856a94f12c7fd2a63cc8885f2"
     },
     "style-confidence-2024": {
       "href": "./Algeria.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122088f84480c1eb74bacd43461606ac2f46f4c0c73ff7b57746fab0240b6e0cf353"
+      "file:size": 2649,
+      "file:checksum": "1220a85bab1f0c5ec9cb286d491276ce9cd173dd52acb4a9d5f545ef828c3eb14b01"
     },
     "README": {
       "href": "./Algeria.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=DZ/Algeria.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

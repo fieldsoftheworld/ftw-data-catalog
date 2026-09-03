@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Estonia",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Estonia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 90371680,
-      "file:checksum": "122094fb680bbab3de1fd726c6fef9f824f22fc7494c19d7f7d25cee975d47b3a50a"
+      ]
     },
     "pmtiles": {
       "href": "./Estonia.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Estonia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 67157030,
-      "file:checksum": "12207b5ff037cbb7badab0837b9e242d2eb865276d2f026780c6e5e68d205b5bc1a3"
+      ]
     },
     "style-2025": {
       "href": "./Estonia.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220b20ff5bc13ed32d5d6a3f5bc2dd8df5ec0a11ae91d2b7e7ed0c6c488822d12a5"
+      "file:size": 905,
+      "file:checksum": "1220fa93c87a2c736a90d340ac7ce203e4878549f0d50d791133906958987859cf18"
     },
     "style-2024": {
       "href": "./Estonia.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203aba21d9273b0246a23f50845ca2076683af848607905e39217ece75bf8fabff"
+      "file:size": 905,
+      "file:checksum": "122064febf247fa6e074d5bb8caa25ced7b0efe6bfa36b9ccee42c6b85a3d5560b0b"
     },
     "style-confidence-2025": {
       "href": "./Estonia.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220bd045feb80796e05efebffc91c1c76308c5bcfd731b64e63e396b20fd38f9959"
+      "file:size": 2649,
+      "file:checksum": "1220f1b52e308f512e2305cfd8ff0e72a813dd49c3857aa90f1ad9af8dd436343940"
     },
     "style-confidence-2024": {
       "href": "./Estonia.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220b6252218e2985d825ac1ecbb036d0c2a6803dd5738cf71d14a05216e6652ee19"
+      "file:size": 2649,
+      "file:checksum": "1220d0ed50dbe8c67efb5b8dd24b24a3ee68aa302c3ba99316426f78b74c95184336"
     },
     "README": {
       "href": "./Estonia.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=EE/Estonia.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "NG_OU",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          2.625747966221606,
+          6.3902985012682
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          2.791666189297006,
+          6.3902985012682
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          2.791666189297006,
+          6.4938738727928
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          2.625747966221606,
+          6.4938738727928
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          2.625747966221606,
+          6.3902985012682
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    2.625747966221606,
+    6.3902985012682,
+    2.791666189297006,
+    6.4938738727928
   ],
   "properties": {
     "title": "NG_OU",
@@ -118,9 +117,7 @@
       "title": "NG_OU field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 193283,
-      "file:checksum": "1220583df1ce77cb1dcd81a8463ee66d07ada812b46cb253f365468bc3cd9f68568e"
+      ]
     },
     "pmtiles": {
       "href": "./NG_OU.pmtiles",
@@ -128,49 +125,47 @@
       "title": "NG_OU field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 143114,
-      "file:checksum": "12204eb2bb5a31f1d4a39f5ba56ceecde0ad99b648a36aa1fa44c497bdd51c8473cf"
+      ]
     },
     "style-2025": {
       "href": "./NG_OU.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f2ddfe91757f9b6a29527aff503e35f83148858d172dc36e07e606d57448df45"
+      "file:size": 899,
+      "file:checksum": "1220e4e5579df114319ed59c7980f7d5804e7f640c5e94d4e621a4ab3c72a92c6d5e"
     },
     "style-2024": {
       "href": "./NG_OU.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200ce3f5ec3073d085a7691fd4fa4a95ef1eac79a29fc192675a4dad804a708825"
+      "file:size": 899,
+      "file:checksum": "1220f67e842f9701562c4c4c5502698a6d34de0cb14a5dfa80f862ef65f9d139736c"
     },
     "style-confidence-2025": {
       "href": "./NG_OU.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122002cf96fee5955b6db31b46c62c5257b7f20f1bfec667420c6221643e49ae9440"
+      "file:size": 2643,
+      "file:checksum": "12201d7bf24009b6f281e01b9980162a3b3e1fda75639564313e5db683a1af4910c9"
     },
     "style-confidence-2024": {
       "href": "./NG_OU.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203e2b7bd9a71ece7e855fec513709735a30e8e998d393b17d2c8672ad88c804f2"
+      "file:size": 2643,
+      "file:checksum": "12200126f5360ac40aa43a5eab2d8b10ae729910f9c2c100b63dcdf98c255754c0c2"
     },
     "README": {
       "href": "./NG_OU.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_OU.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

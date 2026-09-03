@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Kenya",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Kenya field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2408777080,
-      "file:checksum": "1220a60e94aa394933c685b4829910e1587b73de7292f0a63cf308104b2356d819de"
+      ]
     },
     "pmtiles": {
       "href": "./Kenya.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Kenya field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1168523697,
-      "file:checksum": "12205acd858688f9137196689af196f27a8d5362c8bf92a5718ba25c1286f9871c4a"
+      ]
     },
     "style-2025": {
       "href": "./Kenya.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208a89e68839cf2b7ff1fdc236308efd15cd847290c3b6a6f125591380c664d41d"
+      "file:size": 899,
+      "file:checksum": "122040e7371d5146e6e2a5e7fce6c2a07c2262c440baf7d3ce1916796b1fc750fb38"
     },
     "style-2024": {
       "href": "./Kenya.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220bef5b30c4b377a230a6d041c3b62ba94d0e9e087de85144163274773df0f65da"
+      "file:size": 899,
+      "file:checksum": "1220edf98d157a22bce6ac26cdf2f6a57ab7059cf0de2ef1643af457e9756ca226ae"
     },
     "style-confidence-2025": {
       "href": "./Kenya.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220546dacd512bb2bd3b7705d9fcd60791c58a0c416b7e68c960ed9463c468a0c64"
+      "file:size": 2643,
+      "file:checksum": "1220e424ef9212f9d2251bb13a28888ed88094e8e5fcb5dca8284174adae05bed05c"
     },
     "style-confidence-2024": {
       "href": "./Kenya.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c1370e69100cc2e284a87343071cd32fc26b51cf8e996841e09afe9f684b6354"
+      "file:size": 2643,
+      "file:checksum": "1220caa7f9a999087e287f6e96d0b0e2cc18d032d377af891d79874eccc3a7c095ba"
     },
     "README": {
       "href": "./Kenya.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=KE/Kenya.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

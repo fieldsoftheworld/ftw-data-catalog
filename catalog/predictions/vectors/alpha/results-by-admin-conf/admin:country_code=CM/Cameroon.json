@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Cameroon",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Cameroon field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1794611314,
-      "file:checksum": "12209951d3c9a4256a604a0a180a37c6bf54265da51c0defb245ea6d716beea3fece"
+      ]
     },
     "pmtiles": {
       "href": "./Cameroon.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Cameroon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 871476285,
-      "file:checksum": "1220ab14ab562967bd2a3fc923de6aa7c606a70fc641700063c957efd5ee247e06b8"
+      ]
     },
     "style-2025": {
       "href": "./Cameroon.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220d8c7ac76b59334f66ef0c8ebc49d6b6f2b45be971e81c267edc997b9baa00103"
+      "file:size": 908,
+      "file:checksum": "1220f305d6425dbb032f334199d5c8d06fb2d707b9d3816dfcc98c2a307c5e2bdb86"
     },
     "style-2024": {
       "href": "./Cameroon.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220dbfc2bf7bdb541bc1fad7a89e48aa0bfd910e7f0a46ae76d8f8954fb9193555c"
+      "file:size": 908,
+      "file:checksum": "122082b13cbdfd3b86dea8a732d9b7eeca7b5dcf28ce6d854966ef3a2bf5592f0fb6"
     },
     "style-confidence-2025": {
       "href": "./Cameroon.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220b79bcea1b3d69bed3c75056c84d48150d4d8545947eacc5f8b7d7c4d7733f9e5"
+      "file:size": 2652,
+      "file:checksum": "1220ad32afb51648b72926605eaa4e987d5cb96aa8bdca83e72f04554833d8e6b5e9"
     },
     "style-confidence-2024": {
       "href": "./Cameroon.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220d020aa6ee748c0801d261be0bed6d7d0e10c6f83fadad48b568110e44f026956"
+      "file:size": 2652,
+      "file:checksum": "122076e0da19b2766895f700cdd5e95f8ef27e073ea91eeee58f806a1921df4d86fc"
     },
     "README": {
       "href": "./Cameroon.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CM/Cameroon.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

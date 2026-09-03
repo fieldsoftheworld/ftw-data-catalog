@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_NC",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -84.310011053396,
+          33.8564568445128
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -75.632317307276,
+          33.8564568445128
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -75.632317307276,
+          36.574030252459195
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -84.310011053396,
+          36.574030252459195
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -84.310011053396,
+          33.8564568445128
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -84.310011053396,
+    33.8564568445128,
+    -75.632317307276,
+    36.574030252459195
   ],
   "properties": {
     "title": "United States \u2014 North Carolina",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 North Carolina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 190190605,
-      "file:checksum": "1220b2e31edbfe398ed0da90069ec1f40c916721b40c662518692523fc1ac6c82ec9"
+      ]
     },
     "pmtiles": {
       "href": "./US_NC.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 North Carolina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 132593562,
-      "file:checksum": "1220986e9c566972ca81737a82fb15ab93ddac2a16715e7592d1d9fa0ad8bad00c05"
+      ]
     },
     "style-2025": {
       "href": "./US_NC.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b2757d28b2a5fe34a4739a410418457bf8fa307f5c7bec82434e41cd3ae18155"
+      "file:size": 899,
+      "file:checksum": "12200f6ebff8ebfdbd6f6fb996e4787ca5010608f43df5962fe51a016611e448d779"
     },
     "style-2024": {
       "href": "./US_NC.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f2ad123ad4dae49a890e0665b1d70aadb177b73ad57cfebf7fe09a835038ce15"
+      "file:size": 899,
+      "file:checksum": "122004d6d9d35e4005629841acb950c003c22b78744da9b0c8666f2481dab8fdbefe"
     },
     "style-confidence-2025": {
       "href": "./US_NC.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220528dbb218b1fa77c787a4dfcb37298b40a5027333e5bedacd409892b39359c3f"
+      "file:size": 2643,
+      "file:checksum": "122029265fb6d4df970f24d2cb7b4f647bd2336574ce4d31672c4ea35e7fa76bc54f"
     },
     "style-confidence-2024": {
       "href": "./US_NC.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207fe2164935d84cafcc916a108dd64cd32899f4fd9108ce9c4979d0d96913f861"
+      "file:size": 2643,
+      "file:checksum": "1220f45032a3672e5eb47b5fb22b9708d7e9f24173b2ca5a772d720b010ac709d5d4"
     },
     "README": {
       "href": "./US_NC.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NC.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

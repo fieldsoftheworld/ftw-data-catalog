@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "ET_GA",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          32.99767607764161,
+          5.880416620285
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          46.283440797827026,
+          5.880416620285
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          46.283440797827026,
+          8.72168758815279
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          32.99767607764161,
+          8.72168758815279
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          32.99767607764161,
+          5.880416620285
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    32.99767607764161,
+    5.880416620285,
+    46.283440797827026,
+    8.72168758815279
   ],
   "properties": {
     "title": "Ethiopia \u2014 Gambela Peoples",
@@ -118,9 +117,7 @@
       "title": "Ethiopia \u2014 Gambela Peoples field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 135514713,
-      "file:checksum": "1220206a2d585b15a0cb8c7c89b35b2ea9dfad3639fdd1abb47a0f82af6a818b85bf"
+      ]
     },
     "pmtiles": {
       "href": "./ET_GA.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ethiopia \u2014 Gambela Peoples field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 86509363,
-      "file:checksum": "1220d54675dd87422306584dfc226f516e8c8ce7678fe556c6c28baa1df7c2bc5f75"
+      ]
     },
     "style-2025": {
       "href": "./ET_GA.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a2828d59b4867ac80aecf65fd88d03f35aa4a3a5ba20e6e9b10e960bb67c9a8b"
+      "file:size": 899,
+      "file:checksum": "122002d0f2c0a40dd419677947813e9829aafb24f5a0c6292f20b62fd0987e2c961d"
     },
     "style-2024": {
       "href": "./ET_GA.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e1a70143fc07c1f08d4ec0d1f439cc8a64d4b07ecaa2a96fefd458f10f06e8f2"
+      "file:size": 899,
+      "file:checksum": "1220ce58edf668d03242b3e179882dd0096bdc9629a57403cbfe1c7043817889e583"
     },
     "style-confidence-2025": {
       "href": "./ET_GA.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122096f0c7e263efcd66846869c9af60250553bad78f85d411e0a16b08a924f4be7d"
+      "file:size": 2643,
+      "file:checksum": "12204b2ea95c5fb2b8902b08fa8687f6e487f6e37f1c5d3c6192718da8d83e31190f"
     },
     "style-confidence-2024": {
       "href": "./ET_GA.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200b658db209436239f4ffa8f48e171d4e6badb748593f01612de5b1aa7aee3aab"
+      "file:size": 2643,
+      "file:checksum": "12201bf0c1d20286fe572cb2feb1f50d3affe37fea574d6e70474bf73e4a3594a186"
     },
     "README": {
       "href": "./ET_GA.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_GA.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

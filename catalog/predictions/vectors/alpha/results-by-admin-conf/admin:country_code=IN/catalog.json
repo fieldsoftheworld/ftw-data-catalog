@@ -16,6 +16,11 @@
       "type": "application/json"
     },
     {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/catalog.json",
+      "type": "application/json"
+    },
+    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -29,348 +34,277 @@
     {
       "rel": "item",
       "href": "./IN_01.json",
-      "type": "application/geo+json",
-      "title": "IN_01"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_14.json",
-      "type": "application/geo+json",
-      "title": "IN_14"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_31.json",
-      "type": "application/geo+json",
-      "title": "IN_31"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_43.json",
-      "type": "application/geo+json",
-      "title": "IN_43"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_45.json",
-      "type": "application/geo+json",
-      "title": "IN_45"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_AN.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Andaman and Nicobar Islands"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_AP.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Andhra Pradesh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_AR.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Arun\u0101chal Pradesh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_AS.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Assam"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_B.json",
-      "type": "application/geo+json",
-      "title": "IN_B"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_BR.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Bih\u0101r"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_CG.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Chhatt\u012bsgarh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_CH.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Chand\u012bgarh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_D.json",
-      "type": "application/geo+json",
-      "title": "IN_D"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_DH.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_DL.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Delhi"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_E.json",
-      "type": "application/geo+json",
-      "title": "IN_E"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_F.json",
-      "type": "application/geo+json",
-      "title": "IN_F"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_G.json",
-      "type": "application/geo+json",
-      "title": "IN_G"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_GA.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Goa"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_GB.json",
-      "type": "application/geo+json",
-      "title": "IN_GB"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_GJ.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Gujar\u0101t"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_H.json",
-      "type": "application/geo+json",
-      "title": "IN_H"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_HP.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Him\u0101chal Pradesh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_HR.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Hary\u0101na"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_JH.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Jh\u0101rkhand"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_JK.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Jammu and Kashm\u012br"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_KA.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Karn\u0101taka"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_KL.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Kerala"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_LA.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Lad\u0101kh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_MH.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Mah\u0101r\u0101shtra"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_ML.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Megh\u0101laya"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_MN.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Manipur"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_MP.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Madhya Pradesh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_MZ.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Mizoram"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_NL.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 N\u0101g\u0101land"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_OD.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Odisha"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_P1.json",
-      "type": "application/geo+json",
-      "title": "IN_P1"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_P2.json",
-      "type": "application/geo+json",
-      "title": "IN_P2"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_P5.json",
-      "type": "application/geo+json",
-      "title": "IN_P5"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_P7.json",
-      "type": "application/geo+json",
-      "title": "IN_P7"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_PB.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Punjab"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_PY.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Puducherry"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_RJ.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 R\u0101jasth\u0101n"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_SD.json",
-      "type": "application/geo+json",
-      "title": "IN_SD"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_SK.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Sikkim"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_TN.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Tamil N\u0101du"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_TR.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Tripura"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_TS.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Telang\u0101na"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_UK.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Uttar\u0101khand"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_UP.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 Uttar Pradesh"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_WB.json",
-      "type": "application/geo+json",
-      "title": "India \u2014 West Bengal"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_XJ.json",
-      "type": "application/geo+json",
-      "title": "IN_XJ"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_XZ.json",
-      "type": "application/geo+json",
-      "title": "IN_XZ"
+      "type": "application/geo+json"
     },
     {
       "rel": "item",
       "href": "./IN_ZZ.json",
-      "type": "application/geo+json",
-      "title": "IN_ZZ"
-    },
-    {
-      "rel": "agents",
-      "href": "./AGENTS.md",
-      "type": "text/markdown",
-      "title": "Guidance for AI agents"
-    },
-    {
-      "rel": "describedby",
-      "href": "./README.md",
-      "type": "text/markdown",
-      "title": "Human-readable documentation"
+      "type": "application/geo+json"
     }
-  ],
-  "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
-  ],
-  "updated": "2026-07-28T16:34:06Z"
+  ]
 }

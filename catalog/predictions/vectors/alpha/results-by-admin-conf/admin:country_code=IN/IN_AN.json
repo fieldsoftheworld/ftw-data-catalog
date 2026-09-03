@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_AN",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          92.51973817376341,
+          6.8557139391424
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          93.90179115807042,
+          6.8557139391424
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          93.90179115807042,
+          13.519661715212994
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          92.51973817376341,
+          13.519661715212994
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          92.51973817376341,
+          6.8557139391424
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    92.51973817376341,
+    6.8557139391424,
+    93.90179115807042,
+    13.519661715212994
   ],
   "properties": {
     "title": "India \u2014 Andaman and Nicobar Islands",
@@ -118,9 +117,7 @@
       "title": "India \u2014 Andaman and Nicobar Islands field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4573062,
-      "file:checksum": "122034fef0bb21f1e2f770bb4eaaf9dd41bcccc192418a333962a470504177fafdbc"
+      ]
     },
     "pmtiles": {
       "href": "./IN_AN.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 Andaman and Nicobar Islands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 4853979,
-      "file:checksum": "12202f1fe91187d2e9357001a299defd01411ebc6a9f489b298218d48611e38c3dd1"
+      ]
     },
     "style-2025": {
       "href": "./IN_AN.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220152dd5174e8be689d24eca75a48f92ba838630b50883e7de73726d9db923547d"
+      "file:size": 899,
+      "file:checksum": "122032a2c4d7195502d3dee9730db2865f16755500db60fd8e589a7a17bdd7fe85d0"
     },
     "style-2024": {
       "href": "./IN_AN.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220510e9eb86af6f78b81b41ab32f2b2dcdb1f4c2c0a9884d07d54279918ce7633e"
+      "file:size": 899,
+      "file:checksum": "1220c9be83d8accaa151565ac35aa729a4c69bfb7979f2426a80e1c2fb4cccbdc80e"
     },
     "style-confidence-2025": {
       "href": "./IN_AN.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122065d1c20cc494ce81dc2d32b5b6c6178df9c2cf6cbc0ee534ba85e8097e7c8ad9"
+      "file:size": 2643,
+      "file:checksum": "122050e4e8c1d029364089d1f7ac2bc6d988c8ed9bb8f5f9cbc2fcc65c0c06849916"
     },
     "style-confidence-2024": {
       "href": "./IN_AN.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201fc4c5dc165a1fd17d172fa2b7f62570701c284a16e3554dc4c54e91a13a334b"
+      "file:size": 2643,
+      "file:checksum": "12207165ae90e77506bd427505fcde14e138d1bac05ef88e6aedc279a7dad6b1847d"
     },
     "README": {
       "href": "./IN_AN.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_AN.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

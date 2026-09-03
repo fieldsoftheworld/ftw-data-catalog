@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_NM",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -109.1489661740834,
+          31.3280679399756
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -102.786941055163,
+          31.3280679399756
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -102.786941055163,
+          37.154160130434796
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -109.1489661740834,
+          37.154160130434796
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -109.1489661740834,
+          31.3280679399756
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -109.1489661740834,
+    31.3280679399756,
+    -102.786941055163,
+    37.154160130434796
   ],
   "properties": {
     "title": "United States \u2014 New Mexico",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 New Mexico field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 630029830,
-      "file:checksum": "1220ca918cc55f08e3d44dda1777008e5102baf98eef79ac70841feaccd853807c0b"
+      ]
     },
     "pmtiles": {
       "href": "./US_NM.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 New Mexico field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 418169562,
-      "file:checksum": "1220b6922db3975cc3a581f3d97504dfe50ff109e55f34509d71ba1963a53c6ba157"
+      ]
     },
     "style-2025": {
       "href": "./US_NM.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208e9bafdd1802e9837808d23289296b95e21d58c65b557c1f7d6e1028c5775a31"
+      "file:size": 899,
+      "file:checksum": "12203a98ef268a4f0d5687af31ed8e67598d9068a05f4c3765e83e3f15595bcc6aba"
     },
     "style-2024": {
       "href": "./US_NM.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209b504bc949e13c441e989557739eea4203f495fa312cfef0778aee618fc046b9"
+      "file:size": 899,
+      "file:checksum": "122059dcea4573a891cb2cb888e892bb4edbf7c2765d4ee33607c2934a840f00b344"
     },
     "style-confidence-2025": {
       "href": "./US_NM.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201d363f2c485196c3804a16c356fd3f073868784510bc9e80c97845012c088e4e"
+      "file:size": 2643,
+      "file:checksum": "12201c855ed6d583abd5a0fed18c8d71e9e64c9bed7685f5aa3db086c5cb808a4a78"
     },
     "style-confidence-2024": {
       "href": "./US_NM.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209d84f04976e10deca6d7aa246a85574c0f082b02c8202b568eb935a86470f9b5"
+      "file:size": 2643,
+      "file:checksum": "1220501ac54d32ff4ea7576c61756473a5fbafd6fa3f014516baab335731a0ff0f7b"
     },
     "README": {
       "href": "./US_NM.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_NM.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

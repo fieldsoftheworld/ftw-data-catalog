@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_UT",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -114.2245187035816,
+          36.885834341411396
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -108.9914022524406,
+          36.885834341411396
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -108.9914022524406,
+          42.1292813803454
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -114.2245187035816,
+          42.1292813803454
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -114.2245187035816,
+          36.885834341411396
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -114.2245187035816,
+    36.885834341411396,
+    -108.9914022524406,
+    42.1292813803454
   ],
   "properties": {
     "title": "United States \u2014 Utah",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Utah field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 305878033,
-      "file:checksum": "1220e13178602b5faf1ff7a362a3319ca0156017fad3d269167430e90a5ceb595b36"
+      ]
     },
     "pmtiles": {
       "href": "./US_UT.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Utah field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 231793846,
-      "file:checksum": "12202d15ce067ff9423ed610d87949245b46be25ba1c2a3252f7d1d81a5fc76b685b"
+      ]
     },
     "style-2025": {
       "href": "./US_UT.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b0d8243abe38b64fa1f4a1bb89a73a46baf1596854991ad98973e23033316e56"
+      "file:size": 899,
+      "file:checksum": "1220e754d8b5311356057566053c455f4493720c4494916ad74995d9d848fbc87b6c"
     },
     "style-2024": {
       "href": "./US_UT.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220dd58c9f09011fa7124bcef639b341d870c5e8aee6ba3fdfc88e7db8f1d37bc35"
+      "file:size": 899,
+      "file:checksum": "12207d6443ec573b3877e91aa70e77959abb57e8275bb9db929523f1e964fbd0da25"
     },
     "style-confidence-2025": {
       "href": "./US_UT.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201f4d34dc2969acc51042cb92ac7f8a148b7b1ce853dfc71e7949c1c59150258b"
+      "file:size": 2643,
+      "file:checksum": "122045f1822ddeb9443595af5ec5f807cd9418b510631a4d2a690089df309dfda4c1"
     },
     "style-confidence-2024": {
       "href": "./US_UT.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203a8d12f100e51e4f5a6cec7d4655eb850ec801c40dd4e71bb5c5bddafbe81b46"
+      "file:size": 2643,
+      "file:checksum": "1220b4c5146cc82be181ff24659c4725fe950871d22003ff99829b08acfd2ce96e93"
     },
     "README": {
       "href": "./US_UT.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_UT.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

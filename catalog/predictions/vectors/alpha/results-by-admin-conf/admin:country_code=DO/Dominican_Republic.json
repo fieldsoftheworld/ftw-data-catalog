@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Dominican_Republic",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Dominican_Republic field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 140254223,
-      "file:checksum": "122008d48c70a49a2d026f1abc75662832f1b0f27c43b68286a36b8de5dd659880a2"
+      ]
     },
     "pmtiles": {
       "href": "./Dominican_Republic.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Dominican_Republic field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 96039506,
-      "file:checksum": "1220841c942a1bb95200c65242c8d4429525e6e018e017b3fdda9a066103cd64f3ec"
+      ]
     },
     "style-2025": {
       "href": "./Dominican_Republic.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 939,
-      "file:checksum": "122092c2f333f7d88ec04e27739853eeec3beaadd938f82f71a4e6713d7648ae8686"
+      "file:size": 938,
+      "file:checksum": "122033427a30055a7a69ad260b59f60e1bf4e63336013efe45e70c69b4b1fe2440c4"
     },
     "style-2024": {
       "href": "./Dominican_Republic.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 939,
-      "file:checksum": "122090cb113cd45b0dd9ef06638042f79022390d637581f2001c2293f13cd5d297ff"
+      "file:size": 938,
+      "file:checksum": "122030398ca744b0a5b9a843f91b9db815631b0f57219c297d09f8c755d0e3ff9bc1"
     },
     "style-confidence-2025": {
       "href": "./Dominican_Republic.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2683,
-      "file:checksum": "122018764db689d0d91fd3bc9926ddc015f58d38548c045de6ebdbf04f4db4e77e7e"
+      "file:size": 2682,
+      "file:checksum": "1220ab1e52b69b191ae28dd02c37712b1dab467f0eef3d9925328b5bc458c1eb954d"
     },
     "style-confidence-2024": {
       "href": "./Dominican_Republic.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2683,
-      "file:checksum": "12209cb314314d07184e2a60406c15180203b12c1daa293077ea4e548700de12c612"
+      "file:size": 2682,
+      "file:checksum": "1220f5bfe1d5624bfe5e196adbefe0b1b635456716bfd9f96fd10e904316b9f722cc"
     },
     "README": {
       "href": "./Dominican_Republic.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=DO/Dominican_Republic.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

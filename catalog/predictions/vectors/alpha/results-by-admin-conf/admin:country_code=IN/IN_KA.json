@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_KA",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          74.09868317727683,
+          11.597543567327591
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          78.587637982529,
+          11.597543567327591
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          78.587637982529,
+          18.4767268942854
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          74.09868317727683,
+          18.4767268942854
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          74.09868317727683,
+          11.597543567327591
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    74.09868317727683,
+    11.597543567327591,
+    78.587637982529,
+    18.4767268942854
   ],
   "properties": {
     "title": "India \u2014 Karn\u0101taka",
@@ -118,9 +117,7 @@
       "title": "India \u2014 Karn\u0101taka field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3295515674,
-      "file:checksum": "1220308d42c5353e2c5d17fea3f040bf578a86b5293f8e613b97b3eb94b4ceb03db5"
+      ]
     },
     "pmtiles": {
       "href": "./IN_KA.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 Karn\u0101taka field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1689375356,
-      "file:checksum": "12203aae3b9dcc973c831f3a2b6fdd7a8f090c681d305a4ac908c22b96aab80e718e"
+      ]
     },
     "style-2025": {
       "href": "./IN_KA.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d6267b7dbec791b8689500738048829b3974ab34654192e205b4287067e2e96b"
+      "file:size": 899,
+      "file:checksum": "122064e77678a74c2271ba4c48250e85254b1d32f5ccf716d1b5755b0f03092a6c42"
     },
     "style-2024": {
       "href": "./IN_KA.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122082034fb7079eeadeecf97208daadc0eba488b2b63c008719c4eae7ad2676051e"
+      "file:size": 899,
+      "file:checksum": "1220d2a7b0ea59b16a0c1b37eb2654f88b43499105f13fa9467fc6290bfc52e8f59b"
     },
     "style-confidence-2025": {
       "href": "./IN_KA.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220817f74cd2cffbfedb739e154147784ded67af21d970350a9b0cff60db57a4d29"
+      "file:size": 2643,
+      "file:checksum": "1220ab3c1cc84aa13927a3ff76f85908671f7ca9846512beb63dfa6d2096a9069ce9"
     },
     "style-confidence-2024": {
       "href": "./IN_KA.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12204656ebc952460b45736f941345eddbcb83f54145132250195d9460e2deb092f2"
+      "file:size": 2643,
+      "file:checksum": "12203d1f6bc1c9e1dc86c3b79c9f3fa45e3a6e03e4577f2b0278b3c61dc0b4b79117"
     },
     "README": {
       "href": "./IN_KA.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_KA.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

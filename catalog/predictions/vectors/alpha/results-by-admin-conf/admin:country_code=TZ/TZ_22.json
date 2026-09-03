@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "TZ_22",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          31.70859838347161,
+          -4.333929602244211
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          34.24031104234221,
+          -4.333929602244211
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          34.24031104234221,
+          -3.195588658653812
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          31.70859838347161,
+          -3.195588658653812
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          31.70859838347161,
+          -4.333929602244211
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    31.70859838347161,
+    -4.333929602244211,
+    34.24031104234221,
+    -3.195588658653812
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Shinyanga",
@@ -118,9 +117,7 @@
       "title": "Tanzania, United Republic of \u2014 Shinyanga field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 359432566,
-      "file:checksum": "1220959224815e087139a2f709ca56098fc0c542df593c80832cc7f557ef55b2c66a"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_22.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Tanzania, United Republic of \u2014 Shinyanga field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 188673752,
-      "file:checksum": "12207a8af49b4d6b52714f239257d7f000595588ded7fd662785c25a6f78f85c32bc"
+      ]
     },
     "style-2025": {
       "href": "./TZ_22.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ddca6e2d50121e0086aa01cb4b424759c9f14bbdecc5765f65cc6af04144b487"
+      "file:size": 899,
+      "file:checksum": "12204a3330f75eff910a3305103f25b7a0e0d7a3164163b275f9bcd250d0c39dba25"
     },
     "style-2024": {
       "href": "./TZ_22.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205c30670c5b561c1a894d3c35b253280958ab33862d1eb2c09f4c5dd331f409a1"
+      "file:size": 899,
+      "file:checksum": "12207311fefee666b7f9722739f98dcb5c7944b7180cceab3c018fbeae8526451a42"
     },
     "style-confidence-2025": {
       "href": "./TZ_22.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122009786101b5011b9112cfbb27520b4ff82c69cf3de78fa50047fa66ac03701b00"
+      "file:size": 2643,
+      "file:checksum": "12209f2363dc61de4be01a5c3d3653e821167be3d1aace20c223760ce3e8bffff271"
     },
     "style-confidence-2024": {
       "href": "./TZ_22.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f5046151a1e713dfaaa3bd1445e4f9753c8cd55282b3848384bbd253c63d6f12"
+      "file:size": 2643,
+      "file:checksum": "1220002bcb0e6815dafb504a5cac279cd9a1630e100eba53b6665ca92efcb96383f9"
     },
     "README": {
       "href": "./TZ_22.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_22.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

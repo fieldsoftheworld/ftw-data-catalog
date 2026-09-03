@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "San_Marino",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "San_Marino field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 316031,
-      "file:checksum": "12206423cf81d19ca806e3626da6da2c84a5da6930bac628537ad8e1e4829775f292"
+      ]
     },
     "pmtiles": {
       "href": "./San_Marino.pmtiles",
@@ -128,49 +125,47 @@
       "title": "San_Marino field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 362642,
-      "file:checksum": "12208772dde9aea0029c805baff2bf06a17224ec965fbd7545c9d6e991a2178f4b9e"
+      ]
     },
     "style-2025": {
       "href": "./San_Marino.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12202bd72d13b2adf8300be43e876a4c39015f8b97039042cdc86abdec5b0b04ee15"
+      "file:size": 914,
+      "file:checksum": "122063d79899f3678faecd612d79716530f2ca73ce8d9a35720102366947e18867f5"
     },
     "style-2024": {
       "href": "./San_Marino.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12203097a8416a417ead44506ff170aa475fa9962c75aac70746feaa6cf3960ae72c"
+      "file:size": 914,
+      "file:checksum": "12203bd46dd7825ede78235ba8455cd13da25df03d82f8ceca700b1ce68f71ad0f4f"
     },
     "style-confidence-2025": {
       "href": "./San_Marino.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220d935922c2bae6008cbb323302de44c6a28cb2f71a294cf52a3280476d9a220db"
+      "file:size": 2658,
+      "file:checksum": "1220c2d7eee7c2e876f150115c09f3ef0acf3c93ca8c26189dd091fdb3a8cfc8e38a"
     },
     "style-confidence-2024": {
       "href": "./San_Marino.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220208a3456994450c81715f3041bcb7f3d031e1226d118ba739298342864712069"
+      "file:size": 2658,
+      "file:checksum": "12207a8a84b4a9a3fc7182380d8cc88785d1e867dcd6cd99a5df0983b43666730309"
     },
     "README": {
       "href": "./San_Marino.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SM/San_Marino.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

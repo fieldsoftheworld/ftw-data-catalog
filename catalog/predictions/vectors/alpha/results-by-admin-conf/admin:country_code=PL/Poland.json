@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Poland",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Poland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2466008598,
-      "file:checksum": "12204b319311241a0fe6a03aa5d2d2297302ffe6f32eae2442d7ffb08cf6dc83a810"
+      ]
     },
     "pmtiles": {
       "href": "./Poland.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Poland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1388496950,
-      "file:checksum": "1220a59f582b3856d869477dccbc821fa2784f0ec5373dbf31c4b8acee69f572eb4b"
+      ]
     },
     "style-2025": {
       "href": "./Poland.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122097d8015207da9daaf8ae5807d1d45a3a90a7b22f9e9bcf3d8f8261519215d738"
+      "file:size": 902,
+      "file:checksum": "1220614a6bb46ef5b80e675f483e5be20cffb21eae38246920041dc95e925a1e7827"
     },
     "style-2024": {
       "href": "./Poland.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12207c48efaaf4b2495a787e72d5787f4722be8ee88b7fcf103b05d3786b7edc3639"
+      "file:size": 902,
+      "file:checksum": "12204ced7b755187e7a315eda41de1cb3b79fd84abae3176e03439ec7e54a05ed88d"
     },
     "style-confidence-2025": {
       "href": "./Poland.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220a039739b1950fb47e4a1ecedb72e83f5f7411c4b3cace32be4b84e797876af4e"
+      "file:size": 2646,
+      "file:checksum": "12205ce12d87c0ce576eebeece06fceb94790ecf4ef720fa99776b953877c332a209"
     },
     "style-confidence-2024": {
       "href": "./Poland.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12205bc48d0b828272e17dca677721eacf8e26753d5fb9caabc7fb638ad1d7bb9736"
+      "file:size": 2646,
+      "file:checksum": "1220480c38c4d803fa9e487569d9e41b5f23f50a3ffc7474c8adfc27684e880c74ef"
     },
     "README": {
       "href": "./Poland.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PL/Poland.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

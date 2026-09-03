@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "IN_DH",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          70.88030083936542,
+          20.047425394812393
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          73.21806794132223,
+          20.047425394812393
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          73.21806794132223,
+          20.734813723438794
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          70.88030083936542,
+          20.734813723438794
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          70.88030083936542,
+          20.047425394812393
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    70.88030083936542,
+    20.047425394812393,
+    73.21806794132223,
+    20.734813723438794
   ],
   "properties": {
     "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu",
@@ -118,9 +117,7 @@
       "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 7534331,
-      "file:checksum": "1220c7027913f9e57a973721b6533667ebda7803079f4dc0ae23cb61b1b49acb2c2b"
+      ]
     },
     "pmtiles": {
       "href": "./IN_DH.pmtiles",
@@ -128,49 +125,47 @@
       "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7498526,
-      "file:checksum": "1220a9ef23ff30bc2bb14f6e32b824fa692dc9bcebe71a9ab3c2546506797664c710"
+      ]
     },
     "style-2025": {
       "href": "./IN_DH.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220644a193eafb1df17a1611bed5639fe94529df2a3c744b453aa91dc7f43b63a4d"
+      "file:size": 899,
+      "file:checksum": "12207f9f3c39346f2dec4f64a9332dc977c759e2b82d4b795f8013fbec53569c7277"
     },
     "style-2024": {
       "href": "./IN_DH.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205c58bb0ec56b539c134d1d92c5a154427845e69d2d57aaeb4b7b81d3152f272e"
+      "file:size": 899,
+      "file:checksum": "12207b421c4bb3cbb6025274fceccdb4d576ec18d1d3061badaf07b59bb2370e21b1"
     },
     "style-confidence-2025": {
       "href": "./IN_DH.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c827c404f175ce700cba3a25883a760f82b5019f716532a1a34a5c6fc390a9cb"
+      "file:size": 2643,
+      "file:checksum": "122093a69c79b2f5dec932cdd5d22e07951b80bdf72865323b93cd069149feecf6cf"
     },
     "style-confidence-2024": {
       "href": "./IN_DH.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220dd55dae013cbfa562463945f5eba59ca48ceafeb108e2a6da09ac890f7f2f023"
+      "file:size": 2643,
+      "file:checksum": "122018a9b275d87b1b7511acc8e1302a1d160b6b70d20d652ea3cb6e271d8905275f"
     },
     "README": {
       "href": "./IN_DH.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IN/IN_DH.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

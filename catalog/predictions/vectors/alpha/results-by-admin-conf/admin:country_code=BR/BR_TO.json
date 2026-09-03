@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "BR_TO",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -50.8378286296976,
+          -13.43625542225561
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -45.66157532701719,
+          -13.43625542225561
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -45.66157532701719,
+          -5.174210630206999
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -50.8378286296976,
+          -5.174210630206999
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -50.8378286296976,
+          -13.43625542225561
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -50.8378286296976,
+    -13.43625542225561,
+    -45.66157532701719,
+    -5.174210630206999
   ],
   "properties": {
     "title": "Brazil \u2014 Tocantins",
@@ -118,9 +117,7 @@
       "title": "Brazil \u2014 Tocantins field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 514124545,
-      "file:checksum": "122077860d57ee6b9d8e217d01510ced60798fe198b9b88c7066e63282bc47166293"
+      ]
     },
     "pmtiles": {
       "href": "./BR_TO.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Brazil \u2014 Tocantins field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 322372241,
-      "file:checksum": "1220f5198cc61287c7e8110b09dbaf687b6f3a2efb35a7e1707595d8bc84b7d62528"
+      ]
     },
     "style-2025": {
       "href": "./BR_TO.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209db775aabb0225049e02264c2d3e63cf0d293c417676068ed2ff56d9abb5275b"
+      "file:size": 899,
+      "file:checksum": "122059e56533f76e7d2d358bfeeaed30c1259cb4d9d2e3f8b702f4852498222831e5"
     },
     "style-2024": {
       "href": "./BR_TO.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203079f9bb38a14b9e85641e3556972e744c2921ca0e5157ebde7bee7a3331f776"
+      "file:size": 899,
+      "file:checksum": "12205b230557228459eb8c679f6ff9b7623f61aa7bcc4837dabcf71e7f2dfe59761c"
     },
     "style-confidence-2025": {
       "href": "./BR_TO.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a7d9103724e077637d752e33aad229e3e8aaea16860c6c81b90beeba9f0bffea"
+      "file:size": 2643,
+      "file:checksum": "12203efbc6f7d704afa99b8c5e20220940a2ef4fa610790be1a3cde3cc1729d50e30"
     },
     "style-confidence-2024": {
       "href": "./BR_TO.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e1cb62b77d322d8e49dbf7b0107a375ecb1604f88c505cfafa95f7d981971b18"
+      "file:size": 2643,
+      "file:checksum": "122079862b682576c2e7d08e52763369fea854b99b501582862e443f0a372055d876"
     },
     "README": {
       "href": "./BR_TO.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BR/BR_TO.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

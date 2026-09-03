@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Greece",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Greece field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 572281596,
-      "file:checksum": "122027c0e74458c1347c0196f11235b611f5b87e002c183309255750209d4fad8b78"
+      ]
     },
     "pmtiles": {
       "href": "./Greece.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Greece field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 331278686,
-      "file:checksum": "1220ad06a3193dc9b24789faeb42b99445c468e8e8eeea49a4a27c057fd3c7d5bcc0"
+      ]
     },
     "style-2025": {
       "href": "./Greece.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220a83f1fc8f8f0daefaa1e6546d8b7446e720c4c6d9b0148162d3d10dabb9e4415"
+      "file:size": 902,
+      "file:checksum": "122096f0736c8abf3bf112ddbb50f2b661f8447cf514467b1dd1b85b4e8d3b326432"
     },
     "style-2024": {
       "href": "./Greece.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220664dfae73a8f1fa445ef8bdacd6ebbbab31d2952332240d07d10b5ac9624afc7"
+      "file:size": 902,
+      "file:checksum": "1220ff2aef2ac6b617ca2c9c5ed6c70bdce92c3168a919d2a3bc56379a253bf4fc25"
     },
     "style-confidence-2025": {
       "href": "./Greece.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220e9518a50ace571c7c2cdf912e4433f92f16e0d957fef9c1dc3084227627efbf8"
+      "file:size": 2646,
+      "file:checksum": "1220373ebdab769a98009825b359c99409e741aa470ddf8bae8a83e65904166a859d"
     },
     "style-confidence-2024": {
       "href": "./Greece.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12204000ee47fc72d19483c16f87b3fee5a2a5c3e5db831e2337a4b61d3a42f560e2"
+      "file:size": 2646,
+      "file:checksum": "12206787b15489c7a492df4a3a6ea4492ed4888e9a099daf48a965049eb2f95e3212"
     },
     "README": {
       "href": "./Greece.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GR/Greece.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

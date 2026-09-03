@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_PRI",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          130.5355826024178,
+          42.793942415827196
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          133.501449442189,
+          42.793942415827196
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          133.501449442189,
+          45.877398294042194
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          130.5355826024178,
+          45.877398294042194
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          130.5355826024178,
+          42.793942415827196
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    130.5355826024178,
+    42.793942415827196,
+    133.501449442189,
+    45.877398294042194
   ],
   "properties": {
     "title": "CN_PRI",
@@ -118,9 +117,7 @@
       "title": "CN_PRI field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 10425,
-      "file:checksum": "1220078f9a24893c5d2a3d5ccbbf5ef5fae656a461542136e3141a12ee704b784d71"
+      ]
     },
     "pmtiles": {
       "href": "./CN_PRI.pmtiles",
@@ -128,49 +125,47 @@
       "title": "CN_PRI field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7083,
-      "file:checksum": "12201914b3a1985cca6969ce0658a741a035f209378ab08d9b2d89c852c39e78ba48"
+      ]
     },
     "style-2025": {
       "href": "./CN_PRI.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122001ab5eea4af482910eeb88c33ef015a19a7c3c04e85c2409dbc09e93a67bf3a1"
+      "file:size": 902,
+      "file:checksum": "122073eb50dba72163a7a654c5415c3b112ac4dadde2d6e49faaa9fb87790a7f1050"
     },
     "style-2024": {
       "href": "./CN_PRI.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12200f73f25fac745418513c8ae309f78491048252a3cca7f4624377c06deb9ed889"
+      "file:size": 902,
+      "file:checksum": "12203f42a8512c47db894a80466dda3f9e009f9af4effdc803c0a35891ccdbd056ab"
     },
     "style-confidence-2025": {
       "href": "./CN_PRI.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122017a505dbb2d592786863a34d536e96db9f2099fd6b9981a86f8fc0705a577623"
+      "file:size": 2646,
+      "file:checksum": "122078e20a231886e9c0ed06f19a0cce4ce8a5da3f2df65f600b20ac77ec5e787156"
     },
     "style-confidence-2024": {
       "href": "./CN_PRI.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12200eaae5325b828ba3d8e7845b0daad2a59c2e11aa075234b1fb3a638afd862300"
+      "file:size": 2646,
+      "file:checksum": "12202a05d8945e331e25f0b7682d3edbf975bee43746ea4efbb26a2c9b8de0cba24d"
     },
     "README": {
       "href": "./CN_PRI.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_PRI.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

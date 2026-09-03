@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_YEV",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          131.9089219604994,
+          47.6866884569884
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          131.9122457148328,
+          47.6866884569884
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          131.9122457148328,
+          47.687676600168594
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          131.9089219604994,
+          47.687676600168594
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          131.9089219604994,
+          47.6866884569884
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    131.9089219604994,
+    47.6866884569884,
+    131.9122457148328,
+    47.687676600168594
   ],
   "properties": {
     "title": "CN_YEV",
@@ -118,9 +117,7 @@
       "title": "CN_YEV field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 8556,
-      "file:checksum": "1220e4dab7ecd991874e97ee9ef57c9cbb9f0e0b8ec0e12c5d6dece0a94e50040bb8"
+      ]
     },
     "pmtiles": {
       "href": "./CN_YEV.pmtiles",
@@ -128,49 +125,47 @@
       "title": "CN_YEV field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1424,
-      "file:checksum": "1220faefd6e49d792e482f5d6499c8ec11dedb1345da49faefa1cc9d201bef71ebda"
+      ]
     },
     "style-2025": {
       "href": "./CN_YEV.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220e6c25ff95198fb0abdbcde7775acabdc59bdecb023c282046f06eeb9e63a3a45"
+      "file:size": 902,
+      "file:checksum": "12205a6aac184954a816cbe26214299fed1f5b61b89cba00b3d6720dac4d51d2ced5"
     },
     "style-2024": {
       "href": "./CN_YEV.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122045125f2aae6f51587fa34de5f58568dd531a15ece56dacc7e0e4d1efd2c6e947"
+      "file:size": 902,
+      "file:checksum": "12204a261a521a66e26974d2a46cab43ec78a314e3dd64618766e2ec2fd6bb7cdd56"
     },
     "style-confidence-2025": {
       "href": "./CN_YEV.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12207690060a0e568ea805a4081578ab9303678d9f06194fe1832d74e42f50c9046f"
+      "file:size": 2646,
+      "file:checksum": "1220e3afc5dfa3d72abad185e99084d9db8be227b96dd6df5fcc99184caa1486ec8e"
     },
     "style-confidence-2024": {
       "href": "./CN_YEV.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220c998d0331543421d9574460d2f6f4db1729e1b221b4b9f69e63861f38002881b"
+      "file:size": 2646,
+      "file:checksum": "1220f252d1680c3516b255949b1a2d11aed49bbfb4621862e02bb494b1933670f3ae"
     },
     "README": {
       "href": "./CN_YEV.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_YEV.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

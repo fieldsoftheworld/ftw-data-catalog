@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Iran",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          48.86168601736523,
-          33.36849377589039
+          44.063801721503225,
+          25.0595570983814
         ],
         [
-          51.0717131554816,
-          33.36849377589039
+          63.37661102252122,
+          25.0595570983814
         ],
         [
-          51.0717131554816,
-          35.5901091385746
+          63.37661102252122,
+          39.776692130685596
         ],
         [
-          48.86168601736523,
-          35.5901091385746
+          44.063801721503225,
+          39.776692130685596
         ],
         [
-          48.86168601736523,
-          33.36849377589039
+          44.063801721503225,
+          25.0595570983814
         ]
       ]
     ]
   },
   "bbox": [
-    48.86168601736523,
-    33.36849377589039,
-    51.0717131554816,
-    35.5901091385746
+    44.063801721503225,
+    25.0595570983814,
+    63.37661102252122,
+    39.776692130685596
   ],
   "properties": {
     "title": "Iran, Islamic Republic of",
@@ -118,9 +117,7 @@
       "title": "Iran, Islamic Republic of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 7080525029,
-      "file:checksum": "12209fda01df573602ea7e452bcb7d5d99a3baf54af1d95cc71f3971b3a70ad82ebb"
+      ]
     },
     "pmtiles": {
       "href": "./Iran.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Iran, Islamic Republic of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3401785693,
-      "file:checksum": "1220412d59711193c1e5870c201bcd626a650e3038a183756debdd9b2ecdc7482ef4"
+      ]
     },
     "style-2025": {
       "href": "./Iran.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220e9d0db8d1ea163ee80ecb44c2eac4aa368a03b5f311aab378f539fdefeb81f60"
+      "file:size": 896,
+      "file:checksum": "1220860e254573d6351415cbda7685cbbc3b61e0b92d6045ed23b43be1eba717fd7a"
     },
     "style-2024": {
       "href": "./Iran.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220368e868031adb8c69221008d53f4ac2b828355778f4e41ca2747a78613d0b79f"
+      "file:size": 896,
+      "file:checksum": "122013a1a032f86ca41ca66953e26cc506d5905d2574f576f85a8985423e1953bb89"
     },
     "style-confidence-2025": {
       "href": "./Iran.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12202bac961e88893b9f3dfa8e634e0b420d9ca0708fa56e9d7373f57d7bc75825ac"
+      "file:size": 2640,
+      "file:checksum": "12201a99485a81b0f48c33bbd98b6b35e8dcb6110f6db7e3dd2b8348ff699a92b8bb"
     },
     "style-confidence-2024": {
       "href": "./Iran.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220a57d74ad37703a2041fce8a9c4bc3253a8aeebbdb2f54706681bb26ada597b21"
+      "file:size": 2640,
+      "file:checksum": "1220c56a837b7836281051f312308e5da3086190def634db301def0ab1ae580deb09"
     },
     "README": {
       "href": "./Iran.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=IR/Iran.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

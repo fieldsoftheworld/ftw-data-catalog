@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_SC",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -83.2788387292582,
+          32.048873474332396
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -78.63070304079558,
+          32.048873474332396
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -78.63070304079558,
+          35.198175620827996
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -83.2788387292582,
+          35.198175620827996
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -83.2788387292582,
+          32.048873474332396
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -83.2788387292582,
+    32.048873474332396,
+    -78.63070304079558,
+    35.198175620827996
   ],
   "properties": {
     "title": "United States \u2014 South Carolina",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 South Carolina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 70388825,
-      "file:checksum": "12207c3f6a186f436c65ef4d5078f2155444d13ec41b94db424b766d13a39a0a80ee"
+      ]
     },
     "pmtiles": {
       "href": "./US_SC.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 South Carolina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 50333799,
-      "file:checksum": "12209430b37d4cde557e89a69e3d83d845b307155e79128a0396083291b0498d4750"
+      ]
     },
     "style-2025": {
       "href": "./US_SC.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122055a1bfd6413e0625971a1eb2fb6509d414d00a8b65b4001beb8e645c2488a182"
+      "file:size": 899,
+      "file:checksum": "1220c656067c6fa91e7337aad33c08ff7b64c6baa24bcb4117c685f616caa111bc4c"
     },
     "style-2024": {
       "href": "./US_SC.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122056efd6e6bb1bd39c8a5f05ff37c685b942124fff6299cfe1eff24a1b0d4e3168"
+      "file:size": 899,
+      "file:checksum": "12206fd860033d367ae0bab89f89a1826d0c8086f5ef7656380c0fcdfbf8c0c95aba"
     },
     "style-confidence-2025": {
       "href": "./US_SC.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c7c57c23e1e3d56e612732a6af813ad2724afed873c15af1cfa33bd935d5e7c7"
+      "file:size": 2643,
+      "file:checksum": "1220877da73d988f651d93e7b7cbb1864a6c77264ce3baa82fa6db971bac6026d869"
     },
     "style-confidence-2024": {
       "href": "./US_SC.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206992581f9dbd57c24293b8cc74f16a675cf4fd2270d068a61ef389678ba8d6ed"
+      "file:size": 2643,
+      "file:checksum": "1220896921b1cce48438f73fa77080f45d19d187e6b8b2385329f4fca82aeba24a28"
     },
     "README": {
       "href": "./US_SC.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_SC.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

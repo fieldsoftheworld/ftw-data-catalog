@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_HB",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          108.36290727550464,
+          29.084803258525195
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          116.13375507579565,
+          29.084803258525195
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          116.13375507579565,
+          33.2692303018794
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          108.36290727550464,
+          33.2692303018794
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          108.36290727550464,
+          29.084803258525195
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    108.36290727550464,
+    29.084803258525195,
+    116.13375507579565,
+    33.2692303018794
   ],
   "properties": {
     "title": "China \u2014 Hubei Sheng",
@@ -118,9 +117,7 @@
       "title": "China \u2014 Hubei Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1513456643,
-      "file:checksum": "1220aec53e8f8a2336681f268223426dcaecdc19f5739f145b52044aa3b9ac0f06b1"
+      ]
     },
     "pmtiles": {
       "href": "./CN_HB.pmtiles",
@@ -128,49 +125,47 @@
       "title": "China \u2014 Hubei Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 834688997,
-      "file:checksum": "1220ea31d907bc53fba3ead51b06125d84ecf471a731ad7045350c33f58c3746ba55"
+      ]
     },
     "style-2025": {
       "href": "./CN_HB.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220657b8086aa5e7714f4b28e6be8e07f1179cc8e250704e8d447effc10226e051f"
+      "file:size": 899,
+      "file:checksum": "122077b2630358ea5f8fef4fef05669d392af4519795c819b8121496acf91c4788cf"
     },
     "style-2024": {
       "href": "./CN_HB.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209a1aa16cd3223af0ff3424f9ac6287de26fa7a312f1fde86a53cfdb350f04ac1"
+      "file:size": 899,
+      "file:checksum": "12200d13698e0812cbb000beb7e9ce9a9ebad5400cae87e3ebebbc837c5a0f1c47b2"
     },
     "style-confidence-2025": {
       "href": "./CN_HB.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e1159ef2d390069951fa494ab7a8cd229f2d1afd128990d805eeae9249e97f45"
+      "file:size": 2643,
+      "file:checksum": "12203de5ccc5837a100d7b0e7a09006ac4bb213bf223f33e1219925d16fa4b45ec18"
     },
     "style-confidence-2024": {
       "href": "./CN_HB.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b73f108153efdadeab013aa59fa51bdd282acd015d663b3eb7535c5cacac6fae"
+      "file:size": 2643,
+      "file:checksum": "122030f53431bd20e7dac3e597ca1722ea4bc6f8472461025e11744c3339e4d10581"
     },
     "README": {
       "href": "./CN_HB.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_HB.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

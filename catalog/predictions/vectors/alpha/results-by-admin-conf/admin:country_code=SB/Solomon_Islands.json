@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Solomon_Islands",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Solomon_Islands field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 8203868,
-      "file:checksum": "1220360fbbfd7aa32c8dd7b70010f00dd4b1ffae604f165d0e02d15ca4ffeb72fb64"
+      ]
     },
     "pmtiles": {
       "href": "./Solomon_Islands.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Solomon_Islands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 9186894,
-      "file:checksum": "12208fc986b5fde70ca7c4f3367505e343bf85d3d5ef5276beaf1a8d5ca2776eb67f"
+      ]
     },
     "style-2025": {
       "href": "./Solomon_Islands.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 930,
-      "file:checksum": "122028a7e6509b54ee117df87894d2871a6e344360fc15de4180fd8166afb1b767b0"
+      "file:size": 929,
+      "file:checksum": "122038491baf5d649ae830493b5629d5b8d630df42a6c2321db88cdb6c3e09a1a7e3"
     },
     "style-2024": {
       "href": "./Solomon_Islands.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 930,
-      "file:checksum": "12207806953ded069e125c89a4bcffeae5c0a50acf7c5ffa22f1fb0691ec0b6dc802"
+      "file:size": 929,
+      "file:checksum": "1220cbbad22426ce364eb0f6671560c9ee68b88d4d56c89b6de9eea2392a4298bd67"
     },
     "style-confidence-2025": {
       "href": "./Solomon_Islands.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2674,
-      "file:checksum": "122006203cff5810fe8d657b38149405c4023f9ac3d8c78c5f9b78775431c914188d"
+      "file:size": 2673,
+      "file:checksum": "1220416450e2f8068fb953d05db18acd8209222cefdeb46904b41a5fd71dc1afb1c3"
     },
     "style-confidence-2024": {
       "href": "./Solomon_Islands.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2674,
-      "file:checksum": "1220957d6f9831b70a20e12289dada067fb50e9c11fa9d76ba99c4a8528b8f0420ef"
+      "file:size": 2673,
+      "file:checksum": "12202ecbb1d2da9d828aaa8cea7c3cf8c0fae48060bb9e63631ca270a4488bfdfc11"
     },
     "README": {
       "href": "./Solomon_Islands.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SB/Solomon_Islands.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

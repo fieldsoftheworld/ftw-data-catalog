@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Switzerland",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Switzerland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 72366975,
-      "file:checksum": "12202172574b0a5ede524642de4db2efd99549b292c9524c430da6b212941a9edb07"
+      ]
     },
     "pmtiles": {
       "href": "./Switzerland.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Switzerland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 55239839,
-      "file:checksum": "12208c57a12d0f8899addbdca989ed0915a47a6a44c42eee301ee76d7012dd2d5d9d"
+      ]
     },
     "style-2025": {
       "href": "./Switzerland.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220e39aca4593330ebed06a7c9d2f4125352586bee3b36c9500d82c6b3ac5010bc9"
+      "file:size": 917,
+      "file:checksum": "1220af6c6d2bc94519b7031b8268b02604a6a22adf3392904f8e81d9e9509d653007"
     },
     "style-2024": {
       "href": "./Switzerland.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220fcdfaeea46c8288c1d4588f5f68b3d18b018c838d96a902b70293793ef9242e4"
+      "file:size": 917,
+      "file:checksum": "1220e575cc115725e01ec073c5b6d2f854e58e9fdec10ba20c351166ba7fdfd497f5"
     },
     "style-confidence-2025": {
       "href": "./Switzerland.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12200909161b9faf1e04ce6c49fd322d5814b1f5b0615b407666b08f82f550af48aa"
+      "file:size": 2661,
+      "file:checksum": "1220c594931c54a565fc4d3e33f9daab59cd8270fc8e1f38e981a87e26042718deef"
     },
     "style-confidence-2024": {
       "href": "./Switzerland.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12202e50cb886328720e7da1b8cff9ecfc60d8880af0808a89dec002e47fef6f0990"
+      "file:size": 2661,
+      "file:checksum": "1220e392926d67a53d4a285cf11c908f780553147edca52a322993e5695b78c831c7"
     },
     "README": {
       "href": "./Switzerland.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CH/Switzerland.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

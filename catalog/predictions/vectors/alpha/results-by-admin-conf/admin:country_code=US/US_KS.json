@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_KS",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -102.1802211425202,
+          36.8924818500782
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -94.59011371300758,
+          36.8924818500782
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -94.59011371300758,
+          40.06181635377239
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -102.1802211425202,
+          40.06181635377239
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -102.1802211425202,
+          36.8924818500782
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -102.1802211425202,
+    36.8924818500782,
+    -94.59011371300758,
+    40.06181635377239
   ],
   "properties": {
     "title": "United States \u2014 Kansas",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Kansas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 530562400,
-      "file:checksum": "122081a20c374c33155ebd835d24eebdbfd04b167cbdcaf21805ffe37b5a8092dd83"
+      ]
     },
     "pmtiles": {
       "href": "./US_KS.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Kansas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 395224331,
-      "file:checksum": "1220cd0a7afb1489fa4d9e4a5dc9bdb0eaeda6808ada0125bb958e7c5fac76660988"
+      ]
     },
     "style-2025": {
       "href": "./US_KS.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ebd6472a29eaab871b05e19b8381b105c1ae1a525a91231dde92a8df48d57f60"
+      "file:size": 899,
+      "file:checksum": "12205191d43d6d84685188cdfcedcd3c6f38f86ddc20bca152bda197ff89267fd475"
     },
     "style-2024": {
       "href": "./US_KS.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b0bd51950b3bdf86411cb3e254828be41be7caa853b16677ebb9ed175c70f2b9"
+      "file:size": 899,
+      "file:checksum": "122059496230e9c3c33c231f45ae6eef76e1b241295a4ec4f451fd7ff4a5242d240e"
     },
     "style-confidence-2025": {
       "href": "./US_KS.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e534714003488ae8817a4970f8462ad4598d7c16825568b6cc59e0af38fcad36"
+      "file:size": 2643,
+      "file:checksum": "1220e2f99182af6f5371b0b7650e80c08a5b298ed6c33e0700c9ca3953c2e2a5858f"
     },
     "style-confidence-2024": {
       "href": "./US_KS.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c949745756792294b731384130188460dbb0da9066249b20641861f4a943659c"
+      "file:size": 2643,
+      "file:checksum": "1220e1987e2a8ba43d3d3889bb87d14d226c2fe6bb9767cdd76d40cda5cb1b9d1904"
     },
     "README": {
       "href": "./US_KS.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_KS.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

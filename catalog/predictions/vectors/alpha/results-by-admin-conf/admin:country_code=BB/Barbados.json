@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Barbados",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Barbados field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2435759,
-      "file:checksum": "1220a9b5e6e067d9bc62e90664e575c0bb0c81819757af308c00262dcad5d094a672"
+      ]
     },
     "pmtiles": {
       "href": "./Barbados.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Barbados field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2669265,
-      "file:checksum": "1220345829030d8a6609403bbf05d462b67aef46d30a7c1ede0a9e41e02d01e1bb72"
+      ]
     },
     "style-2025": {
       "href": "./Barbados.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12203fdd6e31b18924e18491e7f7cec965f83bd6d5cbe9f5f7916bbca56643d390ba"
+      "file:size": 908,
+      "file:checksum": "12202207f5b2de0aaaf1b90ed07bfa2b3c44ebd1fbea34c7678ebc34cba1067f0bed"
     },
     "style-2024": {
       "href": "./Barbados.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220f9707c5041566396c4fba146340d7208c03eacf5f74ab54f54fae93f48111d71"
+      "file:size": 908,
+      "file:checksum": "12209396a6965084765a8a86acf0910e42956bce69c32a4f2261dc278e48beaa8bab"
     },
     "style-confidence-2025": {
       "href": "./Barbados.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122005f307ff2cc9c5feb44fbb71f8eda7ba5d0058282e1a9b2c35669519684e4dec"
+      "file:size": 2652,
+      "file:checksum": "1220b9e51027a63d170aee7426eff201b7256b242d574488d8f4529b2cab40628478"
     },
     "style-confidence-2024": {
       "href": "./Barbados.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220fc7888ccbc5ee07d6f294ece13f508dc3a52fc49899aff7bdfa0fa84b417d373"
+      "file:size": 2652,
+      "file:checksum": "1220f8b3222627ad60736c7cf74cfdb1043cea893825b069dfd0929c9f11931d3129"
     },
     "README": {
       "href": "./Barbados.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BB/Barbados.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

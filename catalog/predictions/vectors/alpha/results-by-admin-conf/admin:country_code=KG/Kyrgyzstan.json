@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Kyrgyzstan",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Kyrgyzstan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 391486022,
-      "file:checksum": "12205d22f8a9ad5a40c4181ca0a430c6a0eed4f514063565467fca61799772bf6f88"
+      ]
     },
     "pmtiles": {
       "href": "./Kyrgyzstan.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Kyrgyzstan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 253097607,
-      "file:checksum": "1220df0ad0957cef3a2f9ca6c843b9e3607995fc9ad23f3c5611e7122b8078d0ea44"
+      ]
     },
     "style-2025": {
       "href": "./Kyrgyzstan.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12205b350b663dafb7931cf360a7dc3a433361c919d50a291a6a2e283c8cc448f8e1"
+      "file:size": 914,
+      "file:checksum": "1220637f60bd940b768a870d7b699e195b35314508972c51777b7101686841a3738a"
     },
     "style-2024": {
       "href": "./Kyrgyzstan.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "122060448a57e21f42e6608c1dc02ae59bd92448e6f30af6e06339692c8b6029c910"
+      "file:size": 914,
+      "file:checksum": "1220ee313c34686992b37a709c2c9bf2706ca695a96f7035fa3d1c68407cb687bf99"
     },
     "style-confidence-2025": {
       "href": "./Kyrgyzstan.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220afbed204307f01627168ff2010f07cebd64dceffb565f7bb04d5ef286d4ee42d"
+      "file:size": 2658,
+      "file:checksum": "12201cff0706c580e2d235cf8c7992d2570b96402508294e7d6bc0ce91ef20f892bc"
     },
     "style-confidence-2024": {
       "href": "./Kyrgyzstan.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122065ebda56897ec6884f696cffae46a280258f6fa487fefc4d0e30b46951082ad9"
+      "file:size": 2658,
+      "file:checksum": "122070230c65f753ca084780b10fca5b9bcb001f0c8e5e06fe5b1e164e32d3888abb"
     },
     "README": {
       "href": "./Kyrgyzstan.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=KG/Kyrgyzstan.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

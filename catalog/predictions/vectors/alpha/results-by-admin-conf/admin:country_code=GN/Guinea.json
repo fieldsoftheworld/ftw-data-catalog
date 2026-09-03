@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Guinea",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Guinea field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2435007767,
-      "file:checksum": "1220c2700658cdd3ff64250f436969469bc31ddd6d018f257db66f2a874435d81708"
+      ]
     },
     "pmtiles": {
       "href": "./Guinea.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Guinea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1254164266,
-      "file:checksum": "1220cdc4c2591a0833b01c79ac6b143659dbdc3ffa697dc9e2607d9189a505bf7a64"
+      ]
     },
     "style-2025": {
       "href": "./Guinea.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12209abc46dc1d7471a4f0652c72d50ebf743968abe1ebfed3484ad1e52d1dd179fd"
+      "file:size": 902,
+      "file:checksum": "1220cca135b8d474b1325a0c86b3887059f4d8413c322e9408c0ed7df1cfd2e4b3c8"
     },
     "style-2024": {
       "href": "./Guinea.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220ade6804b830e1fd1f6f4fca6540ef23324aa3fae62a48565e31a149d900baed1"
+      "file:size": 902,
+      "file:checksum": "12208fbf8ed74bb6848cc3a617f3b1ebf9287511fbbeb062bc86fd2c0a29460da045"
     },
     "style-confidence-2025": {
       "href": "./Guinea.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220558ad952c3d9635985739f4b856d88c1f492dbe2bf56653927dad960e4f018e8"
+      "file:size": 2646,
+      "file:checksum": "1220997b09e174201980c3d635c6609f571e6a2254622a669e8ffdc102bd8e01869b"
     },
     "style-confidence-2024": {
       "href": "./Guinea.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122027f5fc80078e9beb41e1e00fa0e30c607c0ba48c0873a40d467160cc0fda33ce"
+      "file:size": 2646,
+      "file:checksum": "1220c05cf75042d27843176367d2d640b7991967d2654b5fc4b7c0dc9f9ca69b7205"
     },
     "README": {
       "href": "./Guinea.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GN/Guinea.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

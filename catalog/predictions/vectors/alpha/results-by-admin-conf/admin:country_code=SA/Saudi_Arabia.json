@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Saudi_Arabia",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Saudi_Arabia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1454016796,
-      "file:checksum": "12205eda6f280baafeee6151f603eae3a4a1ea7cc0901916ad40a23d133cbd8af0b3"
+      ]
     },
     "pmtiles": {
       "href": "./Saudi_Arabia.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Saudi_Arabia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 820641023,
-      "file:checksum": "1220d607b70df9669d9b1da8cf5a37d7a97a191736e6b168ea0d33991cb33491c70c"
+      ]
     },
     "style-2025": {
       "href": "./Saudi_Arabia.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 921,
-      "file:checksum": "12201ca0492b0e5577c37079592cb8647425390d82c8951134e9cd2110b17cf26cbf"
+      "file:size": 920,
+      "file:checksum": "12204268a1f212a39841a5783d969d4f4ad5739d60482ebb9a4a8e2b06c84562e5fe"
     },
     "style-2024": {
       "href": "./Saudi_Arabia.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 921,
-      "file:checksum": "12201434f536c39ba78c5ef5dec4030d4b6a34c2e935850effab050e01cc4471adb9"
+      "file:size": 920,
+      "file:checksum": "122097960f9d480c961ee0e3ac2ed887dd35cda386ad9c9f45076601fc3e28c6d48e"
     },
     "style-confidence-2025": {
       "href": "./Saudi_Arabia.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2665,
-      "file:checksum": "1220cc040475c4c6991a8d6879e7e83b31dfda740f2b407b7ac9439b5072a78cee9d"
+      "file:size": 2664,
+      "file:checksum": "122021f65a4a3a744678829e8d8f25bafb3c3d185323ff90370fe07301ee475311aa"
     },
     "style-confidence-2024": {
       "href": "./Saudi_Arabia.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2665,
-      "file:checksum": "122048a1c7d2afd0534e9eed56a2f0233b87b91a0f2580bf2380a699834910246f55"
+      "file:size": 2664,
+      "file:checksum": "1220f078990c1c3fcdc3fb3a7bb9bde93d3407dc6303c0273f6de2194c026bc71a5d"
     },
     "README": {
       "href": "./Saudi_Arabia.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SA/Saudi_Arabia.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

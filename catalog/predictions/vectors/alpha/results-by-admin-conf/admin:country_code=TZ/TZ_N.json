@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "TZ_N",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          32.96380971592021,
+          -9.717513310370204
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          33.93623243643521,
+          -9.717513310370204
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          33.93623243643521,
+          -9.367980118174003
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          32.96380971592021,
+          -9.367980118174003
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          32.96380971592021,
+          -9.717513310370204
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    32.96380971592021,
+    -9.717513310370204,
+    33.93623243643521,
+    -9.367980118174003
   ],
   "properties": {
     "title": "TZ_N",
@@ -118,9 +117,7 @@
       "title": "TZ_N field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 93668,
-      "file:checksum": "12200802a5be61ef8aced5add75bd56efe92c3e11e59ee132f26dca93230a1ac920b"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_N.pmtiles",
@@ -128,49 +125,47 @@
       "title": "TZ_N field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 90056,
-      "file:checksum": "12204644147fe72f06e518ac143db33d0eb4cd65b66234fce2093f617b1aa836f576"
+      ]
     },
     "style-2025": {
       "href": "./TZ_N.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12203c599a7315b16a107a08dbc71dde145ab725044574e0186ad0b16408983eeb65"
+      "file:size": 896,
+      "file:checksum": "1220d3ca1b2ed271e9aec118774f17748a7fc4647b855608ccc978fa1d137d0ff1df"
     },
     "style-2024": {
       "href": "./TZ_N.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220d8bb32394af05d34c0edb79fb5d3050b25567a91efcd6158c42e7b4bda3b1ca0"
+      "file:size": 896,
+      "file:checksum": "122057e2bd7a638ad9b0ef74bbb81956a8aa20a501f9a782427544374272490223e6"
     },
     "style-confidence-2025": {
       "href": "./TZ_N.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12202407ba0b71f0dd725aed4bb3ed8daae0ddc33df72d0e2f65527f42f0fb77f649"
+      "file:size": 2640,
+      "file:checksum": "1220fe987b4ae8a47af7fa93463360407bac5d409c67265c179942956f3daedf7bc9"
     },
     "style-confidence-2024": {
       "href": "./TZ_N.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220219b6282966c647b5b006239537fdaa356a8a7438142a47859c1ef2504ec30e8"
+      "file:size": 2640,
+      "file:checksum": "122031548fdf6d6a8699dfbd667831cc930c834b482ebe118bb22b9878813a20f5b1"
     },
     "README": {
       "href": "./TZ_N.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TZ/TZ_N.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

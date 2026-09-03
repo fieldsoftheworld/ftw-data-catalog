@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Niger",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Niger field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 861043201,
-      "file:checksum": "1220c24644e1b83fd1f7e1f650248c93d846ec07d157056278c6c20d8ef667a2c7ae"
+      ]
     },
     "pmtiles": {
       "href": "./Niger.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Niger field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 500365243,
-      "file:checksum": "122081ffe198b5eab923e38b802aa1eb1c0f6b28eece10ae05d4e6341d558c11fa02"
+      ]
     },
     "style-2025": {
       "href": "./Niger.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220affaf7dc51059d4bfdb8fc82aae64304ab40f369d41d14874d165d034fb1816a"
+      "file:size": 899,
+      "file:checksum": "12204ce791f776e107a44605574d95c02491d0b81c24f950fa0306bf5f9ebee8a031"
     },
     "style-2024": {
       "href": "./Niger.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204c2f7c1b80235ac6843664d0879b478fa7d7fa4e50f84eaf779f65ad6291c327"
+      "file:size": 899,
+      "file:checksum": "1220e331d9c60706519843e785a759bebd9f7db1f8e5f9ec140a1d4bb2fecceb770a"
     },
     "style-confidence-2025": {
       "href": "./Niger.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220546dae2a379adbb2f97e0a24edfcfa65811646f5ff459bb5bd3c952502195e21"
+      "file:size": 2643,
+      "file:checksum": "12202438d5ff4d42afe73a08971cfa7152d6e8f25f5c276ae5671788c48337509d14"
     },
     "style-confidence-2024": {
       "href": "./Niger.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220961193f6ee29ab2937d8cb1e6a1aa823e4c720e7a45f38b0dd19abc984a09e1e"
+      "file:size": 2643,
+      "file:checksum": "1220fc01bb5f2e75fc0dd6cc8e79682dd5ce9593955c793d067548aea5e2038e5a8c"
     },
     "README": {
       "href": "./Niger.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NE/Niger.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

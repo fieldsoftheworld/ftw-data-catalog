@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Ecuador",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Ecuador field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 554650222,
-      "file:checksum": "1220467b22abc280ce735ba34c5c731ecd4978aadb6249fbf0fbad94f05547aa5e34"
+      ]
     },
     "pmtiles": {
       "href": "./Ecuador.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ecuador field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 304523143,
-      "file:checksum": "1220822217ae9dad4eacd894380178bc5af68ad93233ddeb6af9384e94a23c3e30b9"
+      ]
     },
     "style-2025": {
       "href": "./Ecuador.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12202043e5a36ff7d72b9227ee3eb8db9fde8cc2bbdf9df5c70f63dc586a81f3fe6f"
+      "file:size": 905,
+      "file:checksum": "12207aa7027832c7cbc86ad347107a893a8827403fc56a401738aaa97dc3434a2013"
     },
     "style-2024": {
       "href": "./Ecuador.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220f26fff35283dc626876a898e80810cb28f37cf5dafb7d3a4054b397fdffddbda"
+      "file:size": 905,
+      "file:checksum": "1220df01dac8e55332b9fe24b04ad32db849311e0fc0402325625a4fff198de69ff8"
     },
     "style-confidence-2025": {
       "href": "./Ecuador.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220249fd5d7d18440532b49ddb1099f7e73c86f232bcb1fc7280fc0535f89005f00"
+      "file:size": 2649,
+      "file:checksum": "122032f3f52baa1937a854caf5cc7bbdf6c2f8e5123a65411ea4682c95c2524bc72b"
     },
     "style-confidence-2024": {
       "href": "./Ecuador.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12202c9e2384d020267a25823af993adcad59dd7fac52cacca9319bc14625c168604"
+      "file:size": 2649,
+      "file:checksum": "1220aa172555890bbb46b542f611c59ceb051b690c056bf2cca463d45763f157a640"
     },
     "README": {
       "href": "./Ecuador.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=EC/Ecuador.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

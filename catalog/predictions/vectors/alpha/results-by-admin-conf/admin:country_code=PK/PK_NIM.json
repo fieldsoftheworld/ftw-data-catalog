@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "PK_NIM",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          60.93014817074241,
+          29.4015480633784
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          62.429700362295016,
+          29.4015480633784
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          62.429700362295016,
+          29.842349752945797
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          60.93014817074241,
+          29.842349752945797
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          60.93014817074241,
+          29.4015480633784
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    60.93014817074241,
+    29.4015480633784,
+    62.429700362295016,
+    29.842349752945797
   ],
   "properties": {
     "title": "PK_NIM",
@@ -118,9 +117,7 @@
       "title": "PK_NIM field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 31855,
-      "file:checksum": "1220eaabb3e7ea21c871407116198cffe2630dd193421c4768271dd057d172bc66ad"
+      ]
     },
     "pmtiles": {
       "href": "./PK_NIM.pmtiles",
@@ -128,49 +125,47 @@
       "title": "PK_NIM field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 27463,
-      "file:checksum": "12208b4a86f98715126086a52a8af8b235bc8c079a44ea13543a9a9dd59f956671cc"
+      ]
     },
     "style-2025": {
       "href": "./PK_NIM.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220d791999a73c345037419c5235d425607d978ce84a4a0f0ef8099b0c99a98741c"
+      "file:size": 902,
+      "file:checksum": "122093def29a6e99837e2c7918c5f6ca60540269104455e08dce12147d69197daaa7"
     },
     "style-2024": {
       "href": "./PK_NIM.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12207a909e761e43825291b03dff768cae335d9990ea9c08579b4b88531688dc7001"
+      "file:size": 902,
+      "file:checksum": "122016f553c92c76c88e8db9591645db36bb3be1b3ee1f6a9beca227ffae0bfd259e"
     },
     "style-confidence-2025": {
       "href": "./PK_NIM.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12209716043ec298c170e6db43560b740fba90b7da5c519ad765c5491f8296f56f6f"
+      "file:size": 2646,
+      "file:checksum": "12206b02e3b4335ec3798064c9a3ef1f6a812a739801582f4d6dbc66cf0642cf6204"
     },
     "style-confidence-2024": {
       "href": "./PK_NIM.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12207f0d4073f34ccbcdd575e016ba9191f7270104da9eadd6b2fc4d83390b908b1f"
+      "file:size": 2646,
+      "file:checksum": "122064568e0fa6b87b2b321feb2f2d05855f512418dada3861957ae09a15d7683e42"
     },
     "README": {
       "href": "./PK_NIM.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_NIM.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

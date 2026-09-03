@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_FL",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -87.605019403372,
+          24.6336673877152
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -80.03745960460759,
+          24.6336673877152
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -80.03745960460759,
+          31.0112333039242
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -87.605019403372,
+          31.0112333039242
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -87.605019403372,
+          24.6336673877152
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -87.605019403372,
+    24.6336673877152,
+    -80.03745960460759,
+    31.0112333039242
   ],
   "properties": {
     "title": "United States \u2014 Florida",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Florida field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 75985961,
-      "file:checksum": "1220aa48c12dbb509ddeefa3a9c41b529b3e54af1034c09175bfc6f3e658eafe0080"
+      ]
     },
     "pmtiles": {
       "href": "./US_FL.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Florida field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 73907091,
-      "file:checksum": "1220d68a422709a45a8ee31cfdddd178aa623b29f55faa68a04e8090ad88167093e4"
+      ]
     },
     "style-2025": {
       "href": "./US_FL.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e612b55428d1739c4536d990c2e3369c76b46ea3c8fb6c0e12bee5fc130c1e78"
+      "file:size": 899,
+      "file:checksum": "1220f8c90e794a59425c62ef3aafe5f4a35f561f854578ce90998de5fd201a7540f7"
     },
     "style-2024": {
       "href": "./US_FL.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220667067f7e22fd762ddb776e00dc6b1521b2cba524415aeb1df900f68ac5dd4a5"
+      "file:size": 899,
+      "file:checksum": "1220e80245811cb5753044f64fe3acec06f444452538abc73913529aef32852c891a"
     },
     "style-confidence-2025": {
       "href": "./US_FL.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220fa1ccfbe9f166e487ea9b9b9e5a42aa38636349edd86f167a34d50db66812b8c"
+      "file:size": 2643,
+      "file:checksum": "1220d80f81226d4370dee413f279edae3020c32e9394e99ca702601d997af5306328"
     },
     "style-confidence-2024": {
       "href": "./US_FL.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208b8b65841a976bebbfa28d253ed78a119f3aca9d710c1b1b9bbc828e48871b20"
+      "file:size": 2643,
+      "file:checksum": "12201eec067d1fb46081442304739fcc9e1d8af4b0fac331cc6912d31ba2933907c6"
     },
     "README": {
       "href": "./US_FL.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_FL.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_LA",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -94.04088576721279,
+          29.103218654156198
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -89.1777840214576,
+          29.103218654156198
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -89.1777840214576,
+          33.026236910748395
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -94.04088576721279,
+          33.026236910748395
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -94.04088576721279,
+          29.103218654156198
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -94.04088576721279,
+    29.103218654156198,
+    -89.1777840214576,
+    33.026236910748395
   ],
   "properties": {
     "title": "United States \u2014 Louisiana",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Louisiana field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 108511257,
-      "file:checksum": "1220b2a3a612b02d8c80e29f330cc5b215706333f9a238e615e8e13f84aeaca7c35e"
+      ]
     },
     "pmtiles": {
       "href": "./US_LA.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Louisiana field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 77087699,
-      "file:checksum": "12206a7aa823636acc4a5c107fd86c78680988b737f885625c19cdf39650616326fd"
+      ]
     },
     "style-2025": {
       "href": "./US_LA.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206221621d357ca87bcb77d957b7f50f6902a117c76e28565ae81110055b0db4c0"
+      "file:size": 899,
+      "file:checksum": "122002da0cf9f09f3ec2fa26caaeccafc88b4cbf75c57c424eb4f77c8232d209ccd5"
     },
     "style-2024": {
       "href": "./US_LA.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207e2e28c4e5b7c343e10085e972357756001d7ddea3dab603586f383776a92adb"
+      "file:size": 899,
+      "file:checksum": "1220513ed814994835962257323fa958961dce6f3e802824dd42efeeb089484c948b"
     },
     "style-confidence-2025": {
       "href": "./US_LA.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205ab94376a5e26f20feaebcba87f6384a6bd6e61679530293bc577b4b63f3613a"
+      "file:size": 2643,
+      "file:checksum": "122033229f84411548a7b11dd415ed860f61ceef403d04c45cc8e361c91b852e2806"
     },
     "style-confidence-2024": {
       "href": "./US_LA.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d6531f5f378955f01811f856285655767b54391154941a0ab52f985f7f4f6d05"
+      "file:size": 2643,
+      "file:checksum": "122066bbea4a611f08176bf6eaa64d76c03eb18749a57acd4f3686ee4a60542955e6"
     },
     "README": {
       "href": "./US_LA.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_LA.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

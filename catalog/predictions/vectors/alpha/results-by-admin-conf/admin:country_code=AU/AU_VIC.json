@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "AU_VIC",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          148.75649368931482,
-          -35.943012975274605
+          140.86060086112943,
+          -38.91732394767661
         ],
         [
-          149.39663080768804,
-          -35.943012975274605
+          149.95744697805063,
+          -38.91732394767661
         ],
         [
-          149.39663080768804,
-          -35.1693866963762
+          149.95744697805063,
+          -33.981369100181205
         ],
         [
-          148.75649368931482,
-          -35.1693866963762
+          140.86060086112943,
+          -33.981369100181205
         ],
         [
-          148.75649368931482,
-          -35.943012975274605
+          140.86060086112943,
+          -38.91732394767661
         ]
       ]
     ]
   },
   "bbox": [
-    148.75649368931482,
-    -35.943012975274605,
-    149.39663080768804,
-    -35.1693866963762
+    140.86060086112943,
+    -38.91732394767661,
+    149.95744697805063,
+    -33.981369100181205
   ],
   "properties": {
     "title": "Australia \u2014 Victoria",
@@ -118,9 +117,7 @@
       "title": "Australia \u2014 Victoria field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 315982056,
-      "file:checksum": "1220e07401ae212dd44804d5546cc926f14c4fda73efc7ce2fc1020f38959b94323e"
+      ]
     },
     "pmtiles": {
       "href": "./AU_VIC.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Australia \u2014 Victoria field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 226975411,
-      "file:checksum": "1220d45acbd3b929ceebf0921a2524794e2aeb6f4eebaed1e3f377c6c33fbe85fb4a"
+      ]
     },
     "style-2025": {
       "href": "./AU_VIC.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220ce09b5b22a90341caaec03d27c25e0af930199dff31468e86adcf0851053cc51"
+      "file:size": 902,
+      "file:checksum": "122084a0f01829c1d7a942dcfd2aad59225cdbf611ecea9ae67658dea31149a2b21c"
     },
     "style-2024": {
       "href": "./AU_VIC.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220427b5a92e250fe1967ba28cc6a5801392894c8ca9083cfd9c542cdc9ef8b2962"
+      "file:size": 902,
+      "file:checksum": "1220728dfabe385435647371b4ed8daa79cd0568ca68f7d3281129703b5ceac4816c"
     },
     "style-confidence-2025": {
       "href": "./AU_VIC.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122059401e4c6091f3c0d4d9c4a0e385526c653e0ca701c2d7536e5a41e932764fa8"
+      "file:size": 2646,
+      "file:checksum": "122061b22e8ffd5af87c16d3f19dfffe27dbdee0083f692e84c6e7c37a334a5a459d"
     },
     "style-confidence-2024": {
       "href": "./AU_VIC.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220f978fbfd7e88de7adbc9c41e4fbdd868fb5d66d57bbac0290e5a247dbe333ce1"
+      "file:size": 2646,
+      "file:checksum": "122017109605a5c29f4d73eb0d53622127f6f0b19a6cd3add2812322396383db3c65"
     },
     "README": {
       "href": "./AU_VIC.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_VIC.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

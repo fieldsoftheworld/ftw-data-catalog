@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Chile",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Chile field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 464624718,
-      "file:checksum": "12206a53357c835c3970abc1e27fa78fb7e4440e8e290734864561427713c1eef34d"
+      ]
     },
     "pmtiles": {
       "href": "./Chile.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Chile field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 320163636,
-      "file:checksum": "1220360f3eefcbcf0c0a9bcebbb5bee800653c40798da7a32dc2d939954adeaf3fe5"
+      ]
     },
     "style-2025": {
       "href": "./Chile.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f4bc4f69aa9baf68099d91dbec7927d5fd18534dc78156621a983a2deb5221e5"
+      "file:size": 899,
+      "file:checksum": "12201008fdfc7b7d956d1341c253e2a9843d7153aaf2817647454ad78741130e9275"
     },
     "style-2024": {
       "href": "./Chile.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c361f6ac86d1d3e048efc0c9bdd73440c4f817f4a8c85df0aba837bbc4665e66"
+      "file:size": 899,
+      "file:checksum": "12204e420a99252203eeb456688098fdc14ee5ddc6af5d2910ea7910b5b37af33f16"
     },
     "style-confidence-2025": {
       "href": "./Chile.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207f86f575abf6d2ad1db911e4c744adef8d52100a59c92052dd3d7ada8006f2ca"
+      "file:size": 2643,
+      "file:checksum": "12208fd49f7be568836b01f829658f2a77ff4ae2343a85cb4ba97376331971e9a740"
     },
     "style-confidence-2024": {
       "href": "./Chile.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122060cdd4150bba0abb75152feff58df363927e111baefa4ddba0be8723d2765b36"
+      "file:size": 2643,
+      "file:checksum": "12200e36fb146e5725f0a51d9963c8d70ea32475a8f07706ee77c5780101b05195c2"
     },
     "README": {
       "href": "./Chile.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CL/Chile.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

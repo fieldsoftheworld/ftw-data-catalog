@@ -1,0 +1,215 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "id": "Guernsey",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -2.6729452596054006,
+          49.412525436806796
+        ],
+        [
+          -2.1783346823162004,
+          49.412525436806796
+        ],
+        [
+          -2.1783346823162004,
+          49.718939653867
+        ],
+        [
+          -2.6729452596054006,
+          49.718939653867
+        ],
+        [
+          -2.6729452596054006,
+          49.412525436806796
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -2.6729452596054006,
+    49.412525436806796,
+    -2.1783346823162004,
+    49.718939653867
+  ],
+  "properties": {
+    "title": "Guernsey",
+    "description": "Agricultural field boundaries for Guernsey. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. This partition contains 1,959 field polygons. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing. Columns: id, geometry, bbox, metrics:area, metrics:perimeter, determination:datetime, determination:method, admin:country_code, admin:subdivision_code, confidence \u2014 see `table:columns` for definitions (including how `confidence` is derived).",
+    "datetime": null,
+    "start_datetime": "2024-01-01T00:00:00Z",
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "admin:country_code": "GG",
+    "proj:code": "EPSG:4326",
+    "geoparquet:geometry_type": "Polygon",
+    "geoparquet:feature_count": 1959,
+    "table:columns": [
+      {
+        "name": "id",
+        "type": "string",
+        "description": "An identifier for the field. Must be unique per collection. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "geometry",
+        "type": "binary",
+        "description": "A geometry that reflects the footprint of the field, usually a Polygon. Default CRS is WGS84. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "bbox",
+        "type": "struct",
+        "description": "The bounding box of the field. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "metrics:area",
+        "type": "float",
+        "description": "Area of the field, in square meters (m\u00b2). Must be > 0. ([vecorel geometry-metrics](https://github.com/vecorel/geometry-metrics-extension))"
+      },
+      {
+        "name": "metrics:perimeter",
+        "type": "float",
+        "description": "Perimeter of the field, in meters (m). Must be > 0. ([vecorel geometry-metrics](https://github.com/vecorel/geometry-metrics-extension))"
+      },
+      {
+        "name": "determination:datetime",
+        "type": "timestamp",
+        "description": "The last timestamp at which the field did exist and was observed, in the UTC timezone. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "determination:method",
+        "type": "string",
+        "description": "The boundary creation method (one of: manual, surveyed, driven, auto-operation, auto-imagery, unknown). ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "admin:country_code",
+        "type": "string",
+        "description": "ISO 3166-1 alpha-2 country code (aka admin0). Two-letter country code for the country that contains the field. ([vecorel administrative-division](https://github.com/vecorel/administrative-division-extension))"
+      },
+      {
+        "name": "admin:subdivision_code",
+        "type": "string",
+        "description": "ISO 3166-2 code for the principal subdivision (e.g. province or state, aka admin1) of a country that contains the field. Only the subdivision part of the code is stored. ([vecorel administrative-division](https://github.com/vecorel/administrative-division-extension))"
+      },
+      {
+        "name": "confidence",
+        "type": "float",
+        "description": "Derived; not part of the upstream model output. Modeled PRUE confidence on a 0\u2013100 scale, sampled at the field's point-on-surface from the 500 m confidence COG ([predictions/confidence](https://data.source.coop/ftw/global-data/predictions/confidence/collection.json)) and rescaled `raw / 0.578178 * 100`, clamped to 100 (0.578178 is treated as 100%, matching the FTW inference app; this centroid sample is the closest single value to the app's `confidence_mean`); **null where the field falls outside the modeled-confidence layer's coverage \u2014 i.e. no value there, not a low score** (the layer is sparse and conservative, fully covering mainly the 24 FTW-labelled training countries). Recommended reliability filter: `confidence >= 69` (raw 0.4). Reflects 500 m cell-level model reliability, not individual-polygon geometric accuracy. Generated by [add_confidence.py](https://github.com/fieldsoftheworld/ftw-data-catalog/blob/main/scripts/confidence/add_confidence.py) (+ process_partition.sh, run_rails.sh, make_pmtiles.py)."
+      }
+    ],
+    "portolan:styles": [
+      "style-2025",
+      "style-2024",
+      "style-confidence-2025",
+      "style-confidence-2024"
+    ]
+  },
+  "collection": "vectors",
+  "assets": {
+    "data": {
+      "href": "./Guernsey.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "Guernsey field boundaries (GeoParquet)",
+      "roles": [
+        "data"
+      ]
+    },
+    "pmtiles": {
+      "href": "./Guernsey.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Guernsey field boundaries (PMTiles, 2024/2025 layers)",
+      "roles": [
+        "visual"
+      ]
+    },
+    "style-2025": {
+      "href": "./Guernsey.2025.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 field boundaries (2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 908,
+      "file:checksum": "1220a25730d4107726d18c4b257a8d380413191868573b4d95460c6ec7ea74419062"
+    },
+    "style-2024": {
+      "href": "./Guernsey.2024.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 field boundaries (2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 908,
+      "file:checksum": "122084e08b221af813b10c482d29d590753e0cc4146001055320b3d87de3645db069"
+    },
+    "style-confidence-2025": {
+      "href": "./Guernsey.confidence-2025.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 by confidence (2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2652,
+      "file:checksum": "1220f5210d71505462f169e3ec0ea7a269a0d73f407d052706479dae8c30459e0b87"
+    },
+    "style-confidence-2024": {
+      "href": "./Guernsey.confidence-2024.style.json",
+      "type": "application/json",
+      "title": "MapLibre style \u2014 by confidence (2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2652,
+      "file:checksum": "122022ba25c169cadb6152bd64dcdbe9b3adf81136ae110deb725f90a12f49a26e9c"
+    },
+    "README": {
+      "href": "./Guernsey.README.md",
+      "type": "text/markdown",
+      "title": "Guernsey \u2014 README",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 4423,
+      "file:checksum": "1220dd3265226a5177b6771e5a260b50ead7a5200af5e2ef6380781e2125d546806b"
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GG/Guernsey.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
+      "type": "application/json",
+      "title": "FTW prediction probabilities (Zarr)"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    }
+  ]
+}

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_VA",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -83.60070391240879,
+          36.5345943564494
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -75.3106317865218,
+          36.5345943564494
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -75.3106317865218,
+          39.430392861624604
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -83.60070391240879,
+          39.430392861624604
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -83.60070391240879,
+          36.5345943564494
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -83.60070391240879,
+    36.5345943564494,
+    -75.3106317865218,
+    39.430392861624604
   ],
   "properties": {
     "title": "United States \u2014 Virginia",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Virginia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 74633607,
-      "file:checksum": "122021b0b49402c691269f4a73ec00db78d0e372a20f1d4a50a60448cbcf93fcdaeb"
+      ]
     },
     "pmtiles": {
       "href": "./US_VA.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Virginia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 56480481,
-      "file:checksum": "1220148e45a8a7f1530c588435d7a1b66f8c1eedcc7fd097f273ce56bb959274dc51"
+      ]
     },
     "style-2025": {
       "href": "./US_VA.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c53c7f172a019d878f0e57c6f321d7ffa8cc196348bbfd423069e1eaf8ca8849"
+      "file:size": 899,
+      "file:checksum": "1220492f10c1612051e6c0dc9ff5ec2e4cb10bd034fe108e5552532154f8a262038e"
     },
     "style-2024": {
       "href": "./US_VA.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209ad67d213eec9b6d3d71e2a97e8d6d0ef740f57c64175a0f8b8c3a911a047139"
+      "file:size": 899,
+      "file:checksum": "12204d2b703b645728701d85bd7fe891346e19027e2c0f5f32f293ea88535911143e"
     },
     "style-confidence-2025": {
       "href": "./US_VA.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122057abdb5861238da7075e5ae1955f4538b0b6c6f708b805c13c3bac020e2fb5eb"
+      "file:size": 2643,
+      "file:checksum": "12204246b6d2b3830c278b66a220b6b38e124377181bb3b242b7873670c6db92ec0e"
     },
     "style-confidence-2024": {
       "href": "./US_VA.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202ed6987f95cde21ce5e273140e1af308075f9453d07f54681a608480fb6c838e"
+      "file:size": 2643,
+      "file:checksum": "12206aa0a3df5a7eb7631fe8ac1ffb3562976e1ad865c441ebbf2fd2003ebc2197e7"
     },
     "README": {
       "href": "./US_VA.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_VA.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Ghana",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Ghana field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2412625735,
-      "file:checksum": "1220a893efdc4abcd7df98e4bb07b85bb7549ff1738e1a95926de3da14ac581d28e9"
+      ]
     },
     "pmtiles": {
       "href": "./Ghana.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ghana field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1198182358,
-      "file:checksum": "12203169531dc1d26389559bbbb5edac22199f7cd4c98d585c309e4660245accb177"
+      ]
     },
     "style-2025": {
       "href": "./Ghana.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220973cfc0e8fae48dc6e687f9f54afec1369605fc846330a0e5450ba9bd2f757bb"
+      "file:size": 899,
+      "file:checksum": "122061f29ec6746b937c54680a81a7d34156b80af208f66e678905cafdd1d896017f"
     },
     "style-2024": {
       "href": "./Ghana.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f2a6fbe222f99437986ff4e8d56826931ce42e015076d9a24437c9cb6e768b4c"
+      "file:size": 899,
+      "file:checksum": "122072daca004246d8a03ddbed8a68e2fd9a47c760a69ce8887731eee514407fc7dd"
     },
     "style-confidence-2025": {
       "href": "./Ghana.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220934c25170dde521ea93cff33444325a738c75104210f10fc7fa71aeecf313045"
+      "file:size": 2643,
+      "file:checksum": "1220c9125610e7194ffbb0579778967b6eede36b544607491a78052042328a26d2fe"
     },
     "style-confidence-2024": {
       "href": "./Ghana.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122015e7a8564f9cd8371785369e29e15a0b014e77a846e3c816d4765aa3e959e78d"
+      "file:size": 2643,
+      "file:checksum": "12204147c32d558568315dac301e859324ab8cb24819b33d88a29c8bb3fdb0a2b188"
     },
     "README": {
       "href": "./Ghana.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GH/Ghana.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

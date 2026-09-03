@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Eritrea",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Eritrea field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1347626642,
-      "file:checksum": "12208568038f9573f4b9bae8aac51a039bb0f3015b881b776438957b1a0dfcbde45e"
+      ]
     },
     "pmtiles": {
       "href": "./Eritrea.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Eritrea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 678248453,
-      "file:checksum": "1220e149fb1b14f9dd41e7a4f6d5f15963ef510ce2575a20086622aa666d5174f63f"
+      ]
     },
     "style-2025": {
       "href": "./Eritrea.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "122061ff08a24ea605dcb5ca7f88d6d0042c02e8add28ce4b9b04569af10cb8fe47c"
+      "file:size": 905,
+      "file:checksum": "1220118aa2e6168a222c3b14fa24e0b1f9428d353bddc3d31dbca150e98e155d992f"
     },
     "style-2024": {
       "href": "./Eritrea.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220fc2099a1505e1a349cd878f4b3be280bdb25e997a1a62704828be507b1be4354"
+      "file:size": 905,
+      "file:checksum": "1220fdebb1db97285d5ce8424792b79006b4c059b04a2857c88624d289e90dc94a5d"
     },
     "style-confidence-2025": {
       "href": "./Eritrea.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12203ee7644651454471027fa387cca4361446b9a7e027d0f99f4c86853233121f96"
+      "file:size": 2649,
+      "file:checksum": "1220e50e423b7cae426f1ae0dbdebc48af22b778d1d0b2c2e480e3a8918f7e0bdb1d"
     },
     "style-confidence-2024": {
       "href": "./Eritrea.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12205a429ec9a2bc36d9728b5621b3ab15567e8d411c47dd8d3e89ab644a9f4381a8"
+      "file:size": 2649,
+      "file:checksum": "12206e26113913f00e2a6727832bc920a8703979bf03cc42a1a6262aeccda3fe5ed6"
     },
     "README": {
       "href": "./Eritrea.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ER/Eritrea.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

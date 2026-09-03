@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Romania",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Romania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 885947910,
-      "file:checksum": "122065a3f51d49d620371c90c179a23a82f1b11cf77f8bbe99b2acadc414291b7bd1"
+      ]
     },
     "pmtiles": {
       "href": "./Romania.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Romania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 540759183,
-      "file:checksum": "122042155fc2c99775ab4d1166cf0213a3c9439ff564e0c761b2e838133f55bb735c"
+      ]
     },
     "style-2025": {
       "href": "./Romania.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220fa9159f68c536c8c65b0e2df5a8786aef9accd5c5aba5f1f19e9e41148be3953"
+      "file:size": 905,
+      "file:checksum": "1220e203473303c8efa71cdc62d8faba5473e213a5ccde0b602978dcdf600410bca3"
     },
     "style-2024": {
       "href": "./Romania.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203041eb0cacbb7b89957e9fa277dcfaf6303f74fd6d3246b31d674b13e6569d0c"
+      "file:size": 905,
+      "file:checksum": "1220982051c5047e88d9c81f953085d26760620baf3fd3cd9cb253b380a7185c8cf5"
     },
     "style-confidence-2025": {
       "href": "./Romania.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122034f4df4f97341bb96716438f572e385a3f13081f250861a96f01f0dc6481b726"
+      "file:size": 2649,
+      "file:checksum": "1220c1808cd493e255637c6c9bb713c1c9a09ef776280c9743f70b92c1c6126fcf65"
     },
     "style-confidence-2024": {
       "href": "./Romania.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220b76cbd42b0a5255d00fa0b47da6b96ab0221c2a4de603a6b5cd63438f8481704"
+      "file:size": 2649,
+      "file:checksum": "1220bab0fa1ed4ac804cfd449adf97c8f2432f5f993f8f69b662cca2a8152dba3bdb"
     },
     "README": {
       "href": "./Romania.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=RO/Romania.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Hungary",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Hungary field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 380997690,
-      "file:checksum": "12206d4975743693911bd564c6f71b7aedd9fa813ca571d8059a6065b0878ea2fed5"
+      ]
     },
     "pmtiles": {
       "href": "./Hungary.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Hungary field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 222922047,
-      "file:checksum": "1220b307e2cbc71e9cc955543d03439de7a756ea80bdbf5d5f13c999c1fce2993363"
+      ]
     },
     "style-2025": {
       "href": "./Hungary.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203ebcd903bbb360cb304528bd39de7914decef90d7c36db49ada6d4a243c40825"
+      "file:size": 905,
+      "file:checksum": "122085a4e37de2898965f9dfeb8960403cf45ac56a9d717d903f84d980b83860ea36"
     },
     "style-2024": {
       "href": "./Hungary.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203ed1d0617184dac8fe829428a0d20028260b89b677720a77a051b5394ec9e865"
+      "file:size": 905,
+      "file:checksum": "1220239355c4e1113ed12dcec97527c2530474b92367c4ae27067a4501bb6c454651"
     },
     "style-confidence-2025": {
       "href": "./Hungary.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220256953a705e12d3762662e9249355fa8a89db382faa895c51164fe72a827bfb7"
+      "file:size": 2649,
+      "file:checksum": "1220dad8e8b7e41a58cfa523526504e5b4d606d549c71c9f6db208434c7b65242148"
     },
     "style-confidence-2024": {
       "href": "./Hungary.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220874ec779a74f39caac36b9a4be52ab4e60c758916f6d8013eb71fdfa9f8be316"
+      "file:size": 2649,
+      "file:checksum": "1220bd890e382f7b34cf520050b651d2ff2d58dc6361379d7c8dd81bfe73a2856d7d"
     },
     "README": {
       "href": "./Hungary.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=HU/Hungary.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

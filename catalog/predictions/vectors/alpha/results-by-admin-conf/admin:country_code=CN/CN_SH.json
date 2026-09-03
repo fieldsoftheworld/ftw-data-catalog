@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_SH",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          118.60069944076399,
+          30.677510402611198
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          122.0886652044736,
+          30.677510402611198
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          122.0886652044736,
+          33.439729916062994
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          118.60069944076399,
+          33.439729916062994
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          118.60069944076399,
+          30.677510402611198
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    118.60069944076399,
+    30.677510402611198,
+    122.0886652044736,
+    33.439729916062994
   ],
   "properties": {
     "title": "China \u2014 Shanghai Shi",
@@ -118,9 +117,7 @@
       "title": "China \u2014 Shanghai Shi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 43486434,
-      "file:checksum": "1220aad62972502a74f747d9507b6de6a80030b92dda7b109e8e694aa62364fcffc4"
+      ]
     },
     "pmtiles": {
       "href": "./CN_SH.pmtiles",
@@ -128,49 +125,47 @@
       "title": "China \u2014 Shanghai Shi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 32754718,
-      "file:checksum": "1220d63f51f9253a80979ada030488745cb24e6964cfb10924e143f550bfeb470ae7"
+      ]
     },
     "style-2025": {
       "href": "./CN_SH.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208003b972acf83c199e442a472fbd0d3a3245e4325c7438962a2ebc258abec9ef"
+      "file:size": 899,
+      "file:checksum": "1220e8afc0ac5bab5bb535201cfa4538ca78e04542de936c1f9e146673744224c931"
     },
     "style-2024": {
       "href": "./CN_SH.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220dcf7eafee378490c00672575da210fa6fbd58dd4605224264a738dad982d0bb0"
+      "file:size": 899,
+      "file:checksum": "1220a558c5fc66c887d851000f6c35eddfbb8bf89e8db3fadb68e9c2eccbb4ec77b3"
     },
     "style-confidence-2025": {
       "href": "./CN_SH.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207f5af0dd48bdeff2ce0580a0f4f51f6d18a58db47d7403027432b5a70af6a2fa"
+      "file:size": 2643,
+      "file:checksum": "122057497fd297c92b4a9e31010184dd8bdc64094ef62b0d3f9c5fa4354abe9c0fad"
     },
     "style-confidence-2024": {
       "href": "./CN_SH.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d5da55dd7c533d2d3b8fbd0b6a51bed46cc6641dc96b5f7f4b5d87b6c77e2751"
+      "file:size": 2643,
+      "file:checksum": "122091550c4abf2dfe7c6b1f524cbec0bab4ed4453ff1705f02c6e4a7e3fb37199a0"
     },
     "README": {
       "href": "./CN_SH.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_SH.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

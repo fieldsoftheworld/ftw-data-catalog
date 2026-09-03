@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_LN",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          118.84674709263379,
+          38.7497418728632
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          125.70203532087041,
+          38.7497418728632
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          125.70203532087041,
+          43.4934579562106
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          118.84674709263379,
+          43.4934579562106
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          118.84674709263379,
+          38.7497418728632
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    118.84674709263379,
+    38.7497418728632,
+    125.70203532087041,
+    43.4934579562106
   ],
   "properties": {
     "title": "China \u2014 Liaoning Sheng",
@@ -118,9 +117,7 @@
       "title": "China \u2014 Liaoning Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1493208343,
-      "file:checksum": "12204048f5ec0ccba3220d09f8be4389c0f5c30cbb351ce6ca9787cc0043c1a2a93f"
+      ]
     },
     "pmtiles": {
       "href": "./CN_LN.pmtiles",
@@ -128,49 +125,47 @@
       "title": "China \u2014 Liaoning Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 886551691,
-      "file:checksum": "1220b196fa106d1f3590737ebb2ea6cb9b2bacb99b71558f0d5f3716646ea65bc00c"
+      ]
     },
     "style-2025": {
       "href": "./CN_LN.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122093cbfaaac073360b56636d937adf373871bd7352fe203441d437a394a511464f"
+      "file:size": 899,
+      "file:checksum": "1220822fc37f955e13b98ca8ba09915f2036001748c7037e09f23bde008ef1063381"
     },
     "style-2024": {
       "href": "./CN_LN.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208c1fa9e6cb460b0869de69e3d693d79c35aadc904796fc7a3fbffa07e3d75b0c"
+      "file:size": 899,
+      "file:checksum": "122030ab5118cd7c77d8127d5aa11dee0a124434fe99837a7e95c36fb051b299134e"
     },
     "style-confidence-2025": {
       "href": "./CN_LN.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220daec8d759a4a98045c7468cd89ba13e828bef3623345f6db05a4febafd1befb5"
+      "file:size": 2643,
+      "file:checksum": "12202820becba77e86fbac9d5790d082441653e730483103ea0fd3a7b0a2ac324afe"
     },
     "style-confidence-2024": {
       "href": "./CN_LN.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220edf0f9611374206ddfbac50edddb5891bb8ffb02be475cda48913e797e05bfa6"
+      "file:size": 2643,
+      "file:checksum": "1220991f7a26b3e2f37d5b213e08d65cc20c5b757e7d1df7d971f42ed91c043dc6a3"
     },
     "README": {
       "href": "./CN_LN.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_LN.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_CHH",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -108.75703265633679,
+          29.001799231388397
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -103.305267068777,
+          29.001799231388397
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -103.305267068777,
+          31.7885426619488
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -108.75703265633679,
+          31.7885426619488
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -108.75703265633679,
+          29.001799231388397
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -108.75703265633679,
+    29.001799231388397,
+    -103.305267068777,
+    31.7885426619488
   ],
   "properties": {
     "title": "US_CHH",
@@ -118,9 +117,7 @@
       "title": "US_CHH field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 390964,
-      "file:checksum": "122015b3e21f093e013bba853437b099e0adf0a3b456c7ab84e77a3cc7e293763abc"
+      ]
     },
     "pmtiles": {
       "href": "./US_CHH.pmtiles",
@@ -128,49 +125,47 @@
       "title": "US_CHH field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 227992,
-      "file:checksum": "1220c7d4bc858f150a5cdd00bf47a2212dcb6e5ca41309503d120e53a90b59fe0f66"
+      ]
     },
     "style-2025": {
       "href": "./US_CHH.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220e1ab0696c544bc61394ddb699e93fbd3e4cfcd2ce4090a4a1d7e5d65c0992fae"
+      "file:size": 902,
+      "file:checksum": "12200df40abe6f26b3ed05f8623a687665590a9a9398649ba84106dea15b394df226"
     },
     "style-2024": {
       "href": "./US_CHH.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12203830b50e2b2d3ada4bd2ac75d1bc615ae11dece80b0cf975820381da09cb86da"
+      "file:size": 902,
+      "file:checksum": "1220f53b265d5144c0964011b8b0083936099a97248cccd4f60181cac201639bd66e"
     },
     "style-confidence-2025": {
       "href": "./US_CHH.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12209a5ec63d325bf58d136589c76223fac1bc81be3878fa9f486f8ecf1b4f02a637"
+      "file:size": 2646,
+      "file:checksum": "12209566aabc7f6c8a15a6a0afb138cc9db94376393983e456447f4e8c7e942b5bde"
     },
     "style-confidence-2024": {
       "href": "./US_CHH.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12204d360db584229ad150e05e5adc470166753aad70ca6e2a43e39b9cbaa5438eb1"
+      "file:size": 2646,
+      "file:checksum": "1220172e1b025b20f5ac50c50c2c697bbe2274daa4edc6d424a1252886dba219bc84"
     },
     "README": {
       "href": "./US_CHH.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_CHH.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

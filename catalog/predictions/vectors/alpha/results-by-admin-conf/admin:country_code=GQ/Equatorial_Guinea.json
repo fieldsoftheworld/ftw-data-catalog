@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Equatorial_Guinea",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Equatorial_Guinea field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1271807,
-      "file:checksum": "122089b268f88cece16e10ed16e277cdb93ee5e23042ae68d8a4dbaab2d7687387ec"
+      ]
     },
     "pmtiles": {
       "href": "./Equatorial_Guinea.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Equatorial_Guinea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1452485,
-      "file:checksum": "122021139ad387cf959f2c2a24c68d316c60798df888ee934d7feaf2f02c62ad1630"
+      ]
     },
     "style-2025": {
       "href": "./Equatorial_Guinea.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 936,
-      "file:checksum": "122009e98f9d0b5ab66df850f3fb53b5334fe24e9ae5ed5161ae314869f377ace967"
+      "file:size": 935,
+      "file:checksum": "1220ad250363f9d06a8ee8b715c28105d3aab8f314dfea86ff2c9b7db21b8f7eb01a"
     },
     "style-2024": {
       "href": "./Equatorial_Guinea.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 936,
-      "file:checksum": "1220f578e02271661e916f2a1e232d0a15f21094f047927bf39467dec9cddee26dd0"
+      "file:size": 935,
+      "file:checksum": "1220be65b4d5e7870d9d10afcbf1098c7daf5beff818d6f1e2bdc726c15d4b8c7be0"
     },
     "style-confidence-2025": {
       "href": "./Equatorial_Guinea.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2680,
-      "file:checksum": "1220675c13800364799f265df6184ea247261a468454415d111efbd5f91ee0239f7b"
+      "file:size": 2679,
+      "file:checksum": "1220b5ff8be4a2843971b057e267df7c02d3199c84b1cf46058a4a710819e36493ec"
     },
     "style-confidence-2024": {
       "href": "./Equatorial_Guinea.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2680,
-      "file:checksum": "122002411b31c4e96529eefbd181ea16bdb58833b8044a9d2618fe8833d2ec1136c4"
+      "file:size": 2679,
+      "file:checksum": "12206d69dd8cdd9bd4bbe1d1fe6b44fe85b1024599e91dd7f502ee3bdf3f1734cf2e"
     },
     "README": {
       "href": "./Equatorial_Guinea.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=GQ/Equatorial_Guinea.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

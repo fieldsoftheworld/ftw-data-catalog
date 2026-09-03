@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "CN_UK",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          79.5164027407188,
+          31.0081790431854
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          79.51855868947561,
+          31.0081790431854
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          79.51855868947561,
+          31.009796004753
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          79.5164027407188,
+          31.009796004753
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          79.5164027407188,
+          31.0081790431854
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    79.5164027407188,
+    31.0081790431854,
+    79.51855868947561,
+    31.009796004753
   ],
   "properties": {
     "title": "CN_UK",
@@ -118,9 +117,7 @@
       "title": "CN_UK field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 9699,
-      "file:checksum": "1220be8693567a11fcb8dd49bb589dd55d580a5d3e24e8f15fa0582f94b7b46299f5"
+      ]
     },
     "pmtiles": {
       "href": "./CN_UK.pmtiles",
@@ -128,49 +125,47 @@
       "title": "CN_UK field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1463,
-      "file:checksum": "1220271fc9a8ef21a516a978acf5354090cd5bda17d1bdd89c8526d89d0e25176887"
+      ]
     },
     "style-2025": {
       "href": "./CN_UK.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122052ab45f7364d1e1b152634a3076b111d5292e84031024188d058b6b5a92045c6"
+      "file:size": 899,
+      "file:checksum": "1220c316a058045fb9e044535b7d15e7e8ef44b80ef7b6d312ae703a2222271634be"
     },
     "style-2024": {
       "href": "./CN_UK.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a5d9bcaa61aec8289a6e2b930626bba3d4103ce9b2fef6d92c5956844b355b62"
+      "file:size": 899,
+      "file:checksum": "122005110e421fcdaa528c8ef075248da43a427c82488164b40dcfaecb5da8339d1d"
     },
     "style-confidence-2025": {
       "href": "./CN_UK.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206cdc33c37d3206043969413e6cca4b62e435826797c643165bea62213bea2d1b"
+      "file:size": 2643,
+      "file:checksum": "122022d49deb1985336d7fd7afb07ba898720b4b819e017f53a2f99e3819a3fd7768"
     },
     "style-confidence-2024": {
       "href": "./CN_UK.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122065028a05816e92b6b20ce7c5b6424a989a54935954ba832c0f49309edc19f242"
+      "file:size": 2643,
+      "file:checksum": "12209437b5aafb702f7ed6bcdd8ba8cc025eaf20cb9b65f57f998543ffbd79d5efeb"
     },
     "README": {
       "href": "./CN_UK.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=CN/CN_UK.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

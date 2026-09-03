@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Belgium",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Belgium field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 189056563,
-      "file:checksum": "1220349ad03607a176057077c8e355fe45acf911c7965d00cf203eb8211eb9a35ce8"
+      ]
     },
     "pmtiles": {
       "href": "./Belgium.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Belgium field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 125488020,
-      "file:checksum": "1220773d5e813105320338cec5f1668b9a3c3a07f6ac6b14ff1fd2fd7f2666696b61"
+      ]
     },
     "style-2025": {
       "href": "./Belgium.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220a0654562b1ba376853c978a5ad75b0de91db1ff1078dce973136a8f5f1d6e554"
+      "file:size": 905,
+      "file:checksum": "12206cd7bf62590bf82ed8d12203ef6219e77b5d76712fc8c55c2a969a2a0cc1f331"
     },
     "style-2024": {
       "href": "./Belgium.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220b5846836457c09c88728ea5e9f2d8e2a78e2e5a82f1e5e1ecd848697efeb10e6"
+      "file:size": 905,
+      "file:checksum": "122004fa8867bfd7d48b3892b737c5b64107c5609008e9114a80be793348c2b038ba"
     },
     "style-confidence-2025": {
       "href": "./Belgium.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220c16561deedbcb0bd5a3da4fdcdba204aebd3e78bf3352502409de4017fdcb266"
+      "file:size": 2649,
+      "file:checksum": "12209cb0b38ed38e492904e90dbb0b211157b3c04594384db98dc2579312213483a5"
     },
     "style-confidence-2024": {
       "href": "./Belgium.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220191b52d694538cd93326c25942a487975bc70f0b56c366dae2e44f101d475fe3"
+      "file:size": 2649,
+      "file:checksum": "1220438d540cf2e2e3794b3d895da6fe18e5019be97058be2119eb84a86028988e78"
     },
     "README": {
       "href": "./Belgium.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BE/Belgium.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

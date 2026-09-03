@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "ET_AF",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          39.65138309711742,
+          8.834874897884788
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          42.404349997154625,
+          8.834874897884788
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          42.404349997154625,
+          14.552989988107594
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          39.65138309711742,
+          14.552989988107594
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          39.65138309711742,
+          8.834874897884788
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    39.65138309711742,
+    8.834874897884788,
+    42.404349997154625,
+    14.552989988107594
   ],
   "properties": {
     "title": "Ethiopia \u2014 Afar",
@@ -118,9 +117,7 @@
       "title": "Ethiopia \u2014 Afar field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 228343832,
-      "file:checksum": "1220682442fd4c6aa19e9517332bc24122289ad044e05befe60aa02facf2d637137b"
+      ]
     },
     "pmtiles": {
       "href": "./ET_AF.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Ethiopia \u2014 Afar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 138932024,
-      "file:checksum": "122006bd50c272af178a7b2c1e07034c3f66681f126bd0a4e9192a9dcf38668be3eb"
+      ]
     },
     "style-2025": {
       "href": "./ET_AF.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122047ac6de89e83ed75df9a34d86647ce5ab985920edcf1200852d3ff9d10fa39fb"
+      "file:size": 899,
+      "file:checksum": "1220a0e3fbe16fa811d6ef3a84136993c180ac82566a391a9792ddd8eccb1a7ae647"
     },
     "style-2024": {
       "href": "./ET_AF.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208c8dc9e76444fc552635be321f3d3479a5f8748ccf15be703796cae8ee331d6d"
+      "file:size": 899,
+      "file:checksum": "1220c51297ff53742c17f0df051653293ce03463285f7b22e52c6557f9235223c6ea"
     },
     "style-confidence-2025": {
       "href": "./ET_AF.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220713818156b782c5c14ee9934773a532a98e0db5e008d7d4db685a1169d042677"
+      "file:size": 2643,
+      "file:checksum": "122034d02e76f49c10388fe88689d0e4275c34f34cf0eddfa85aa364ddfbb297f800"
     },
     "style-confidence-2024": {
       "href": "./ET_AF.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220549aaae4b956d675028c64d337c78fabafd7c0631a0703e1ec08149b8b90c86a"
+      "file:size": 2643,
+      "file:checksum": "122053855aa66c5892c031fd31c7550d2a5de644da4593ef4d2d2bea67576a86338a"
     },
     "README": {
       "href": "./ET_AF.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=ET/ET_AF.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

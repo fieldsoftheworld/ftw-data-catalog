@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "NG_JI",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          8.095120468628611,
+          10.93566729898999
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          10.603387184769014,
+          10.93566729898999
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          10.603387184769014,
+          13.102216137177592
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          8.095120468628611,
+          13.102216137177592
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          8.095120468628611,
+          10.93566729898999
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    8.095120468628611,
+    10.93566729898999,
+    10.603387184769014,
+    13.102216137177592
   ],
   "properties": {
     "title": "Nigeria \u2014 Jigawa",
@@ -118,9 +117,7 @@
       "title": "Nigeria \u2014 Jigawa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 343936389,
-      "file:checksum": "1220ae6f1e8d6ec8e36d3a2726463b51f263a21ea00962fc78d37d06277de4c94bb1"
+      ]
     },
     "pmtiles": {
       "href": "./NG_JI.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Nigeria \u2014 Jigawa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 181743155,
-      "file:checksum": "12205f3e1b636e04f86074f5f319a35b0427a24eebca0844dc34f9ce6756367fc7b3"
+      ]
     },
     "style-2025": {
       "href": "./NG_JI.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fb0a6790522ba9b6c4dd66f7160c7f391e7d8a68561bcf1042b3bb0d3420c145"
+      "file:size": 899,
+      "file:checksum": "12204e6c9b5c909d984c89bafe4b6917c6dd5ffb7ded0e9b1254af019818bfc4227f"
     },
     "style-2024": {
       "href": "./NG_JI.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d0ae29f39ed073b64c1d3943cbe5959d00fa58b4f581817d11ca1f85536cdf56"
+      "file:size": 899,
+      "file:checksum": "1220d7326acbfd2585d197132e29f2512ba498d605f0f8d8492ed1f6ecf176909331"
     },
     "style-confidence-2025": {
       "href": "./NG_JI.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e8662aff612b8f297cbbcd3c5b138731f50b16212962c16414143077460f8f60"
+      "file:size": 2643,
+      "file:checksum": "12202205f75c2313145765984cb49be579a3345b7978fc9e11dd9ad022db0a4ef44e"
     },
     "style-confidence-2024": {
       "href": "./NG_JI.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122009bcd620135459a5d85fb4102b154c4ef30f1c8b0e30ba34939567213a98ccc6"
+      "file:size": 2643,
+      "file:checksum": "1220356b314373412a71aa8b07336060b7185684f83d30a53228560d6dc5330a0d6a"
     },
     "README": {
       "href": "./NG_JI.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=NG/NG_JI.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

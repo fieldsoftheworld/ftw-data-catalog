@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Sweden",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Sweden field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 315900632,
-      "file:checksum": "122028349bfafa00df9726680b9403df6c07ab4bd38c6806abf4ce675b4169c3346e"
+      ]
     },
     "pmtiles": {
       "href": "./Sweden.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Sweden field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 250560422,
-      "file:checksum": "1220fe34d0fd8f2da0bf91f0003cc57d5a098a4fb8baeb9822470e6b4f0c8decf7c5"
+      ]
     },
     "style-2025": {
       "href": "./Sweden.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122043b8a8951f1c0eba4cfec39e1c6750680672b5beb18d6b1bd8426d2e404abbe5"
+      "file:size": 902,
+      "file:checksum": "1220d94e8cdb9898febc3e4fec7f4b4e34f671f590063edde6124fb334a58aff980e"
     },
     "style-2024": {
       "href": "./Sweden.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220d8d6c7670084c241040e239460fd7dd9a43fad26c725c5209b3f881ca9952db4"
+      "file:size": 902,
+      "file:checksum": "1220330119bc13faa276698a028c875c290bdcd9bb868fef6e24eb3d6e0b6fabf459"
     },
     "style-confidence-2025": {
       "href": "./Sweden.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122055b7e67ef15b8295bad8f221abe0779d8fc1d9effccb928b9a5520b902b900bb"
+      "file:size": 2646,
+      "file:checksum": "12201ece6a10e475b36bc5d3d3fb4aeeda5f436a9fae3244a60f7ea4bb3826fb1c7b"
     },
     "style-confidence-2024": {
       "href": "./Sweden.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122057c3f6de411832167e2fcfd586156cff38e60461e583149bd249d2477cb84306"
+      "file:size": 2646,
+      "file:checksum": "12207aeab6e98fb4eaf59b68d0258afc837a14eb3db29c97322e8f411a495ccbe78f"
     },
     "README": {
       "href": "./Sweden.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=SE/Sweden.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "AU_ACT",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Australia \u2014 Australian Capital Territory field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3201602,
-      "file:checksum": "122097618ff138fdaf7b582b99faed0e8b1db57cb8e062360c1371bf411477284b9c"
+      ]
     },
     "pmtiles": {
       "href": "./AU_ACT.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Australia \u2014 Australian Capital Territory field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3040653,
-      "file:checksum": "122022344309b723d67ed3fb54b24425a9a8c6145ebd410f072152cc432b7e2e08bb"
+      ]
     },
     "style-2025": {
       "href": "./AU_ACT.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12208e989723461597c898be5dd743d8e81d8149f8eea3193d8ac52525b64dc181ec"
+      "file:size": 902,
+      "file:checksum": "12206574bc8a62567cd64f51afabc88b615e2b83be02ae414c65bc7291ef67173b12"
     },
     "style-2024": {
       "href": "./AU_ACT.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12204c08cc673843e6ac0a700d247cf5f8232af3d53ae2fb7f3919fdc4a2a0377d08"
+      "file:size": 902,
+      "file:checksum": "12207ef39edd1f64d5fdde9ed14b7fe7c7c4cebf37bc7d802e8ac4c835a208bf9892"
     },
     "style-confidence-2025": {
       "href": "./AU_ACT.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122015868a1670aea0b30a42254be6a34b14b70fb8a30eaad78553b9aa0ba78cac93"
+      "file:size": 2646,
+      "file:checksum": "12204d8942c967b03e564e163b9a537f6e58e83b1983ec6d24d55e0fa3fbb113bd01"
     },
     "style-confidence-2024": {
       "href": "./AU_ACT.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220e6dc2f100a980445f268be0daf998d94ca84e852c51901192a75580924c81e9b"
+      "file:size": 2646,
+      "file:checksum": "1220c0e1ba0ec9ce318cefaa1e45675e3772b67700ab051d897b6aee56eb58f7b79f"
     },
     "README": {
       "href": "./AU_ACT.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/AU_ACT.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

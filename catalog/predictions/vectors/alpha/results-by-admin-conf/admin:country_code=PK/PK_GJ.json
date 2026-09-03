@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "PK_GJ",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          68.90365515417263,
+          24.169599417814
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          71.12518068565862,
+          24.169599417814
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          71.12518068565862,
+          24.691608510554197
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          68.90365515417263,
+          24.691608510554197
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          68.90365515417263,
+          24.169599417814
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    68.90365515417263,
+    24.169599417814,
+    71.12518068565862,
+    24.691608510554197
   ],
   "properties": {
     "title": "PK_GJ",
@@ -118,9 +117,7 @@
       "title": "PK_GJ field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 802744,
-      "file:checksum": "1220bfe1f30614cd15457db1c224dad578c55d14f3bd8891437d9b75ee9be7ecf933"
+      ]
     },
     "pmtiles": {
       "href": "./PK_GJ.pmtiles",
@@ -128,49 +125,47 @@
       "title": "PK_GJ field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 565105,
-      "file:checksum": "1220282ce8a4df7315103ed2ef55522eb911df8095d59c297cb378e6ba5742a7c70e"
+      ]
     },
     "style-2025": {
       "href": "./PK_GJ.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200f5f2e01e40f64f26fa5a05c8c472ddbff14dd3754f7331964553619658c8dc6"
+      "file:size": 899,
+      "file:checksum": "1220fb6469e9539fd068936e41bccb190bb2be338af4f95fda8731c1145753d7999f"
     },
     "style-2024": {
       "href": "./PK_GJ.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220df87a364fd0e271918e191c4e080f14a5f7a7646a3fa345a8ee459c9ba201cf3"
+      "file:size": 899,
+      "file:checksum": "122001d2af7407f5bfad472c0c522b820a7ac1fabca9f88d13022a0e38af19d69a98"
     },
     "style-confidence-2025": {
       "href": "./PK_GJ.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203022f9654ee1e9c0ec6ba56ccde3e24550610aba54f7f2c6acb4292db42f3d52"
+      "file:size": 2643,
+      "file:checksum": "1220cc60d24657722d2c8443aec0e6579b88ddc02fe10194132c50e7787aff93900a"
     },
     "style-confidence-2024": {
       "href": "./PK_GJ.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201936ee8bf6688c7ed5e2b3b7885fe207d5d662cda072da97c50106489ae959bc"
+      "file:size": 2643,
+      "file:checksum": "1220300a6c2cdfb5252d2582f79f55f89b9b1b2f5706ad59bc4b633ca8ccb1fbd7c5"
     },
     "README": {
       "href": "./PK_GJ.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=PK/PK_GJ.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

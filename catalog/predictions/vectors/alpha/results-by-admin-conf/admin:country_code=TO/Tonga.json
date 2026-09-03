@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Tonga",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Tonga field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4100865,
-      "file:checksum": "12201c618deaf1b25049d144e0a489bf231063b854892b48ba0bfdc42d9e71f9649a"
+      ]
     },
     "pmtiles": {
       "href": "./Tonga.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Tonga field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 4204676,
-      "file:checksum": "12205070539d179b491f29417d51d8d5635c9463f4329ec266a1cb58e8102df75052"
+      ]
     },
     "style-2025": {
       "href": "./Tonga.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204ed7b5f6602f2dbba02dcf9c26068c5dc4ca3784875cd6f6d485a8d6701a168c"
+      "file:size": 899,
+      "file:checksum": "1220648ef976c557196ae79052cb270d6bfc337d15a0de556b1810f4bf5e6a620e9e"
     },
     "style-2024": {
       "href": "./Tonga.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d4d194e631c190dc10e6877dfe8a559fe6a087027a621fa77506259644a83731"
+      "file:size": 899,
+      "file:checksum": "1220c0950d0193efc2e22d225bd9dd7445caa53e6ca115e4f8933be97cfcfa0c3ae3"
     },
     "style-confidence-2025": {
       "href": "./Tonga.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122089606a0b512dd289819e22d84efa931ff456d8618483a5e0d24664282a8f888b"
+      "file:size": 2643,
+      "file:checksum": "122029530719ff36dddd1289d709bfb69f5eaaf6d68611f9ee8b3d0c539a19b9a08a"
     },
     "style-confidence-2024": {
       "href": "./Tonga.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122067476263fb158b0f0f8d27bd70dbc2ad97d8596de1b92698bc6d29d848eda5b9"
+      "file:size": 2643,
+      "file:checksum": "12202670c5591570ec61a746f7c9fd797f6594cf7b8a2a93edb776f266560340c2cb"
     },
     "README": {
       "href": "./Tonga.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TO/Tonga.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

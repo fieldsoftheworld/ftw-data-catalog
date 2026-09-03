@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_WI",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -92.81765434132339,
+          42.4730653758568
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -86.87882399712319,
+          42.4730653758568
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -86.87882399712319,
+          46.9016536159186
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -92.81765434132339,
+          46.9016536159186
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -92.81765434132339,
+          42.4730653758568
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -92.81765434132339,
+    42.4730653758568,
+    -86.87882399712319,
+    46.9016536159186
   ],
   "properties": {
     "title": "United States \u2014 Wisconsin",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Wisconsin field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 291058927,
-      "file:checksum": "1220f3585f8d2e3ed129f34496b3824c220554ae3a85af68635c5f83a25284231831"
+      ]
     },
     "pmtiles": {
       "href": "./US_WI.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Wisconsin field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 228893386,
-      "file:checksum": "1220d13cc72a5684a098e877756386ece0a470aa02bd8fcef0e04edc5fac41ad9a0c"
+      ]
     },
     "style-2025": {
       "href": "./US_WI.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fdd0394407c4fd070ecbae3c4ddbf8b18955516bf39bea4c3bd59da22b076fd7"
+      "file:size": 899,
+      "file:checksum": "12201b6376bc9c37394e2c1329a29033de8281ba8671a845bb7637a681bad48cb6a7"
     },
     "style-2024": {
       "href": "./US_WI.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e0f6ffd203635be8b940b3d4112f22617979562f0b90c185f86b8fca77e97219"
+      "file:size": 899,
+      "file:checksum": "12200a9acae837069ab4055f06bd6eb509ad180d4176351a75db651e438124d8da63"
     },
     "style-confidence-2025": {
       "href": "./US_WI.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205e75bd7df8da4a2701472c78ee92edc220fe5557ce8c5db4009b9895b0061860"
+      "file:size": 2643,
+      "file:checksum": "122032ae4ae8d4a71108f59a8041127914a45ca0739db9d41f0a56214656e06307b1"
     },
     "style-confidence-2024": {
       "href": "./US_WI.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206c5bba7d755c00536c980d656fd6d8c7586396b89a5302a038a0ee44c073e833"
+      "file:size": 2643,
+      "file:checksum": "12205af4d29bdd8b7392c94a86af69a9b62d2c77b6537c5f44c364b0222876d71f9d"
     },
     "README": {
       "href": "./US_WI.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_WI.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

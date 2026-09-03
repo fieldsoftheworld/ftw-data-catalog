@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "US_TX",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -106.65004190255578,
+          25.8411783539196
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -93.61939778525839,
+          25.8411783539196
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -93.61939778525839,
+          36.616340746811396
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -106.65004190255578,
+          36.616340746811396
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -106.65004190255578,
+          25.8411783539196
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -106.65004190255578,
+    25.8411783539196,
+    -93.61939778525839,
+    36.616340746811396
   ],
   "properties": {
     "title": "United States \u2014 Texas",
@@ -118,9 +117,7 @@
       "title": "United States \u2014 Texas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1427102388,
-      "file:checksum": "12201c024adb2f04fbe050ee62067661e137ff465228871dd411b9325841502de5e4"
+      ]
     },
     "pmtiles": {
       "href": "./US_TX.pmtiles",
@@ -128,49 +125,47 @@
       "title": "United States \u2014 Texas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 874580125,
-      "file:checksum": "12206db73663e0951a8d6936435a41e716bca1f43dcb87b1d1939d38fc1c962f8c8d"
+      ]
     },
     "style-2025": {
       "href": "./US_TX.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ac5b40402e892938e5e10518988251ce4a932b8121876f73f2af2c98f9759e9b"
+      "file:size": 899,
+      "file:checksum": "1220f77e9214adce70948d491f54c16ad56a970ced3ec5f52f42a21717d45405f08e"
     },
     "style-2024": {
       "href": "./US_TX.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220315d935fed7dcb8fd426c5cdd910bb26cace1f27ea6a8b5cb4970d9313bdd2d2"
+      "file:size": 899,
+      "file:checksum": "122014f14592c00fdc752ad07b85bcc0691a0be6bfabd63299b898a3001fb1644760"
     },
     "style-confidence-2025": {
       "href": "./US_TX.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220bd5d2bba5ac2a060fdb2d23dbcdda4bdbb4c4f8a3d58ab7757d4f1cb143e4e58"
+      "file:size": 2643,
+      "file:checksum": "1220acc3164b6507ac2aaf8c552029612f681b641945c7e21084d2d7bd1a3bf15323"
     },
     "style-confidence-2024": {
       "href": "./US_TX.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220922deef62554d83bd48bbf4dc18dffd8a2a1830edddb52591f730de5c4b6b9e1"
+      "file:size": 2643,
+      "file:checksum": "1220fe767a3ab09fd3195916684eeaa7597dce1ec214c1ca42644f036c1e1fad9d6e"
     },
     "README": {
       "href": "./US_TX.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "./catalog.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=US/US_TX.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

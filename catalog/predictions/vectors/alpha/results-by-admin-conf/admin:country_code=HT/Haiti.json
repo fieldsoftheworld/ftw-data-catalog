@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Haiti",
   "geometry": {
@@ -118,9 +117,7 @@
       "title": "Haiti field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 139049120,
-      "file:checksum": "1220111213e99aaec09f0f1287ca83ccb8b03fd3fbd25b4b928b73af3f9f103715c8"
+      ]
     },
     "pmtiles": {
       "href": "./Haiti.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Haiti field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 94048397,
-      "file:checksum": "1220bb6be8a24547f8ba51d7f9c1d15d0b4029a1fdaf37ced4b8b5be191c2e714863"
+      ]
     },
     "style-2025": {
       "href": "./Haiti.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220737dfebcb08b171ac90391da164a14397e850561a2b0f993215bcdb38bb31438"
+      "file:size": 899,
+      "file:checksum": "1220663a5785d0ff7ea932af442ba53089c61cc7592f18916f6f7688de8b32778902"
     },
     "style-2024": {
       "href": "./Haiti.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220258774c35961c0176f94e71ba0b495d20fac18e47022c39545502de02bdd8bc0"
+      "file:size": 899,
+      "file:checksum": "1220b4fed448042df5b8564f430e92bb20c607f8121fbebea1d731e221f0bd3986c1"
     },
     "style-confidence-2025": {
       "href": "./Haiti.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200df1cddafed32de50d12f3ff63e70cd608ac4f4a9f98c247757643a1f8faead3"
+      "file:size": 2643,
+      "file:checksum": "1220c4629dac1b4df21ee4f37baf9ec2c259e2430702c3b884bf490dc35713b01f91"
     },
     "style-confidence-2024": {
       "href": "./Haiti.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122058897325a400f576560f9116cc08223a1cb77ce2e86206864913e3041a695de7"
+      "file:size": 2643,
+      "file:checksum": "12208eaf7be1dab6b0cf78e021ddc8409d2f8cbb281cb4d21727d547ba80a3c6ae39"
     },
     "README": {
       "href": "./Haiti.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=HT/Haiti.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",

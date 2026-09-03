@@ -4,8 +4,7 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
   ],
   "id": "Thailand",
   "geometry": {
@@ -13,33 +12,33 @@
     "coordinates": [
       [
         [
-          101.95363094633103,
-          5.9915378124584
+          97.37915684039243,
+          5.696801651164198
         ],
         [
-          102.10445752810884,
-          5.9915378124584
+          105.63805754050404,
+          5.696801651164198
         ],
         [
-          102.10445752810884,
-          6.2110852608592
+          105.63805754050404,
+          20.464421816856795
         ],
         [
-          101.95363094633103,
-          6.2110852608592
+          97.37915684039243,
+          20.464421816856795
         ],
         [
-          101.95363094633103,
-          5.9915378124584
+          97.37915684039243,
+          5.696801651164198
         ]
       ]
     ]
   },
   "bbox": [
-    101.95363094633103,
-    5.9915378124584,
-    102.10445752810884,
-    6.2110852608592
+    97.37915684039243,
+    5.696801651164198,
+    105.63805754050404,
+    20.464421816856795
   ],
   "properties": {
     "title": "Thailand",
@@ -118,9 +117,7 @@
       "title": "Thailand field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6376447174,
-      "file:checksum": "1220181f32738bde96c67748d04e71ae3cb8e166e8612c2c27ab5de11bf0fec51e5a"
+      ]
     },
     "pmtiles": {
       "href": "./Thailand.pmtiles",
@@ -128,49 +125,47 @@
       "title": "Thailand field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2983638340,
-      "file:checksum": "1220e65756d896463bb8168055f9e0b3a56d18641e2f8ca1f4d4648e645dc7780b61"
+      ]
     },
     "style-2025": {
       "href": "./Thailand.2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12205bfef0a66f6376e0269e83738a986402050875d830df53455605217e3783eb48"
+      "file:size": 908,
+      "file:checksum": "12207edb148249556d947cff715b6cf1455f6afc8be96e98e6d7e80a0865609e76ce"
     },
     "style-2024": {
       "href": "./Thailand.2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 field boundaries (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12207b2a5f7f416aa61ca884a66bed53e210255b277ed17eaaff0adea83eb61c1693"
+      "file:size": 908,
+      "file:checksum": "1220a9868ca37aaec8d58b7c2a811070e316c1dcbcadf3f8fcd2f6ee161a8ceb7736"
     },
     "style-confidence-2025": {
       "href": "./Thailand.confidence-2025.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2025)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12208aa9043bb4bfd71c675035379e1214807794b2eedec612ad0ea9bb813145448c"
+      "file:size": 2652,
+      "file:checksum": "1220ab78dc176e9091e95d9971671e44df0799ec754ace706c4e0ad37b7662f89a15"
     },
     "style-confidence-2024": {
       "href": "./Thailand.confidence-2024.style.json",
-      "type": "application/vnd.mapbox.style+json",
+      "type": "application/json",
       "title": "MapLibre style \u2014 by confidence (2024)",
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220c1eeb94a4e2cb3bbe10c70ef6ec1cf2624deffb2755fb1ed370aba153d5aae01"
+      "file:size": 2652,
+      "file:checksum": "1220174d26c44de1c0a9720f1b1c2f5f64c65f465fe6644a6e4a3345a62f7c21e9d9"
     },
     "README": {
       "href": "./Thailand.README.md",
@@ -198,6 +193,11 @@
       "rel": "parent",
       "href": "../../../collection.json",
       "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=TH/Thailand.json",
+      "type": "application/geo+json"
     },
     {
       "rel": "derived_from",
