@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -171.731487361681,
+          18.9141149983212
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -154.8428627752882,
+          18.9141149983212
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -154.8428627752882,
+          25.760509937936
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -171.731487361681,
+          25.760509937936
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -171.731487361681,
+          18.9141149983212
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -171.731487361681,
+    18.9141149983212,
+    -154.8428627752882,
+    25.760509937936
   ],
   "properties": {
     "title": "United States \u2014 Hawaii",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Hawaii field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 21983407,
-      "file:checksum": "12206d2ea51ba295222b1075f55e11b08e43fd4f290dc4fd101306df16f0d94b8ac4"
+      ]
     },
     "pmtiles": {
       "href": "./US_HI.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Hawaii field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 19275624,
-      "file:checksum": "122064cd801e58b1b4684f4e3e8851feb1db69c9508e9948adb1c1af5043ced8835e"
+      ]
     },
     "style-2025": {
       "href": "./US_HI.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ae2713a727acd3190bba6c1ceab526db30d7597a41cf3dc93d06e6bcfb4cf161"
+      "file:size": 899,
+      "file:checksum": "12209ddc2ad8aee6a3809391eb15684fb28df18042d50f503e3aa630600617a1b147"
     },
     "style-2024": {
       "href": "./US_HI.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220743f9e1e7d462c1ef262f00aa91083d717ff4dc54c01ff24b7665d9c83f2e60f"
+      "file:size": 899,
+      "file:checksum": "1220d394a2095a9f540a9938978aebf225e94f4cdc0f5c4dfb974bc6a00c9825f15b"
     },
     "style-confidence-2025": {
       "href": "./US_HI.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b68988cd6355fd697812ae3a0d5b5cc38328f95aa815c666ec09a89da8b05eb9"
+      "file:size": 2643,
+      "file:checksum": "122031efda1d38cfbd79af763835281e20ed49495eb9abcfcfad901cd41c231dc3f3"
     },
     "style-confidence-2024": {
       "href": "./US_HI.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205b81e6f3da8198dd7ba4cc170c8fa6f5921603ffcbbdeee4431cf5d6551713a8"
+      "file:size": 2643,
+      "file:checksum": "122016ab5d0e33ad34d343e9b530733ad7c4bc9eb3816fbce686c9df0fe49c8d4939"
     },
     "README": {
       "href": "./US_HI.README.md",

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -73.4565158556738,
+          41.241569479732995
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -69.96531616882899,
+          41.241569479732995
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -69.96531616882899,
+          42.8878160179462
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -73.4565158556738,
+          42.8878160179462
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -73.4565158556738,
+          41.241569479732995
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -73.4565158556738,
+    41.241569479732995,
+    -69.96531616882899,
+    42.8878160179462
   ],
   "properties": {
     "title": "United States \u2014 Massachusetts",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Massachusetts field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3436189,
-      "file:checksum": "12205718f464c99359f40599cb21516ceb9cbbbf75b6d76a51c490ce75fe58aed555"
+      ]
     },
     "pmtiles": {
       "href": "./US_MA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Massachusetts field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3317492,
-      "file:checksum": "1220cac61a521be5552eecdf8f5a97d47fe095fe5d9dd3a83af9ba8440434d6ef06b"
+      ]
     },
     "style-2025": {
       "href": "./US_MA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d2f2eacfd3e398bbf6d2d9ed38c8c9a02f2f942deb45d414a489fd54ced27b0d"
+      "file:size": 899,
+      "file:checksum": "1220cedeed92e19e44943fb5eaafb0e1d76bceb00a636d8012d8f7966a92fe64bf7f"
     },
     "style-2024": {
       "href": "./US_MA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122087acfefa6215b27bc8767bd8f61fa3c93bccc28583c88df980f26ec2447e9180"
+      "file:size": 899,
+      "file:checksum": "122090cd4acd064e1daa5538b4b3f95a4f095d60820cf4d2a9210586f5cd14fd6451"
     },
     "style-confidence-2025": {
       "href": "./US_MA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206a4e81559ae002ceaed75ad7216c3c8f24550a51cfb539018a5e1ee682554bf7"
+      "file:size": 2643,
+      "file:checksum": "1220841ba348bc2fadde93400414f232c7690366bf3004b8e5c8622d6c20d145094e"
     },
     "style-confidence-2024": {
       "href": "./US_MA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122075848cee9ccd27a2ef2bf9125ca92f122234fd31c43ba82d1f9e6a83f551d915"
+      "file:size": 2643,
+      "file:checksum": "12209ae2136e6e979fb165d20b644d950e1410b9062488a115202254d733c2567e47"
     },
     "README": {
       "href": "./US_MA.README.md",

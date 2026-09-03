@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -41.360367726002984,
+          -9.481257259104204
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -32.428092364184174,
+          -9.481257259104204
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -32.428092364184174,
+          -3.8555784718292117
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -41.360367726002984,
+          -3.8555784718292117
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -41.360367726002984,
+          -9.481257259104204
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -41.360367726002984,
+    -9.481257259104204,
+    -32.428092364184174,
+    -3.8555784718292117
   ],
   "properties": {
     "title": "Brazil \u2014 Pernambuco",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Pernambuco field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 554234100,
-      "file:checksum": "1220bcf77b091eb95db52a44267e212eaa9a59049623de573c54efeef769c5bf31b2"
+      ]
     },
     "pmtiles": {
       "href": "./BR_PE.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Pernambuco field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 331151709,
-      "file:checksum": "1220dc1b9dedd07cdfddb07fc8104812fc67dd286ce253e3bfd57e338e5754299f3b"
+      ]
     },
     "style-2025": {
       "href": "./BR_PE.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c2a88f42e3cd2829848b5b0b8c4ad5bbe2b18abcb28c8f354a7b90ec297ddab0"
+      "file:size": 899,
+      "file:checksum": "1220374dfda80abd7b0655b78f076dd9156c5e77f9ac09a16cefe7cf6f3e8ee1b9b9"
     },
     "style-2024": {
       "href": "./BR_PE.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122093e274a8fe45d5220192af8f7dd60fbcd38f737c5d549b579e46e1c64d1bca1b"
+      "file:size": 899,
+      "file:checksum": "1220e667968075dac0e648dbdb6a0e9e3437db33624142ea2c29421fa01238da9fc7"
     },
     "style-confidence-2025": {
       "href": "./BR_PE.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d30244c0c616a0151df0d05f8b089e480eaf05e6dc4b3f0745875bcba90d70f2"
+      "file:size": 2643,
+      "file:checksum": "1220654ebfba2576a4dc2770cefc5fa21001978de14fa1fb2e8f3bb7f7a0417fdeb7"
     },
     "style-confidence-2024": {
       "href": "./BR_PE.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d36c0097fcf2509adb79aa1982d3303dda497fc325ce6bc8a53f873b0323993d"
+      "file:size": 2643,
+      "file:checksum": "122060eacd574d5ce539001ad47be969f79dc94847befbd3602daa608a4b3db247f0"
     },
     "README": {
       "href": "./BR_PE.README.md",

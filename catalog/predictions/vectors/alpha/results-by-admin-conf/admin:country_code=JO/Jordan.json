@@ -118,9 +118,7 @@
       "title": "Jordan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 109200580,
-      "file:checksum": "12208719e5f9f9472ab9cd329f7c538df6c1529030b9285c1e4f2e818a77ab532bbd"
+      ]
     },
     "pmtiles": {
       "href": "./Jordan.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Jordan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 73585460,
-      "file:checksum": "12208236cedcb491cf26a63c8d4743a31d78b08a83f5207d5f52fa49f6cc86b60d73"
+      ]
     },
     "style-2025": {
       "href": "./Jordan.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220df8af1bc7236a1f4960430ca5e1dec22c7f7ad98bd5beab13bbdce233bbbf04c"
+      "file:size": 902,
+      "file:checksum": "12205eb7ca194115318f60c46aa3d747194af56d265a0019e79169997a0e54a2ef45"
     },
     "style-2024": {
       "href": "./Jordan.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12208e53103e703ae42409a26eb82acfcc338f283f29e7d6ca316bc02dd292ce0a45"
+      "file:size": 902,
+      "file:checksum": "1220211e5ed2768b942f5646298c723444e3e2f2d53c326124588c5d91df8937545d"
     },
     "style-confidence-2025": {
       "href": "./Jordan.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12209577da502eebe0d931f55e5074c25e6c181cdfb7d61d289e6cd66bfcf6f8005c"
+      "file:size": 2646,
+      "file:checksum": "1220197f8ac09d6e15610e228975f6abf7ab831d455314152db9c9cb66339cb44623"
     },
     "style-confidence-2024": {
       "href": "./Jordan.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122092c38d0822f55c2119ad3bb46689f1d591fdaf653fa5eba801dbf746204fe5c0"
+      "file:size": 2646,
+      "file:checksum": "1220e7ccb1604ec36caf3a23ee9b329d5f8dc75ff4bd669018dee3ab023e14545c9a"
     },
     "README": {
       "href": "./Jordan.README.md",

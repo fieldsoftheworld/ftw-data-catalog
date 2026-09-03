@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          30.217669986946206,
-          -14.999587764530212
+          30.209136023117207,
+          -26.86449242278621
         ],
         [
-          33.240130481583414,
-          -14.999587764530212
+          40.83679558856462,
+          -26.86449242278621
         ],
         [
-          33.240130481583414,
-          -13.99922754137501
+          40.83679558856462,
+          -10.510093972088805
         ],
         [
-          30.217669986946206,
-          -13.99922754137501
+          30.209136023117207,
+          -10.510093972088805
         ],
         [
-          30.217669986946206,
-          -14.999587764530212
+          30.209136023117207,
+          -26.86449242278621
         ]
       ]
     ]
   },
   "bbox": [
-    30.217669986946206,
-    -14.999587764530212,
-    33.240130481583414,
-    -13.99922754137501
+    30.209136023117207,
+    -26.86449242278621,
+    40.83679558856462,
+    -10.510093972088805
   ],
   "properties": {
     "title": "Mozambique",
@@ -118,9 +118,7 @@
       "title": "Mozambique field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5152181998,
-      "file:checksum": "122000c2950f86e56717e1571b43f2a86b1e5722817491bb93a1b6e929f57d9c5abb"
+      ]
     },
     "pmtiles": {
       "href": "./Mozambique.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Mozambique field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2725861968,
-      "file:checksum": "122068a446fe35f004882e5ac6e5d15be0a014f51806f4c5bd2246003bc5847348c7"
+      ]
     },
     "style-2025": {
       "href": "./Mozambique.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "122001aeefa0f83601f9d9e0e3942b2717021e450c57d3ed418e35813e091dd0f778"
+      "file:size": 914,
+      "file:checksum": "122005f04463c8c21f846f3c646228fdb45829ef1e26de49a31bb80fdb000bc48c4b"
     },
     "style-2024": {
       "href": "./Mozambique.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220b0dd71a446ffc8b402977d10a9bd8646ac5f22c86dce118b61000fc396eb21b0"
+      "file:size": 914,
+      "file:checksum": "1220bad251c6812271a37c0e97c3b31f4694acf1718c3f084dc1c91ecbfc8a32226a"
     },
     "style-confidence-2025": {
       "href": "./Mozambique.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122066d1a771ea088879ad4ae2bcc6c70f65d24dfb735e446772d4b7cbbc1db17bbe"
+      "file:size": 2658,
+      "file:checksum": "1220ecc61af43b107b54238b513810caa79124dd520b1b8b307c48896bec61587330"
     },
     "style-confidence-2024": {
       "href": "./Mozambique.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122074707941ea5bb0229c53562995cf17129310fd7e93f9a6e70fbe041325c0c64e"
+      "file:size": 2658,
+      "file:checksum": "1220e9dad2e99dc75f320e852d343992c05dcd60429a7800e6cb6d0c4faf2db5912a"
     },
     "README": {
       "href": "./Mozambique.README.md",

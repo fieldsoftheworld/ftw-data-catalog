@@ -118,9 +118,7 @@
       "title": "Guinea-Bissau field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 285441591,
-      "file:checksum": "1220e6217dbd728424d58dc42f176d02580c28be915ae8256a0359518d8e0f2d1dc3"
+      ]
     },
     "pmtiles": {
       "href": "./Guinea-Bissau.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Guinea-Bissau field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 173459974,
-      "file:checksum": "122066c23bb6eb309fd03404950e9a526c1c2d6a675f097efe38a9a807224428bb6e"
+      ]
     },
     "style-2025": {
       "href": "./Guinea-Bissau.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 924,
-      "file:checksum": "12208a20f831409e452c877bba40352bd0cdd674f8e40ad3487d7da776d751b348ca"
+      "file:size": 923,
+      "file:checksum": "1220d0d0482bc3fde2b64a4556864bc0f8bb1efb6199a582aadcb677a2f62fb4e121"
     },
     "style-2024": {
       "href": "./Guinea-Bissau.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 924,
-      "file:checksum": "1220c1087a8f5db4612803d7773566dbab362aec807eb2cac884e53ed14df79b4a27"
+      "file:size": 923,
+      "file:checksum": "12208378f9853f01bee5b839d5464796b80392764144c31063675a57048660f3bb96"
     },
     "style-confidence-2025": {
       "href": "./Guinea-Bissau.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2668,
-      "file:checksum": "12202a9c0643d6ff771451fd4fae27ef31e0a9a87ac3b8b79d306408d3aa9ff6d134"
+      "file:size": 2667,
+      "file:checksum": "1220838cafe313628062075f39ff11308472c845ae9bd514953f6032854801c1755a"
     },
     "style-confidence-2024": {
       "href": "./Guinea-Bissau.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2668,
-      "file:checksum": "12208a833edfe1a7d79065791e62138699c54f160495bcaa3f11f48ce6c1ce71228d"
+      "file:size": 2667,
+      "file:checksum": "1220be4c2bf16578016816caad1c448e2b0b4c844802b6538f0c7f10dfc1b6051efe"
     },
     "README": {
       "href": "./Guinea-Bissau.README.md",

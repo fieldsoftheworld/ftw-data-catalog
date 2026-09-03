@@ -118,9 +118,7 @@
       "title": "South_Korea field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 327599463,
-      "file:checksum": "12201060b24a402b65aea3d07a6de46b13cc4810cc1f2d54e12d9f4806fc463b0059"
+      ]
     },
     "pmtiles": {
       "href": "./South_Korea.pmtiles",
@@ -128,9 +126,7 @@
       "title": "South_Korea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 227523353,
-      "file:checksum": "12202236c18e5a4ad9823b267415118fe10e8a7aca3a4107c2ccf42bfb8a3a4c053d"
+      ]
     },
     "style-2025": {
       "href": "./South_Korea.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220a91000dd32d46968d02b0d12300046ae7716ade06c3a23d08cd2e800df6f7b5a"
+      "file:size": 917,
+      "file:checksum": "1220d55abd79dd8b406625e524875070c8444daf6c8b35f20ce1f8a502fb13f9838a"
     },
     "style-2024": {
       "href": "./South_Korea.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220965f57575f51489e243fa63f047b70b41eb30b1a3236efcb6c2d6461b79811de"
+      "file:size": 917,
+      "file:checksum": "12203cd3ac248c21ef193a1acbe3ec7a6e2ca5230ffd0d4953dd8e2e4b00d59813b4"
     },
     "style-confidence-2025": {
       "href": "./South_Korea.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "122095957ae33576fe246e40e1fe3e51869ae4e6eda15f95464939b42d0c25ea625b"
+      "file:size": 2661,
+      "file:checksum": "1220b3c4837e4ec22e798aa4b01f84f240b00baeced65d71b821f5d49da34cb0522f"
     },
     "style-confidence-2024": {
       "href": "./South_Korea.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "122049fae0333faffb3c6a6c888cefae51ce5ad2d747c8e4a4bc8d25d9e38cb09f50"
+      "file:size": 2661,
+      "file:checksum": "1220e74c184497da673c3a7ae47c3c4f2b9476e6b517cd4e125e80292a5f76048aa8"
     },
     "README": {
       "href": "./South_Korea.README.md",

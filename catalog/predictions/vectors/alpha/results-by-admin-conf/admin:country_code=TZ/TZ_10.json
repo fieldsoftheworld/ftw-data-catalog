@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          32.16008998562481,
+          -9.402475298282804
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          39.84559814762582,
+          -9.402475298282804
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          39.84559814762582,
+          -2.0903954271992102
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          32.16008998562481,
+          -2.0903954271992102
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          32.16008998562481,
+          -9.402475298282804
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    32.16008998562481,
+    -9.402475298282804,
+    39.84559814762582,
+    -2.0903954271992102
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Pemba South",
@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Pemba South field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2793367,
-      "file:checksum": "122015b2bdeda0ee333ee268adc9ffcd1da4fbad8d370f21222466a8ebd0453feae6"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_10.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Pemba South field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2692676,
-      "file:checksum": "1220e88138df90302e8bb045ed1ac41f7aa626827c7c7cf3d6ec9130b0fa1b7ab000"
+      ]
     },
     "style-2025": {
       "href": "./TZ_10.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220889692b9239d9441c98bf8a364df46a30eb2d27ff8f29c20c17421992abf17da"
+      "file:size": 899,
+      "file:checksum": "1220464b5e05928dc449cb9ce79f7e1f42aa819afe0ecffb5e4c48e39b0712143a57"
     },
     "style-2024": {
       "href": "./TZ_10.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122000afc801574aee9eaecc6f13e02d06d73b7b0dc7493d1d5b8dfdb24840363fde"
+      "file:size": 899,
+      "file:checksum": "1220741b65cd9eca9a4ad751c54b73cbb22fae813ae5552ace46701e4a3835f31628"
     },
     "style-confidence-2025": {
       "href": "./TZ_10.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202ce805ddffa6743582548f48ce44bb74d7054089d9bf7ad2fee39b398f40a653"
+      "file:size": 2643,
+      "file:checksum": "12206c079e43ed1da9fc2d6a51b8fa95fe3778a63757a135a6ba23d64a7c791b9f26"
     },
     "style-confidence-2024": {
       "href": "./TZ_10.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ae7b23cbe04f0c3b4cf47749bfbba47470cc85db0159fa4e586aaa52e099dac1"
+      "file:size": 2643,
+      "file:checksum": "122001d195789ca0f047de61e504c86862fb13ec3f09b80b046752a0c9d7ffca319c"
     },
     "README": {
       "href": "./TZ_10.README.md",

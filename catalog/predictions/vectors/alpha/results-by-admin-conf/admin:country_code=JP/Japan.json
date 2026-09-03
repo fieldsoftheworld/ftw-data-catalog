@@ -118,9 +118,7 @@
       "title": "Japan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 841616871,
-      "file:checksum": "12209d4b81e92419b6d36eb5ee92916a32803f0bc0c1de7c6e56da4ab8ddd1cbc4e3"
+      ]
     },
     "pmtiles": {
       "href": "./Japan.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Japan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 597982493,
-      "file:checksum": "1220830e071a8857797308faf8d52860d36b37580be95e6af170e9758603b77e64b4"
+      ]
     },
     "style-2025": {
       "href": "./Japan.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c3a58dbad80bb6fa022a214948ad69fc9f11cccc0e7cc52b2c038ccf118498c9"
+      "file:size": 899,
+      "file:checksum": "122038efc9307f36a77fa3678039e519778063e9ff1d06e1699153b876dfd2d77020"
     },
     "style-2024": {
       "href": "./Japan.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220db595c528235f7e658ea880d6e9f71afecfd9719da7b0e6314016b847b6da52a"
+      "file:size": 899,
+      "file:checksum": "12209bd1b091a7064ff20cfa8b4b41d85c9bf0de2224439aa2eb16cdc7890dbd5d69"
     },
     "style-confidence-2025": {
       "href": "./Japan.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203a98b5dd39160859c0e52f0a0e01ed930cd241b2d2f8a0a781b99c651579ce9e"
+      "file:size": 2643,
+      "file:checksum": "12205b5202608bc3d7de2c395a2c8381567a6ad00e2a8cc11eef0d2146ff5bf2caea"
     },
     "style-confidence-2024": {
       "href": "./Japan.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122014e6bb026fedd8115f178d11cc205746a1b541d5578289882aff566059c7bb3b"
+      "file:size": 2643,
+      "file:checksum": "12206ec86d35d6ce718c94bb7894be573432af03fa20dbbe2784886baf59589c7104"
     },
     "README": {
       "href": "./Japan.README.md",

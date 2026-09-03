@@ -118,9 +118,7 @@
       "title": "Benin field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2005001287,
-      "file:checksum": "1220324ef46246ff3e3b101ded86bbb5e07f6575ca9a07275ed0161713910de6ba45"
+      ]
     },
     "pmtiles": {
       "href": "./Benin.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Benin field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 987617684,
-      "file:checksum": "122092d4e1c703a7529bcf5a4947aea5416893fc490f59a2f1afa100c77be4392cbc"
+      ]
     },
     "style-2025": {
       "href": "./Benin.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f73aaa5784d2dd8035634efce71280581c7b5245392f1dafe6b23861e48cca62"
+      "file:size": 899,
+      "file:checksum": "12209a535347dd80e0fb8900e4e672d952ff19c8dd8596d016abc962056c0fd4ecb5"
     },
     "style-2024": {
       "href": "./Benin.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fe2a03970ec348fe1d437b4211aceb1544ac79512947a1e07f87dac453b35743"
+      "file:size": 899,
+      "file:checksum": "122084d8cbbfa1b476dc4efc055f872f6adce5e4ab26be86b2dbab88669113f6286a"
     },
     "style-confidence-2025": {
       "href": "./Benin.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c36d87b415663182fba3fc824aa508a75bc903c4f10aebeb096c9dbc174ab8e9"
+      "file:size": 2643,
+      "file:checksum": "122008ff2075db7eb1912df49760d3aa28ccd716da2e741ce55391cd4a3f70a996d7"
     },
     "style-confidence-2024": {
       "href": "./Benin.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205ca55cf10b2a93a866173fb492453c3dc83eca84af50479333507dbdac0f80f3"
+      "file:size": 2643,
+      "file:checksum": "12201b4194d2a54a88a05c0f8311b38ddd14e66bf46970fdc4bc99c723aa2a6b47ed"
     },
     "README": {
       "href": "./Benin.README.md",

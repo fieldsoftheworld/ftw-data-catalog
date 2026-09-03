@@ -118,9 +118,7 @@
       "title": "Vanuatu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2559574,
-      "file:checksum": "12209b756ff3182f3cea47a318186003ca33c6935a406af89ba8e60c0a7dfbea9d6b"
+      ]
     },
     "pmtiles": {
       "href": "./Vanuatu.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Vanuatu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2579958,
-      "file:checksum": "1220370c1c4cc396ba1d3d9d4a37341cf371b9aa711fac06c0c92a5f6d28dbc25946"
+      ]
     },
     "style-2025": {
       "href": "./Vanuatu.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220ec43ce560304b6b80de166e1b1a152d5425161d2abefaf5b6b220941acbf8b08"
+      "file:size": 905,
+      "file:checksum": "1220024609a6ca990a59cefffe19f22e9d4ea48d4b56a9ecc984e7290edaf47317b8"
     },
     "style-2024": {
       "href": "./Vanuatu.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220f3785bcc76b35656be8b05c7173ddb0ff6d331920cb38aed843c23662db1db2b"
+      "file:size": 905,
+      "file:checksum": "122057af71610ac52b01d76e76a688d33d16ec057ebbbc1c121485f0061ec7d907ad"
     },
     "style-confidence-2025": {
       "href": "./Vanuatu.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122077eebd184646a8844fbc3d05c4ca30480fa58255eca5c45aedf8705b96d9001a"
+      "file:size": 2649,
+      "file:checksum": "1220fa69cc975888d51e130cb2742dec5555d88116331fdd67005ea65beb777e542f"
     },
     "style-confidence-2024": {
       "href": "./Vanuatu.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220b55e3cc1f34487c3ec1b56978da42bcad7656f938256620c13ceac522a8dd1c8"
+      "file:size": 2649,
+      "file:checksum": "1220557a8a0af3ac88ea7933b3cd22d2ec7cc29104e9a7776ca8b26e49b6667251b6"
     },
     "README": {
       "href": "./Vanuatu.README.md",

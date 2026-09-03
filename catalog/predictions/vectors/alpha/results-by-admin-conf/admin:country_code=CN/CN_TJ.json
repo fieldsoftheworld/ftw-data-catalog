@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          113.74864693238744,
+          36.633498505667596
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          118.0264085906714,
+          36.633498505667596
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          118.0264085906714,
+          40.209229350018596
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          113.74864693238744,
+          40.209229350018596
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          113.74864693238744,
+          36.633498505667596
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    113.74864693238744,
+    36.633498505667596,
+    118.0264085906714,
+    40.209229350018596
   ],
   "properties": {
     "title": "China \u2014 Tianjin Shi",
@@ -118,9 +118,7 @@
       "title": "China \u2014 Tianjin Shi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 56817270,
-      "file:checksum": "1220842285a5b4927f65f43ec2bc0fdfe518b0e539bc6f826ffff6df5ebe4c6c8738"
+      ]
     },
     "pmtiles": {
       "href": "./CN_TJ.pmtiles",
@@ -128,9 +126,7 @@
       "title": "China \u2014 Tianjin Shi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 45453098,
-      "file:checksum": "1220f55d48e947174f230b952e4bb8228bfda4b85b497231add51f1574fb12e712a6"
+      ]
     },
     "style-2025": {
       "href": "./CN_TJ.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204d91358417042e608a8d7a13a49b3c22adfe18beddeaf7b302d145e1c420a738"
+      "file:size": 899,
+      "file:checksum": "122001811d099ae16a41eed991793c4f706190de13d0bfcb1e840d6c6022bf7fb8f9"
     },
     "style-2024": {
       "href": "./CN_TJ.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204820db32cf27d7bf3e4e7df9ce109cd794a38f1d5c5dcd5cb9bc704fbbd311f9"
+      "file:size": 899,
+      "file:checksum": "1220aa989617532036dfde5323602118e58d8df86cdbd1deeee539387d926f5de00e"
     },
     "style-confidence-2025": {
       "href": "./CN_TJ.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e793dbf12d3ee182b812589001e00e221822b28e89279acf451e98994d5787d4"
+      "file:size": 2643,
+      "file:checksum": "122099cd9007f62d95a4b25c4eb03704304705a6da0e8def77be9965dc6bbe0d9215"
     },
     "style-confidence-2024": {
       "href": "./CN_TJ.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209a390163be1dd8aee27c87c15e608870b96ae74650bcdedc6bc14ca593074879"
+      "file:size": 2643,
+      "file:checksum": "12207bb31a9e935ecc86ff31991f5762cb684c9d073ff4abfba2109fa7384f45e97a"
     },
     "README": {
       "href": "./CN_TJ.README.md",

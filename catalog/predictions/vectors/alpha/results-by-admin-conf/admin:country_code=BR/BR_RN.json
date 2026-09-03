@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -38.57542091940658,
+          -6.982512649973001
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -34.99178492961398,
+          -6.982512649973001
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -34.99178492961398,
+          -4.8291689979207995
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -38.57542091940658,
+          -4.8291689979207995
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -38.57542091940658,
+          -6.982512649973001
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -38.57542091940658,
+    -6.982512649973001,
+    -34.99178492961398,
+    -4.8291689979207995
   ],
   "properties": {
     "title": "Brazil \u2014 Rio Grande do Norte",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Rio Grande do Norte field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 144050269,
-      "file:checksum": "122009b2dd57366ad59c7691dec71275afd7a6911473cb98fe35e9b333def82cc62e"
+      ]
     },
     "pmtiles": {
       "href": "./BR_RN.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Rio Grande do Norte field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 100803438,
-      "file:checksum": "1220c22d158abcf2f15e0d38e87d25fd8e6331eaad32805c5c75f2b3c074fe1fbc01"
+      ]
     },
     "style-2025": {
       "href": "./BR_RN.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203df0722e1d467823724cce5dc16b10f285868a33d0520768a5e75b1e0d2b7cc1"
+      "file:size": 899,
+      "file:checksum": "12209b37e0fda8d12e7667104ad761d507c180f44834346db147c7496bb2dc965bd9"
     },
     "style-2024": {
       "href": "./BR_RN.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ef5378018b631f1f1230651fff29332c985a7d2131bf581bcddd18436bd3a103"
+      "file:size": 899,
+      "file:checksum": "12202ebfd03b442da9174d953f99dc1e608054aad33bc917b286a347779bfcdd2b0c"
     },
     "style-confidence-2025": {
       "href": "./BR_RN.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208960f74330923a51f2a9e1fff9ad68487a486cf2a83ec68fa8d55b288faf698b"
+      "file:size": 2643,
+      "file:checksum": "1220505ae0ac7373211ec08f9b5b8919f1c246b741d701f22b1af719c65652ab844e"
     },
     "style-confidence-2024": {
       "href": "./BR_RN.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202ea57561b1b7baaae619850487440f71c47b54e231e89fdf8e964bd2dc1a7fd4"
+      "file:size": 2643,
+      "file:checksum": "1220a79a735119e00b47029adf21b5dd45548a9dc9571bb5242588ecae417e5a0786"
     },
     "README": {
       "href": "./BR_RN.README.md",

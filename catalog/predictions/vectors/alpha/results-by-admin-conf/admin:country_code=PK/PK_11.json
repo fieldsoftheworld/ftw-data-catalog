@@ -118,9 +118,7 @@
       "title": "PK_11 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1243889,
-      "file:checksum": "12205ee2bde72cf7003db9ba66492c778ba086f5f55b93315ecbc7bc4fdbbed967ab"
+      ]
     },
     "pmtiles": {
       "href": "./PK_11.pmtiles",
@@ -128,9 +126,7 @@
       "title": "PK_11 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 811625,
-      "file:checksum": "1220bb3c113166a3fd8e0f6d3dded58e2f92d73460f6998337557e5125d862c35a0c"
+      ]
     },
     "style-2025": {
       "href": "./PK_11.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122061dd53cc9caec6f89ce4e14f59a1a678f76e6298ea489489dc1a9b2a464d9fb6"
+      "file:size": 899,
+      "file:checksum": "1220b9930fbabd565efe4226ed5cfb2b73d63f002534ddc8e176d6284014209ddf96"
     },
     "style-2024": {
       "href": "./PK_11.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d05302f32820393f672abf99462bef1e927e11c2f461f1261c2573f3c06d943a"
+      "file:size": 899,
+      "file:checksum": "12206e23b81e52b9c88bb50b003073b092758b131d37ba855b3ad8c624d40e505cfb"
     },
     "style-confidence-2025": {
       "href": "./PK_11.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12204419a02df9559fb21cab5f30df40a8a092be721891e1a61b2778c6b77b5cddb5"
+      "file:size": 2643,
+      "file:checksum": "12209944e75fd1390f7e8df9855630d1e0628df6ae758dc18507858152ce9e034be9"
     },
     "style-confidence-2024": {
       "href": "./PK_11.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c0a8804b0cae60d7fdb8b3cecbbe5ab320c0d99797f43dfa641ceebeae85f741"
+      "file:size": 2643,
+      "file:checksum": "1220d2bf36cdec9d33047adcbca77e8abf382e6e0fd12ce66d4f3ab8144cbea6c80b"
     },
     "README": {
       "href": "./PK_11.README.md",

@@ -118,9 +118,7 @@
       "title": "Italy field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1574998146,
-      "file:checksum": "1220afe7797f3ec8be5f3a5eecc67ffd124df2771a851b601e0c6eb28aceed9ea21c"
+      ]
     },
     "pmtiles": {
       "href": "./Italy.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Italy field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 877315055,
-      "file:checksum": "1220868b2746159400e462d2376078aaf373af8ff8283ddac9896a649ca815c558f7"
+      ]
     },
     "style-2025": {
       "href": "./Italy.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b8322a7620e0bfb935cdd915d5b74c35dac93d4a87a35be8b66ab10a698196d7"
+      "file:size": 899,
+      "file:checksum": "122081a2a057065a9a1e657831dc576b8d346e9331e237dbd432b74ad61ddf233e00"
     },
     "style-2024": {
       "href": "./Italy.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122029d9f401ae86317212a97f3066ab8fe31e9b91d5ab78c09063be26d3ace501a8"
+      "file:size": 899,
+      "file:checksum": "1220e5726568f8ffa6d454a5f11a8d1ce1c07bf5a093420fbb75e7639429d59f4ee3"
     },
     "style-confidence-2025": {
       "href": "./Italy.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122061a055578d93797e49ecc33e6132cf890c81cca6742937ab04123c94d69fd84e"
+      "file:size": 2643,
+      "file:checksum": "1220fe7996b74213b4d4ef9b5894fe6feed357573aaf3787df904910353f4ce822da"
     },
     "style-confidence-2024": {
       "href": "./Italy.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f00bd29146d9f9369ea7936df2d70253a6f3244a6e28d0e3513714320c397a2b"
+      "file:size": 2643,
+      "file:checksum": "12204595867e0fa7163c76c55501dfbd87bc833924fb0ec3b3651aab25c782d402f9"
     },
     "README": {
       "href": "./Italy.README.md",

@@ -118,9 +118,7 @@
       "title": "Argentina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4194525076,
-      "file:checksum": "1220b7697efc04bebdc0ffbad8da589c2d70cb3db54b754537bbcaf589a48826aa03"
+      ]
     },
     "pmtiles": {
       "href": "./Argentina.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Argentina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2441994023,
-      "file:checksum": "12209691e26013d90eef1f0debfa17d95d823a01fb3807563981daa07ac22a1539ef"
+      ]
     },
     "style-2025": {
       "href": "./Argentina.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "12209fc21dd9b68a06728c4bb3b9081b9459eb62ce72325aac21a3812a23af048cdf"
+      "file:size": 911,
+      "file:checksum": "122061730d6a7479cdd161a904d42a49a2663fbaa00eebe634a6e7be3f6823325372"
     },
     "style-2024": {
       "href": "./Argentina.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220f74edfede345d4e265358b3ffbf9354f3f9a997222bd720e80525eb2b94ef59e"
+      "file:size": 911,
+      "file:checksum": "12206fb33fe1343e753350ea2b9e22646ad0dca314e05b8a84baee52b1e7c41ca1de"
     },
     "style-confidence-2025": {
       "href": "./Argentina.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "1220f9f5a71f0d6d75815020f5d909b1a64bb99a59b0a1b01a42ddf430eefcb1ad15"
+      "file:size": 2655,
+      "file:checksum": "1220009db1e4d1a7dda6b728948b17d5d7f3b4814f89b205479cd2e6ffec63d9f8df"
     },
     "style-confidence-2024": {
       "href": "./Argentina.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "1220561e2c7455ea92baf56b3b2d978ae78f7f28c7c7433a4ffcc8199b452f45a17f"
+      "file:size": 2655,
+      "file:checksum": "1220f30ebafa76ee62ba4cb635b0cf2afdb9e47752d0f8c054555a624a76bdb6b8a1"
     },
     "README": {
       "href": "./Argentina.README.md",

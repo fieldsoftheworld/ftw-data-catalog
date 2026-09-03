@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          73.52043975446342,
+          32.32600272077939
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          75.33350282773404,
+          32.32600272077939
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          75.33350282773404,
+          34.950511007390595
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          73.52043975446342,
+          34.950511007390595
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          73.52043975446342,
+          32.32600272077939
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    73.52043975446342,
+    32.32600272077939,
+    75.33350282773404,
+    34.950511007390595
   ],
   "properties": {
     "title": "Pakistan \u2014 Azad Jammu and Kashmir",
@@ -118,9 +118,7 @@
       "title": "Pakistan \u2014 Azad Jammu and Kashmir field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 23260167,
-      "file:checksum": "1220e7492fe0ee1cc97e36b40a138e74c98805f4da6defcd8e37ef879554de413bca"
+      ]
     },
     "pmtiles": {
       "href": "./PK_JK.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Pakistan \u2014 Azad Jammu and Kashmir field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 18898083,
-      "file:checksum": "1220be6eb40d6d023194148a30d9ffca43cd36fb6f152632fff507d3bc62121ddc8d"
+      ]
     },
     "style-2025": {
       "href": "./PK_JK.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220cd2d3f976555d7c110d6952a1ed378eb3273fe867f25df9cd51959b056a27ec5"
+      "file:size": 899,
+      "file:checksum": "12207b2869d68e8c6722342d0fa023ba4c8b618ef32176895df31656f2f6b4fc4d4f"
     },
     "style-2024": {
       "href": "./PK_JK.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200d3d7cc92e4aa8cc74cb2127f723e7611fce6152eb42c988c94f282bf63c38ed"
+      "file:size": 899,
+      "file:checksum": "1220e9d77bc22fdc1315d9dfc74bd9336e5d9c0e2a86ff09dd7268187eb274bfe144"
     },
     "style-confidence-2025": {
       "href": "./PK_JK.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208155d23c0f6c7834a94a1d827f01fd6eb6f033ec6b27e7dc24beb4254443e073"
+      "file:size": 2643,
+      "file:checksum": "12205b96d32c4aa801d582111d52b3277fdb5d868ad2a0d17e3606e8d16d6ff921d1"
     },
     "style-confidence-2024": {
       "href": "./PK_JK.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ececaace16a1dc2fe53f8877a2970760f8c39be8438ed76b5271f1f44cd6c65e"
+      "file:size": 2643,
+      "file:checksum": "1220ec380a98a607ced4da2c7c22fba262482a50008e08881e983f6e4637f4ef5d95"
     },
     "README": {
       "href": "./PK_JK.README.md",

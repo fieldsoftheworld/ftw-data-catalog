@@ -118,9 +118,7 @@
       "title": "North_Macedonia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 124012965,
-      "file:checksum": "12201e5ea691489e677b2d63daff32223e7461f948ae6f7153bd21f41e177e6b2515"
+      ]
     },
     "pmtiles": {
       "href": "./North_Macedonia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "North_Macedonia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 81749715,
-      "file:checksum": "1220cffbabb0b188195fc3f311758160ac6e3b567e9d9ac33e2dffb578ddaf27c8e4"
+      ]
     },
     "style-2025": {
       "href": "./North_Macedonia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 930,
-      "file:checksum": "12204570a97b73810d2f398709e4a4b9e79b728dc7d3588f966bcff3f3905efeec23"
+      "file:size": 929,
+      "file:checksum": "1220192baf22203bd9cdfaf6583fdd970a208527889e70bb3ec15b8a5fde4cc89330"
     },
     "style-2024": {
       "href": "./North_Macedonia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 930,
-      "file:checksum": "12206c2aa205952efd707b1cae572ad1763e59f6ce23182c166c63796296e6ea1e82"
+      "file:size": 929,
+      "file:checksum": "12203801a1ee2909b0e2e3b48867c16cbfbdc750636ac6a047511e844bd281d7cd5a"
     },
     "style-confidence-2025": {
       "href": "./North_Macedonia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2674,
-      "file:checksum": "122098b60c7902bda9e5a6ad7645ca0278fb533e058a55ac7946e984b38a024d3a97"
+      "file:size": 2673,
+      "file:checksum": "1220144e43ad7dc937254014e357beecb723d12833923a5f6cf7b9a07bce19c04713"
     },
     "style-confidence-2024": {
       "href": "./North_Macedonia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2674,
-      "file:checksum": "12205534a2a621c24919410b9820832ba7882b7b571b82f9a1566a7098c1910ec2c3"
+      "file:size": 2673,
+      "file:checksum": "1220ddf22d6136e15866c1fc85035377890ae7a608eea91825437d9477979f6d5036"
     },
     "README": {
       "href": "./North_Macedonia.README.md",

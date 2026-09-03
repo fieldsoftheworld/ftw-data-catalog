@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -84.8425303963256,
+          38.4373987967218
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -80.51338529267119,
+          38.4373987967218
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -80.51338529267119,
+          41.952763075882395
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -84.8425303963256,
+          41.952763075882395
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -84.8425303963256,
+          38.4373987967218
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -84.8425303963256,
+    38.4373987967218,
+    -80.51338529267119,
+    41.952763075882395
   ],
   "properties": {
     "title": "United States \u2014 Ohio",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Ohio field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 233694543,
-      "file:checksum": "1220564cb290e86f6c37896e5b2050269b939708b7ad30da30c71a2cb91c2dc8c503"
+      ]
     },
     "pmtiles": {
       "href": "./US_OH.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Ohio field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 178241871,
-      "file:checksum": "12207b3468a51f8c9bd41f13f59c2781d1fa379fd1c4d5af61b71b3a9c7c3f24bef4"
+      ]
     },
     "style-2025": {
       "href": "./US_OH.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220543268a4523a3ee5e4443aa0572c359f7c678499e376a416c7cf5d46954fa068"
+      "file:size": 899,
+      "file:checksum": "122085cf84ce82238c195ca5c6b62d24045bf5430d901b470f5e2abed63cc0903c3f"
     },
     "style-2024": {
       "href": "./US_OH.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220122af4415923b145fb5e2c31e4991e5e594edcd1676092536d92d9ef4c88e45e"
+      "file:size": 899,
+      "file:checksum": "1220f5e22f4d03a163e0609170c2d1751661c3b789d678008d866385769d8168c7a3"
     },
     "style-confidence-2025": {
       "href": "./US_OH.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f1608f53a6aeeeb0879b801bf6cfd96de67763b856d63d890adbe26cafac427d"
+      "file:size": 2643,
+      "file:checksum": "1220470edd5847d022dd1300090afeea118817a70c2a07af6d559ba3215611bd3416"
     },
     "style-confidence-2024": {
       "href": "./US_OH.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205c0bcdfebffa6882b73a65e05eb5ef12a614d3581b396e77fcf8ab7dd5e7a721"
+      "file:size": 2643,
+      "file:checksum": "12206931d3d5bfa0db5d8a69f185240fcae8f19a43384041ddc652e903e7a637d724"
     },
     "README": {
       "href": "./US_OH.README.md",

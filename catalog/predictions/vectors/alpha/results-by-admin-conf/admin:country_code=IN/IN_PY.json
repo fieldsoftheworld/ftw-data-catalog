@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          75.53732981644983,
+          10.82894783552839
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          82.3017987033062,
+          10.82894783552839
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          82.3017987033062,
+          16.761669658250998
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          75.53732981644983,
+          16.761669658250998
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          75.53732981644983,
+          10.82894783552839
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    75.53732981644983,
+    10.82894783552839,
+    82.3017987033062,
+    16.761669658250998
   ],
   "properties": {
     "title": "India \u2014 Puducherry",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Puducherry field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6559781,
-      "file:checksum": "12205f38546a9fa81525485b39238fcd1261a62726d16a9ac9bff2ed4d847963554a"
+      ]
     },
     "pmtiles": {
       "href": "./IN_PY.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Puducherry field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7742457,
-      "file:checksum": "1220a01ffb4ffafc9164bb78d8ea277d1dde1a4e2666860f741138314cef8738e4a3"
+      ]
     },
     "style-2025": {
       "href": "./IN_PY.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220adb490e869d4a184802b5285ececf149d8472ade8d5480871fde162e82ea0b5f"
+      "file:size": 899,
+      "file:checksum": "12208a92bc77cd0c35b5ceb9baacd5a4ad53d8cd43352dfff6dd3a858ae5d0d3d952"
     },
     "style-2024": {
       "href": "./IN_PY.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220935fec9f0fcde56842533084b2c1a82287f5e00bee19967b44c49241164d45fb"
+      "file:size": 899,
+      "file:checksum": "1220a3c87f8ab3b78545031321aa48e2abc24a4d767f7fff868ad1cad47f2a19fe1c"
     },
     "style-confidence-2025": {
       "href": "./IN_PY.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220649752db3d671623f219cb2ef2809f05f2b06840056f9847839677722a075faa"
+      "file:size": 2643,
+      "file:checksum": "12202e0ce1e7e0b7c59bf45893897778a6892ec04818f696695715767b2764a7c4ac"
     },
     "style-confidence-2024": {
       "href": "./IN_PY.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122052ec7e76699e4b9f053f79b2b5cf853304f4a6219461427cfcf34bc1d40700db"
+      "file:size": 2643,
+      "file:checksum": "122078577c5e0d736bf1bf3b602616d8ffa0df7393142c7eb39c7411ae96e7646fe2"
     },
     "README": {
       "href": "./IN_PY.README.md",

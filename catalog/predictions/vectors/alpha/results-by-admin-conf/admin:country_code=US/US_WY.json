@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -111.1496866203938,
+          40.85592414586039
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -103.8754256837524,
+          40.85592414586039
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -103.8754256837524,
+          45.1035923527474
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -111.1496866203938,
+          45.1035923527474
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -111.1496866203938,
+          40.85592414586039
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -111.1496866203938,
+    40.85592414586039,
+    -103.8754256837524,
+    45.1035923527474
   ],
   "properties": {
     "title": "United States \u2014 Wyoming",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Wyoming field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 583340069,
-      "file:checksum": "122018e8c4c6c31a5aeac21ea4cbf7fac5b8f992b03c0878b66e930134e9dc82b861"
+      ]
     },
     "pmtiles": {
       "href": "./US_WY.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Wyoming field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 377521974,
-      "file:checksum": "122018f90e6cb0a200027c92ebff0fda6581d85f7e92d59dad770bbf556580277403"
+      ]
     },
     "style-2025": {
       "href": "./US_WY.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203ccb4ab938aaf618286564a268034b67d5602710f39e6904cee17849e933a105"
+      "file:size": 899,
+      "file:checksum": "1220bf955958bb6fd73f92f44f3fc30ccd7322fea8b16eee5ff63725e6bb485fe638"
     },
     "style-2024": {
       "href": "./US_WY.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205614f6a31da090259d7c09eda18c9540f648f9a674787ac3466990a393453573"
+      "file:size": 899,
+      "file:checksum": "1220cfd9056228162c9ce488704839bd10c7e7eb014ab76a62b39ddde68ae526f9d9"
     },
     "style-confidence-2025": {
       "href": "./US_WY.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205ec594b81d67b5ccecf2bd695832797a0260a82a6cc71aa92e41e1023ed086a6"
+      "file:size": 2643,
+      "file:checksum": "1220bf14cc5bf612570b35aead87119b37cee564fa0dd00556c9dafed37b6970fd56"
     },
     "style-confidence-2024": {
       "href": "./US_WY.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f9512fb176293537ec4c7a40d612fb0ff683819355b98a37d99f00d2ceb0026c"
+      "file:size": 2643,
+      "file:checksum": "12206f0343903f7bc6b2748bec424e011a6172fca5601b10f711dd366ff23b8ccf0f"
     },
     "README": {
       "href": "./US_WY.README.md",

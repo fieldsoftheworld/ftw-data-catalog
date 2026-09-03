@@ -118,9 +118,7 @@
       "title": "Bhutan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3942540,
-      "file:checksum": "12209e8ec176625b04511d7c94a591732dc18adc00c1db0c030966047e0a95be3bbd"
+      ]
     },
     "pmtiles": {
       "href": "./Bhutan.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Bhutan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 4958401,
-      "file:checksum": "1220d23e70ec621ace147ff1f6fe702a3de7c52bb3309164b9b0d9deff851612e760"
+      ]
     },
     "style-2025": {
       "href": "./Bhutan.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220e3b38816454707d7c89b4192a25f8a0ab69eae5ce74bee4c533409a4de520e61"
+      "file:size": 902,
+      "file:checksum": "1220b3f8f72dff5e86517e774da0843aec38a63cb2e833a47f5016426a85ea5693b2"
     },
     "style-2024": {
       "href": "./Bhutan.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122004debbd99da7685c791d679877672b834ee1c16dc5a220ec85bac33d62f1c946"
+      "file:size": 902,
+      "file:checksum": "1220953864df2e8a698d5bf949562b13af08762ee4cb888cedfb299e6704140cc735"
     },
     "style-confidence-2025": {
       "href": "./Bhutan.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122002e1ed71ce6810be4a19a9ca451076802aab565065576082786b8ba29c8e863a"
+      "file:size": 2646,
+      "file:checksum": "1220ccc0526b124a99c2008cf46868242d52507f3594327980b9f3955327671c590c"
     },
     "style-confidence-2024": {
       "href": "./Bhutan.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12206a05c7c2312b570bedec7669278a433b61ed04e5ea172c14aee098f1ea229b75"
+      "file:size": 2646,
+      "file:checksum": "12204be99bf723515afa4f77c6429399fa9749181574b44436a2c989fcefa6e767c8"
     },
     "README": {
       "href": "./Bhutan.README.md",

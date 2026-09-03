@@ -118,9 +118,7 @@
       "title": "Bolivia, Plurinational State of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1688155913,
-      "file:checksum": "12208b436f4e8957729f333f2a66bbc8b22bfd0a06a73b0f4a44e8f0bcab3d27ee16"
+      ]
     },
     "pmtiles": {
       "href": "./Bolivia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Bolivia, Plurinational State of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1033389575,
-      "file:checksum": "1220b0aed77cecf3ce79ae5c1be2935870abf5343e0c1e8d862b8d07ecd933a29504"
+      ]
     },
     "style-2025": {
       "href": "./Bolivia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12201438b6e838fb6aba67971cf424ee15fa09f71cc52348849536bd51a7074a8fc7"
+      "file:size": 905,
+      "file:checksum": "1220384d6b7283d5b438b2e44b88d8fe8ff2956128d602461596ae2da273b8bac813"
     },
     "style-2024": {
       "href": "./Bolivia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220b3864ddadc4b856d76635f36f3ad49885afbedd9b832cc55ed3ebc8cea4912b7"
+      "file:size": 905,
+      "file:checksum": "122068ab3951cfea612515c2507c5f97d957ac786b853f81ec232780eee5dacef4dc"
     },
     "style-confidence-2025": {
       "href": "./Bolivia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220e7603422ea6a900df6eb6e33e82505bc05f96d4eada75252798ff7b14b415cd8"
+      "file:size": 2649,
+      "file:checksum": "1220c21b35118c41b550b2ed6aea7f521ced2002943a07fa488b2841042c8810050a"
     },
     "style-confidence-2024": {
       "href": "./Bolivia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12203f8edd1e1e3e3b2c205c96201127a6c9881dce648aa1a10deb50e5b6408ee2a0"
+      "file:size": 2649,
+      "file:checksum": "122004720e7aede24399bfdb6a773343d85be78ce66fd8e11feffedecdc82863ead7"
     },
     "README": {
       "href": "./Bolivia.README.md",

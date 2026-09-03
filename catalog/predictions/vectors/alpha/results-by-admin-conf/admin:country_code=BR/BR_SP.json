@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -53.083069597508384,
+          -25.27385139625881
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -44.18430127261819,
+          -25.27385139625881
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -44.18430127261819,
+          -19.795585605230002
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -53.083069597508384,
+          -19.795585605230002
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -53.083069597508384,
+          -25.27385139625881
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -53.083069597508384,
+    -25.27385139625881,
+    -44.18430127261819,
+    -19.795585605230002
   ],
   "properties": {
     "title": "Brazil \u2014 S\u00e3o Paulo",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 S\u00e3o Paulo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 570693438,
-      "file:checksum": "1220f8ac7e3b818bae29928638126ba55ddb0273f96295cdf416c9cc60df3d94a952"
+      ]
     },
     "pmtiles": {
       "href": "./BR_SP.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 S\u00e3o Paulo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 319058572,
-      "file:checksum": "122018a2674d8075f69cbf3ad1cd2b9cbc174255d3ed8fc8d4288737dbae309d418f"
+      ]
     },
     "style-2025": {
       "href": "./BR_SP.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220290a4a7f4512c5bee64647262a912fafc19e24f4a5ed20360e40c99597887e66"
+      "file:size": 899,
+      "file:checksum": "122013f1c3979af4dbf1024701de03739fc73677cf134b305f010f45604ec7e376a6"
     },
     "style-2024": {
       "href": "./BR_SP.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122072690cd05441a4e8b952c62ec6fc6674009a7a8f3a9fe311acbf06848d1d5163"
+      "file:size": 899,
+      "file:checksum": "12209678c369cbfaaa84e82ded5ba0fe978410b2cb52aac65e95d495ad1b41e33067"
     },
     "style-confidence-2025": {
       "href": "./BR_SP.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220262aee09bb9793e05c609750a1e8408b2e9a2142079503397942a93f368d0da6"
+      "file:size": 2643,
+      "file:checksum": "12203566512537540819008d55660fcd43d7a4e3db1d0cde7feee6149c4a6c42872d"
     },
     "style-confidence-2024": {
       "href": "./BR_SP.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203cb0b3805773fa475cf13574fbb71f0ce7e78304e17003fc48a659cc8c73a9ab"
+      "file:size": 2643,
+      "file:checksum": "1220cc10d47aec6e2f7ad3ec9fe69152a78ce7e40eab1224515ab76b43cea5f348c3"
     },
     "README": {
       "href": "./BR_SP.README.md",

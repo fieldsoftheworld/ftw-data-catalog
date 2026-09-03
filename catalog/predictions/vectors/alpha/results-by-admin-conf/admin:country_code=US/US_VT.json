@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -73.420224051601,
+          42.726748679573596
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -71.51831792331059,
+          42.726748679573596
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -71.51831792331059,
+          45.028583302250404
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -73.420224051601,
+          45.028583302250404
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -73.420224051601,
+          42.726748679573596
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -73.420224051601,
+    42.726748679573596,
+    -71.51831792331059,
+    45.028583302250404
   ],
   "properties": {
     "title": "United States \u2014 Vermont",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Vermont field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 8065075,
-      "file:checksum": "122047c2c1948cb8434204f76728972c930749af1b3d04ba9b198a496c78a65d7bb4"
+      ]
     },
     "pmtiles": {
       "href": "./US_VT.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Vermont field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7310922,
-      "file:checksum": "1220e8e43fb788cb872f0d2ba11946104b0511d26f787bc8d094790ea6088825a2e3"
+      ]
     },
     "style-2025": {
       "href": "./US_VT.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122012c18aa6a847a844dccd80236669eeeb431231771236ec9e4318797ab29b01d6"
+      "file:size": 899,
+      "file:checksum": "1220050496f823b4f710373de59e543dbc8c905110d43691df06392d25b7622c11e7"
     },
     "style-2024": {
       "href": "./US_VT.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d430c604b3a6334d608493318b36496d2c47285912cfc28fa34786ad2787c283"
+      "file:size": 899,
+      "file:checksum": "12206819a97895500f507aadfa1a223f2436427746d9792a615a68a0e67ce2009a98"
     },
     "style-confidence-2025": {
       "href": "./US_VT.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205791a7602414296590cda35cb483bdb04d0edf1df4940544d4ba89a87857b661"
+      "file:size": 2643,
+      "file:checksum": "12207cd17c44b9e5519ef526ef965a96777c541408bc809b702369f2afeaa489c2e6"
     },
     "style-confidence-2024": {
       "href": "./US_VT.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122083d90009dc4dd466a0944cdd3cef31c364c00f8c590847f7d317fc6ffa40651a"
+      "file:size": 2643,
+      "file:checksum": "1220e3a2c894d04b87fc30b200c12ccc90490b3209f21d70373a9d3a99a03f20fedc"
     },
     "README": {
       "href": "./US_VT.README.md",

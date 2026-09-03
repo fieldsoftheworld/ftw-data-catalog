@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -53.834687232847784,
+          -29.29990603718641
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -48.439874624946796,
+          -29.29990603718641
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -48.439874624946796,
+          -25.979924614110807
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -53.834687232847784,
+          -25.979924614110807
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -53.834687232847784,
+          -29.29990603718641
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -53.834687232847784,
+    -29.29990603718641,
+    -48.439874624946796,
+    -25.979924614110807
   ],
   "properties": {
     "title": "Brazil \u2014 Santa Catarina",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Santa Catarina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 135699656,
-      "file:checksum": "1220601d0930403d2bfcf7d38d142c5b44bf6371aa067bf35078f7acf5dd5d362b1d"
+      ]
     },
     "pmtiles": {
       "href": "./BR_SC.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Santa Catarina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 89830870,
-      "file:checksum": "12201a2c64314f356437f9c890bd2002b8372ccc3c2fd5e30621f33853f2b14396c7"
+      ]
     },
     "style-2025": {
       "href": "./BR_SC.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122009d8bed568c3039afc638834ee2ccf8614cdf8731f0cf0928e27e375a2f4626f"
+      "file:size": 899,
+      "file:checksum": "122070b781a0e16f76d98a80cb693fc04c368445d03c7426e8fe4c080d73e9a69d3b"
     },
     "style-2024": {
       "href": "./BR_SC.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a9a8cf0e1ee0a326ebc258706997e02e8336dcecac52790e5fdadc69f53e4e53"
+      "file:size": 899,
+      "file:checksum": "122097b1af2889a34ae0a3cc190797c2b6d46202921e3aeb3ebc53a9be103452e018"
     },
     "style-confidence-2025": {
       "href": "./BR_SC.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201bbb59465d86ac16919a90432f7e57d10ce00ee0554dcb412339e5d8acbfc196"
+      "file:size": 2643,
+      "file:checksum": "122032608c657be8e5feefe91d3dcea870e04871870cc356c6855e4897128457bedb"
     },
     "style-confidence-2024": {
       "href": "./BR_SC.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d6e5ce4fa1d1ad5d066bc591e2ed5a57d6a0db743e8f569f2ca2c4910496d971"
+      "file:size": 2643,
+      "file:checksum": "1220f8b941b341a137fdf95c738ee9acb10c365ebce224ea30c2e50c80c553b9ef4b"
     },
     "README": {
       "href": "./BR_SC.README.md",

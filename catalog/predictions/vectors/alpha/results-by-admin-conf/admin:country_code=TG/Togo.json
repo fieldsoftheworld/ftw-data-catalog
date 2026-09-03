@@ -118,9 +118,7 @@
       "title": "Togo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 997677779,
-      "file:checksum": "12200210c6611cbbf43dbc25e8ab9bcc8e142c58b2afea4b6c1e33e8d0c08e2b8371"
+      ]
     },
     "pmtiles": {
       "href": "./Togo.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Togo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 492642038,
-      "file:checksum": "122042f9301ec97679f5550dc67a7d93e828f393d94fd4e9e17f83eab0c5cb04de82"
+      ]
     },
     "style-2025": {
       "href": "./Togo.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220bddd8180c7f33afb94cefd924bd2de818b81440a07ee113ef8196ebda5225d9b"
+      "file:size": 896,
+      "file:checksum": "1220b9bc0cbd02692c4daa1a058af326fa42984a972221df922502db0339690fedd6"
     },
     "style-2024": {
       "href": "./Togo.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12206dd054b242daa3497275f324fffa39374cc17f90fc2cbc1453d1d76d3d91405a"
+      "file:size": 896,
+      "file:checksum": "1220d082b6bc53a6ac807fe76db527a993b01bf39896883158a5fb9db7e5bbe361cf"
     },
     "style-confidence-2025": {
       "href": "./Togo.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220de657f2aff5ebd5893ae60e4368b7a5ad147fdd4379d9ce1647784edfe427bad"
+      "file:size": 2640,
+      "file:checksum": "122074ae05424852f8703cacfdadabb852ff6ce9afc833400ec035b39a1eb41561b8"
     },
     "style-confidence-2024": {
       "href": "./Togo.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12201fe3e101d8634d24c9083e5d0d847125a39f6c9d6c78e2b15298013a8bc13ab6"
+      "file:size": 2640,
+      "file:checksum": "1220d1c3ddae241d72cc90185414d32e73446a4bb1c853b8b3394392954c99a5dfc6"
     },
     "README": {
       "href": "./Togo.README.md",

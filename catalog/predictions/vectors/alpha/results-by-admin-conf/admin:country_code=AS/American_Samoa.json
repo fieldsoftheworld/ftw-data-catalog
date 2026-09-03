@@ -1,0 +1,211 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/vector/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "id": "American_Samoa",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -170.838565251573,
+          -14.36232524449941
+        ],
+        [
+          -170.5661970586306,
+          -14.36232524449941
+        ],
+        [
+          -170.5661970586306,
+          -14.25749223620001
+        ],
+        [
+          -170.838565251573,
+          -14.25749223620001
+        ],
+        [
+          -170.838565251573,
+          -14.36232524449941
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -170.838565251573,
+    -14.36232524449941,
+    -170.5661970586306,
+    -14.25749223620001
+  ],
+  "properties": {
+    "title": "American_Samoa",
+    "description": "Agricultural field boundaries for American_Samoa. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. This partition contains 734 field polygons. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing. Columns: id, geometry, bbox, metrics:area, metrics:perimeter, determination:datetime, determination:method, admin:country_code, admin:subdivision_code, confidence \u2014 see `table:columns` for definitions (including how `confidence` is derived).",
+    "datetime": null,
+    "start_datetime": "2024-01-01T00:00:00Z",
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "admin:country_code": "AS",
+    "proj:code": "EPSG:4326",
+    "geoparquet:geometry_type": "Polygon",
+    "geoparquet:feature_count": 734,
+    "table:columns": [
+      {
+        "name": "id",
+        "type": "string",
+        "description": "An identifier for the field. Must be unique per collection. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "geometry",
+        "type": "binary",
+        "description": "A geometry that reflects the footprint of the field, usually a Polygon. Default CRS is WGS84. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "bbox",
+        "type": "struct",
+        "description": "The bounding box of the field. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "metrics:area",
+        "type": "float",
+        "description": "Area of the field, in square meters (m\u00b2). Must be > 0. ([vecorel geometry-metrics](https://github.com/vecorel/geometry-metrics-extension))"
+      },
+      {
+        "name": "metrics:perimeter",
+        "type": "float",
+        "description": "Perimeter of the field, in meters (m). Must be > 0. ([vecorel geometry-metrics](https://github.com/vecorel/geometry-metrics-extension))"
+      },
+      {
+        "name": "determination:datetime",
+        "type": "timestamp",
+        "description": "The last timestamp at which the field did exist and was observed, in the UTC timezone. ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "determination:method",
+        "type": "string",
+        "description": "The boundary creation method (one of: manual, surveyed, driven, auto-operation, auto-imagery, unknown). ([fiboa core](https://github.com/fiboa/specification/blob/main/core/README.md))"
+      },
+      {
+        "name": "admin:country_code",
+        "type": "string",
+        "description": "ISO 3166-1 alpha-2 country code (aka admin0). Two-letter country code for the country that contains the field. ([vecorel administrative-division](https://github.com/vecorel/administrative-division-extension))"
+      },
+      {
+        "name": "admin:subdivision_code",
+        "type": "string",
+        "description": "ISO 3166-2 code for the principal subdivision (e.g. province or state, aka admin1) of a country that contains the field. Only the subdivision part of the code is stored. ([vecorel administrative-division](https://github.com/vecorel/administrative-division-extension))"
+      },
+      {
+        "name": "confidence",
+        "type": "float",
+        "description": "Derived; not part of the upstream model output. Modeled PRUE confidence on a 0\u2013100 scale, sampled at the field's point-on-surface from the 500 m confidence COG ([predictions/confidence](https://data.source.coop/ftw/global-data/predictions/confidence/collection.json)) and rescaled `raw / 0.578178 * 100`, clamped to 100 (0.578178 is treated as 100%, matching the FTW inference app; this centroid sample is the closest single value to the app's `confidence_mean`); **null where the field falls outside the modeled-confidence layer's coverage \u2014 i.e. no value there, not a low score** (the layer is sparse and conservative, fully covering mainly the 24 FTW-labelled training countries). Recommended reliability filter: `confidence >= 69` (raw 0.4). Reflects 500 m cell-level model reliability, not individual-polygon geometric accuracy. Generated by [add_confidence.py](https://github.com/fieldsoftheworld/ftw-data-catalog/blob/main/scripts/confidence/add_confidence.py) (+ process_partition.sh, run_rails.sh, make_pmtiles.py)."
+      }
+    ],
+    "portolan:styles": [
+      "style-2025",
+      "style-2024",
+      "style-confidence-2025",
+      "style-confidence-2024"
+    ]
+  },
+  "collection": "vectors",
+  "assets": {
+    "data": {
+      "href": "./American_Samoa.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "American_Samoa field boundaries (GeoParquet)",
+      "roles": [
+        "data"
+      ]
+    },
+    "pmtiles": {
+      "href": "./American_Samoa.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "American_Samoa field boundaries (PMTiles, 2024/2025 layers)",
+      "roles": [
+        "visual"
+      ]
+    },
+    "style-2025": {
+      "href": "./American_Samoa.2025.style.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "MapLibre style \u2014 field boundaries (2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 926,
+      "file:checksum": "122033c0c54a359c98aebd8f38caa2629fbe49b570b800b027ea376c0747b7b0ed2c"
+    },
+    "style-2024": {
+      "href": "./American_Samoa.2024.style.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "MapLibre style \u2014 field boundaries (2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 926,
+      "file:checksum": "1220b97185e78822ed67e21e0fdbd3bb48dc1b1efee511b5dd0fa6bfcc5708e64bf0"
+    },
+    "style-confidence-2025": {
+      "href": "./American_Samoa.confidence-2025.style.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "MapLibre style \u2014 by confidence (2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2670,
+      "file:checksum": "1220836bbed90f04dff866a7a9eea52d0d103097165ea7e0e064727b542642627a63"
+    },
+    "style-confidence-2024": {
+      "href": "./American_Samoa.confidence-2024.style.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "MapLibre style \u2014 by confidence (2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2670,
+      "file:checksum": "1220a1e57698b836805c64e801574e2c0911d1b0deca62982192076140861aed45b9"
+    },
+    "README": {
+      "href": "./American_Samoa.README.md",
+      "type": "text/markdown",
+      "title": "American_Samoa \u2014 README",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 4439,
+      "file:checksum": "12204930cdfd6a8ab21b086daf16387f8eb6526e1aea2dbd0920f5427acf24b62ada"
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
+      "type": "application/json",
+      "title": "FTW prediction probabilities (Zarr)"
+    },
+    {
+      "rel": "llms",
+      "href": "./llms.txt",
+      "type": "text/markdown",
+      "title": "Agent/LLM usage guide"
+    }
+  ]
+}

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          5.3055024397258075,
+          6.534387743181
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          7.866769562804211,
+          6.534387743181
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          7.866769562804211,
+          8.73893517820719
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          5.3055024397258075,
+          8.73893517820719
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          5.3055024397258075,
+          6.534387743181
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    5.3055024397258075,
+    6.534387743181,
+    7.866769562804211,
+    8.73893517820719
   ],
   "properties": {
     "title": "Nigeria \u2014 Kogi",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Kogi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 260079841,
-      "file:checksum": "1220f4186753e2c7922adcd92c04a76913a562bf2caf0d5dae6420b0eb45174ecdea"
+      ]
     },
     "pmtiles": {
       "href": "./NG_KO.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Kogi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 148178563,
-      "file:checksum": "122098ce1092f5983f74bbc98fd28ad21954b713bbed907df13caac796ff5aa22848"
+      ]
     },
     "style-2025": {
       "href": "./NG_KO.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122059287a4aecde061e64676b0544f50da925e41f85de712a6b06b6c7a46776ef08"
+      "file:size": 899,
+      "file:checksum": "1220d6652e18ac34ee42847c9f69485620079f956b9091fb1c02d108f7718fcf26aa"
     },
     "style-2024": {
       "href": "./NG_KO.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208b21210d3c9181db171b707be7ee68636e3a5019922bef0effbb9ff2acd15190"
+      "file:size": 899,
+      "file:checksum": "122085a4650e7341c662e588ba1529a2779fbba686edbe7447269ee50dc5f4825195"
     },
     "style-confidence-2025": {
       "href": "./NG_KO.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201f6c7ef8eb5abc1d41a7cabc35bedf68a7fd97a9343c1252fb92b6854e17e1fa"
+      "file:size": 2643,
+      "file:checksum": "12207ebcd4e18ab727dd5379a9d21460bae78c316b692b5ebda9a0bac1f76ea7b554"
     },
     "style-confidence-2024": {
       "href": "./NG_KO.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220fc1b66081670e24cb43458977b6487955d438921cfeb8cd3f0704fb584f26521"
+      "file:size": 2643,
+      "file:checksum": "1220e65cea28f6706b5917e2e863a7f95c62efd0665653fe5f964b5300fcf83839c4"
     },
     "README": {
       "href": "./NG_KO.README.md",

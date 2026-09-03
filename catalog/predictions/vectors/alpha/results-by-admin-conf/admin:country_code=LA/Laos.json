@@ -118,9 +118,7 @@
       "title": "Lao People's Democratic Republic field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 835127039,
-      "file:checksum": "122025ef389fa9362cdb6d597dc4cc32833b7a9581ae3f54ffc8c779d49393a3b797"
+      ]
     },
     "pmtiles": {
       "href": "./Laos.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Lao People's Democratic Republic field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 535352299,
-      "file:checksum": "1220984d65a6e85a9f5609c104055d06cb913999adcfc1ae1e379712f484e1295b2c"
+      ]
     },
     "style-2025": {
       "href": "./Laos.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220cd46da1e99f2ce9c5ecb26093ca2c05da9279ec4d455124709efa362977e1b12"
+      "file:size": 896,
+      "file:checksum": "1220d8e90964fc56cfb6e4e902446e03a8a05234cb110546c48cc9e828e2a9ec96a0"
     },
     "style-2024": {
       "href": "./Laos.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220fcf64311f2d631488703a9adf2a2cdecf54d60ff1fbe8789ad03b97a701d9f08"
+      "file:size": 896,
+      "file:checksum": "122099819d8dd621a63fd71764eb2e88a010b69f5e39fa0991a33dc675036ab7eed2"
     },
     "style-confidence-2025": {
       "href": "./Laos.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12200905c1d5d629d530790b358fa4f8385b211579f9fa33adf550dd1376cc61d61f"
+      "file:size": 2640,
+      "file:checksum": "1220b321153f2d4bb91f866c15e2649dc96539b42fa0a1e520bb8d3cd5c99cea9069"
     },
     "style-confidence-2024": {
       "href": "./Laos.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220f0c98b571d151b741865787a7f65054de8828eaaf7b0612b9842836fbb57acde"
+      "file:size": 2640,
+      "file:checksum": "1220e7cf74499d8bdb2d8113848fd0e66c44fd6259795c73a2022b86a3e7b2a91bcf"
     },
     "README": {
       "href": "./Laos.README.md",

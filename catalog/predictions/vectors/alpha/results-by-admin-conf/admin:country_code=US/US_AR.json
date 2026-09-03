@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -94.60861893983679,
+          32.991202743450394
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -89.6511944359716,
+          32.991202743450394
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -89.6511944359716,
+          36.5159094672238
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -94.60861893983679,
+          36.5159094672238
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -94.60861893983679,
+          32.991202743450394
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -94.60861893983679,
+    32.991202743450394,
+    -89.6511944359716,
+    36.5159094672238
   ],
   "properties": {
     "title": "United States \u2014 Arkansas",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Arkansas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 85208124,
-      "file:checksum": "122050e32db65611affaf460ee2478a31e5639dc1a6ccc48020978732bc02c30e7fd"
+      ]
     },
     "pmtiles": {
       "href": "./US_AR.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Arkansas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 68183261,
-      "file:checksum": "12201176c829fc13062741f0bb876cf85c1fd9f12e4a6546d61b49e7c55c13431317"
+      ]
     },
     "style-2025": {
       "href": "./US_AR.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209643fa3e8b3621412575f04af7c4352b85b6ec7da5cdfa0565e0ac095efc70f7"
+      "file:size": 899,
+      "file:checksum": "12201860cfa1ae9e5857201f5e042010684dc8f7baf0d38fb25cd87256b51c56fa10"
     },
     "style-2024": {
       "href": "./US_AR.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fc8b83739d90b1301d6e1edb72055a037658788b345326386c29eef7d0145f1d"
+      "file:size": 899,
+      "file:checksum": "1220e3a3170f68e2e4eefa0db2c47f508cd7cf7e5f0068d24e147c9f830bc60f8007"
     },
     "style-confidence-2025": {
       "href": "./US_AR.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f7208aa554c8726d4283571b1ede27aaa3d27a2cc548dd0ee6cd7b0f4d7cf593"
+      "file:size": 2643,
+      "file:checksum": "1220f42411b5892ecb9d4a55c529504c1f760eec59575131eb57ef8b4e06b2d30908"
     },
     "style-confidence-2024": {
       "href": "./US_AR.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d0aaade07cd1d090aa34f5c0931c26412996bfc2c7a5c0d0e665ffaf913792ee"
+      "file:size": 2643,
+      "file:checksum": "12200fa527615f6bef3b59d565c4eca28da54574b7c4c8b8ce909b7375e0a2f79a9d"
     },
     "README": {
       "href": "./US_AR.README.md",

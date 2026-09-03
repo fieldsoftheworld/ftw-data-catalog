@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          71.16578438724503,
+          34.33274185736919
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          71.18563708204722,
+          34.33274185736919
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          71.18563708204722,
+          34.3413656523964
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          71.16578438724503,
+          34.3413656523964
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          71.16578438724503,
+          34.33274185736919
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    71.16578438724503,
+    34.33274185736919,
+    71.18563708204722,
+    34.3413656523964
   ],
   "properties": {
     "title": "PK_NAN",
@@ -118,9 +118,7 @@
       "title": "PK_NAN field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 14280,
-      "file:checksum": "12202cbdd5114da482f0ebd89d33cb0ea01d13312b8ba4be2292428b978113164fb2"
+      ]
     },
     "pmtiles": {
       "href": "./PK_NAN.pmtiles",
@@ -128,9 +126,7 @@
       "title": "PK_NAN field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 5768,
-      "file:checksum": "122031e63781ca486910d1022ab535fb5f9d784a85f6686ff1592d750d89958a4184"
+      ]
     },
     "style-2025": {
       "href": "./PK_NAN.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220a442b7accc2926b0cf16f60a79e9bbef6a80673bcb1d3948417f626b917e3b3b"
+      "file:size": 902,
+      "file:checksum": "122098d1dcc4dd36917c64526bfb4ea86d84d16eab94329f4df3314d9a3310089d28"
     },
     "style-2024": {
       "href": "./PK_NAN.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220f99da415ba5d268638b2c1841b86274b7b6695cbb3b3a09c7c6fb075bf8d16f1"
+      "file:size": 902,
+      "file:checksum": "1220e59bc7c5a53d19414e5823ec3f710ee929b74300f8320f503d15a1e212dccbaa"
     },
     "style-confidence-2025": {
       "href": "./PK_NAN.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122007ab63f4b651ef04671daed3cd94a84eb51f527084108f74343f085bac53b1e2"
+      "file:size": 2646,
+      "file:checksum": "122032c2a8bba2ce903b294c1002170701c8960108404f9b7f2343f23583d33aa455"
     },
     "style-confidence-2024": {
       "href": "./PK_NAN.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220f7211132e4161bea6e31b45a8b3a9a23d2b8f479c011fd592cd4262c50a327c6"
+      "file:size": 2646,
+      "file:checksum": "1220870b5eab473547f91e8e613bf8c88eaa76d580015a0664b9c03ed9fa5c070be6"
     },
     "README": {
       "href": "./PK_NAN.README.md",

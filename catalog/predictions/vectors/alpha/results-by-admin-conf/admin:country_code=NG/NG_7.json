@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          8.228519797955611,
+          12.792118840991192
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          10.578863267660415,
+          12.792118840991192
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          10.578863267660415,
+          13.331106030191194
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          8.228519797955611,
+          13.331106030191194
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          8.228519797955611,
+          12.792118840991192
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    8.228519797955611,
+    12.792118840991192,
+    10.578863267660415,
+    13.331106030191194
   ],
   "properties": {
     "title": "NG_7",
@@ -118,9 +118,7 @@
       "title": "NG_7 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1015403,
-      "file:checksum": "12207c48008a5519e208b2ab10fc82ce270277397278b76f0af6393f132c605c20b9"
+      ]
     },
     "pmtiles": {
       "href": "./NG_7.pmtiles",
@@ -128,9 +126,7 @@
       "title": "NG_7 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 744752,
-      "file:checksum": "1220e2342cadf5caa563c9039f1458107944ff6193bee0afdfec76c7dd2bea9f41d1"
+      ]
     },
     "style-2025": {
       "href": "./NG_7.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220504224b75656caa3990b25ae80fae6ce1a06f140a98a86d52b1483ec7fefc23f"
+      "file:size": 896,
+      "file:checksum": "122051da376d701c37690a030212c81f297925004f81f80843239ec0c33e004e9ca2"
     },
     "style-2024": {
       "href": "./NG_7.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220620d8d7ccee147620e2b3ef9b3057b72ee64416f4e448217288c14b1553eb511"
+      "file:size": 896,
+      "file:checksum": "122090d777e04dfb4a59ff8cec5e4d4c395f760998bd28ced1554c34725e41c6e8a7"
     },
     "style-confidence-2025": {
       "href": "./NG_7.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "122014dbfdbf2ce74b762db0a7ddf0f7f8bb16ccf199e01f99e7a6adecac6479f56d"
+      "file:size": 2640,
+      "file:checksum": "1220a6cf644b610278f8a94dad80c9ee236fa99b7ccee086d7d49fe91aa33bb5aa9a"
     },
     "style-confidence-2024": {
       "href": "./NG_7.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12201c23cf9ef3bdb58264fcbe36b93b43f628d1cd9caa6d86d7473a259f7b4580f4"
+      "file:size": 2640,
+      "file:checksum": "12208d851d1e80160efbba61b153bc06578e85698f646918831ae15defb3c964c7da"
     },
     "README": {
       "href": "./NG_7.README.md",

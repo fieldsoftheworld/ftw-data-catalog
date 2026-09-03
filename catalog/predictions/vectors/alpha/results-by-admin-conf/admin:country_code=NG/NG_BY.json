@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          5.408718486457608,
+          4.3084604829831985
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          6.572032503147609,
+          4.3084604829831985
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          6.572032503147609,
+          5.366402504184598
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          5.408718486457608,
+          5.366402504184598
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          5.408718486457608,
+          4.3084604829831985
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    5.408718486457608,
+    4.3084604829831985,
+    6.572032503147609,
+    5.366402504184598
   ],
   "properties": {
     "title": "Nigeria \u2014 Bayelsa",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Bayelsa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 7783000,
-      "file:checksum": "122020f747378bb9bd9e08ee5fb5cb58aeb2ac97721069e13668c84a25f8b8833e42"
+      ]
     },
     "pmtiles": {
       "href": "./NG_BY.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Bayelsa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7840853,
-      "file:checksum": "1220907db479ea20c218a42b986fe3982ef0132736c9ab7bd11930f39b36fb2017c7"
+      ]
     },
     "style-2025": {
       "href": "./NG_BY.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122070385779eedf995673d0407bde4529a7e7d9a1a06198cec7b069cd94918f20a7"
+      "file:size": 899,
+      "file:checksum": "1220381b45f30911197a0c6b9fcf574d187481cfabe3379a8cdd0441f885d8e3dffd"
     },
     "style-2024": {
       "href": "./NG_BY.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220dc4b9c25d5c9169a43e20b31d2852a94c34d7ade41fe3fcfafc57b64efbcdef5"
+      "file:size": 899,
+      "file:checksum": "12206f3011c3feb11543066c3c63954d69923171e02c0a04f98754c2d5b4f809fc46"
     },
     "style-confidence-2025": {
       "href": "./NG_BY.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a610ceb51f4e1ef35cec89212b344d56aac5297ec3cb0ca21ef35ac423cf03f5"
+      "file:size": 2643,
+      "file:checksum": "1220068f352be9cdff72e9a0e456e13e76504d3d06916a2488d53d96ed70c9813c51"
     },
     "style-confidence-2024": {
       "href": "./NG_BY.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220df68e4dd4d7ab8f136934062e600f475ddf4474030c5fa732ccf1d451ff77bf0"
+      "file:size": 2643,
+      "file:checksum": "1220e92bec5db3ee7e91336e47f0f37630031bd12df13981730ad72222869d8d50cf"
     },
     "README": {
       "href": "./NG_BY.README.md",

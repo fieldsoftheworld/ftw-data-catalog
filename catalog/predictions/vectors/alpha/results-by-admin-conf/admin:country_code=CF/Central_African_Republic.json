@@ -118,9 +118,7 @@
       "title": "Central_African_Republic field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1713661689,
-      "file:checksum": "122014cb4a72b30fc2a313720ad9f0d568dbf5e206f828cc666c367a19a9b2dd8f21"
+      ]
     },
     "pmtiles": {
       "href": "./Central_African_Republic.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Central_African_Republic field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 920112473,
-      "file:checksum": "1220b54a85af431ccc287312bfe3d44e5ef921c6746875ce17e51db3de55e5dd1a65"
+      ]
     },
     "style-2025": {
       "href": "./Central_African_Republic.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 957,
-      "file:checksum": "12202b078800de599d9bb773260f6b81f1beef622b5ce6a788cb0b0e647163cb2b8e"
+      "file:size": 956,
+      "file:checksum": "1220d1ec6e626d4f2f536f4a94df6aeba6aabce61130933334af9bb7f980b93f14d1"
     },
     "style-2024": {
       "href": "./Central_African_Republic.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 957,
-      "file:checksum": "1220911dbf58d398e41bdef505b448193485b2f8bba326243b33d0275504f7a0b77c"
+      "file:size": 956,
+      "file:checksum": "12209b649fa972039f15b96ed8c1d584c7aea84e4e8e0b5188e192205a66f4e0ece5"
     },
     "style-confidence-2025": {
       "href": "./Central_African_Republic.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2701,
-      "file:checksum": "12207b659c3b24ba712a6e5eacfc343c9d2f38aecfcc5f43fc5cfdb5fcd7e476c5ca"
+      "file:size": 2700,
+      "file:checksum": "12209ef8f93c6e6665f0e1a47152958f35a51f339f246293cbadfff662d44214ace3"
     },
     "style-confidence-2024": {
       "href": "./Central_African_Republic.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2701,
-      "file:checksum": "1220425b4938959ba9c819a2a4f1b30656bcd37b27d3b1aa6d922dbf2bbccc048a27"
+      "file:size": 2700,
+      "file:checksum": "122094252d1acf5fbf07d306a5b9f554f692b8db609ecea5a0a258095c2ad590ca83"
     },
     "README": {
       "href": "./Central_African_Republic.README.md",

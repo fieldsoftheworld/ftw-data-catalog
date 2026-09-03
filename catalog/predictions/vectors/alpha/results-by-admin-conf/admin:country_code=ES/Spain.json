@@ -118,9 +118,7 @@
       "title": "Spain field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3289208460,
-      "file:checksum": "1220f228a3c9ddaae334d54a2369ce70511b5c2b2ad33845cb4e0d8a6d45575791b7"
+      ]
     },
     "pmtiles": {
       "href": "./Spain.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Spain field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1797835977,
-      "file:checksum": "1220ad328f6e74f7a5ef590bcf3a784ffccb6a1acda6ea537930a447047076cb34b1"
+      ]
     },
     "style-2025": {
       "href": "./Spain.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207091959c6b72dba33b4404b1002922885891858880462cb126d18876bf46c20f"
+      "file:size": 899,
+      "file:checksum": "12202c9ed67959665dd8de433c5290a06d15e42aff87c05e8e51254f0809993c3f61"
     },
     "style-2024": {
       "href": "./Spain.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ecebd06325c351b8d9d0a3397899c7ed082140ac7e846510ade1a1240cc7ff22"
+      "file:size": 899,
+      "file:checksum": "1220ca055339f3ad9359c240b773fada7f3219ad8a3eeb5e354ba0d2aea179928ed5"
     },
     "style-confidence-2025": {
       "href": "./Spain.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200f71cfe5ca4a5fe9b423f8834ae803dc8e4bd95516085737bba09589af7cb3a8"
+      "file:size": 2643,
+      "file:checksum": "12203e30f054ceb6ff0905db4525ce582b53818776e0a19b532378c753be0977a063"
     },
     "style-confidence-2024": {
       "href": "./Spain.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a9e4fd838b231fddd5c500e53e91c397bf3497ced79b1e069408aaac1eac05d3"
+      "file:size": 2643,
+      "file:checksum": "122069cb7f293ce3d815da91ceed105a9f85cff352b27b47b047660af4ca7d136328"
     },
     "README": {
       "href": "./Spain.README.md",

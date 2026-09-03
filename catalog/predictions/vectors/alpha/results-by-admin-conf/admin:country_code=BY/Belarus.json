@@ -118,9 +118,7 @@
       "title": "Belarus field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 496251875,
-      "file:checksum": "1220d99657eb6facbb6188ebd721b374352aff96b7717d4a24a4317c031a8ae94dd1"
+      ]
     },
     "pmtiles": {
       "href": "./Belarus.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Belarus field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 322976364,
-      "file:checksum": "1220222311eb439eb335dc11854ccef93554f341d6c40b27878fd99c921e034ab809"
+      ]
     },
     "style-2025": {
       "href": "./Belarus.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220881c1902baf71f60e5ac238e1e10d35022963f90d0b4cbeb572f60aae899b195"
+      "file:size": 905,
+      "file:checksum": "122051b6df8336c831df916732984dbfd7b6ad2ef36684601bb6718802d88716b905"
     },
     "style-2024": {
       "href": "./Belarus.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203e0b8916e35ea0e343189d41b3c9986d40316c451d8ffb335c98ffce693cdc2b"
+      "file:size": 905,
+      "file:checksum": "1220cd97c3674cdd13490905625ccf2b2fa23dc89bafee50175ddfedf1f1b8ee8545"
     },
     "style-confidence-2025": {
       "href": "./Belarus.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220a4044f82b00388ee449e161c08be3c15a286430e5516158df7feb9b241431563"
+      "file:size": 2649,
+      "file:checksum": "1220af10c40a53ba49aa26f9f043713db4ac41cdc550628c3c51d95bf7917fd67280"
     },
     "style-confidence-2024": {
       "href": "./Belarus.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220bf3783a46bba953d0c751095808d0b5a026333e678292f8a67505b966d6b6d31"
+      "file:size": 2649,
+      "file:checksum": "122000301d2f69bb93032d17eaff559a877e4c52bb6e3603b1b1550bb3e0cab1c6af"
     },
     "README": {
       "href": "./Belarus.README.md",

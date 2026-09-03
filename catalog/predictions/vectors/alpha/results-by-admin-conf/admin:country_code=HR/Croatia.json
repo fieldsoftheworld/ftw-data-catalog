@@ -118,9 +118,7 @@
       "title": "Croatia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 168949925,
-      "file:checksum": "1220d1e4c091cf58188e9f132ba058338d12cdac29bd0313264446ec9219c3f6920c"
+      ]
     },
     "pmtiles": {
       "href": "./Croatia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Croatia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 122359695,
-      "file:checksum": "122011905be62852ff4df937872341ae88a13ee02e5c03e543ac64a9c207a2f1b7f7"
+      ]
     },
     "style-2025": {
       "href": "./Croatia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220c6256c86a25030136fd46f7457369093cc1373ddef676877ca0df294be1fa493"
+      "file:size": 905,
+      "file:checksum": "122058161141064af5fe54d5ae38881bdaf609e329de9a357631963e22cecba284c3"
     },
     "style-2024": {
       "href": "./Croatia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220fa2516c54f316fb1cfc5674b6314c174c802a36530960d0524c2c7b45a52898d"
+      "file:size": 905,
+      "file:checksum": "1220bd7419e7ce80c05663baaff8db1b7beec56deb454a4856a490db6a97b8473200"
     },
     "style-confidence-2025": {
       "href": "./Croatia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220809ead79b09d15fa4ae69d49108eab4a368ca50f56eabf24eea42280c711a23a"
+      "file:size": 2649,
+      "file:checksum": "1220f0142eb50017397ae91e8184222f0059343596132d98d80234047b1299217e33"
     },
     "style-confidence-2024": {
       "href": "./Croatia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220fcd91489ec0fee241c2d5cd69d7269cae72266ebd4dd27bedbdfbe22c1ef2321"
+      "file:size": 2649,
+      "file:checksum": "1220816a14de6eff817e28660aaff99b8bbe5e726178179a1f592daee06a24a3e88c"
     },
     "README": {
       "href": "./Croatia.README.md",

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          31.15110596744241,
+          -4.479366312130011
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          34.73195719009081,
+          -4.479366312130011
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          34.73195719009081,
+          -1.0338008739708084
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          31.15110596744241,
+          -1.0338008739708084
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          31.15110596744241,
+          -4.479366312130011
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    31.15110596744241,
+    -4.479366312130011,
+    34.73195719009081,
+    -1.0338008739708084
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Geita",
@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Geita field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 300397649,
-      "file:checksum": "12200a632ade4548f52ddb17f9e12dad38b1bc0aeea79a69085998d0d0f36507c1fe"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_27.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Geita field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 161034117,
-      "file:checksum": "1220edde990475483bda14ac6c4182b2e1bcc7d71d7ed8a2604cd0abcb4703a5c0a5"
+      ]
     },
     "style-2025": {
       "href": "./TZ_27.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c6c107833d966cfb6a28b7a8966b8c80b21df2ba0f0a6f1eea05eb815288f367"
+      "file:size": 899,
+      "file:checksum": "12202ff69ba683bfe6e7a29cd5d986468d757d7d665d0a2fd30de1aed1258ffbaf55"
     },
     "style-2024": {
       "href": "./TZ_27.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ca786fbcafaad6cb319d5a6ae44f71df8e1a105fc4cd66f490e34f30b98f4683"
+      "file:size": 899,
+      "file:checksum": "1220ea7956800795bc13479f74ede80e52fd8828e721667915f1ebd4ddd31e1dd9ce"
     },
     "style-confidence-2025": {
       "href": "./TZ_27.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205cdc3887a6b406055d630d0ebdf0d5079ae1a32c30488dca082bd1da8f0cee3e"
+      "file:size": 2643,
+      "file:checksum": "1220d3319cc5b3456972f89d9c63d98eddfe7572ec3faa56248c917624b699bd4a01"
     },
     "style-confidence-2024": {
       "href": "./TZ_27.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220376374ca980469a1f094ff5d2a5cc5dc383f5be1b4fe9f5aa924f5f82a5b6255"
+      "file:size": 2643,
+      "file:checksum": "12206f4d4c3feacdda015149339113e22382b8364f77eb906e37a7c22ac22c05c4d6"
     },
     "README": {
       "href": "./TZ_27.README.md",

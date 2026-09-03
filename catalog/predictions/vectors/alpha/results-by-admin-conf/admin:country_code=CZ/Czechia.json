@@ -118,9 +118,7 @@
       "title": "Czechia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 248997044,
-      "file:checksum": "1220129dfe1e22329dd64c6fc61ff9a4463bf6b63299a5493211e4564eb40df6c551"
+      ]
     },
     "pmtiles": {
       "href": "./Czechia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Czechia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 168420192,
-      "file:checksum": "12209381d60918b5eed769573bf5808c7bebdd566a67ce8ab7b9639957616ea98646"
+      ]
     },
     "style-2025": {
       "href": "./Czechia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220287d4237ba91b20c944e1898a25ed376317d7b6dd3a4e221921981a17321ea6b"
+      "file:size": 905,
+      "file:checksum": "122073637826be9a283c3a9c4be324309348a1d6593d848eb2ef7661046784037526"
     },
     "style-2024": {
       "href": "./Czechia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "122011df723b7a0373c5ed81041e6050809fb5468fc789568fea6bd6810c47e7a3cb"
+      "file:size": 905,
+      "file:checksum": "12203de31fe8065b0c9b06439f41f78a8dd502e4ad629861e65c6c574484ea624017"
     },
     "style-confidence-2025": {
       "href": "./Czechia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122046e5fbe81314e41d689e9f8a11dad948bc198c677fb6987ca2a920e8341285b0"
+      "file:size": 2649,
+      "file:checksum": "12206d8d04b13ce2f558d5e74e0443df4cc51c7b987c1988d7d6c28f70e2db00710c"
     },
     "style-confidence-2024": {
       "href": "./Czechia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220f9aa3269de6acbec106c125b3a04450cb11fb24a63f5786ec2b2c245de2773f6"
+      "file:size": 2649,
+      "file:checksum": "12201a629f94c4bf4091e11d20a6b2f09bedf25f39765854ea1751d205c561142c55"
     },
     "README": {
       "href": "./Czechia.README.md",

@@ -118,9 +118,7 @@
       "title": "Germany field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1678845238,
-      "file:checksum": "12203c9da08387e851127f91ea3dda2af86b3ce5f0e13f6f1ad140738c7b5f799a1d"
+      ]
     },
     "pmtiles": {
       "href": "./Germany.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Germany field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1134643456,
-      "file:checksum": "12204c3fa86ecdd409f9cc30cec09619bc9c371601293b0625255671896e803ee6f0"
+      ]
     },
     "style-2025": {
       "href": "./Germany.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220df01d9b21caafe950dbfa38fd2f9204b9e6e17ac5f1af21e629a31c96264fc48"
+      "file:size": 905,
+      "file:checksum": "12208e1f53fc23a1abf8cb26894db7d7fbeff65a45e90af0d072eea68433742db0af"
     },
     "style-2024": {
       "href": "./Germany.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220811b483ca407b66dac8efb64f2a78e7b2cd37f288cc59477a630b5ceacb792e0"
+      "file:size": 905,
+      "file:checksum": "1220074cf727267e53cf3ce909b5f6b89b0aefb02881fcdf51de63421576551dbe2c"
     },
     "style-confidence-2025": {
       "href": "./Germany.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220afb7e4d5c7121cd70f0f7aa5c1c49e94923ef261875226a9480c44f0e3e2c8b2"
+      "file:size": 2649,
+      "file:checksum": "1220f668ef6e93280c93a8e387fe75ec654304f0346cfa33f65e4e46565ed36b4804"
     },
     "style-confidence-2024": {
       "href": "./Germany.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220572d548549052a1abb8ff6ce21d0c7ceb5b53845346f3a2ee5e2c6c47a1b29d2"
+      "file:size": 2649,
+      "file:checksum": "12208f20772cd0ef285bf94ea5b33d85d62dbbda3fda6c821649475dd9f02fbdfbf1"
     },
     "README": {
       "href": "./Germany.README.md",

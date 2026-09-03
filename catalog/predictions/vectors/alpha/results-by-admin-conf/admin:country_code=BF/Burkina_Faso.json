@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -4.658753727014602,
-          11.241183204068191
+          -5.514485721067776,
+          9.410603047148589
         ],
         [
-          -2.4425282362224006,
-          11.241183204068191
+          2.4082666353794044,
+          9.410603047148589
         ],
         [
-          -2.4425282362224006,
-          13.713517440928594
+          2.4082666353794044,
+          15.091977177307596
         ],
         [
-          -4.658753727014602,
-          13.713517440928594
+          -5.514485721067776,
+          15.091977177307596
         ],
         [
-          -4.658753727014602,
-          11.241183204068191
+          -5.514485721067776,
+          9.410603047148589
         ]
       ]
     ]
   },
   "bbox": [
-    -4.658753727014602,
-    11.241183204068191,
-    -2.4425282362224006,
-    13.713517440928594
+    -5.514485721067776,
+    9.410603047148589,
+    2.4082666353794044,
+    15.091977177307596
   ],
   "properties": {
     "title": "Burkina_Faso",
@@ -118,9 +118,7 @@
       "title": "Burkina_Faso field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3465416619,
-      "file:checksum": "12205c07035696f535362685b34abceeafb77c1d6e92e26401a87cdc60647ee68e51"
+      ]
     },
     "pmtiles": {
       "href": "./Burkina_Faso.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Burkina_Faso field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1710328601,
-      "file:checksum": "1220933d3f3023b680cb09976a41c10ee45a8e586937ffb60dee81255bc3cf466686"
+      ]
     },
     "style-2025": {
       "href": "./Burkina_Faso.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 921,
-      "file:checksum": "1220c54116cfa78479e73fbfabfee7da34ccf66f186c9e79ec6329b5b2ac6b9e8266"
+      "file:size": 920,
+      "file:checksum": "1220896301072543de297d61d723d993f3f6132dea992361f0c864cde7facd5a8e12"
     },
     "style-2024": {
       "href": "./Burkina_Faso.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 921,
-      "file:checksum": "12202a5754ff68389141f534d42a6b5e5b8c6e29978c1fc10b9b54f28970dd24f9e2"
+      "file:size": 920,
+      "file:checksum": "1220ea806e3df6b70402c10000d5d2469c94699536160d9c66970e1101f590ee9447"
     },
     "style-confidence-2025": {
       "href": "./Burkina_Faso.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2665,
-      "file:checksum": "1220be44eac83a2105bcc842603f36f0c4a23229e5ce315f15b094fe88499f528a5e"
+      "file:size": 2664,
+      "file:checksum": "122002637c5272c4b84dca48bb48fb297af34e4b0f3e5dc5d4a67a6d4b3791e2da41"
     },
     "style-confidence-2024": {
       "href": "./Burkina_Faso.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2665,
-      "file:checksum": "1220d30de1cfa7bb20391d497114bdd4c51c719acabe8f01b0bb60ea6585c0ac3ab6"
+      "file:size": 2664,
+      "file:checksum": "1220015f9729d6759cdc99e506aa4b1231d538871cef55eb95aad26178cbb28efb54"
     },
     "README": {
       "href": "./Burkina_Faso.README.md",

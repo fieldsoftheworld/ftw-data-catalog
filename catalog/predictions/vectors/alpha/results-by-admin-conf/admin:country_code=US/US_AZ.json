@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -114.8428268407922,
+          31.3058796340202
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -108.97720892312499,
+          31.3058796340202
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -108.97720892312499,
+          37.1642212246332
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -114.8428268407922,
+          37.1642212246332
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -114.8428268407922,
+          31.3058796340202
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -114.8428268407922,
+    31.3058796340202,
+    -108.97720892312499,
+    37.1642212246332
   ],
   "properties": {
     "title": "United States \u2014 Arizona",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Arizona field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 422878951,
-      "file:checksum": "12200340795418b7c2f7a922421711aea1d77688cbc6af60bc392cd3687746beb14a"
+      ]
     },
     "pmtiles": {
       "href": "./US_AZ.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Arizona field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 302868119,
-      "file:checksum": "12209f799a275cd0d1ac17454054be5ceda0002aa08b360ebc0191b4dbea4479a31c"
+      ]
     },
     "style-2025": {
       "href": "./US_AZ.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d2d28b0fd5b1e969e3cc1d7e79642eb9f4f3c14b13aa5fb3e6e40bef20241d0a"
+      "file:size": 899,
+      "file:checksum": "12206babff45ec045677547bd26e55c19b12292f4c72d1f2137bdf1291db33be1521"
     },
     "style-2024": {
       "href": "./US_AZ.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c59a0b3b7ea13fe34926763519b78d8a1e2d404fd55b3b56055d74ca6e312c26"
+      "file:size": 899,
+      "file:checksum": "1220dd9b116606b1389d14741118b0f260bbf5fd68520da6ce06a956066f9ee2aff8"
     },
     "style-confidence-2025": {
       "href": "./US_AZ.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122031fdfd935d490513f86cc9ee95a0b900ef1ef31d1cd5143c82ff17770b781228"
+      "file:size": 2643,
+      "file:checksum": "1220817132f7827484edd942316b6d32a424b0940037dbcf0b92b241249059bc4d4d"
     },
     "style-confidence-2024": {
       "href": "./US_AZ.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122053cd1cb722726146ce4a6241c171c12d5323190a53a6521af18212494b1f6375"
+      "file:size": 2643,
+      "file:checksum": "12204612b4508eb0e3d5009a0998ba423c1b34cfc1f3929e81d9840a04a3d54ff2ea"
     },
     "README": {
       "href": "./US_AZ.README.md",

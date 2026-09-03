@@ -118,9 +118,7 @@
       "title": "Slovenia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 45166133,
-      "file:checksum": "12200171f318fddc59421af52f462949573f444641912647c25a38fdff2c556149af"
+      ]
     },
     "pmtiles": {
       "href": "./Slovenia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Slovenia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 35302502,
-      "file:checksum": "1220916f27bbd02d01393a6d3d228f0274bc2d3c935045712caa427fb4f46951e788"
+      ]
     },
     "style-2025": {
       "href": "./Slovenia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122069f1454b2fe7bb73741efa400349e701cba9bf22e317171bce4b284b6d697ec9"
+      "file:size": 908,
+      "file:checksum": "1220bf60680110d3b168c53341e56d93b3a482d4ce5949b08066b02af53bff11795e"
     },
     "style-2024": {
       "href": "./Slovenia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220314501e2d0a55d5265b017193939b43f87c7cc63036f1f81a14cbd747d5edb5a"
+      "file:size": 908,
+      "file:checksum": "1220c6839eb9aece4f63059f46ab47bce835bc984a78e5404edd06cec294dbea22e8"
     },
     "style-confidence-2025": {
       "href": "./Slovenia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122005c5c0a7ff741a714086959409b15026dd136df44714a090851ff62478ae631a"
+      "file:size": 2652,
+      "file:checksum": "1220bd00cab0fbe28942e0d86fbe8da441ca0827ad0b15e3df1db0c3a6fcc76e3e52"
     },
     "style-confidence-2024": {
       "href": "./Slovenia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122020931d7af3a623831545277298092bc1df9ba5493bd06ade15461aef62cc3c41"
+      "file:size": 2652,
+      "file:checksum": "12205e2e2837343518d6ce416c99d2698a47026a528e501c51df621ac5f681d0034f"
     },
     "README": {
       "href": "./Slovenia.README.md",

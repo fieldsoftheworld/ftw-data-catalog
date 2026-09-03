@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          29.05723056859861,
+          12.218192803612215,
           -13.49994574177941
         ],
         [
-          29.845768826398206,
+          31.27651032012961,
           -13.49994574177941
         ],
         [
-          29.845768826398206,
-          -12.258748076250008
+          31.27651032012961,
+          5.359216008328598
         ],
         [
-          29.05723056859861,
-          -12.258748076250008
+          12.218192803612215,
+          5.359216008328598
         ],
         [
-          29.05723056859861,
+          12.218192803612215,
           -13.49994574177941
         ]
       ]
     ]
   },
   "bbox": [
-    29.05723056859861,
+    12.218192803612215,
     -13.49994574177941,
-    29.845768826398206,
-    -12.258748076250008
+    31.27651032012961,
+    5.359216008328598
   ],
   "properties": {
     "title": "DR_Congo",
@@ -118,9 +118,7 @@
       "title": "DR_Congo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3531463755,
-      "file:checksum": "122012c855f163ae018857bd0d043dc40a6d5e7196026313ee834da3e3c14e468213"
+      ]
     },
     "pmtiles": {
       "href": "./DR_Congo.pmtiles",
@@ -128,9 +126,7 @@
       "title": "DR_Congo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2040333631,
-      "file:checksum": "1220d1ce89bb88685915016c01cd6906107f882becfe392f762569e7c6ba1602c558"
+      ]
     },
     "style-2025": {
       "href": "./DR_Congo.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12200cfa8500b8eb9e792d8f8f083466397dc5456c72b5b75010bdc08485417e638a"
+      "file:size": 908,
+      "file:checksum": "1220b8413e0cc15d50d04fbd5105a049b0a7ff4aeafc2fcecccf1c4cc86ee02ac647"
     },
     "style-2024": {
       "href": "./DR_Congo.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220f8ff1284797a3e6a971c343b4bac1c969317c59bb83c2e068a75d5fd2d3d3b2e"
+      "file:size": 908,
+      "file:checksum": "1220e2b85a9653d166a884367dd65a54ed0f0b4c11016323a3c1474789a1192658c2"
     },
     "style-confidence-2025": {
       "href": "./DR_Congo.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12205309dbe27555666cdc16814c2e9b72dc0e38efe1ee5cc2d4c1f06632e69faf4b"
+      "file:size": 2652,
+      "file:checksum": "12209baedaf855e9a829c0c6f2d69cd7a0c1b00d0bc0e43e4b5c00080bd1b538a3a8"
     },
     "style-confidence-2024": {
       "href": "./DR_Congo.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220b9771aa1193329969bab03b112e083643a65ad6b748220785aec5aa05cd5ac8b"
+      "file:size": 2652,
+      "file:checksum": "1220626a04b3633f3cf3d74c566949b207c1fad8c7cf80a60fe97dfc171b5a6c489f"
     },
     "README": {
       "href": "./DR_Congo.README.md",

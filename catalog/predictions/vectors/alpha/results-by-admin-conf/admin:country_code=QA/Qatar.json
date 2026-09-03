@@ -118,9 +118,7 @@
       "title": "Qatar field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 11700816,
-      "file:checksum": "12200c215183a777fab132e2be5a606670427f6a7e0d65c9508356e238aabbfb6c77"
+      ]
     },
     "pmtiles": {
       "href": "./Qatar.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Qatar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 9200052,
-      "file:checksum": "122036dd697546578bc5f07a41063fde469efd991051deb71babc62ed810fe003e18"
+      ]
     },
     "style-2025": {
       "href": "./Qatar.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220be9c7f4ce750b8c92d238569b59c4ed4d6047c709c3d250ee653d1c8877d1bdb"
+      "file:size": 899,
+      "file:checksum": "122040fbde1b45f5b4f89702a102abd7b1a2b3ed75332fd4ad42422076559218bbed"
     },
     "style-2024": {
       "href": "./Qatar.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d23f0f93aacca4e816f144d861b47ed472d7fbf11a679ec745b81ee3027fbc96"
+      "file:size": 899,
+      "file:checksum": "122054e2e06b23c6cb1d8889d48b11d877a35fce457f1a4683413d18cf8dd786c27f"
     },
     "style-confidence-2025": {
       "href": "./Qatar.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122031e6035312431c296fd9140c1193bee3266ca03ca7a0c0a15dd281246e5e6132"
+      "file:size": 2643,
+      "file:checksum": "1220c69c4390584b0518dec63576f822cfd21644407d2e579234c9fb8efd1ce26abb"
     },
     "style-confidence-2024": {
       "href": "./Qatar.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ec1543d82b6d3fe531bc68a3f8c98dfd2048c0da68fa000f7356c85f0872cdb7"
+      "file:size": 2643,
+      "file:checksum": "1220beb087573e66cec5612de31939e5fb155efd19f5c462fc2c6b64ce67dc97f4bd"
     },
     "README": {
       "href": "./Qatar.README.md",

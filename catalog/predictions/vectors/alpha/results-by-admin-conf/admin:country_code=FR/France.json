@@ -118,9 +118,7 @@
       "title": "France field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2373430029,
-      "file:checksum": "1220967e8a78ffacae241df32f096d9078586e142f388bebff96f146fca52e47c852"
+      ]
     },
     "pmtiles": {
       "href": "./France.pmtiles",
@@ -128,9 +126,7 @@
       "title": "France field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1406328796,
-      "file:checksum": "1220909fcedbfb319f308f2afaaba195221287560384f81d9e452793ee344b5648c6"
+      ]
     },
     "style-2025": {
       "href": "./France.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220c66f7a96c7eec15b039e7a1c3aae9d909eb7ff9dc7434967f54987ef7ebda2ef"
+      "file:size": 902,
+      "file:checksum": "12204db0fd69a23f94328fb2679fe8c0fbc7f332a8a848aaf339ada960152371b272"
     },
     "style-2024": {
       "href": "./France.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122044a92c7927110eb44ca5c103779760959bc7b67e06edaf74d8cbd8a1673c54b3"
+      "file:size": 902,
+      "file:checksum": "122012b3ffa2ed8fda3b43491bcb52d40ba57a5e425ad0af74e7b999c16b66158891"
     },
     "style-confidence-2025": {
       "href": "./France.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220fbaf1c9f833853b5dcd936119c9a4af2f15d2d4b148f1ffa2ec29bc1bc18b9da"
+      "file:size": 2646,
+      "file:checksum": "1220e34fa287608de62d8889759b46be1fcf76f0b2ea7816bc63938bc50b4313f156"
     },
     "style-confidence-2024": {
       "href": "./France.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220f732ec2263ebd766112dddb01e444b93c68f0f6c1de357e6294bea1db6376af2"
+      "file:size": 2646,
+      "file:checksum": "1220520090da55840ec594eb2c8bfe97c5c4864b48aa2f8dc3d30401cc24b4b67c11"
     },
     "README": {
       "href": "./France.README.md",

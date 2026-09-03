@@ -118,9 +118,7 @@
       "title": "Saint_Martin_French_part field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 188127,
-      "file:checksum": "1220ef25c505e9d9fcd4b5c34883de3921a93ed469e394869503097a60c7397d88dc"
+      ]
     },
     "pmtiles": {
       "href": "./Saint_Martin_French_part.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Saint_Martin_French_part field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 155957,
-      "file:checksum": "12207bbdd54224cb479f53551dccb47d4af9e45886f9efc312b7479f38c9e0376dd6"
+      ]
     },
     "style-2025": {
       "href": "./Saint_Martin_French_part.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 957,
-      "file:checksum": "12205c9997bb319d60ea4f898ee3ac13342e409063f4fffe552200f182fed984134b"
+      "file:size": 956,
+      "file:checksum": "122058f4efebe6a759da129f3f2f7843b28e9bda983d431a9ee127a6cf88a640511e"
     },
     "style-2024": {
       "href": "./Saint_Martin_French_part.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 957,
-      "file:checksum": "1220d355e963e76b7d7722831dbbe99c1c07eb1bdb1307f98d939a94f664e3caadb3"
+      "file:size": 956,
+      "file:checksum": "122011b058bf362707dfc9f83290f72cf8cd68f31a26170d289a1a177a5b516239ad"
     },
     "style-confidence-2025": {
       "href": "./Saint_Martin_French_part.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2701,
-      "file:checksum": "12205f1bcc2c8e6f4ba4acd96cb9035de73377a9698f2add9e1c7cc4b9fd4071643b"
+      "file:size": 2700,
+      "file:checksum": "1220f1d6a2df358e00637c63688a8705e22949db35c51b40868d67741f2174097853"
     },
     "style-confidence-2024": {
       "href": "./Saint_Martin_French_part.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2701,
-      "file:checksum": "12205b03f844eb66b6e036869ff1663cd3c69c93f5a5a5e2e7b2f8cb44b882e9ee0c"
+      "file:size": 2700,
+      "file:checksum": "12207e87fe43b742b58a294bf652bafcbcdf8c8c9c4aba4b9848060c98835c255619"
     },
     "README": {
       "href": "./Saint_Martin_French_part.README.md",

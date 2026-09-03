@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          88.00805607536661,
+          24.267066267860997
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          89.00832646732361,
+          24.267066267860997
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          89.00832646732361,
+          25.2752418052596
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          88.00805607536661,
+          25.2752418052596
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          88.00805607536661,
+          24.267066267860997
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    88.00805607536661,
+    24.267066267860997,
+    89.00832646732361,
+    25.2752418052596
   ],
   "properties": {
     "title": "IN_E",
@@ -118,9 +118,7 @@
       "title": "IN_E field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 769933,
-      "file:checksum": "1220859c619bcf6fc6d0c6c9a131a65e51579a646f063adb4efd756a85c4464a73af"
+      ]
     },
     "pmtiles": {
       "href": "./IN_E.pmtiles",
@@ -128,9 +126,7 @@
       "title": "IN_E field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 714809,
-      "file:checksum": "12204d14780d6542bd881b98ff350ba403109e3beed5de414bc540e45fe0c5c1c9b9"
+      ]
     },
     "style-2025": {
       "href": "./IN_E.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "122074806ae569f4d086d0887f2141fad38ee07a4fa2ab3ebabe260db1ddf2dbf0ad"
+      "file:size": 896,
+      "file:checksum": "12209567294c61d8d1d84d00edc6117029a40709cb87ccabead0f3f70ed7a1e3430d"
     },
     "style-2024": {
       "href": "./IN_E.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220591a9b2887e7dff77936b6939661aab4899bde047bd0034ddb60ba1f386e57f7"
+      "file:size": 896,
+      "file:checksum": "12207657eda4f1750735fa5dfa58eca14209fb17d3d365715e3867b6b1a8daf7e5c1"
     },
     "style-confidence-2025": {
       "href": "./IN_E.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220ca495437654b00877a99f87dbd564a9c51ddb24f9006e5bbffba374192f9a63c"
+      "file:size": 2640,
+      "file:checksum": "12209389bd13a089e9f22af67a91d9aef9452dcf84d370213cd11962302afbb73685"
     },
     "style-confidence-2024": {
       "href": "./IN_E.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220320ef9f4a860a35c43ceeece9f56c2a4b665de5c9fb78420fc0022af815c5edf"
+      "file:size": 2640,
+      "file:checksum": "1220921fc34625503949d57ef0b97a0447d4248eccd6a87466961ead90ba5e2b8975"
     },
     "README": {
       "href": "./IN_E.README.md",

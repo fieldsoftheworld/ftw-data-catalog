@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          7.870003485939411,
+          4.687188814594398
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          9.474837841782414,
+          4.687188814594398
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          9.474837841782414,
+          6.8976651087017995
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          7.870003485939411,
+          6.8976651087017995
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          7.870003485939411,
+          4.687188814594398
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    7.870003485939411,
+    4.687188814594398,
+    9.474837841782414,
+    6.8976651087017995
   ],
   "properties": {
     "title": "Nigeria \u2014 Cross River",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Cross River field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 78191312,
-      "file:checksum": "12203eee62b27fd2b1fb53ce60b193e117fb69544f9da2b04bf6581a91e40710d2d7"
+      ]
     },
     "pmtiles": {
       "href": "./NG_CR.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Cross River field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 52690604,
-      "file:checksum": "12201c4e6821087b9b958c2a83e574ee0c932ffac70b7d08331b94955c22dbea9ca2"
+      ]
     },
     "style-2025": {
       "href": "./NG_CR.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122042b847a2468a4e2b279fe1a7a4c294125c757a5326240e09b438f59086174c8b"
+      "file:size": 899,
+      "file:checksum": "122077f7720d302a41e484edc6e39cd4bec7c2e016d53830e14ffc4702035d82c9de"
     },
     "style-2024": {
       "href": "./NG_CR.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220be85c36637aa38ba50f4ca7cdcba42397c3c07f82dd80702cd24384f497db8e2"
+      "file:size": 899,
+      "file:checksum": "12207148a0b2b57230727cdbb1f808ac553733f5e0e86df0eba19fdd81acf0de5c98"
     },
     "style-confidence-2025": {
       "href": "./NG_CR.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220fc83e5d9b97e24273ed715bc710d9156a0e290898aa751c22aa6ac4780c86aba"
+      "file:size": 2643,
+      "file:checksum": "12202269e4b80e1620303c8b16ef415a0d992b0fb168f825bcaab26194e35def63ed"
     },
     "style-confidence-2024": {
       "href": "./NG_CR.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203ab2fff6f3524e1e63e1b0778d649c97a4ef070d7ee9f73c0694a1aea75ca9ea"
+      "file:size": 2643,
+      "file:checksum": "1220eea8c417d7c39f9e49f2b5a29cae0688a41c69fbdad39264915e7572ef378432"
     },
     "README": {
       "href": "./NG_CR.README.md",

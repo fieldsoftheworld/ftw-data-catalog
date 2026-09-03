@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -70.52388655923659,
+          -9.472453801680604
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -70.4937931078396,
+          -9.472453801680604
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -70.4937931078396,
+          -9.430053476130205
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -70.52388655923659,
+          -9.430053476130205
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -70.52388655923659,
+          -9.472453801680604
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -70.52388655923659,
+    -9.472453801680604,
+    -70.4937931078396,
+    -9.430053476130205
   ],
   "properties": {
     "title": "BR_UCA",
@@ -118,9 +118,7 @@
       "title": "BR_UCA field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 10504,
-      "file:checksum": "1220da02196ae55ba6d9481849a418452934e27db50c003e2679c1689e68ad99c7b5"
+      ]
     },
     "pmtiles": {
       "href": "./BR_UCA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "BR_UCA field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2275,
-      "file:checksum": "12208cd2bf1667a74e7bb5d0033ca12909fccdfa3ddb19ddaa1ee88d783bb67a7347"
+      ]
     },
     "style-2025": {
       "href": "./BR_UCA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220fc989f709f8636cc443d4e216f2711dbea8bbc44f2c3efd9f8f99ca696eeba0f"
+      "file:size": 902,
+      "file:checksum": "12200b27165dbe904cceb378b42f318889bd43835c800f63b1e5a1818cbe39a2d175"
     },
     "style-2024": {
       "href": "./BR_UCA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12203fff6c8a7d0d8a8334485fa274671096af62a12a75f2bc41c965cdc12a049ad8"
+      "file:size": 902,
+      "file:checksum": "1220a908215ede5ad83b6a7c0b4c7342250116c7c799561455841cb2d42ebd6052d8"
     },
     "style-confidence-2025": {
       "href": "./BR_UCA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122073f32ebf8bbe1042cfe2452b731deead9c6095f01e683a6b03a26b49746a2c13"
+      "file:size": 2646,
+      "file:checksum": "12201ecc16a68aeb2cedf26b46ad970a74cb98adad11dc84e03b0a64870b33b50596"
     },
     "style-confidence-2024": {
       "href": "./BR_UCA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122032261c321e9023386894f3210d1615ab660afa7335d94d0f2ab958bd793891ba"
+      "file:size": 2646,
+      "file:checksum": "12203a440d55759b9ba134032083849f2ebb37280075b6012713335f7d0513ef381d"
     },
     "README": {
       "href": "./BR_UCA.README.md",

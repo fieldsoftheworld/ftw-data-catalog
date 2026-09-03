@@ -118,9 +118,7 @@
       "title": "Nauru field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 16927,
-      "file:checksum": "1220c764756b591fa87af57d82e760d25d974093eedc63bd0849f8229f3f2b1a5851"
+      ]
     },
     "pmtiles": {
       "href": "./Nauru.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nauru field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 5494,
-      "file:checksum": "122077c57caf72fd5563348f2353f4b3a288ce7e3cb266a5c7d67bef1b43e993127e"
+      ]
     },
     "style-2025": {
       "href": "./Nauru.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122045680030a234c5ff2375f6d35d6d4168b0666e908636e48301d1ab2bd2418029"
+      "file:size": 899,
+      "file:checksum": "1220a951714c8b56e4395254307b73e428a67fb491ec922928f64230b30e7acf6dc7"
     },
     "style-2024": {
       "href": "./Nauru.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c3e1ca403c78032072b735f328409ffaa7e4d9b1f1a7b622322bc861074c20b4"
+      "file:size": 899,
+      "file:checksum": "122015a3ebbf3e6a09a0f5651cea5bb7eac4a5adad2d5f0dd0f06f0bfc8e55b205bc"
     },
     "style-confidence-2025": {
       "href": "./Nauru.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ec33db97118f3518241d51f5a6df5528ed972038174ecf5aefa3cdda1a1d3686"
+      "file:size": 2643,
+      "file:checksum": "122021c86be7cb38120abd2a5809207f145ba316ce4ef435b4d59a8bfe1ce6fac110"
     },
     "style-confidence-2024": {
       "href": "./Nauru.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a3e499d10df05a6238eea8f0b28aad0a892fd139b647894fe5e095634cc2cfe5"
+      "file:size": 2643,
+      "file:checksum": "12209a307af2121309371d2e3dca85b7eae22f243358fba3a400c4c68935b7423427"
     },
     "README": {
       "href": "./Nauru.README.md",

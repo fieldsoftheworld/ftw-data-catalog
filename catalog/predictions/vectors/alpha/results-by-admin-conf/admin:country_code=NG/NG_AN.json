@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          6.643987292905809,
+          5.724110335416999
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          7.337484143009811,
+          5.724110335416999
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          7.337484143009811,
+          6.808822053681999
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          6.643987292905809,
+          6.808822053681999
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          6.643987292905809,
+          5.724110335416999
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    6.643987292905809,
+    5.724110335416999,
+    7.337484143009811,
+    6.808822053681999
   ],
   "properties": {
     "title": "Nigeria \u2014 Anambra",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Anambra field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 53534843,
-      "file:checksum": "1220171a0376a8bb0d3aacc711ad2fa4f7d3dc5d84bdc372196b6bdd9126f427e33b"
+      ]
     },
     "pmtiles": {
       "href": "./NG_AN.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Anambra field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 33812615,
-      "file:checksum": "12204d0edb6ce1e6b441de50ba55a3182ca12196f21d5cd82b47fd73563c789ca3c7"
+      ]
     },
     "style-2025": {
       "href": "./NG_AN.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204fd6d304cf3c08a8b85f40ed0cb8611e02e9ea09116837d63b3e173896448fcb"
+      "file:size": 899,
+      "file:checksum": "12209f42a169316af771a471221d015cae16b8d1dcedb75136779207c82dd92aa43c"
     },
     "style-2024": {
       "href": "./NG_AN.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122050dba7d6c1eaf5589110f4216d8d4da06e546c8cf7a8d4b0de686d18667f9024"
+      "file:size": 899,
+      "file:checksum": "1220cad2863a8d41c819dd5e2cb0c515951930b7afef54899857cddb1e5de3620bc7"
     },
     "style-confidence-2025": {
       "href": "./NG_AN.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209a526edb3fb872fc71f6f15f548d3080f0a710bb48ea4fb92712a019b42218aa"
+      "file:size": 2643,
+      "file:checksum": "1220eed7d2aff837d307ad3299aefef0f08a8401322ff317f584bebed5ed7c7457a3"
     },
     "style-confidence-2024": {
       "href": "./NG_AN.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a68e521e56ab83bcf50e3dcece8b03269f893ec6c73205c6ff742c9699801e1d"
+      "file:size": 2643,
+      "file:checksum": "122078ebb4a0bd9471091813738d559472373ab0690b3d7b5a22d14d00107739b083"
     },
     "README": {
       "href": "./NG_AN.README.md",

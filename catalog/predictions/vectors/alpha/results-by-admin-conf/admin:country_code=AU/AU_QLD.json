@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          148.75649368931482,
-          -35.943012975274605
+          137.90757988270082,
+          -29.17692712685061
         ],
         [
-          149.39663080768804,
-          -35.943012975274605
+          153.47712315472484,
+          -29.17692712685061
         ],
         [
-          149.39663080768804,
-          -35.1693866963762
+          153.47712315472484,
+          -9.234041801657805
         ],
         [
-          148.75649368931482,
-          -35.1693866963762
+          137.90757988270082,
+          -9.234041801657805
         ],
         [
-          148.75649368931482,
-          -35.943012975274605
+          137.90757988270082,
+          -29.17692712685061
         ]
       ]
     ]
   },
   "bbox": [
-    148.75649368931482,
-    -35.943012975274605,
-    149.39663080768804,
-    -35.1693866963762
+    137.90757988270082,
+    -29.17692712685061,
+    153.47712315472484,
+    -9.234041801657805
   ],
   "properties": {
     "title": "Australia \u2014 Queensland",
@@ -118,9 +118,7 @@
       "title": "Australia \u2014 Queensland field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4908004886,
-      "file:checksum": "1220add69a5e55d24f0978affbb5ce5aaee0289ffbe843c55e1c611fb470df326ad9"
+      ]
     },
     "pmtiles": {
       "href": "./AU_QLD.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Australia \u2014 Queensland field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2704358514,
-      "file:checksum": "12207878e954a2d6b01a881abc477ccca28c9710a070c7feb4c4c5ef1adc1566416c"
+      ]
     },
     "style-2025": {
       "href": "./AU_QLD.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220f7b86f431741d8bd97ea359a3987248c744d2b3b328b9a83d3844d0bec58ca25"
+      "file:size": 902,
+      "file:checksum": "1220241ed2cffe0e93e961dab46b88485e981d9b9c0f64cc57d4f62565e433e931c7"
     },
     "style-2024": {
       "href": "./AU_QLD.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122011c22fc23f6e7f294b374652a400b8cab08262eda0d9ce852334f9c0f9622ba2"
+      "file:size": 902,
+      "file:checksum": "122063f1a1378eef171ce02f5912ea5a88409b14b442e301b6939b20523d438d726e"
     },
     "style-confidence-2025": {
       "href": "./AU_QLD.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220a4e3459d2f677419c898175b6221bd57b767b9e0930540dd0696387b62f9475c"
+      "file:size": 2646,
+      "file:checksum": "1220129177b4fe6e39e5d8b4b465f6bc4395692033ae74fd6a40b7db56015197b43c"
     },
     "style-confidence-2024": {
       "href": "./AU_QLD.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12206d7f5c6ae889e0f33b3b00aadf785d2393008baf74670bb98013ce31e5a74e30"
+      "file:size": 2646,
+      "file:checksum": "12207b424b8af5b1435e3c14cfd7c26a66db942a5e2d7c539e775b454fb258004740"
     },
     "README": {
       "href": "./AU_QLD.README.md",

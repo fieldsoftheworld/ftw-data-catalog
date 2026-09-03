@@ -118,9 +118,7 @@
       "title": "Saint_Kitts_and_Nevis field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 987221,
-      "file:checksum": "12206e021d5477aef3f5b4496c30f47a64a46d81dd8eee50cec4941282c157fa68b1"
+      ]
     },
     "pmtiles": {
       "href": "./Saint_Kitts_and_Nevis.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Saint_Kitts_and_Nevis field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1228155,
-      "file:checksum": "12208dfa44dc6b40bbc84a477322d9a80a2304d255dcfc01f397894db219cd837b20"
+      ]
     },
     "style-2025": {
       "href": "./Saint_Kitts_and_Nevis.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 948,
-      "file:checksum": "12208be2f5ce20b1d84f13532562f9e0c2c1873bb7961f1c94bcf779b78fcbe01e60"
+      "file:size": 947,
+      "file:checksum": "1220c21164f709330ad745e6b9ab6e2881a33fad569bb05348244d2e68c5b45cb91b"
     },
     "style-2024": {
       "href": "./Saint_Kitts_and_Nevis.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 948,
-      "file:checksum": "1220e900a387eb01c66a832d54c17887a338a43b7330622fd375066c96852aedfe05"
+      "file:size": 947,
+      "file:checksum": "1220c0d3c9d044e99dc73c57d97e0b9715a02dd40c341a0464bc29c34a9ac4945700"
     },
     "style-confidence-2025": {
       "href": "./Saint_Kitts_and_Nevis.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2692,
-      "file:checksum": "1220bc39e93e9a39fa383f47a90e800389de3c6cd1a3127acfea364017e8f8e887b2"
+      "file:size": 2691,
+      "file:checksum": "12201caa7fe4dfda4b458317b137dfcc327de87d78f4305833e30e521df9742914ac"
     },
     "style-confidence-2024": {
       "href": "./Saint_Kitts_and_Nevis.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2692,
-      "file:checksum": "1220a5dfe2725fa61bcfe5ac5707a2e7c1bea293fbcea470125b1034644f60da93db"
+      "file:size": 2691,
+      "file:checksum": "12207dd073411b652b5bd43d347dd34325a0bf10af2d01892dbb059608db84ba1b7a"
     },
     "README": {
       "href": "./Saint_Kitts_and_Nevis.README.md",

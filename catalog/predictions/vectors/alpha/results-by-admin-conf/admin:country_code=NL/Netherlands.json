@@ -118,9 +118,7 @@
       "title": "Netherlands field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 246225600,
-      "file:checksum": "1220dc57fdf90c85daf3d750c5b0788639f70bf6af8708476db8da4e7737b98fb285"
+      ]
     },
     "pmtiles": {
       "href": "./Netherlands.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Netherlands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 160118497,
-      "file:checksum": "12200b496ef55f0117cbd5cd04107e5d7dd9d09dcd1c835e64f49d245b55a94a43d2"
+      ]
     },
     "style-2025": {
       "href": "./Netherlands.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "12203c196e31007590c37a18ea1a8ee6794db37b46ffaef95348cdd8f25f09c3690e"
+      "file:size": 917,
+      "file:checksum": "1220dda00e90b5208060442fc8bbb657878632523de25a422238e30277a74b292faf"
     },
     "style-2024": {
       "href": "./Netherlands.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "122006ae32780afcb8886fd3c76bde59b1409035b740c9bbed83215c7a7eb6a1654b"
+      "file:size": 917,
+      "file:checksum": "1220cd589aa23ec4bbcbad147c6c6b64602a20ff7dee07fc90edfaf2e665c8f96c3f"
     },
     "style-confidence-2025": {
       "href": "./Netherlands.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12209b0d53a1b76e7532357fac6be5435c4b564d13cb9b22d9d6a83f203ac0e78196"
+      "file:size": 2661,
+      "file:checksum": "122002bdec02ea48b11308420dacb24c730f15c6271384dea6edd44d4b58717fff5f"
     },
     "style-confidence-2024": {
       "href": "./Netherlands.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "1220ba59087c614773eadd4169b96dc5c02403c873b569a83894dec10e146b9a2613"
+      "file:size": 2661,
+      "file:checksum": "122088b8e263f72b3e1653838a8721bce223b733d8a1f97c396a16099eaacc7f36d9"
     },
     "README": {
       "href": "./Netherlands.README.md",

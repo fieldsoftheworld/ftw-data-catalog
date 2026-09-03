@@ -118,9 +118,7 @@
       "title": "Eswatini field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 78949501,
-      "file:checksum": "1220ea03e60eccdb20920de143fb844883a9763ee015de54b9cac9fdc74171840950"
+      ]
     },
     "pmtiles": {
       "href": "./Eswatini.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Eswatini field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 62935504,
-      "file:checksum": "1220d22a9bc07efb0dbc29e91504038cecfc7b30057693338ffb9d8a9ea8ce0b55b8"
+      ]
     },
     "style-2025": {
       "href": "./Eswatini.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220a3c5a4e85e8a4b1c9deefcd8489d07220c59b66d7d9e2493e959c4eaefde7907"
+      "file:size": 908,
+      "file:checksum": "1220544dbd8535f6fd25229b151db0014397386a3b633918c68afc9d169f8e793378"
     },
     "style-2024": {
       "href": "./Eswatini.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12207f22c291b7a91f1618a0b1e1531eaacef479d4f255150837cb5c45cf62f47655"
+      "file:size": 908,
+      "file:checksum": "122012ed822e689f0450d6ddc26c1e38d2f9d834c3ef9e943dc1baf88ea2908b3836"
     },
     "style-confidence-2025": {
       "href": "./Eswatini.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12200eb9c53b7f1b2efb042610f81e69449939e2f306a605fa4c10c699ac1d51d797"
+      "file:size": 2652,
+      "file:checksum": "12208b63cb8a2ea15aac06caff596a7ad7511dc023b97ddebcd1f43596a3e35f75c6"
     },
     "style-confidence-2024": {
       "href": "./Eswatini.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122059fa2521bb23a451e1622271e3a5b9c3da2e38e9feebbcd34a99e1875565dcae"
+      "file:size": 2652,
+      "file:checksum": "1220b83f4c4b3fff6ad0c64e2b0ebf3086987a5ddbd9babaa4c25f6732ee63b5a78f"
     },
     "README": {
       "href": "./Eswatini.README.md",

@@ -118,9 +118,7 @@
       "title": "IN_01 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 18756,
-      "file:checksum": "122091eb1279be20244021f6af35ddbe1e297ddcc6fe7df18d93c3d1b2bf4d93c94b"
+      ]
     },
     "pmtiles": {
       "href": "./IN_01.pmtiles",
@@ -128,9 +126,7 @@
       "title": "IN_01 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 14801,
-      "file:checksum": "1220fff3ace8fe56bf4e730e1433e0698101b36eb3703215ed9d690f6d7b9a46c1fc"
+      ]
     },
     "style-2025": {
       "href": "./IN_01.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209cf46e3791e9fb100016e88ef82446229f995a01d73ea219e5617c0f306f3036"
+      "file:size": 899,
+      "file:checksum": "12203ec2f802caa6bc8ce0db9a51bc51159449fff189de42ab71b7f77051903c8a6c"
     },
     "style-2024": {
       "href": "./IN_01.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122031b351f1b295b86b4263ddc2554361cdb3cb5681af388ff514d51e4b0ce16a4c"
+      "file:size": 899,
+      "file:checksum": "1220910cb2e85de74d22e8c8d5b748b3c317b97087c702101adcde32bc4738168c34"
     },
     "style-confidence-2025": {
       "href": "./IN_01.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c3e8ea36e120db5bddf20423d8312805982fbf1d8458ac04a2d8904ab6e9fb14"
+      "file:size": 2643,
+      "file:checksum": "1220b938095a173f01c4e537ca07eb6adc32d46e5c472ec0c152470a8f47ab3753fc"
     },
     "style-confidence-2024": {
       "href": "./IN_01.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ad054023ab8f43e606ae27d78e467898b065d889f86ab33f7ba831dbb21a7354"
+      "file:size": 2643,
+      "file:checksum": "122075a1ef857e74b41a2c31903f226d40134547d2dce0e70143dedb34f6a740667e"
     },
     "README": {
       "href": "./IN_01.README.md",

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          148.75649368931482,
-          -35.943012975274605
+          143.86284933617162,
+          -54.77244059877841
         ],
         [
-          149.39663080768804,
-          -35.943012975274605
+          158.92260055841064,
+          -54.77244059877841
         ],
         [
-          149.39663080768804,
-          -35.1693866963762
+          158.92260055841064,
+          -39.76038974278361
         ],
         [
-          148.75649368931482,
-          -35.1693866963762
+          143.86284933617162,
+          -39.76038974278361
         ],
         [
-          148.75649368931482,
-          -35.943012975274605
+          143.86284933617162,
+          -54.77244059877841
         ]
       ]
     ]
   },
   "bbox": [
-    148.75649368931482,
-    -35.943012975274605,
-    149.39663080768804,
-    -35.1693866963762
+    143.86284933617162,
+    -54.77244059877841,
+    158.92260055841064,
+    -39.76038974278361
   ],
   "properties": {
     "title": "Australia \u2014 Tasmania",
@@ -118,9 +118,7 @@
       "title": "Australia \u2014 Tasmania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 21214870,
-      "file:checksum": "12206e3ffb261b5397a88c25490604da34b0450144925c379604aa0c1d59dc5c7437"
+      ]
     },
     "pmtiles": {
       "href": "./AU_TAS.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Australia \u2014 Tasmania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 18397436,
-      "file:checksum": "12207f8180a4f74ad5bffaa7b4589d5aac2b60c661326def88dc6f637950ed5eac4a"
+      ]
     },
     "style-2025": {
       "href": "./AU_TAS.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220090baa67afa1a8ee33b475d500ef3c74e8ddddd6da542915da13c6daf721a166"
+      "file:size": 902,
+      "file:checksum": "1220e60600abdc0f3c727952c736858a29080bcb474b7649408eee51b98ab2af06db"
     },
     "style-2024": {
       "href": "./AU_TAS.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220659916cf7f099b8e5ca35b7ca2e6507580b791b7de0279067bc6a2fdcb964b11"
+      "file:size": 902,
+      "file:checksum": "1220aa2b40dafcadd91d82927f2a89070bb7782dbfcc99a15fd78e87553d0f5d984a"
     },
     "style-confidence-2025": {
       "href": "./AU_TAS.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12200aaa0e9c4a1ce72ccb0824c7742245ad85c7ec5cd298098ad867ca2bec2d909a"
+      "file:size": 2646,
+      "file:checksum": "12204489209cbf3a39c1b5a6dbfebef5d48a4b1a55cf202636054cb3f7712837b76a"
     },
     "style-confidence-2024": {
       "href": "./AU_TAS.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220725edee1ddcc7d71a9da1446143e0b8a396b16d0bb2fb066cbc2228a6d78675b"
+      "file:size": 2646,
+      "file:checksum": "1220dd979114c55ad3a2e2498381cdbb88fb9ef00c87b455a1455a64f26f7c6f5165"
     },
     "README": {
       "href": "./AU_TAS.README.md",

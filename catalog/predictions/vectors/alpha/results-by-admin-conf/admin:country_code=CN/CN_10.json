@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          82.16076372213222,
+          42.005673651622196
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          128.4373953060604,
+          42.005673651622196
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          128.4373953060604,
+          47.103414487075796
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          82.16076372213222,
+          47.103414487075796
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          82.16076372213222,
+          42.005673651622196
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    82.16076372213222,
+    42.005673651622196,
+    128.4373953060604,
+    47.103414487075796
   ],
   "properties": {
     "title": "CN_10",
@@ -118,9 +118,7 @@
       "title": "CN_10 field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 918446,
-      "file:checksum": "122016bc622e28ededd1277709909dee7b9bd542f340f51adfc42892d577e5dccc43"
+      ]
     },
     "pmtiles": {
       "href": "./CN_10.pmtiles",
@@ -128,9 +126,7 @@
       "title": "CN_10 field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 441100,
-      "file:checksum": "12206d5b6cf9128f8a9a2a0583a983f65aa0231cab4e7630e44a5ac2da9e89ac3c02"
+      ]
     },
     "style-2025": {
       "href": "./CN_10.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205932a6a008081e862304b7e376cde2f494ec9a38f8657a4554d7c343c1c724b3"
+      "file:size": 899,
+      "file:checksum": "1220bb9a37cad6bae82d6ae1ff02b8f677b7f547c32481bd565623d3892995e26bb7"
     },
     "style-2024": {
       "href": "./CN_10.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205d35fc99adc013ba17ed890d0c49bf6724c33c2f7368a317b92ae5017498121f"
+      "file:size": 899,
+      "file:checksum": "1220c6c86c9cd744ba972be08e7bb7deace2be10959c0d32d8a88e7622943d360f0f"
     },
     "style-confidence-2025": {
       "href": "./CN_10.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12204b05ed86806ff3e97a58f3faf95299f510939fd23141f5afe090ad2ec75d7be1"
+      "file:size": 2643,
+      "file:checksum": "12203675eb3763e6292994e0f4263a32e0fe8e43abae7f5e592a3affcb619af469e8"
     },
     "style-confidence-2024": {
       "href": "./CN_10.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200a705788dbbec72e8f799a9e4f0cbd19f9cc7b8865c8b5da39a26eff563c50ef"
+      "file:size": 2643,
+      "file:checksum": "12204412318505329f03e50d7db685bd8764c4d8bfd13d9081f48948d9a4469b5f43"
     },
     "README": {
       "href": "./CN_10.README.md",

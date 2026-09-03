@@ -118,9 +118,7 @@
       "title": "Timor-Leste field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 29423391,
-      "file:checksum": "122072898b29caed859aab6e33fa9c7c5ecd32838358ad001f93d0548e4be0007e55"
+      ]
     },
     "pmtiles": {
       "href": "./Timor-Leste.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Timor-Leste field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 29346832,
-      "file:checksum": "1220acf37672b6bb85310f3a99fcc0cb404f890a89b1d0e525b17dcd39b9bf276375"
+      ]
     },
     "style-2025": {
       "href": "./Timor-Leste.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220090fc73e75e8d2d67370d47080b5ebaa0b78636d959050dfc9c3eea3d4d7e950"
+      "file:size": 917,
+      "file:checksum": "1220bfc52b3f0cb83f730f1bed8e30e69099225517ac393c2ca03c45c61501eda4e7"
     },
     "style-2024": {
       "href": "./Timor-Leste.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "122080c9e283e62e143741eb09f27316f537e7ae06b56cd45b7dbb804dcecf4ffb20"
+      "file:size": 917,
+      "file:checksum": "1220c84b4283cf11b431f79359067bb5fe2c5197b77eb54a8e52c319747e36db23b8"
     },
     "style-confidence-2025": {
       "href": "./Timor-Leste.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12202c0fe58446966dd2904a884ecde803672de9c87e23106db9493ae95584327a45"
+      "file:size": 2661,
+      "file:checksum": "12204329d93c51d8a097967f548302a32dfd9c55448faa6b4fa3f750cd85c27e94f9"
     },
     "style-confidence-2024": {
       "href": "./Timor-Leste.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12208b9204a70dd679567e66d6f79d30ac0b08e28efba49c5e5978f037bcc81b9b3e"
+      "file:size": 2661,
+      "file:checksum": "1220412fbbbe4b1bea928b861df02d888269f072956362d198379495b16d5ed58666"
     },
     "README": {
       "href": "./Timor-Leste.README.md",

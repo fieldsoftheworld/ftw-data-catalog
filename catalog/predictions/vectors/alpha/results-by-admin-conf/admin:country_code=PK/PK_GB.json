@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          72.60371237683243,
+          34.62738818746519
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          76.88677407581021,
+          34.62738818746519
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          76.88677407581021,
+          36.8507103429152
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          72.60371237683243,
+          36.8507103429152
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          72.60371237683243,
+          34.62738818746519
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    72.60371237683243,
+    34.62738818746519,
+    76.88677407581021,
+    36.8507103429152
   ],
   "properties": {
     "title": "Pakistan \u2014 Gilgit-Baltistan",
@@ -118,9 +118,7 @@
       "title": "Pakistan \u2014 Gilgit-Baltistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2779767,
-      "file:checksum": "122009230c70b24a52a7412f721e26d54b63bd56cf6eb7241e3ba6d1e2105100dd9a"
+      ]
     },
     "pmtiles": {
       "href": "./PK_GB.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Pakistan \u2014 Gilgit-Baltistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3052748,
-      "file:checksum": "12204493a7366abfb6294b510df7add24a936da83469da93f71f54b4e54912df2e7b"
+      ]
     },
     "style-2025": {
       "href": "./PK_GB.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207b82e432753860d34575cf01592e7eecb31ee98e67ac317c7fbef3c091553f03"
+      "file:size": 899,
+      "file:checksum": "1220c2e8a5da985478302a4f20d1f6a7b8296192a36dc6d84e470ff3122883a188dc"
     },
     "style-2024": {
       "href": "./PK_GB.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208b2e417239d77f3840b714350f5f59e1309379bd9b1241fe1b38d2c25a039426"
+      "file:size": 899,
+      "file:checksum": "122028168d4c65036a67355356f460a6f049f6f8aa12f2301d7d513bca51011b7af9"
     },
     "style-confidence-2025": {
       "href": "./PK_GB.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201b022ae70840ddc97eb8f66e99bd705845110f7be58e1464b3961a7c9949e92a"
+      "file:size": 2643,
+      "file:checksum": "1220a664c46e6148f89be86610c988b5f00b501b5d2b641f71e5aab967c6bb96169a"
     },
     "style-confidence-2024": {
       "href": "./PK_GB.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201d85b14764a0e768119f705517099e9b39e36bb4a20820b20c014440badf085f"
+      "file:size": 2643,
+      "file:checksum": "122082e7f67de609fea96ef673ce4d0c08db85f293bbf23f05cb307a0917e041d9fd"
     },
     "README": {
       "href": "./PK_GB.README.md",

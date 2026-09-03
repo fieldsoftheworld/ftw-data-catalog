@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -48.2862632760248,
+          -16.098492812110813
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -47.31500836108639,
+          -16.098492812110813
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -47.31500836108639,
+          -15.47380665982801
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -48.2862632760248,
+          -15.47380665982801
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -48.2862632760248,
+          -16.098492812110813
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -48.2862632760248,
+    -16.098492812110813,
+    -47.31500836108639,
+    -15.47380665982801
   ],
   "properties": {
     "title": "Brazil \u2014 Distrito Federal",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Distrito Federal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 16219415,
-      "file:checksum": "12201ecbf2a385bf9db18b1aac83f0335846b5024705b3600137af88789decc4d679"
+      ]
     },
     "pmtiles": {
       "href": "./BR_DF.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Distrito Federal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 14826956,
-      "file:checksum": "1220aeac8325fb3ec94b32ae9fc168fea422d89949289feafc124cb9483eb4ed5d33"
+      ]
     },
     "style-2025": {
       "href": "./BR_DF.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122078f777174b1be6deb21451a40db2915baed4b6d09527e20d6fc5f1543fa87cb2"
+      "file:size": 899,
+      "file:checksum": "1220c9aa3937f5b2f396f783e4c71c0448256b3be1cc67f7814089458ee298113a0c"
     },
     "style-2024": {
       "href": "./BR_DF.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220426d712d45005fd7a9b51b9e70c93020fb71f564187215679da660dc5d860573"
+      "file:size": 899,
+      "file:checksum": "1220fe07a6f86765c7254fce47aab0d99d065cc538b7b7be49a0d1feed2759d0418d"
     },
     "style-confidence-2025": {
       "href": "./BR_DF.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220bfe96e411859b2ab8a8ad3bd1e515e0682f3b3ad01350239decd825e2f1a0d5a"
+      "file:size": 2643,
+      "file:checksum": "122027b380f71932b32fec6295b1ff688affb1da31bb7c0dd844d7d7a79e7db3f663"
     },
     "style-confidence-2024": {
       "href": "./BR_DF.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b2b45f688d0329cb1d9b2396773cdd5c76c24aaf2e802833fe85e3990127300a"
+      "file:size": 2643,
+      "file:checksum": "1220e737987c8b02db11027b857f343adf867dd204af4bbfc2345372e43eb9e9745d"
     },
     "README": {
       "href": "./BR_DF.README.md",

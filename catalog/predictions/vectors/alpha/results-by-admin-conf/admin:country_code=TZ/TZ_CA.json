@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          30.51384344741161,
+          -3.415315769451012
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          30.84792567351741,
+          -3.415315769451012
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          30.84792567351741,
+          -2.89420498869281
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          30.51384344741161,
+          -2.89420498869281
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          30.51384344741161,
+          -3.415315769451012
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    30.51384344741161,
+    -3.415315769451012,
+    30.84792567351741,
+    -2.89420498869281
   ],
   "properties": {
     "title": "TZ_CA",
@@ -118,9 +118,7 @@
       "title": "TZ_CA field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 354407,
-      "file:checksum": "12204e15dbf2e9f75d447c46b392815d31aaa483d824ce6326ccf1ada41a3b768ddd"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_CA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "TZ_CA field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 265587,
-      "file:checksum": "12209b98df01d9fca89921821effc3fe6fad7597d65f2c454c1225a2bb9ac971e969"
+      ]
     },
     "style-2025": {
       "href": "./TZ_CA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c1d7a280e0c32a692fc76827c982ad424b6be4790f042dd907b49f01469b3639"
+      "file:size": 899,
+      "file:checksum": "12205702af92fa6b62c20f9373b7b345d903d1e6e97499734818e911041d1a5fa43f"
     },
     "style-2024": {
       "href": "./TZ_CA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b8cc5dc5b23b19095d086f70eecbf80f35a5859efcd550b332ffdc693dd0493b"
+      "file:size": 899,
+      "file:checksum": "12209e091d39ce07da1570e01852802ea5d72eacb77297a73e8f161f79d03b430380"
     },
     "style-confidence-2025": {
       "href": "./TZ_CA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203d35a117132dc3915f4cdf605233c7471f262c6ab665a4e73835d0995662ee08"
+      "file:size": 2643,
+      "file:checksum": "122095fdac836dbae9b0715f7299d57a1d132d7f82edba04af9d0a72933ba20bca2f"
     },
     "style-confidence-2024": {
       "href": "./TZ_CA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201bba434e67e982ba6e77ecf77cccd026d43bfd5aa24ae69c04923019f1eac404"
+      "file:size": 2643,
+      "file:checksum": "122063140a4e8b960222a8dc0b71ce1de260f2bbcfe1a9c1155d333979f6c96cdf9b"
     },
     "README": {
       "href": "./TZ_CA.README.md",

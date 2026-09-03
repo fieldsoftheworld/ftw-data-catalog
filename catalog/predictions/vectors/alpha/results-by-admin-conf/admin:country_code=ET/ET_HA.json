@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          42.05589477933682,
+          9.184857246071989
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          42.28460500995402,
+          9.184857246071989
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          42.28460500995402,
+          9.38994187156259
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          42.05589477933682,
+          9.38994187156259
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          42.05589477933682,
+          9.184857246071989
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    42.05589477933682,
+    9.184857246071989,
+    42.28460500995402,
+    9.38994187156259
   ],
   "properties": {
     "title": "Ethiopia \u2014 Harari People",
@@ -118,9 +118,7 @@
       "title": "Ethiopia \u2014 Harari People field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5885941,
-      "file:checksum": "12204426b786d157aac0f39268bd7fd8d68ac94c726c4a552d21da0a5853160000f1"
+      ]
     },
     "pmtiles": {
       "href": "./ET_HA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Ethiopia \u2014 Harari People field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 6647330,
-      "file:checksum": "122068d0ee1831569435c55213fb9918dd8396e67ef5e0ef9162058860f51587b8ec"
+      ]
     },
     "style-2025": {
       "href": "./ET_HA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205ad29cf373a462f5c4e722867ef6fc842b5f0322e255cf8b90a9ca4b547a996b"
+      "file:size": 899,
+      "file:checksum": "122064a0ffa6424bc3f171797c1c4ba12adc9a698c32abc1e0c62ecfcdea66a3b4a4"
     },
     "style-2024": {
       "href": "./ET_HA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206251556ac5e8ca1176d1519861b9a32e163d0b2142da4a63b5402bd14d7a8db1"
+      "file:size": 899,
+      "file:checksum": "1220308b6fdd7f37af60b40d93e6cd8a7af6c949af1f3a68cadf732391e79d28fd94"
     },
     "style-confidence-2025": {
       "href": "./ET_HA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220460c513b17744b03c2cebd801ae6446e36fef079c937d63817434ff4ce263b37"
+      "file:size": 2643,
+      "file:checksum": "12209eb7330feb0b530d8e87afca92088c1ec73866f9e0400c17a7c83a0aeca7f78b"
     },
     "style-confidence-2024": {
       "href": "./ET_HA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122057c3a320ced2caf6d373546cc293fa85bbaf5caa6cdf663a479e4f1fb0ec5afd"
+      "file:size": 2643,
+      "file:checksum": "122065922a71f64b5524dda8bdf4f8c4bf3df409695adea7ec436d7a81259ac798d5"
     },
     "README": {
       "href": "./ET_HA.README.md",

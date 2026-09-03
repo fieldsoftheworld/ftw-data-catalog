@@ -118,9 +118,7 @@
       "title": "Papua_New_Guinea field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 150736955,
-      "file:checksum": "12203e6ca49ec0ccdf540dcf123f93cee866f78dc74fc6c9f2e53139a8d4dd7fbc81"
+      ]
     },
     "pmtiles": {
       "href": "./Papua_New_Guinea.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Papua_New_Guinea field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 135525206,
-      "file:checksum": "12209571684d6625d9cacee3d6ea70994a13e072d6d6ebf180520f04d0b79b322366"
+      ]
     },
     "style-2025": {
       "href": "./Papua_New_Guinea.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 933,
-      "file:checksum": "1220bb29a18b83bc1d5b6fc8b3e9378716d4b7cbd1e7fd4fb05bbd2d8488bbab085d"
+      "file:size": 932,
+      "file:checksum": "1220369848f98ce2c03aa3616ee1f9f4ae6d03a7256d62b045d4a78bc9b2054367c1"
     },
     "style-2024": {
       "href": "./Papua_New_Guinea.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 933,
-      "file:checksum": "1220263f96bf45e8ffcd87e7acc936e43583645e26844e2e2e6c82186f70844dd113"
+      "file:size": 932,
+      "file:checksum": "122021aadce434faf6385030f939cd7c7dd34cfac050624a3684f613338717b19d4a"
     },
     "style-confidence-2025": {
       "href": "./Papua_New_Guinea.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2677,
-      "file:checksum": "1220d15eb36a1dfe5f720a94b036ded8a33e59b2b529df76b412b01654818be4b6a0"
+      "file:size": 2676,
+      "file:checksum": "1220c014d07506961f830b921977ddb6f98427e0585a5f99dac811d7c00af4b95e90"
     },
     "style-confidence-2024": {
       "href": "./Papua_New_Guinea.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2677,
-      "file:checksum": "12203b06d5173dce119fa84c190ea2246aea6a45b9640e2176b0c509f491d0169201"
+      "file:size": 2676,
+      "file:checksum": "12207ec4c8083dd6f0e74d44abd238738bdb74e4616e0d7e33b185b3d0eeede1320f"
     },
     "README": {
       "href": "./Papua_New_Guinea.README.md",

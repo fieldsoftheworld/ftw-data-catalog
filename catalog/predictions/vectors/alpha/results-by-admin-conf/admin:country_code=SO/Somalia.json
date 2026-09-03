@@ -118,9 +118,7 @@
       "title": "Somalia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 791059581,
-      "file:checksum": "122035de16b15c856381ae3298ef3ceb125ad327ba84418f1142686486208b60ba72"
+      ]
     },
     "pmtiles": {
       "href": "./Somalia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Somalia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 458064819,
-      "file:checksum": "12202c8dbc6188bcf2d123aa454abdeda098dd917480101d19cad02c9afbc0b131d5"
+      ]
     },
     "style-2025": {
       "href": "./Somalia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220d88550d7cc870046fd86b6e0990cd235a5a151c8a36874cb576e209dce8e64f2"
+      "file:size": 905,
+      "file:checksum": "122094a77b96599baf0b9213588ada2cd094226850e31c9085599863e2f3fa5d91dc"
     },
     "style-2024": {
       "href": "./Somalia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12200dd210941402dce2a56d2d36d7658b8ae7d85b920835b21ad7569fc7244eb4cc"
+      "file:size": 905,
+      "file:checksum": "1220ab98fa4a7fd820673cadf5b04be6d0c965ba2013382182dc7351588f7b27688e"
     },
     "style-confidence-2025": {
       "href": "./Somalia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220301613eda45dd9330a45e50ce52fd8c788ea4056234d67e1462a5331c6da899f"
+      "file:size": 2649,
+      "file:checksum": "12201db4afe822bdcdbb24e15e5fd67a85261e5b836a8597e0686646b2fe2dac6d01"
     },
     "style-confidence-2024": {
       "href": "./Somalia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220639ad1c46b121cb3afe0d7fc64cd26dfd9848ad59829d153528755438343618c"
+      "file:size": 2649,
+      "file:checksum": "1220c7e0dca0c8d68cb7d59985a2f8844c5def1975a775204afce7b379526793f528"
     },
     "README": {
       "href": "./Somalia.README.md",

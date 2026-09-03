@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -61.554151587768395,
+          -18.0869063842678
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -50.217274712531996,
+          -18.0869063842678
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -50.217274712531996,
+          -8.182567626726803
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -61.554151587768395,
+          -8.182567626726803
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -61.554151587768395,
+          -18.0869063842678
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -61.554151587768395,
+    -18.0869063842678,
+    -50.217274712531996,
+    -8.182567626726803
   ],
   "properties": {
     "title": "Brazil \u2014 Mato Grosso",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Mato Grosso field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1193432862,
-      "file:checksum": "1220ddd65369f461896bc8aa5497dae0f18fed06cd079013e5157a0d054b34ad1108"
+      ]
     },
     "pmtiles": {
       "href": "./BR_MT.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Mato Grosso field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 689182762,
-      "file:checksum": "1220efd398c42014547665a74d0621c08d7d55659a6eccace4c02008a7f4e9f1f605"
+      ]
     },
     "style-2025": {
       "href": "./BR_MT.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ba33a441b37ebddb0a18c1e846cf60f368123417f960867399174674e8bb478d"
+      "file:size": 899,
+      "file:checksum": "1220975f722711517010abf32826e5dc01cea1f78e21bba6e1526a3e5f299fb9c815"
     },
     "style-2024": {
       "href": "./BR_MT.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122025350523da9133d704614110058ac2a22d97c937c2a12cd96c3d95e68210f256"
+      "file:size": 899,
+      "file:checksum": "1220ae5dea9564f7626596deeecaf710880498cfea4abb87496fa87afc45e6d23e77"
     },
     "style-confidence-2025": {
       "href": "./BR_MT.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220093d1dc97717ffb8676c51ddf0577287488d345aa0b554c0e7cea3d0cfc578bd"
+      "file:size": 2643,
+      "file:checksum": "1220f453abd87fcabde670115e1285ce989e52c7a6b383675a3bbb0e8a464e85de7a"
     },
     "style-confidence-2024": {
       "href": "./BR_MT.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220634bb9d85f1e555e47f8cb0f33637fbefe52a31c4d2e9034be912f7499b54666"
+      "file:size": 2643,
+      "file:checksum": "12209b5384238e17ca665756fb3c1550f9dc06feec76407aee7ec0a9edf614768c11"
     },
     "README": {
       "href": "./BR_MT.README.md",

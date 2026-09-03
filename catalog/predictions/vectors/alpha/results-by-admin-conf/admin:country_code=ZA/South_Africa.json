@@ -118,9 +118,7 @@
       "title": "South_Africa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3450977919,
-      "file:checksum": "1220b4bd47e22ccb63f1dc62009ebc601cf2b6ce7c79036fb7244a43f5ca9a6f7371"
+      ]
     },
     "pmtiles": {
       "href": "./South_Africa.pmtiles",
@@ -128,9 +126,7 @@
       "title": "South_Africa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1984000272,
-      "file:checksum": "1220e3dc7c322b46b2ac629065a3cec4e7746765312ab24aa3b14eafba5e93d8240c"
+      ]
     },
     "style-2025": {
       "href": "./South_Africa.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 921,
-      "file:checksum": "12207d40cd8d03e53bbc1da68cb6b3de47a2e4910f1a9b76b1e9b1f38e050508351a"
+      "file:size": 920,
+      "file:checksum": "12202a1405bdf5e295dfc135fc821d670883915ed0d659582d5b827e96548c5ad7bf"
     },
     "style-2024": {
       "href": "./South_Africa.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 921,
-      "file:checksum": "122029e703d7bc974f49ed97f79b46e33dc6c2ece0c48d3f375bc05684fd317716fb"
+      "file:size": 920,
+      "file:checksum": "1220e66aa91dc0cb91b0411f3379feb1773ddaaae7a2b537af708133b10bccfa0649"
     },
     "style-confidence-2025": {
       "href": "./South_Africa.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2665,
-      "file:checksum": "1220509da5a8ee4ed2daca6a8c5524b0918c40a5cfca9c25ed341bc610c2f6b894ee"
+      "file:size": 2664,
+      "file:checksum": "122010d6998d53b92ec7943ff69d7a792f9763affd7df59d26ce27ef243a74c76d96"
     },
     "style-confidence-2024": {
       "href": "./South_Africa.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2665,
-      "file:checksum": "1220b6c128ec7a57dc7b078b9153b232b775a60e2ad444742d6894dd8b5b1cdb214b"
+      "file:size": 2664,
+      "file:checksum": "12202886878ce557326c609a606831e621e89f33c941b2fbbcf1f4d4c7f787a43082"
     },
     "README": {
       "href": "./South_Africa.README.md",

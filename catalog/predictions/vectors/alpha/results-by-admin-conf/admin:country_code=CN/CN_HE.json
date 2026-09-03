@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          113.49640092784185,
+          36.045643144646796
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          119.848903939753,
+          36.045643144646796
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          119.848903939753,
+          42.648954861932395
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          113.49640092784185,
+          42.648954861932395
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          113.49640092784185,
+          36.045643144646796
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    113.49640092784185,
+    36.045643144646796,
+    119.848903939753,
+    42.648954861932395
   ],
   "properties": {
     "title": "China \u2014 Hebei Sheng",
@@ -118,9 +118,7 @@
       "title": "China \u2014 Hebei Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1618377499,
-      "file:checksum": "1220ee1120bdd1dec62c9f13d459d9681a2759464c6538baa038f8d463b2a4cec1b2"
+      ]
     },
     "pmtiles": {
       "href": "./CN_HE.pmtiles",
@@ -128,9 +126,7 @@
       "title": "China \u2014 Hebei Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 978459686,
-      "file:checksum": "1220cf3e62ddc3e7f6a2ce373923ae8d4892df18dfbc7e85b58b48e5adfe9d6021d6"
+      ]
     },
     "style-2025": {
       "href": "./CN_HE.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b004984481cd57b072ac03ba8ec754449a0494b5d6cdfbbea4c01ecee9663b71"
+      "file:size": 899,
+      "file:checksum": "12205e7df9552f3417c3055bfc07dff97f7981bf26c60cc9a4f05f686742233d5e63"
     },
     "style-2024": {
       "href": "./CN_HE.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220eaa03d7cd8e758c6ccb067cca4b6e9e1563d11488a4294b50e0f1a3dd8a05bc1"
+      "file:size": 899,
+      "file:checksum": "122081111f0389afc3dce07e6c76b466dcff80d63141fed0669b79db912cf81d805e"
     },
     "style-confidence-2025": {
       "href": "./CN_HE.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209f985dfa948dc1a0ea312df11e90908cdeb7293c9fd147577ebd8490046d32fc"
+      "file:size": 2643,
+      "file:checksum": "1220eee826eb78ec3ed906466a0acc0a2675cea94739fecac134ca281bca5e8f58fb"
     },
     "style-confidence-2024": {
       "href": "./CN_HE.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207e1960e79490e2a869690ac87c6ee14c9068cd067f15ba91f6ab9df03555f1c3"
+      "file:size": 2643,
+      "file:checksum": "12203f065d016c5e48c02dcb17271dd44040de0c61980db1e6b478431d9f4ba440c9"
     },
     "README": {
       "href": "./CN_HE.README.md",

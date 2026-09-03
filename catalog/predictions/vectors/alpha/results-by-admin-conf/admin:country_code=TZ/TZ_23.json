@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          33.48743577022801,
+          -7.541801689966203
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          35.35700266716641,
+          -7.541801689966203
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          35.35700266716641,
+          -3.807698443188612
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          33.48743577022801,
+          -3.807698443188612
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          33.48743577022801,
+          -7.541801689966203
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    33.48743577022801,
+    -7.541801689966203,
+    35.35700266716641,
+    -3.807698443188612
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Singida",
@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Singida field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 583536290,
-      "file:checksum": "1220752f5597113807832546381710576054ae16b82784a265ce3107d974250065b0"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_23.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Singida field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 317895610,
-      "file:checksum": "1220b15c5485f2cbf07384225e135d278fefefd9b15325e85b2ebb66ea66f72d352a"
+      ]
     },
     "style-2025": {
       "href": "./TZ_23.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a94b9f4de75963af1e65ded7b8e01e4f9f4735a66f97915a4a2bbbe4949c959a"
+      "file:size": 899,
+      "file:checksum": "122069b1d3f8c66e1ca6bab09732e1c18175c451fa6432321ad4c499c2206545c493"
     },
     "style-2024": {
       "href": "./TZ_23.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220761cc4200df151219e024563e8aa886028fa3d67d398edd4e0ae1037f006c73f"
+      "file:size": 899,
+      "file:checksum": "122004211939b681fbc9de7ac3691bf60a6a902e893f5b802538cfbf394b5ae6f265"
     },
     "style-confidence-2025": {
       "href": "./TZ_23.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220107a660ef92b16917106db0cf5854aaf942837b7f669d706c06a826aab89fef6"
+      "file:size": 2643,
+      "file:checksum": "122005882cae6587159216ea4eebad991ca9a4c45a2a841487d81fa91435a0c7b279"
     },
     "style-confidence-2024": {
       "href": "./TZ_23.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220dc0a2aed8dbe4dd50bca6a5f8e835de749983a111dfe854b59510746f1225617"
+      "file:size": 2643,
+      "file:checksum": "12207a5abfd10b2ee5a23be9deb6c8dc52b924db9ef94c2b6d1f550daa48211854a6"
     },
     "README": {
       "href": "./TZ_23.README.md",

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          9.108326553126412,
+          6.4985450950992
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          11.913844704110616,
+          6.4985450950992
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          11.913844704110616,
+          9.63329458748639
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          9.108326553126412,
+          9.63329458748639
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          9.108326553126412,
+          6.4985450950992
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    9.108326553126412,
+    6.4985450950992,
+    11.913844704110616,
+    9.63329458748639
   ],
   "properties": {
     "title": "Nigeria \u2014 Taraba",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Taraba field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 831323511,
-      "file:checksum": "1220802dfaa1fa62e89edc4b8ed03c906587a16a707a4ae2733eba1dc3c1ed5c8133"
+      ]
     },
     "pmtiles": {
       "href": "./NG_TA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Taraba field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 398208993,
-      "file:checksum": "1220342a2c26d8fc8c592a923b02b3aa1b6b6f01c90c19dcc7802dd96b87664d9bd8"
+      ]
     },
     "style-2025": {
       "href": "./NG_TA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ef2d47a1203f5cd496b61bee738a7b483e6bafacec35f63d546ab008a8bf9275"
+      "file:size": 899,
+      "file:checksum": "122069591be0f8afa3461b213ca904af80703c5914f046e682a99787f3533e4bdd9d"
     },
     "style-2024": {
       "href": "./NG_TA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206159afe3670a5719ef87e9d62b9c8bb3e5425083372ebb50fbef16ca4ee231c1"
+      "file:size": 899,
+      "file:checksum": "122064fe720949debd5fcdec8d35178c3003494eaea107d9d5b8ee363da81760e9a7"
     },
     "style-confidence-2025": {
       "href": "./NG_TA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122044bb7b1a2c247faec1944397e4e415603aa46e4a3e8bda49ce71f03af77b7ea5"
+      "file:size": 2643,
+      "file:checksum": "12202558770bdf013ebf82721738f4b47f2e6018ba0d1598fce7b686652e323fd49c"
     },
     "style-confidence-2024": {
       "href": "./NG_TA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b0f81586d1d9b3cca56f5135cedd9ec91146bf4098555f82278146c91f61c0a6"
+      "file:size": 2643,
+      "file:checksum": "1220d96ad9e4f13cd037ce4c07261d7adb28c7f18e3dfee43c68172b5784f1f961a5"
     },
     "README": {
       "href": "./NG_TA.README.md",

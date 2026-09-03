@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -65.42551690539558,
+          -13.536507039446809
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -61.63868274527459,
+          -13.536507039446809
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -61.63868274527459,
+          -10.471646219259206
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -65.42551690539558,
+          -10.471646219259206
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -65.42551690539558,
+          -13.536507039446809
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -65.42551690539558,
+    -13.536507039446809,
+    -61.63868274527459,
+    -10.471646219259206
   ],
   "properties": {
     "title": "BR_B",
@@ -118,9 +118,7 @@
       "title": "BR_B field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 91551,
-      "file:checksum": "1220f0410b5d1ba315755f7a754a43c6a24308367238b5387cfc67deefc2401bba60"
+      ]
     },
     "pmtiles": {
       "href": "./BR_B.pmtiles",
@@ -128,9 +126,7 @@
       "title": "BR_B field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 78469,
-      "file:checksum": "1220ea2081aea77449a443c4e90f7eca9975330f4f429a3adeab255ab2e15f9ba22d"
+      ]
     },
     "style-2025": {
       "href": "./BR_B.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220e1572769da37c90139e7ad1cae8da12df52738a35da3d93efb8a0c3f9132f5de"
+      "file:size": 896,
+      "file:checksum": "1220cb75c24762cb5d0288b5c8c0f9377add020c797cd33678429f80086b0c20f595"
     },
     "style-2024": {
       "href": "./BR_B.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12201d425eff683766702e4544a4a9e0ca91c2c752d7580c604261a0b949c2d176c9"
+      "file:size": 896,
+      "file:checksum": "122091b2f14aa3ce96761805d79f1d7167c5bdea3478bc2ef93a4865a2f2ab7ae56a"
     },
     "style-confidence-2025": {
       "href": "./BR_B.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220a589ac879ed786391db3f374a7a6f5dce0316ede22f4719f710145a9abdaccb4"
+      "file:size": 2640,
+      "file:checksum": "12200197ebf83abae82ac1446d59620b0076b022de32cc30ae8f11ca43ad1582c2c1"
     },
     "style-confidence-2024": {
       "href": "./BR_B.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220fb548644fe2d72e7c77f932747744f82a250990900230fcd829114371d5f1621"
+      "file:size": 2640,
+      "file:checksum": "12206c946e7888612ae4ecdc358ea74c1b575ddc9874adc423f7ce8bef5d77b17b56"
     },
     "README": {
       "href": "./BR_B.README.md",

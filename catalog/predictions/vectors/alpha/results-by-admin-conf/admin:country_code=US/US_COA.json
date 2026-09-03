@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -103.3080518359212,
+          28.975119365522996
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -101.299785568962,
+          28.975119365522996
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -101.299785568962,
+          29.6611602261764
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -103.3080518359212,
+          29.6611602261764
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -103.3080518359212,
+          28.975119365522996
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -103.3080518359212,
+    28.975119365522996,
+    -101.299785568962,
+    29.6611602261764
   ],
   "properties": {
     "title": "US_COA",
@@ -118,9 +118,7 @@
       "title": "US_COA field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 33470,
-      "file:checksum": "1220d7bfe21c8cd755b7ad418ead66ff29df4f410074ed03fb4d2cca7f07f454a64f"
+      ]
     },
     "pmtiles": {
       "href": "./US_COA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "US_COA field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 21210,
-      "file:checksum": "1220971f48e3c481d522814d3d4ef9f03a6c15acf631fd8fb858f30cd92839538a0a"
+      ]
     },
     "style-2025": {
       "href": "./US_COA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12201a3590d8f1cc9b7e1d1633ad27834e8097c04a66eb5eda461c1261f77263c9e1"
+      "file:size": 902,
+      "file:checksum": "12206ef48320725b7e2d5338fc6f28fed58543f3c29f8a12a3c09dfee14b5da5983e"
     },
     "style-2024": {
       "href": "./US_COA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12205eadc295338a98d27325589ca656859e1f3377e96e4bcf2f34e05a6aeca95035"
+      "file:size": 902,
+      "file:checksum": "122020fd6d5490c514346a4f16eb111b8e764ac8a845666be6e266fe2ca5a76696f4"
     },
     "style-confidence-2025": {
       "href": "./US_COA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220b2d2e70d7758c556fe76e89877cc98213f362b06cf59f8fac0542aa612f864d8"
+      "file:size": 2646,
+      "file:checksum": "122085efde9c47a514573c34549c797d98ea353fd407847ad883b753d0468e29658e"
     },
     "style-confidence-2024": {
       "href": "./US_COA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12200ca704245f749b0227fa7ce195887c98d66fba56c13e5cac7a05bac4ca4232ee"
+      "file:size": 2646,
+      "file:checksum": "12201f841921112f684683d17ea963065a3c1bc980cedc7709cd4cc6a95443eb87ae"
     },
     "README": {
       "href": "./US_COA.README.md",

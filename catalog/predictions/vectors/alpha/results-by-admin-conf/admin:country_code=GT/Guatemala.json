@@ -118,9 +118,7 @@
       "title": "Guatemala field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 635607331,
-      "file:checksum": "12206950634b9e22e885cd0bb11f79588349251696d6c6442965f5f476b4bb605f53"
+      ]
     },
     "pmtiles": {
       "href": "./Guatemala.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Guatemala field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 397452795,
-      "file:checksum": "1220be37eddb492fce4304b3d8f4bf146228e2a2528efc7a790fa1cc97faeffc67c5"
+      ]
     },
     "style-2025": {
       "href": "./Guatemala.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220addf172578afbd6deba6c1913febcd4e05367b1087dc4f5d75d6b1f6f0fb3147"
+      "file:size": 911,
+      "file:checksum": "1220a1e6ed73d87089e59182afff81f924fc0f4d161a3629795509be67a35f2e44af"
     },
     "style-2024": {
       "href": "./Guatemala.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "12200580a67e6fa3f6399f014edfeefa3db4b50d40f1a03940b6b638ae22b54698e4"
+      "file:size": 911,
+      "file:checksum": "1220cf73757db6c227f5dcc64cbaaeca60a93d0dad6c930e7e6b5801fdd0ec7fda99"
     },
     "style-confidence-2025": {
       "href": "./Guatemala.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12209646332f050c5b04d17df932f4b17dc79219e904d3f88831dcc3d4d4ad86373c"
+      "file:size": 2655,
+      "file:checksum": "1220915908418c29b5d5b47f9615f576212c9a6abee306a84a03f80168965912dd3a"
     },
     "style-confidence-2024": {
       "href": "./Guatemala.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "122068ec81561d1706f0fb9307f7b73f3fceaf0d0bf754ecc94bf3a9dff73795421b"
+      "file:size": 2655,
+      "file:checksum": "1220f37799a9a5851f3613a221b45df9f904d5f8a1a012ab2c6ec98879b7a474689d"
     },
     "README": {
       "href": "./Guatemala.README.md",

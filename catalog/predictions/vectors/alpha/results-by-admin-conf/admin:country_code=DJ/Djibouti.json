@@ -118,9 +118,7 @@
       "title": "Djibouti field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 27292533,
-      "file:checksum": "1220fbb4fba97bbce2ef7c634d2c40330c9832483ac45805c7407c3f4d91a02607a7"
+      ]
     },
     "pmtiles": {
       "href": "./Djibouti.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Djibouti field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 24179720,
-      "file:checksum": "122052227f9b454c3448f81542f35b7bd57fd6b049388f5fbc64866ff715af8f45e9"
+      ]
     },
     "style-2025": {
       "href": "./Djibouti.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220449b8422194d1a65a94ee1a9ebcfd6c2ce57c10a01c4b2407eecc4f9e7451fb8"
+      "file:size": 908,
+      "file:checksum": "1220aea8eed6c2c143b7d02b8bbaefe2e813010b86a7a19f8aec4d2b4e85c2158877"
     },
     "style-2024": {
       "href": "./Djibouti.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122063450025c174071fa1181141673cc549c7fd273dc222324f2917cafe3f03a2dd"
+      "file:size": 908,
+      "file:checksum": "1220ecd0d7d1177f2b28acbe5d3bdaa0995b6c058f8e86e96845e4f28d77e465e8bb"
     },
     "style-confidence-2025": {
       "href": "./Djibouti.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122059e67456ecab160aac7f33ebb35b0b26e1a49f55a434a4003efe3a8671c391ce"
+      "file:size": 2652,
+      "file:checksum": "1220f7b8d20eb9ef07518cc1c87bc7684430066fda887a547a1fb9f64b34cb076689"
     },
     "style-confidence-2024": {
       "href": "./Djibouti.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220d797f93832fe2feca7647f160d3b94a3eb79fb83ad17777b1a6ef8eadf5eedb2"
+      "file:size": 2652,
+      "file:checksum": "12202c9a0af5479181514e6191f1be6f5e0651c2aab4024c774244fcf2c0c4e186d6"
     },
     "README": {
       "href": "./Djibouti.README.md",

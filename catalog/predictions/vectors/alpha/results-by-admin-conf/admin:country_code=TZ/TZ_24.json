@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          31.08534953036001,
+          -6.983141468360401
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          34.245072095846815,
+          -6.983141468360401
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          34.245072095846815,
+          -3.8785752585684117
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          31.08534953036001,
+          -3.8785752585684117
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          31.08534953036001,
+          -6.983141468360401
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    31.08534953036001,
+    -6.983141468360401,
+    34.245072095846815,
+    -3.8785752585684117
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Tabora",
@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Tabora field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 974060399,
-      "file:checksum": "1220530703ccb30f6122fae176f79a7e7cc1e490aab4b57c4fe91227fa0fca6496a1"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_24.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Tabora field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 512701648,
-      "file:checksum": "12209278b5b8d6b00f04ce184d5dd4946b919e6ca95cc461413d0b35538d94723916"
+      ]
     },
     "style-2025": {
       "href": "./TZ_24.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200959c4d63e38471af18ffb95fe73398ab79172641b46adb3c9a90594c2b870d5"
+      "file:size": 899,
+      "file:checksum": "122062fca1bb67ed7bce69ab101de8d8097bffcc4aeb8164f3d9caef50868b2fb400"
     },
     "style-2024": {
       "href": "./TZ_24.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201c0ec639ae41eb5bbdb434bf4bb6fd2c21a606d1f4996e1f5d674545eb9c4f60"
+      "file:size": 899,
+      "file:checksum": "1220623b28eee5f3f8d3cc21ddf7419bd1e05deaae81868ff94a47549cb93b4156bc"
     },
     "style-confidence-2025": {
       "href": "./TZ_24.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220725af18661fca6bf7f05d751f4ccbdfaeee1a07799da6dbf93d2e3c2fa61241f"
+      "file:size": 2643,
+      "file:checksum": "1220276286834d598640364535124de11e6f8c3895a441bfe8f705b2976f7400cba5"
     },
     "style-confidence-2024": {
       "href": "./TZ_24.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206cdd800af190f8af666b3d9e828f0fbdda407738d7229fe9d30d9aea4a92588f"
+      "file:size": 2643,
+      "file:checksum": "1220b1d12330063b1792c35ec3cbd9650768fd8a0b476823f2f59974918499772067"
     },
     "README": {
       "href": "./TZ_24.README.md",

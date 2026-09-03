@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -89.5649564856996,
+          36.4888702765656
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -82.32312461160839,
+          36.4888702765656
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -82.32312461160839,
+          39.14266353379
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -89.5649564856996,
+          39.14266353379
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -89.5649564856996,
+          36.4888702765656
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -89.5649564856996,
+    36.4888702765656,
+    -82.32312461160839,
+    39.14266353379
   ],
   "properties": {
     "title": "United States \u2014 Kentucky",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Kentucky field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 126167162,
-      "file:checksum": "1220e18824b691329b2a7b794742e34f5544e8d7a5e4dd255d5f77a29f1fc6507c8c"
+      ]
     },
     "pmtiles": {
       "href": "./US_KY.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Kentucky field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 85561307,
-      "file:checksum": "122064b21f20950db265efecddd42c7f69a57a163e9dbb38e34157a1132c0d47e49c"
+      ]
     },
     "style-2025": {
       "href": "./US_KY.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122048520026e3c817e942a2790c79045d77c9a99d7a1b24b7ffbec3bedadb0398ec"
+      "file:size": 899,
+      "file:checksum": "12202e0e6fd3dbfd91d20ed59fec600adb6d6af3ce95a34ef00c0ccecf74acc9e419"
     },
     "style-2024": {
       "href": "./US_KY.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f548af4427d14ae7df09b51f507505eea7623eca87bd7e6d7e69f91ddb8f1510"
+      "file:size": 899,
+      "file:checksum": "1220750ae5ee64bf601266d534a5a61560a11a25ad02f69706390a2c0afe45890a97"
     },
     "style-confidence-2025": {
       "href": "./US_KY.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122065a671bd624330d16a128dc0e5b820f71509b9e5b047f7c3ad1c7c9346148f16"
+      "file:size": 2643,
+      "file:checksum": "1220c167ce99c6d78b176f339f2dbea3d240f38ec6034077606ecee9e232a0f32e43"
     },
     "style-confidence-2024": {
       "href": "./US_KY.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208edb3919ff9ebb9d320d489139a2b44bb8b20983bf910f4853ab53420d9401e1"
+      "file:size": 2643,
+      "file:checksum": "1220b15ed7d8477a7630648f63dbc7b62411cc28db0ca2c3c66816497302f130e523"
     },
     "README": {
       "href": "./US_KY.README.md",

@@ -118,9 +118,7 @@
       "title": "Bahamas field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2031054,
-      "file:checksum": "12205bc2c34ecd2ff99749c325d3e8d95a78ed6a8eeee936679e00ed4f68cdc96454"
+      ]
     },
     "pmtiles": {
       "href": "./Bahamas.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Bahamas field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1925217,
-      "file:checksum": "12207379504923f72a0ab488c5267dd91e4bea9e374b17d26e7e1a25b80ca1a6676a"
+      ]
     },
     "style-2025": {
       "href": "./Bahamas.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "122088b30aa9ec12a0a814029c07cf12bbba78081c358a76ab6a52b0e1c3bc4f7fcc"
+      "file:size": 905,
+      "file:checksum": "122063bb2ba28e0b6c08cd089d4e004f297c3bae0016f1f35ac242f181e496024f7b"
     },
     "style-2024": {
       "href": "./Bahamas.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12207b12a1c55adbc26b7922a6ad89c09d678f5c5c56aed79fae5d39beca0ff5fe36"
+      "file:size": 905,
+      "file:checksum": "122096b243113619bf181e00c4cfbd23682b5b8334921af49f559fad3e106ec4cef8"
     },
     "style-confidence-2025": {
       "href": "./Bahamas.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122002befa1124950c5ee7ce45870c6f927ae36ccb6aba3a38215603c1cf6be98691"
+      "file:size": 2649,
+      "file:checksum": "12205a45b6ce0ff32544ebca0c832a4df893e4abe2f71a88077a3b46bb9e55f3fd20"
     },
     "style-confidence-2024": {
       "href": "./Bahamas.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12202d961a772eca732c5fc5c07da988bd574b14a0e63ed7762f2b0b5ff0f9971380"
+      "file:size": 2649,
+      "file:checksum": "1220152124e8269a78eb17e2dcc275bf4fb6f6014cb295f6208086fb0778e5b012c0"
     },
     "README": {
       "href": "./Bahamas.README.md",

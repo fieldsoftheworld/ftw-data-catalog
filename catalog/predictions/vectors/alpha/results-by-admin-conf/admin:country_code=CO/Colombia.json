@@ -118,9 +118,7 @@
       "title": "Colombia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1537801849,
-      "file:checksum": "12204979dc6d48a96d32e9ea232b152ae28f3623d8f9565aca472758d5685b4df674"
+      ]
     },
     "pmtiles": {
       "href": "./Colombia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Colombia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 917042133,
-      "file:checksum": "12202a253c7eecd1ce1eefbf90541f156eaf73780049654de8170c35aa887e319575"
+      ]
     },
     "style-2025": {
       "href": "./Colombia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122098540d99c58d3e104e89166ef72c68507e513da1da6ab1ddb764cb8e9c691d71"
+      "file:size": 908,
+      "file:checksum": "122073407a9035f26092e9a26ed88689c60004b8eb7773c6ab68edea3b4e1890b01c"
     },
     "style-2024": {
       "href": "./Colombia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122019da2a443e6f7fa6a8b894daa1330c04b6e9b0432a669a71b2bcdb3c63627eae"
+      "file:size": 908,
+      "file:checksum": "12200dedfe3e1e70145b3e571904465df735765bd5ec4faee3e1f3900d431682acbc"
     },
     "style-confidence-2025": {
       "href": "./Colombia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220244fb8698bd4b20c9e813c591710e63536e6dec9a88d1af82fd78f27ed500078"
+      "file:size": 2652,
+      "file:checksum": "122094021dcad7b0a70d80c4d16bc8eec862e31c25d9279f764321519280873ef230"
     },
     "style-confidence-2024": {
       "href": "./Colombia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12204e2d61ca0c6071245a73cd91c2784d70e34558bdc3330b8fa08560584bd72e84"
+      "file:size": 2652,
+      "file:checksum": "1220e56115ede82dd42fcf158848dd9ce2a5f1aa91c355e780c8eac4de1d354efa0f"
     },
     "README": {
       "href": "./Colombia.README.md",

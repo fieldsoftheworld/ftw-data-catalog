@@ -118,9 +118,7 @@
       "title": "Micronesia, Federated States of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 378501,
-      "file:checksum": "122099529f1a233977e6527dfddb00c03ca381a84f1ef638f81065365d0a90a3e97a"
+      ]
     },
     "pmtiles": {
       "href": "./Micronesia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Micronesia, Federated States of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 371397,
-      "file:checksum": "12209537378ad45af3f73a2128f58e7ebd309c69499703ae593c84d4e97d34cf487e"
+      ]
     },
     "style-2025": {
       "href": "./Micronesia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220ba10b0caba614522674fb7f04b28790597a05470bb17d0b2fe7f597da5ba8abc"
+      "file:size": 914,
+      "file:checksum": "1220cc77df2a9a0d1ffba76a0cefdd1f23fe88d6da729774b586b89a8ee39842f2fd"
     },
     "style-2024": {
       "href": "./Micronesia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220692edbb6e1e1c2afd186386d4bc539a2087ae82f23d9729c9768a45cb04edf42"
+      "file:size": 914,
+      "file:checksum": "1220647fc28bc44690873922039a3c20513936cf5fb3bc4d4ee9380a367d1143fdde"
     },
     "style-confidence-2025": {
       "href": "./Micronesia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122058d08cfb36cf5bddf7a69b67e4c600332479e4007c6291d94a51da39de01444b"
+      "file:size": 2658,
+      "file:checksum": "1220ad07592b6d258783bced8f130b8c8dc4761885e3467a43717e111215faa582ec"
     },
     "style-confidence-2024": {
       "href": "./Micronesia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "12200fde94e89ece23ef691a6c09501fc531cb2b52ec19884a7f14b9e5c046bee06d"
+      "file:size": 2658,
+      "file:checksum": "1220fe7749261356bca199fe73519be2907523a1b0d37948816e6af2cdc50d23fd34"
     },
     "README": {
       "href": "./Micronesia.README.md",

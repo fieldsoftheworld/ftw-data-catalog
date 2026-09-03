@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          25.982308654212602,
-          -18.0556451272942
+          25.236799540350802,
+          -22.426561738111605
         ],
         [
-          28.925987188028405,
-          -18.0556451272942
+          33.067205425048414,
+          -22.426561738111605
         ],
         [
-          28.925987188028405,
-          -15.953145933423212
+          33.067205425048414,
+          -15.609811093902811
         ],
         [
-          25.982308654212602,
-          -15.953145933423212
+          25.236799540350802,
+          -15.609811093902811
         ],
         [
-          25.982308654212602,
-          -18.0556451272942
+          25.236799540350802,
+          -22.426561738111605
         ]
       ]
     ]
   },
   "bbox": [
-    25.982308654212602,
-    -18.0556451272942,
-    28.925987188028405,
-    -15.953145933423212
+    25.236799540350802,
+    -22.426561738111605,
+    33.067205425048414,
+    -15.609811093902811
   ],
   "properties": {
     "title": "Zimbabwe",
@@ -118,9 +118,7 @@
       "title": "Zimbabwe field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3726126903,
-      "file:checksum": "1220c704bc1d5c4abd022c5587ed8d2cca91a25824515a021e517436c21f8912e94f"
+      ]
     },
     "pmtiles": {
       "href": "./Zimbabwe.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Zimbabwe field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1973582068,
-      "file:checksum": "122026b73d8ca5af449df79ee6df1efcb1cfbe6fb260cb2f2af2b83bc0ff6663dcc1"
+      ]
     },
     "style-2025": {
       "href": "./Zimbabwe.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220ab289c2c712cf0367820fc7730a056458c2e2d9a21991bd5a5c3e18ebcd5434e"
+      "file:size": 908,
+      "file:checksum": "1220253055be611ba1354952d9a1abd99656f0a5618a826245e6205d3bb01bb01b65"
     },
     "style-2024": {
       "href": "./Zimbabwe.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12208081a11109870936383a271bde37a9047ccf9b9e8a0a2e362fb40604d3a95997"
+      "file:size": 908,
+      "file:checksum": "12203ffed30e08c72052b547643337bcfc82a4fe13e25fae53cdeaeb0c99754dc0cc"
     },
     "style-confidence-2025": {
       "href": "./Zimbabwe.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220aaf073725766953e8f774afffe29244ffbe8596eaf2ec47e5c91aed450a31bba"
+      "file:size": 2652,
+      "file:checksum": "12205598e872ea2df0ff564c87eaee1fac7a3d9d7d873bf907cfdb10a7eb43ed90c3"
     },
     "style-confidence-2024": {
       "href": "./Zimbabwe.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220f79a2d52cd1f60aaae5b67834320a336ab13b4dabc653c3f4b326a2c1e5c4b1a"
+      "file:size": 2652,
+      "file:checksum": "1220e6fb14d78dcbbfb108ea2b0b6df211c763e6a3adab8738da5abf6205f7d9caf0"
     },
     "README": {
       "href": "./Zimbabwe.README.md",

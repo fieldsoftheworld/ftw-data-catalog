@@ -118,9 +118,7 @@
       "title": "Fiji field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 41879379,
-      "file:checksum": "122091b0dc6d33df3d9eadd9568c9e81503a90412fa3859f07d7265a0a57c8d0de9d"
+      ]
     },
     "pmtiles": {
       "href": "./Fiji.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Fiji field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 34146043,
-      "file:checksum": "12200ea2d63613c1344e979eefb1746788a70d12d1422b9d3cf0d537f42059b2cb88"
+      ]
     },
     "style-2025": {
       "href": "./Fiji.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220738eeead4a641e0bdb6c32c431d9c47c98f9cb4cd996f110b8b7de88bb9376f4"
+      "file:size": 896,
+      "file:checksum": "1220b96f9d07b8e15cd67b5f61d784ef513f2f155b948e8eab28f8f27afba890df71"
     },
     "style-2024": {
       "href": "./Fiji.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "122040e5a0842466d7c23daf43b970723d8052b1e3797e355b89576d7df73a0ab6b8"
+      "file:size": 896,
+      "file:checksum": "1220f0148f95aaa88ee5b29ab6ea6c54a6692154ff63721e557c5a31d439388c8a18"
     },
     "style-confidence-2025": {
       "href": "./Fiji.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220aa47914e27116b9d8296be8cb4b891b971a47efbcb8781ff0523f91eb3c740ea"
+      "file:size": 2640,
+      "file:checksum": "1220db102fd407236aedbb1900bfbaca10c44ae83dc417585c1396bffd0ef479aef3"
     },
     "style-confidence-2024": {
       "href": "./Fiji.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220d7da41865e0add1c9a712a5d9026557ba6c7eea49d9b32fbf42ac80a249ef4f6"
+      "file:size": 2640,
+      "file:checksum": "1220a45cc4f19deadd63b132e061b122d2b50a109d308bb917c3c9fac4ba03be1bd0"
     },
     "README": {
       "href": "./Fiji.README.md",

@@ -118,9 +118,7 @@
       "title": "Costa_Rica field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 126338247,
-      "file:checksum": "1220dc8b88657ce5ed0f71246543f434124a2c804fc698cee408348e2bee2bd39398"
+      ]
     },
     "pmtiles": {
       "href": "./Costa_Rica.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Costa_Rica field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 85143956,
-      "file:checksum": "12203afce05fc7d699fe2a9e081455571b647600b14c3404f3d4527217bb574f6bdd"
+      ]
     },
     "style-2025": {
       "href": "./Costa_Rica.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220c3bb61b1f7a5946a87113598e6d070f5cab9c37e139a3ab0a7142ef071e78edf"
+      "file:size": 914,
+      "file:checksum": "1220bb46d36229fb95aa086fcc2bbc91b4dd4eb314e7ee0309e8d1d45f4bc8d95867"
     },
     "style-2024": {
       "href": "./Costa_Rica.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220a7f0e16fb0782f307d7e4f273d87de7f2c70deb3221b77cfd4903f7123e8a8ed"
+      "file:size": 914,
+      "file:checksum": "1220e8581acfa4efc32901d7a40d1c2a698a15c2e3711740d70f078e9a2d8d88b0ab"
     },
     "style-confidence-2025": {
       "href": "./Costa_Rica.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220a16594cf3340b61237949e43a76edb6f5834032cda745a32e50becfaf6085641"
+      "file:size": 2658,
+      "file:checksum": "1220a068f2a4bc37f236a9b7f48b981b88090be247d072baccdf574a1b0d3af92316"
     },
     "style-confidence-2024": {
       "href": "./Costa_Rica.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220231646a0c91c4b0541b7629b0f9013f943557c1cc95fadac5fbf631776fcbc50"
+      "file:size": 2658,
+      "file:checksum": "122022d90af9b0e78a75381faa6dfba265d7d54ac80dec0d8bd5cd6100c8be4740ea"
     },
     "README": {
       "href": "./Costa_Rica.README.md",

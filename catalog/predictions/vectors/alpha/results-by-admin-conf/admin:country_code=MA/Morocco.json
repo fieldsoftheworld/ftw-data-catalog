@@ -118,9 +118,7 @@
       "title": "Morocco field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1798476832,
-      "file:checksum": "122035d330b451b38be18a729a15b1bdbc0a2ef7930e5c151c76983d532aaf990e3f"
+      ]
     },
     "pmtiles": {
       "href": "./Morocco.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Morocco field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 961953406,
-      "file:checksum": "12202ef8a2cdf68849c2f23c021af7bdd6c89d3069e80b3a154cad66c9309b5c874c"
+      ]
     },
     "style-2025": {
       "href": "./Morocco.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220368d0c90c97a97e3bc913b603db40178f1128151a11af8dd0f254cec6810753a"
+      "file:size": 905,
+      "file:checksum": "12209f57ea6a801d33517a31f705daa4e79d64bbbd69edd39fd313a690f07ba081de"
     },
     "style-2024": {
       "href": "./Morocco.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "122007a3433383269666f5cae5d95f760fb8665f9818c5ffdf272fb09cc88620ca2e"
+      "file:size": 905,
+      "file:checksum": "1220215fc467592399053b95071c8f28aa3c4a57eb5e92ef332b111244adc924a905"
     },
     "style-confidence-2025": {
       "href": "./Morocco.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220c62581ca843ed55d090f40c7fb74fe2cc4d711640aaca67107b0f11b37b74238"
+      "file:size": 2649,
+      "file:checksum": "1220a22f7edde60672a82b9d9801d1d289563f4a8611e097b0b108992efe4f7674ea"
     },
     "style-confidence-2024": {
       "href": "./Morocco.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12200fbd516022b923ed14a0794bca3cfe018f32a1fa08831acb4d7676adf8fd5ca4"
+      "file:size": 2649,
+      "file:checksum": "12207c432c980c5c1cdcaf1826b07489ea73dd3e9fc905c0da16648412a4685262ae"
     },
     "README": {
       "href": "./Morocco.README.md",

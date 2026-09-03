@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.02408734827481,
-          4.259412648765997
+          23.4524824505042,
+          3.488391474615397
         ],
         [
-          35.94413937860161,
-          4.259412648765997
+          35.95914118870101,
+          3.488391474615397
         ],
         [
-          35.94413937860161,
-          4.632840939683398
+          35.95914118870101,
+          12.274241983368192
         ],
         [
-          34.02408734827481,
-          4.632840939683398
+          23.4524824505042,
+          12.274241983368192
         ],
         [
-          34.02408734827481,
-          4.259412648765997
+          23.4524824505042,
+          3.488391474615397
         ]
       ]
     ]
   },
   "bbox": [
-    34.02408734827481,
-    4.259412648765997,
-    35.94413937860161,
-    4.632840939683398
+    23.4524824505042,
+    3.488391474615397,
+    35.95914118870101,
+    12.274241983368192
   ],
   "properties": {
     "title": "South_Sudan",
@@ -118,9 +118,7 @@
       "title": "South_Sudan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4814824735,
-      "file:checksum": "1220cfcbe36f27f58dfec67a94b70d03bad1eaac045d3508eaddd4e8c8fd5863fac2"
+      ]
     },
     "pmtiles": {
       "href": "./South_Sudan.pmtiles",
@@ -128,9 +126,7 @@
       "title": "South_Sudan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2392187688,
-      "file:checksum": "12207b659d8ba6004bae5fd3ade1842bb6e2fcef2f05f7720158fee62b9bf8c6e08a"
+      ]
     },
     "style-2025": {
       "href": "./South_Sudan.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "122037ab8b1926410bd6ad2a82d40760fefce1829f9e1e25e10c87dbba161c8c768b"
+      "file:size": 917,
+      "file:checksum": "1220498bf6b9092bb8ed60ed1e7b7e0beb8581cd36457a82e364ebd55ce8c5f14fc7"
     },
     "style-2024": {
       "href": "./South_Sudan.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "12206550e03b9d1460f8ffa4626cd331148b5f2378e15926a5687c866089f5ca488d"
+      "file:size": 917,
+      "file:checksum": "12208129d065028c3d4fcf99960fbf77b5f773facdaf0b24666ace20f7bc6fbe756e"
     },
     "style-confidence-2025": {
       "href": "./South_Sudan.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "1220b9ef075cfdf4df7dd08ddaab7db16ba3e4181faaae406e47af9bc3d5eceb6d80"
+      "file:size": 2661,
+      "file:checksum": "12203859e2958b0b5e1888aee51d4ef515231bf14ec64918b15d9382c8d340c779f8"
     },
     "style-confidence-2024": {
       "href": "./South_Sudan.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12203194b33f8f14ec4eb6d85d49c11fdbe9dbdda0178eda7f92ea4538d71843ac57"
+      "file:size": 2661,
+      "file:checksum": "1220684c00d85f8acca0f1beda53fb325f494991b88021d3760c0cdddd81c751e266"
     },
     "README": {
       "href": "./South_Sudan.README.md",

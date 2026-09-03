@@ -118,9 +118,7 @@
       "title": "Yemen field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1522556140,
-      "file:checksum": "122038e27223b2b4959bbad7ed3383883933a8e362bc2c2c7370d39fb898ed383b42"
+      ]
     },
     "pmtiles": {
       "href": "./Yemen.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Yemen field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 788831638,
-      "file:checksum": "1220ba48ef2860b360f94ce43bee2da03a4c9ff737b9414a22880d495fac180d42ec"
+      ]
     },
     "style-2025": {
       "href": "./Yemen.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122094cf935d624114b448ad36a922d0ceb3ac4f6b0dcaffedd7a175bab071c773f0"
+      "file:size": 899,
+      "file:checksum": "12201137e9dac4ed1ffc7100457cebc68e526ccbb78f54902830f65e60450c49a08d"
     },
     "style-2024": {
       "href": "./Yemen.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206352719c41e4835fecf7c591c242e1f19ecd005165b22b5a1a8b397fdb825534"
+      "file:size": 899,
+      "file:checksum": "122019fae5ef911e6b44a229d4cb596848ac6876a1ed1da946dc38feb917a5dbcabc"
     },
     "style-confidence-2025": {
       "href": "./Yemen.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c67a88374b50be4a8dca63ea383c89dcc95ec7b4dd5e3ab12fd04e4ac6ebd531"
+      "file:size": 2643,
+      "file:checksum": "122089b4460e1b59e567a77e13a4876277a840e47436fa82fd7c1cb54d9297545fa9"
     },
     "style-confidence-2024": {
       "href": "./Yemen.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220376a10ba069a2bf2c26734f828ae29c2084084185f4d631ab2443535eda8d023"
+      "file:size": 2643,
+      "file:checksum": "12207675990b091ec96171fb41f62644d8e0aa135cfeae7b1f215ed772bb4f920fc3"
     },
     "README": {
       "href": "./Yemen.README.md",

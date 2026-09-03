@@ -118,9 +118,7 @@
       "title": "Nicaragua field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 528487152,
-      "file:checksum": "122072839e1ab55a2d36d0d9e0bfb9117be93b7c1c907d37e26a516cb7950fd7da2e"
+      ]
     },
     "pmtiles": {
       "href": "./Nicaragua.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nicaragua field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 348482243,
-      "file:checksum": "1220e130eca2439dee94f615104b04b58ebaa5815a93f1be8824bd690c02be9c67a9"
+      ]
     },
     "style-2025": {
       "href": "./Nicaragua.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "12204eba383cac1ef9a7b913b2dfcbccb9f367d2666e68e2f4066a4262015947b46d"
+      "file:size": 911,
+      "file:checksum": "1220d30c6212c1374388cf8eee473fd0e83b7aa0248914a68257ce383189d4716970"
     },
     "style-2024": {
       "href": "./Nicaragua.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220b127b5b0894985810ecb492b3a6cc1399c6e240e5f4ed895a4a0bede95d4bcb3"
+      "file:size": 911,
+      "file:checksum": "1220f0a6e0d15c211eff0f0be4c16f9b2da3931e001a1c8bceed0bfd5f523e669f1d"
     },
     "style-confidence-2025": {
       "href": "./Nicaragua.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12201e86bbde72dd83359e51512b8dac17e3c8c9cc495a39e02e63fbaf4bbd750d5c"
+      "file:size": 2655,
+      "file:checksum": "1220f813d387576063824481ce5dc4c5fb3c1bfc72cc4a621c07a5fa1f48e1bc2402"
     },
     "style-confidence-2024": {
       "href": "./Nicaragua.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "122056e741f6e86c211b4ad36bfce1730c32847d7efe91349ff9dc1e12e2111d24f6"
+      "file:size": 2655,
+      "file:checksum": "1220bc0cc8c06e6591899876a839232e89adee1151b1cf62579d0b179b8efa94ee98"
     },
     "README": {
       "href": "./Nicaragua.README.md",

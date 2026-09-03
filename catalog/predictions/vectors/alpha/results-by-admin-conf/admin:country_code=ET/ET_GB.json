@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          36.60790210210141,
+          14.177585410829794
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          38.26376057852202,
+          14.177585410829794
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          38.26376057852202,
+          14.894887528456795
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          36.60790210210141,
+          14.894887528456795
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          36.60790210210141,
+          14.177585410829794
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    36.60790210210141,
+    14.177585410829794,
+    38.26376057852202,
+    14.894887528456795
   ],
   "properties": {
     "title": "ET_GB",
@@ -118,9 +118,7 @@
       "title": "ET_GB field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2016051,
-      "file:checksum": "12209e1131a4a535c3ca68288e0f7e45a85a636a5d28a51209eb6f5ec63df281b72f"
+      ]
     },
     "pmtiles": {
       "href": "./ET_GB.pmtiles",
@@ -128,9 +126,7 @@
       "title": "ET_GB field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1483444,
-      "file:checksum": "1220b368f4e830bfca05fedf27f2c35f451178eee5afab3f553ea36b119f468baf73"
+      ]
     },
     "style-2025": {
       "href": "./ET_GB.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206e5976dcb0eb11775103c5e1b4438f9fa329698efc2b614f36f82968f8814f03"
+      "file:size": 899,
+      "file:checksum": "1220b4f42f2e2c426e2051fae62600e523853259955d8006095aa8a6584afe290bfe"
     },
     "style-2024": {
       "href": "./ET_GB.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122034c8e60213339ca2bfb487608b470515cb12a64db3774a41238cba160e526b35"
+      "file:size": 899,
+      "file:checksum": "12209f70ab32543711e1e67eb73e36d436163ce0032cefd0e802b6897304fac9cdc4"
     },
     "style-confidence-2025": {
       "href": "./ET_GB.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220eb35573bccda549504e7764f8904eb42793af59d5aa1dc8cd81f29691d34a457"
+      "file:size": 2643,
+      "file:checksum": "122022b35557d271896f912cce36f02695e719f5927fbd2335f3e66900c5a3da1bf2"
     },
     "style-confidence-2024": {
       "href": "./ET_GB.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206750dc81d38f26bdc8edceb4dafb2da120f2ed68468d176924f57516a71ae604"
+      "file:size": 2643,
+      "file:checksum": "1220220a994dd695c2aa2d106f53f8d9661fd163ea1e688346698ef252ede18e50ec"
     },
     "README": {
       "href": "./ET_GB.README.md",

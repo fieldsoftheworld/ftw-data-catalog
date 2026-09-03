@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -80.53000406433819,
+          39.703210210558
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -74.7718242597182,
+          39.703210210558
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -74.7718242597182,
+          42.267351931978794
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -80.53000406433819,
+          42.267351931978794
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -80.53000406433819,
+          39.703210210558
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -80.53000406433819,
+    39.703210210558,
+    -74.7718242597182,
+    42.267351931978794
   ],
   "properties": {
     "title": "United States \u2014 Pennsylvania",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Pennsylvania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 191307993,
-      "file:checksum": "12203293c3294dccf431a76840ccd0f4634478c8a4b66b6358de7daa9d09a4fe9140"
+      ]
     },
     "pmtiles": {
       "href": "./US_PA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Pennsylvania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 127919899,
-      "file:checksum": "122010bf7649fa7df3318cf50cebde76086891f1c38c0c384fdb1eac0b7f26c00f7e"
+      ]
     },
     "style-2025": {
       "href": "./US_PA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122091e5b1fd1ffc1b10e4e18dd85f389cd35972d84d1f35d96c6799366db937b0ed"
+      "file:size": 899,
+      "file:checksum": "1220a6502a6dc85b2ad9ce2f44542645e269d376eed39536945ec044ba94dc78efa4"
     },
     "style-2024": {
       "href": "./US_PA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122060ef7dfe8715d097b250466cf2c8e1e793f1b8db6c2f6d026ce5172bad739c06"
+      "file:size": 899,
+      "file:checksum": "12200de3a6f55efc8fa3e107aaf2748aff0ee7983f0eb4cd631cdac65f5914eda048"
     },
     "style-confidence-2025": {
       "href": "./US_PA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122079c521d0cea2dffcd4eae7ada5fa5efb1198fd93cca681fc56f678b3f40f9d60"
+      "file:size": 2643,
+      "file:checksum": "12206ec9555c5cf41cd238448fdafe217755e0c70cb58d16f33c8d820da230dfde3d"
     },
     "style-confidence-2024": {
       "href": "./US_PA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c274b8f51173d8a86b8489ace4f974f4b9ade95a4c7bc8087d6b11422f926e2b"
+      "file:size": 2643,
+      "file:checksum": "1220bac14440665f0a31d05f4d636f70d51ae4d1a2dacdb19e888b3883daa071c69b"
     },
     "README": {
       "href": "./US_PA.README.md",

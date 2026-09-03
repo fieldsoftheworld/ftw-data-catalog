@@ -118,9 +118,7 @@
       "title": "Austria field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 298289485,
-      "file:checksum": "1220fbbfeb3661fec5bbd65d4842fea60274578e231d148418d9a6d7131d9dbd71ef"
+      ]
     },
     "pmtiles": {
       "href": "./Austria.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Austria field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 183380144,
-      "file:checksum": "12201e287e5062720cd6e962c13747af0908d0a4ff5753bec76f6684cb198e7f7a5d"
+      ]
     },
     "style-2025": {
       "href": "./Austria.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12202cf969433bf20121402dfc7e134a1df0152edaeffafe72cae6df8585893b5bf7"
+      "file:size": 905,
+      "file:checksum": "12202cbf984595a0be5d7d5b434bac58c2b81ae0e530e83d0aa06345f739208e1844"
     },
     "style-2024": {
       "href": "./Austria.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12205a1b4ba57ade300418f9e0ecfb34771cfeb15af0deb2b67aa6d64190793dd5bc"
+      "file:size": 905,
+      "file:checksum": "122014d8320ba72bcc013946a80dc3a515dfc930370ffed3b505aaca02633897d236"
     },
     "style-confidence-2025": {
       "href": "./Austria.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220f661e873bca73f813a378c719a4c86fbd9f9f963671a7f87cc2fadddb26f6745"
+      "file:size": 2649,
+      "file:checksum": "1220ed1788524d0136576a7db9e0bcbac555b2bf8125df5f6b0407b4328755f9a430"
     },
     "style-confidence-2024": {
       "href": "./Austria.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12209147b1dccb50f9d6241f9ec54b453fc8c7fbeeffc5cb3a2e65a56dcb9e0b99ef"
+      "file:size": 2649,
+      "file:checksum": "12203f00bc76559fb221cfb8610ab38039abdc8f496ecfab370028f7af1dd63666b0"
     },
     "README": {
       "href": "./Austria.README.md",

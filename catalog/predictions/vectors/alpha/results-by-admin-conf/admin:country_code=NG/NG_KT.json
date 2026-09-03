@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          6.8529346599190095,
+          11.11038897948899
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          9.046522688764812,
+          11.11038897948899
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          9.046522688764812,
+          13.370541926200994
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          6.8529346599190095,
+          13.370541926200994
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          6.8529346599190095,
+          11.11038897948899
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    6.8529346599190095,
+    11.11038897948899,
+    9.046522688764812,
+    13.370541926200994
   ],
   "properties": {
     "title": "Nigeria \u2014 Katsina",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Katsina field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 446423460,
-      "file:checksum": "12201fed1f5b07873590746cc71882d9dde114ab41619a78efbea1a22213deb59cb3"
+      ]
     },
     "pmtiles": {
       "href": "./NG_KT.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Katsina field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 230580642,
-      "file:checksum": "12209b0ab80f2bb56b7638f7520e19ea167124d8d8e4ba483a4bf69bc703ba7cbb4f"
+      ]
     },
     "style-2025": {
       "href": "./NG_KT.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200887ed1d9e6c79b38cbbf7b85fa840884cb155dc74e67acfd23031a62fbbaed7"
+      "file:size": 899,
+      "file:checksum": "1220c3419cb85910905cf3d05bbb6fc9d347c76b888e94a1bd200be218cac8d298f0"
     },
     "style-2024": {
       "href": "./NG_KT.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122030f193e1d86d1849b7980f4b65f548915ea7ecfcedf21e954939ce4fcd4492b2"
+      "file:size": 899,
+      "file:checksum": "1220798b502a300b0ddd52aa35a77154125440b44303a81baeef5c781af1a4ceb0a0"
     },
     "style-confidence-2025": {
       "href": "./NG_KT.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205f5a3dd1cf744aeaa669f6e12b00bddefe33cf2bebbb667744176f233b6c0a9a"
+      "file:size": 2643,
+      "file:checksum": "12203f44cfefe9fb105f781406eddf829b3db54b2e1ecd38ab78a0743793340e04c0"
     },
     "style-confidence-2024": {
       "href": "./NG_KT.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122022a1fed52396a79838c6a884e5ff7640a05c91e59bd83d6e95bd01917cc6c88e"
+      "file:size": 2643,
+      "file:checksum": "122052d53d9e7547eb4fc6e4c9ad942fe1cd390cd00ea5ca34331c9d6969f638f113"
     },
     "README": {
       "href": "./NG_KT.README.md",

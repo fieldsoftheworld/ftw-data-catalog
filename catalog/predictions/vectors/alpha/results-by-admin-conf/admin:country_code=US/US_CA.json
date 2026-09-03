@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -124.35226765104599,
+          32.54007046608999
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -114.1433113004088,
+          32.54007046608999
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -114.1433113004088,
+          42.107811723975594
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -124.35226765104599,
+          42.107811723975594
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -124.35226765104599,
+          32.54007046608999
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -124.35226765104599,
+    32.54007046608999,
+    -114.1433113004088,
+    42.107811723975594
   ],
   "properties": {
     "title": "United States \u2014 California",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 California field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 629136095,
-      "file:checksum": "1220a5fc01b43126fb87585c2ed58e077f4a20f5d1cc0026be8c5f0e03bd2d044d6e"
+      ]
     },
     "pmtiles": {
       "href": "./US_CA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 California field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 393467596,
-      "file:checksum": "1220bca947bd28eefcc85399bd63b4c0fd7dd8af4fc5b139a3751bbcbd78a7d96607"
+      ]
     },
     "style-2025": {
       "href": "./US_CA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204515b388d7df4e8a239a9715501e53c66d05e2bdc0fb8b7bbc14997cd7ac8b2c"
+      "file:size": 899,
+      "file:checksum": "1220e83c7e6c296802b769d491ce8f437a967dc91f3651eb41946d3ccd627171da0e"
     },
     "style-2024": {
       "href": "./US_CA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122073b171147ed626f9818a0fdd538690f6c02398d9dff85df89fe36c5efdb73972"
+      "file:size": 899,
+      "file:checksum": "12204291c01fc89a95a57d7e760cc4e7b94954dce29fd244a563e5ebd6baa5b96222"
     },
     "style-confidence-2025": {
       "href": "./US_CA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122076e0762278c29678994d8adf52152c7d3cc0cfe3666b8d5a7a8b143ed288c1a2"
+      "file:size": 2643,
+      "file:checksum": "1220ba3b317084ee2c9bc69549c5b2f7b2883f3fe3a9ed05cebbcce0e9e5ad7a3220"
     },
     "style-confidence-2024": {
       "href": "./US_CA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12204d4ea752c2995606bf708efaf5a04ef666794c4ddde268964e450ddd323c1644"
+      "file:size": 2643,
+      "file:checksum": "1220d51505ed72e05b4a2da00e342408275f6b0522b88b8d2a0de427487358b7547f"
     },
     "README": {
       "href": "./US_CA.README.md",

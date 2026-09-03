@@ -118,9 +118,7 @@
       "title": "Cape_Verde field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 55565766,
-      "file:checksum": "122090f3843aac9bc39e7c53e3add67178129ef38afc5eefc1236382e476dae7816c"
+      ]
     },
     "pmtiles": {
       "href": "./Cape_Verde.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Cape_Verde field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 40184297,
-      "file:checksum": "122062435dadc46a92ae985665b871bedf62baa58e049d5a57bd585f2faa76d7a818"
+      ]
     },
     "style-2025": {
       "href": "./Cape_Verde.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "122052f082023d99a9d3b116acf226d1646cbc18b6d3edc53ab917fbf7df6cdada50"
+      "file:size": 914,
+      "file:checksum": "122076d8c3ad0ef86c8f950949762b405e7eb8f5199384ced0885e60c401455378ec"
     },
     "style-2024": {
       "href": "./Cape_Verde.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220a99ee9ba0266b5d28236a4835bb0661203543c0ad1cb07d0e74db9525abab89f"
+      "file:size": 914,
+      "file:checksum": "1220bcf7ed9c737d1b62aeff493bc218e1df00232d5ee9d14d730e66580fd661394e"
     },
     "style-confidence-2025": {
       "href": "./Cape_Verde.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220c70e41aa5f9949303882a6d753271d51101bf25af1bd20da06699506a9483061"
+      "file:size": 2658,
+      "file:checksum": "1220f90dfcb7e677ba02e945bf220676c57e32b39008eb4ed33a33327a55db65754b"
     },
     "style-confidence-2024": {
       "href": "./Cape_Verde.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122079cc07058a4fc186c4a7c5b51d70cc6dd0f7cfe002bd25dc4eb5fe59d8371993"
+      "file:size": 2658,
+      "file:checksum": "122092599a1d1ae99ae39201e87384d7e9fa7c96476fad7b254e3c3716f3ef7342a4"
     },
     "README": {
       "href": "./Cape_Verde.README.md",

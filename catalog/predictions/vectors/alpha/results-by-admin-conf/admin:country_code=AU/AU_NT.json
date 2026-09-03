@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          148.75649368931482,
-          -35.943012975274605
+          128.816752456059,
+          -26.161563296871208
         ],
         [
-          149.39663080768804,
-          -35.943012975274605
+          138.14392576516502,
+          -26.161563296871208
         ],
         [
-          149.39663080768804,
-          -35.1693866963762
+          138.14392576516502,
+          -11.041804834234606
         ],
         [
-          148.75649368931482,
-          -35.1693866963762
+          128.816752456059,
+          -11.041804834234606
         ],
         [
-          148.75649368931482,
-          -35.943012975274605
+          128.816752456059,
+          -26.161563296871208
         ]
       ]
     ]
   },
   "bbox": [
-    148.75649368931482,
-    -35.943012975274605,
-    149.39663080768804,
-    -35.1693866963762
+    128.816752456059,
+    -26.161563296871208,
+    138.14392576516502,
+    -11.041804834234606
   ],
   "properties": {
     "title": "Australia \u2014 Northern Territory",
@@ -118,9 +118,7 @@
       "title": "Australia \u2014 Northern Territory field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1561981496,
-      "file:checksum": "12204a8bac0e220d1e0203b9607784f1a8d2d0e163933341691e2548c0603ca745d4"
+      ]
     },
     "pmtiles": {
       "href": "./AU_NT.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Australia \u2014 Northern Territory field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 977514603,
-      "file:checksum": "122063e0b474a7680b04149b87bdeadbeed4b870d53101305f8097be247244a07be8"
+      ]
     },
     "style-2025": {
       "href": "./AU_NT.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12206e65cf2bfb60943a4f8f4a35fecf18d6fb4ebbc3111039977b61b5085f80b21a"
+      "file:size": 899,
+      "file:checksum": "122011ecde5d5f7a4d6f5aac63fd16f0b40390304315f77a6b5693f195b7f41e5821"
     },
     "style-2024": {
       "href": "./AU_NT.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200dbdedc31b3a397203bde4611f3e3cca890f071a187e198d05ff1a20dd31eb78"
+      "file:size": 899,
+      "file:checksum": "1220d3097eac65d8a7dd018e243ee91c3e4d937e531ff22f032deb1b59373f2bc394"
     },
     "style-confidence-2025": {
       "href": "./AU_NT.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206497febbba5f873804cb0db659ced3fcab74f0ea9bf8598c3880313c6c91767a"
+      "file:size": 2643,
+      "file:checksum": "1220c0c611bced10094a18817eefa318cfad21899e797bb4f4d16fc7de1eca0983ee"
     },
     "style-confidence-2024": {
       "href": "./AU_NT.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205be72bd46cd995f4ad713d3190b82ba518fdecbe9d20fec8baac8e1d3cef8303"
+      "file:size": 2643,
+      "file:checksum": "1220e1294f5a41289dd982c8c4ae315216a3ee00634476c9878cd75e824aa3e46ad1"
     },
     "README": {
       "href": "./AU_NT.README.md",

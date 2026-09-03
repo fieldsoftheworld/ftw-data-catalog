@@ -118,9 +118,7 @@
       "title": "Moldova, Republic of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 206481236,
-      "file:checksum": "12200e98bab4cc771ac5e2ff92eb0e3b502684dc244ccf5f59ba3677f7d9aa8dfa4b"
+      ]
     },
     "pmtiles": {
       "href": "./Moldova.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Moldova, Republic of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 127360969,
-      "file:checksum": "12200acba3fe7a879dcf0c5b3922e5ecc0a5a4c278f43a4d5925e3ab03a30e039a47"
+      ]
     },
     "style-2025": {
       "href": "./Moldova.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12203fc83c0ec8453f2fce8ea8c928dd6228cbb760eb6c5447d917fd72c0509ba65b"
+      "file:size": 905,
+      "file:checksum": "1220629b042c85ccdd20d1dead0d5dddc52f82bef42c945106a57dc4311dde7fdd59"
     },
     "style-2024": {
       "href": "./Moldova.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220e1fa98c07feff00d1635b80b36df6150d2cf1e1558ba28fbaecfc9236d1ffea7"
+      "file:size": 905,
+      "file:checksum": "122024b73088a860de426df1b460bab49f4390f526a9a16097cf4ff6888b715abda1"
     },
     "style-confidence-2025": {
       "href": "./Moldova.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220ae0ca783530bb0f7bd255e6620d044c6fcc8d34ebf072252d5d62730df4d2111"
+      "file:size": 2649,
+      "file:checksum": "1220a1738eaf1c08890f3c8d629d61e58100ce928a15d9399c3b40c494f499a43335"
     },
     "style-confidence-2024": {
       "href": "./Moldova.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122018a7790fb832ed4d1cf7f5e8bf7868c6af81bd38423aff99623405e36c6103b3"
+      "file:size": 2649,
+      "file:checksum": "1220c4b97c95884794040ace3f271b0227aa08e3ec52bccc4cbfad69b59eab46f1d3"
     },
     "README": {
       "href": "./Moldova.README.md",

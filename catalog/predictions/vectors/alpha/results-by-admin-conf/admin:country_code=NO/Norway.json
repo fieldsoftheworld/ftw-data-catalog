@@ -118,9 +118,7 @@
       "title": "Norway field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 109287743,
-      "file:checksum": "12205b2cf5190c89f3709ad4788b7757d72db153714e6c89b1c438a982c4eaf91b41"
+      ]
     },
     "pmtiles": {
       "href": "./Norway.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Norway field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 103728665,
-      "file:checksum": "12208799a26652d5cb21ebe33f0104163935147e55618a60a9f362f9def6c0dc5045"
+      ]
     },
     "style-2025": {
       "href": "./Norway.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220fd89c19bc0e0184dbe984c5dc6b50d95780f234481e6764d6495bfeef7f73c2e"
+      "file:size": 902,
+      "file:checksum": "12205b9059714219f35c2bf9e04397b3a8ffd333f21318bbeb4d3e5b0c45af6a862a"
     },
     "style-2024": {
       "href": "./Norway.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220c715667ff16f411003ed9dd2a461178089131a1b3e5096d2e921f09a8822926d"
+      "file:size": 902,
+      "file:checksum": "12205e0caefc138dbc5b5a1e8ed9b78047062c3d4c4d8ea096d4af6b01d7f76f611f"
     },
     "style-confidence-2025": {
       "href": "./Norway.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122066378db953a5fbace28c369412da6b383834bc6f630eefd39991dcda74295d9e"
+      "file:size": 2646,
+      "file:checksum": "12201c0ba634b8b2b010741819285f212eb2d0c9c44f11f4b9615337928e3f39be87"
     },
     "style-confidence-2024": {
       "href": "./Norway.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220f581fc3c9b88b39d2874bf77a247d72f67e340b3b465b07a3b8711c59cf66e8c"
+      "file:size": 2646,
+      "file:checksum": "12209de503c3f57342aadc2a01a42c651258f37c06da0d247e789a94b4882d47d11b"
     },
     "README": {
       "href": "./Norway.README.md",

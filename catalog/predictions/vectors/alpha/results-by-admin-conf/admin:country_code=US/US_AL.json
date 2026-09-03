@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -88.469195530056,
+          30.236618881845597
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -84.93029547696699,
+          30.236618881845597
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -84.93029547696699,
+          35.019770861202794
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -88.469195530056,
+          35.019770861202794
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -88.469195530056,
+          30.236618881845597
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -88.469195530056,
+    30.236618881845597,
+    -84.93029547696699,
+    35.019770861202794
   ],
   "properties": {
     "title": "United States \u2014 Alabama",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Alabama field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 41410527,
-      "file:checksum": "1220af6d8f9b1cd5ee9173859b6ff676f036b201637a44ccfd3f293e13d5a38abb3a"
+      ]
     },
     "pmtiles": {
       "href": "./US_AL.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Alabama field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 37424594,
-      "file:checksum": "1220398cf1290c6924c3928861c978f52f4501bb1a4bafec86fecae8ef6fe2ea711f"
+      ]
     },
     "style-2025": {
       "href": "./US_AL.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f39976c4935301d5607226b3dac834bf68bbfe98addbcc2f82cf1fe67b460340"
+      "file:size": 899,
+      "file:checksum": "12207a45a9068d717e611df8ddf452a52286009f07f9b590635c3690831e7e46a0a6"
     },
     "style-2024": {
       "href": "./US_AL.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f3ee94ee7d422c348828ba6c6c683fcce015c0488b90c54bf21c26f0e6c90923"
+      "file:size": 899,
+      "file:checksum": "1220f1a42c5073a54a8486729e281c889e70f8965b00f6a261c565890077f494060b"
     },
     "style-confidence-2025": {
       "href": "./US_AL.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12200d0b018874ea2da95278d8a95e901599a0c75b6c329114819fef71654d5d40fe"
+      "file:size": 2643,
+      "file:checksum": "122068f120a59861f36dca5fc2f24ad437ea4c7b4a556efc6876c6cf0f5d80d6201e"
     },
     "style-confidence-2024": {
       "href": "./US_AL.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203e6e49d8aea29503cafa9c88481f4eb06790f2c82c208125865a3b4de8de4cfe"
+      "file:size": 2643,
+      "file:checksum": "122032a1a12422841d9aa82cea6452dd16e54cdb3907d72a4ae556e6124d23bc2dc0"
     },
     "README": {
       "href": "./US_AL.README.md",

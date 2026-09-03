@@ -118,9 +118,7 @@
       "title": "Paraguay field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 743583908,
-      "file:checksum": "12205055248728f1f31720a6685e5386460394c48c90cbbf4be8979f74f49375a096"
+      ]
     },
     "pmtiles": {
       "href": "./Paraguay.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Paraguay field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 524986710,
-      "file:checksum": "1220eb03cd7b6a6f797cba710093f3043e590c6cf574673e724c4cdd61ca230ef204"
+      ]
     },
     "style-2025": {
       "href": "./Paraguay.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "12208e7a504492a85814520bd70c8711d793232fd379c41290d460ab248c9d147703"
+      "file:size": 908,
+      "file:checksum": "1220eadc7c823872d2664df4b21805014146ec6a26bf831f1d8398258b3b1fa3e822"
     },
     "style-2024": {
       "href": "./Paraguay.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220e9be402e67fe4e1bc80dac49540224a308885fa595c47b95b0478d75c820eadb"
+      "file:size": 908,
+      "file:checksum": "1220b7956745a7fffa93d5ee5b9680b983912fa1106aa0777b3581c1fb2237379458"
     },
     "style-confidence-2025": {
       "href": "./Paraguay.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122097c9c53c337a30bad714678a83a6aa75e3056b5a8eb05b95bece2874c86626b6"
+      "file:size": 2652,
+      "file:checksum": "1220a60b757227934bffddcd5d3a00188253dac533f9b0628a6d80ac93625abd4b1a"
     },
     "style-confidence-2024": {
       "href": "./Paraguay.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220ac7e7a8c6f66ad515b623b061427f1559abdc109b999265bcbd00bd47eafe63f"
+      "file:size": 2652,
+      "file:checksum": "12202ab8b0676c71cf16a802f2125aa6f4eeb3e72c378e2613b463c1591cfc260f0d"
     },
     "README": {
       "href": "./Paraguay.README.md",

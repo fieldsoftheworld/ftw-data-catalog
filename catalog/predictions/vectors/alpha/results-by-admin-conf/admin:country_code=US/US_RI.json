@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -71.83739833931699,
+          41.160092582965596
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -71.1194674033026,
+          41.160092582965596
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -71.1194674033026,
+          42.021304280109
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -71.83739833931699,
+          42.021304280109
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -71.83739833931699,
+          41.160092582965596
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -71.83739833931699,
+    41.160092582965596,
+    -71.1194674033026,
+    42.021304280109
   ],
   "properties": {
     "title": "United States \u2014 Rhode Island",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Rhode Island field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 550760,
-      "file:checksum": "12203589cc40a0b6db1cf4422c5ef9e3e5d6658f3a8b9499fac9e312b8d5050be77f"
+      ]
     },
     "pmtiles": {
       "href": "./US_RI.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Rhode Island field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 559842,
-      "file:checksum": "1220302e8fad46537a9d668fae45373388c6a71a7ae0fde8f3e789695d1dc09a9880"
+      ]
     },
     "style-2025": {
       "href": "./US_RI.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c4241f2d836fc644d386b1e29a986b09daee8a7462c09f3dd3e5b0633e738775"
+      "file:size": 899,
+      "file:checksum": "122070703b487686c5832f377b4edc5f4847c2ee1d5dd57811cbb12e012f16b02b66"
     },
     "style-2024": {
       "href": "./US_RI.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201f54893f6065882175e2f6cb6f93d601174eb08041d68636622d9192517f357e"
+      "file:size": 899,
+      "file:checksum": "12206b1066c195f29d3a6720687b6d4fccb3a237c04797a974f96d6f1b2db0df04a4"
     },
     "style-confidence-2025": {
       "href": "./US_RI.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d66e698124f97d59f04b0d46351fd736aaeb8f6f2e1441d18b0e16a6d39c7bf6"
+      "file:size": 2643,
+      "file:checksum": "1220c0adf2cc21ca0e65446905526bd7cbdb9ef19b25d81d9fcfa4d5e491feb00bf5"
     },
     "style-confidence-2024": {
       "href": "./US_RI.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122059864d561eaf2adc3886b4d81e5faccc12d18f7e87c82a42e833e3703771be13"
+      "file:size": 2643,
+      "file:checksum": "12204a80f4c5bcec36ca2a6b39a5baf2cc2637d43e00359fe892b15842c7311af994"
     },
     "README": {
       "href": "./US_RI.README.md",

@@ -118,9 +118,7 @@
       "title": "Belize field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 44530421,
-      "file:checksum": "122036d7596e8fc8df0a8e40795501083268d023c2fb43fbe727c1302e00eb4a394d"
+      ]
     },
     "pmtiles": {
       "href": "./Belize.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Belize field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 36018801,
-      "file:checksum": "1220055e9e30987bda42158d91ae31982ee5e7bdb92ce81c4a44c69ce8392187047f"
+      ]
     },
     "style-2025": {
       "href": "./Belize.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12206dcc2ad8b9ed6f21f9e2c06bace015719d488f802492311741134c8c40625b09"
+      "file:size": 902,
+      "file:checksum": "12200b1ef511ddaf65d6d165a86b244cfa90d8871c670a7fab9dba1ded7a446a9de2"
     },
     "style-2024": {
       "href": "./Belize.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12207fdb4112eab380bc260895dec8a385156133e6959224bf07ef6c83f3a001df87"
+      "file:size": 902,
+      "file:checksum": "1220f50e5cd629ee7e6982b95f32f12cba96c9cb3da7367711dc6e12cefefcd6921a"
     },
     "style-confidence-2025": {
       "href": "./Belize.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220a7ab6874cedf00e0bd279c577e0ae5fac5480739b4c71c71f39738d16377d284"
+      "file:size": 2646,
+      "file:checksum": "122076cd84362c3266bcdd8b100fc1f5d22b5374674a9c07ed3f519173b76e4e7948"
     },
     "style-confidence-2024": {
       "href": "./Belize.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12208024e46f2e361dba379b78c9771f0ffa390b0fef71084ccb08f5813556b57f19"
+      "file:size": 2646,
+      "file:checksum": "1220166a1974b696cc55df2dcbf9458e35e8e0c471cb087dcdb34d38227a4f86ac6f"
     },
     "README": {
       "href": "./Belize.README.md",

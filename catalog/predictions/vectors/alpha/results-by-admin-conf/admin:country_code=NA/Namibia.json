@@ -118,9 +118,7 @@
       "title": "Namibia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1139768047,
-      "file:checksum": "12205e9c3a0efcb9b53fe76fa99b632d63d92ec787202f016f1ea6f0e1c4f0094607"
+      ]
     },
     "pmtiles": {
       "href": "./Namibia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Namibia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 696089216,
-      "file:checksum": "12200b0bbb6f252e8455ceafd07691dd596d0e0b7203011fa0193d25c485b704ce27"
+      ]
     },
     "style-2025": {
       "href": "./Namibia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12206098ed8821505558332ab5754334ce50ea00f642495709baeb3b2d69eacc8496"
+      "file:size": 905,
+      "file:checksum": "1220c986015098c9bd1ee9231144ed375dac0a024e5437b552d7bc348cadce958151"
     },
     "style-2024": {
       "href": "./Namibia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220039268adc14b00557b483da2a3be8d51275216c72f8884a39bf1f4b84e5c6f6e"
+      "file:size": 905,
+      "file:checksum": "12209da86f0a35589f92144e8fd694db4f3c0323b4489c1231059afb41f9f408cfc4"
     },
     "style-confidence-2025": {
       "href": "./Namibia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220929991483c009ce53ac7aae3de389cb71dcd29fca961e2ab6c5b0b6759c0208c"
+      "file:size": 2649,
+      "file:checksum": "1220cbd910f6381e9d2e198ea4cb056ec70a8f9db39803a3c9eeca725db54f4839be"
     },
     "style-confidence-2024": {
       "href": "./Namibia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12209bf9f003915e6d2de74cf06af7c44c68fce200c57d089aef95748d50dd1cdf1e"
+      "file:size": 2649,
+      "file:checksum": "12200ac4e219eead0d16fc7e3e5e13bf679b7fbe227eadff01c678ebd61a5fa69747"
     },
     "README": {
       "href": "./Namibia.README.md",

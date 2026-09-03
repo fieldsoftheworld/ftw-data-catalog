@@ -118,9 +118,7 @@
       "title": "Kuwait field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 27324913,
-      "file:checksum": "1220ffe5864dee7570b13598eb22a6631a69bcc528cfa41289878a1c913bbd6ae95a"
+      ]
     },
     "pmtiles": {
       "href": "./Kuwait.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Kuwait field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 20568749,
-      "file:checksum": "122074717d99f3715f1efbc107995ea7f32a00a1ea542439de01a1d45e22a09701dc"
+      ]
     },
     "style-2025": {
       "href": "./Kuwait.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122032cec39d441245464c728dfd3ae890c82925937c15c586307025c7e9ad716b50"
+      "file:size": 902,
+      "file:checksum": "12207c59e069d6a12888b16a41e85484376d7246574e61cabd888ee8726482efe965"
     },
     "style-2024": {
       "href": "./Kuwait.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220a6ce605e5274cb86f0f5f3d32056360b4b24df1d1da473fa2e91a22542be9f2c"
+      "file:size": 902,
+      "file:checksum": "12205858faa679b2118ef82d4e8cefc6a616c6eeb7f1f72035bb49e6738dd0de1af0"
     },
     "style-confidence-2025": {
       "href": "./Kuwait.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12208a07cbaa4ba0e5c3a1ede05ac3edc3702d614438803aa91f7716041800b049be"
+      "file:size": 2646,
+      "file:checksum": "1220852a01f9fb1a179f7c073573b137a2bdd1429248adf4057b704d3b81044c8f07"
     },
     "style-confidence-2024": {
       "href": "./Kuwait.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220a81ae5e791e69c8ea3c5b4a063be0a7b1007294d1ba65838b6e8d3975250ca66"
+      "file:size": 2646,
+      "file:checksum": "12204b96fd2d1f0b817e1870767f0f292dfc4b9e5badec05f7281fcbe6cb6b550d3e"
     },
     "README": {
       "href": "./Kuwait.README.md",

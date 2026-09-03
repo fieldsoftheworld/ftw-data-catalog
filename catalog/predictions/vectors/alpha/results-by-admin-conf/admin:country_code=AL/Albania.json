@@ -118,9 +118,7 @@
       "title": "Albania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 75070310,
-      "file:checksum": "122046c668d4fb3f389d5c850e995c361fd76443e4dd1f587d90147ead6beb43a116"
+      ]
     },
     "pmtiles": {
       "href": "./Albania.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Albania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 59214459,
-      "file:checksum": "12206dff211857ecd5785f08d29dce897b781f91ed566b7ff0f5b5364d007b52549f"
+      ]
     },
     "style-2025": {
       "href": "./Albania.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220ac5ffa600a1ef45a86daf96e23583267b05e546278f638b23de8a2e66dc10cba"
+      "file:size": 905,
+      "file:checksum": "12208b9b9d20116fd234a8404ef214b09f2893a753b24baf60293beb49d077eaf1db"
     },
     "style-2024": {
       "href": "./Albania.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12204ac729992ff6b90f48a320ceda09efe4e8d98c8828c80adc00a3b0be572ef411"
+      "file:size": 905,
+      "file:checksum": "1220a5995b4cbf573bb19ecc51bbc25e8973d562e09ec58b5a736faa66d336db4575"
     },
     "style-confidence-2025": {
       "href": "./Albania.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220a4fc5afeee7376d3e0b031605117d606a69319a293753f87416b9957bfc4a38d"
+      "file:size": 2649,
+      "file:checksum": "1220935d80d9cf81c63cd69b456b643bc58441fe41f0827b2fc582dee4429ddf9480"
     },
     "style-confidence-2024": {
       "href": "./Albania.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220b47dc92962d98be8fe473af4e903785632d58fa2ce41c39229927e75004a5896"
+      "file:size": 2649,
+      "file:checksum": "12205a2dd75f2c2fc2ceeb1a2449a58e98f36129629fe71fd069d579b28c755cc93d"
     },
     "README": {
       "href": "./Albania.README.md",

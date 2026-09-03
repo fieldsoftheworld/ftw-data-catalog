@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -46.05261053278179,
+          -10.923856470998006
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -40.35587526773059,
+          -10.923856470998006
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -40.35587526773059,
+          -2.77410067669941
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -46.05261053278179,
+          -2.77410067669941
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -46.05261053278179,
+          -10.923856470998006
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -46.05261053278179,
+    -10.923856470998006,
+    -40.35587526773059,
+    -2.77410067669941
   ],
   "properties": {
     "title": "Brazil \u2014 Piau\u00ed",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Piau\u00ed field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 651934638,
-      "file:checksum": "1220c8112fd10348c9a187c9a36980b9d29d92586621306285bf2635858ea66b4125"
+      ]
     },
     "pmtiles": {
       "href": "./BR_PI.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Piau\u00ed field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 392309143,
-      "file:checksum": "1220c58f0da600a1709010f81eda8948eac08514b419b55c03172513d5bceff15e05"
+      ]
     },
     "style-2025": {
       "href": "./BR_PI.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203d74341b804d894d4f853b99b9db538dd21d1001882dbf4f3aff425ba0b66cfd"
+      "file:size": 899,
+      "file:checksum": "1220df915eaee9a74dbe3e99f4900b50fbb99a1295103da1cd2273d7aa913e935fb5"
     },
     "style-2024": {
       "href": "./BR_PI.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d3c13f8c1f4dfb08847cafe6a41d24e0ba3b119aeab525ba9a55ef28a3cf798e"
+      "file:size": 899,
+      "file:checksum": "122056713f6f166f966335098fd8b169d4b4acba6d145ab2b7a75f76901f4eda924a"
     },
     "style-confidence-2025": {
       "href": "./BR_PI.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f670c44a96766897cf919141f13dc9203650019e7cf4db5f6ac833d9f1cc2d01"
+      "file:size": 2643,
+      "file:checksum": "122018cea16f2de2799fe768e1397e15e881e819421434deac0af044473d35cf139e"
     },
     "style-confidence-2024": {
       "href": "./BR_PI.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220988e6dd6bcf66224c310aec2927acfc415ab3e68bc73107aa0fcf51200fac33a"
+      "file:size": 2643,
+      "file:checksum": "12204a2c0fa175a87a7c0a07002d6d3eb1689e0a895bd2735f86cffc19aff1343c8c"
     },
     "README": {
       "href": "./BR_PI.README.md",

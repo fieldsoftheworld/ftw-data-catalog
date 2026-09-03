@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -71.01373608302119,
+          43.122634770040996
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -67.00232392740018,
+          43.122634770040996
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -67.00232392740018,
+          47.434891608433794
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -71.01373608302119,
+          47.434891608433794
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -71.01373608302119,
+          43.122634770040996
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -71.01373608302119,
+    43.122634770040996,
+    -67.00232392740018,
+    47.434891608433794
   ],
   "properties": {
     "title": "United States \u2014 Maine",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Maine field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 10316544,
-      "file:checksum": "1220634cf2ebb7bc7d82943974ea1dc86e603c93e5aaa863bef0d154ece10bd183c5"
+      ]
     },
     "pmtiles": {
       "href": "./US_ME.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Maine field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 9919332,
-      "file:checksum": "1220ef5919091e5c69c991a52ccb3aeeadf0c2636e2145859b58b7fa91aeb89d88ad"
+      ]
     },
     "style-2025": {
       "href": "./US_ME.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220910da791ea0041c3c171394f068a8c721f73898eac6e641a8bc25a0c75d93625"
+      "file:size": 899,
+      "file:checksum": "1220784bc3630b98d48f0a33dfbf5190902750efd3f5ce0756330fc0b9521ceb30e1"
     },
     "style-2024": {
       "href": "./US_ME.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207c6ae204bcaf9d6f217c9cbad79596a6815806944ea003cfcf54bceff330ce5e"
+      "file:size": 899,
+      "file:checksum": "1220dbc61ba760f316fdd71b9872f416a37a656402efa36f3ab6406853586be602cb"
     },
     "style-confidence-2025": {
       "href": "./US_ME.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a80766f2f6c49a57b63a480e816e524db61bda61fa9c9aae9368875b1930b3c0"
+      "file:size": 2643,
+      "file:checksum": "12209c1ecb210033b306da3a807dac3dbd55157a79a17dc95a0b14772217b1ff3a88"
     },
     "style-confidence-2024": {
       "href": "./US_ME.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220317aa038f5a64965be97566f5daa22b551000d9bccaf63d5072c527c9b66bf8a"
+      "file:size": 2643,
+      "file:checksum": "1220221ad36c4f3c715cb396858d092e4c87e7bb5d9cfaa805dde4e861e7c170792d"
     },
     "README": {
       "href": "./US_ME.README.md",

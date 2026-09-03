@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -91.6423927752728,
+          30.257729213422596
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -88.1317895496168,
+          30.257729213422596
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -88.1317895496168,
+          35.004319895112395
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -91.6423927752728,
+          35.004319895112395
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -91.6423927752728,
+          30.257729213422596
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -91.6423927752728,
+    30.257729213422596,
+    -88.1317895496168,
+    35.004319895112395
   ],
   "properties": {
     "title": "United States \u2014 Mississippi",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Mississippi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 70299375,
-      "file:checksum": "12207be12a7e59e111c43ad3ae31d5288bdce2d3968799f4b7ee80d2fb80b2b2b5fb"
+      ]
     },
     "pmtiles": {
       "href": "./US_MS.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Mississippi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 52342514,
-      "file:checksum": "1220fcd2c10baddf90a1ab2f276dcedf1adcbf8b5c7aae1a26947c54ed2403210e02"
+      ]
     },
     "style-2025": {
       "href": "./US_MS.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209fb75d16e5f6dd6df178b9092750757c550d3d218f2465f948e8d49cc12e45eb"
+      "file:size": 899,
+      "file:checksum": "1220c69045930e4f87704b1042a4bcab64a303192320a8f267dcaf1427c800ce3528"
     },
     "style-2024": {
       "href": "./US_MS.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c06d6cd4f01fb80c659d00ec837037d65b01816fb4d35e079844011b921d2cf7"
+      "file:size": 899,
+      "file:checksum": "1220629a3c05383c37d447a202c68f1cbcefbbfedf11e2c47ea8e3a943130a081b94"
     },
     "style-confidence-2025": {
       "href": "./US_MS.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122001516c4935aa9e60c1c169c337e12475fcd69e9245be883f4600bdf769a840cb"
+      "file:size": 2643,
+      "file:checksum": "1220ec75a0dac95a8bd5ed731e1bb2fa105d4ab78109735e21a42161f96d3a1546a1"
     },
     "style-confidence-2024": {
       "href": "./US_MS.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209fc6b2701efe8fecc1fb74afd8d05c2b3ad4a4998603276f8717d2e08374207d"
+      "file:size": 2643,
+      "file:checksum": "122085e316c67e4a8667c41b72de7c8a9e764a58689264a9c2d194f0e532600207d1"
     },
     "README": {
       "href": "./US_MS.README.md",

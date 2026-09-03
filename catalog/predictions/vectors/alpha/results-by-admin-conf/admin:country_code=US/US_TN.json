@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -90.3185504073994,
+          34.970273870994596
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -81.72960988510098,
+          34.970273870994596
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -81.72960988510098,
+          36.6666462178034
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -90.3185504073994,
+          36.6666462178034
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -90.3185504073994,
+          34.970273870994596
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -90.3185504073994,
+    34.970273870994596,
+    -81.72960988510098,
+    36.6666462178034
   ],
   "properties": {
     "title": "United States \u2014 Tennessee",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Tennessee field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 84863213,
-      "file:checksum": "1220e99d37917519dc4f54775f09fb326ef904127d6b3758a5a0c28556b258fbf8dd"
+      ]
     },
     "pmtiles": {
       "href": "./US_TN.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Tennessee field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 63290403,
-      "file:checksum": "1220461e3e1e8eb6162d8136d19919353dbb426f31edb11d528ecb3421dd3924c067"
+      ]
     },
     "style-2025": {
       "href": "./US_TN.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220994f806acec9a52439f8eb64bc5496a150a3cecd48678370a7eccfc147b61792"
+      "file:size": 899,
+      "file:checksum": "122008a7dc0d0247e1cfeb3de43965b52255683b370fa3c66c33c33ce8206232f985"
     },
     "style-2024": {
       "href": "./US_TN.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208829f586e7efc7eea23b804a406a5bba4abdd4984acba2ecb89ab9b2dc873003"
+      "file:size": 899,
+      "file:checksum": "1220b5568af1069b8980004e6bb84b7fd757842df875ac0bb89eae3441013c8c66d5"
     },
     "style-confidence-2025": {
       "href": "./US_TN.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122009d288410098d3e861efe341a6d72e05b3e07fcecd7d4e0acfaa2271c0536f56"
+      "file:size": 2643,
+      "file:checksum": "12203484ea6753798f1d48a8f90e81dcd245ab140bab461475fab4cd402619b234ee"
     },
     "style-confidence-2024": {
       "href": "./US_TN.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122001b52fe1640be1068423145f6c24e7f5aea37edf0d5cab5e373dd56bde864776"
+      "file:size": 2643,
+      "file:checksum": "12200f2d2fabf266c56562d6eac2973f27371169ac32ce8460b276048012013926a5"
     },
     "README": {
       "href": "./US_TN.README.md",

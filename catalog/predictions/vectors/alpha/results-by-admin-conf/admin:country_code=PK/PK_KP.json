@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          60.90822935838161,
-          25.1987056243932
+          69.19264211878202,
+          31.0854338736374
         ],
         [
-          63.37661102252122,
-          25.1987056243932
+          73.88353745758783,
+          31.0854338736374
         ],
         [
-          63.37661102252122,
-          29.8134241071254
+          73.88353745758783,
+          36.8873614717808
         ],
         [
-          60.90822935838161,
-          29.8134241071254
+          69.19264211878202,
+          36.8873614717808
         ],
         [
-          60.90822935838161,
-          25.1987056243932
+          69.19264211878202,
+          31.0854338736374
         ]
       ]
     ]
   },
   "bbox": [
-    60.90822935838161,
-    25.1987056243932,
-    63.37661102252122,
-    29.8134241071254
+    69.19264211878202,
+    31.0854338736374,
+    73.88353745758783,
+    36.8873614717808
   ],
   "properties": {
     "title": "Pakistan \u2014 Khyber Pakhtunkhwa",
@@ -118,9 +118,7 @@
       "title": "Pakistan \u2014 Khyber Pakhtunkhwa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 658892896,
-      "file:checksum": "1220c41b00851daf7f358f8e1d948ecb9892256c837b5f06dfcce284e6c90b4892d3"
+      ]
     },
     "pmtiles": {
       "href": "./PK_KP.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Pakistan \u2014 Khyber Pakhtunkhwa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 354013741,
-      "file:checksum": "1220310bee007ae23adf505ade3c7b3b53bfbcd5a3dcddc45e0d2a4a160a5a3428ff"
+      ]
     },
     "style-2025": {
       "href": "./PK_KP.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220babda929179951e0b936022a7c6035f49ad3627fc4ef142d236d174adb448401"
+      "file:size": 899,
+      "file:checksum": "1220cf86c6c1feed7d5cbc8bba67f7ce85d00f24049ae808214201816b9211063f6f"
     },
     "style-2024": {
       "href": "./PK_KP.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220745bf1a980df01e79969d808df257e69b0577eef61e1d010ad2254fa495fca07"
+      "file:size": 899,
+      "file:checksum": "12205bb391ce0bf02093686393cfd97818b267c152c4ad518053e58e5c36517962d0"
     },
     "style-confidence-2025": {
       "href": "./PK_KP.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205a2067ce81ab7eefa1e46a968ad198a2a8823df004810fc8516043e8db6ec635"
+      "file:size": 2643,
+      "file:checksum": "1220605223966cb0f8a1affb1df0b65a68788ebb2c530259e046c3f5e3c1540dab93"
     },
     "style-confidence-2024": {
       "href": "./PK_KP.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220881bbe835f80f21e61df8f05dd88d1bdd2c8e13184aaddcb4f01ffd365382ca6"
+      "file:size": 2643,
+      "file:checksum": "122016fa32a7b46d391106f249f5c2e321ac502320e9b95764447443e13946ee8148"
     },
     "README": {
       "href": "./PK_KP.README.md",

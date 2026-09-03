@@ -118,9 +118,7 @@
       "title": "Portugal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 297129505,
-      "file:checksum": "12200877d935937ffa6564ec255b0aa621bb774d69780789544e866585bf477a4f20"
+      ]
     },
     "pmtiles": {
       "href": "./Portugal.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Portugal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 194410369,
-      "file:checksum": "1220da70ece756ef126ebace574289f14672ab3bda2b4d27c689cbf4b3c3276bbe72"
+      ]
     },
     "style-2025": {
       "href": "./Portugal.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220db8f4a5e6650e113876f4ca4c2a7b640a7205bb121fe303f1197d3d5fc04ee37"
+      "file:size": 908,
+      "file:checksum": "12204bf5c51e40fa9d89cc9ea6bcff5d79ff731bcaafd0c3c0dac142063684f097b0"
     },
     "style-2024": {
       "href": "./Portugal.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220483d28488b2bbde4790b431dc0d137b5b3ac7a06f823ee08d8b6ce0cfbd67b5e"
+      "file:size": 908,
+      "file:checksum": "12205ef9a3c8af57610335da11c546d65247d4031037eb8ea114d2a8b31b219f0127"
     },
     "style-confidence-2025": {
       "href": "./Portugal.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12209cf77bc607096502abe93e0ef18b15f753da92dee1e637c60647b8d0c82fd4bf"
+      "file:size": 2652,
+      "file:checksum": "1220ad10244f6235847ab7b4448923f148a245fcb2db52a72c4c1d180d14607afe82"
     },
     "style-confidence-2024": {
       "href": "./Portugal.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220db9cb649bcd78aa0ce6505eac494c13c6a9532ce8c7d019f950287c4787098f8"
+      "file:size": 2652,
+      "file:checksum": "1220ced82204227cf15a6f950700ad98f173cee6e2b34b12b1b62c5c158a8f4ddc1b"
     },
     "README": {
       "href": "./Portugal.README.md",

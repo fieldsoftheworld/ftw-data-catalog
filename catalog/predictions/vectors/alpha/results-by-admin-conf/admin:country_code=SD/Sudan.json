@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          35.25872733633561,
-          11.926505415135992
+          21.813422408147026,
+          9.42165228452719
         ],
         [
-          36.46057893705341,
-          11.926505415135992
+          38.55966454539282,
+          9.42165228452719
         ],
         [
-          36.46057893705341,
-          13.779094215614593
+          38.55966454539282,
+          22.134114297800195
         ],
         [
-          35.25872733633561,
-          13.779094215614593
+          21.813422408147026,
+          22.134114297800195
         ],
         [
-          35.25872733633561,
-          11.926505415135992
+          21.813422408147026,
+          9.42165228452719
         ]
       ]
     ]
   },
   "bbox": [
-    35.25872733633561,
-    11.926505415135992,
-    36.46057893705341,
-    13.779094215614593
+    21.813422408147026,
+    9.42165228452719,
+    38.55966454539282,
+    22.134114297800195
   ],
   "properties": {
     "title": "Sudan",
@@ -118,9 +118,7 @@
       "title": "Sudan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6859698997,
-      "file:checksum": "12202d5ec5b97f06e9dd2f3c8e26c52250a65222b340d77b82be04d736b08cd3d481"
+      ]
     },
     "pmtiles": {
       "href": "./Sudan.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Sudan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 3174987355,
-      "file:checksum": "1220829fb87f31ff7163d98d9d6eebdfa97bc283cdbd1b74c29c9e0accdf99a27d89"
+      ]
     },
     "style-2025": {
       "href": "./Sudan.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220664b9289b987a13e4c3dfd7efb8d6f25d7f06e1cd3bb0775026ba620d8f94cd6"
+      "file:size": 899,
+      "file:checksum": "1220a67d07d42196a900c41bab02f4e1e33580f6a0a99bbaec770aa930e40c7d96a7"
     },
     "style-2024": {
       "href": "./Sudan.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122033cffb28a1652ba1c17ad1b1638789e2c7fbe5f8a40507afa72162d949675ddd"
+      "file:size": 899,
+      "file:checksum": "12209b0fd9ff550803c78ee756b8798297950ae2a775f1b02635c25a6f323cc174d6"
     },
     "style-confidence-2025": {
       "href": "./Sudan.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220023f13790bbdb9f759a5a7b829c40a4843f4f34f16b83310ea8f8390a04affbd"
+      "file:size": 2643,
+      "file:checksum": "12203d3a006daa63d95e627c1505062d09dd8c2f7a0c4696f18e36d2a9da0a8581f1"
     },
     "style-confidence-2024": {
       "href": "./Sudan.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202e0cfd6912786af6c01ba627e41ff0c156304bdc8da0ed032075f5db6bffe953"
+      "file:size": 2643,
+      "file:checksum": "1220db007d464cedbb5be3efae826bd209ce5f31b10713fa93be1c6ae64bc7d8603d"
     },
     "README": {
       "href": "./Sudan.README.md",

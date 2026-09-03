@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -116.04036654399638,
+          44.4582450248786
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -103.93309731299681,
+          44.4582450248786
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -103.93309731299681,
+          49.1742032679822
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -116.04036654399638,
+          49.1742032679822
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -116.04036654399638,
+          44.4582450248786
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -116.04036654399638,
+    44.4582450248786,
+    -103.93309731299681,
+    49.1742032679822
   ],
   "properties": {
     "title": "United States \u2014 Montana",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Montana field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 571873161,
-      "file:checksum": "122079b70ba28bda9ba9ea82ed2845658090073e244e6b33266b3af7669141899c27"
+      ]
     },
     "pmtiles": {
       "href": "./US_MT.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Montana field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 426956439,
-      "file:checksum": "122006f017f18649533e1b8ed1d3cea72da224eac3b0a9b02673141066587db63cc7"
+      ]
     },
     "style-2025": {
       "href": "./US_MT.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204324041f8b95ebf006067b5e7db0e1aea8d76c515a6f8cfb4957b32dd827a365"
+      "file:size": 899,
+      "file:checksum": "122030ee6773018e5fc4c13e07fa59caebf080d99b1551200329fe8a8076a65e5d00"
     },
     "style-2024": {
       "href": "./US_MT.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12208407c2ad8e50e0281bdce79517c396a8aeaa91029c29eaeee18c88392c1d8caf"
+      "file:size": 899,
+      "file:checksum": "12208a7fe9f5b25a3e2d1c6245795195f5731954df6775f99f9dd62732e5147f4e11"
     },
     "style-confidence-2025": {
       "href": "./US_MT.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d456575b920a3260e201a4810ad069cd58d9143474318f05c1a5e48c743a2a44"
+      "file:size": 2643,
+      "file:checksum": "1220fa616b75c711ee632b1b7f0b681d78d841a63e99a390b12272c09470e7f26255"
     },
     "style-confidence-2024": {
       "href": "./US_MT.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220293f60e101b4d84bfa62f105a6a536c6716cac6c7da5b40ca3945cde7f19be7a"
+      "file:size": 2643,
+      "file:checksum": "1220ee17064deb721595a34b008b168305591f5891e8ec997a0035cda56862f38aad"
     },
     "README": {
       "href": "./US_MT.README.md",

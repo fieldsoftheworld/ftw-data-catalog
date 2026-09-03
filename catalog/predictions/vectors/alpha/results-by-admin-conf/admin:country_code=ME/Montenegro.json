@@ -118,9 +118,7 @@
       "title": "Montenegro field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3643230,
-      "file:checksum": "12204b3b94f09faa46a8c153b35c30d0fbef0c141ce6dcec70aeaa317384b63b3a8f"
+      ]
     },
     "pmtiles": {
       "href": "./Montenegro.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Montenegro field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 4536719,
-      "file:checksum": "12203086b887c9bf586b21556c51fb94d158d2231052e6146a650efd2fa76c1a6bd4"
+      ]
     },
     "style-2025": {
       "href": "./Montenegro.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12207f5e652d1aca7e3be59d568a4834c564d0acdd6461530b261f823168c0bb3299"
+      "file:size": 914,
+      "file:checksum": "1220e168f48f36db659eaf9f73f91cdeb8bcc7a2eea9d5a775bab50a1cdca255540d"
     },
     "style-2024": {
       "href": "./Montenegro.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12203019941783e13d80cf6ee6ea11a3a59d90abc84aad678dae4d195363f681081f"
+      "file:size": 914,
+      "file:checksum": "122026d7d3452949c82f5d89c1856a66c8d7313e38c9751ff1c8bcfca1a1d30ca077"
     },
     "style-confidence-2025": {
       "href": "./Montenegro.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220480901a15ee65f9977dd8331b1970664b51ad06cfd8981f484747959eb30fea3"
+      "file:size": 2658,
+      "file:checksum": "1220e1ac47defd1814b96d7e84a121e3120a273c29b06c8548488c7dd644cb587b95"
     },
     "style-confidence-2024": {
       "href": "./Montenegro.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "12205704e468dbcf1b062a83e6a39c9a54b6ff3d85d015c5c768282eb6b816042ff1"
+      "file:size": 2658,
+      "file:checksum": "12202e37b06a1c9ad88cad4e2c8f5c399a06d9e1ef1592463e499d8f6dd24a7bedea"
     },
     "README": {
       "href": "./Montenegro.README.md",

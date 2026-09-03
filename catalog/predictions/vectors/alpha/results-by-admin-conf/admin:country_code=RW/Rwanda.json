@@ -118,9 +118,7 @@
       "title": "Rwanda field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 295397939,
-      "file:checksum": "1220a995a2aa100c1b4c4aded3c6e137107213207019acf333964a3ea49e5d52e1e3"
+      ]
     },
     "pmtiles": {
       "href": "./Rwanda.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Rwanda field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 164102005,
-      "file:checksum": "1220b36c114fd7e30f28e7c4c74411df5d312e6e434a4a1227045a7a143d0cece957"
+      ]
     },
     "style-2025": {
       "href": "./Rwanda.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12200f031c302745132fbca4008ce4f4272c02c4d7a663758a7744dc8c1f571019c3"
+      "file:size": 902,
+      "file:checksum": "12203bca17d8e85a894b617fead45d2d4e1eefe3bb16db189ca8bbf28e562ea40157"
     },
     "style-2024": {
       "href": "./Rwanda.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12208968687df78c71559c6da43db41db2424a6efd62b5e2c3df7f77dc80eb9d7098"
+      "file:size": 902,
+      "file:checksum": "122021bf8a1c3b14eedc44cd4c73169ddfd2aaac2035bab8ce6f25f3eae9084643d2"
     },
     "style-confidence-2025": {
       "href": "./Rwanda.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12202c0687381c735750d8f72dd68709cb0625d982918e194a5b9317c15686d3009c"
+      "file:size": 2646,
+      "file:checksum": "12208df1f67c2407f04b99355650ac72fae676d8e433163e91497915bb8af6cd3dff"
     },
     "style-confidence-2024": {
       "href": "./Rwanda.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220e548da9b025ed15a0aab73757105513523430567cc93759617458382061729de"
+      "file:size": 2646,
+      "file:checksum": "1220577d75bc5426c368c5ac9e3aa91fb13e0c8978c3cf189ac92c8c90a567f03ac2"
     },
     "README": {
       "href": "./Rwanda.README.md",

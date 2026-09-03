@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -72.5292782278534,
+          42.694768773014395
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -70.7182812721414,
+          42.694768773014395
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -70.7182812721414,
+          45.1750081553164
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -72.5292782278534,
+          45.1750081553164
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -72.5292782278534,
+          42.694768773014395
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -72.5292782278534,
+    42.694768773014395,
+    -70.7182812721414,
+    45.1750081553164
   ],
   "properties": {
     "title": "United States \u2014 New Hampshire",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 New Hampshire field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1496963,
-      "file:checksum": "12203e45db406d457eac669469f5c1395192def0f4c0bf506dba825c323eae10450c"
+      ]
     },
     "pmtiles": {
       "href": "./US_NH.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 New Hampshire field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1331573,
-      "file:checksum": "1220ced0f63fe0365b62f67b9a25112fa997ec4169759f925dea5ae6b39de30ae1ca"
+      ]
     },
     "style-2025": {
       "href": "./US_NH.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201c43c2719aa38b73b3aa99a941a082b18d625c1fad19dab3d26b9ccdf3c4790f"
+      "file:size": 899,
+      "file:checksum": "122008206a25b984a2965c6928d5752bc4f7e0569849256d5ca78e4e348ff3f9ef40"
     },
     "style-2024": {
       "href": "./US_NH.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ff4db5c2c75cec06c06206b391bde0ee699502dd5f02060899f58aea4d888b24"
+      "file:size": 899,
+      "file:checksum": "12203baef56cb7bdd51cad94431699de41360858a928a242a9dfdbb5db24539b6772"
     },
     "style-confidence-2025": {
       "href": "./US_NH.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220e7aa9973933c22809880bbb3de0557f3f4c1255059391607f6128556f9077ae4"
+      "file:size": 2643,
+      "file:checksum": "12206d56cced89385b60b3f2abdf826fd7ea6130e82043913235d30ca9933875d77b"
     },
     "style-confidence-2024": {
       "href": "./US_NH.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d998fbe0b95ba53a96dd323351e36c0fb53b738edea69fd7f82e22e2eae6a756"
+      "file:size": 2643,
+      "file:checksum": "1220ff8a67578598c2df4fe48f2ee20eb2a39a92dcadadb55728da5c63fa8223d889"
     },
     "README": {
       "href": "./US_NH.README.md",

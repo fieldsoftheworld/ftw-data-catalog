@@ -118,9 +118,7 @@
       "title": "Guyana field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 86025817,
-      "file:checksum": "1220557ec60f3b47b2743569465c7bb8c4927658c9091c93cc05c5cd0c9d1a5c283f"
+      ]
     },
     "pmtiles": {
       "href": "./Guyana.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Guyana field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 60884959,
-      "file:checksum": "1220c8cb6fb394cfa67799998780da8ad647f15b9893588cb4601bc9dd9c695e843b"
+      ]
     },
     "style-2025": {
       "href": "./Guyana.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122009c378340f2631be95b53ec8d32328a7a8cf9fc657441b2dad3afe72341c6f2a"
+      "file:size": 902,
+      "file:checksum": "12205ac893708e0719ed16792834e8f718233587fb24ee0ae5985de63743bb483dbf"
     },
     "style-2024": {
       "href": "./Guyana.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220071f830be8701cec3fedb4ab25b94eac7f8cbe587226cc682bcad92a106bdbec"
+      "file:size": 902,
+      "file:checksum": "1220fb890bccc3583ac57ca3511b2ea44e730e29053aa19f5083ae8811525770b980"
     },
     "style-confidence-2025": {
       "href": "./Guyana.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12207ec386454d3777ce517a4adb9ec1b8dedace165de248b4b019f40cfefd9fea8c"
+      "file:size": 2646,
+      "file:checksum": "12205dc841c0fa0961ad0681efd3aa444769b9e05ecf79c301111454fa9a7f57fd98"
     },
     "style-confidence-2024": {
       "href": "./Guyana.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "12208b34c304ef13b56e6e73f813907f99b626532a61a6d4970dc621b458fcaf3bc2"
+      "file:size": 2646,
+      "file:checksum": "1220818e3ff9e3c9f834b7655b5072559cc4dd715fbcb32d69ff8bf0888861941f27"
     },
     "README": {
       "href": "./Guyana.README.md",

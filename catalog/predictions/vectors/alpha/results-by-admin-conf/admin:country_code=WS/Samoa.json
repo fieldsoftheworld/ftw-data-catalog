@@ -118,9 +118,7 @@
       "title": "Samoa field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5201106,
-      "file:checksum": "1220733e5928f24b12d8278727ce0314817dca8c70e0f3137b85ea2158f9fbf488fe"
+      ]
     },
     "pmtiles": {
       "href": "./Samoa.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Samoa field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 4934759,
-      "file:checksum": "1220725bd79425ed5f671622b85fe0597312a42ad3be7572907325bdaddb9756e902"
+      ]
     },
     "style-2025": {
       "href": "./Samoa.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220673a3a92c07e6f003f3063b95bc424527e9a33557c5e0384704a21cac9af7d4c"
+      "file:size": 899,
+      "file:checksum": "122067cbd3a69d3d26169ca60ac778b613714bca69403940d5038d79ff730e8b4419"
     },
     "style-2024": {
       "href": "./Samoa.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204f7cee44eb3bbea83276eae05f1490d04fcd50c2d0c46f760fc3a74de54023dd"
+      "file:size": 899,
+      "file:checksum": "122097b2feb84a9da5e661c2d4a9bb0c5aa7be74d277c036e6857fddf608d8e5cd46"
     },
     "style-confidence-2025": {
       "href": "./Samoa.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122034f0b2dc8acafe2a6d2997cfe102ce95938a395206922260f62734fcd44cae10"
+      "file:size": 2643,
+      "file:checksum": "1220d32c6dc317577c2e85b24f7271faa0cd47bf52f3ec3082e84f72d5956f1557ec"
     },
     "style-confidence-2024": {
       "href": "./Samoa.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220cd477dc6be790ecd179945119063279b5d4ad99672693ab8c3c3f6445e867c6a"
+      "file:size": 2643,
+      "file:checksum": "1220a3d27be286ead0e6bc0ee9e9fc24c59ceddd71108fa6114c7631f2392de00088"
     },
     "README": {
       "href": "./Samoa.README.md",

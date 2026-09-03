@@ -118,9 +118,7 @@
       "title": "Tajikistan field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 351515532,
-      "file:checksum": "12206f260b32f5020b94717fdfb23445b5694512297a516499f99320d44e4ec65cb6"
+      ]
     },
     "pmtiles": {
       "href": "./Tajikistan.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tajikistan field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 221258281,
-      "file:checksum": "12203c8902ce8fa1f8b48d834b4d6a43bf314b0bdb1f446e2b9caf22646ea8c0984f"
+      ]
     },
     "style-2025": {
       "href": "./Tajikistan.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12203496262e9ab62b38b14d7f5ab21122fe21a87a3177ef7ad7709cc5bf25217c4f"
+      "file:size": 914,
+      "file:checksum": "122069ac642ea3bbe9ce5e9b0e91e93b0a176af156e9f81b721723d52a77c584dfbf"
     },
     "style-2024": {
       "href": "./Tajikistan.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12204de5ae86414dcfbcd0dac9226a85cdc61c2642ccaf5d7860cae6f1765c0448e5"
+      "file:size": 914,
+      "file:checksum": "1220603155ba3c5a8ee63c48ecf0794e94300dfc7dd52369c4e53babc8121b1d56f7"
     },
     "style-confidence-2025": {
       "href": "./Tajikistan.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "122064d6db2b0fa724f3982fb696a57fa76226f13b7812f9215cee5e03755c37ffa5"
+      "file:size": 2658,
+      "file:checksum": "122053c1dd4710a74b7d2143aae250f40dc766ef127cf12822a2d4f8d8b6d5d8370c"
     },
     "style-confidence-2024": {
       "href": "./Tajikistan.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220e11f6a679ca3e6d6092558c8f5484ce58db0885dc5f507a4294c7486270483e4"
+      "file:size": 2658,
+      "file:checksum": "1220a6d6e9b2a77664cdb76901daf29622edbacea8e6fd4002c376423ca0e47caba1"
     },
     "README": {
       "href": "./Tajikistan.README.md",

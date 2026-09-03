@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          81.3887544048014,
+          17.812245521199998
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          87.48766394419401,
+          17.812245521199998
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          87.48766394419401,
+          22.564136243583597
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          81.3887544048014,
+          22.564136243583597
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          81.3887544048014,
+          17.812245521199998
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    81.3887544048014,
+    17.812245521199998,
+    87.48766394419401,
+    22.564136243583597
   ],
   "properties": {
     "title": "India \u2014 Odisha",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Odisha field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1654983897,
-      "file:checksum": "1220596e13a09348b32ea17a9215e630f23735754458ba9ec273efade5e8461846d9"
+      ]
     },
     "pmtiles": {
       "href": "./IN_OD.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Odisha field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 882290497,
-      "file:checksum": "1220b73919b4d04c268f0b7de6383237384999b1d08dae7fba7391cfeb39c98c3f4a"
+      ]
     },
     "style-2025": {
       "href": "./IN_OD.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12209aec1d0af7e420a9724348d5bfebb133d20e3603618aa0dfd965095bdb593bc4"
+      "file:size": 899,
+      "file:checksum": "1220b27ac3bfd9fb2ba7ed410fd2f497aea76e06dbbfb871198fb6106eea561b15b8"
     },
     "style-2024": {
       "href": "./IN_OD.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12205eb492d27336469c0cbe2510a8a824ec6e21f58fdb016ce2fe3ea2008ad3cd2d"
+      "file:size": 899,
+      "file:checksum": "1220f0759ea1464d60fdf1071884d1b8c48c78c153180286cc1e4665c3f2c79641a7"
     },
     "style-confidence-2025": {
       "href": "./IN_OD.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220306a23163e7f6b9239b25bd9bf537f7691047c3b27ea247d44578297fbd5a746"
+      "file:size": 2643,
+      "file:checksum": "1220214992dbea1debcadcd67ba55a5f10b8a726f797e39d7ee4fa49e04d17d219f5"
     },
     "style-confidence-2024": {
       "href": "./IN_OD.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122046e0ff6235f8f993e6285d805fcfed5e3868c74cd3e4b51cfb61a4c383d9531e"
+      "file:size": 2643,
+      "file:checksum": "1220f2be372c1e5075e8d0c50150a144290600eb18edd9c07f79927ea5a7164e2049"
     },
     "README": {
       "href": "./IN_OD.README.md",

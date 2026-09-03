@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          33.422038657938415,
+          -4.148248515564812
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          35.34846870333742,
+          -4.148248515564812
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          35.34846870333742,
+          -2.16324852893941
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          33.422038657938415,
+          -2.16324852893941
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          33.422038657938415,
+          -4.148248515564812
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    33.422038657938415,
+    -4.148248515564812,
+    35.34846870333742,
+    -2.16324852893941
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Simiyu",
@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Simiyu field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 356380606,
-      "file:checksum": "1220f7bfbcd1773f2acb8b251e96e1afd12d3f208978daab898d7785a9eb13f93c1b"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_30.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Simiyu field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 188182772,
-      "file:checksum": "1220ae9cdd4a7303cfc15c1d077728ca4d1fb759e320054b7c2b17b8ea356bf37798"
+      ]
     },
     "style-2025": {
       "href": "./TZ_30.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201357ba0b5a4ba69bdfe20c936000ce416b093c7242199b3603a694f73fd66147"
+      "file:size": 899,
+      "file:checksum": "1220012b6e149f4e1ec6e5e0f3aa238423d9514afe14033e1a9e092ec3dd7e55283d"
     },
     "style-2024": {
       "href": "./TZ_30.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204b74812d02594c72b792c9b67d07e75ee1bb83b857211533af5b2c2d34ee826c"
+      "file:size": 899,
+      "file:checksum": "1220ad4032df0320f022c028ba0106495d06aed16a77bffe2269937701e32b0205cd"
     },
     "style-confidence-2025": {
       "href": "./TZ_30.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b874d7d848368392f6b9b9917866aadfbdf736a014f7de0774609d419251b5ec"
+      "file:size": 2643,
+      "file:checksum": "12205b2bd078512fedce21978bca4f179ef78b255c6c0be0f6f3c019ee014fac46cd"
     },
     "style-confidence-2024": {
       "href": "./TZ_30.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220efac0f7d46fb6469c5aa88871b47044497dc10af421c606362242d75f6b0d670"
+      "file:size": 2643,
+      "file:checksum": "12201c63d2c29f7a5f8b7ba6592ccc7f90c08d4b62443ee4f5aa9918cbfad6034fbc"
     },
     "README": {
       "href": "./TZ_30.README.md",

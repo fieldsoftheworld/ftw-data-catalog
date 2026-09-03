@@ -118,9 +118,7 @@
       "title": "Dominica field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 135893,
-      "file:checksum": "1220d103f18db8ba3e388968ff17c85c3ebe74d081c330815924584b5adc25868e88"
+      ]
     },
     "pmtiles": {
       "href": "./Dominica.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Dominica field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 127941,
-      "file:checksum": "12209a11a1244ed03dddcf6b4723c54bdc0e4be34b2831caecf0105e60c9b2cf7cfd"
+      ]
     },
     "style-2025": {
       "href": "./Dominica.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220bd8514d66d142ae6956e4af83c1829aed09958f563d7600b78cebaba3c832681"
+      "file:size": 908,
+      "file:checksum": "122066d99482f59010ae6824e8ba5658a7fb50cb3b3d062790d5d138c64916c9a996"
     },
     "style-2024": {
       "href": "./Dominica.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220763023b004e7b136cfd0ae39b4f85d4bdff42476b36ceb5803fc7a12964cfdd4"
+      "file:size": 908,
+      "file:checksum": "1220ffb4574f6d0ce57e09d31bd2ba599ac30e3ab3cb325b7cb0a265795ca1984bd4"
     },
     "style-confidence-2025": {
       "href": "./Dominica.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12201f08b16b9945fbe76048210e99809239e4788538040e183f8278fb32bb932f15"
+      "file:size": 2652,
+      "file:checksum": "1220cf101ab8a72ee94a0901cdc2ad3cdf2d49f2781ec590f777801061b83803ea7f"
     },
     "style-confidence-2024": {
       "href": "./Dominica.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220c3362b44ba4b338f16e428a10b9b96eef1e36c557ac462c23702663622de1018"
+      "file:size": 2652,
+      "file:checksum": "12202f0bc84d967c313526f02574082a3ce44696dfac90690719d5e334fdf1a9084b"
     },
     "README": {
       "href": "./Dominica.README.md",

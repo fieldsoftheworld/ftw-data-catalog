@@ -118,9 +118,7 @@
       "title": "Mauritius field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 19397612,
-      "file:checksum": "12206e05109cadd6783c81c2e5b14ba86aa80bcf3c5134ad2b054cd196483240d2b4"
+      ]
     },
     "pmtiles": {
       "href": "./Mauritius.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Mauritius field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 15363616,
-      "file:checksum": "1220804ee5ff104a64a07d9c83c288f60a9cba79c07b9d1e9deef9c146f0b4b357a2"
+      ]
     },
     "style-2025": {
       "href": "./Mauritius.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "122002dbb99fa35d36dd30214693cb1f79c71591e45c073c4147bc7361e8b1e824f1"
+      "file:size": 911,
+      "file:checksum": "1220389e247e7fea6bbc43724187269fe8072febb59c8e98490d40da0b4e17e91c5b"
     },
     "style-2024": {
       "href": "./Mauritius.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "122050192fd55ec52e1153af368e60ef1bda6a87ba58273c418e3f3f7949c0a7024c"
+      "file:size": 911,
+      "file:checksum": "12200f14a2ad87d3349d47a81015f48ceb583b70f8fbce3cd81fef0624399b7bef88"
     },
     "style-confidence-2025": {
       "href": "./Mauritius.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12209c9ba0a005338ec87abb42f526a8fa11f5ae0289380b3cc9180b5aa34bd46bfa"
+      "file:size": 2655,
+      "file:checksum": "12208a5af4e53b568571e337dc806b7705539d077fad4823d58f8ccdd4c66ff75514"
     },
     "style-confidence-2024": {
       "href": "./Mauritius.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "1220cb8eefabb4abca0ad32d88f18099173deeb167a36822459d832c9c1f68123916"
+      "file:size": 2655,
+      "file:checksum": "122091f9f8f6a8a2cc94ac74e4fd46ad992f083784d6478e3dbb4a0b75e179e1891e"
     },
     "README": {
       "href": "./Mauritius.README.md",

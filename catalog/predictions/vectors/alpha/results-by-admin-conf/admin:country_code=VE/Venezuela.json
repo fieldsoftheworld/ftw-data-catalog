@@ -118,9 +118,7 @@
       "title": "Venezuela, Bolivarian Republic of field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1986695019,
-      "file:checksum": "1220a61fd76bf3efd0d444e2fec57e00e4851dd5a62983d68db4911999a064319801"
+      ]
     },
     "pmtiles": {
       "href": "./Venezuela.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Venezuela, Bolivarian Republic of field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1084473139,
-      "file:checksum": "12200c1e6c853b2c74b4089efbc8803401c387f0e87971498957db82d2227e60949d"
+      ]
     },
     "style-2025": {
       "href": "./Venezuela.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "122040c75afa17b242fdb45fb7462e73a549c00c715cac90aa903560d34bddcdd71d"
+      "file:size": 911,
+      "file:checksum": "1220efd3a7ab7b04f8fdbdc0fb71d4513c47ed5f08b0074fa6a5216b2b5f7247b5b8"
     },
     "style-2024": {
       "href": "./Venezuela.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220cca1e543e267fa9b32cb7f9be33322489a8721daa1f4e3dae293cb70aeb01a9c"
+      "file:size": 911,
+      "file:checksum": "1220e2acc30062beaf04e2c616012befc4894d25953496cea765a31d358fae8ada69"
     },
     "style-confidence-2025": {
       "href": "./Venezuela.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12204992c56c2c1fe809a2c3f963721e4235c7db6792295b2fc4bb485ff55e4c25ec"
+      "file:size": 2655,
+      "file:checksum": "1220ff8d840e9c644bb4d12b6d6a5ef55506fefb50faf7a3b8fa859a33220d9278e6"
     },
     "style-confidence-2024": {
       "href": "./Venezuela.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12208fcaadd4e01d6db7bd6b1240702b0ef380c117b652eb13a6fbe68ad73245803d"
+      "file:size": 2655,
+      "file:checksum": "1220a2b40174d4805c45c44b0ed14a5b48a80d3be3efb9daa7933e821151dcfa6a04"
     },
     "README": {
       "href": "./Venezuela.README.md",

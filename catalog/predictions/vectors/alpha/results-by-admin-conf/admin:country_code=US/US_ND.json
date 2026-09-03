@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -104.0996443544596,
+          45.863564289519395
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -96.55517117363259,
+          45.863564289519395
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -96.55517117363259,
+          49.0298445324748
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -104.0996443544596,
+          49.0298445324748
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -104.0996443544596,
+          45.863564289519395
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -104.0996443544596,
+    45.863564289519395,
+    -96.55517117363259,
+    49.0298445324748
   ],
   "properties": {
     "title": "United States \u2014 North Dakota",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 North Dakota field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 499317681,
-      "file:checksum": "12203201ce42c63cb209fff4372471eb843ef759ca6f5924f51ea93049302e0efc12"
+      ]
     },
     "pmtiles": {
       "href": "./US_ND.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 North Dakota field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 380515063,
-      "file:checksum": "1220a60c76d80aa5c427f2defa6794ca5e38ecc36b418b668fd2f29d78228b8cde91"
+      ]
     },
     "style-2025": {
       "href": "./US_ND.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207b3b64ce0d9820965fb596879ce0fd91bb7b30a41811c534d2678c0d5d63e4d1"
+      "file:size": 899,
+      "file:checksum": "122004ad7493e9b0cdd10183a0c0a931ef65c7ce9b7df592f7f1b3eae6efb39f4afd"
     },
     "style-2024": {
       "href": "./US_ND.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201cd80294f96e866c9245016e4ed95c8d743108e15378d8bf428006861ae5b488"
+      "file:size": 899,
+      "file:checksum": "12202afbd5dfa2d326fe083936773122ee39ffd210519437452a0ecd134c744b94de"
     },
     "style-confidence-2025": {
       "href": "./US_ND.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122084c6e79129e715ae08d4ddd2f2083642ca3dd74f8a9aef92460751bd89289729"
+      "file:size": 2643,
+      "file:checksum": "1220ca6a6d3a7ad8686952ef71baf0e7a6556f965cfde807ff297b8b248ec95417aa"
     },
     "style-confidence-2024": {
       "href": "./US_ND.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205caff17dece9fca8e248a4652d7fae82258b5017d440eedba59a1af1e05d8676"
+      "file:size": 2643,
+      "file:checksum": "122044a4f13306135476187e9804453a986f53a5bfe81376c4d1ff849904280aa283"
     },
     "README": {
       "href": "./US_ND.README.md",

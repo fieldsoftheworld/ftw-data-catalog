@@ -118,9 +118,7 @@
       "title": "Lebanon field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 36146205,
-      "file:checksum": "1220dcfcf0e28ccc433ae621e7d99f6509c1d4ec4302470ef28bb022fdc24263b351"
+      ]
     },
     "pmtiles": {
       "href": "./Lebanon.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Lebanon field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 25257376,
-      "file:checksum": "1220ff6b6082b731cc14b1c9f7f589450a2927c1f753587ea4f7324fec55aac59bd4"
+      ]
     },
     "style-2025": {
       "href": "./Lebanon.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220be2293451959ed6a8b0062fe1f8518034c572d326d380d9884deb0cf7b1db0e6"
+      "file:size": 905,
+      "file:checksum": "1220882b5a259dff7c81ffb89e1deac9682e363ff5d9086bdeeadab93d7f225314f5"
     },
     "style-2024": {
       "href": "./Lebanon.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220846070890bdd5dddaf4e11bfad6425275bb8a7653537b4cbb60d3fc8a4aa7744"
+      "file:size": 905,
+      "file:checksum": "1220f106ebefcb02a4db57155e449b45669d22bca5691cf976c7df01498c52228f6a"
     },
     "style-confidence-2025": {
       "href": "./Lebanon.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220d4da85b8f0b9b26fe8796546bb9df899d2aff75e3178d05ab9c77bf321fc5d3e"
+      "file:size": 2649,
+      "file:checksum": "122005ca09b9c181a97319c3bae18fa10d78ade49dc736ae63e37832721595c33f29"
     },
     "style-confidence-2024": {
       "href": "./Lebanon.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220d15237d9dd7eaef86a7014bb4de22db2c74446bd7ca5c264d5099e8357893c2e"
+      "file:size": 2649,
+      "file:checksum": "1220cc7b9c123a445d332e9e188fe913e450f9d1674985b6e9a4f384b6b4ec5aefd8"
     },
     "README": {
       "href": "./Lebanon.README.md",

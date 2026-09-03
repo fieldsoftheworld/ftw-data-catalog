@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          148.75649368931482,
-          -35.943012975274605
+          112.92291855853304,
+          -35.0703028847616
         ],
         [
-          149.39663080768804,
-          -35.943012975274605
+          129.076813774848,
+          -35.0703028847616
         ],
         [
-          149.39663080768804,
-          -35.1693866963762
+          129.076813774848,
+          -13.746262887243809
         ],
         [
-          148.75649368931482,
-          -35.1693866963762
+          112.92291855853304,
+          -13.746262887243809
         ],
         [
-          148.75649368931482,
-          -35.943012975274605
+          112.92291855853304,
+          -35.0703028847616
         ]
       ]
     ]
   },
   "bbox": [
-    148.75649368931482,
-    -35.943012975274605,
-    149.39663080768804,
-    -35.1693866963762
+    112.92291855853304,
+    -35.0703028847616,
+    129.076813774848,
+    -13.746262887243809
   ],
   "properties": {
     "title": "Australia \u2014 Western Australia",
@@ -118,9 +118,7 @@
       "title": "Australia \u2014 Western Australia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3120306357,
-      "file:checksum": "1220cfc27d7d4f8dc60f47ef0d843d25a6a90d6364a5529331989ef51a19ab23c93f"
+      ]
     },
     "pmtiles": {
       "href": "./AU_WA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Australia \u2014 Western Australia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1870499322,
-      "file:checksum": "122011bd63a3b19cf887d37bf03bc3656c325482f308e28374df68a1f83a262afd95"
+      ]
     },
     "style-2025": {
       "href": "./AU_WA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122017957d04a32964adca0cfea6be3f0b6af0eda8135dd832e10786b855ffd81130"
+      "file:size": 899,
+      "file:checksum": "122039b1077a8240ca0d79444569484b7c221846caba50a5db60d8210dc0e82d5053"
     },
     "style-2024": {
       "href": "./AU_WA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220fa47f0c66d041f2900f51d9e8b161522f678d0df80ffb0c0cb67cfaa372d12c8"
+      "file:size": 899,
+      "file:checksum": "1220a08d33cfb605af668cc9c2ed5ed541eb24d4e9dc9f26636d74edeaba088d7d05"
     },
     "style-confidence-2025": {
       "href": "./AU_WA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122075d6db778e25990fa7274853245290fe23c5f0a82bd5d63fdf77ecb547616581"
+      "file:size": 2643,
+      "file:checksum": "12209b1d7f9ee7ac3076b9331b05a388e11b31337f6f15e4a8741a9819a1b921b387"
     },
     "style-confidence-2024": {
       "href": "./AU_WA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220437379d79a35cbc99c720cdae2d72d0758c9b05d2c63ddd7eb031630ac26062f"
+      "file:size": 2643,
+      "file:checksum": "1220ee67d188ba8d64b3cb588d962b071bf7b1031c0ab71795fdec551130064fd1ff"
     },
     "README": {
       "href": "./AU_WA.README.md",

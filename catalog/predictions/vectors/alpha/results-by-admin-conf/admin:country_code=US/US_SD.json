@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -104.1480633702894,
+          42.495163850614
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -96.4252752610354,
+          42.495163850614
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -96.4252752610354,
+          46.012773909729596
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -104.1480633702894,
+          46.012773909729596
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -104.1480633702894,
+          42.495163850614
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -104.1480633702894,
+    42.495163850614,
+    -96.4252752610354,
+    46.012773909729596
   ],
   "properties": {
     "title": "United States \u2014 South Dakota",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 South Dakota field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 601688381,
-      "file:checksum": "1220113d22f81a96d6c87b5b4c7aa233cdf3e7503b518041f76842040b5c3d680260"
+      ]
     },
     "pmtiles": {
       "href": "./US_SD.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 South Dakota field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 429259180,
-      "file:checksum": "122054bf1e5e8756d6816339605c09826ebe47e4331c9694901546ff514537b7fb81"
+      ]
     },
     "style-2025": {
       "href": "./US_SD.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ce6be33c976c089cd2db60e5422dd31a94fb7f713f7f2fd36c6d8c40dcaf547c"
+      "file:size": 899,
+      "file:checksum": "1220985e7c08fde8e48fd5d4ede101ab35330fd6210ec58c31bcc2a876ac8cbfa508"
     },
     "style-2024": {
       "href": "./US_SD.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122030a52e56c4a6ada141ba67d9e2a7e6bcd1e4eb3fd22f32cc5d27c3e67d094184"
+      "file:size": 899,
+      "file:checksum": "12205d00d8ffb972898e2a76fde12b800627fe53513936097864240e9d7a95f36c6e"
     },
     "style-confidence-2025": {
       "href": "./US_SD.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122002722895bb18707b4d9082dc50913d698dd55c45f9c6edb83a5a5649401165c4"
+      "file:size": 2643,
+      "file:checksum": "1220bc18091d0a477f18f7b630968268b40e5bb206ca8649617f768b59369a25c2b2"
     },
     "style-confidence-2024": {
       "href": "./US_SD.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208c63b12fcc93bf4bd65b440de5d98929386af93acda112f5947753a7aa5703c4"
+      "file:size": 2643,
+      "file:checksum": "12200fc3e43c862bc22a3820729e20830b887b2d141946515d91f5e0d128d2a72130"
     },
     "README": {
       "href": "./US_SD.README.md",

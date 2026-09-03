@@ -118,9 +118,7 @@
       "title": "Malta field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6618379,
-      "file:checksum": "122034bf61ce8aa88fb207ffd80189aaa38728fb4a80edf6f360a6e5b868a72753eb"
+      ]
     },
     "pmtiles": {
       "href": "./Malta.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Malta field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 7714088,
-      "file:checksum": "1220ec5c89d9893e40f7ef5ca61616739418ec756724bb883d772d002c3241dec2f4"
+      ]
     },
     "style-2025": {
       "href": "./Malta.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ae22596dbfed6555ad375fc89657900bc883f37cc5a32cb1ac65660380bb4be0"
+      "file:size": 899,
+      "file:checksum": "122011145c97d93ae7934d836fd6e8b5408c963b24d2e71b023b639218095dba2a20"
     },
     "style-2024": {
       "href": "./Malta.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ab3c0a1adaca1a0aaeb4db73f605d5401c0508051f981ab4d922bacc7737755e"
+      "file:size": 899,
+      "file:checksum": "12202d6ced129554760f1db1d1658b6d306655d3cde4ffcf89be01f0f793bdbb30f1"
     },
     "style-confidence-2025": {
       "href": "./Malta.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207be81863a6c1e8d2c5abc104bb846ed8ed7b2300056465be5c70397d9a58a694"
+      "file:size": 2643,
+      "file:checksum": "12209ed9bfba852b934cb3d5d4b5a46271ce5e4bb0aec2e2ec5342744b7e937ba2f0"
     },
     "style-confidence-2024": {
       "href": "./Malta.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122009f6ca42416e6e842b59925f44977742cec6796c75048ff2f9180680f4c78732"
+      "file:size": 2643,
+      "file:checksum": "1220f3a2c7a2edb696fa07dae8d722628fec319baa53502426c261361188cd096ed1"
     },
     "README": {
       "href": "./Malta.README.md",

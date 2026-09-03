@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          8.747474629957013,
+          9.439438861770789
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          11.030804025804613,
+          9.439438861770789
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          11.030804025804613,
+          12.521816765607392
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          8.747474629957013,
+          12.521816765607392
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          8.747474629957013,
+          9.439438861770789
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    8.747474629957013,
+    9.439438861770789,
+    11.030804025804613,
+    12.521816765607392
   ],
   "properties": {
     "title": "Nigeria \u2014 Bauchi",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Bauchi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 853698868,
-      "file:checksum": "122042ef0d387cd0d0cc7d5d68bf0156fa4342bdbafc09c0a00814083d6e40a6fdd7"
+      ]
     },
     "pmtiles": {
       "href": "./NG_BA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Bauchi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 410225199,
-      "file:checksum": "1220b92bf56510be1aef3af36068c91587b9b80fc743f1b686b8614758b560decbb7"
+      ]
     },
     "style-2025": {
       "href": "./NG_BA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220a1f9e84948d208146bb1b69630195b128019aff22a141fabfc24d812247496da"
+      "file:size": 899,
+      "file:checksum": "12207e67d52631f652c85e83098ab3afb5b6f15a2149628eff07822e0432352f8c14"
     },
     "style-2024": {
       "href": "./NG_BA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b2e2c4ddb5ccdf0d4c4c0697be53b621c916df909e2b8542a022a3ecbd479170"
+      "file:size": 899,
+      "file:checksum": "1220407521faf9fd6f644737ed8af847603b3141cce54767583dc46864e89a5a6b05"
     },
     "style-confidence-2025": {
       "href": "./NG_BA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209d89c8d18b4ca96b916d8cc21869de9c13d08c867eccf8aa31d2ca6896002e30"
+      "file:size": 2643,
+      "file:checksum": "1220bd2a55aab8044dda6285e71a8ab431a1475a15426cd21c7943ee19520b0261ff"
     },
     "style-confidence-2024": {
       "href": "./NG_BA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b60a10e47b269ce8ea09856b14581db8b9b9e925e7bf768c5af650040948fb07"
+      "file:size": 2643,
+      "file:checksum": "122041eb2d721141d89c77567e47a44fba72b6eacd6d49544ffa80afba49f8b97797"
     },
     "README": {
       "href": "./NG_BA.README.md",

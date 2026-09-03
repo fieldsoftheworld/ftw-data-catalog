@@ -118,9 +118,7 @@
       "title": "Burundi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 273377255,
-      "file:checksum": "1220793816b2ac6129604982e80a26d980f85a9284bd42549a0f1eeab93ad1e43c84"
+      ]
     },
     "pmtiles": {
       "href": "./Burundi.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Burundi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 163583786,
-      "file:checksum": "12202a3c358a27ee2c2ad2363af6bae10d16271ffc755daca7310089af5c0c10a419"
+      ]
     },
     "style-2025": {
       "href": "./Burundi.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "122004da7c2be86782c1c100e265966981b6290471b5721afd7958be5a5390719d1a"
+      "file:size": 905,
+      "file:checksum": "12204f5c7556976d760a98f2156854aa7cae0bdef313ee496902df414af93a6b08ed"
     },
     "style-2024": {
       "href": "./Burundi.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12200425c2c5726d5e5230d5ec7206607837e44e9fc24c143702d4c5b15314187acc"
+      "file:size": 905,
+      "file:checksum": "122089976c3091e763de00948aac22e7f5ab6f2d012efcc932a2715ce1d98bb3dac1"
     },
     "style-confidence-2025": {
       "href": "./Burundi.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220888339a7dbf2f0b4a3dd5bad8799ad49acf320f95ca335b0b266c5b24edbce65"
+      "file:size": 2649,
+      "file:checksum": "1220be9e8d7334effff90ff2a588d3c22cd3cbd9e26ebd805677189c451fe126d15a"
     },
     "style-confidence-2024": {
       "href": "./Burundi.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122017502cea69d1d0f9f1cf3f7b27c9a77644b8a4d65da486371c401c2738079f61"
+      "file:size": 2649,
+      "file:checksum": "1220fe1e875bf485c6fcfbd60e9fb9da55d0e96fbb97132a8165e6455691740a39b7"
     },
     "README": {
       "href": "./Burundi.README.md",

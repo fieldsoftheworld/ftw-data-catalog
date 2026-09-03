@@ -118,9 +118,7 @@
       "title": "Madagascar field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4553441522,
-      "file:checksum": "12201b678ff688dd195d709d00876e5db76e1a2fd50d427d1b0442fda6240790f076"
+      ]
     },
     "pmtiles": {
       "href": "./Madagascar.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Madagascar field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2531879060,
-      "file:checksum": "1220b39e042dea400c3c1d3b78150db338d8d9c1dac7de03c0025a805d1d50abd626"
+      ]
     },
     "style-2025": {
       "href": "./Madagascar.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "1220c5915a445cc86ff0bd50f5cb94d2d91398ddd98a7662767eda887e5e855c973c"
+      "file:size": 914,
+      "file:checksum": "122037ec429b30c5b5265ec95e32bdeb5bb72bbf7cbf0b300d7744e5126441355a8a"
     },
     "style-2024": {
       "href": "./Madagascar.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 915,
-      "file:checksum": "12203b5d652d2fa37114e1fa5d5ff5322b03936dd87cf3bf056e9f86d3df21aad281"
+      "file:size": 914,
+      "file:checksum": "122043ac93dc9fb0badd2c625faa719e30ea6f3cbb67eaca8c1db9f45b8fd5ea6821"
     },
     "style-confidence-2025": {
       "href": "./Madagascar.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220bd8c9c68a3ab56129ba4cb64f3bbb065716d2f2b611eb0244e9dd52eff6f64c0"
+      "file:size": 2658,
+      "file:checksum": "1220b81901b17d0a2115e8f3bafb7014747895a43c3d54535f3b93d120c6c6f511af"
     },
     "style-confidence-2024": {
       "href": "./Madagascar.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2659,
-      "file:checksum": "1220e85b2b31c22a69c4c64e91564d3a8f0d723f1e8cc1a955acec6d9ed15b98b1ef"
+      "file:size": 2658,
+      "file:checksum": "12208b2cfe06b19b95017ec9abc4efaaaf33e75a0df5370ef7c94a787cf8a70aebe8"
     },
     "README": {
       "href": "./Madagascar.README.md",

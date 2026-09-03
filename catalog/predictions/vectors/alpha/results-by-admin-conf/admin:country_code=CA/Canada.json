@@ -118,9 +118,7 @@
       "title": "Canada field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 3751271848,
-      "file:checksum": "12203eade3d67c65ee4043d1480b4238e06f5ec5f70d950cf28c7629732ff793ef76"
+      ]
     },
     "pmtiles": {
       "href": "./Canada.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Canada field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2920684296,
-      "file:checksum": "12207d70ed86d2c48a0402c295c049b4f26c9ce0537ad9b657c8473f0f16142dfc6b"
+      ]
     },
     "style-2025": {
       "href": "./Canada.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "12200d0f8b7f44a94639e83e8dce9c465c998447ba126105900d60c2f3bad311c5d5"
+      "file:size": 902,
+      "file:checksum": "1220f51249156e0c842e8caf5053b1cc4ab6ca24f9b1de6c8c178fd2a465b13ccb00"
     },
     "style-2024": {
       "href": "./Canada.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122034ca09e2a7d088c187c42802665d620dc53befed197d2b8f3f807a7d057cfc8b"
+      "file:size": 902,
+      "file:checksum": "122079ac36b4f3028054f65e33b13b80865f5cad53a29688bdc9b0b04dd9259e1186"
     },
     "style-confidence-2025": {
       "href": "./Canada.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220161692eabbe1f862c928819e225f68999e4275682fb483b9920321ccddc341db"
+      "file:size": 2646,
+      "file:checksum": "1220512ddf59f67e879ee3e02bd80cea6146b4b22ac442d8c3a44baa7be028151878"
     },
     "style-confidence-2024": {
       "href": "./Canada.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220132a85a0d7eb680a2a319e27c81120692687a2b50933ac5e124eee2b543c5e33"
+      "file:size": 2646,
+      "file:checksum": "12204a204c38dca55cb48f4d6833498e7377b29a30be29ddc7b496bc8f9c342e1a51"
     },
     "README": {
       "href": "./Canada.README.md",

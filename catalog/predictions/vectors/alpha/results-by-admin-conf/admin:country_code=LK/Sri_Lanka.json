@@ -118,9 +118,7 @@
       "title": "Sri_Lanka field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 449773623,
-      "file:checksum": "12204594c5fde44f52fce34124fe637145d224d08851163758f7d42219a26f7f8d26"
+      ]
     },
     "pmtiles": {
       "href": "./Sri_Lanka.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Sri_Lanka field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 264277930,
-      "file:checksum": "122098848aec7c685a077403f3b9f62e81457594aa6cc2a88cc2871240e3eebbf006"
+      ]
     },
     "style-2025": {
       "href": "./Sri_Lanka.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220600ae26bb5e4a0e9fb4d3dcdb943a74f97a59295d67297df13ccc5d16e038945"
+      "file:size": 911,
+      "file:checksum": "122026d2bb721adc84523b0d95c9e4d99d1b4b45622af5740a9c6e6ae6de68568cc6"
     },
     "style-2024": {
       "href": "./Sri_Lanka.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220518211b99797b8874eb96b1608e05fabef80c2f5b8c651992c4e0788d311fce4"
+      "file:size": 911,
+      "file:checksum": "12201f7a515efca73c90432b10c1e34555b82dce1047c8b02172187386e5d9d1ffad"
     },
     "style-confidence-2025": {
       "href": "./Sri_Lanka.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12207cecb1aaeeba5f2a75ec955e66fa3b606ba33accd4e02416f16ff5ecf229bdb4"
+      "file:size": 2655,
+      "file:checksum": "122002115ad5d5915fc67a9e6496440c0ae2d2936b037d551cb3b07c65500d649837"
     },
     "style-confidence-2024": {
       "href": "./Sri_Lanka.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "122058f65cbddf957222b87325205aab499277e3c2192d442c7f18a7d1636518dcc1"
+      "file:size": 2655,
+      "file:checksum": "1220dcabbeb9ceb4b780aef04c79c3fff92fef3ef06806b64d9e6f3de96eda132af4"
     },
     "README": {
       "href": "./Sri_Lanka.README.md",

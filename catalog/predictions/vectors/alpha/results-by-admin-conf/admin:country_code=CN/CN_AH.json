@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          114.87423184583345,
+          29.438648348235
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          119.6262123994152,
+          29.438648348235
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          119.6262123994152,
+          34.6566731580784
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          114.87423184583345,
+          34.6566731580784
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          114.87423184583345,
+          29.438648348235
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    114.87423184583345,
+    29.438648348235,
+    119.6262123994152,
+    34.6566731580784
   ],
   "properties": {
     "title": "China \u2014 Anhui Sheng",
@@ -118,9 +118,7 @@
       "title": "China \u2014 Anhui Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1465016301,
-      "file:checksum": "1220de3692772c6c41c09eb4a18a268de8031fe25c666f2d54820c1192d5ff88fa8e"
+      ]
     },
     "pmtiles": {
       "href": "./CN_AH.pmtiles",
@@ -128,9 +126,7 @@
       "title": "China \u2014 Anhui Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 851865205,
-      "file:checksum": "1220328fe046b284945f25b4390f248f0b7e718a806a60ff8db56b2e0e8ea028a6bc"
+      ]
     },
     "style-2025": {
       "href": "./CN_AH.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122017e80292060bd1cc500d185c5c386e467cb37ccf457312428facc6399b80ce30"
+      "file:size": 899,
+      "file:checksum": "12202fae3747e5576f54b94d8a5256c18ad43ffd76a10d94028445af4c95f128aa4b"
     },
     "style-2024": {
       "href": "./CN_AH.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220dba6b579fde686a42f9413ed4a1a7be9143d5230e6a386fc8242c50f7f5e78a0"
+      "file:size": 899,
+      "file:checksum": "12200b66744710e30cb3a814b65b3294d744581f117c97805ae6877399904b39d68e"
     },
     "style-confidence-2025": {
       "href": "./CN_AH.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206fa684b872c171ec335d839cf201a739e387a5895eb36568430e944ad2231445"
+      "file:size": 2643,
+      "file:checksum": "12205c35dd0581dad8a5700b8f681b9f5568e382359178d8a05aef9e05218aa4120e"
     },
     "style-confidence-2024": {
       "href": "./CN_AH.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122018ef454709f7eb0ed191f2b28763a986dcbf28c08bfb3b1faf45ac93f2aae286"
+      "file:size": 2643,
+      "file:checksum": "122074dce8311319b23334b27f34cf01d2c9ab0aaf3047562400a4d58016f1ead476"
     },
     "README": {
       "href": "./CN_AH.README.md",

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -66.74567619414279,
+          -13.646101101250808
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -59.8108873554992,
+          -13.646101101250808
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -59.8108873554992,
+          -7.961223554362002
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -66.74567619414279,
+          -7.961223554362002
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -66.74567619414279,
+          -13.646101101250808
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -66.74567619414279,
+    -13.646101101250808,
+    -59.8108873554992,
+    -7.961223554362002
   ],
   "properties": {
     "title": "Brazil \u2014 Rond\u00f4nia",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Rond\u00f4nia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 162464145,
-      "file:checksum": "1220d65c4cb2ba133b7991d2d1b5e9b297d79d822a0dae58ca5dbd09050be45c2336"
+      ]
     },
     "pmtiles": {
       "href": "./BR_RO.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Rond\u00f4nia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 139006301,
-      "file:checksum": "122074830bcfc0f995caaff7bf0d03a1c55b046fecd89b3492fcc35f5b481c2c3488"
+      ]
     },
     "style-2025": {
       "href": "./BR_RO.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12202e924a6ce46bed63df6b5449e4465fe0971c39c4c3703ab2424134e6d29016b7"
+      "file:size": 899,
+      "file:checksum": "1220306f58d52e9217dd96e29bf49546c91242cdc5ae300d2e20e741cc91e1afa46a"
     },
     "style-2024": {
       "href": "./BR_RO.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122016f08c0540e7552eb819863ee997ce84bb70733a6e296173abfa840fc9534c6e"
+      "file:size": 899,
+      "file:checksum": "12203ea1c12726838bb2e2c5089595b8e638f6f92bd6c3a0650740a70e9eda27d0ee"
     },
     "style-confidence-2025": {
       "href": "./BR_RO.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122070797a0d7aef6f1b932b8fc5699b9855558c2065a59d591157f37266038a5a6b"
+      "file:size": 2643,
+      "file:checksum": "1220f705d8d8e1cd3aa7969b7008f0b17b7c9d7f37d09d539004d4cd1fa225c0be0e"
     },
     "style-confidence-2024": {
       "href": "./BR_RO.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12205716148591880ab3dd424f7e9f9f6431c4428814d53890773954e2ef6b021505"
+      "file:size": 2643,
+      "file:checksum": "1220b984ee77aacf76f7afdb9ce883f732d4be7f481879c6c5164a23ffff5c17be41"
     },
     "README": {
       "href": "./BR_RO.README.md",

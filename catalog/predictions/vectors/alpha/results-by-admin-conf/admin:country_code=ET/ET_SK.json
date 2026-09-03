@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          39.64275930209022,
+          14.406475303843393
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          40.27023022151722,
+          14.406475303843393
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          40.27023022151722,
+          14.604822589468995
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          39.64275930209022,
+          14.604822589468995
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          39.64275930209022,
+          14.406475303843393
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    39.64275930209022,
+    14.406475303843393,
+    40.27023022151722,
+    14.604822589468995
   ],
   "properties": {
     "title": "ET_SK",
@@ -118,9 +118,7 @@
       "title": "ET_SK field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 170016,
-      "file:checksum": "1220fcaba24e9c5c0a710b8c91d6cd829d1150b6b4a73b34cf1d930a6c2c127b8c0f"
+      ]
     },
     "pmtiles": {
       "href": "./ET_SK.pmtiles",
@@ -128,9 +126,7 @@
       "title": "ET_SK field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 113613,
-      "file:checksum": "1220ccc5253f9f29af8426aa67da2e43ad83e5c8766e5ae8cee38f67f1f151a444c4"
+      ]
     },
     "style-2025": {
       "href": "./ET_SK.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220541c6503f6866d21299ff932bea82ef2a852428cec1a7297ddc02c5e5208daf1"
+      "file:size": 899,
+      "file:checksum": "12200f4837e4b0f7ff00646916b9cddc581c4165485fe1ab4aeb2c7b9bbe2656af29"
     },
     "style-2024": {
       "href": "./ET_SK.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122090b6870dac5b7d87cd3bfb28d2376101e34e8a1118736f4126146ce3c160b4a1"
+      "file:size": 899,
+      "file:checksum": "122039f3c485f8cfb651d6ead6a1c5b573ae518563712d3490ed9cb85be9189f2799"
     },
     "style-confidence-2025": {
       "href": "./ET_SK.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220a243cfcf7f306357a3b69e5af85f6db2d1f5913ab171bfeb08f33c412c09e1bb"
+      "file:size": 2643,
+      "file:checksum": "12202b7ddc5e3c604164a1cf642581c9eb7d3a7586f1baa29ff2b65cd06b31052517"
     },
     "style-confidence-2024": {
       "href": "./ET_SK.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220854ff6973891c6acaacbea7aa07028bfba90efb06410a0e65b23562e066aa28b"
+      "file:size": 2643,
+      "file:checksum": "12207219aa8253112933b9a35892eea77c6cdc9e4f4b26c476d1cda4ac8e6eb4fc42"
     },
     "README": {
       "href": "./ET_SK.README.md",

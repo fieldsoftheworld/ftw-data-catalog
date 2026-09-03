@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          30.07115530268201,
-          -1.3859391709148086
+          29.573849789446808,
+          -1.4833161897636085
         ],
         [
-          30.469377004302608,
-          -1.3859391709148086
+          35.00567285100622,
+          -1.4833161897636085
         ],
         [
-          30.469377004302608,
-          -1.0268838717094084
+          35.00567285100622,
+          4.2086580217829965
         ],
         [
-          30.07115530268201,
-          -1.0268838717094084
+          29.573849789446808,
+          4.2086580217829965
         ],
         [
-          30.07115530268201,
-          -1.3859391709148086
+          29.573849789446808,
+          -1.4833161897636085
         ]
       ]
     ]
   },
   "bbox": [
-    30.07115530268201,
-    -1.3859391709148086,
-    30.469377004302608,
-    -1.0268838717094084
+    29.573849789446808,
+    -1.4833161897636085,
+    35.00567285100622,
+    4.2086580217829965
   ],
   "properties": {
     "title": "Uganda",
@@ -118,9 +118,7 @@
       "title": "Uganda field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2674542741,
-      "file:checksum": "12208affca6582ebb3fda6a1284a7bff6cb6c40e34ab3b2d3cd717ecf8a9655406ca"
+      ]
     },
     "pmtiles": {
       "href": "./Uganda.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Uganda field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1244179349,
-      "file:checksum": "12208f3f1c3f6a3017a8ab2fbb81f76b0ca3cfecb1b668b8ab33052dec2fd097110f"
+      ]
     },
     "style-2025": {
       "href": "./Uganda.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220154a6256099bfd15f609fe94594421fd96800d8119c123da6bf952e86282551f"
+      "file:size": 902,
+      "file:checksum": "12204af48be1a4c04104a35b7d953df1cc286a470c356402d24968d175897ee0f7f3"
     },
     "style-2024": {
       "href": "./Uganda.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122083c6b91f6d35459b9cb93695db5fbe4f3a34ecdc071996054e12e5560a92821f"
+      "file:size": 902,
+      "file:checksum": "1220cbd782016ef3e8a1f6283e2c77c2a0acd98bdd49be180753a9a48d84ceece515"
     },
     "style-confidence-2025": {
       "href": "./Uganda.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220c0f871be329bf6f2c9a86a0de2b04d8e607bd8439e43ad20c4e5e96296d4a629"
+      "file:size": 2646,
+      "file:checksum": "122085cf63146334bf1ba0a065551d709c4c66903de7fe71001e9bf9f9b880ef27c2"
     },
     "style-confidence-2024": {
       "href": "./Uganda.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122042acbaebab4b5b95f3dfeaea447f905aee6ea2d39b06401d62f55ac5fef5d80e"
+      "file:size": 2646,
+      "file:checksum": "122076e2b173b635b9e2819dc067429129fc1e053c28af9528e4603ba41733eb5b2b"
     },
     "README": {
       "href": "./Uganda.README.md",

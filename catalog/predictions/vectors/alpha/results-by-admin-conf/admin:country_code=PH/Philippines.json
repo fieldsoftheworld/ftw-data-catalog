@@ -118,9 +118,7 @@
       "title": "Philippines field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2141707310,
-      "file:checksum": "1220e4e2ee876670581ea858db499b43cdfa66bbb2204d3f88e1285206187da94466"
+      ]
     },
     "pmtiles": {
       "href": "./Philippines.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Philippines field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1045518190,
-      "file:checksum": "12207898a654bc2764365d068fc9e34d3fb0ace4829a1614c317aa5dd66f10b7336c"
+      ]
     },
     "style-2025": {
       "href": "./Philippines.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220291a3a796314f893671083501bb73443c2e2e61158023695a9f111f0b77d7320"
+      "file:size": 917,
+      "file:checksum": "1220ce3b56524a2223b87819dda8c2002fbbf650f437b274837e0cd1e4f6c1df803d"
     },
     "style-2024": {
       "href": "./Philippines.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "1220f179f94c12bbbd6b3fa65abdc544287600d1e9a9b7de74c516e29bb1d5a3748f"
+      "file:size": 917,
+      "file:checksum": "1220ea836f24d0c53a82681c7173161ef6a1466f34fbfa6bb90bd31e1a059313902a"
     },
     "style-confidence-2025": {
       "href": "./Philippines.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "1220775c4656320b0277c9a913536e2765a6192293ee7defb575987ff65b63157447"
+      "file:size": 2661,
+      "file:checksum": "122018dff3739329b0c5fd495a5f38f6d06e4bc34f373d0dcdcfaa619fe61e885f5f"
     },
     "style-confidence-2024": {
       "href": "./Philippines.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "12200acc3560ec4fdfabfd2969b34727970eb689ccc16732d98f879693445e820e4e"
+      "file:size": 2661,
+      "file:checksum": "122092ffc8c41595ca99b6e68f1ebd3dccffdca6a3344c41b6dbcd1cf672b5ff0826"
     },
     "README": {
       "href": "./Philippines.README.md",

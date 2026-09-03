@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          34.74695900019021,
-          -4.161723195294812
+          39.18596765924322,
+          -6.041620680026201
         ],
         [
-          37.43012705922602,
-          -4.161723195294812
+          39.39302857109422,
+          -6.041620680026201
         ],
         [
-          37.43012705922602,
-          -1.68965845202901
+          39.39302857109422,
+          -5.728109798308199
         ],
         [
-          34.74695900019021,
-          -1.68965845202901
+          39.18596765924322,
+          -5.728109798308199
         ],
         [
-          34.74695900019021,
-          -4.161723195294812
+          39.18596765924322,
+          -6.041620680026201
         ]
       ]
     ]
   },
   "bbox": [
-    34.74695900019021,
-    -4.161723195294812,
-    37.43012705922602,
-    -1.68965845202901
+    39.18596765924322,
+    -6.041620680026201,
+    39.39302857109422,
+    -5.728109798308199
   ],
   "properties": {
     "title": "Tanzania, United Republic of \u2014 Zanzibar North",
@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Zanzibar North field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5685886,
-      "file:checksum": "1220c65251483c57f848c6f8a6ddedb52e1d30219f0a4a58f54af7e5f06c72e707f0"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_07.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Zanzibar North field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 5510528,
-      "file:checksum": "122047d6f003206d2eb1b3ee8a2bc49b7ff13e75e57f7ea06884ab4ae106b4fb9929"
+      ]
     },
     "style-2025": {
       "href": "./TZ_07.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e9ba2e8165aab070ccfacd9fcc90b20428dcac2bcb37487e04e8ca2017e22d73"
+      "file:size": 899,
+      "file:checksum": "12209b79f733e506a99dec57bbf81625a3255ffbe9cdc880f6faf39cd3a36bc94a19"
     },
     "style-2024": {
       "href": "./TZ_07.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e1caa83e5bc04f44cfad0720aeeb908a65a52482fff08e69b2e3238a2d1b19bb"
+      "file:size": 899,
+      "file:checksum": "1220fdd28a8bcc228d5c7d25d1471f8c818d1d2fe35b7d42c82d58aff57b75a4ecac"
     },
     "style-confidence-2025": {
       "href": "./TZ_07.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220107f4d457a577dc348c7a55be29b29019eb7aedaf48106db471582a6f243dbb4"
+      "file:size": 2643,
+      "file:checksum": "122063919b99b2cc2583c8cefd530698d528b5830908e33b636a99dc458fadee1c3b"
     },
     "style-confidence-2024": {
       "href": "./TZ_07.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122066542f5194372dc7ac6fbf2333850890ec78c836c980668d6375fd8c2e2ee25f"
+      "file:size": 2643,
+      "file:checksum": "12208e14571ca09930b574e4a666622aa50afa24f9611611a76dc3333fc8e33ec475"
     },
     "README": {
       "href": "./TZ_07.README.md",

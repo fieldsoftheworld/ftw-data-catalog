@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          76.23379109609441,
+          8.087569160059001
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          80.3355734371046,
+          8.087569160059001
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          80.3355734371046,
+          13.547868711447794
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          76.23379109609441,
+          13.547868711447794
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          76.23379109609441,
+          8.087569160059001
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    76.23379109609441,
+    8.087569160059001,
+    80.3355734371046,
+    13.547868711447794
   ],
   "properties": {
     "title": "India \u2014 Tamil N\u0101du",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Tamil N\u0101du field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 2450093397,
-      "file:checksum": "12203450eb4f9eda04848f889befe4dc45a77f2e2291ab4807411d4bf1c5e12f161b"
+      ]
     },
     "pmtiles": {
       "href": "./IN_TN.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Tamil N\u0101du field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1218062239,
-      "file:checksum": "1220b13e4c1b1963af42c66bc1338294897d7d69ef5848ea85a46fabe1321138257a"
+      ]
     },
     "style-2025": {
       "href": "./IN_TN.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122005143d6cec3d0fe3a43205d16468acc97d31508aa23e0151f375ac0991f10809"
+      "file:size": 899,
+      "file:checksum": "1220ecfd7cf68a8ad1dfe6d4770fc73de3c356a894f195216184fbe1a5ea7c75b9cf"
     },
     "style-2024": {
       "href": "./IN_TN.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220936ad89e9dbc66e3d68524ceb398bd98a52f139578571d56c502f7df408f6b4c"
+      "file:size": 899,
+      "file:checksum": "1220ac4a3e8757153695fe98021b5253e788c8efc4b9ef20b9a35565631dee4b9f64"
     },
     "style-confidence-2025": {
       "href": "./IN_TN.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203e39250bf87a87f7fb54051883f9ec737d2001200e8ee29b8f293cdefa82acb5"
+      "file:size": 2643,
+      "file:checksum": "12207568b17e09eb97c8a6556fe831152be2f7ec6a47733f0a98b2469b16d3298384"
     },
     "style-confidence-2024": {
       "href": "./IN_TN.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122033a96a0f983ad2a40f37ceb83e2536ad3f21757b6b126927429abecc97e008fd"
+      "file:size": 2643,
+      "file:checksum": "1220ce95a6ca69c1d548d29deb5f0352a9e7dc4b3315761ba992585ec480c8acaa64"
     },
     "README": {
       "href": "./IN_TN.README.md",

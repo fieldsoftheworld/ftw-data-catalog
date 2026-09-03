@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -44.71951555149379,
+          -23.079185393034606
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -40.963762985949984,
+          -23.079185393034606
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -40.963762985949984,
+          -20.765043896204403
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -44.71951555149379,
+          -20.765043896204403
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -44.71951555149379,
+          -23.079185393034606
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -44.71951555149379,
+    -23.079185393034606,
+    -40.963762985949984,
+    -20.765043896204403
   ],
   "properties": {
     "title": "Brazil \u2014 Rio de Janeiro",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Rio de Janeiro field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 20496014,
-      "file:checksum": "12205b85821325bcf57fb70a46bf3e135bb9e1018a919c8d1bfb39f1e596fe7b0e14"
+      ]
     },
     "pmtiles": {
       "href": "./BR_RJ.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Rio de Janeiro field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 18750840,
-      "file:checksum": "122053ce0ee8a695ee14a480cf899bacdadf3ff6a9f60d323c03383a639952a139dd"
+      ]
     },
     "style-2025": {
       "href": "./BR_RJ.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122096d847e3ccf31f3fd974a376314c3cbffc80b1aa272e6924c697a7498bcd75bb"
+      "file:size": 899,
+      "file:checksum": "1220a3cbca12a9bc9fae47050f1da5c3104e4b83537515ba7b676b471295b4d97656"
     },
     "style-2024": {
       "href": "./BR_RJ.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220150c131a243d29d31d52e21e0e48d358f8063925e0d9bad8655ae9f6f9d81ba4"
+      "file:size": 899,
+      "file:checksum": "12205ed3bcb8f020714134705db7ab567072db545446abe88ece5226dedb95ca66e9"
     },
     "style-confidence-2025": {
       "href": "./BR_RJ.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122082c671bad7948b7dad16d9e4bc2a00834d03e0f2012899fb4fdcd51205bdafce"
+      "file:size": 2643,
+      "file:checksum": "1220b9760602ae465536ade4001ba398b798ed87f6b953361eaff9f30588010218bd"
     },
     "style-confidence-2024": {
       "href": "./BR_RJ.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12208629cb5a5a8e1d86cab3bd29b2630e8b8476091c0443bdcfd5ecaecdfdfd4c77"
+      "file:size": 2643,
+      "file:checksum": "122077c926a071363db6e53d5c671b1abf2cc58fbc62e6bddf197f56354c0447281c"
     },
     "README": {
       "href": "./BR_RJ.README.md",

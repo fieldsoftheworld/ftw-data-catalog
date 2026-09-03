@@ -118,9 +118,7 @@
       "title": "Georgia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 134779251,
-      "file:checksum": "1220a7ca13bd0549f64c0191979ac9da627702d51ccebf22145e6332127645543495"
+      ]
     },
     "pmtiles": {
       "href": "./Georgia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Georgia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 99634937,
-      "file:checksum": "1220862c1937aa906ce391e3ecf1f8a91879cb2c8f3cd0f67c39f615c6d0ada4ac50"
+      ]
     },
     "style-2025": {
       "href": "./Georgia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220bd0f939c0406997e4ac28e1424b3e88de106acc3a86dc2cdf04f9b7d0712fd20"
+      "file:size": 905,
+      "file:checksum": "1220b01394d9d8fdadaaebc4cf80ca9a32aed0e32701132fbf794c73d235eada465b"
     },
     "style-2024": {
       "href": "./Georgia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "12205baa42fee7901f1fbc8f2f1d1e7ae8c2e5df8a0e2867a36a8e02692bc37d2a96"
+      "file:size": 905,
+      "file:checksum": "1220a4563a979b4c1aa468d88b60096e87d52d7209f46b207e1d99c041a0659b5726"
     },
     "style-confidence-2025": {
       "href": "./Georgia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220537e1605044dd89ca0a7bc18db8b49074f4af8c9a73c9b9f8a5d7a3e8c94604f"
+      "file:size": 2649,
+      "file:checksum": "1220d9cceb4029039db72c27cce4f6b5f30fc8dcf4021a97a43cf623431a46939ef4"
     },
     "style-confidence-2024": {
       "href": "./Georgia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220314e9f185594d27e78575b2d997ad6d721ec69e49a5a79c1706aa38ea1ee551b"
+      "file:size": 2649,
+      "file:checksum": "1220137efee7b036bf5dc5308a786dd2c448464135aff6ce3524aaacb4076e5a8cff"
     },
     "README": {
       "href": "./Georgia.README.md",

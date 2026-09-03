@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -51.0408471376296,
+          -22.882185575382003
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -39.855515493756585,
+          -22.882185575382003
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -39.855515493756585,
+          -14.242310763704209
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -51.0408471376296,
+          -14.242310763704209
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -51.0408471376296,
+          -22.882185575382003
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -51.0408471376296,
+    -22.882185575382003,
+    -39.855515493756585,
+    -14.242310763704209
   ],
   "properties": {
     "title": "Brazil \u2014 Minas Gerais",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Minas Gerais field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1109675899,
-      "file:checksum": "122015b7fceaeda73bc8d07157de446865166b50190c9e2398eb754b758ec04f8976"
+      ]
     },
     "pmtiles": {
       "href": "./BR_MG.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Minas Gerais field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 621255015,
-      "file:checksum": "122065e4da9f0629ea488240144dc007b3d2b735e532beea4f72c1c4aa3678472d9d"
+      ]
     },
     "style-2025": {
       "href": "./BR_MG.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b5078cda75e1e56a53a398a673ce98dc282eeafbcdf6c23c01d25533f9476667"
+      "file:size": 899,
+      "file:checksum": "1220a55f92eef018ec2e2b5c97e6798cc48f053b36d6b9fe8758c5f1a88b35e566b2"
     },
     "style-2024": {
       "href": "./BR_MG.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122083d633a83ecc4d61d0614f66ccd0a015cb17e0dbcfbabe2e44091a67fb4e0a32"
+      "file:size": 899,
+      "file:checksum": "122085392cdd605aab1b0a9cb12e730e52b08d863371c4f0c81fc8c03eb3afed0737"
     },
     "style-confidence-2025": {
       "href": "./BR_MG.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220797edf1c57bef2f7dd2ca4dd2cc40fadd44194a8a9cbdc713057a11e6b3aedc1"
+      "file:size": 2643,
+      "file:checksum": "1220bd33fbbdb025c1e848a47b2a537efbf9eabd5e55a6af5936ca6bd2e2166c4a88"
     },
     "style-confidence-2024": {
       "href": "./BR_MG.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d6c98c3f04498d25c7f3d90404139ee1f78f205a36ac56173f353051df8e132a"
+      "file:size": 2643,
+      "file:checksum": "12203d9c44b33a5cb5a6fe48446790f7b65d697d1188552f13e3d912e16871e069ae"
     },
     "README": {
       "href": "./BR_MG.README.md",

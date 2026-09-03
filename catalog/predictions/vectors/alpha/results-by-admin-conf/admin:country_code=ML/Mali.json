@@ -13,32 +13,32 @@
     "coordinates": [
       [
         [
-          -8.98798866186718,
-          12.058197951697192
+          -12.455832237179983,
+          10.130779763117989
         ],
         [
-          -2.9514219740254006,
-          12.058197951697192
+          4.267143619732008,
+          10.130779763117989
         ],
         [
-          -2.9514219740254006,
+          4.267143619732008,
           25.157293442023
         ],
         [
-          -8.98798866186718,
+          -12.455832237179983,
           25.157293442023
         ],
         [
-          -8.98798866186718,
-          12.058197951697192
+          -12.455832237179983,
+          10.130779763117989
         ]
       ]
     ]
   },
   "bbox": [
-    -8.98798866186718,
-    12.058197951697192,
-    -2.9514219740254006,
+    -12.455832237179983,
+    10.130779763117989,
+    4.267143619732008,
     25.157293442023
   ],
   "properties": {
@@ -118,9 +118,7 @@
       "title": "Mali field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5309488960,
-      "file:checksum": "122043de3c071030c425a2fa5e672ac462b8a3ade59d8616cd8a2e84890966f01cd9"
+      ]
     },
     "pmtiles": {
       "href": "./Mali.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Mali field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2638787525,
-      "file:checksum": "122032ca642b435847db402450bbb75e7836c074c904d7077d029797c2fa932d1c4b"
+      ]
     },
     "style-2025": {
       "href": "./Mali.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "12201f1d7f1620cb05efb460d1bd5f19ece673c01e508a27e1a44ba137f308f2c2c4"
+      "file:size": 896,
+      "file:checksum": "1220c8b8b6b304af34648f37892b26230ee148fc88b40fe31fb48fde0cd42175266f"
     },
     "style-2024": {
       "href": "./Mali.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220c9dc4afeb785a1fe2d85a7cf41162146ecd8a5f072b35c465f83edd189071522"
+      "file:size": 896,
+      "file:checksum": "1220752b103831730a30b2f02d6266e44c75c5a0d861aa8f87ccf3f7feca1b2bc835"
     },
     "style-confidence-2025": {
       "href": "./Mali.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12209588caf3443de21ce35c0db3c69edb4ea2fe453a1337c387fbdb2be6750ac8eb"
+      "file:size": 2640,
+      "file:checksum": "12207ece1d290dac4535fac2a387de546a833c258bdaef3090a94b383fb543e49f51"
     },
     "style-confidence-2024": {
       "href": "./Mali.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "122097b6312e6e1deba4961bb5dbcd37fa594a5ebe835906a2f94cfa44648bee560c"
+      "file:size": 2640,
+      "file:checksum": "1220917aa474c9c17e46cd80fa74069218628e090a25fb69123ffb461f59b84aaef6"
     },
     "README": {
       "href": "./Mali.README.md",

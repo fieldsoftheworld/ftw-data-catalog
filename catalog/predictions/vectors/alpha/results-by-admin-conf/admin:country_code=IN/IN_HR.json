@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          74.46923686985183,
+          27.651546491244194
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          77.5907811761036,
+          27.651546491244194
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          77.5907811761036,
+          30.928947926373
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          74.46923686985183,
+          30.928947926373
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          74.46923686985183,
+          27.651546491244194
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    74.46923686985183,
+    27.651546491244194,
+    77.5907811761036,
+    30.928947926373
   ],
   "properties": {
     "title": "India \u2014 Hary\u0101na",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Hary\u0101na field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 937528657,
-      "file:checksum": "1220fcea8e6b0a8a19c2ad40ef49038fcc34890a32679306bedbfbcaf3bc222e6408"
+      ]
     },
     "pmtiles": {
       "href": "./IN_HR.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Hary\u0101na field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 568957132,
-      "file:checksum": "12203193d0c364298bf5a59a3f36ea70720cde7412d8137b7a0dc28bb22965932965"
+      ]
     },
     "style-2025": {
       "href": "./IN_HR.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220665603e4ecd47fade4de7bf0829279c35a78665420172967ea5d02993c18343c"
+      "file:size": 899,
+      "file:checksum": "1220c898bd06d59b0260017639c78181e198036aa72660050b19683178a1dd003664"
     },
     "style-2024": {
       "href": "./IN_HR.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12201efd925ed7813f0de1caed262a92609a8f105f9c24a91e112303855b4fcbd7ab"
+      "file:size": 899,
+      "file:checksum": "12206833043de0dad138dc4f7e7e38bb39ff5041862eafedcbe55b0bd501ac655566"
     },
     "style-confidence-2025": {
       "href": "./IN_HR.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122045e2bb450c4b2e794720d860cdcf4ff667f903d3c3ce4a0daab8f4e8932c67dd"
+      "file:size": 2643,
+      "file:checksum": "1220c497c8a2774895abfe7e29a9ae2561de4f0605f798874238ee412ae3aea011dc"
     },
     "style-confidence-2024": {
       "href": "./IN_HR.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220003739557622afd35d1b7f499df5f30529e06118d1d6bfa318c4fe4f58867d50"
+      "file:size": 2643,
+      "file:checksum": "122028fe2056140aa042343eda4fd95870455c390ddd639a4640cb246248ff646a6b"
     },
     "README": {
       "href": "./IN_HR.README.md",

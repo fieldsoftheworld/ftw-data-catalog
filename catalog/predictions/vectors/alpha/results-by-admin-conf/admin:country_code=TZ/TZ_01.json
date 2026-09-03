@@ -118,9 +118,7 @@
       "title": "Tanzania, United Republic of \u2014 Arusha field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 203932109,
-      "file:checksum": "12208231b207bf4d38f4e4d4f4d0bbf249f359ae3c5ce88dbb6a20ae927de2a055db"
+      ]
     },
     "pmtiles": {
       "href": "./TZ_01.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Tanzania, United Republic of \u2014 Arusha field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 122104731,
-      "file:checksum": "1220be41ce492dfc32e51f51d90d99dae090ba64676b9d1bc34817f16e8dc19f4e11"
+      ]
     },
     "style-2025": {
       "href": "./TZ_01.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220677b1fcc73e010c65108d99860d432c7f22f969b42e4596ed55476436d806441"
+      "file:size": 899,
+      "file:checksum": "1220da6f782fd470cc2ff3fed5643d2329ee6bfe35e3d671a525f9f1929da99c554a"
     },
     "style-2024": {
       "href": "./TZ_01.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122006312e397aa20cf13fdeb2878f6e895ec3e742fa4827ab65f80e10f2704be75f"
+      "file:size": 899,
+      "file:checksum": "1220de785cb71432e0325205ffc6dc14f7eec7daecc887e6bd2c52971927b0b7c8ac"
     },
     "style-confidence-2025": {
       "href": "./TZ_01.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122013a0078e119303086ca0e8c08242c9d4cc23945ce042622dd24aa0ab44de0670"
+      "file:size": 2643,
+      "file:checksum": "122035a37091bcab9a5005fa33b35b34ead5f64650c29c83c8ccedc90353e6753cd6"
     },
     "style-confidence-2024": {
       "href": "./TZ_01.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206367d3e94cbfa83e95e642fc11fcf040132b52cbe4b9c63173ff798c423cd874"
+      "file:size": 2643,
+      "file:checksum": "122079061be6795b61645951259dad1229816f21b1911f81682d8f9a95b863ac3e23"
     },
     "README": {
       "href": "./TZ_01.README.md",

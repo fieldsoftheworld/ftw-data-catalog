@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -82.6197472280648,
+          37.2515371492836
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -77.7528725719852,
+          37.2515371492836
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -77.7528725719852,
+          40.62406982330619
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -82.6197472280648,
+          40.62406982330619
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -82.6197472280648,
+          37.2515371492836
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -82.6197472280648,
+    37.2515371492836,
+    -77.7528725719852,
+    40.62406982330619
   ],
   "properties": {
     "title": "United States \u2014 West Virginia",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 West Virginia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 5438927,
-      "file:checksum": "12206882bce5267d501d0b11c0a1fa597a2b1fea69fc476d72fe0ad8bc45c8b11688"
+      ]
     },
     "pmtiles": {
       "href": "./US_WV.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 West Virginia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 4419191,
-      "file:checksum": "12202e8d7c168c81814d9424e39a5ce5873b8011bac7c78c25c8cbb9b5a1289bb45f"
+      ]
     },
     "style-2025": {
       "href": "./US_WV.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f086b3ae838a30a53e2669b9ee0cd93a888f9a76e0c3ec9d4c1a9bbf1b137d73"
+      "file:size": 899,
+      "file:checksum": "12204bec3bdf15897c7f74778862ff5a8aea2b855addce7668bd8232f952f6964f64"
     },
     "style-2024": {
       "href": "./US_WV.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220edcd2a004febcd726dac6c07312dc1753566a237a0abd0f7074b0b78d3071950"
+      "file:size": 899,
+      "file:checksum": "122037458562e180210a1163d9b03f4ada63d64621abe755af4aecf1686822293f79"
     },
     "style-confidence-2025": {
       "href": "./US_WV.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220211f624d2c84ea5af00eba53821051838a02a3c2724174b4a8361e9e5d4ccc83"
+      "file:size": 2643,
+      "file:checksum": "12204acd97ac85ee3ee49a03204eb9339ce059ef01044aa09d6954685ac618850df6"
     },
     "style-confidence-2024": {
       "href": "./US_WV.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122091b97cffaf6382c89bc8cce84291d6a77ccbdc44cb88f3f6758b81b04c3b4efe"
+      "file:size": 2643,
+      "file:checksum": "1220e921c204e52b3a557e467ac4743e3516864d87ef5bdb098a0f719ce9eb7d62d0"
     },
     "README": {
       "href": "./US_WV.README.md",

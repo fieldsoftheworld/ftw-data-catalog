@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -41.87599880367099,
+          -21.274027465205602
         ],
         [
-          -55.51426114559319,
-          -23.521065056980405
+          -39.66606149675278,
+          -21.274027465205602
         ],
         [
-          -55.51426114559319,
-          -22.279597897856405
+          -39.66606149675278,
+          -17.9004168168046
         ],
         [
-          -56.17523910194879,
-          -22.279597897856405
+          -41.87599880367099,
+          -17.9004168168046
         ],
         [
-          -56.17523910194879,
-          -23.521065056980405
+          -41.87599880367099,
+          -21.274027465205602
         ]
       ]
     ]
   },
   "bbox": [
-    -56.17523910194879,
-    -23.521065056980405,
-    -55.51426114559319,
-    -22.279597897856405
+    -41.87599880367099,
+    -21.274027465205602,
+    -39.66606149675278,
+    -17.9004168168046
   ],
   "properties": {
     "title": "Brazil \u2014 Esp\u00edrito Santo",
@@ -118,9 +118,7 @@
       "title": "Brazil \u2014 Esp\u00edrito Santo field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 67603748,
-      "file:checksum": "1220826928e044a303754f7fbd8c885811b13a4e17b69014060d231edd2e6918be66"
+      ]
     },
     "pmtiles": {
       "href": "./BR_ES.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Brazil \u2014 Esp\u00edrito Santo field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 51161437,
-      "file:checksum": "1220376836c3e1268ebb18fc6cedb91cb2bd01e1e242fa8664f0d329a7508839b239"
+      ]
     },
     "style-2025": {
       "href": "./BR_ES.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220c9329005777885793460fb68838de51ddc183ac0eeeef5848e2244d95cbac7f8"
+      "file:size": 899,
+      "file:checksum": "1220527e4ba8d2432ea13554e4c5cfaaf0bfc5478a3cc8f135574a3ad2f416346ba1"
     },
     "style-2024": {
       "href": "./BR_ES.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12200bc94ae35d382b5c8ecc902fc6657e93c1729f420c8c039e61adbfd3892e9b95"
+      "file:size": 899,
+      "file:checksum": "122040614720f7d5976b3190ee9bcf25c5a90c96ccc693913672b483d073dc749409"
     },
     "style-confidence-2025": {
       "href": "./BR_ES.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12202b1ce55a31a17beeb05fc479726921cc0fb2f9e34515cdd572d591ae0c0605d7"
+      "file:size": 2643,
+      "file:checksum": "1220ab095a13eb62f22e5307d2446674bcd9ba2e0bab79819a9b7d47abff8b533de0"
     },
     "style-confidence-2024": {
       "href": "./BR_ES.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12206e3e79e03f5a979015934a7138de2c35f8705461667354e9296092c7d31eefd6"
+      "file:size": 2643,
+      "file:checksum": "12206803f7390f93baa16f86f709bfbbb3033e3de63d2c5fee0e78bad287a197cbaf"
     },
     "README": {
       "href": "./BR_ES.README.md",

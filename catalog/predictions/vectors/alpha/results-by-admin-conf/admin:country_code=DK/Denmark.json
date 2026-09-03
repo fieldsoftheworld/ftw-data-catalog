@@ -118,9 +118,7 @@
       "title": "Denmark field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 281804593,
-      "file:checksum": "122001db0ba2261d9a6192d74336049417b2d83c1087d81e98e62ef99c8b3bed0871"
+      ]
     },
     "pmtiles": {
       "href": "./Denmark.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Denmark field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 209216157,
-      "file:checksum": "122088066b9be0f3a94c26d0f49e12fd984282e2ad9e0f1b96c1273884f37e2ffbef"
+      ]
     },
     "style-2025": {
       "href": "./Denmark.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220e840f3d92e7e4cc94d210433235a0866484cd24dcb1344fc6f67ad910c60b22f"
+      "file:size": 905,
+      "file:checksum": "1220ab0d71219f62242b8d0e03203435787fe754fa8725a774ccaeadbc696a8ad18b"
     },
     "style-2024": {
       "href": "./Denmark.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220f60b7801b131fbbfa28b065a063b825ec6e767a6fb20f5d1b83af5003e641452"
+      "file:size": 905,
+      "file:checksum": "122049570a0d2597c9c915341ceee31e3ec8da7dcce7e29e3a640853efba96dfafec"
     },
     "style-confidence-2025": {
       "href": "./Denmark.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220e4677bfc52e36a7dbe5ed09ca2ad2cc67237f8e219dcf67a84d56896789929dd"
+      "file:size": 2649,
+      "file:checksum": "1220426c10433e962b0a45734da05646ee1f74ed4b87e019a6d75c17ba2efa2e9052"
     },
     "style-confidence-2024": {
       "href": "./Denmark.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "122023c58eb2155769b0910b54024bd5eec8b6513b34502b085677116497494feb7c"
+      "file:size": 2649,
+      "file:checksum": "1220a6b3bd6d5e94c27b954f138fa1a43cb5a92cf1b67450e6a6aa4148ce4c19ea6c"
     },
     "README": {
       "href": "./Denmark.README.md",

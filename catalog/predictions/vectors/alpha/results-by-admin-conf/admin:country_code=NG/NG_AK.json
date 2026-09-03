@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          7.413571167885211,
+          4.501417896716799
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          8.28475412802881,
+          4.501417896716799
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          8.28475412802881,
+          5.519924021908398
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          7.413571167885211,
+          5.519924021908398
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          7.413571167885211,
+          4.501417896716799
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    7.413571167885211,
+    4.501417896716799,
+    8.28475412802881,
+    5.519924021908398
   ],
   "properties": {
     "title": "Nigeria \u2014 Akwa Ibom",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Akwa Ibom field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 6013839,
-      "file:checksum": "1220e6cd4123ab531f90bb66e9763c1f81ea076d002b76ee3cfeb7826e2c1e8ffb48"
+      ]
     },
     "pmtiles": {
       "href": "./NG_AK.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Akwa Ibom field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 6040298,
-      "file:checksum": "12201428fd67a5c5b9747fa6d8ea546b7b30473d68dbef595d61fcc0f68073e0d3fc"
+      ]
     },
     "style-2025": {
       "href": "./NG_AK.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12204e975ea3c4acb0f605d72ac2302e6ebc053c5c944b78230688fa00b7ac4aa7b1"
+      "file:size": 899,
+      "file:checksum": "122015e13e6008545601c2c5e637bc4a711ea1db9c1709bf52371c7e9319fa43f45f"
     },
     "style-2024": {
       "href": "./NG_AK.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207dca3ac20cc0066831e21f191e9d1b8ad48e4f1602eef38f85cbf3f07bf850b1"
+      "file:size": 899,
+      "file:checksum": "122084773f42f7612bdc7dc381c23b7f7c495ec576dc389fd0db12072d7a398adb2e"
     },
     "style-confidence-2025": {
       "href": "./NG_AK.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122059ae822e2efad41389bd762c86991ee7a93a4a7dcb7c389d2d3a63afe8c34aaf"
+      "file:size": 2643,
+      "file:checksum": "1220687d380829942109ca7d1d28874945154194e9c23700ed73395addf309df576f"
     },
     "style-confidence-2024": {
       "href": "./NG_AK.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220f82c7068ca542dcdfaf2be82c4aca3e0dc4116037de9d1650cab48c940ee2bd0"
+      "file:size": 2643,
+      "file:checksum": "1220a13b2e00fc6a627083954ed8c50b8e569e145fa34ff2c4ac905a269b699cdc0e"
     },
     "README": {
       "href": "./NG_AK.README.md",

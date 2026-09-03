@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          10.670580921022614,
-          13.054605602131593
+          3.4754612699954057,
+          10.09062521752259
         ],
         [
-          13.403066307870217,
-          13.054605602131593
+          6.166624305671009,
+          10.09062521752259
         ],
         [
-          13.403066307870217,
-          13.752055024956395
+          6.166624305671009,
+          13.277386973667594
         ],
         [
-          10.670580921022614,
-          13.752055024956395
+          3.4754612699954057,
+          13.277386973667594
         ],
         [
-          10.670580921022614,
-          13.054605602131593
+          3.4754612699954057,
+          10.09062521752259
         ]
       ]
     ]
   },
   "bbox": [
-    10.670580921022614,
-    13.054605602131593,
-    13.403066307870217,
-    13.752055024956395
+    3.4754612699954057,
+    10.09062521752259,
+    6.166624305671009,
+    13.277386973667594
   ],
   "properties": {
     "title": "Nigeria \u2014 Kebbi",
@@ -118,9 +118,7 @@
       "title": "Nigeria \u2014 Kebbi field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 575188471,
-      "file:checksum": "1220ad9435820cf252f6f719485210e0a1f72238275b9ea058a987c01304ac0695d9"
+      ]
     },
     "pmtiles": {
       "href": "./NG_KE.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Nigeria \u2014 Kebbi field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 302985622,
-      "file:checksum": "12206731e548174e50d8d1232203796a17ce19116bfcb1262433631d140a70f57493"
+      ]
     },
     "style-2025": {
       "href": "./NG_KE.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12202f54c0828d74a3b7c29d4cc78d21bb954b0efad5d39ae097c7805e23f6e84c7a"
+      "file:size": 899,
+      "file:checksum": "12200a2a9a5a5516a249d58c9bcae66ccc4c680c0408e95665385f671dee6058f7b2"
     },
     "style-2024": {
       "href": "./NG_KE.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12207222f1e3802a723e7bb00e1f96bb0a9cf39de904fa6e02da18adf42de7888964"
+      "file:size": 899,
+      "file:checksum": "12202a06af71431b7164766d69e2faab7a84487c3f717fee85510ca373a19ba9defa"
     },
     "style-confidence-2025": {
       "href": "./NG_KE.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220ca4a1d7a871f174bfce5367ffcd4c147e64e353b73e45ddad419ea9f0ba89285"
+      "file:size": 2643,
+      "file:checksum": "1220311e814d6b91146197210a2933ff292137da0ff5d574b9e0de079ac91dcff4a3"
     },
     "style-confidence-2024": {
       "href": "./NG_KE.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220bb243cb077999d18a0316be1b2e47fa7705ac0ae8ec6ec24064445bddd22ee99"
+      "file:size": 2643,
+      "file:checksum": "1220f38ae40d8e03ccf3402db9dc53911cad3ca258f5652de2df29752af5538699f0"
     },
     "README": {
       "href": "./NG_KE.README.md",

@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          74.87239928737343,
+          8.297774163847002
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          77.40015937352321,
+          8.297774163847002
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          77.40015937352321,
+          12.796430738504792
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          74.87239928737343,
+          12.796430738504792
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          74.87239928737343,
+          8.297774163847002
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    74.87239928737343,
+    8.297774163847002,
+    77.40015937352321,
+    12.796430738504792
   ],
   "properties": {
     "title": "India \u2014 Kerala",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Kerala field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 250133788,
-      "file:checksum": "12201b9d68ecb834e9e77aba8eebd42228ca7e778034e8da3633b6461dddab335fbf"
+      ]
     },
     "pmtiles": {
       "href": "./IN_KL.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Kerala field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 153094449,
-      "file:checksum": "1220d4a38ae7a2c8e039ced4208231f71d150ef1826ae5d83de42847e617b51ef689"
+      ]
     },
     "style-2025": {
       "href": "./IN_KL.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203e42badb068f4c05ceab21334978851c7d490b3f64b8a6d2a5ea81206748e914"
+      "file:size": 899,
+      "file:checksum": "1220811f573721259ebe6cbddd344c85201c8a6a6cbf3eda1a4d73bf43fa1232b722"
     },
     "style-2024": {
       "href": "./IN_KL.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220e1d4ed97858edeeab3d24bd689e4308017622c763e17d9539af0177d1c3409a0"
+      "file:size": 899,
+      "file:checksum": "1220e6361a5cfd5717f3b9d0e84d405af7c9107954acccb179efbf51415e22b7a843"
     },
     "style-confidence-2025": {
       "href": "./IN_KL.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12209ce2518627841efaec77860ce90ee11eb0593a20fe037192c980335bac4e2a8d"
+      "file:size": 2643,
+      "file:checksum": "1220bca329b6a3b5a356750b685d9c405304932ef560db580abb70b258948b5af2eb"
     },
     "style-confidence-2024": {
       "href": "./IN_KL.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "122013bf99bb022958b6a4ae0f60cff735d9cb454e41c17b704487b841d2d696c08c"
+      "file:size": 2643,
+      "file:checksum": "1220ebe02a02e868a31916208607aed35775331c767bb1fe8f30892152e3fef72a92"
     },
     "README": {
       "href": "./IN_KL.README.md",

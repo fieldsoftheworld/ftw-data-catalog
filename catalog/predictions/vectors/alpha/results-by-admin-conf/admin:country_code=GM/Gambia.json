@@ -118,9 +118,7 @@
       "title": "Gambia field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 147393863,
-      "file:checksum": "12207b6f28a730d951119dbc949004839925a517cf075767e0c7908d1e8753c0dc96"
+      ]
     },
     "pmtiles": {
       "href": "./Gambia.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Gambia field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 91167709,
-      "file:checksum": "12207137390b539010faf1a7610cbfd35300d76408fad8e67f1bdcbf1a819d7cd036"
+      ]
     },
     "style-2025": {
       "href": "./Gambia.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "1220faed1b01ebffaa9ecaf353c5b1363a92612328e20a31286c540ea7829bd65c7e"
+      "file:size": 902,
+      "file:checksum": "1220ef9cea84e7a0bd7edb38cf1b2b17aab232236371220c44fb2cd8a3626fdb0a37"
     },
     "style-2024": {
       "href": "./Gambia.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 903,
-      "file:checksum": "122051582725171e5dd05615e179eb1db8d3997be0a1a1a986078fbbdde558c866a3"
+      "file:size": 902,
+      "file:checksum": "1220137a7520d657f58da2795fc19f0adecba7aea1c9ebd949391825a6659772bf96"
     },
     "style-confidence-2025": {
       "href": "./Gambia.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "122069f8f42e9102d00abc711816ec7ac29d56e90c8241574cfe6cbb46be4a4d387e"
+      "file:size": 2646,
+      "file:checksum": "1220d302d6955069add4b7a2bec7dde34cf691df5c1f77c5217038022000ed3bf1dc"
     },
     "style-confidence-2024": {
       "href": "./Gambia.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2647,
-      "file:checksum": "1220db29928976bfec0540e2f46af97d7d92a249f1fd1ca27e55d92721594aa19433"
+      "file:size": 2646,
+      "file:checksum": "12206ee362c5f6ff2f58d779d51e5b3678aed87a89a851fb08cd994ccdcaf951a97e"
     },
     "README": {
       "href": "./Gambia.README.md",

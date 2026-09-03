@@ -118,9 +118,7 @@
       "title": "Grenada field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1545803,
-      "file:checksum": "122084c2a2b7c2dd1178ec1ceb546a10d91f9d2744eb5fff4332b79f2f54ebb79c2f"
+      ]
     },
     "pmtiles": {
       "href": "./Grenada.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Grenada field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 1724209,
-      "file:checksum": "12201d25df86c5c2e483ffb061429a52efc6ed167c6ae3a3b4b38d76b70068d8e99a"
+      ]
     },
     "style-2025": {
       "href": "./Grenada.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "122037a936a77dc031fb3c2a5b7580c7cd5d10a4fced0f99a49eba4a6038272df37b"
+      "file:size": 905,
+      "file:checksum": "1220dc92ffc359a08949064b3d7e54ddb985316d335e7d1ec4ba827e9ad6bd5fb548"
     },
     "style-2024": {
       "href": "./Grenada.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220aea59db7fbcb3bef88e05ddc8c3df3b307af45c4199f5640a421d0d4cf73a56e"
+      "file:size": 905,
+      "file:checksum": "12200dcb0c7fa20f7071ec4f5c36cef1bbf0924c38bb4eed4b1ebbd2e65b28096ab8"
     },
     "style-confidence-2025": {
       "href": "./Grenada.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220f6c839c2043c720bc59c54d85eb467fdfbd2b7401bf3bd5ed0bfb66803f52ab4"
+      "file:size": 2649,
+      "file:checksum": "1220735eff1392ba580f60af459128d6b15df638e8ef9b6a5a25818d8265ad4be679"
     },
     "style-confidence-2024": {
       "href": "./Grenada.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "12205bbf95edfb4292b96b4c24b5bc22d9931172a043a37a9180d27a460dd39534de"
+      "file:size": 2649,
+      "file:checksum": "1220cd0e94f375a94a2c23b1b0336eea830973b7a8e9327adad2b5dd1950ce6b0c3d"
     },
     "README": {
       "href": "./Grenada.README.md",

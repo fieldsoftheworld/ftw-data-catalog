@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          15.021105849848619,
-          20.343688686475993
+          13.472236330484218,
+          7.437640441082001
         ],
         [
-          15.991911608796022,
-          20.343688686475993
+          24.0073697617856,
+          7.437640441082001
         ],
         [
-          15.991911608796022,
-          22.883935309175598
+          24.0073697617856,
+          23.379174704852197
         ],
         [
-          15.021105849848619,
-          22.883935309175598
+          13.472236330484218,
+          23.379174704852197
         ],
         [
-          15.021105849848619,
-          20.343688686475993
+          13.472236330484218,
+          7.437640441082001
         ]
       ]
     ]
   },
   "bbox": [
-    15.021105849848619,
-    20.343688686475993,
-    15.991911608796022,
-    22.883935309175598
+    13.472236330484218,
+    7.437640441082001,
+    24.0073697617856,
+    23.379174704852197
   ],
   "properties": {
     "title": "Chad",
@@ -118,9 +118,7 @@
       "title": "Chad field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 4794998174,
-      "file:checksum": "1220bc9067142158d17c11029e6d439e81c89851c2cb21f41a4500a2c10808c9b2fa"
+      ]
     },
     "pmtiles": {
       "href": "./Chad.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Chad field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 2373679148,
-      "file:checksum": "1220e974256bbc7bc6f8b35044d9685c17ff4eba59f65218f7097ae7046bb6c968a7"
+      ]
     },
     "style-2025": {
       "href": "./Chad.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "1220acd1a83486136c58ec712d6b05ffc16a381a1578d734976191e07956ff13508a"
+      "file:size": 896,
+      "file:checksum": "122026f4f704474b839a45f456a84592f4729cc1ae83244cd09da141640a4757192a"
     },
     "style-2024": {
       "href": "./Chad.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 897,
-      "file:checksum": "122080a3465acb5d5384c2bf2c804eb9bb28b4bbe3859af8be116bb69e49fe17c4c1"
+      "file:size": 896,
+      "file:checksum": "12208a9141637208a79650298b12991bd3d00a8cc2df3798e6c7c1391b3adb40f6fc"
     },
     "style-confidence-2025": {
       "href": "./Chad.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "12209dacc248b428b2a7b6fae208269b2258579805b12c72ab6777a359530d33f39d"
+      "file:size": 2640,
+      "file:checksum": "1220be91c918b653d4821765f31efa2b10a23fa722b0d9586f8b1238dfcdf136e35a"
     },
     "style-confidence-2024": {
       "href": "./Chad.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2641,
-      "file:checksum": "1220154225a00e67e9546d9a8adb032147a74368e01f233ae3194d663f10dda0c92b"
+      "file:size": 2640,
+      "file:checksum": "12201be803b68478a765cb871855bc942e33f45d1f23340cffc2b7115fd21c70533b"
     },
     "README": {
       "href": "./Chad.README.md",

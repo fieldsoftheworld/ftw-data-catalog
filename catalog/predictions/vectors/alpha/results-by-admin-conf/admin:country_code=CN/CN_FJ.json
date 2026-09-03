@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          102.59062397276723,
-          22.470262641464597
+          115.85896144050184,
+          23.580216926423798
         ],
         [
-          103.43979828935183,
-          22.470262641464597
+          120.41349302044,
+          23.580216926423798
         ],
         [
-          103.43979828935183,
-          22.754398721371196
+          120.41349302044,
+          28.270842771634996
         ],
         [
-          102.59062397276723,
-          22.754398721371196
+          115.85896144050184,
+          28.270842771634996
         ],
         [
-          102.59062397276723,
-          22.470262641464597
+          115.85896144050184,
+          23.580216926423798
         ]
       ]
     ]
   },
   "bbox": [
-    102.59062397276723,
-    22.470262641464597,
-    103.43979828935183,
-    22.754398721371196
+    115.85896144050184,
+    23.580216926423798,
+    120.41349302044,
+    28.270842771634996
   ],
   "properties": {
     "title": "China \u2014 Fujian Sheng",
@@ -118,9 +118,7 @@
       "title": "China \u2014 Fujian Sheng field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 137472096,
-      "file:checksum": "122007606015fee9a32f32600e47f9a91243b96474d6a0f3d7f180402364008cba1b"
+      ]
     },
     "pmtiles": {
       "href": "./CN_FJ.pmtiles",
@@ -128,9 +126,7 @@
       "title": "China \u2014 Fujian Sheng field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 113581754,
-      "file:checksum": "12204ab2c50c10c5ab52def3f5141f2ddec827202920b16dcaef558dba482261b6a6"
+      ]
     },
     "style-2025": {
       "href": "./CN_FJ.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ee2e2ee7fc0787e2c8d9d486b9ab23e2f999db9638f02ecbedcb694dc4535edf"
+      "file:size": 899,
+      "file:checksum": "1220f6a16cd13c4491542bbfa371b4344b3c8b357c3e12427dcdda61a473ccd873cd"
     },
     "style-2024": {
       "href": "./CN_FJ.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220f3e1e58b5219ca2285ad0c6fcea5b32ada8095606bc5bb52ed53816ff264d822"
+      "file:size": 899,
+      "file:checksum": "12203047175cff50e3be9995f1964f218510789445bf3f928376b849092f3a9db80d"
     },
     "style-confidence-2025": {
       "href": "./CN_FJ.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12201a44483d836be8cf62895fc18e2ecae9cc7ecc06b46e7f3a9b11c05ffba4b059"
+      "file:size": 2643,
+      "file:checksum": "1220978456683bd28a050a8027d31a76447907528a3428edd2ada9c6fc2fbe43bb48"
     },
     "style-confidence-2024": {
       "href": "./CN_FJ.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12203547b8a963bc8aa16c0fef7b0290ec04ead93bab19a259064a0b763620741630"
+      "file:size": 2643,
+      "file:checksum": "12208092eaacca1cbcd2eaf000b6cd837590fa41ce8c3887ca13616c69ba8fbabd09"
     },
     "README": {
       "href": "./CN_FJ.README.md",

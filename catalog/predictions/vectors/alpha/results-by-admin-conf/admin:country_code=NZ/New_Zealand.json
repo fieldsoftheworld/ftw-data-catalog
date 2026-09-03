@@ -118,9 +118,7 @@
       "title": "New_Zealand field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 254317600,
-      "file:checksum": "12201c0ab1250326fc8d9cef03acf56cb5fff0a01264d9987194a9c3a1189d4c2f8a"
+      ]
     },
     "pmtiles": {
       "href": "./New_Zealand.pmtiles",
@@ -128,9 +126,7 @@
       "title": "New_Zealand field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 163144281,
-      "file:checksum": "12208d3c714c6a459e4c56b0faa9d63f707695948a59d96b2c713077f2f214faff1a"
+      ]
     },
     "style-2025": {
       "href": "./New_Zealand.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "122093582770d39263cfe706a40ed9cc1b56de5fe2e19a1e8b845b7864f762adb4e2"
+      "file:size": 917,
+      "file:checksum": "122021bf5d6973787e1df32405d78f6932a030bd798a48aa3a53b762e44041f52f5d"
     },
     "style-2024": {
       "href": "./New_Zealand.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 918,
-      "file:checksum": "12201685860383789a4eb9bfb7d22d7c4ab2b3963460cef837808b22a707e6eaacaf"
+      "file:size": 917,
+      "file:checksum": "1220e13a29f7e797c8525f68a7a7404b13408d9622b464698c6c94fc09e471f8b403"
     },
     "style-confidence-2025": {
       "href": "./New_Zealand.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "122044560d3af75bd06c54deae697e8396ffd82a395493b242f8cac491dfc166b5a9"
+      "file:size": 2661,
+      "file:checksum": "122084953b14ea2cefd5cd260ba7caf63e18f23a2e889aab9e8d629e96d4db3323e1"
     },
     "style-confidence-2024": {
       "href": "./New_Zealand.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2662,
-      "file:checksum": "1220a9710930eeaa11a69ad634bb884472b50c667e93583115cb11baed9b2e329d5a"
+      "file:size": 2661,
+      "file:checksum": "1220082141a8b60ce411cf9e34a16acd46ef0c15e8908ec274225650f701fefabd97"
     },
     "README": {
       "href": "./New_Zealand.README.md",

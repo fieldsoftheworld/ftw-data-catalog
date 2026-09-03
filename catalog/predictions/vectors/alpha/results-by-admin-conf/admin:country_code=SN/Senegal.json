@@ -118,9 +118,7 @@
       "title": "Senegal field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1645844093,
-      "file:checksum": "12207baad712ee18bc375bc63c693c19dafe7c57c1ca45e6da5568ae8f8e9a97b8fb"
+      ]
     },
     "pmtiles": {
       "href": "./Senegal.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Senegal field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 814907236,
-      "file:checksum": "1220467abbbb1f1169fce1b41ee17d33c8228e16700d62ed6812fb9503919a54bc93"
+      ]
     },
     "style-2025": {
       "href": "./Senegal.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220737019451d6efd6c9fc61d3186214fe06427a4b475c3468abcd2cbf4e83aec2f"
+      "file:size": 905,
+      "file:checksum": "1220d4cc676906625bf423771d2da1cf2a48782a72a8c475eb0a1a1b189312ebe1a3"
     },
     "style-2024": {
       "href": "./Senegal.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 906,
-      "file:checksum": "1220dc1b6974ab1aa27eeb150d302688d6f6989588f3214b072a98d7be464cff1302"
+      "file:size": 905,
+      "file:checksum": "122020960da4b0165343938696cb0b00a3953718601ef4d8bb0d834282133deabdd5"
     },
     "style-confidence-2025": {
       "href": "./Senegal.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220bfcd79a046287cd9d707eb40ae22cdb8058ea9e4e2557bd593d45b4048670ed3"
+      "file:size": 2649,
+      "file:checksum": "1220118628476eaf89e00e4a60d760f8b3d9058a983cceaa4b4c78c7a06849b36ad1"
     },
     "style-confidence-2024": {
       "href": "./Senegal.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2650,
-      "file:checksum": "1220411188000e171bfc1ec84f4fb7815cfd685786aa1bd472b3562ac3b9afae0410"
+      "file:size": 2649,
+      "file:checksum": "122033c8341e7fb0199399e946c9cd6a6e573e68d317463290c14cdcb08cf973f895"
     },
     "README": {
       "href": "./Senegal.README.md",

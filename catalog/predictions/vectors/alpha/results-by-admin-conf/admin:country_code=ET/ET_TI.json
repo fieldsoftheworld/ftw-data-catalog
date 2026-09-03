@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          39.804275796453815,
-          3.7382120368095966
+          36.43048548565641,
+          12.253940132574993
         ],
         [
-          41.90560718474822,
-          3.7382120368095966
+          39.998850171755016,
+          12.253940132574993
         ],
         [
-          41.90560718474822,
-          4.286721333018798
+          39.998850171755016,
+          14.894887528456795
         ],
         [
-          39.804275796453815,
-          4.286721333018798
+          36.43048548565641,
+          14.894887528456795
         ],
         [
-          39.804275796453815,
-          3.7382120368095966
+          36.43048548565641,
+          12.253940132574993
         ]
       ]
     ]
   },
   "bbox": [
-    39.804275796453815,
-    3.7382120368095966,
-    41.90560718474822,
-    4.286721333018798
+    36.43048548565641,
+    12.253940132574993,
+    39.998850171755016,
+    14.894887528456795
   ],
   "properties": {
     "title": "Ethiopia \u2014 Tigrai",
@@ -118,9 +118,7 @@
       "title": "Ethiopia \u2014 Tigrai field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1171304511,
-      "file:checksum": "12204d86c62af3a58a1406ede80c40d50b52713bd6f2e5785152b294c153b76fa394"
+      ]
     },
     "pmtiles": {
       "href": "./ET_TI.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Ethiopia \u2014 Tigrai field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 523417116,
-      "file:checksum": "12207cb751b75fdc2da5ea0fb0b163731ba1b71137794198a404d19f704e6c1bcc03"
+      ]
     },
     "style-2025": {
       "href": "./ET_TI.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122034bce8ac46f41d1773907fb43ffa0bc7ae44198ea411011bd4bc72afface816c"
+      "file:size": 899,
+      "file:checksum": "1220af2e51757657ac5df0f4414cfc5411326a59f6aa0923de26877f8002aef8a787"
     },
     "style-2024": {
       "href": "./ET_TI.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220cf9b76583c3f65a449466263b3e328a22c26d1ac07d032ca897ddb26f06624ba"
+      "file:size": 899,
+      "file:checksum": "1220c8de9fc151e5b0a2083fe553bcc3fe0db1f4a2e8e1d0a3ab506b74d47fd2d9a4"
     },
     "style-confidence-2025": {
       "href": "./ET_TI.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220b75211297c77b36a78d33733800f454ba115a06d776a3af71ecf7d1715e7a5e5"
+      "file:size": 2643,
+      "file:checksum": "1220838c50eac0be91f3a9ca6575a9b0cdde0f85e2fc6ebbbac63a73e9edc2dbb290"
     },
     "style-confidence-2024": {
       "href": "./ET_TI.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220fea95efd08b7370a2e45cdc814b272e824a53321fda4b8189d40bd05b4cce502"
+      "file:size": 2643,
+      "file:checksum": "1220db46f6c716a9f8e2ea06a89856bee230ff292bc418820ef0c42acb76d1a605d8"
     },
     "README": {
       "href": "./ET_TI.README.md",

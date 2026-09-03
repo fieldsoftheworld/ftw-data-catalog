@@ -118,9 +118,7 @@
       "title": "Suriname field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 22729194,
-      "file:checksum": "1220f8a5bcbf4c549bc822baa821a1bcfd4723e7a6d73910d2be50bf54b16dd3c324"
+      ]
     },
     "pmtiles": {
       "href": "./Suriname.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Suriname field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 19264092,
-      "file:checksum": "12206eda8b15bfc079afc64833d6253e1639af3d200898f057c714580d4b79168419"
+      ]
     },
     "style-2025": {
       "href": "./Suriname.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220c5b19335a6a5a501a08c9a329ff3b6a3e1735fe0584f89695925b5d437429f49"
+      "file:size": 908,
+      "file:checksum": "12203cbd760dc15d968ab4b515821bcbd05ce3c62b1c42d4e62424fc6c5d58e3ce53"
     },
     "style-2024": {
       "href": "./Suriname.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220c993b747cc288707e8c3b41870cd9206789882baebcc64433fdda1da45a40ae3"
+      "file:size": 908,
+      "file:checksum": "12209600726c4d3da741978eee182b206464d0e76892c05c7142c93ce3ab315153af"
     },
     "style-confidence-2025": {
       "href": "./Suriname.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220c78482edfd2ef23aed85e91a22dcabf58ea4afd002d8f2bf88a92a7dd5e23663"
+      "file:size": 2652,
+      "file:checksum": "1220a10c003a338537613d1f73b714b3a738facf2f52b04010544387fb54ac76797b"
     },
     "style-confidence-2024": {
       "href": "./Suriname.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "12201a6cb2d6ce794c471f2bd030e69b7fc3b754ca227eafe6eeefe5b99a6d41fe8a"
+      "file:size": 2652,
+      "file:checksum": "122021767daa821259b600bb481075272ae8de8e0fb97a525458e8e7b00279916bef"
     },
     "README": {
       "href": "./Suriname.README.md",

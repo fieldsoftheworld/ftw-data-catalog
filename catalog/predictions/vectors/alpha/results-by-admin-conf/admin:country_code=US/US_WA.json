@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          -113.4608636876834,
-          48.8715619612464
+          -124.393140846227,
+          45.5560720980808
         ],
         [
-          -109.95133843640579,
-          48.8715619612464
+          -116.92547333986099,
+          45.5560720980808
         ],
         [
-          -109.95133843640579,
-          49.115274001962995
+          -116.92547333986099,
+          49.0108901496546
         ],
         [
-          -113.4608636876834,
-          49.115274001962995
+          -124.393140846227,
+          49.0108901496546
         ],
         [
-          -113.4608636876834,
-          48.8715619612464
+          -124.393140846227,
+          45.5560720980808
         ]
       ]
     ]
   },
   "bbox": [
-    -113.4608636876834,
-    48.8715619612464,
-    -109.95133843640579,
-    49.115274001962995
+    -124.393140846227,
+    45.5560720980808,
+    -116.92547333986099,
+    49.0108901496546
   ],
   "properties": {
     "title": "United States \u2014 Washington",
@@ -118,9 +118,7 @@
       "title": "United States \u2014 Washington field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 220053975,
-      "file:checksum": "122029a07c112fb4d688dbbe68a54853355f5cbd228f6e3274df12918822c0171d1e"
+      ]
     },
     "pmtiles": {
       "href": "./US_WA.pmtiles",
@@ -128,9 +126,7 @@
       "title": "United States \u2014 Washington field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 152966616,
-      "file:checksum": "12209b153ab03c1e03bbe285e5f289ccd81f4a4b9ac0259465c6ccf96d460a941c94"
+      ]
     },
     "style-2025": {
       "href": "./US_WA.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122085d628558a1641cdb79bf487e5c4a0b9ead13f8dfa9d60cd3eaf62b6549137ba"
+      "file:size": 899,
+      "file:checksum": "1220206e3edc9ba2f284d74345421cbfcb55f9f9b689e478aeb8778451315c711cc1"
     },
     "style-2024": {
       "href": "./US_WA.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220b64a63845339213066022cc1d70c74d32bd250ba530a0d08fac95012478bf26c"
+      "file:size": 899,
+      "file:checksum": "1220fd44a4ee2a7771d82dde13e381539f773d46a358bf20eb5f800547d2a792a5a7"
     },
     "style-confidence-2025": {
       "href": "./US_WA.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220cdad6e5d7c20fe2426fd0cc9640166b521da56788e537cf03ba0867f413bde27"
+      "file:size": 2643,
+      "file:checksum": "1220e58f80f89a42b4ca706cd977db5c4fb60929aa6722b459a5242d0e227b99cd40"
     },
     "style-confidence-2024": {
       "href": "./US_WA.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220125a434859fbe345922cfcfcb048d05cc066d78b5e043e66d5de6e941ed65576"
+      "file:size": 2643,
+      "file:checksum": "1220347d2923f73d3e12241ba15354ad5200a3b753792dddbd4996f32aa355647586"
     },
     "README": {
       "href": "./US_WA.README.md",

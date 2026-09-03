@@ -118,9 +118,7 @@
       "title": "Kiribati field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 21721,
-      "file:checksum": "1220fcf95d1c1578315db23c4fdc6e1653d7cfc205a27770c8f01786d45b75c517b5"
+      ]
     },
     "pmtiles": {
       "href": "./Kiribati.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Kiribati field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 16514,
-      "file:checksum": "122095f4c234d68811965a293e291887453339fc03f619caf9d5807d228ced4abec8"
+      ]
     },
     "style-2025": {
       "href": "./Kiribati.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "1220315d1802951ee25232ed01bfaddc352b81f2c87cc3e46d304b9caf162c0dedb8"
+      "file:size": 908,
+      "file:checksum": "1220c149709c23e39e5f803b660e5a09cf420b4ba861819ab7ef9e3a642f72593fbe"
     },
     "style-2024": {
       "href": "./Kiribati.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 909,
-      "file:checksum": "122069e2091f08e1d6553acf96fe2d905508d71aa8a0355f98f5ee98628e77636277"
+      "file:size": 908,
+      "file:checksum": "1220aae1a4b39e6d8f96fa51cd71fa8e10e6731385923f14b1aeeb89520dc5eef8a3"
     },
     "style-confidence-2025": {
       "href": "./Kiribati.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "1220cc11fa7a4408580449613237edf9ffaa209bc0221d533fbda418b0e09559996f"
+      "file:size": 2652,
+      "file:checksum": "12203e908efb138348d0dca14022a57bb11dd7cf4bb7eaeb1bdeda88d53f3268b90d"
     },
     "style-confidence-2024": {
       "href": "./Kiribati.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2653,
-      "file:checksum": "122051e30d3044650c985b6618bfbba0dd446309bc5395e2d0f268c130fbf1fd8d6a"
+      "file:size": 2652,
+      "file:checksum": "12202125d1fb7ea513a7d6727b3c0c332e3352d0ff4c438c5d9cfe494d826b35ca82"
     },
     "README": {
       "href": "./Kiribati.README.md",

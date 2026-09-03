@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          80.24744903167041,
+          17.7815232514156
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          84.39720123251941,
+          17.7815232514156
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          84.39720123251941,
+          24.097105640866598
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          80.24744903167041,
+          24.097105640866598
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          80.24744903167041,
+          17.7815232514156
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    80.24744903167041,
+    17.7815232514156,
+    84.39720123251941,
+    24.097105640866598
   ],
   "properties": {
     "title": "India \u2014 Chhatt\u012bsgarh",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Chhatt\u012bsgarh field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 1823007376,
-      "file:checksum": "12205be883a01fa030f8ca798137576532aa59d2899edfe93b4154b296c2ddb5c0da"
+      ]
     },
     "pmtiles": {
       "href": "./IN_CG.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Chhatt\u012bsgarh field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 891489865,
-      "file:checksum": "122033add33bbf2037deef7d23cef40547918560942df7ee86b14defa60d92253745"
+      ]
     },
     "style-2025": {
       "href": "./IN_CG.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "122081e1baee8741abc39f20a5a0ed07f7aef2531c249e992a9d111dbcd9e6d35048"
+      "file:size": 899,
+      "file:checksum": "1220babab49da8d4b8fefec222dd7613f1a0241ef666fec8a1a54b6e2fd3522a192e"
     },
     "style-2024": {
       "href": "./IN_CG.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "12203a8d3db746df38ee9abf79ff15fe82fae7fff7321d5d4ac03d1b641fea2fc21b"
+      "file:size": 899,
+      "file:checksum": "12206f76ecd5ec2d429fd8c2e03d9119143199282ea6d7bec65f2e38fd2bef3e17dd"
     },
     "style-confidence-2025": {
       "href": "./IN_CG.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220c458ae6b1f82e904170e73853a0e6c507c601a2ba4319853dbc0cc8ee78c245d"
+      "file:size": 2643,
+      "file:checksum": "12207760d0d7a46288108df8be10fb39672ecb55fdbafd79db13d04ede3656199a2e"
     },
     "style-confidence-2024": {
       "href": "./IN_CG.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220796a6b89162ccb6242c9d753daf422fec3ed957d97e8f28ab4fdaf3cc29c8932"
+      "file:size": 2643,
+      "file:checksum": "1220dc02777c139e5c20faefaa2d9f38542d0de046825ef12e80b156abb29c2e8780"
     },
     "README": {
       "href": "./IN_CG.README.md",

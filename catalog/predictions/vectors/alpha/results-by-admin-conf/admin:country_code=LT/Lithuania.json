@@ -118,9 +118,7 @@
       "title": "Lithuania field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 295517040,
-      "file:checksum": "12203eebac9613209a77c2ad8296d706358cbc954c236b6539dc41d15d5ac92998c6"
+      ]
     },
     "pmtiles": {
       "href": "./Lithuania.pmtiles",
@@ -128,9 +126,7 @@
       "title": "Lithuania field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 208478453,
-      "file:checksum": "122057015c1ed205ef217772d1d009a42b7b9cb4e9ae9e7d37ef5eecb025ee37a896"
+      ]
     },
     "style-2025": {
       "href": "./Lithuania.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "122090f3a9f6b2e50343c6b1353e30e6789d4305789a0a6d4bcfcf3a90e5cf626260"
+      "file:size": 911,
+      "file:checksum": "12202c9f7bcd71af95e53f307936e40c37fbfb3fcc46ea88e7c60e8f644e8b120cd3"
     },
     "style-2024": {
       "href": "./Lithuania.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 912,
-      "file:checksum": "1220ace904878d8ac02e22bd4f5bc11f0a6518aa20344721171e70cc16c6d7a4fdfb"
+      "file:size": 911,
+      "file:checksum": "122096449f932635174aabf57f69662523edc6bcb2e17176a0b630d606b383136a1f"
     },
     "style-confidence-2025": {
       "href": "./Lithuania.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "122025707862d5ba7eddb0128df7f534892a86cb90017a046daf1c70da5c6e69fac3"
+      "file:size": 2655,
+      "file:checksum": "122040d2d72f2f0960a1641cb01cb3f29048cc4ca12eddbd3ee0121c08c8e0897abc"
     },
     "style-confidence-2024": {
       "href": "./Lithuania.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2656,
-      "file:checksum": "12208575585308bb93d6f2583d64083790ad476954bffed8bc0207a018c0b5e35a05"
+      "file:size": 2655,
+      "file:checksum": "12204961b6959457c16585612c161708438c90c19ae360452b04b6cf7202ada5f664"
     },
     "README": {
       "href": "./Lithuania.README.md",

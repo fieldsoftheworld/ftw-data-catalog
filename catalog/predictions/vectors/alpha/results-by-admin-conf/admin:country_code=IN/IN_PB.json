@@ -13,33 +13,33 @@
     "coordinates": [
       [
         [
-          94.15466598100342,
-          23.846027441897597
+          69.95162591237383,
+          27.744162456588395
         ],
         [
-          94.74000606847463,
-          23.846027441897597
+          76.9413914443158,
+          27.744162456588395
         ],
         [
-          94.74000606847463,
-          25.0227263071194
+          76.9413914443158,
+          32.842532110429396
         ],
         [
-          94.15466598100342,
-          25.0227263071194
+          69.95162591237383,
+          32.842532110429396
         ],
         [
-          94.15466598100342,
-          23.846027441897597
+          69.95162591237383,
+          27.744162456588395
         ]
       ]
     ]
   },
   "bbox": [
-    94.15466598100342,
-    23.846027441897597,
-    94.74000606847463,
-    25.0227263071194
+    69.95162591237383,
+    27.744162456588395,
+    76.9413914443158,
+    32.842532110429396
   ],
   "properties": {
     "title": "India \u2014 Punjab",
@@ -118,9 +118,7 @@
       "title": "India \u2014 Punjab field boundaries (GeoParquet)",
       "roles": [
         "data"
-      ],
-      "file:size": 992132790,
-      "file:checksum": "12201c9583885e692c60781e433af38521bd0424a58bfd14d2b6ad992561cb66719d"
+      ]
     },
     "pmtiles": {
       "href": "./IN_PB.pmtiles",
@@ -128,9 +126,7 @@
       "title": "India \u2014 Punjab field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
         "visual"
-      ],
-      "file:size": 586620932,
-      "file:checksum": "1220732a218a5f92a7e476adc9976a56eb739c29d04a15180712a10cad8c323e395f"
+      ]
     },
     "style-2025": {
       "href": "./IN_PB.2025.style.json",
@@ -139,8 +135,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220d61a9b29e5bbc8525c026c0800dec2c4087a3e8b2f1d628390e332435073ee6f"
+      "file:size": 899,
+      "file:checksum": "122089ebdf446a4e6d6186d5e1dc3f9118ac81061158780ec6bc842bb8dc05a75ea6"
     },
     "style-2024": {
       "href": "./IN_PB.2024.style.json",
@@ -149,8 +145,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 900,
-      "file:checksum": "1220ae9f0ababb6a932d0426b5310778ecdb047e5c72ed6282c64aa6f1a325a7ae3d"
+      "file:size": 899,
+      "file:checksum": "12200a5ef9f77656e07058f86970f45ce7c3540695b2445766423c47e6b83d95eb04"
     },
     "style-confidence-2025": {
       "href": "./IN_PB.confidence-2025.style.json",
@@ -159,8 +155,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "12207f8c555b4333e35cf87809e49ed802398cebf383149def4cc2fe0a0fcba0125d"
+      "file:size": 2643,
+      "file:checksum": "1220298f079a162c042022f4e747431dec04047cc4caf32e3c6d5dede86883b5adb2"
     },
     "style-confidence-2024": {
       "href": "./IN_PB.confidence-2024.style.json",
@@ -169,8 +165,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 2644,
-      "file:checksum": "1220d4303ed4deff9d03bce24d9266c2f0c46202db7d735e6961846580e4a2dd6abd"
+      "file:size": 2643,
+      "file:checksum": "1220ec07ce19bd3f2168fe5f2c303af87170b70489575b97a041241ce6c85bef8d1b"
     },
     "README": {
       "href": "./IN_PB.README.md",
