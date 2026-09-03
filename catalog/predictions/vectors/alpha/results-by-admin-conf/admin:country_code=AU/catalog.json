@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-AU",
-  "title": "Australia \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for Australia, split into 8 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "Australia — field boundary predictions",
+  "description": "Field-boundary predictions for Australia, split into 8 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -30,49 +30,49 @@
       "rel": "item",
       "href": "./AU_ACT.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 Australian Capital Territory"
+      "title": "Australia — Australian Capital Territory"
     },
     {
       "rel": "item",
       "href": "./AU_NSW.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 New South Wales"
+      "title": "Australia — New South Wales"
     },
     {
       "rel": "item",
       "href": "./AU_NT.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 Northern Territory"
+      "title": "Australia — Northern Territory"
     },
     {
       "rel": "item",
       "href": "./AU_QLD.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 Queensland"
+      "title": "Australia — Queensland"
     },
     {
       "rel": "item",
       "href": "./AU_SA.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 South Australia"
+      "title": "Australia — South Australia"
     },
     {
       "rel": "item",
       "href": "./AU_TAS.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 Tasmania"
+      "title": "Australia — Tasmania"
     },
     {
       "rel": "item",
       "href": "./AU_VIC.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 Victoria"
+      "title": "Australia — Victoria"
     },
     {
       "rel": "item",
       "href": "./AU_WA.json",
       "type": "application/geo+json",
-      "title": "Australia \u2014 Western Australia"
+      "title": "Australia — Western Australia"
     },
     {
       "rel": "agents",
@@ -88,7 +88,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }

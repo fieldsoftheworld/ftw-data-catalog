@@ -6,8 +6,8 @@
     "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
   "id": "predictions-zarr",
-  "title": "FTW Global \u2014 Field Prediction Probabilities (Zarr)",
-  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands \u2014 `non_field_background`, `field`, `field_boundaries` \u2014 at ~10 m (`8.983119e-5\u00b0`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) and it **implements multiscales**: 14 `average`-resampled overview levels (1\u00d7 through 8192\u00d7, at group paths `.`, `2x`, `4x`, \u2026 `8192x`) declared against the `WGS84Quad` tile matrix set, so the store can be read at any zoom by multiscale-aware clients and tiled for web display, as well as consumed analytically (xarray/Zarr). The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
+  "title": "FTW Global — Field Prediction Probabilities (Zarr)",
+  "description": "Per-pixel class probabilities from the [PRUE model](https://huggingface.co/wherobots/prue-pt2), run over the FTW global Sentinel-2 feature mosaics, as a single cloud-native **Zarr V3** datacube. Three softmax bands — `non_field_background`, `field`, `field_boundaries` — at ~10 m (`8.983119e-5°`) on a global EPSG:4326 grid, for two prediction years (2024 and 2025). The cube has dimensions `(time, band, y, x)` = `(2, 3, 1566049, 4007517)`, float32. It shares the exact grid of the `features/zarr` mosaic, so features and predictions are directly stackable (open both with `xarray`/`rasterix`). The field-boundary `vectors` collection and the `confidence` raster are derived from these probabilities.\n\nThis is a GeoZarr-style store (CF-1.8, with the emerging Zarr `proj:`/`spatial:` geo-conventions) and it **implements multiscales**: 14 `average`-resampled overview levels (1× through 8192×, at group paths `.`, `2x`, `4x`, … `8192x`) declared against the `WGS84Quad` tile matrix set, so the store can be read at any zoom by multiscale-aware clients and tiled for web display, as well as consumed analytically (xarray/Zarr). The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
   "license": "CC-BY-4.0",
   "keywords": [
     "agriculture",
@@ -28,20 +28,21 @@
   ],
   "providers": [
     {
-      "name": "Taylor Geospatial Institute",
-      "roles": [
-        "producer",
-        "licensor"
-      ],
-      "url": "https://taylorgeospatial.org/"
-    },
-    {
       "name": "Microsoft AI for Good Research Lab",
       "roles": [
         "producer",
         "processor"
       ],
       "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    {
+      "name": "Taylor Geospatial",
+      "roles": [
+        "producer",
+        "licensor",
+        "host"
+      ],
+      "url": "https://taylorgeospatial.org/"
     }
   ],
   "extent": {
@@ -131,7 +132,7 @@
       "unit": "1"
     }
   },
-  "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., T\u00e1rano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
+  "sci:citation": "Robinson, C., Muhawenayo, G., Khanal, S., Fang, Z., Corley, I., Tárano, A. M., Estes, L., Marcus, J., Jacobs, N., Kerner, H., Becker-Reshef, I., & Lavista Ferres, J. M. (2026). The first global agricultural field boundary map at 10 m resolution. arXiv:2605.11055.",
   "sci:publications": [
     {
       "doi": "10.48550/arXiv.2409.16252",
@@ -188,7 +189,7 @@
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World \u2014 Global"
+      "title": "Fields of the World — Global"
     },
     {
       "rel": "parent",
@@ -212,7 +213,7 @@
       "title": "FTW Global accompanying paper"
     },
     {
-      "rel": "via",
+      "rel": "related",
       "href": "https://huggingface.co/wherobots/prue-pt2",
       "type": "text/html",
       "title": "PRUE model"
