@@ -40,6 +40,10 @@ VECTOR_EXT = "https://stac-extensions.github.io/vector/v0.1.0/schema.json"
 WEBMAP_EXT = "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
 TABLE_EXT = "https://stac-extensions.github.io/table/v1.2.0/schema.json"
 PARTITION_EXT = "https://portolan-sdi.github.io/stac-partition-extension/v1.0.0/schema.json"
+# The Portolan profile this catalog declares. It is the *sole* conformance signal,
+# so emitting it here keeps a regeneration from silently dropping it (which is
+# exactly what happened once — see scripts/migrate/upgrade_to_0_2.py).
+PORTOLAN_EXT = "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
 
 # Field-definition specs (linked in each column description + via `describedby`).
 FIBOA_CORE = "https://github.com/fiboa/specification/blob/main/core/README.md"
@@ -376,7 +380,8 @@ def build_collection(item_links, child_links):
     return {
         "type": "Collection",
         "stac_version": "1.1.0",
-        "stac_extensions": [PROJ_EXT, VECTOR_EXT, TABLE_EXT, SCI_EXT, PARTITION_EXT],
+        "stac_extensions": [PORTOLAN_EXT, PROJ_EXT, VECTOR_EXT, TABLE_EXT, SCI_EXT,
+                            PARTITION_EXT],
         # the Portolan browser reads this list to populate the style picker
         "portolan:styles": ["styles/2025", "styles/2024",
                             "styles/confidence-2025", "styles/confidence-2024"],
@@ -394,12 +399,19 @@ def build_collection(item_links, child_links):
         "license": "CC-BY-4.0",
         "keywords": ["agriculture", "field boundaries", "Fields of the World",
                      "FTW", "global", "PRUE", "Sentinel-2", "confidence"],
+        # Taylor Geospatial is producer AND host, which is what makes this an
+        # *official* Portolan catalog rather than a mirror — the spec derives the
+        # distinction from providers alone. The host is the organization operating
+        # the catalog, not the storage vendor, so Source Cooperative is not listed
+        # (see scripts/migrate/upgrade_to_0_2.py). PORTO-CORE-036: exactly one
+        # host, listed last.
         "providers": [
-            {"name": "Taylor Geospatial Institute", "roles": ["producer", "licensor"],
-             "url": "https://taylorgeospatial.org/"},
             {"name": "Microsoft AI for Good Research Lab",
              "roles": ["producer", "processor"],
              "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"},
+            {"name": "Taylor Geospatial",
+             "roles": ["producer", "licensor", "host"],
+             "url": "https://taylorgeospatial.org/"},
         ],
         "extent": {
             "spatial": {"bbox": [[-180.0, -60.0, 180.0, 84.0]]},
@@ -430,9 +442,12 @@ def build_collection(item_links, child_links):
                 "title": "Field boundaries 2024 with confidence (PMTiles)",
                 "roles": ["visual"],
             },
+            # PORTO-CORE-070 (MUST since Portolan 0.1.1): with more than one style,
+            # exactly one asset carries `default` in its roles. The word in the title
+            # is not the marker — a client reads the role.
             "styles/2025": {
                 "href": "./styles/2025.json", "type": "application/json",
-                "title": "Field boundaries (2025) — default", "roles": ["style"]},
+                "title": "Field boundaries (2025) — default", "roles": ["style", "default"]},
             "styles/2024": {
                 "href": "./styles/2024.json", "type": "application/json",
                 "title": "Field boundaries (2024)", "roles": ["style"]},
