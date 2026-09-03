@@ -18,8 +18,8 @@
     "styles/confidence-2024"
   ],
   "id": "vectors",
-  "title": "FTW Global — Field Boundary Predictions (GeoParquet)",
-  "description": "Global agricultural field-boundary polygons. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. ~3.2 billion field polygons across 195 countries, as cloud-native GeoParquet partitioned by country (admin, Hive layout), with per-country PMTiles for web visualization. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing. Each field also carries a derived `confidence` (0–100). Columns: id, geometry, bbox, metrics:area, metrics:perimeter, determination:datetime, determination:method, admin:country_code, admin:subdivision_code, confidence — see `table:columns` for definitions (including how `confidence` is derived).\n\n**How this was made.** Predictions come from the **PRUE** model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101)) — a U-Net segmentation model with composite losses and targeted augmentations that, in a benchmark of 18 models, scored **76% IoU / 47% object-F1** on the Fields of the World benchmark, outperforming instance-segmentation and geospatial-foundation-model approaches. The **[Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world)** (get the data on Source Cooperative; Kerner et al. 2025, AAAI, [arXiv:2409.16252](https://arxiv.org/abs/2409.16252)) pairs multi-date multispectral **Sentinel-2** imagery with instance/semantic field masks across **70,462 samples in 24 countries on four continents**; models pre-trained on it generalize better to held-out countries. PRUE is run over global Sentinel-2 planting/harvest median composites, and the softmax outputs are thresholded and polygonized into these vectors. Downstream recipes (crop-type mapping, forest-loss attribution) are in the FTW field guide ([Corley et al. 2026](https://arxiv.org/abs/2602.08131)).",
+  "title": "FTW Global \u2014 Field Boundary Predictions (GeoParquet)",
+  "description": "Global agricultural field-boundary polygons. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. ~3.2 billion field polygons across 195 countries, as cloud-native GeoParquet partitioned by country (admin, Hive layout), with per-country PMTiles for web visualization. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing. Each field also carries a derived `confidence` (0\u2013100). Columns: id, geometry, bbox, metrics:area, metrics:perimeter, determination:datetime, determination:method, admin:country_code, admin:subdivision_code, confidence \u2014 see `table:columns` for definitions (including how `confidence` is derived).\n\n**How this was made.** Predictions come from the **PRUE** model ([Muhawenayo et al. 2026](https://arxiv.org/abs/2603.27101)) \u2014 a U-Net segmentation model with composite losses and targeted augmentations that, in a benchmark of 18 models, scored **76% IoU / 47% object-F1** on the Fields of the World benchmark, outperforming instance-segmentation and geospatial-foundation-model approaches. The **[Fields of the World benchmark](https://source.coop/kerner-lab/fields-of-the-world)** (get the data on Source Cooperative; Kerner et al. 2025, AAAI, [arXiv:2409.16252](https://arxiv.org/abs/2409.16252)) pairs multi-date multispectral **Sentinel-2** imagery with instance/semantic field masks across **70,462 samples in 24 countries on four continents**; models pre-trained on it generalize better to held-out countries. PRUE is run over global Sentinel-2 planting/harvest median composites, and the softmax outputs are thresholded and polygonized into these vectors. Downstream recipes (crop-type mapping, forest-loss attribution) are in the FTW field guide ([Corley et al. 2026](https://arxiv.org/abs/2602.08131)).",
   "sci:citation": "Muhawenayo, G. et al. (2026). PRUE: A Practical Recipe for Field Boundary Segmentation at Scale. arXiv:2603.27101.",
   "sci:publications": [
     {
@@ -113,7 +113,7 @@
     {
       "name": "metrics:area",
       "type": "float",
-      "description": "Area of the field, in square meters (m²). Must be > 0. ([vecorel geometry-metrics](https://github.com/vecorel/geometry-metrics-extension))"
+      "description": "Area of the field, in square meters (m\u00b2). Must be > 0. ([vecorel geometry-metrics](https://github.com/vecorel/geometry-metrics-extension))"
     },
     {
       "name": "metrics:perimeter",
@@ -143,7 +143,7 @@
     {
       "name": "confidence",
       "type": "float",
-      "description": "Derived; not part of the upstream model output. Modeled PRUE confidence on a 0–100 scale, sampled at the field's point-on-surface from the 500 m confidence COG ([predictions/confidence](https://data.source.coop/ftw/global-data/predictions/confidence/collection.json)) and rescaled `raw / 0.578178 * 100`, clamped to 100 (0.578178 is treated as 100%, matching the FTW inference app; this centroid sample is the closest single value to the app's `confidence_mean`); **null where the field falls outside the modeled-confidence layer's coverage — i.e. no value there, not a low score** (the layer is sparse and conservative, fully covering mainly the 24 FTW-labelled training countries). Recommended reliability filter: `confidence >= 69` (raw 0.4). Reflects 500 m cell-level model reliability, not individual-polygon geometric accuracy. Generated by [add_confidence.py](https://github.com/fieldsoftheworld/ftw-data-catalog/blob/main/scripts/confidence/add_confidence.py) (+ process_partition.sh, run_rails.sh, make_pmtiles.py)."
+      "description": "Derived; not part of the upstream model output. Modeled PRUE confidence on a 0\u2013100 scale, sampled at the field's point-on-surface from the 500 m confidence COG ([predictions/confidence](https://data.source.coop/ftw/global-data/predictions/confidence/collection.json)) and rescaled `raw / 0.578178 * 100`, clamped to 100 (0.578178 is treated as 100%, matching the FTW inference app; this centroid sample is the closest single value to the app's `confidence_mean`); **null where the field falls outside the modeled-confidence layer's coverage \u2014 i.e. no value there, not a low score** (the layer is sparse and conservative, fully covering mainly the 24 FTW-labelled training countries). Recommended reliability filter: `confidence >= 69` (raw 0.4). Reflects 500 m cell-level model reliability, not individual-polygon geometric accuracy. Generated by [add_confidence.py](https://github.com/fieldsoftheworld/ftw-data-catalog/blob/main/scripts/confidence/add_confidence.py) (+ process_partition.sh, run_rails.sh, make_pmtiles.py)."
     }
   ],
   "partition:scheme": "hive",
@@ -158,7 +158,7 @@
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "parent",
@@ -274,9 +274,9 @@
     },
     {
       "rel": "item",
-      "href": "./alpha/results-by-admin-conf/admin:country_code=AX/Åland_Islands.json",
+      "href": "./alpha/results-by-admin-conf/admin:country_code=AX/\u00c5land_Islands.json",
       "type": "application/geo+json",
-      "title": "Åland_Islands"
+      "title": "\u00c5land_Islands"
     },
     {
       "rel": "item",
@@ -340,9 +340,9 @@
     },
     {
       "rel": "item",
-      "href": "./alpha/results-by-admin-conf/admin:country_code=BL/Saint_Barthélemy.json",
+      "href": "./alpha/results-by-admin-conf/admin:country_code=BL/Saint_Barth\u00e9lemy.json",
       "type": "application/geo+json",
-      "title": "Saint_Barthélemy"
+      "title": "Saint_Barth\u00e9lemy"
     },
     {
       "rel": "item",
@@ -466,9 +466,9 @@
     },
     {
       "rel": "item",
-      "href": "./alpha/results-by-admin-conf/admin:country_code=CW/Curaçao.json",
+      "href": "./alpha/results-by-admin-conf/admin:country_code=CW/Cura\u00e7ao.json",
       "type": "application/geo+json",
-      "title": "Curaçao"
+      "title": "Cura\u00e7ao"
     },
     {
       "rel": "item",
@@ -1144,9 +1144,9 @@
     },
     {
       "rel": "item",
-      "href": "./alpha/results-by-admin-conf/admin:country_code=RE/Réunion.json",
+      "href": "./alpha/results-by-admin-conf/admin:country_code=RE/R\u00e9union.json",
       "type": "application/geo+json",
-      "title": "Réunion"
+      "title": "R\u00e9union"
     },
     {
       "rel": "item",
@@ -1348,9 +1348,9 @@
     },
     {
       "rel": "item",
-      "href": "./alpha/results-by-admin-conf/admin:country_code=TR/Türkiye.json",
+      "href": "./alpha/results-by-admin-conf/admin:country_code=TR/T\u00fcrkiye.json",
       "type": "application/geo+json",
-      "title": "Türkiye"
+      "title": "T\u00fcrkiye"
     },
     {
       "rel": "item",
@@ -1565,7 +1565,7 @@
     "styles/2025": {
       "href": "./styles/2025.json",
       "type": "application/vnd.mapbox.style+json",
-      "title": "Field boundaries (2025) — default",
+      "title": "Field boundaries (2025) \u2014 default",
       "roles": [
         "style",
         "default"
@@ -1633,6 +1633,6 @@
       "file:checksum": "1220d4e9f9cad5fed302f4505e9fc2a78916461dd3dd510ed0d78547033e63371ed2"
     }
   },
-  "updated": "2026-09-03T14:41:05Z",
+  "updated": "2026-09-03T22:46:37Z",
   "partition:glob": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=*/*.parquet"
 }

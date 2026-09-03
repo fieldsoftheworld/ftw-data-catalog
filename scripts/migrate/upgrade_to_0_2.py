@@ -67,6 +67,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -102,18 +103,36 @@ def save(p: Path, obj) -> None:
         f.write("\n")
 
 
+# Any released Portolan profile URI, whatever the version.
+PORTOLAN_PROFILE_RE = re.compile(
+    r"^https://schemas\.portolan-sdi\.org/portolan/v[0-9.]+/schema\.json$")
+
+
 def bump_schema(obj, stats: Counter) -> bool:
+    """Leave exactly one Portolan profile URI, at 0.2.0.
+
+    Collapses rather than substitutes, because `upgrade_to_0_1.py` re-adds the
+    v0.1.0 URI when run against an already-migrated catalog. A naive
+    find-and-replace then produced *two* identical v0.2.0 entries, which
+    `stac_extensions` forbids (unique items) — PTL-CNF-001 and PTL-STR-001.
+    Rebuilding the list keeps this idempotent whatever order the two migrations
+    run in.
+    """
     exts = obj.get("stac_extensions")
     if not isinstance(exts, list):
         return False
-    changed = False
-    for i, e in enumerate(exts):
-        if e == PORTOLAN_0_1:
-            exts[i] = PORTOLAN_0_2
-            changed = True
-    if changed:
-        stats["schema_bumped"] += 1
-    return changed
+    others = [e for e in exts if not PORTOLAN_PROFILE_RE.match(str(e))]
+    had = [e for e in exts if PORTOLAN_PROFILE_RE.match(str(e))]
+    if not had:
+        return False
+    rebuilt = [PORTOLAN_0_2, *others]
+    if rebuilt == exts:
+        return False
+    obj["stac_extensions"] = rebuilt
+    stats["schema_bumped"] += 1
+    if len(had) > 1:
+        stats["duplicate_profiles_collapsed"] += 1
+    return True
 
 
 def make_official(obj, stats: Counter) -> bool:
