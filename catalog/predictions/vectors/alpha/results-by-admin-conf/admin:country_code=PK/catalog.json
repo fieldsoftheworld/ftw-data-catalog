@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-PK",
-  "title": "Pakistan \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for Pakistan, split into 20 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "Pakistan — field boundary predictions",
+  "description": "Field-boundary predictions for Pakistan, split into 20 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -36,13 +36,13 @@
       "rel": "item",
       "href": "./PK_BA.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Balochistan"
+      "title": "Pakistan — Balochistan"
     },
     {
       "rel": "item",
       "href": "./PK_GB.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Gilgit-Baltistan"
+      "title": "Pakistan — Gilgit-Baltistan"
     },
     {
       "rel": "item",
@@ -60,13 +60,13 @@
       "rel": "item",
       "href": "./PK_IS.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Islamabad"
+      "title": "Pakistan — Islamabad"
     },
     {
       "rel": "item",
       "href": "./PK_JK.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Azad Jammu and Kashmir"
+      "title": "Pakistan — Azad Jammu and Kashmir"
     },
     {
       "rel": "item",
@@ -84,7 +84,7 @@
       "rel": "item",
       "href": "./PK_KP.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Khyber Pakhtunkhwa"
+      "title": "Pakistan — Khyber Pakhtunkhwa"
     },
     {
       "rel": "item",
@@ -108,7 +108,7 @@
       "rel": "item",
       "href": "./PK_PB.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Punjab"
+      "title": "Pakistan — Punjab"
     },
     {
       "rel": "item",
@@ -132,7 +132,7 @@
       "rel": "item",
       "href": "./PK_SD.json",
       "type": "application/geo+json",
-      "title": "Pakistan \u2014 Sindh"
+      "title": "Pakistan — Sindh"
     },
     {
       "rel": "item",
@@ -160,7 +160,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }

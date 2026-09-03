@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-TZ",
-  "title": "Tanzania, United Republic of \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for Tanzania, United Republic of, split into 44 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "Tanzania, United Republic of — field boundary predictions",
+  "description": "Field-boundary predictions for Tanzania, United Republic of, split into 44 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -30,187 +30,187 @@
       "rel": "item",
       "href": "./TZ_01.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Arusha"
+      "title": "Tanzania, United Republic of — Arusha"
     },
     {
       "rel": "item",
       "href": "./TZ_02.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Dar es Salaam"
+      "title": "Tanzania, United Republic of — Dar es Salaam"
     },
     {
       "rel": "item",
       "href": "./TZ_03.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Dodoma"
+      "title": "Tanzania, United Republic of — Dodoma"
     },
     {
       "rel": "item",
       "href": "./TZ_04.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Iringa"
+      "title": "Tanzania, United Republic of — Iringa"
     },
     {
       "rel": "item",
       "href": "./TZ_05.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Kagera"
+      "title": "Tanzania, United Republic of — Kagera"
     },
     {
       "rel": "item",
       "href": "./TZ_06.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Pemba North"
+      "title": "Tanzania, United Republic of — Pemba North"
     },
     {
       "rel": "item",
       "href": "./TZ_07.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Zanzibar North"
+      "title": "Tanzania, United Republic of — Zanzibar North"
     },
     {
       "rel": "item",
       "href": "./TZ_08.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Kigoma"
+      "title": "Tanzania, United Republic of — Kigoma"
     },
     {
       "rel": "item",
       "href": "./TZ_09.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Kilimanjaro"
+      "title": "Tanzania, United Republic of — Kilimanjaro"
     },
     {
       "rel": "item",
       "href": "./TZ_10.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Pemba South"
+      "title": "Tanzania, United Republic of — Pemba South"
     },
     {
       "rel": "item",
       "href": "./TZ_11.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Zanzibar South"
+      "title": "Tanzania, United Republic of — Zanzibar South"
     },
     {
       "rel": "item",
       "href": "./TZ_12.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Lindi"
+      "title": "Tanzania, United Republic of — Lindi"
     },
     {
       "rel": "item",
       "href": "./TZ_13.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Mara"
+      "title": "Tanzania, United Republic of — Mara"
     },
     {
       "rel": "item",
       "href": "./TZ_14.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Mbeya"
+      "title": "Tanzania, United Republic of — Mbeya"
     },
     {
       "rel": "item",
       "href": "./TZ_15.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Zanzibar West"
+      "title": "Tanzania, United Republic of — Zanzibar West"
     },
     {
       "rel": "item",
       "href": "./TZ_16.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Morogoro"
+      "title": "Tanzania, United Republic of — Morogoro"
     },
     {
       "rel": "item",
       "href": "./TZ_17.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Mtwara"
+      "title": "Tanzania, United Republic of — Mtwara"
     },
     {
       "rel": "item",
       "href": "./TZ_18.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Mwanza"
+      "title": "Tanzania, United Republic of — Mwanza"
     },
     {
       "rel": "item",
       "href": "./TZ_19.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Coast"
+      "title": "Tanzania, United Republic of — Coast"
     },
     {
       "rel": "item",
       "href": "./TZ_20.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Rukwa"
+      "title": "Tanzania, United Republic of — Rukwa"
     },
     {
       "rel": "item",
       "href": "./TZ_21.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Ruvuma"
+      "title": "Tanzania, United Republic of — Ruvuma"
     },
     {
       "rel": "item",
       "href": "./TZ_22.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Shinyanga"
+      "title": "Tanzania, United Republic of — Shinyanga"
     },
     {
       "rel": "item",
       "href": "./TZ_23.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Singida"
+      "title": "Tanzania, United Republic of — Singida"
     },
     {
       "rel": "item",
       "href": "./TZ_24.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Tabora"
+      "title": "Tanzania, United Republic of — Tabora"
     },
     {
       "rel": "item",
       "href": "./TZ_25.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Tanga"
+      "title": "Tanzania, United Republic of — Tanga"
     },
     {
       "rel": "item",
       "href": "./TZ_26.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Manyara"
+      "title": "Tanzania, United Republic of — Manyara"
     },
     {
       "rel": "item",
       "href": "./TZ_27.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Geita"
+      "title": "Tanzania, United Republic of — Geita"
     },
     {
       "rel": "item",
       "href": "./TZ_28.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Katavi"
+      "title": "Tanzania, United Republic of — Katavi"
     },
     {
       "rel": "item",
       "href": "./TZ_29.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Njombe"
+      "title": "Tanzania, United Republic of — Njombe"
     },
     {
       "rel": "item",
       "href": "./TZ_30.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Simiyu"
+      "title": "Tanzania, United Republic of — Simiyu"
     },
     {
       "rel": "item",
       "href": "./TZ_31.json",
       "type": "application/geo+json",
-      "title": "Tanzania, United Republic of \u2014 Songwe"
+      "title": "Tanzania, United Republic of — Songwe"
     },
     {
       "rel": "item",
@@ -304,7 +304,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }

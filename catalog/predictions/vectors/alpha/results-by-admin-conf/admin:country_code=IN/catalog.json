@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-IN",
-  "title": "India \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for India, split into 55 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "India — field boundary predictions",
+  "description": "Field-boundary predictions for India, split into 55 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -60,25 +60,25 @@
       "rel": "item",
       "href": "./IN_AN.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Andaman and Nicobar Islands"
+      "title": "India — Andaman and Nicobar Islands"
     },
     {
       "rel": "item",
       "href": "./IN_AP.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Andhra Pradesh"
+      "title": "India — Andhra Pradesh"
     },
     {
       "rel": "item",
       "href": "./IN_AR.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Arun\u0101chal Pradesh"
+      "title": "India — Arunāchal Pradesh"
     },
     {
       "rel": "item",
       "href": "./IN_AS.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Assam"
+      "title": "India — Assam"
     },
     {
       "rel": "item",
@@ -90,19 +90,19 @@
       "rel": "item",
       "href": "./IN_BR.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Bih\u0101r"
+      "title": "India — Bihār"
     },
     {
       "rel": "item",
       "href": "./IN_CG.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Chhatt\u012bsgarh"
+      "title": "India — Chhattīsgarh"
     },
     {
       "rel": "item",
       "href": "./IN_CH.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Chand\u012bgarh"
+      "title": "India — Chandīgarh"
     },
     {
       "rel": "item",
@@ -114,13 +114,13 @@
       "rel": "item",
       "href": "./IN_DH.json",
       "type": "application/geo+json",
-      "title": "India \u2014 D\u0101dra and Nagar Haveli and Dam\u0101n and Diu"
+      "title": "India — Dādra and Nagar Haveli and Damān and Diu"
     },
     {
       "rel": "item",
       "href": "./IN_DL.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Delhi"
+      "title": "India — Delhi"
     },
     {
       "rel": "item",
@@ -144,7 +144,7 @@
       "rel": "item",
       "href": "./IN_GA.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Goa"
+      "title": "India — Goa"
     },
     {
       "rel": "item",
@@ -156,7 +156,7 @@
       "rel": "item",
       "href": "./IN_GJ.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Gujar\u0101t"
+      "title": "India — Gujarāt"
     },
     {
       "rel": "item",
@@ -168,85 +168,85 @@
       "rel": "item",
       "href": "./IN_HP.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Him\u0101chal Pradesh"
+      "title": "India — Himāchal Pradesh"
     },
     {
       "rel": "item",
       "href": "./IN_HR.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Hary\u0101na"
+      "title": "India — Haryāna"
     },
     {
       "rel": "item",
       "href": "./IN_JH.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Jh\u0101rkhand"
+      "title": "India — Jhārkhand"
     },
     {
       "rel": "item",
       "href": "./IN_JK.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Jammu and Kashm\u012br"
+      "title": "India — Jammu and Kashmīr"
     },
     {
       "rel": "item",
       "href": "./IN_KA.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Karn\u0101taka"
+      "title": "India — Karnātaka"
     },
     {
       "rel": "item",
       "href": "./IN_KL.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Kerala"
+      "title": "India — Kerala"
     },
     {
       "rel": "item",
       "href": "./IN_LA.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Lad\u0101kh"
+      "title": "India — Ladākh"
     },
     {
       "rel": "item",
       "href": "./IN_MH.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Mah\u0101r\u0101shtra"
+      "title": "India — Mahārāshtra"
     },
     {
       "rel": "item",
       "href": "./IN_ML.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Megh\u0101laya"
+      "title": "India — Meghālaya"
     },
     {
       "rel": "item",
       "href": "./IN_MN.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Manipur"
+      "title": "India — Manipur"
     },
     {
       "rel": "item",
       "href": "./IN_MP.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Madhya Pradesh"
+      "title": "India — Madhya Pradesh"
     },
     {
       "rel": "item",
       "href": "./IN_MZ.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Mizoram"
+      "title": "India — Mizoram"
     },
     {
       "rel": "item",
       "href": "./IN_NL.json",
       "type": "application/geo+json",
-      "title": "India \u2014 N\u0101g\u0101land"
+      "title": "India — Nāgāland"
     },
     {
       "rel": "item",
       "href": "./IN_OD.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Odisha"
+      "title": "India — Odisha"
     },
     {
       "rel": "item",
@@ -276,19 +276,19 @@
       "rel": "item",
       "href": "./IN_PB.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Punjab"
+      "title": "India — Punjab"
     },
     {
       "rel": "item",
       "href": "./IN_PY.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Puducherry"
+      "title": "India — Puducherry"
     },
     {
       "rel": "item",
       "href": "./IN_RJ.json",
       "type": "application/geo+json",
-      "title": "India \u2014 R\u0101jasth\u0101n"
+      "title": "India — Rājasthān"
     },
     {
       "rel": "item",
@@ -300,43 +300,43 @@
       "rel": "item",
       "href": "./IN_SK.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Sikkim"
+      "title": "India — Sikkim"
     },
     {
       "rel": "item",
       "href": "./IN_TN.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Tamil N\u0101du"
+      "title": "India — Tamil Nādu"
     },
     {
       "rel": "item",
       "href": "./IN_TR.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Tripura"
+      "title": "India — Tripura"
     },
     {
       "rel": "item",
       "href": "./IN_TS.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Telang\u0101na"
+      "title": "India — Telangāna"
     },
     {
       "rel": "item",
       "href": "./IN_UK.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Uttar\u0101khand"
+      "title": "India — Uttarākhand"
     },
     {
       "rel": "item",
       "href": "./IN_UP.json",
       "type": "application/geo+json",
-      "title": "India \u2014 Uttar Pradesh"
+      "title": "India — Uttar Pradesh"
     },
     {
       "rel": "item",
       "href": "./IN_WB.json",
       "type": "application/geo+json",
-      "title": "India \u2014 West Bengal"
+      "title": "India — West Bengal"
     },
     {
       "rel": "item",
@@ -370,7 +370,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }

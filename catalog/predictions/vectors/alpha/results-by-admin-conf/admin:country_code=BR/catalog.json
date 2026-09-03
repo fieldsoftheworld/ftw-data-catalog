@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-BR",
-  "title": "Brazil \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for Brazil, split into 45 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "Brazil — field boundary predictions",
+  "description": "Field-boundary predictions for Brazil, split into 45 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -48,25 +48,25 @@
       "rel": "item",
       "href": "./BR_AC.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Acre"
+      "title": "Brazil — Acre"
     },
     {
       "rel": "item",
       "href": "./BR_AL.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Alagoas"
+      "title": "Brazil — Alagoas"
     },
     {
       "rel": "item",
       "href": "./BR_AM.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Amazonas"
+      "title": "Brazil — Amazonas"
     },
     {
       "rel": "item",
       "href": "./BR_AP.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Amap\u00e1"
+      "title": "Brazil — Amapá"
     },
     {
       "rel": "item",
@@ -84,25 +84,25 @@
       "rel": "item",
       "href": "./BR_BA.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Bahia"
+      "title": "Brazil — Bahia"
     },
     {
       "rel": "item",
       "href": "./BR_CE.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Cear\u00e1"
+      "title": "Brazil — Ceará"
     },
     {
       "rel": "item",
       "href": "./BR_DF.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Distrito Federal"
+      "title": "Brazil — Distrito Federal"
     },
     {
       "rel": "item",
       "href": "./BR_ES.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Esp\u00edrito Santo"
+      "title": "Brazil — Espírito Santo"
     },
     {
       "rel": "item",
@@ -114,7 +114,7 @@
       "rel": "item",
       "href": "./BR_GO.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Goi\u00e1s"
+      "title": "Brazil — Goiás"
     },
     {
       "rel": "item",
@@ -132,25 +132,25 @@
       "rel": "item",
       "href": "./BR_MA.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Maranh\u00e3o"
+      "title": "Brazil — Maranhão"
     },
     {
       "rel": "item",
       "href": "./BR_MG.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Minas Gerais"
+      "title": "Brazil — Minas Gerais"
     },
     {
       "rel": "item",
       "href": "./BR_MS.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Mato Grosso do Sul"
+      "title": "Brazil — Mato Grosso do Sul"
     },
     {
       "rel": "item",
       "href": "./BR_MT.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Mato Grosso"
+      "title": "Brazil — Mato Grosso"
     },
     {
       "rel": "item",
@@ -162,31 +162,31 @@
       "rel": "item",
       "href": "./BR_PA.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Par\u00e1"
+      "title": "Brazil — Pará"
     },
     {
       "rel": "item",
       "href": "./BR_PB.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Para\u00edba"
+      "title": "Brazil — Paraíba"
     },
     {
       "rel": "item",
       "href": "./BR_PE.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Pernambuco"
+      "title": "Brazil — Pernambuco"
     },
     {
       "rel": "item",
       "href": "./BR_PI.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Piau\u00ed"
+      "title": "Brazil — Piauí"
     },
     {
       "rel": "item",
       "href": "./BR_PR.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Paran\u00e1"
+      "title": "Brazil — Paraná"
     },
     {
       "rel": "item",
@@ -198,31 +198,31 @@
       "rel": "item",
       "href": "./BR_RJ.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Rio de Janeiro"
+      "title": "Brazil — Rio de Janeiro"
     },
     {
       "rel": "item",
       "href": "./BR_RN.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Rio Grande do Norte"
+      "title": "Brazil — Rio Grande do Norte"
     },
     {
       "rel": "item",
       "href": "./BR_RO.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Rond\u00f4nia"
+      "title": "Brazil — Rondônia"
     },
     {
       "rel": "item",
       "href": "./BR_RR.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Roraima"
+      "title": "Brazil — Roraima"
     },
     {
       "rel": "item",
       "href": "./BR_RS.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Rio Grande do Sul"
+      "title": "Brazil — Rio Grande do Sul"
     },
     {
       "rel": "item",
@@ -240,13 +240,13 @@
       "rel": "item",
       "href": "./BR_SC.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Santa Catarina"
+      "title": "Brazil — Santa Catarina"
     },
     {
       "rel": "item",
       "href": "./BR_SE.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Sergipe"
+      "title": "Brazil — Sergipe"
     },
     {
       "rel": "item",
@@ -258,13 +258,13 @@
       "rel": "item",
       "href": "./BR_SP.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 S\u00e3o Paulo"
+      "title": "Brazil — São Paulo"
     },
     {
       "rel": "item",
       "href": "./BR_TO.json",
       "type": "application/geo+json",
-      "title": "Brazil \u2014 Tocantins"
+      "title": "Brazil — Tocantins"
     },
     {
       "rel": "item",
@@ -310,7 +310,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }

@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-ET",
-  "title": "Ethiopia \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for Ethiopia, split into 37 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "Ethiopia — field boundary predictions",
+  "description": "Field-boundary predictions for Ethiopia, split into 37 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -54,19 +54,19 @@
       "rel": "item",
       "href": "./ET_AA.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Addis Ababa"
+      "title": "Ethiopia — Addis Ababa"
     },
     {
       "rel": "item",
       "href": "./ET_AF.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Afar"
+      "title": "Ethiopia — Afar"
     },
     {
       "rel": "item",
       "href": "./ET_AM.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Amara"
+      "title": "Ethiopia — Amara"
     },
     {
       "rel": "item",
@@ -84,7 +84,7 @@
       "rel": "item",
       "href": "./ET_BE.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Benshangul-Gumaz"
+      "title": "Ethiopia — Benshangul-Gumaz"
     },
     {
       "rel": "item",
@@ -96,7 +96,7 @@
       "rel": "item",
       "href": "./ET_DD.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Dire Dawa"
+      "title": "Ethiopia — Dire Dawa"
     },
     {
       "rel": "item",
@@ -126,7 +126,7 @@
       "rel": "item",
       "href": "./ET_GA.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Gambela Peoples"
+      "title": "Ethiopia — Gambela Peoples"
     },
     {
       "rel": "item",
@@ -150,7 +150,7 @@
       "rel": "item",
       "href": "./ET_HA.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Harari People"
+      "title": "Ethiopia — Harari People"
     },
     {
       "rel": "item",
@@ -192,13 +192,13 @@
       "rel": "item",
       "href": "./ET_OR.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Oromia"
+      "title": "Ethiopia — Oromia"
     },
     {
       "rel": "item",
       "href": "./ET_SI.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Sidama"
+      "title": "Ethiopia — Sidama"
     },
     {
       "rel": "item",
@@ -210,13 +210,13 @@
       "rel": "item",
       "href": "./ET_SO.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Somali"
+      "title": "Ethiopia — Somali"
     },
     {
       "rel": "item",
       "href": "./ET_SW.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Southwest Ethiopia Peoples"
+      "title": "Ethiopia — Southwest Ethiopia Peoples"
     },
     {
       "rel": "item",
@@ -228,7 +228,7 @@
       "rel": "item",
       "href": "./ET_TI.json",
       "type": "application/geo+json",
-      "title": "Ethiopia \u2014 Tigrai"
+      "title": "Ethiopia — Tigrai"
     },
     {
       "rel": "item",
@@ -262,7 +262,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }
