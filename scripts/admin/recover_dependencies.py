@@ -126,15 +126,29 @@ def fname(name: str) -> str:
 
 
 def country_name(cc: str) -> str:
+    """ISO short name for a code, the way the published partitions are named.
+
+    Fails rather than falling back to the bare code: a silent fallback publishes
+    `GF.parquet` next to 194 partitions named `France.parquet`, `Suriname.parquet`
+    and so on, and the mismatch is easy to miss in a long run log. Codes pycountry
+    genuinely cannot resolve (CP / Clipperton is not ISO 3166-1) belong in
+    NAME_OVERRIDES.
+    """
     if cc in NAME_OVERRIDES:
         return NAME_OVERRIDES[cc]
     try:
         import pycountry
     except ImportError:
-        return cc
+        raise SystemExit(
+            "pycountry is required to name the partitions the way the catalog does.\n"
+            "  pip install pycountry   — or run with:\n"
+            '  uv run --with pycountry python3 scripts/admin/recover_dependencies.py ...'
+        ) from None
     obj = pycountry.countries.get(alpha_2=cc)
     if not obj:
-        return cc
+        raise SystemExit(
+            f"no ISO 3166-1 name for {cc!r}; add it to NAME_OVERRIDES in this script"
+        )
     return getattr(obj, "common_name", None) or obj.name
 
 
