@@ -16,11 +16,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AU/catalog.json",
-      "type": "application/json"
-    },
-    {
       "rel": "derived_from",
       "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
       "type": "application/json",
@@ -34,42 +29,66 @@
     {
       "rel": "item",
       "href": "./AU_ACT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 Australian Capital Territory"
     },
     {
       "rel": "item",
       "href": "./AU_NSW.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 New South Wales"
     },
     {
       "rel": "item",
       "href": "./AU_NT.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 Northern Territory"
     },
     {
       "rel": "item",
       "href": "./AU_QLD.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 Queensland"
     },
     {
       "rel": "item",
       "href": "./AU_SA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 South Australia"
     },
     {
       "rel": "item",
       "href": "./AU_TAS.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 Tasmania"
     },
     {
       "rel": "item",
       "href": "./AU_VIC.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 Victoria"
     },
     {
       "rel": "item",
       "href": "./AU_WA.json",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Australia \u2014 Western Australia"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
-  ]
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+  ],
+  "updated": "2026-09-03T14:41:05Z"
 }
