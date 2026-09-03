@@ -25,6 +25,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import time
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -174,9 +175,39 @@ def _load_manifest(root: Path) -> dict:
     return data
 
 
+
+def upload_with_retry(u, region: str, retries: int) -> bool:
+    """Upload one object, retrying transient S3 failures.
+
+    A single flaky PUT used to abort the whole run: `aws s3 cp` returns non-zero on
+    a mid-transfer drop (`IncompleteBody: You did not provide the number of bytes
+    specified by the Content-Length HTTP header`) and `check=True` propagated it, so
+    a 3,000-object publish died a few hundred files in and every later object stayed
+    stale. Retrying with backoff, and reporting the stragglers instead of raising,
+    keeps one bad connection from stalling the catalog.
+    """
+    cmd = ["aws", "s3", "cp", str(u.local), u.s3_uri,
+           "--region", region, "--content-type", u.content_type]
+    for attempt in range(1, retries + 2):
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        if r.returncode == 0:
+            return True
+        err = (r.stderr or "").strip().splitlines()
+        detail = err[-1][:160] if err else f"exit {r.returncode}"
+        if attempt > retries:
+            print(f"  FAILED after {retries} retries: {detail}")
+            return False
+        wait = min(2 ** attempt, 30)
+        print(f"  retry {attempt}/{retries} in {wait}s: {detail}")
+        time.sleep(wait)
+    return False
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--confirm", action="store_true", help="execute uploads (default: dry run)")
+    ap.add_argument("--retries", type=int, default=4,
+                    help="retries per object on a transient S3 failure (default: 4)")
     ap.add_argument("--force", action="store_true",
                     help="upload every file, even if S3 already has identical bytes")
     args = ap.parse_args(argv)
@@ -194,18 +225,24 @@ def main(argv=None) -> int:
     planned = [u for u in uploads if not is_unchanged(u, remote)]
     skipped = len(uploads) - len(planned)
 
+    failed = []
     for u in planned:
         if args.confirm:
             print(f"upload: {u.local.relative_to(root)} -> {u.s3_uri}")
-            subprocess.run(
-                ["aws", "s3", "cp", str(u.local), u.s3_uri,
-                 "--region", region, "--content-type", u.content_type],
-                check=True,
-            )
+            if not upload_with_retry(u, region, args.retries):
+                failed.append(u)
         else:
             print(f"DRYRUN {u.s3_uri}  ({u.content_type})")
 
     tally = f"{len(planned)} to upload, {skipped} unchanged (skipped), {len(uploads)} total"
+    if args.confirm and failed:
+        print(f"\n{len(failed)} object(s) failed after {args.retries} retries:")
+        for u in failed[:20]:
+            print(f"  {u.local.relative_to(root)}")
+        if len(failed) > 20:
+            print(f"  ... and {len(failed) - 20} more")
+        print("\nRe-run to retry only these — uploads already made are skipped as unchanged.")
+        return 1
     if args.confirm:
         print(f"\nDone: {tally}.")
     elif planned:

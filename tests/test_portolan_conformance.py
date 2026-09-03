@@ -17,6 +17,13 @@ short, documented allow-list:
       link is not its direct parent, though a catalog between a collection and its items
       is what this catalog does. Tracked in https://github.com/portolan-sdi/rashid/issues/61.
       Dormant as of rashid 0.1.3 (fires zero findings); kept scoped in case it returns.
+  * ``PTL-COL-005`` on the per-year features collections — "registers item mirror
+    'geoparquet-items' but publishes no items". Same S3-only situation as the
+    PTL-LNK-006 case above and exempted for the same reason: the ~22.7k item JSONs
+    per year are generated straight to S3 and never committed, so a git checkout
+    sees a collection with no items beside its STAC-GeoParquet mirror. Against the
+    published catalog the items are there and normative. Scoped to those two files
+    so a collection that genuinely ships only a mirror still fails.
   * Anything under the two zarr collections (``features/zarr``,
     ``predictions/zarr``) — they are being regenerated and are out of scope.
   * ``file:size`` / ``file:checksum`` (PTL-AST-003/004) on **remote** assets
@@ -42,6 +49,8 @@ FILE_FIELD_RULES = {"PTL-AST-003", "PTL-AST-004"}
 # PTL-LNK-006 is accepted only on these two shapes — never blanket, or a genuinely
 # broken structural link elsewhere would sail through. See the module docstring.
 GRID_PARENT_RE = re.compile(r"^features/(2024|2025)/collection\.json$")
+# PTL-COL-005 rides on the same S3-only-items fact, on the same two files.
+MIRROR_WITHOUT_ITEMS_RE = GRID_PARENT_RE
 GRID_CHILD_RE = re.compile(r"^\./[0-6][0-9]/catalog\.json$")
 SUBDIVISION_RE = re.compile(r"^predictions/vectors/.*/results-by-admin")
 
@@ -54,6 +63,13 @@ def _accepted_lnk_006(finding: dict) -> bool:
     if GRID_PARENT_RE.match(path) and GRID_CHILD_RE.match(str(finding.get("actual", ""))):
         return True
     return bool(SUBDIVISION_RE.match(path))
+
+
+def _accepted_col_005(finding: dict) -> bool:
+    """True for the per-year features collections whose items are S3-only."""
+    if finding.get("rule_id") != "PTL-COL-005":
+        return False
+    return bool(MIRROR_WITHOUT_ITEMS_RE.match(finding.get("path", "").replace("\\", "/")))
 
 
 def _under_deferred(path: str) -> bool:
@@ -101,7 +117,7 @@ def main() -> int:
         if f.get("severity") != "error":
             continue
         rid, path = f.get("rule_id"), f.get("path", "")
-        if _under_deferred(path) or _accepted_lnk_006(f):
+        if _under_deferred(path) or _accepted_lnk_006(f) or _accepted_col_005(f):
             accepted += 1
             continue
         if rid in FILE_FIELD_RULES and _asset_is_remote(f):

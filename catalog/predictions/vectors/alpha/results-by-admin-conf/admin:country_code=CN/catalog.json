@@ -2,8 +2,8 @@
   "type": "Catalog",
   "stac_version": "1.1.0",
   "id": "vectors-CN",
-  "title": "China \u2014 field boundary predictions",
-  "description": "Field-boundary predictions for China, split into 69 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) \u2014 agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
+  "title": "China — field boundary predictions",
+  "description": "Field-boundary predictions for China, split into 69 admin-subdivision partitions. Part of [Fields of the World](https://fieldsofthe.world) — agricultural field boundaries delineated by the PRUE model from Sentinel-2 imagery. A GeoParquet vector dataset is derived from the [prediction Zarr](https://data.source.coop/ftw/global-data/predictions/zarr/collection.json) by thresholding the softmax outputs for [non_field_background, field, field_boundaries] at 0.5 and polygonizing.",
   "links": [
     {
       "rel": "root",
@@ -150,7 +150,7 @@
       "rel": "item",
       "href": "./CN_AH.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Anhui Sheng"
+      "title": "China — Anhui Sheng"
     },
     {
       "rel": "item",
@@ -174,19 +174,19 @@
       "rel": "item",
       "href": "./CN_BJ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Beijing Shi"
+      "title": "China — Beijing Shi"
     },
     {
       "rel": "item",
       "href": "./CN_CQ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Chongqing Shi"
+      "title": "China — Chongqing Shi"
     },
     {
       "rel": "item",
       "href": "./CN_FJ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Fujian Sheng"
+      "title": "China — Fujian Sheng"
     },
     {
       "rel": "item",
@@ -198,79 +198,79 @@
       "rel": "item",
       "href": "./CN_GD.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Guangdong Sheng"
+      "title": "China — Guangdong Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_GS.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Gansu Sheng"
+      "title": "China — Gansu Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_GX.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Guangxi Zhuangzu Zizhiqu"
+      "title": "China — Guangxi Zhuangzu Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_GZ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Guizhou Sheng"
+      "title": "China — Guizhou Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HA.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Henan Sheng"
+      "title": "China — Henan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HB.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Hubei Sheng"
+      "title": "China — Hubei Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HE.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Hebei Sheng"
+      "title": "China — Hebei Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HI.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Hainan Sheng"
+      "title": "China — Hainan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HL.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Heilongjiang Sheng"
+      "title": "China — Heilongjiang Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_HN.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Hunan Sheng"
+      "title": "China — Hunan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_JL.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Jilin Sheng"
+      "title": "China — Jilin Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_JS.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Jiangsu Sheng"
+      "title": "China — Jiangsu Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_JX.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Jiangxi Sheng"
+      "title": "China — Jiangxi Sheng"
     },
     {
       "rel": "item",
@@ -288,19 +288,19 @@
       "rel": "item",
       "href": "./CN_LN.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Liaoning Sheng"
+      "title": "China — Liaoning Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_NM.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Nei Mongol Zizhiqu"
+      "title": "China — Nei Mongol Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_NX.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Ningxia Huizu Zizhiqu"
+      "title": "China — Ningxia Huizu Zizhiqu"
     },
     {
       "rel": "item",
@@ -342,25 +342,25 @@
       "rel": "item",
       "href": "./CN_QH.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Qinghai Sheng"
+      "title": "China — Qinghai Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SC.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Sichuan Sheng"
+      "title": "China — Sichuan Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SD.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Shandong Sheng"
+      "title": "China — Shandong Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SH.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Shanghai Shi"
+      "title": "China — Shanghai Shi"
     },
     {
       "rel": "item",
@@ -372,19 +372,19 @@
       "rel": "item",
       "href": "./CN_SN.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Shaanxi Sheng"
+      "title": "China — Shaanxi Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_SX.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Shanxi Sheng"
+      "title": "China — Shanxi Sheng"
     },
     {
       "rel": "item",
       "href": "./CN_TJ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Tianjin Shi"
+      "title": "China — Tianjin Shi"
     },
     {
       "rel": "item",
@@ -396,13 +396,13 @@
       "rel": "item",
       "href": "./CN_XJ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Xinjiang Uygur Zizhiqu"
+      "title": "China — Xinjiang Uygur Zizhiqu"
     },
     {
       "rel": "item",
       "href": "./CN_XZ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Xizang Zizhiqu"
+      "title": "China — Xizang Zizhiqu"
     },
     {
       "rel": "item",
@@ -420,7 +420,7 @@
       "rel": "item",
       "href": "./CN_YN.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Yunnan Sheng"
+      "title": "China — Yunnan Sheng"
     },
     {
       "rel": "item",
@@ -432,7 +432,7 @@
       "rel": "item",
       "href": "./CN_ZJ.json",
       "type": "application/geo+json",
-      "title": "China \u2014 Zhejiang Sheng"
+      "title": "China — Zhejiang Sheng"
     },
     {
       "rel": "item",
@@ -454,7 +454,7 @@
     }
   ],
   "stac_extensions": [
-    "https://schemas.portolan-sdi.org/portolan/v0.1.0/schema.json"
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
   ],
   "updated": "2026-09-03T14:41:05Z"
 }
