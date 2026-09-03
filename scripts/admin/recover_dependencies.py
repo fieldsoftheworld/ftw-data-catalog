@@ -346,10 +346,21 @@ def stage_emit(con, attributed: Path, zz: Path, out: Path, deps: list[dict],
     subprocess.run(cmd, check=True)
 
     # 3. Rename each partition to the catalog's <Country_Name>.parquet convention.
+    #
+    #    ONLY the dependency codes are emitted. The re-join also matches a handful of
+    #    rows to ordinary sovereign countries (CA, BR, ES, US, JP, MX, … — 771 rows
+    #    across 31 codes on the 2026-07-22.0 run): candidates sit inside a dependency's
+    #    *bbox* but on a neighbour's land, and Overture's borders have moved a little
+    #    since the original run, so they now match where they previously did not. That
+    #    is boundary drift, not the bug being fixed here — and emitting them would
+    #    produce e.g. a 167-row `Canada.parquet` that the upload step would write
+    #    straight over the published multi-million-row one. They stay in ZZ, exactly as
+    #    published, and are reported for follow-up.
+    dep_codes = {d["cc"] for d in deps}
     manifest = {"overture_release": release, "gpio": prov,
                 "dependencies_considered": len(deps),
-                "recovered_rows": 0, "partitions": {}}
-    zz_pieces = []
+                "recovered_rows": 0, "partitions": {}, "drift_held_back": {}}
+    zz_pieces, drift_pieces = [], []
     for d in sorted(staged.glob(f"{ADMIN_CC}=*")):
         cc = d.name.split("=", 1)[1]
         pieces = sorted(d.glob("*.parquet"))
@@ -357,6 +368,13 @@ def stage_emit(con, attributed: Path, zz: Path, out: Path, deps: list[dict],
             continue
         if cc == "ZZ":
             zz_pieces = pieces
+            continue
+        if cc not in dep_codes:
+            n = con.execute(
+                f"SELECT count(*) FROM read_parquet([{', '.join(repr(str(p)) for p in pieces)}])"
+            ).fetchone()[0]
+            manifest["drift_held_back"][cc] = n
+            drift_pieces.extend(pieces)
             continue
         stem = fname(country_name(cc))
         dest_dir = parts / f"{ADMIN_CC}={cc}"
@@ -374,19 +392,32 @@ def stage_emit(con, attributed: Path, zz: Path, out: Path, deps: list[dict],
         print(f"    {cc} {stem:<44} {n:>9,} rows  {target.stat().st_size/1e6:>8.1f} MB")
 
     # 4. New Unknown: rows that were never candidates (straight from the published
-    #    parquet, so unchanged) plus gpio's ZZ partition.
+    #    parquet, so unchanged), plus gpio's ZZ partition, plus the drift rows held
+    #    back in step 3 — which must land somewhere or row conservation fails. They
+    #    keep 'ZZ' so the published Unknown stays a superset of what it was minus
+    #    exactly the dependency recoveries.
     unknown_dir = parts / f"{ADMIN_CC}=ZZ"
     unknown_dir.mkdir(parents=True, exist_ok=True)
     unknown = unknown_dir / "Unknown.parquet"
     quoted = ", ".join(f'"{c}"' for c in src_cols)
-    zz_union = ""
+    forced_zz = ", ".join(
+        f"'ZZ' AS \"{c}\"" if c == ADMIN_CC else f'"{c}"' for c in src_cols
+    )
+    unions = []
     if zz_pieces:
         srcs = ", ".join(f"'{p}'" for p in zz_pieces)
-        zz_union = f"UNION ALL SELECT {quoted} FROM read_parquet([{srcs}])"
+        unions.append(f"UNION ALL SELECT {quoted} FROM read_parquet([{srcs}])")
+    if drift_pieces:
+        srcs = ", ".join(f"'{p}'" for p in drift_pieces)
+        unions.append(f"UNION ALL SELECT {forced_zz} FROM read_parquet([{srcs}])")
+        held = sum(manifest["drift_held_back"].values())
+        print(f"  emit: {held:,} row(s) across {len(manifest['drift_held_back'])} "
+              f"non-dependency code(s) held back as boundary drift, kept in ZZ: "
+              f"{', '.join(sorted(manifest['drift_held_back']))}")
     con.execute(f"""
         COPY (
           SELECT {quoted} FROM read_parquet('{zz}') WHERE NOT ({overlap})
-          {zz_union}
+          {' '.join(unions)}
         ) TO '{unknown}' (FORMAT parquet, COMPRESSION zstd, COMPRESSION_LEVEL 9)
     """)
     n_zz = con.execute(f"SELECT count(*) FROM read_parquet('{unknown}')").fetchone()[0]

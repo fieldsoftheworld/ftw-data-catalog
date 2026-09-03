@@ -48,7 +48,7 @@ export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-west-2}"
 export DUCKDB_MEM="${DUCKDB_MEM:-12GB}"
 export DUCKDB_THREADS="${DUCKDB_THREADS:-8}"
 
-total=0; planned=0
+total=0; planned=0; refused=0
 for dir in "$PARTS"/admin:country_code=*; do
   cc="${dir##*admin:country_code=}"
   [ "$cc" = "ZZ" ] && [ "$SKIP_ZZ" -eq 1 ] && { echo "SKIP ZZ (--skip-zz)"; continue; }
@@ -64,9 +64,23 @@ for dir in "$PARTS"/admin:country_code=*; do
 
     remote_parq="$DST/admin:country_code=$cc/$stem.parquet"
     remote_pm="$DST/admin:country_code=$cc/$stem.pmtiles"
+
+    # Safety net. Every partition this script writes is either brand new or the
+    # rewritten ZZ; it must never land on top of an established country. A remote
+    # object that is *larger* than what we are about to upload means we are about to
+    # shrink a published partition — the shape a bad recovery takes (e.g. a 167-row
+    # Canada.parquet over the real multi-million-row one, which is what an earlier
+    # version of the recovery step would have produced from Overture boundary drift).
+    remote_size="$(aws s3 ls "$remote_parq" 2>/dev/null | awk '{print $3}')"
+    if [ -n "$remote_size" ] && [ "$cc" != "ZZ" ] && [ "$remote_size" -gt "$size" ]; then
+      echo "  REFUSING $cc: remote $stem.parquet is $remote_size B, local is $size B." >&2
+      echo "  This would shrink a published partition. Investigate before forcing." >&2
+      refused=$((refused + 1))
+      continue
+    fi
+
     if [ "$FORCE" -eq 0 ] \
-       && aws s3 ls "$remote_parq" >/dev/null 2>&1 \
-       && [ "$(aws s3 ls "$remote_parq" | awk '{print $3}')" = "$size" ] \
+       && [ "$remote_size" = "$size" ] \
        && aws s3 ls "$remote_pm" >/dev/null 2>&1; then
       echo "  skip (already on S3 at the same size)"
       continue
@@ -90,6 +104,7 @@ for dir in "$PARTS"/admin:country_code=*; do
 done
 
 printf '\n%d partition(s), %.1f GB of parquet\n' "$planned" "$(echo "$total/1000000000" | bc -l)"
+[ "$refused" -gt 0 ] && { echo "$refused partition(s) REFUSED as shrinking a published partition" >&2; exit 1; }
 if [ "$CONFIRM" -eq 0 ]; then
   echo "dry run — re-run with --confirm to build PMTiles and upload"
 fi
