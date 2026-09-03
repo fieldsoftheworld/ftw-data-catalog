@@ -26,7 +26,41 @@ def clean_schema(path):
     md = {k: v for k, v in (s.metadata or {}).items() if not k.startswith(b"org.apache.spark")}
     return pa.schema([s.field(n) for n in keep], metadata=md), keep
 
+def union_geo_bbox(src_files, schema):
+    """Schema whose GeoParquet `bbox` covers *all* the inputs, not just the first.
+
+    clean_schema() reads one file, so a country merged from many batch pieces used to
+    inherit piece[0]'s `geo` metadata verbatim — advertising that piece's extent for
+    the whole country. 397 of 574 published partitions carry a wrong bbox because of
+    this; ZZ advertises a couple of buildings on St Vincent for a global file, which
+    is what makes the Portolan browser zoom to nowhere. The union is taken from each
+    input's own `geo` bbox (footer-only, no data read).
+    """
+    md = dict(schema.metadata or {})
+    if b"geo" not in md:
+        return schema
+    geo = json.loads(md[b"geo"])
+    prim = geo.get("primary_column")
+    if not prim or prim not in geo.get("columns", {}):
+        return schema
+    box = None
+    for p in src_files:
+        fmd = pq.ParquetFile(p).metadata.metadata or {}
+        if b"geo" not in fmd:
+            continue
+        b = json.loads(fmd[b"geo"])["columns"].get(prim, {}).get("bbox")
+        if not b or len(b) != 4:
+            continue
+        box = b[:] if box is None else [min(box[0], b[0]), min(box[1], b[1]),
+                                        max(box[2], b[2]), max(box[3], b[3])]
+    if box is None:
+        return schema
+    geo["columns"][prim]["bbox"] = box
+    md[b"geo"] = json.dumps(geo).encode()
+    return schema.with_metadata(md)
+
 def clean_write(src_files, out_path, schema, keep):
+    schema = union_geo_bbox(src_files, schema)
     w = pq.ParquetWriter(out_path, schema, compression="zstd", compression_level=9)
     rows = 0
     for p in src_files:

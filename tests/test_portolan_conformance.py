@@ -3,10 +3,20 @@
 Runs ``rashid check catalog --no-data --json`` and fails on any error EXCEPT a
 short, documented allow-list:
 
-  * ``PTL-LNK-006`` on the large-country subdivision items — rashid rejects an
-    item whose ``collection`` link is not its direct parent, but core.md:168-170
-    permits a catalog between a collection and its items. Tracked upstream in
-    https://github.com/portolan-sdi/rashid/issues/61.
+  * ``PTL-LNK-006`` in two narrow places, both "link does not resolve to any file":
+
+    - the per-year features collections' ``child`` links into the **MGRS browse
+      grid** (``./<zone>/catalog.json``). The grid — ~700 catalogs and ~22.7k items
+      per year — is generated straight to S3 by scripts/features/build_features_items.py
+      and never committed, so the targets are absent from a git checkout while every
+      one of them resolves in the published catalog. Portolan requires structural links
+      to be relative (PTL-LNK-004), so an absolute href is not the way out; the spec is
+      being evolved to cover a catalog whose generated parts live only at the publish
+      base (rashid would need to resolve them against it, cf. ``--live-base-url``).
+    - the large-country subdivision items — rashid rejects an item whose ``collection``
+      link is not its direct parent, though a catalog between a collection and its items
+      is what this catalog does. Tracked in https://github.com/portolan-sdi/rashid/issues/61.
+      Dormant as of rashid 0.1.3 (fires zero findings); kept scoped in case it returns.
   * Anything under the two zarr collections (``features/zarr``,
     ``predictions/zarr``) — they are being regenerated and are out of scope.
   * ``file:size`` / ``file:checksum`` (PTL-AST-003/004) on **remote** assets
@@ -19,6 +29,7 @@ zero-setup; CI installs rashid and enforces this. ``--no-data`` keeps the run
 offline. Run: python3 tests/test_portolan_conformance.py
 """
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -26,8 +37,23 @@ from pathlib import Path
 
 CATALOG = Path(__file__).resolve().parents[1] / "catalog"
 DEFERRED_DIRS = ("features/zarr", "predictions/zarr")
-ACCEPTED_RULES = {"PTL-LNK-006"}  # rashid#61
 FILE_FIELD_RULES = {"PTL-AST-003", "PTL-AST-004"}
+
+# PTL-LNK-006 is accepted only on these two shapes — never blanket, or a genuinely
+# broken structural link elsewhere would sail through. See the module docstring.
+GRID_PARENT_RE = re.compile(r"^features/(2024|2025)/collection\.json$")
+GRID_CHILD_RE = re.compile(r"^\./[0-6][0-9]/catalog\.json$")
+SUBDIVISION_RE = re.compile(r"^predictions/vectors/.*/results-by-admin")
+
+
+def _accepted_lnk_006(finding: dict) -> bool:
+    """True for the two documented unresolvable-link cases, false for everything else."""
+    if finding.get("rule_id") != "PTL-LNK-006":
+        return False
+    path = finding.get("path", "").replace("\\", "/")
+    if GRID_PARENT_RE.match(path) and GRID_CHILD_RE.match(str(finding.get("actual", ""))):
+        return True
+    return bool(SUBDIVISION_RE.match(path))
 
 
 def _under_deferred(path: str) -> bool:
@@ -75,7 +101,7 @@ def main() -> int:
         if f.get("severity") != "error":
             continue
         rid, path = f.get("rule_id"), f.get("path", "")
-        if _under_deferred(path) or rid in ACCEPTED_RULES:
+        if _under_deferred(path) or _accepted_lnk_006(f):
             accepted += 1
             continue
         if rid in FILE_FIELD_RULES and _asset_is_remote(f):
@@ -92,7 +118,8 @@ def main() -> int:
               f"({accepted} accepted/deferred)")
         return 1
     print(f"OK: Portolan 0.1 conformant ({accepted} accepted/deferred findings "
-          "allow-listed: rashid#61, zarr regen, remote checksums pending)")
+          "allow-listed: S3-only features grid, rashid#61, zarr regen, "
+          "remote checksums pending)")
     return 0
 
 

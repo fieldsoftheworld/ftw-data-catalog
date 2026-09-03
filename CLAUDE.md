@@ -90,6 +90,24 @@ The catalog targets **Portolan 0.1** (spec `~/repos/portolan-spec`, checker `ras
   backfill post-hoc; per PORTO-CORE-030 it belongs in the COG generation/upload pipeline. Re-run
   `items 2024`/`2025` on rails to republish the conformant items; re-run `backfill_file_meta.py
   --local-only` after `collections` to restore `file:` on in-repo assets.
+- **The features MGRS browse tree (S3-only).** The ~22.7k items/year are browsable as
+  collection → UTM zone (60) → grid zone `35U` (641 cells, median 36 items) → item, with node titles
+  naming the countries each cell covers (`mgrs_places.json`, rebuilt by the `places` subcommand from
+  Natural Earth). The tree — items *and* the ~700 catalogs/year above them — is generated straight to
+  S3 and never committed. For a metadata-only change use `items <year> --from-parquet`, which rebuilds
+  everything from the published `items.parquet` in minutes anywhere instead of ~8 h of COG-header
+  reads on rails.
+  **Consequence:** the committed collections carry relative `child` links into a tree that is absent
+  from a git checkout (relative is required — PTL-LNK-004 — and they resolve once published). So
+  `tests/test_links.py` and `tests/test_portolan_conformance.py` each carry a narrow, documented
+  exemption for those links only; conformance of the tree itself is verified against the **published**
+  catalog, not the checkout. Chris (the Portolan spec author) is evolving the spec to cover a catalog
+  whose generated parts live only at the publish base — rashid would resolve such links against it,
+  cf. `--live-base-url`. Note `structure.md:87` ("flat hierarchy … no nested sub-collections") and the
+  stale `core.md:168-170` citation below both predate that.
+- **Known data gap (pre-existing):** 26 items in 2024 and 21 in 2025 advertise a `planting` or
+  `harvest` COG that is not on S3 (e.g. `s2med_planting/57KTV/20240101.tif` — the tile has 2025 but no
+  2024 planting composite). Those assets carry no `file:size`; the fix belongs in the COG pipeline.
 
 ## Git extension (portolan-cli#485)
 `catalog/catalog.json` hand-carries `git:repository`, `git:ref`, `git:provider` plus `vcs`/`issues`

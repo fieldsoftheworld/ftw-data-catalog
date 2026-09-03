@@ -508,9 +508,47 @@ def _fs():
     return _S3FS
 
 
+def _stats_bbox(pf):
+    """Extent from the `bbox` struct column's Parquet statistics, or None.
+
+    Preferred over the GeoParquet `geo` metadata because the published partitions
+    carry a wrong bbox there: `rails_relayout.py` merged each country's batch pieces
+    with `clean_schema(pieces[0])`, so every output inherited the *first piece's*
+    `geo` metadata — including its bbox — rather than the union. 397 of 574
+    partitions are affected, worst of all ZZ, which advertises a 1.8e-6 deg² box
+    around two buildings on St Vincent for a global 46 M-polygon file and makes the
+    browser zoom there. Row-group statistics describe the actual rows, so they are
+    right even when the footer metadata is not. Footer-only: no data is read.
+    """
+    md = pf.metadata
+    paths = [md.schema.column(i).path for i in range(md.num_columns)]
+    idx = {p: i for i, p in enumerate(paths)
+           if p in ("bbox.xmin", "bbox.ymin", "bbox.xmax", "bbox.ymax")}
+    if len(idx) != 4:
+        return None
+    lo = {"bbox.xmin": None, "bbox.ymin": None}
+    hi = {"bbox.xmax": None, "bbox.ymax": None}
+    for rg in range(md.num_row_groups):
+        for p, i in idx.items():
+            st = md.row_group(rg).column(i).statistics
+            if st is None or not st.has_min_max:
+                continue
+            if p in lo:
+                lo[p] = st.min if lo[p] is None else min(lo[p], st.min)
+            else:
+                hi[p] = st.max if hi[p] is None else max(hi[p], st.max)
+    if any(v is None for v in (*lo.values(), *hi.values())):
+        return None
+    return [lo["bbox.xmin"], lo["bbox.ymin"], hi["bbox.xmax"], hi["bbox.ymax"]]
+
+
 def _bbox_count(pf):
-    geo = json.loads(pf.metadata.metadata[b"geo"])
-    return geo["columns"][geo["primary_column"]]["bbox"], pf.metadata.num_rows
+    """(bbox, row count). Trusts the data's own statistics over `geo` metadata."""
+    bbox = _stats_bbox(pf)
+    if bbox is None:
+        geo = json.loads(pf.metadata.metadata[b"geo"])
+        bbox = geo["columns"][geo["primary_column"]]["bbox"]
+    return bbox, pf.metadata.num_rows
 
 
 def _confidence_stats(pf, count):
