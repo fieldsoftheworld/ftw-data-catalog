@@ -1,0 +1,61 @@
+{
+  "version": 8,
+  "name": "BR — field density and boundaries",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Field density (A5 cells) → boundaries",
+      "type": "gradient",
+      "stops": [
+        { "color": "#edf8e9", "label": "few fields" },
+        { "color": "#74c476", "label": "" },
+        { "color": "#005a32", "label": "many fields" }
+      ]
+    },
+    "description": "Country-wide pyramid: A5 cell aggregates (field counts) at z0-8, individual PRUE field boundaries from z9."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://./BR.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "cells-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "aggregate",
+      "paint": {
+        "fill-color": [
+          "interpolate", ["linear"], ["ln", ["max", ["get", "count"], 1]],
+          0, "#edf8e9",
+          4, "#a1d99b",
+          7, "#74c476",
+          10, "#31a354",
+          13, "#005a32"
+        ],
+        "fill-opacity": 0.75
+      }
+    },
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "features",
+      "paint": {
+        "fill-color": "#33a02c",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "features",
+      "paint": {
+        "line-color": "#33a02c",
+        "line-width": 1
+      }
+    }
+  ]
+}
