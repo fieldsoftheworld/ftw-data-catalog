@@ -41,10 +41,10 @@
   ],
   "properties": {
     "title": "United States \u2014 country-wide tiled overview",
-    "description": "Country-wide tiled overview of the United States field-boundary predictions: all 38,659,500 field polygons from the US_* partitions in one multi-scale PMTiles archive. Zooms 0\u20138 carry an `aggregate` layer of A5 grid cells (resolution 5 at z0\u20135, resolution 8 at z6\u20138) with per-cell rollups: `count`, `sum_area`, `avg_area`, `max_area`, `avg_perimeter` (m\u00b2/m, from `metrics:*`), per-year counts (`count_2024`, `count_2025`) and per-subdivision counts (`count_<code>`). From z9 a `features` layer carries the individual field polygons (properties: `id`, `area`, `perimeter`, `state`, `year`) through z13. Built with geoparquet-io (A5 aggregation) and tylertoo (tiling); cell rollups are exact sums, not thinned samples.",
+    "description": "Country-wide tiled overview of the United States field-boundary predictions: all 38,659,500 field polygons from the US_* partitions in one multi-scale PMTiles archive. Zooms 0\u20138 carry an `aggregate` layer of A5 grid cells (resolution 5 at z0\u20135, resolution 8 at z6\u20138) with per-cell rollups: `count`, `sum_area`, `avg_area`, `max_area`, `avg_perimeter` (m\u00b2/m, from `metrics:*`), per-year counts (`count_2023`, `count_2024`) and per-subdivision counts (`count_<code>`). From z9 a `features` layer carries the individual field polygons (properties: `id`, `area`, `perimeter`, `state`, `year`) through z13. Built with geoparquet-io (A5 aggregation) and tylertoo (tiling); cell rollups are exact sums, not thinned samples.",
     "datetime": null,
-    "start_datetime": "2024-01-01T00:00:00Z",
-    "end_datetime": "2025-12-31T23:59:59Z",
+    "start_datetime": "2023-01-01T00:00:00Z",
+    "end_datetime": "2024-12-31T23:59:59Z",
     "admin:country_code": "US",
     "proj:code": "EPSG:3857"
   },
