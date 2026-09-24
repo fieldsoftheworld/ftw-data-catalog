@@ -14,6 +14,14 @@ produced by applying the [PRUE field-boundary segmentation model](https://huggin
 cloud-free Sentinel-2 mosaics. Published openly under CC-BY-4.0 by Taylor Geospatial and
 collaborators (Microsoft AI for Good, ASU, WashU in St. Louis, Oregon State, Clark).
 
+The 2024–2025 global release was produced through a partnership between Taylor Geospatial and
+[Wherobots](https://wherobots.com/): the PRUE model was run on
+[Wherobots RasterFlow](https://wherobots.com/blog/fields-of-the-world-rasterflow-geoai-pipeline/),
+which powered the Sentinel-2 mosaicking, distributed inference, and vectorization pipeline behind
+these data products. FTW users can also
+[run the model with RasterFlow](https://docs.wherobots.com/tutorials/example-notebooks/rasterflow-ftw)
+for their own areas of interest.
+
 Paper: Robinson et al. 2026, *The first global agricultural field boundary map at 10 m resolution*
 ([arXiv:2605.11055](https://arxiv.org/abs/2605.11055)).
 
