@@ -41,8 +41,10 @@ if [ -n "${MAX_AREA_KM2:-}" ]; then
   # area column is m2; keep the name distinct from any pre-dedupe *_le350 files
   FILT="${IN%.parquet}_le${MAX_AREA_KM2}.parquet"
   echo "== filter area <= ${MAX_AREA_KM2} km2 -> ${FILT}"
+  # GP2 output so the same filtered file serves the tile_fields shard fleet
+  # (native geo stats -> row-group pruning)
   [ -f "$FILT" ] || gpio extract geoparquet "$IN" "$FILT" \
-    --where "area <= $((MAX_AREA_KM2 * 1000000))"
+    --where "area <= $((MAX_AREA_KM2 * 1000000))" --geoparquet-version 2.0
   IN="$FILT"
 fi
 

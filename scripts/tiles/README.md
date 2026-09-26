@@ -1,15 +1,18 @@
 # Global FTW PMTiles pipeline
 
 Turns the `results-by-admin-conf` prediction parquets into PMTiles archives
-with [tylertoo](https://github.com/cholmes/tylertoo) and
+with [tylertoo](https://github.com/geoparquet-io/tylertoo) and
 [gpio](https://github.com/geoparquet-io/geoparquet-io), on the TGI RAILS
-Slurm cluster. Two products per year:
+Slurm cluster. One archive per year (`fields-<year>.pmtiles`) with a zoom
+handover:
 
-1. **Field boundaries** (`fields-<year>.pmtiles`) — every predicted field,
-   z0–13, standard tylertoo density thinning at low zooms.
-2. **a5 cell aggregates** (`fields-<year>-a5r7.pmtiles`) — a single a5 r7
-   layer, every cell verbatim at z0–8, with per-cell `count`, `sum_area`
-   (m²), `pct_covered`, `avg_confidence`. The low-zoom exploration layer.
+- **z0–8 `cells` layer** — a5 r7 aggregates, every cell verbatim, with
+  per-cell `count`, `area_ha`, `pct_covered`, `avg_confidence`.
+- **z9–13 `fields` layer** — every predicted field ≤350 km², lightly
+  thinned at z9–12, verbatim at z13.
+
+The intermediate `fields-<year>-a5r7.pmtiles` (cells only, z0–8) is also a
+standalone product.
 
 ## Running it
 
@@ -21,15 +24,20 @@ cd ~/ftw-pipeline
 # 1. Stage both years (deduped, UTC-correct), merge, convert to GeoParquet 2.0
 sbatch stage.sbatch                       # ~380 GB scanned once; hours
 
-# 2. Field archives — native sharded workflow (~8h wall per year at 2025 scale)
+# 2. Cell archive (350 km² cutoff applied at aggregate input; the filtered
+#    GP2 parquet it writes is also the fields fleet's input)
+YEAR=2025 MAX_AREA_KM2=350 sbatch --export=ALL aggregate_cells.sbatch
+YEAR=2025 sbatch --export=ALL tile_cells.sbatch     # prints tile-weight report
+
+# 3. Field shards + handover merge (~8h wall per year at 2025 scale).
+#    IN is the filtered file from step 2. The coarse job's z0-8 archive is
+#    discarded — it runs to write the convert plan the shards need (the
+#    thinning level assignment is dataset-global).
+export IN=$PWD/global2025_gp2_le350.parquet
 YEAR=2025 MODE=plan   sbatch --export=ALL tile_fields.sbatch
 YEAR=2025 MODE=coarse sbatch --export=ALL --mem=360G tile_fields.sbatch
 for i in $(seq 0 7); do YEAR=2025 MODE=shard IDX=$i sbatch --export=ALL tile_fields.sbatch; done
-YEAR=2025 MODE=merge  sbatch --export=ALL tile_fields.sbatch
-
-# 3. Cell archives (giant-field cutoff applied at aggregate input)
-YEAR=2025 MAX_AREA_KM2=350 sbatch --export=ALL aggregate_cells.sbatch
-YEAR=2025 sbatch --export=ALL tile_cells.sbatch     # prints tile-weight report
+YEAR=2025 MODE=merge COARSE=fields-2025-a5r7.pmtiles sbatch --export=ALL tile_fields.sbatch
 ```
 
 Env vars go through the shell + `--export=ALL` (a value inside

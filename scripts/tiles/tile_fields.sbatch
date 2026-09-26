@@ -56,12 +56,18 @@ case "$MODE" in
       "${COMMON[@]}" --plan "convert-${YEAR}.plan"
     ;;
   merge)
+    # COARSE defaults to the fields coarse archive; override it with the a5
+    # cells archive (COARSE=fields-<year>-a5r7.pmtiles) for the handover
+    # product: cells z0-8, full fields z9-13, one archive (merge unions
+    # disjoint tile ids and vector_layers, so mixed layers/zooms are fine).
+    COARSE="${COARSE:-coarse-${YEAR}.pmtiles}"
+    OUT="${OUT:-fields-${YEAR}.pmtiles}"
     SHARDS=()
     for i in $(seq 0 $((N - 1))); do SHARDS+=("shard${i}-${YEAR}.pmtiles"); done
-    "$TT" merge "fields-${YEAR}.pmtiles" "coarse-${YEAR}.pmtiles" "${SHARDS[@]}" \
+    "$TT" merge "$OUT" "$COARSE" "${SHARDS[@]}" \
       --report "merge-report-${YEAR}.json" -f
-    ls -la "fields-${YEAR}.pmtiles"
-    sha256sum "fields-${YEAR}.pmtiles"
+    ls -la "$OUT"
+    sha256sum "$OUT"
     ;;
 esac
 echo "FIELDS-${MODE}${IDX:-}-DONE"
