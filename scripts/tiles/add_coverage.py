@@ -57,8 +57,8 @@ if spread > 2:
 # attributes nearly double tile weights — rounding is what gets the worst
 # z2 tile from 874 KB to 543 KB, under the 600 KB budget. 1 ha / 0.1
 # precision is far beyond the data's real accuracy anyway.
-con.create_function("wrap_am", wrap_antimeridian,
-                    [duckdb.typing.BLOB], duckdb.typing.BLOB)
+from duckdb.typing import BLOB  # noqa: E402  (submodule needs explicit import)
+con.create_function("wrap_am", wrap_antimeridian, [BLOB], BLOB)
 con.execute(f"""
     COPY (
       SELECT a5_cell, count,
