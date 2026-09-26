@@ -28,8 +28,12 @@ export RUST_LOG=info
 
 # (tylertoo `tiles` has no -f; remove any stale output ourselves)
 rm -f "$OUT"
+# a5_cell (a 19-digit id per feature) stays in the parquet but out of the
+# tiles — together with the rounding in add_coverage.py this is what holds
+# the worst z2 tile under the 600 KB budget (measured 543 KB, global 2025).
 "$TT" tiles "$IN" "$OUT" \
   --min-zoom 0 --max-zoom 8 --layer-name cells --verbatim \
+  --exclude-property a5_cell \
   --profile bounded -v
 
 ls -la "$OUT"

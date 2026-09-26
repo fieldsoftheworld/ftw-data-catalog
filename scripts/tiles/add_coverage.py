@@ -34,10 +34,17 @@ print(f"cell area: {cell_area / 1e6:,.1f} km2 (sample spread {spread:.2f}%)",
 if spread > 2:
     raise SystemExit("cell areas not constant — is this really an a5 grid?")
 
+# Rounded output (area to whole hectares, 1dp elsewhere): full-double
+# attributes nearly double tile weights — rounding is what gets the worst
+# z2 tile from 874 KB to 543 KB, under the 600 KB budget. 1 ha / 0.1
+# precision is far beyond the data's real accuracy anyway.
 con.execute(f"""
     COPY (
-      SELECT *,
-             round(100 * sum_area / {cell_area!r}, 2) AS pct_covered
+      SELECT a5_cell, count,
+             CAST(round(sum_area / 1e4) AS BIGINT)          AS area_ha,
+             round(avg_confidence, 1)                       AS avg_confidence,
+             round(100 * sum_area / {cell_area!r}, 1)       AS pct_covered,
+             geometry
       FROM '{src}'
     ) TO '{dst}' (FORMAT PARQUET, COMPRESSION zstd, ROW_GROUP_SIZE 65536)
 """)
