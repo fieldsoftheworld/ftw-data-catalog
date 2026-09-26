@@ -9,7 +9,7 @@
     "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "confidence",
-  "title": "FTW Global — Prediction Confidence & Quality Layers (500 m)",
+  "title": "FTW Global \u2014 Prediction Confidence & Quality Layers (500 m)",
   "description": "Global 500 m raster layers that quantify the reliability of the [PRUE](https://github.com/fieldsoftheworld/ftw-baselines/releases) global agricultural field-boundary predictions ([Robinson et al. 2026](https://arxiv.org/abs/2605.11055)), part of [Fields of the World](https://fieldsofthe.world). Derived from the full-resolution (10 m) model outputs on a common global grid (EPSG:4326, ~0.004167 deg/px, -180..180 lon, -60..84 lat; each 500 m cell ~ 50x50 of the 10 m pixels). Five products: a modeled confidence score; field & boundary prediction density (unfiltered and confidence-filtered); model entropy; an external cropland-consensus count; and precision/recall against that cropland consensus. These layers let users assess where the field predictions can be trusted and filter the vector dataset accordingly. Temporal coverage inferred as the 2025 prediction year from the [paper](https://arxiv.org/abs/2605.11055) (the cropland-consensus layer is year-independent); pending confirmation from the data authors. The underlying field predictions are from the PRUE U-Net model (Muhawenayo et al. 2026, arXiv:2603.27101; 76% IoU / 47% object-F1 on the FTW benchmark), trained on the Fields of the World benchmark (data: https://source.coop/kerner-lab/fields-of-the-world) of 70,462 Sentinel-2 samples across 24 countries (Kerner et al. 2025, arXiv:2409.16252).",
   "license": "CC-BY-4.0",
   "keywords": [
@@ -207,13 +207,13 @@
       "rel": "root",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "parent",
       "href": "../../catalog.json",
       "type": "application/json",
-      "title": "Fields of the World — Global"
+      "title": "Fields of the World \u2014 Global"
     },
     {
       "rel": "license",

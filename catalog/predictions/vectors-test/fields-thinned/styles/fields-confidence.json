@@ -2,28 +2,6 @@
   "version": 8,
   "name": "Field confidence 2025 (thinned)",
   "metadata": {
-    "portolan:legend": {
-      "title": "Model confidence (0\u2013100)",
-      "type": "gradient",
-      "stops": [
-        {
-          "color": "#d73027",
-          "label": "0"
-        },
-        {
-          "color": "#ffffbf",
-          "label": "50"
-        },
-        {
-          "color": "#1a9850",
-          "label": "100"
-        },
-        {
-          "color": "#bdbdbd",
-          "label": "no coverage"
-        }
-      ]
-    },
     "description": "Per-field PRUE confidence (0-100); gray fields fall outside the modeled-confidence coverage."
   },
   "sources": {
@@ -34,48 +12,64 @@
   },
   "layers": [
     {
-      "id": "fields-fill",
+      "id": "fields-confidence",
       "type": "fill",
       "source": "data",
       "source-layer": "fields",
       "paint": {
         "fill-color": [
-          "case",
+          "step",
           [
-            "==",
-            [
-              "typeof",
-              [
-                "get",
-                "confidence"
-              ]
-            ],
-            "number"
+            "get",
+            "confidence"
           ],
+          "#d73027",
+          20,
+          "#fdae61",
+          40,
+          "#ffffbf",
+          60,
+          "#a6d96a",
+          80,
+          "#1a9850"
+        ],
+        "fill-opacity": 0.55
+      },
+      "filter": [
+        "==",
+        [
+          "typeof",
           [
-            "interpolate",
-            [
-              "linear"
-            ],
+            "get",
+            "confidence"
+          ]
+        ],
+        "number"
+      ]
+    },
+    {
+      "id": "fields-no-confidence",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "fill-color": "#bdbdbd",
+        "fill-opacity": 0.55
+      },
+      "filter": [
+        "!",
+        [
+          "==",
+          [
+            "typeof",
             [
               "get",
               "confidence"
-            ],
-            0,
-            "#d73027",
-            25,
-            "#fdae61",
-            50,
-            "#ffffbf",
-            75,
-            "#a6d96a",
-            100,
-            "#1a9850"
+            ]
           ],
-          "#bdbdbd"
-        ],
-        "fill-opacity": 0.55
-      }
+          "number"
+        ]
+      ]
     },
     {
       "id": "fields-outline",

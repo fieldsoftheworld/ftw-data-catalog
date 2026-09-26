@@ -141,8 +141,8 @@
         "style",
         "default"
       ],
-      "file:size": 1373,
-      "file:checksum": "12204c5b49f0773dc56bc47500fb6379886037090ede7c2105f97a1c6e036cb96aab"
+      "file:size": 834,
+      "file:checksum": "122016a9de28ff7042653eb34b6a313cb2582a545ed340cb5ddce77259b7d1561d49"
     },
     "styles/coverage-r8": {
       "href": "./styles/coverage-r8.json",
@@ -151,8 +151,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 1349,
-      "file:checksum": "1220e3a192578f636cb3419e8d6492625038e65cb62f052e7eddf8f254355a59641a"
+      "file:size": 923,
+      "file:checksum": "1220463987e503a68460974cea116a29682e8b07b1f4e8cfe5cba10f4c5be6aba737"
     },
     "styles/avg-size-r8": {
       "href": "./styles/avg-size-r8.json",
@@ -161,8 +161,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 1662,
-      "file:checksum": "1220ed5237b1b1cd182cce9ba1df01ba4d5070f9d8b42ac732bb0d1e2bb8dfa767d4"
+      "file:size": 1071,
+      "file:checksum": "1220b863d2db69c396656de0280821826c22e90b9b0db65c99a35c3b8b48b5e03f25"
     },
     "styles/confidence-r8": {
       "href": "./styles/confidence-r8.json",
@@ -171,8 +171,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 1689,
-      "file:checksum": "12201f105a91d15c0a0c2b9e2c8603683cd41b5a445988ab5d353387d938ec541d49"
+      "file:size": 1488,
+      "file:checksum": "1220223cf4b03b972ab72fe566d771e4edf10dd8a77965e41303240f179772d212ab"
     },
     "README": {
       "href": "./README.md",
@@ -192,8 +192,8 @@
         "thumbnail",
         "overview"
       ],
-      "file:size": 184299,
-      "file:checksum": "1220f29bb3b79722ab9749b7b64c3de3458f9e9efb0252d88564ae54d1a75e98184f"
+      "file:size": 113972,
+      "file:checksum": "12205ac4a193e80e4bb415c3fde117a01fed2213821ba3d62878b104809a3bc526cb"
     }
   },
   "updated": "2026-09-26T00:00:00Z"

@@ -140,8 +140,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 1862,
-      "file:checksum": "1220e8147e429e169ee99415d634eddf62393200ecf5ab0086bb70d6616717a172e3"
+      "file:size": 1661,
+      "file:checksum": "122068762abfecbccebc2c185bb692b3e812bfa30d6f980bba016e6a6eb1f4fd5693"
     },
     "styles/fields-size": {
       "href": "./styles/fields-size.json",
@@ -150,8 +150,8 @@
       "roles": [
         "style"
       ],
-      "file:size": 1678,
-      "file:checksum": "1220fe2d45e63e64523f93f9180bf631fafb428b88a9c21ddf6dc1e926b766d37866"
+      "file:size": 1120,
+      "file:checksum": "1220718bb2d675bea494c8196a84408e793d8db2009b9c4462d9fc027fa252b7e3de"
     },
     "README": {
       "href": "./README.md",

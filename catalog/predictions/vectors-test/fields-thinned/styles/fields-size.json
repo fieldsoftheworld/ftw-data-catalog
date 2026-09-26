@@ -2,25 +2,7 @@
   "version": 8,
   "name": "Field size (thinned)",
   "metadata": {
-    "portolan:legend": {
-      "title": "Field size (log scale)",
-      "type": "gradient",
-      "stops": [
-        {
-          "color": "#440154",
-          "label": "0.1 ha"
-        },
-        {
-          "color": "#21918c",
-          "label": "10 ha"
-        },
-        {
-          "color": "#fde725",
-          "label": "1 000 ha"
-        }
-      ]
-    },
-    "description": "Each 2025 predicted field colored by its own area, log ramp (0.1 ha to 1,000 ha)."
+    "description": "Each 2025 predicted field colored by its own area, log-stepped bins (hectares) (0.1 ha to 1,000 ha)."
   },
   "sources": {
     "data": {
@@ -36,34 +18,23 @@
       "source-layer": "fields",
       "paint": {
         "fill-color": [
-          "interpolate",
+          "step",
           [
-            "linear"
-          ],
-          [
-            "ln",
+            "/",
             [
-              "max",
-              [
-                "/",
-                [
-                  "get",
-                  "area"
-                ],
-                10000
-              ],
-              0.01
-            ]
+              "get",
+              "area"
+            ],
+            10000
           ],
-          -2.3,
           "#440154",
-          0.0,
+          1,
           "#3b528b",
-          2.3,
+          10,
           "#21918c",
-          4.61,
+          100,
           "#5ec962",
-          6.91,
+          1000,
           "#fde725"
         ],
         "fill-opacity": 0.75

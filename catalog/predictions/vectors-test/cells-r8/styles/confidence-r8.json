@@ -2,28 +2,6 @@
   "version": 8,
   "name": "Model confidence (A5 r8)",
   "metadata": {
-    "portolan:legend": {
-      "title": "Mean confidence (0-100)",
-      "type": "gradient",
-      "stops": [
-        {
-          "color": "#d73027",
-          "label": "0"
-        },
-        {
-          "color": "#ffffbf",
-          "label": "50"
-        },
-        {
-          "color": "#1a9850",
-          "label": "100"
-        },
-        {
-          "color": "#bdbdbd",
-          "label": "no confidence data"
-        }
-      ]
-    },
     "description": "Mean per-cell PRUE confidence on A5 resolution-8 cells (~519 km2 cells); gray cells are in countries without modeled confidence."
   },
   "sources": {
@@ -34,48 +12,64 @@
   },
   "layers": [
     {
-      "id": "cells-fill",
+      "id": "cells-confidence",
       "type": "fill",
       "source": "data",
       "source-layer": "cells",
       "paint": {
         "fill-color": [
-          "case",
+          "step",
           [
-            "==",
-            [
-              "typeof",
-              [
-                "get",
-                "avg_confidence"
-              ]
-            ],
-            "number"
+            "get",
+            "avg_confidence"
           ],
+          "#d73027",
+          20,
+          "#fdae61",
+          40,
+          "#ffffbf",
+          60,
+          "#a6d96a",
+          80,
+          "#1a9850"
+        ],
+        "fill-opacity": 0.8
+      },
+      "filter": [
+        "==",
+        [
+          "typeof",
           [
-            "interpolate",
-            [
-              "linear"
-            ],
+            "get",
+            "avg_confidence"
+          ]
+        ],
+        "number"
+      ]
+    },
+    {
+      "id": "cells-no-confidence",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "paint": {
+        "fill-color": "#bdbdbd",
+        "fill-opacity": 0.8
+      },
+      "filter": [
+        "!",
+        [
+          "==",
+          [
+            "typeof",
             [
               "get",
               "avg_confidence"
-            ],
-            0,
-            "#d73027",
-            25,
-            "#fdae61",
-            50,
-            "#ffffbf",
-            75,
-            "#a6d96a",
-            100,
-            "#1a9850"
+            ]
           ],
-          "#bdbdbd"
-        ],
-        "fill-opacity": 0.8
-      }
+          "number"
+        ]
+      ]
     }
   ]
 }
