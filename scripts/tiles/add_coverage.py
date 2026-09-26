@@ -16,6 +16,25 @@ import sys
 import duckdb
 from pyproj import Geod
 from shapely import wkb
+from shapely.affinity import translate
+from shapely.geometry import box
+from shapely.ops import unary_union
+
+WORLD = box(-180.0, -90.0, 180.0, 90.0)
+
+
+def wrap_antimeridian(g: bytes) -> bytes:
+    """a5 cells touching the dateline have vertices past +/-180 (up to ~0.6
+    degrees over), which tile exporters drop as outside the CRS range. Split
+    them into a MultiPolygon with the overflow wrapped to the other side."""
+    geom = wkb.loads(bytes(g))
+    minx, _, maxx, _ = geom.bounds
+    if minx >= -180.0 and maxx <= 180.0:
+        return bytes(g)
+    parts = [geom.intersection(WORLD),
+             translate(geom, xoff=360.0).intersection(WORLD),
+             translate(geom, xoff=-360.0).intersection(WORLD)]
+    return unary_union([p for p in parts if not p.is_empty]).wkb
 
 src, dst = sys.argv[1], sys.argv[2]
 con = duckdb.connect()
@@ -38,13 +57,15 @@ if spread > 2:
 # attributes nearly double tile weights — rounding is what gets the worst
 # z2 tile from 874 KB to 543 KB, under the 600 KB budget. 1 ha / 0.1
 # precision is far beyond the data's real accuracy anyway.
+con.create_function("wrap_am", wrap_antimeridian,
+                    [duckdb.typing.BLOB], duckdb.typing.BLOB)
 con.execute(f"""
     COPY (
       SELECT a5_cell, count,
              CAST(round(sum_area / 1e4) AS BIGINT)          AS area_ha,
              round(avg_confidence, 1)                       AS avg_confidence,
              round(100 * sum_area / {cell_area!r}, 1)       AS pct_covered,
-             geometry
+             ST_GeomFromWKB(wrap_am(ST_AsWKB(geometry)))    AS geometry
       FROM '{src}'
     ) TO '{dst}' (FORMAT PARQUET, COMPRESSION zstd, ROW_GROUP_SIZE 65536)
 """)
