@@ -20,7 +20,7 @@ with open(path, "rb") as f:
     reader = Reader(MmapSource(f))
     by_zoom = defaultdict(list)
     biggest = []
-    for (z, x, y), data in all_tiles(reader.get_bytes, reader.header()):
+    for (z, x, y), data in all_tiles(reader.get_bytes):
         n = len(data)
         by_zoom[z].append(n)
         biggest.append((n, z, x, y))
