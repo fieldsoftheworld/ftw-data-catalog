@@ -27,8 +27,8 @@ YEAR=2025 MODE=coarse sbatch --export=ALL --mem=360G tile_fields.sbatch
 for i in $(seq 0 7); do YEAR=2025 MODE=shard IDX=$i sbatch --export=ALL tile_fields.sbatch; done
 YEAR=2025 MODE=merge  sbatch --export=ALL tile_fields.sbatch
 
-# 3. Cell archives
-YEAR=2025 sbatch --export=ALL aggregate_cells.sbatch
+# 3. Cell archives (giant-field cutoff applied at aggregate input)
+YEAR=2025 MAX_AREA_KM2=350 sbatch --export=ALL aggregate_cells.sbatch
 YEAR=2025 sbatch --export=ALL tile_cells.sbatch     # prints tile-weight report
 ```
 
@@ -46,8 +46,10 @@ Env vars go through the shell + `--export=ALL` (a value inside
   `stage_global.py` sets `TimeZone='UTC'`.
 - **Giant "fields":** the ≥100 km² bucket (7,127 features, 10% of global
   field area) is dominated by low-confidence Sahara artifacts (up to
-  25,354 km², confidence ≈34). `MAX_AREA_KM2=100` on `stage.sbatch` drops
-  them at staging time.
+  25,354 km², confidence ≈34). Staging is kept unfiltered; the decided
+  cutoff (350 km² — everything above the largest legit 331 km² complex is
+  junk) is applied per product via `MAX_AREA_KM2=350` on
+  `aggregate_cells.sbatch` (or on `stage.sbatch` to drop at staging time).
 - **`pct_covered`** can slightly exceed 100: a field is assigned wholly to
   one cell, so boundary fields contribute their full area there.
 

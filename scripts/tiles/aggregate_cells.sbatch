@@ -9,8 +9,12 @@
 #                  1dp — can exceed 100: a boundary field's full area counts
 #                  in its home cell
 #
-#   YEAR=2025 R=7 sbatch --export=ALL aggregate_cells.sbatch
+#   YEAR=2025 R=7 MAX_AREA_KM2=350 sbatch --export=ALL aggregate_cells.sbatch
 #   (IN=... to override the input; defaults to global${YEAR}_gp2.parquet)
+#
+# MAX_AREA_KM2 applies the giant-field cutoff at aggregate input (staging is
+# unfiltered): fields above it are artifacts (>350 km2 is 100% junk; the
+# largest legit complex is a 331 km2 Russian grain block).
 #SBATCH --job-name=ftw-agg-cells
 #SBATCH --partition=cpu
 #SBATCH --account=bgtj-tgirails
@@ -32,6 +36,15 @@ trap 'rm -rf "$TMPDIR"' EXIT
 RAW="cells_a5r${R}_${YEAR}_raw.parquet"
 PLAIN="cells_a5r${R}_${YEAR}_plain.parquet"
 OUT="cells_a5r${R}_${YEAR}.parquet"
+
+if [ -n "${MAX_AREA_KM2:-}" ]; then
+  # area column is m2; keep the name distinct from any pre-dedupe *_le350 files
+  FILT="${IN%.parquet}_le${MAX_AREA_KM2}.parquet"
+  echo "== filter area <= ${MAX_AREA_KM2} km2 -> ${FILT}"
+  [ -f "$FILT" ] || gpio extract geoparquet "$IN" "$FILT" \
+    --where "area <= $((MAX_AREA_KM2 * 1000000))"
+  IN="$FILT"
+fi
 
 echo "== a5 aggregate r${R} from ${IN}"
 [ -f "$RAW" ] || gpio process aggregate a5 "$IN" "$RAW" \
