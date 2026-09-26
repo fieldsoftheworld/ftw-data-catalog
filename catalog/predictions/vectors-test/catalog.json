@@ -1,0 +1,61 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "id": "vectors-test",
+  "title": "Field boundary tiles 2025 (test)",
+  "description": "TEST catalog — candidate renderings of the 2025 Fields of the World PRUE predictions (1.58B field polygons), one collection per approach for side-by-side preview: A5 cell aggregates at three resolutions (r5/r7/r8, PMTiles + GeoParquet + styles) and the full thinned-polygon archive. Built with geoparquet-io (A5 aggregation) and tylertoo (tiling). The production per-year handover archives (a5 r7 cells z0–8 into full fields z9–13, 2024 & 2025, deduped and ≤350 km²) will land here as their own collection.",
+  "updated": "2026-09-26T00:00:00Z",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World — Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World — Global"
+    },
+    {
+      "rel": "child",
+      "href": "./cells-r5/collection.json",
+      "type": "application/json",
+      "title": "Fields 2025 — A5 r5 cell aggregates (test)"
+    },
+    {
+      "rel": "child",
+      "href": "./cells-r7/collection.json",
+      "type": "application/json",
+      "title": "Fields 2025 — A5 r7 cell aggregates (test)"
+    },
+    {
+      "rel": "child",
+      "href": "./cells-r8/collection.json",
+      "type": "application/json",
+      "title": "Fields 2025 — A5 r8 cell aggregates (test)"
+    },
+    {
+      "rel": "child",
+      "href": "./fields-thinned/collection.json",
+      "type": "application/json",
+      "title": "Fields 2025 — thinned field polygons (test)"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    }
+  ]
+}

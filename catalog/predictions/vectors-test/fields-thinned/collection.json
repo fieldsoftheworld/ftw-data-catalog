@@ -1,0 +1,179 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "portolan:styles": [
+    "styles/fields",
+    "styles/fields-confidence",
+    "styles/fields-size"
+  ],
+  "id": "fields-thinned",
+  "title": "Fields 2025 \u2014 thinned field polygons (test)",
+  "description": "TEST \u2014 every 2025 Fields of the World PRUE field polygon (1.58B), z0\u201313, through tylertoo's generalization ladder from z0 (density thinning + simplification + tile-size cap). Layer `fields` with per-field `area` (m\u00b2), `confidence` (0\u2013100, sparse), `country`, `state`. Built pre-dedupe (issue #9) and unfiltered; superseded by the per-year handover archives once they land. Styles: plain boundaries (default), per-field confidence, per-field size.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agriculture",
+    "field boundaries",
+    "Fields of the World",
+    "FTW",
+    "global",
+    "PRUE",
+    "Sentinel-2",
+    "confidence"
+  ],
+  "providers": [
+    {
+      "name": "Microsoft AI for Good Research Lab",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    {
+      "name": "Taylor Geospatial",
+      "roles": [
+        "producer",
+        "licensor",
+        "processor",
+        "host"
+      ],
+      "url": "https://taylorgeospatial.org/"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World \u2014 Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Field boundary tiles 2025 (test)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html"
+    },
+    {
+      "rel": "related",
+      "href": "../../vectors/collection.json",
+      "type": "application/json",
+      "title": "Field boundary predictions (GeoParquet source data)"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-thinned.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 thinned polygons z0\u201313 (PMTiles)",
+      "pmtiles:layers": [
+        "fields"
+      ]
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    }
+  ],
+  "assets": {
+    "pmtiles": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-thinned.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 thinned polygons z0\u201313 (PMTiles)",
+      "roles": [
+        "visual"
+      ],
+      "file:size": 115501641953,
+      "file:checksum": "12204812cf97a02bb6e01fcba2c96003c478a3b619cf9805876f964fe1d236f41f73"
+    },
+    "styles/fields": {
+      "href": "./styles/fields.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field boundaries (thinned)",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "file:size": 1017,
+      "file:checksum": "1220367e9453e308479107263938fcc68390e6a129a3282d6cc3d16f310f18638f53"
+    },
+    "styles/fields-confidence": {
+      "href": "./styles/fields-confidence.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field confidence (thinned)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1862,
+      "file:checksum": "1220e8147e429e169ee99415d634eddf62393200ecf5ab0086bb70d6616717a172e3"
+    },
+    "styles/fields-size": {
+      "href": "./styles/fields-size.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field size (thinned)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1678,
+      "file:checksum": "1220fe2d45e63e64523f93f9180bf631fafb428b88a9c21ddf6dc1e926b766d37866"
+    },
+    "README": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Fields 2025 \u2014 thinned field polygons (test) \u2014 README",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 645,
+      "file:checksum": "122054c9440686347e313d6b90e985ed6ae42b932e0a9477d2f1d76d970460e5abcd"
+    },
+    "thumbnail": {
+      "href": "./thumbnail.png",
+      "type": "image/png",
+      "title": "Fields 2025 \u2014 thinned field polygons \u2014 thumbnail",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ],
+      "file:size": 363493,
+      "file:checksum": "1220f83e0d0df665abe6be6a9ac73cc06bcd2946da47635ae475c8ebf578730619ba"
+    }
+  },
+  "updated": "2026-09-26T00:00:00Z"
+}

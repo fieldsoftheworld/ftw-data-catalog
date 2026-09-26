@@ -46,7 +46,7 @@
     },
     {
       "rel": "child",
-      "href": "./predictions/vectors-test/collection.json",
+      "href": "./predictions/vectors-test/catalog.json",
       "type": "application/json",
       "title": "Field boundary tiles 2025 (test)"
     },

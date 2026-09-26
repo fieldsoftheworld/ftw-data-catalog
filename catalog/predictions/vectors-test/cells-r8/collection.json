@@ -1,0 +1,200 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "portolan:styles": [
+    "styles/count-r8",
+    "styles/coverage-r8",
+    "styles/avg-size-r8",
+    "styles/confidence-r8"
+  ],
+  "id": "cells-r8",
+  "title": "Fields 2025 \u2014 A5 r8 cell aggregates (test)",
+  "description": "TEST \u2014 A5 resolution-8 cell aggregates (~519 km\u00b2 equal-area cells) of the 2025 Fields of the World PRUE predictions, built with geoparquet-io and tiled with tylertoo. One `cells` layer, every cell verbatim at z0\u20138, with per-cell `count`, `area_ha` (total field area, hectares), `avg_confidence` (1dp; null in countries without modeled confidence) and `pct_covered` (percent of the cell covered by fields \u2014 boundary fields count fully in their home cell, so isolated values can exceed 100). The same aggregate is published as GeoParquet (adds the `a5_cell` id). 2025 subset, >350 km\u00b2 artifact polygons excluded, pre-dedupe (issue #9). Styles: field count (log ramp, default), coverage, average field size, and model confidence.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agriculture",
+    "field boundaries",
+    "Fields of the World",
+    "FTW",
+    "global",
+    "PRUE",
+    "Sentinel-2",
+    "confidence"
+  ],
+  "providers": [
+    {
+      "name": "Microsoft AI for Good Research Lab",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    {
+      "name": "Taylor Geospatial",
+      "roles": [
+        "producer",
+        "licensor",
+        "processor",
+        "host"
+      ],
+      "url": "https://taylorgeospatial.org/"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World \u2014 Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Field boundary tiles 2025 (test)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html"
+    },
+    {
+      "rel": "related",
+      "href": "../../vectors/collection.json",
+      "type": "application/json",
+      "title": "Field boundary predictions (GeoParquet source data)"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/cells-2025-r8.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "A5 resolution-8 cell aggregates, 2025 (~519 km\u00b2 cells; PMTiles)",
+      "pmtiles:layers": [
+        "cells"
+      ]
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    }
+  ],
+  "assets": {
+    "pmtiles": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/cells-2025-r8.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "A5 resolution-8 cell aggregates, 2025 (~519 km\u00b2 cells; PMTiles)",
+      "roles": [
+        "visual"
+      ],
+      "file:size": 76723964,
+      "file:checksum": "1220733b8080eaa1c9440e7bc52a5294311d7b9bf1e2c6a5559696a1bb2da8082661"
+    },
+    "parquet": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/cells_r8.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "A5 resolution-8 cell aggregates, 2025 (GeoParquet)",
+      "roles": [
+        "data"
+      ],
+      "file:size": 10497528,
+      "file:checksum": "12208b86f5add5ac4408d63164d34cae6ff1c40ca9d6c575d28948e08910812aaf67"
+    },
+    "styles/count-r8": {
+      "href": "./styles/count-r8.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field count (A5 r8)",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "file:size": 1373,
+      "file:checksum": "12204c5b49f0773dc56bc47500fb6379886037090ede7c2105f97a1c6e036cb96aab"
+    },
+    "styles/coverage-r8": {
+      "href": "./styles/coverage-r8.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field coverage (A5 r8)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1349,
+      "file:checksum": "1220e3a192578f636cb3419e8d6492625038e65cb62f052e7eddf8f254355a59641a"
+    },
+    "styles/avg-size-r8": {
+      "href": "./styles/avg-size-r8.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Average field size (A5 r8)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1662,
+      "file:checksum": "1220ed5237b1b1cd182cce9ba1df01ba4d5070f9d8b42ac732bb0d1e2bb8dfa767d4"
+    },
+    "styles/confidence-r8": {
+      "href": "./styles/confidence-r8.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Model confidence (A5 r8)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1689,
+      "file:checksum": "12201f105a91d15c0a0c2b9e2c8603683cd41b5a445988ab5d353387d938ec541d49"
+    },
+    "README": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Fields 2025 \u2014 A5 r8 cell aggregates (test) \u2014 README",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 1178,
+      "file:checksum": "122073d8dd76a52040480e63af3e14aded816964229f95affc604ee57489538007bc"
+    },
+    "thumbnail": {
+      "href": "./thumbnail.png",
+      "type": "image/png",
+      "title": "Fields 2025 \u2014 A5 r8 cell aggregates \u2014 thumbnail",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ],
+      "file:size": 184299,
+      "file:checksum": "1220f29bb3b79722ab9749b7b64c3de3458f9e9efb0252d88564ae54d1a75e98184f"
+    }
+  },
+  "updated": "2026-09-26T00:00:00Z"
+}
