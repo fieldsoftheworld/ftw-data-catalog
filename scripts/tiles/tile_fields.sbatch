@@ -26,7 +26,7 @@
 set -euo pipefail
 : "${YEAR:?set YEAR via --export=ALL,YEAR=..}" "${MODE:?set MODE=plan|coarse|shard|merge}"
 N="${N:-8}"
-cd "$(dirname "$0")"
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 IN="${IN:-$PWD/global${YEAR}_gp2.parquet}"
 TT="${TT:-$HOME/tylertoo-src/target/release/tylertoo}"
 export TMPDIR="$PWD/tmp-${YEAR}-${MODE}${IDX:-}"   # /u spill — /tmp is tmpfs

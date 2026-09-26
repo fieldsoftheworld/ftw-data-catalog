@@ -21,7 +21,7 @@
 set -euo pipefail
 : "${YEAR:?set YEAR via --export=ALL,YEAR=..}"
 R="${R:-7}"
-cd "$(dirname "$0")"
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 IN="${IN:-$PWD/global${YEAR}_gp2.parquet}"
 export PATH="$HOME/ftw-us-tiles/venv/bin:/u/cholmes/micromamba/envs/ftw/bin:$PATH"
 export TMPDIR="$PWD/tmp-cells-${YEAR}"   # /u spill — /tmp is tmpfs

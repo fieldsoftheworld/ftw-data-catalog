@@ -16,7 +16,7 @@
 #SBATCH --mem=120G
 #SBATCH --output=%x-%j.out
 set -euo pipefail
-cd "$(dirname "$0")"
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 export PATH="$HOME/ftw-us-tiles/venv/bin:/u/cholmes/micromamba/envs/ftw/bin:$PATH"
 export TMPDIR="$PWD/tmp-stage"   # /u spill — /tmp is tmpfs, counts against the cgroup
 mkdir -p "$TMPDIR"

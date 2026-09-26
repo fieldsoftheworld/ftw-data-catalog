@@ -17,7 +17,7 @@
 set -euo pipefail
 : "${YEAR:?set YEAR via --export=ALL,YEAR=..}"
 R="${R:-7}"
-cd "$(dirname "$0")"
+cd "${SLURM_SUBMIT_DIR:-$(dirname "$0")}"
 IN="${IN:-$PWD/cells_a5r${R}_${YEAR}.parquet}"
 OUT="${OUT:-fields-${YEAR}-a5r${R}.pmtiles}"
 TT="${TT:-$HOME/tylertoo-src/target/release/tylertoo}"
