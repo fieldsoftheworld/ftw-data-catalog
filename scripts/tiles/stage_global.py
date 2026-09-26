@@ -48,7 +48,10 @@ def build_manifest(cache: Path) -> list[str]:
         q = f"?list-type=2&prefix={urllib.parse.quote(PREFIX)}"
         if token:
             q += f"&continuation-token={urllib.parse.quote(token)}"
-        xml = urllib.request.urlopen(BASE + "global-data/" + q, timeout=60).read().decode()
+        # The proxy 403s urllib's default Python-urllib user agent.
+        req = urllib.request.Request(BASE + "global-data/" + q,
+                                     headers={"User-Agent": "curl/8.0"})
+        xml = urllib.request.urlopen(req, timeout=60).read().decode()
         # Listed keys already include the "global-data/" repo prefix.
         urls += [BASE + k for k in re.findall(r"<Key>([^<]+\.parquet)</Key>", xml)]
         m = re.search(r"<NextContinuationToken>([^<]+)</NextContinuationToken>", xml)
