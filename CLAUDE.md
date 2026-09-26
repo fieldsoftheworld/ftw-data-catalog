@@ -109,6 +109,49 @@ The catalog targets **Portolan 0.1** (spec `~/repos/portolan-spec`, checker `ras
   `harvest` COG that is not on S3 (e.g. `s2med_planting/57KTV/20240101.tif` — the tile has 2025 but no
   2024 planting composite). Those assets carry no `file:size`; the fix belongs in the COG pipeline.
 
+## Tiles pipeline (`scripts/tiles/`)
+
+GeoParquet → PMTiles for the global field predictions, run on the TGI RAILS Slurm
+cluster with gpio + tylertoo. `scripts/tiles/README.md` documents the full chain
+(stage → GeoParquet 2.0 → sharded field builds → a5 cell aggregates) with measured
+timings; deploy with `rsync -av scripts/tiles/ rails:ftw-pipeline/`.
+
+**Rails cluster (account `bgtj-tgirails`):**
+- Partitions: `cpu` (rails01–06, 192c, 512G/2TB) and `cpu_amd` (rails07–15, 112–128c,
+  ~256G) — cpu_amd is often idle when cpu is saturated; 192G jobs fit there, 360G
+  (the fields coarse job, tylertoo#543) does not.
+- `/tmp` is tmpfs and counts against the job cgroup — always `TMPDIR` on `/u`.
+- sbatch spools `$0`, so scripts `cd $SLURM_SUBMIT_DIR`; pass env via exported shell
+  vars + `--export=ALL` (values in `--export=A=x,B=y` get comma-split).
+- tylertoo must be built ON the cluster (glibc 2.28): `~/tylertoo-src`, build with
+  `PROTOC=/u/cholmes/micromamba/envs/ftw/bin/protoc cargo build --release`.
+- Python: `~/ftw-us-tiles/venv` (duckdb, gpio, pmtiles, shapely, pyproj);
+  aws CLI in `/u/cholmes/micromamba/envs/ftw/bin`.
+
+**Data gotchas (all learned the hard way):**
+- `determination:datetime` year markers are midnight-UTC — derive years with
+  `SET TimeZone='UTC'` or every year shifts down on rails (America/Chicago).
+- Boundary-straddling fields are duplicated upstream, one row per subdivision
+  (issue #9) — staging dedupes on `(id, area)` per country.
+- Giant "fields" are artifacts: >350 km² is 100% junk (largest legit complex is a
+  331 km² conf-98.7 Russian grain block); 100–350 km² is ~91% junk by area but
+  confidence can't cleanly separate it (AU's real paddocks sit at conf ≈33, and
+  CN/MX have no confidence at all).
+- a5 is equal-area: r5 ≈ 33,208 km², r7 ≈ 2,075.5 km², r8 ≈ 518.9 km² per cell.
+  DuckDB's `ST_Area_Spheroid` is broken on a5 cell polygons (NaN or 100× off) —
+  use the constant (add_coverage.py self-calibrates via pyproj). Dateline cells
+  have vertices past ±180 and must be wrapped or tile exporters drop them.
+- A plain DuckDB `COPY` of GeoParquet drops the `geo` metadata key — merge with
+  `gpio extract`, follow DuckDB rewrites with `gpio convert geoparquet ...
+  --geoparquet-version 2.0` (2.0 native stats also enable tylertoo row-group pruning).
+- DuckDB `s3://` URLs hang on rails compute nodes (blackholed IMDS); use
+  `https://data.source.coop/...`, and set a browser-ish User-Agent (the list API
+  403s python-urllib).
+
+**Uploads:** data files (pmtiles/parquet) via `aws s3 cp` from rails to the write
+target; catalog metadata via `scripts/catalog/publish.py` as above (direct s3 cp of
+committed catalog files is byte-equivalent and publish.py will skip them).
+
 ## Git extension (portolan-cli#485)
 `catalog/catalog.json` hand-carries `git:repository`, `git:ref`, `git:provider` plus `vcs`/`issues`
 links, pending CLI support. These are non-spec extras (0.1 defines no git extension); rashid ignores them.
