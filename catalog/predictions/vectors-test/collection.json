@@ -1,0 +1,230 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "portolan:styles": [
+    "styles/count",
+    "styles/coverage",
+    "styles/avg-size",
+    "styles/max-size",
+    "styles/confidence",
+    "styles/fields",
+    "styles/fields-confidence"
+  ],
+  "id": "vectors-test",
+  "title": "Field boundary tiles 2025 (test)",
+  "description": "TEST collection \u2014 candidate replacement for the global field-boundary PMTiles. Two single-archive renderings of the 2025 [Fields of the World](https://fieldsofthe.world) PRUE predictions (~600M field polygons), built with geoparquet-io (A5 aggregation) and tylertoo (tiling). `fields-2025-thinned.pmtiles` runs the raw polygons through tylertoo's generalization ladder from z0. `fields-2025-aggregate.pmtiles` shows A5 grid-cell aggregates at low zooms (`cells` layer: resolution 5 at z0\u20135, 8 from z6 \u2014 per-cell `count`, `sum_area`, `avg_area`, `max_area`, `avg_confidence`) handing over to the unthinned field polygons (`fields` layer, 2 MB tile cap) at z9. Styles cover field count, coverage, average/largest field size and model confidence. The A5 cell aggregates are also published as GeoParquet (cells_r8.parquet, cells_r5.parquet); the raw field polygons live in the main vectors collection.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agriculture",
+    "field boundaries",
+    "Fields of the World",
+    "FTW",
+    "global",
+    "PRUE",
+    "Sentinel-2",
+    "confidence"
+  ],
+  "providers": [
+    {
+      "name": "Microsoft AI for Good Research Lab",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    {
+      "name": "Taylor Geospatial",
+      "roles": [
+        "producer",
+        "licensor",
+        "processor",
+        "host"
+      ],
+      "url": "https://taylorgeospatial.org/"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World \u2014 Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html"
+    },
+    {
+      "rel": "related",
+      "href": "../vectors/collection.json",
+      "type": "application/json",
+      "title": "Field boundary predictions (GeoParquet source data)"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-aggregate.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 A5 aggregates \u2192 polygons at z9 (PMTiles)"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-thinned.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 thinned polygons z0\u201313 (PMTiles)"
+    }
+  ],
+  "assets": {
+    "pmtiles_aggregate": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-aggregate.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 A5 aggregates \u2192 polygons at z9 (PMTiles)",
+      "roles": [
+        "visual"
+      ]
+    },
+    "pmtiles_thinned": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-thinned.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 thinned polygons z0\u201313 (PMTiles)",
+      "roles": [
+        "visual"
+      ],
+      "file:size": 115501641953,
+      "file:checksum": "12204812cf97a02bb6e01fcba2c96003c478a3b619cf9805876f964fe1d236f41f73"
+    },
+    "cells_r8": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/cells_r8.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "A5 resolution-8 cell aggregates, 2025 (GeoParquet)",
+      "roles": [
+        "data"
+      ],
+      "file:size": 25984455,
+      "file:checksum": "12208891a136a52969cde6408c546daf8575ea1c5b5e6a41140d38843b7ec9f51464"
+    },
+    "cells_r5": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/cells_r5.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "A5 resolution-5 cell aggregates, 2025 (GeoParquet)",
+      "roles": [
+        "data"
+      ],
+      "file:size": 643268,
+      "file:checksum": "12205bd5b75905cf2208011f4a0d19dfb776ecc0d6747f990e91a8a70c14933a7247"
+    },
+    "styles/count": {
+      "href": "./styles/count.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field count (aggregate) \u2014 default",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "file:size": 1790,
+      "file:checksum": "122074bbe6205c42edce5c3aa090fb0554762dc7ec8ff16a77dc083b30d7123a5b89"
+    },
+    "styles/coverage": {
+      "href": "./styles/coverage.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field coverage (aggregate)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2597,
+      "file:checksum": "1220088e087638972950c3d211789106594024f7d7c0d35f10d44c84325c4d95893d"
+    },
+    "styles/avg-size": {
+      "href": "./styles/avg-size.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Average field size (aggregate)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1800,
+      "file:checksum": "1220a42475136c16bef8bf622bc1d57028f4972985ddac86ecc95e0cfde643a0946f"
+    },
+    "styles/max-size": {
+      "href": "./styles/max-size.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Largest field (aggregate)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1801,
+      "file:checksum": "1220830a521233c1ea07f97787c172b9b179b183aa70f7b00ed75a493ef13aa8affe"
+    },
+    "styles/confidence": {
+      "href": "./styles/confidence.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Model confidence (aggregate)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2715,
+      "file:checksum": "1220dc232b76383ef93bf1ab6469eb11c7fe2a6968132492a47248359c534a0e6739"
+    },
+    "styles/fields": {
+      "href": "./styles/fields.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field boundaries (thinned)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1017,
+      "file:checksum": "1220367e9453e308479107263938fcc68390e6a129a3282d6cc3d16f310f18638f53"
+    },
+    "styles/fields-confidence": {
+      "href": "./styles/fields-confidence.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field confidence (thinned)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1862,
+      "file:checksum": "1220e8147e429e169ee99415d634eddf62393200ecf5ab0086bb70d6616717a172e3"
+    },
+    "README": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Fields 2025 tiles (test) \u2014 README",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 2004,
+      "file:checksum": "12200c605e666d03a876c55fc7570291d00d18175e1491cbcd14b5cc41ea37f496c6"
+    }
+  },
+  "updated": "2026-09-24T00:00:00Z"
+}

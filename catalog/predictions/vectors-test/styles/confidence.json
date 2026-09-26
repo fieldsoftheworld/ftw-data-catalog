@@ -1,0 +1,135 @@
+{
+  "version": 8,
+  "name": "Model confidence (A5 cells)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Mean confidence (0\u2013100)",
+      "type": "gradient",
+      "stops": [
+        {
+          "color": "#d73027",
+          "label": "0"
+        },
+        {
+          "color": "#ffffbf",
+          "label": "50"
+        },
+        {
+          "color": "#1a9850",
+          "label": "100"
+        },
+        {
+          "color": "#bdbdbd",
+          "label": "no coverage"
+        }
+      ]
+    },
+    "description": "Mean per-cell PRUE confidence; gray cells have no modeled-confidence coverage. Individual fields colored the same from z9."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-aggregate.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "cells-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "==",
+            [
+              "typeof",
+              [
+                "get",
+                "avg_confidence"
+              ]
+            ],
+            "number"
+          ],
+          [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "avg_confidence"
+            ],
+            0,
+            "#d73027",
+            25,
+            "#fdae61",
+            50,
+            "#ffffbf",
+            75,
+            "#a6d96a",
+            100,
+            "#1a9850"
+          ],
+          "#bdbdbd"
+        ],
+        "fill-opacity": 0.8
+      }
+    },
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "==",
+            [
+              "typeof",
+              [
+                "get",
+                "confidence"
+              ]
+            ],
+            "number"
+          ],
+          [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "confidence"
+            ],
+            0,
+            "#d73027",
+            25,
+            "#fdae61",
+            50,
+            "#ffffbf",
+            75,
+            "#a6d96a",
+            100,
+            "#1a9850"
+          ],
+          "#bdbdbd"
+        ],
+        "fill-opacity": 0.55
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "line-color": "#555",
+        "line-width": 0.4
+      }
+    }
+  ]
+}

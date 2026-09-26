@@ -1,0 +1,91 @@
+{
+  "version": 8,
+  "name": "Field confidence 2025 (thinned)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Model confidence (0\u2013100)",
+      "type": "gradient",
+      "stops": [
+        {
+          "color": "#d73027",
+          "label": "0"
+        },
+        {
+          "color": "#ffffbf",
+          "label": "50"
+        },
+        {
+          "color": "#1a9850",
+          "label": "100"
+        },
+        {
+          "color": "#bdbdbd",
+          "label": "no coverage"
+        }
+      ]
+    },
+    "description": "Per-field PRUE confidence (0-100); gray fields fall outside the modeled-confidence coverage."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-thinned.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "==",
+            [
+              "typeof",
+              [
+                "get",
+                "confidence"
+              ]
+            ],
+            "number"
+          ],
+          [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "confidence"
+            ],
+            0,
+            "#d73027",
+            25,
+            "#fdae61",
+            50,
+            "#ffffbf",
+            75,
+            "#a6d96a",
+            100,
+            "#1a9850"
+          ],
+          "#bdbdbd"
+        ],
+        "fill-opacity": 0.55
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "line-color": "#555",
+        "line-width": 0.4
+      }
+    }
+  ]
+}

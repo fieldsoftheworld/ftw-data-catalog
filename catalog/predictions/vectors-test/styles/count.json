@@ -1,0 +1,89 @@
+{
+  "version": 8,
+  "name": "Field count (A5 cells)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Fields per cell (log scale)",
+      "type": "gradient",
+      "stops": [
+        {
+          "color": "#ffffe5",
+          "label": "1"
+        },
+        {
+          "color": "#41ab5d",
+          "label": "1k"
+        },
+        {
+          "color": "#004529",
+          "label": "500k"
+        }
+      ]
+    },
+    "description": "Number of 2025 predicted fields per A5 cell (resolution 5 at z0-5, 8 at z6+), log ramp."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-2025-aggregate.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "cells-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "ln",
+            [
+              "max",
+              [
+                "get",
+                "count"
+              ],
+              1
+            ]
+          ],
+          0,
+          "#ffffe5",
+          3.5,
+          "#addd8e",
+          7,
+          "#41ab5d",
+          10.5,
+          "#006837",
+          13.2,
+          "#004529"
+        ],
+        "fill-opacity": 0.8
+      }
+    },
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "fill-color": "#33a02c",
+        "fill-opacity": 0.25
+      }
+    },
+    {
+      "id": "fields-outline",
+      "type": "line",
+      "source": "data",
+      "source-layer": "fields",
+      "paint": {
+        "line-color": "#33a02c",
+        "line-width": 1
+      }
+    }
+  ]
+}
