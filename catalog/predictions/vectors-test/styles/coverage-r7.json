@@ -1,0 +1,64 @@
+{
+  "version": 8,
+  "name": "Field coverage (A5 r7)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Share of cell covered by fields",
+      "type": "gradient",
+      "stops": [
+        {
+          "color": "#ffffd9",
+          "label": "0%"
+        },
+        {
+          "color": "#41b6c4",
+          "label": "30%"
+        },
+        {
+          "color": "#081d58",
+          "label": "80%+"
+        }
+      ]
+    },
+    "description": "Percent of each A5 resolution-7 cell (~2 075 km2 cells) covered by predicted fields (pct_covered; boundary fields count fully in their home cell)."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors-test/cells-2025-r7.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "cells-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "pct_covered"
+          ],
+          0,
+          "#ffffd9",
+          5,
+          "#edf8b1",
+          15,
+          "#7fcdbb",
+          30,
+          "#41b6c4",
+          50,
+          "#225ea8",
+          80,
+          "#081d58"
+        ],
+        "fill-opacity": 0.8
+      }
+    }
+  ]
+}

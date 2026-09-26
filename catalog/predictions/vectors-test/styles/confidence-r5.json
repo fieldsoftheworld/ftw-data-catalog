@@ -1,0 +1,81 @@
+{
+  "version": 8,
+  "name": "Model confidence (A5 r5)",
+  "metadata": {
+    "portolan:legend": {
+      "title": "Mean confidence (0-100)",
+      "type": "gradient",
+      "stops": [
+        {
+          "color": "#d73027",
+          "label": "0"
+        },
+        {
+          "color": "#ffffbf",
+          "label": "50"
+        },
+        {
+          "color": "#1a9850",
+          "label": "100"
+        },
+        {
+          "color": "#bdbdbd",
+          "label": "no confidence data"
+        }
+      ]
+    },
+    "description": "Mean per-cell PRUE confidence on A5 resolution-5 cells (~33 208 km2 cells); gray cells are in countries without modeled confidence."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors-test/cells-2025-r5.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "cells-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "==",
+            [
+              "typeof",
+              [
+                "get",
+                "avg_confidence"
+              ]
+            ],
+            "number"
+          ],
+          [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "avg_confidence"
+            ],
+            0,
+            "#d73027",
+            25,
+            "#fdae61",
+            50,
+            "#ffffbf",
+            75,
+            "#a6d96a",
+            100,
+            "#1a9850"
+          ],
+          "#bdbdbd"
+        ],
+        "fill-opacity": 0.8
+      }
+    }
+  ]
+}
