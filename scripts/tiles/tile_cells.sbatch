@@ -26,9 +26,11 @@ mkdir -p "$TMPDIR"
 trap 'rm -rf "$TMPDIR"' EXIT
 export RUST_LOG=info
 
+# (tylertoo `tiles` has no -f; remove any stale output ourselves)
+rm -f "$OUT"
 "$TT" tiles "$IN" "$OUT" \
   --min-zoom 0 --max-zoom 8 --layer-name cells --verbatim \
-  --profile bounded -v -f
+  --profile bounded -v
 
 ls -la "$OUT"
 sha256sum "$OUT"
