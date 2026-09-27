@@ -1,0 +1,275 @@
+{
+  "type": "Collection",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/web-map-links/v1.3.0/schema.json"
+  ],
+  "portolan:styles": [
+    "styles/count-2024",
+    "styles/coverage-2024",
+    "styles/avg-size-2024",
+    "styles/confidence-2024",
+    "styles/count-2025",
+    "styles/coverage-2025",
+    "styles/avg-size-2025",
+    "styles/confidence-2025"
+  ],
+  "id": "fields-yearly",
+  "title": "Fields 2024 & 2025 \u2014 cells-to-fields handover (test)",
+  "description": "TEST \u2014 the candidate production product: one PMTiles archive per year (2024 & 2025) with a zoom handover \u2014 A5 resolution-7 cell aggregates (~2,075 km\u00b2 equal-area cells; per-cell count, area_ha, avg_confidence, pct_covered), every cell verbatim at z0\u20138, switching to the actual field polygons (area, confidence, country, state) at z9\u201313. Built from deduplicated staging (boundary-straddling fields collapsed, issue #9) with >350 km\u00b2 artifact polygons excluded from both layers. The per-year cell aggregates are also published as GeoParquet. Styles pair each cell metric with the matching per-field rendering across the handover.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agriculture",
+    "field boundaries",
+    "Fields of the World",
+    "FTW",
+    "global",
+    "PRUE",
+    "Sentinel-2",
+    "confidence"
+  ],
+  "providers": [
+    {
+      "name": "Microsoft AI for Good Research Lab",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.microsoft.com/en-us/research/group/ai-for-good-research-lab/"
+    },
+    {
+      "name": "Taylor Geospatial",
+      "roles": [
+        "producer",
+        "licensor",
+        "processor",
+        "host"
+      ],
+      "url": "https://taylorgeospatial.org/"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../catalog.json",
+      "type": "application/json",
+      "title": "Fields of the World \u2014 Global"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Field boundary tiles 2025 (test)"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "type": "text/html"
+    },
+    {
+      "rel": "related",
+      "href": "../../vectors/collection.json",
+      "type": "application/json",
+      "title": "Field boundary predictions (GeoParquet source data)"
+    },
+    {
+      "rel": "pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/fields-2025.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 handover archive (PMTiles)",
+      "pmtiles:layers": [
+        "cells",
+        "fields"
+      ]
+    },
+    {
+      "rel": "pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/fields-2024.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2024 \u2014 handover archive (PMTiles)",
+      "pmtiles:layers": [
+        "cells",
+        "fields"
+      ]
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    }
+  ],
+  "assets": {
+    "pmtiles_2024": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/fields-2024.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2024 \u2014 A5 r7 cells z0\u20138 \u2192 field polygons z9\u201313 (PMTiles)",
+      "roles": [
+        "visual"
+      ],
+      "file:size": 115539883717,
+      "file:checksum": "1220af86369a1299715c1d184743e6e4a5c9bfe3d4955eec05ad46838a0d1108de46"
+    },
+    "cells_2024": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/cells_a5r7_2024.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "A5 r7 cell aggregates, 2024 (GeoParquet)",
+      "roles": [
+        "data"
+      ],
+      "file:size": 2946869,
+      "file:checksum": "12202cd3b026bcad629de7cee5b7d2576335c253c14a44cb5a6da3688acd4eb90f01"
+    },
+    "pmtiles_2025": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/fields-2025.pmtiles",
+      "type": "application/vnd.pmtiles",
+      "title": "Fields 2025 \u2014 A5 r7 cells z0\u20138 \u2192 field polygons z9\u201313 (PMTiles)",
+      "roles": [
+        "visual"
+      ],
+      "file:size": 114132013546,
+      "file:checksum": "1220c205ff2b751bb07c05fe1328ff6ebaa14e5e8202851ec2f1638629efec433b38"
+    },
+    "cells_2025": {
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/cells_a5r7_2025.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "A5 r7 cell aggregates, 2025 (GeoParquet)",
+      "roles": [
+        "data"
+      ],
+      "file:size": 2925173,
+      "file:checksum": "12209a3f814be13e8dac01c865655b64780d17bca6b9f5a5cf5622b64dd72f1dcf4f"
+    },
+    "styles/count-2024": {
+      "href": "./styles/count-2024.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field count (A5 r7 \u2192 fields, 2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1350,
+      "file:checksum": "1220b44c005471ab9f071fe88dbd00316baeaf1813e5653ba4c35f023f90d67b9f9b"
+    },
+    "styles/coverage-2024": {
+      "href": "./styles/coverage-2024.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field coverage (A5 r7 \u2192 fields, 2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1387,
+      "file:checksum": "1220c9dc2a4ea4158f15fcec151afe543bb243556d86a0aae330a3b2ec65f31572ab"
+    },
+    "styles/avg-size-2024": {
+      "href": "./styles/avg-size-2024.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Average field size (A5 r7 \u2192 fields, 2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1671,
+      "file:checksum": "12202b4f8a8144f88e60b266ec1d07886635de1b646b1c9396dede251bb651f65c9e"
+    },
+    "styles/confidence-2024": {
+      "href": "./styles/confidence-2024.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Model confidence (A5 r7 \u2192 fields, 2024)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2658,
+      "file:checksum": "12206e392317cf747cd2750a4a1da9e51824855b22f73b1a6e2d6af744c4464603c5"
+    },
+    "styles/count-2025": {
+      "href": "./styles/count-2025.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field count (A5 r7 \u2192 fields, 2025)",
+      "roles": [
+        "style",
+        "default"
+      ],
+      "file:size": 1350,
+      "file:checksum": "1220d6182e5841e2db9575763752c4aeba3d47c18a173512d081ea57e43188ba4ca3"
+    },
+    "styles/coverage-2025": {
+      "href": "./styles/coverage-2025.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Field coverage (A5 r7 \u2192 fields, 2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1387,
+      "file:checksum": "1220e02ceabc8174cda81808f47980948cfa4ea0fb828a814e8cca51cfcbe728a640"
+    },
+    "styles/avg-size-2025": {
+      "href": "./styles/avg-size-2025.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Average field size (A5 r7 \u2192 fields, 2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 1671,
+      "file:checksum": "12204f5c338ff130edb8e3b319035fe8d23950d4cee8eb04aaf6c7e6b9907dd99327"
+    },
+    "styles/confidence-2025": {
+      "href": "./styles/confidence-2025.json",
+      "type": "application/vnd.mapbox.style+json",
+      "title": "Model confidence (A5 r7 \u2192 fields, 2025)",
+      "roles": [
+        "style"
+      ],
+      "file:size": 2658,
+      "file:checksum": "1220760242a4e96d1b428c12dc34889cd4c0a73fce4c010dace50737d63e5e4ee53f"
+    },
+    "README": {
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Fields 2024 & 2025 \u2014 handover archives \u2014 README",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 2162,
+      "file:checksum": "12209f377d75a0190a8ae5491efc3c25f6a32f8a9dbf643852eafcad20934f387b0a"
+    },
+    "thumbnail": {
+      "href": "./thumbnail.png",
+      "type": "image/png",
+      "title": "Fields 2024 & 2025 \u2014 handover archives \u2014 thumbnail",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ],
+      "file:size": 456462,
+      "file:checksum": "1220ce50cffe1d26153d88b49ddbb06beb39e55b98773aebaafd6a20175acba6b671"
+    }
+  },
+  "updated": "2026-09-27T00:00:00Z"
+}

@@ -9,6 +9,7 @@ approach, so each can be previewed on its own:
 
 | collection | what it shows |
 |---|---|
+| [`fields-yearly`](./fields-yearly/collection.json) | **The candidate production product** — per-year (2024 & 2025) handover archives: A5 r7 cells z0–8 switching to the actual field polygons z9–13, deduped, ≤350 km² |
 | [`cells-r5`](./cells-r5/collection.json) | A5 resolution-5 cell aggregates (~33,200 km² cells), single verbatim layer z0–8 |
 | [`cells-r7`](./cells-r7/collection.json) | A5 resolution-7 cell aggregates (~2,075 km² cells), single verbatim layer z0–8 |
 | [`cells-r8`](./cells-r8/collection.json) | A5 resolution-8 cell aggregates (~519 km² cells), single verbatim layer z0–8 |
@@ -33,12 +34,8 @@ styles. Field properties on its `fields` layer: `area` (m²), `confidence`
 The raw field polygons live in the
 [vectors collection](../vectors/collection.json).
 
-## What lands next
-
-The production per-year **handover archives** — a5 r7 cell aggregates at z0–8
-switching to the actual field polygons at z9–13, one archive per year (2024 &
-2025), built from deduplicated staging with the 350 km² artifact cutoff — will
-be added as their own collection alongside these.
+The eval collections (`cells-*`, `fields-thinned`) predate deduplication and
+the production filter; `fields-yearly` is the build to judge.
 
 ## Provenance notes
 

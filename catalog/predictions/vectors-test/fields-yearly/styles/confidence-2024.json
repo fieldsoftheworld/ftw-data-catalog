@@ -1,0 +1,139 @@
+{
+  "version": 8,
+  "name": "Model confidence (A5 r7 → fields, 2024)",
+  "metadata": {
+    "description": "Mean model confidence per A5 r7 cell at z0–8 (gray = no modeled confidence); from z9 each 2024 field polygon is colored by its own confidence."
+  },
+  "sources": {
+    "data": {
+      "type": "vector",
+      "url": "pmtiles://https://data.source.coop/ftw/global-data/predictions/vectors-test/fields-yearly/fields-2024.pmtiles"
+    }
+  },
+  "layers": [
+    {
+      "id": "cells-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "maxzoom": 9,
+      "paint": {
+        "fill-color": [
+          "step",
+          [
+            "get",
+            "avg_confidence"
+          ],
+          "#d73027",
+          20,
+          "#fdae61",
+          40,
+          "#ffffbf",
+          60,
+          "#a6d96a",
+          80,
+          "#1a9850"
+        ],
+        "fill-opacity": 0.8
+      },
+      "filter": [
+        "==",
+        [
+          "typeof",
+          [
+            "get",
+            "avg_confidence"
+          ]
+        ],
+        "number"
+      ]
+    },
+    {
+      "id": "cells-no-confidence",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "cells",
+      "maxzoom": 9,
+      "paint": {
+        "fill-color": "#bdbdbd",
+        "fill-opacity": 0.8
+      },
+      "filter": [
+        "!",
+        [
+          "==",
+          [
+            "typeof",
+            [
+              "get",
+              "avg_confidence"
+            ]
+          ],
+          "number"
+        ]
+      ]
+    },
+    {
+      "id": "fields-fill",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "minzoom": 9,
+      "paint": {
+        "fill-color": [
+          "step",
+          [
+            "get",
+            "confidence"
+          ],
+          "#d73027",
+          20,
+          "#fdae61",
+          40,
+          "#ffffbf",
+          60,
+          "#a6d96a",
+          80,
+          "#1a9850"
+        ],
+        "fill-opacity": 0.7
+      },
+      "filter": [
+        "==",
+        [
+          "typeof",
+          [
+            "get",
+            "confidence"
+          ]
+        ],
+        "number"
+      ]
+    },
+    {
+      "id": "fields-no-confidence",
+      "type": "fill",
+      "source": "data",
+      "source-layer": "fields",
+      "minzoom": 9,
+      "paint": {
+        "fill-color": "#bdbdbd",
+        "fill-opacity": 0.7
+      },
+      "filter": [
+        "!",
+        [
+          "==",
+          [
+            "typeof",
+            [
+              "get",
+              "confidence"
+            ]
+          ],
+          "number"
+        ]
+      ]
+    }
+  ]
+}
