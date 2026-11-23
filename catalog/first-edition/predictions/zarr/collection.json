@@ -52,7 +52,7 @@
         [
           -180.0,
           -56.93171310991181,
-          180.00005391686943,
+          180.0,
           83.748345
         ]
       ]
@@ -201,11 +201,6 @@
       "type": "application/json"
     },
     {
-      "rel": "self",
-      "href": "https://data.source.coop/ftw/global-data/predictions/zarr/collection.json",
-      "type": "application/json"
-    },
-    {
       "rel": "license",
       "href": "https://creativecommons.org/licenses/by/4.0/",
       "type": "text/html",
@@ -239,6 +234,18 @@
       "href": "./llms.txt",
       "type": "text/markdown",
       "title": "Agent/LLM usage guide"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guidance for AI agents"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Human-readable documentation"
     }
   ]
 }

@@ -113,7 +113,7 @@
   "collection": "vectors",
   "assets": {
     "data": {
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BL/Saint_Barthélemy.parquet",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BL/Saint_Barth%C3%A9lemy.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "Saint Barthélemy field boundaries (GeoParquet)",
       "roles": [
@@ -122,7 +122,7 @@
       "description": "GeoParquet field-boundary polygons for this partition (2 features). See the collection's `table:columns` for field definitions."
     },
     "pmtiles": {
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BL/Saint_Barthélemy.pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=BL/Saint_Barth%C3%A9lemy.pmtiles",
       "type": "application/vnd.pmtiles",
       "title": "Saint Barthélemy field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
@@ -131,7 +131,7 @@
       "description": "PMTiles vector tiles for rendering in MapLibre GL. Saint Barthélemy field boundaries (PMTiles, 2024/2025 layers)."
     },
     "style-2025": {
-      "href": "./Saint_Barthélemy.2025.style.json",
+      "href": "./Saint_Barth%C3%A9lemy.2025.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — field boundaries (2025)",
       "roles": [
@@ -142,7 +142,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — field boundaries (2025)."
     },
     "style-2024": {
-      "href": "./Saint_Barthélemy.2024.style.json",
+      "href": "./Saint_Barth%C3%A9lemy.2024.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — field boundaries (2024)",
       "roles": [
@@ -153,7 +153,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — field boundaries (2024)."
     },
     "style-confidence-2025": {
-      "href": "./Saint_Barthélemy.confidence-2025.style.json",
+      "href": "./Saint_Barth%C3%A9lemy.confidence-2025.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — by confidence (2025)",
       "roles": [
@@ -164,7 +164,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — by confidence (2025)."
     },
     "style-confidence-2024": {
-      "href": "./Saint_Barthélemy.confidence-2024.style.json",
+      "href": "./Saint_Barth%C3%A9lemy.confidence-2024.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — by confidence (2024)",
       "roles": [
@@ -175,7 +175,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — by confidence (2024)."
     },
     "README": {
-      "href": "./Saint_Barthélemy.README.md",
+      "href": "./Saint_Barth%C3%A9lemy.README.md",
       "type": "text/markdown",
       "title": "Saint Barthélemy — README",
       "roles": [

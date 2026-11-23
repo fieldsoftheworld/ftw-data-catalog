@@ -113,7 +113,7 @@
   "collection": "vectors",
   "assets": {
     "data": {
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AX/Åland_Islands.parquet",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AX/%C3%85land_Islands.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "Åland Islands field boundaries (GeoParquet)",
       "roles": [
@@ -122,7 +122,7 @@
       "description": "GeoParquet field-boundary polygons for this partition (6,419 features). See the collection's `table:columns` for field definitions."
     },
     "pmtiles": {
-      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AX/Åland_Islands.pmtiles",
+      "href": "https://data.source.coop/ftw/global-data/predictions/vectors/alpha/results-by-admin-conf/admin:country_code=AX/%C3%85land_Islands.pmtiles",
       "type": "application/vnd.pmtiles",
       "title": "Åland Islands field boundaries (PMTiles, 2024/2025 layers)",
       "roles": [
@@ -131,7 +131,7 @@
       "description": "PMTiles vector tiles for rendering in MapLibre GL. Åland Islands field boundaries (PMTiles, 2024/2025 layers)."
     },
     "style-2025": {
-      "href": "./Åland_Islands.2025.style.json",
+      "href": "./%C3%85land_Islands.2025.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — field boundaries (2025)",
       "roles": [
@@ -142,7 +142,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — field boundaries (2025)."
     },
     "style-2024": {
-      "href": "./Åland_Islands.2024.style.json",
+      "href": "./%C3%85land_Islands.2024.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — field boundaries (2024)",
       "roles": [
@@ -153,7 +153,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — field boundaries (2024)."
     },
     "style-confidence-2025": {
-      "href": "./Åland_Islands.confidence-2025.style.json",
+      "href": "./%C3%85land_Islands.confidence-2025.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — by confidence (2025)",
       "roles": [
@@ -164,7 +164,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — by confidence (2025)."
     },
     "style-confidence-2024": {
-      "href": "./Åland_Islands.confidence-2024.style.json",
+      "href": "./%C3%85land_Islands.confidence-2024.style.json",
       "type": "application/vnd.mapbox.style+json",
       "title": "MapLibre style — by confidence (2024)",
       "roles": [
@@ -175,7 +175,7 @@
       "description": "MapLibre GL style (JSON) for rendering: MapLibre style — by confidence (2024)."
     },
     "README": {
-      "href": "./Åland_Islands.README.md",
+      "href": "./%C3%85land_Islands.README.md",
       "type": "text/markdown",
       "title": "Åland Islands — README",
       "roles": [
